@@ -4,6 +4,12 @@
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes.
 
+### Artifact’s requirements
+todo
+
+### Steps to check the basic functionality of the artifact
+todo
+
 A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
 
 ## Detailed Instructions
