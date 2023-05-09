@@ -9,3 +9,11 @@ A copy of this README is in the working directory of the Docker image, ~/grayc/R
 ## Detailed Instructions
 
 Here we describe how to reproduce all the tables and graphs data for section 5 in the paper: the controlled experiments with the additionl other 8 tools compared with.
+
+### Step-by-Step instructions
+
+### Build from source
+GrayC was implemented on top of LibFuzzer and so its build may take long, depends on your machine: it builds LLVM 12 with instrumentation.
+
+
+### Project structure
