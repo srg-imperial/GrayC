@@ -2,7 +2,10 @@
 
 ## Getting Started
 
-This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes.
+This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes. To start the docker container:
+```
+docker run -it grayc
+```
 
 ### Artifact’s requirements
 todo
