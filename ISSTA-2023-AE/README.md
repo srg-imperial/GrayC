@@ -18,7 +18,7 @@ docker run -it grayc
 ```
 
 ### Artifact’s requirements
-git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, 
+git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL
 
 Note 1: CMake 3.13.4 or higher is required.
 
@@ -48,3 +48,7 @@ GrayC was implemented on top of LibFuzzer and so its build may take long, depend
 
 
 ### Project structure
+
+
+### Original Testing Set-up
+
