@@ -14,7 +14,8 @@ Note that: CMake 3.13.4 or higher is required.
 
 Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
 1. gfauto: https://github.com/google/graphicsfuzz.git
-2. 
+2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
+3. Regexp based tool for mutating generic source code across numerous languages (for evaluation against other approaches): https://github.com/agroce/universalmutator/releases/tag/v1.0.18
 
 ### Steps to check the basic functionality of the artifact
 todo
