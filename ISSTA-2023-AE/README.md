@@ -1,4 +1,4 @@
-# GrayC: Greybox Fuzzing of Compilers and Analysers for C - Artifact ISSTA 2023
+# GrayC: Greybox Fuzzing of Compilers and Analysers for C
 
 GrayC is a greybox fuzzer for C compilers and a libfuzzer-based tool. In brief, GrayC works as follows. Starting with an initial corpus of test programs, it uses libfuzzer to perform coverage-guided mutation-based fuzzing of the Clang/LLVM compiler, for a time-limited period. Unconventionally, the purpose of this use of libfuzzer is not to find bugs at this stage, but rather to generate a large corpus of interesting test programs. This is achieved by (a) using a custom mutator to yield an interesting space of compiler test programs that are statically-valid, and (b) saving every test program that libfuzzer produces to an external directory.
 
@@ -8,7 +8,7 @@ Implementation Details: we have implemented our approach as a set of tools, the 
 
 This repository contains the data and code to reproduce the results in the paper "GrayC: Greybox Fuzzing of Compilers and Analysers for C".
 
-# GrayC Artifact
+# GrayC Artifact ISSTA 2023
 
 ## Getting Started
 
