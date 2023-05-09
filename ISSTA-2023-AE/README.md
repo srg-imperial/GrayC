@@ -8,7 +8,7 @@ docker run -it grayc
 ```
 
 ### Artifact’s requirements
-todo
+git, python3, 
 
 ### Steps to check the basic functionality of the artifact
 todo
