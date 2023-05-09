@@ -10,8 +10,9 @@ docker run -it grayc
 ### Artifact’s requirements
 git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip,  
 
-Most of the packages required can be installed with brew or apt, however, some need to be build from source.
+Note that: CMake 3.13.4 or higher is required.
 
+Most of the packages required can be installed with brew or apt, however, some need to be build from source.
 1. gfauto: https://github.com/google/graphicsfuzz.git
 2. 
 
