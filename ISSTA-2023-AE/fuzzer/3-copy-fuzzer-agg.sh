@@ -45,7 +45,6 @@ cp $mutators_code/clang-fuzzer/CustomClangFuzzer.h $clang_fuzzer_folder/
 
 ## copy our fuzzer
 cp -r $mutators_code/assignment-mutator $clang_tools/
-cp -r $mutators_code/clang-fuzzer $clang_tools/
 cp -r $mutators_code/constant-mutator $clang_tools/
 cp -r $mutators_code/delete-mutator $clang_tools/
 cp -r $mutators_code/duplicate-mutator $clang_tools/
