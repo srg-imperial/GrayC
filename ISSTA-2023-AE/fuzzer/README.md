@@ -105,6 +105,8 @@ Resolving deltas: 100% (3921/3921), done.
 This script downloaded the source file of llvm 12 into /home/user42//.sources_12VL.Z5NTi89.tmp. Your folder will have a bit different name, but with a similar pattern.
 Next, we need to create a folder where the fuzzer will be installed and edit few files.
 
+## Installing the GrayC 
+
 We prepared wrapper scripts for the rest of the scripts to install several instances of the fuzzer (to fuzz in parallel), for the conservative and aggressive versions. You may use the wrapper or run each of the script separatly. To run the wrapper for GrayC-conservative:
 ```
 ./install-fuzzers.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
@@ -118,6 +120,13 @@ for example:
 ./install-fuzzers-agg.sh /home/user42/ /home/user42/.sources_12VL.9IeP8DH.tmp /home/user42/GrayC/ISSTA-2023-AE 3
 ```
 
+The two wrapper scripts contains three other scripts. We describe them below.
+
+Note: it is enough to run the two scripts above to have GrayC installed in your system. 
+
+
+### Additional Details
+ 
 Run first this script:
 ```
 ./2-prepare-env.sh <base-folder> <temp-folder-with-llvm-12> <copy-number>
