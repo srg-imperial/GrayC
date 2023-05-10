@@ -18,7 +18,9 @@
 
 syntax = "proto2";
 
-message Const { required int32 val = 1; }
+message Const {
+  required int32 val = 1;
+}
 
 message VarRef {
   // Add an enum for each array in function signature
@@ -63,9 +65,13 @@ message AssignmentStatement {
   required Rvalue rvalue = 2;
 }
 
-message Statement { required AssignmentStatement assignment = 1; }
+message Statement {
+  required AssignmentStatement assignment = 1;
+}
 
-message StatementSeq { repeated Statement statements = 1; }
+message StatementSeq {
+  repeated Statement statements = 1;
+}
 
 message LoopFunction {
   optional StatementSeq inner_statements = 1;
