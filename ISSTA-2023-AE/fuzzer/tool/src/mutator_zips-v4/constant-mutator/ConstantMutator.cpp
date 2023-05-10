@@ -128,7 +128,6 @@ cType ConstantMutatorVisitor::guessType(std::string const_str,
     }
 
     // Check which data it can be
-    // Check which data it can be
     if ((std::numeric_limits<unsigned char>::min() <= number) &&
         (std::numeric_limits<unsigned char>::max() >= number))
       return cUChar;
@@ -298,8 +297,10 @@ std::string ConstantMutatorVisitor::bit_flip(std::string constant) {
   }
 }
 
+// Mutate a constant by fliting a digit in base-10: flip from 10 options
 std::string ConstantMutatorVisitor::replace1char(std::string const_str) {
-  static std::string dec_characters = "0123456789";
+  static std::string dec_characters = "0123456789"; // Static mapping of 10-base tokens
+  
   unsigned len = const_str.length();
   for (unsigned i = 0; i < len; i++) {
     if (std::isdigit(const_str[i]) &&
@@ -312,18 +313,20 @@ std::string ConstantMutatorVisitor::replace1char(std::string const_str) {
   return const_str;
 }
 
+// Mutate a constant by replacing a digit format (base-10) number to hexa (base-16) one
 std::string ConstantMutatorVisitor::replace2hex(unsigned length) {
-  static std::string hex_characters = "0123456789ABCDEF";
+  static std::string hex_characters = "0123456789ABCDEF"; // Static mapping of Hexa tokens
 
-  std::string rand_str = "0x";
+  std::string rand_str = "0x"; // Hexa constant prefix - add it at the beginnig
   length += ClangFuzzerCustomRandom::GetInstance()->rnd_dice(
-      5); /* Avoid creating always small numbers */
-  for (unsigned i = 0; i < length; i++)
+      5); /* Avoid creating always small numbers */ 
+  for (unsigned i = 0; i < length; i++) // Create a new HEXA number of random length
     rand_str.append(hex_characters,
                     ClangFuzzerCustomRandom::GetInstance()->rnd_dice(16), 1);
   return rand_str;
 }
 
+// Mutate a constant number of float types via mt19937 a pseudo-random number generator for C/C++
 int ConstantMutatorVisitor::mutate_constant_float() {
   std::random_device dev;
   std::mt19937 rng(dev());
@@ -352,7 +355,6 @@ int main(int argc, const char **argv) {
   // Create Random Generaton, uniform real dist
   unsigned long Seed = std::stoi(argv[argc - 1]); // Seed is always in the end
   ClangFuzzerCustomRandom::CreateInstance(Seed, 65000); // Dice of 65000
-  // std::cout << "Seed in mutator: " << Seed << "\n";
 
   // create a new Clang Tool instance (a LibTooling environment)
   ClangTool Tool(op.getCompilations(), op.getSourcePathList());
