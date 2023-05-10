@@ -19,7 +19,7 @@ docker run -it grayc
 If you do not wish to use a docker image, we discuss in the next section how to install it from source GrayC. We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB). 
 
 ## II.B Artifact’s requirements (for installing from source)
-You will need to install the following: gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce. 
+You will need to install the following: gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
 
 Note 1: CMake 3.13.4 or higher is required.
 
@@ -29,6 +29,10 @@ Most of the packages required can be installed with (e.g.) brew or apt, however,
 1. gfauto: https://github.com/google/graphicsfuzz.git
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
 3. Regexp based tool for mutating generic source code across numerous languages (for evaluation against other approaches): https://github.com/agroce/universalmutator/releases/tag/v1.0.18
+4. Grammarinator, which can be installed: (https://pypi.org/project/grammarinator/)
+```
+pip3 install grammarinator
+```
 
 You can then need to continue and follow the instructions in "VI. Reusability of GrayC - Additional details" (the last part of this README.md file).
 
