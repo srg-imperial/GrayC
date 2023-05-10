@@ -24,6 +24,7 @@ static llvm::cl::OptionCategory MyToolCategory("Duplicate Mutator option");
 bool DuplicateMutatorVisitor::VisitBinaryOperator(BinaryOperator *stmt) {
   int line_no = (m_astContext->getSourceManager())
                     .getSpellingLineNumber(stmt->getBeginLoc());
+  
   if (stmt->isAssignmentOp() && latest_loop_line != line_no) {
     CharSourceRange binop_range =
         CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
@@ -36,6 +37,7 @@ bool DuplicateMutatorVisitor::VisitBinaryOperator(BinaryOperator *stmt) {
     else
       m_rewriter->ReplaceText(stmt->getBeginLoc(), bstmt_str.length(), "");
   }
+  
   return true;
 }
 
@@ -65,7 +67,6 @@ int main(int argc, const char **argv) {
   // Create Random Generaton, uniform real dist
   unsigned long Seed = std::stoi(argv[argc - 1]); // Seed is always in the end
   ClangFuzzerCustomRandom::CreateInstance(Seed, 2);
-  // std::cout << "Seed in mutator: " << Seed << "\n";
 
   // create a new Clang Tool instance (a LibTooling environment)
   ClangTool Tool(op.getCompilations(), op.getSourcePathList());
