@@ -8,7 +8,7 @@ Implementation Details: we have implemented our approach as a set of tools, the 
 
 This repository contains the data and code to reproduce the results in the paper "GrayC: Greybox Fuzzing of Compilers and Analysers for C".
 
-# II. GrayC Artifact ISSTA 2023
+# II. GrayC Artifact ISSTA 2023 - Phase 1
 
 ## II.A Getting Started
 
@@ -16,11 +16,10 @@ This Docker image contains a pre-built version of GrayC. It also includes all th
 ```
 docker run -it grayc
 ```
-
-If you do not wish to use a docker image, we discuss the next section how to install from source GrayC, however, since we are testing mature C compilers (that is the instumented code is huge!), we recommand using our docker image.
+If you do not wish to use a docker image, we discuss in the next section how to install it from source GrayC. We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB). 
 
 ## II.B Artifact’s requirements (for installing from source)
-gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, 
+You will need to install the following: gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce. 
 
 Note 1: CMake 3.13.4 or higher is required.
 
@@ -31,7 +30,7 @@ Most of the packages required can be installed with (e.g.) brew or apt, however,
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
 3. Regexp based tool for mutating generic source code across numerous languages (for evaluation against other approaches): https://github.com/agroce/universalmutator/releases/tag/v1.0.18
 
-You can then continue an follow the instructions in X.
+You can then need to continue and follow the instructions in "VI. Reusability of GrayC - Additional details" (the last part of this README.md file).
 
 ## II.C Steps to check the basic functionality of the artifact
 
@@ -69,7 +68,11 @@ and so on.
 
 NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
 
-## 2. Detailed Instructions
+# III. GrayC Artifact ISSTA 2023 - Phase 2
+
+After you loaded succesfull our docker image or installed from source GrayC. You can follow the instruction below to reproduce the results in Section 5 of our paper.
+
+## III.A Detailed Instructions
 
 Here we describe how to reproduce all the tables and graphs data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
 
@@ -228,7 +231,8 @@ Then we measure coverage with the fuzzed corpus too (setA), filter statically or
 --- END of Old text ---
 
 
-## 3. Reusability of GrayC
+# VI. Reusability of GrayC - Additional details
+	
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
 
 ### Build from source
