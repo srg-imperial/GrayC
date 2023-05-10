@@ -63,13 +63,11 @@ int main(int argc, const char **argv) {
   std::map<std::string, std::string>::iterator it;
   string rename_command = "bin/clang-rename";
   for (it = global_varnames.begin(); it != global_varnames.end(); ++it) {
-    // llvm::outs()<<it->first<<"\n"; // Print variables of mutated program
     if ((it->first).empty())
       rename_command = rename_command + " -qualified-name=" + it->first +
                        " -new-name=" + it->second;
   }
   rename_command = rename_command + " " + filename + " -- > " +
                    file_without_extension + "_rename_output.c";
-  // int output = system(rename_command.c_str());
   return result;
 }
