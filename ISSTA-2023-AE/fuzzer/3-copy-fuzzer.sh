@@ -65,8 +65,6 @@ sed -i "s:/home/user42/llvm-project:$llvm_folder:g" "$clang_fuzzer_folder/../app
 ## copy includes for fuzzing
 cp -r $src_folder/../llvm-fuzzer-includes/ $llvm_folder/
 
-## copy settings file
-# cp $src_folder/../settings.txt $working_folder/
 ## Edit the setting file
 echo "mutator_path:$llvm_folder/llvm-fuzzer-build/" > $working_folder/settings.txt
 echo "lib_paths:$llvm_folder/llvm-fuzzer-includes/	/usr/include/x86_64-linux-gnu/	" >> $working_folder/settings.txt
