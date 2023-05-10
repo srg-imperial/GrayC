@@ -71,7 +71,6 @@ int main(int argc, const char **argv) {
   // Create Random Generaton, uniform real dist
   unsigned long Seed = std::stoi(argv[argc - 1]);   // Seed is always in the end
   ClangFuzzerCustomRandom::CreateInstance(Seed, 6); // Dice of 6
-  // std::cout << "Seed in mutator: " << Seed << "\n";
 
   // create a new Clang Tool instance (a LibTooling environment)
   ClangTool Tool(op.getCompilations(), op.getSourcePathList());
