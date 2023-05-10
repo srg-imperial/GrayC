@@ -24,7 +24,7 @@ The same goes to the rest of the packages:
 Cmake:
 ```
 cmake --version
-cmake version 3.16.3
+cmake version 3.20.0
 
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
@@ -248,6 +248,8 @@ cd /home/user42/llvm-csmith-1/llvm-fuzzer-build/ ; bin/clang-fuzzer /home/user42
 
 Tools' Evaluation in the paper
 ==============================
+
+Seeds files for running fuzzers: we added some examples of such in seeds folder.
 
 ## Throughput
 
