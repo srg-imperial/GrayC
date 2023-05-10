@@ -78,7 +78,6 @@ public:
       llvm::cl::NumOccurrencesFlag OccurrencesFlag = llvm::cl::OneOrMore,
       const char *Overview = nullptr);
 
-public:
   /// A factory method that is similar to the above constructor, except
   /// this returns an error instead exiting the program on error.
   static llvm::Expected<CommonOptionsParser>
@@ -139,4 +138,4 @@ private:
 } // namespace tooling
 } // namespace clang
 
-#endif // LLVM_TOOLS_CLANG_INCLUDE_CLANG_TOOLING_COMMONOPTIONSPARSER_H
+#endif // LLVM_CLANG_TOOLING_COMMONOPTIONSPARSER_H
