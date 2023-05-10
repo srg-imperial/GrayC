@@ -44,22 +44,21 @@ cp $mutators_code/clang-fuzzer/CMakeLists.txt $clang_fuzzer_folder/
 cp $mutators_code/clang-fuzzer/CustomClangFuzzer.h $clang_fuzzer_folder/
 
 ## copy our fuzzer
-cp -r $mutators_code/append-expression/ $clang_tools/
-cp -r $mutators_code/assignment-mutator/ $clang_tools/
-cp -r $mutators_code/constant-mutator/ $clang_tools/
-cp -r $mutators_code/delete-mutator/ $clang_tools/
-cp -r $mutators_code/duplicate-mutator/ $clang_tools/
-cp -r $mutators_code/extract-expression/ $clang_tools/
-cp -r $mutators_code/expression-mutator/ $clang_tools/
-cp -r $mutators_code/function-extractor/ $clang_tools/
-cp -r $mutators_code/function-merger/ $clang_tools/
-cp -r $mutators_code/jump-mutator/ $clang_tools/
-cp -r $mutators_code/rename-transform/ $clang_tools/
-cp -r $mutators_code/utils-fuzzer/ $clang_tools/
+cp -r $mutators_code/assignment-mutator $clang_tools/
+cp -r $mutators_code/clang-fuzzer $clang_tools/
+cp -r $mutators_code/constant-mutator $clang_tools/
+cp -r $mutators_code/delete-mutator $clang_tools/
+cp -r $mutators_code/duplicate-mutator $clang_tools/
+cp -r $mutators_code/expression-mutator $clang_tools/
+cp -r $mutators_code/function-extractor $clang_tools/
+cp -r $mutators_code/function-merger $clang_tools/
+cp -r $mutators_code/jump-mutator $clang_tools/
+cp -r $mutators_code/random-manager $clang_tools/
+cp -r $mutators_code/rename-transform $clang_tools/
 
 ## Adjust paths
-sed -i "s:/home/user42/llvm-project:$llvm_folder:g" "$clang_fuzzer_folder/../extract-expression/ExtractExpression.cpp"
-sed -i "s:/home/user42/llvm-project:$llvm_folder:g" "$clang_fuzzer_folder/../append-expression/AppendExpression.cpp"
+#sed -i "s:/home/user42/llvm-project:$llvm_folder:g" "$clang_fuzzer_folder/../extract-expression/ExtractExpression.cpp"
+#sed -i "s:/home/user42/llvm-project:$llvm_folder:g" "$clang_fuzzer_folder/../append-expression/AppendExpression.cpp"
 
 ## copy includes for fuzzing
 cp -r $src_folder/../llvm-fuzzer-includes/ $llvm_folder/
