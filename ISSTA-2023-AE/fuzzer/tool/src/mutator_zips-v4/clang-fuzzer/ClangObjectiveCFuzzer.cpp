@@ -23,4 +23,3 @@ extern "C" int LLVMFuzzerTestOneInput(uint8_t *data, size_t size) {
   HandleCXX(s, "./test.m", {"-O2"});
   return 0;
 }
-

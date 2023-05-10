@@ -14,14 +14,14 @@
 //===----------------------------------------------------------------------===//
 
 #include "cxx_proto.pb.h"
+#include "fuzzer-initialize/fuzzer_initialize.h"
 #include "handle-cxx/handle_cxx.h"
 #include "proto-to-cxx/proto_to_cxx.h"
-#include "fuzzer-initialize/fuzzer_initialize.h"
 #include "src/libfuzzer/libfuzzer_macro.h"
 
 using namespace clang_fuzzer;
 
-DEFINE_BINARY_PROTO_FUZZER(const Function& input) {
+DEFINE_BINARY_PROTO_FUZZER(const Function &input) {
   auto S = FunctionToString(input);
   HandleCXX(S, "./test.cc", GetCLArgs());
 }

@@ -14,17 +14,11 @@
 
 syntax = "proto2";
 
-message VarRef {
-  required int32 varnum = 1;
-}
+message VarRef { required int32 varnum = 1; }
 
-message Lvalue {
-  required VarRef varref = 1;
-}
+message Lvalue { required VarRef varref = 1; }
 
-message Const {
-  required int32 val = 1;
-}
+message Const { required int32 val = 1; }
 
 message BinaryOp {
   enum Op {
@@ -61,7 +55,6 @@ message AssignmentStatement {
   required Rvalue rvalue = 2;
 }
 
-
 message IfElse {
   required Rvalue cond = 1;
   required StatementSeq if_body = 2;
@@ -76,17 +69,13 @@ message While {
 message Statement {
   oneof stmt_oneof {
     AssignmentStatement assignment = 1;
-    IfElse              ifelse     = 2;
-    While               while_loop = 3;
+    IfElse ifelse = 2;
+    While while_loop = 3;
   }
 }
 
-message StatementSeq {
-  repeated Statement statements = 1;
-}
+message StatementSeq { repeated Statement statements = 1; }
 
-message Function {
-  required StatementSeq statements = 1;
-}
+message Function { required StatementSeq statements = 1; }
 
 package clang_fuzzer;
