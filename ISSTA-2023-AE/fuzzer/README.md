@@ -265,7 +265,7 @@ cd /home/user42/llvm-csmith-1/llvm-fuzzer-build/ ; bin/clang-fuzzer /home/user42
 ```
 Both modes use the same commands, however, one might be installed in /home/user42/llvm-csmith-1/ while the othere in /home/user42/llvm-csmith-2/.
 
-## 4. Structure of the Source file of GrayC (fuzzer part)
+## 4. Structure of the Source files of GrayC (fuzzer part)
 
 This folder contains the code (tool), corpus (data), and seeds for randomisatin (seeds).
 The folder tool, contains include library for GrayC (llvm-fuzzer-includes/), and the sourc files of GrayC aggressive ( mutator_zips-v4) and GrayC conservative ( mutator_zips-v6).
