@@ -1,6 +1,7 @@
 #ifndef __FUNCTION_MERGER_H
 #define __FUNCTION_MERGER_H
 
+/* Includes for function merger classes */
 #include "clang/AST/AST.h"
 #include "clang/AST/ASTConsumer.h"
 #include "clang/AST/ASTContext.h"
@@ -20,6 +21,7 @@ using namespace clang::driver;
 using namespace clang::tooling;
 using namespace llvm;
 
+/* Three classes: visitor, combiner and frontend */
 class FunctionCombinerVisitor
     : public RecursiveASTVisitor<FunctionCombinerVisitor> {
 private:
@@ -68,9 +70,6 @@ private:
 public:
   virtual std::unique_ptr<clang::ASTConsumer>
   CreateASTConsumer(CompilerInstance &CI, StringRef file) final {
-    // return std::unique_ptr<clang::ASTConsumer>(new
-    // FunctionCombinerASTConsumer(&CI, m_rewriter)); // pass CI pointer to
-    // ASTConsumer
     return std::make_unique<FunctionCombinerASTConsumer>(&CI, m_rewriter);
   }
 
