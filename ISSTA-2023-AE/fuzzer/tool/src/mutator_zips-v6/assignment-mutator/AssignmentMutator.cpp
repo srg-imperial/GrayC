@@ -23,17 +23,17 @@ bool AssignmentMutatorVisitor::VisitUnaryOperator(UnaryOperator *stmt) {
         CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
     if (decl_range.isInvalid())
       return true; // if no decl, exit
-    
-    auto str_ref = Lexer::getSourceText(decl_range, 
-        m_astContext->getSourceManager(),
-        m_astContext->getLangOpts());
+
+    auto str_ref =
+        Lexer::getSourceText(decl_range, m_astContext->getSourceManager(),
+                             m_astContext->getLangOpts());
     if (str_ref.empty())
-      return true; // if no decl, exit  
-    
+      return true; // if no decl, exit
+
     std::string decl_str = std::string(str_ref);
     if (decl_str.empty())
       return true; // if no const, exit
-  
+
     // Else continue with the mutation
     if (stmt->isIncrementOp()) {
       m_rewriter->ReplaceText(stmt->getExprLoc(), std::string("--"));
@@ -47,51 +47,51 @@ bool AssignmentMutatorVisitor::VisitUnaryOperator(UnaryOperator *stmt) {
 bool AssignmentMutatorVisitor::VisitDeclStmt(clang::DeclStmt *stmt) {
   if (!stmt || !stmt->isSingleDecl())
     return true; // not null and only if a single decl (int a, b; -> skip)
-  
+
   if (GrayCCustomRandom::GetInstance()->rnd_yes_no(0.5))
     return true; // quite sometimes
-  
+
   clang::VarDecl *vd = cast<clang::VarDecl>(stmt->getSingleDecl());
-  if (!vd)  
+  if (!vd)
     return true; // Can be null
-    
+
   CharSourceRange decl_range =
-        CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
+      CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
   if (decl_range.isInvalid())
     return true; // if no decl, exit
 
-  auto str_ref = Lexer::getSourceText(decl_range,
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
-  if (str_ref.empty() || str_ref.find("__")!=std::string::npos)
-        return true; // if no decl, exit
-  
+  auto str_ref =
+      Lexer::getSourceText(decl_range, m_astContext->getSourceManager(),
+                           m_astContext->getLangOpts());
+  if (str_ref.empty() || str_ref.find("__") != std::string::npos)
+    return true; // if no decl, exit
+
   QualType qt = vd->getType();
   if (qt.isNull() || qt->isArrayType() || !qt.isTrivialType(*m_astContext))
     return true;
-  
+
   std::string type = qt.getAsString();
   if (!type.empty() && (type == "int" || type == "short")) {
-    CharSourceRange declRange = CharSourceRange::getTokenRange(
-        stmt->getBeginLoc(), stmt->getEndLoc());
+    CharSourceRange declRange =
+        CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
     if (declRange.isInvalid())
       return true; // if no decl, exit
-              
+
     std::string decl_str = std::string(str_ref);
     if (decl_str.empty())
       return true; // if no const, exit
-    
+
     if (GrayCUtils::getAssignmentNos(decl_str) > 1)
-      return true; // if got multiple assignement, return 
-         
+      return true; // if got multiple assignement, return
+
     std::string var_name = vd->getQualifiedNameAsString();
     if (var_name.empty())
       return true; // if not name, exit
-          
+
     // mutate
     m_rewriter->ReplaceText(declRange, type + " " + var_name + " = 8;");
   }
-  
+
   return true;
 }
 

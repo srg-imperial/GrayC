@@ -27,6 +27,5 @@ public:
   static bool is_bad_line(std::string const &line);
   static bool is_bad_char(const unsigned char &c);
   static int getAssignmentNos(std::string s);
-
 };
 #endif // End of GRAYC_UTILS_H

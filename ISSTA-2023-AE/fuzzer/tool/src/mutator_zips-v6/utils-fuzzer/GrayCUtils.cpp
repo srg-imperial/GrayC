@@ -7,7 +7,7 @@
 int GrayCUtils::getAssignmentNos(std::string s) {
   if (s.empty())
     return 0;
-  
+
   int occurs = 0;
   std::string::size_type pos = 0;
   std::string target = " =";
@@ -21,7 +21,7 @@ int GrayCUtils::getAssignmentNos(std::string s) {
 bool GrayCUtils::is_bad_line(std::string const &line) {
   if (line.empty())
     return true;
-  
+
   // Check if too large
   if (line.size() > 12000)
     return true;

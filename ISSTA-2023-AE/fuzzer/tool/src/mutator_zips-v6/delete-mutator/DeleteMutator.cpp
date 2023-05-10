@@ -21,7 +21,7 @@ bool DeleteMutatorVisitor::VisitWhileStmt(WhileStmt *stmt) {
   Expr *cond = stmt->getCond();
   if (!cond)
     return true;
-  
+
   CharSourceRange condRange =
       CharSourceRange::getTokenRange(cond->getBeginLoc(), cond->getEndLoc());
   if (condRange.isInvalid())
@@ -30,17 +30,16 @@ bool DeleteMutatorVisitor::VisitWhileStmt(WhileStmt *stmt) {
   // Edit only if not null and valid
   m_rewriter->InsertTextBefore(stmt->getBody()->getEndLoc(), "\nbreak;\n");
   int node_id = cast<Stmt>(stmt)->getID(*m_astContext);
-  
-  auto str_ref = Lexer::getSourceText(condRange, 
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
+
+  auto str_ref = Lexer::getSourceText(
+      condRange, m_astContext->getSourceManager(), m_astContext->getLangOpts());
   if (str_ref.empty())
     return true; // if no expr, exit
-  
+
   std::string cond_call_expr_str = std::string(str_ref);
   if (cond_call_expr_str.empty())
     return true; // if no expr, exit
-  
+
   // If all okay, then do the mutation
   m_rewriter->InsertTextBefore(stmt->getBeginLoc(),
                                "\nint while_condition_" + to_string(node_id) +
@@ -60,7 +59,7 @@ bool DeleteMutatorVisitor::VisitIfStmt(IfStmt *stmt) {
   Expr *expr = stmt->getCond();
   if (!expr)
     return true;
-  
+
   CharSourceRange conditionRange =
       CharSourceRange::getTokenRange(expr->getBeginLoc(), expr->getEndLoc());
   if (conditionRange.isInvalid())
@@ -72,7 +71,7 @@ bool DeleteMutatorVisitor::VisitIfStmt(IfStmt *stmt) {
                            m_astContext->getLangOpts());
   if (condition_str.empty())
     return true; // if no expr, exit
-  
+
   std::string condition_type_str = expr->getType().getAsString();
   if (condition_str.empty() || condition_type_str.empty())
     return true;

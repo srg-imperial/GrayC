@@ -34,7 +34,7 @@ void HookExtractorVisitor::appendLineToFile(string filepath, string line) {
 
 bool HookExtractorVisitor::VisitFunctionDecl(FunctionDecl *func) {
   if (!func || m_astContext->getSourceManager().isInExternCSystemHeader(
-          func->getBeginLoc()))
+                   func->getBeginLoc()))
     return true;
 
   if (func->hasBody()) {
@@ -70,25 +70,25 @@ bool HookExtractorVisitor::VisitFunctionDecl(FunctionDecl *func) {
 
 bool HookExtractorVisitor::VisitVarDecl(clang::VarDecl *NamedDecl) {
   if (!NamedDecl || m_astContext->getSourceManager().isInExternCSystemHeader(
-          NamedDecl->getBeginLoc()))
+                        NamedDecl->getBeginLoc()))
     return true;
-  
+
   if (NamedDecl->hasGlobalStorage()) {
     CharSourceRange declRange = CharSourceRange::getTokenRange(
         NamedDecl->getBeginLoc(), NamedDecl->getEndLoc());
     if (declRange.isInvalid())
       return true; // if no decl, exit
-     
-    auto str_ref = Lexer::getSourceText(declRange, 
-        m_astContext->getSourceManager(),
-        m_astContext->getLangOpts());
+
+    auto str_ref =
+        Lexer::getSourceText(declRange, m_astContext->getSourceManager(),
+                             m_astContext->getLangOpts());
     if (str_ref.empty())
-      return true; // if no decl, exit  
-    
+      return true; // if no decl, exit
+
     std::string decl_str = std::string(str_ref);
     if (decl_str.empty())
       return true; // if no decl, exit
-    
+
     // Else, mutate
     decl_str.erase(std::remove(decl_str.begin(), decl_str.end(), '\n'),
                    decl_str.end());
@@ -99,24 +99,23 @@ bool HookExtractorVisitor::VisitVarDecl(clang::VarDecl *NamedDecl) {
 
 bool HookExtractorVisitor::VisitRecordDecl(clang::RecordDecl *RDecl) {
   if (!RDecl || m_astContext->getSourceManager().isInExternCSystemHeader(
-          RDecl->getBeginLoc()))
+                    RDecl->getBeginLoc()))
     return true;
 
   CharSourceRange declRange =
       CharSourceRange::getTokenRange(RDecl->getBeginLoc(), RDecl->getEndLoc());
   if (declRange.isInvalid())
-      return true; // if no decl, exit
-  
-  auto str_ref = Lexer::getSourceText(declRange, 
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
+    return true; // if no decl, exit
+
+  auto str_ref = Lexer::getSourceText(
+      declRange, m_astContext->getSourceManager(), m_astContext->getLangOpts());
   if (str_ref.empty())
-    return true; // if no decl, exit  
-  
+    return true; // if no decl, exit
+
   std::string decl_str = std::string(str_ref);
   if (decl_str.empty())
     return true; // if no decl, exit
-    
+
   // Else, mutate
   appendLineToFile("./Global-Info.txt", decl_str + ";" + "\n");
   return true;

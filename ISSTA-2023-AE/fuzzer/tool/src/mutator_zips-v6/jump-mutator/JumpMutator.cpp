@@ -17,15 +17,15 @@ static llvm::cl::OptionCategory MyToolCategory("Jump Mutator option");
 
 bool JumpMutatorVisitor::VisitWhileStmt(WhileStmt *stmt) {
   if (!stmt || m_astContext->getSourceManager().isInExternCSystemHeader(
-          stmt->getBeginLoc()))
+                   stmt->getBeginLoc()))
     return true;
 
   int node_id_loop = (stmt)->getID(*m_astContext);
   int line_no = (m_astContext->getSourceManager())
                     .getSpellingLineNumber(stmt->getBeginLoc());
-  if (line_no >= m_latest_loop_start && line_no <= m_latest_loop_end) 
+  if (line_no >= m_latest_loop_start && line_no <= m_latest_loop_end)
     return true;
-  
+
   std::string loop_break_var = "loop_break_" + to_string(node_id_loop);
   std::string loop_break_decl = "\nint " + loop_break_var + " = 0;\n";
   std::string jump_construct = pick_break_or_continue();
@@ -49,15 +49,15 @@ bool JumpMutatorVisitor::VisitWhileStmt(WhileStmt *stmt) {
     }
   }
   m_latest_loop_start = ((m_astContext->getSourceManager())
-                           .getSpellingLineNumber(stmt->getBeginLoc()));
+                             .getSpellingLineNumber(stmt->getBeginLoc()));
   m_latest_loop_end = ((m_astContext->getSourceManager())
-                         .getSpellingLineNumber(stmt->getEndLoc()));
+                           .getSpellingLineNumber(stmt->getEndLoc()));
   return true;
 }
 
 bool JumpMutatorVisitor::VisitForStmt(ForStmt *stmt) {
   if (!stmt || m_astContext->getSourceManager().isInExternCSystemHeader(
-          stmt->getBeginLoc()))
+                   stmt->getBeginLoc()))
     return true;
 
   int line_no = (m_astContext->getSourceManager())
@@ -68,12 +68,12 @@ bool JumpMutatorVisitor::VisitForStmt(ForStmt *stmt) {
   int node_id_loop = (stmt)->getID(*m_astContext);
   std::string loop_break_var = "loop_break_" + to_string(node_id_loop);
   std::string loop_break_decl = "\nint " + loop_break_var + " = 0;\n";
-  
+
   int loop_break_limit = GrayCCustomRandom::GetInstance()->rnd_dice() + 1;
   std::string jump_construct = pick_break_or_continue();
-  std::string loop_break_block = loop_break_var + "++;\n" + "if(" + loop_break_var +
-                            "<=" + to_string(loop_break_limit) + "){\n" +
-                            jump_construct + ";\n}\n";
+  std::string loop_break_block =
+      loop_break_var + "++;\n" + "if(" + loop_break_var +
+      "<=" + to_string(loop_break_limit) + "){\n" + jump_construct + ";\n}\n";
   if (stmt->getBeginLoc().isInvalid())
     return true;
 
@@ -90,9 +90,9 @@ bool JumpMutatorVisitor::VisitForStmt(ForStmt *stmt) {
     }
   }
   m_latest_loop_start = ((m_astContext->getSourceManager())
-                           .getSpellingLineNumber(stmt->getBeginLoc()));
+                             .getSpellingLineNumber(stmt->getBeginLoc()));
   m_latest_loop_end = ((m_astContext->getSourceManager())
-                         .getSpellingLineNumber(stmt->getEndLoc()));
+                           .getSpellingLineNumber(stmt->getEndLoc()));
   return true;
 }
 

@@ -9,7 +9,7 @@ mutation to activate each cycle and how to apply a mutation.
 We run the fuzzer with different seeds each time via Libfuzzer's
 --seed options.
 
-Use constants in GrayCAggressivenessConsts.h to control the 
+Use constants in GrayCAggressivenessConsts.h to control the
 aggressiveness of mutators
 
 Methods:
@@ -28,9 +28,9 @@ rnd_dice(unsigned dice_size) -
 #ifndef GRAYC_CUSTOM_RANDOM_H
 #define GRAYC_CUSTOM_RANDOM_H
 
+#include "GrayCAggressivenessConsts.h"
 #include <cassert>
 #include <random>
-#include "GrayCAggressivenessConsts.h"
 
 using namespace std;
 

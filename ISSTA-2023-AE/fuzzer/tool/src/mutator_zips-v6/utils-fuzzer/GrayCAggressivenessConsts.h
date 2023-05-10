@@ -8,7 +8,7 @@ TODO: add the terminology from the paper here.
 TODO: move constants from expression-mutator/ExpressionMutator.h to here
 
 Mutators:
-- AppendExpression + ExtractExpression = inner random machanism 
+- AppendExpression + ExtractExpression = inner random machanism
       from original fuzzer (e.g. Csmith)
 
 - Control with constants in this header:
@@ -22,7 +22,7 @@ Mutators:
 #define GRAYC_AGGRESSIVENESS_CONSTS_H
 
 // TODO: Reduce/increase the probability to get more aggressive fuzzing
-#define __AssignmentMutator_VisitUnaryOperator_CONST 0.1    
+#define __AssignmentMutator_VisitUnaryOperator_CONST 0.1
 
 // TODO: Reduce/increase the probability to get more aggressive fuzzing
 #define __AssignmentMutator_VisitDeclStmtr_CONST 0.5
@@ -42,7 +42,7 @@ Mutators:
 // Decrease the probability to get more aggressive fuzzing
 #define __DUPLICATE_MUTATOR_REMOVE_RHS_OR_LHS 0.9
 
-// Increase the probability to get more aggressive fuzzing 
+// Increase the probability to get more aggressive fuzzing
 #define __DUPLICATE_MUTATOR_DUP_OR_DEL 0.5
 
 // Increase the probability to get more aggressive fuzzing

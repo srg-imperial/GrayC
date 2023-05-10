@@ -18,7 +18,7 @@ static llvm::cl::OptionCategory MyToolCategory("Append Expression Option");
 bool AppendExpressionMutatorVisitor::VisitFunctionDecl(FunctionDecl *func) {
   if (!func)
     return true;
-  
+
   static std::string _fuzzer_csmith_decl_file =
       "/home/user42/llvm-project/llvm-fuzzer-build/fuzzer_csmith-tmp/"
       "csmith_decls.txt";
@@ -45,7 +45,7 @@ bool AppendExpressionMutatorVisitor::VisitFunctionDecl(FunctionDecl *func) {
       std::string csmith_expr = readFileIntoString(_fuzzer_csmith_expr_file);
       if (csmith_decls.empty() || csmith_expr.empty())
         return true; // missing declrations
-      
+
       m_rewriter->InsertTextBefore(lastStmt->getBeginLoc(),
                                    "\n{\n" + csmith_decls + "\n" + csmith_expr +
                                        ";\n}\n");
@@ -58,11 +58,11 @@ bool AppendExpressionMutatorVisitor::VisitFunctionDecl(FunctionDecl *func) {
                    "CANNOT FIND LAST STATEMENT"
                 << std::endl;
     }
-    
+
     lastStmt = nullptr;
     body = nullptr;
   }
-  
+
   return true;
 }
 

@@ -1,5 +1,5 @@
 //===--- constant-mutator/ConstantMutator.h and
-//constant-mutator/ConstantMutator.cpp -----===//
+// constant-mutator/ConstantMutator.cpp -----===//
 //
 // TODO: add License information
 //

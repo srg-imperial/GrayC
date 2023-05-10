@@ -37,30 +37,30 @@ bool ConstantMutatorVisitor::VisitVarDecl(VarDecl *D) {
 bool ConstantMutatorVisitor::VisitFloatingLiteral(FloatingLiteral *flit) {
   if (!flit)
     return true; // no data to work on
-  if (!m_rewriter->isRewritable(flit->getBeginLoc()) || !m_rewriter->isRewritable(flit->getEndLoc()))
-      return true; // Do not attempt to edit if is not rewritable
-  
+  if (!m_rewriter->isRewritable(flit->getBeginLoc()) ||
+      !m_rewriter->isRewritable(flit->getEndLoc()))
+    return true; // Do not attempt to edit if is not rewritable
+
   CharSourceRange const_range =
       CharSourceRange::getTokenRange(flit->getBeginLoc(), flit->getEndLoc());
   if (const_range.isInvalid())
     return true; // if no const, exit
-  
-  auto str_ref = Lexer::getSourceText(const_range, 
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
+
+  auto str_ref =
+      Lexer::getSourceText(const_range, m_astContext->getSourceManager(),
+                           m_astContext->getLangOpts());
   if (str_ref.empty())
     return true; // if no const, exit
-  
+
   std::string const_str = std::string(str_ref);
   if (const_str.empty())
     return true; // if no const, exit
-  
+
   // Else continue with the mutation
   size_t point_loc = const_str.find(".");
-  if (point_loc != std::string::npos 
-      && (point_loc + 1) <= const_str.length()) {
+  if (point_loc != std::string::npos && (point_loc + 1) <= const_str.length()) {
     std::string mutated_float = to_string(mutate_constant_float()) + "." +
-                           to_string(mutate_constant_float());
+                                to_string(mutate_constant_float());
     m_rewriter->ReplaceText(const_range, "(" + mutated_float + ")");
   }
   return true;
@@ -74,17 +74,17 @@ bool ConstantMutatorVisitor::VisitIntegerLiteral(IntegerLiteral *ilit) {
       CharSourceRange::getTokenRange(ilit->getBeginLoc(), ilit->getEndLoc());
   if (const_range.isInvalid())
     return true; // if no const, exit
-  
-  auto str_ref = Lexer::getSourceText(const_range, 
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
+
+  auto str_ref =
+      Lexer::getSourceText(const_range, m_astContext->getSourceManager(),
+                           m_astContext->getLangOpts());
   if (str_ref.empty())
     return true; // if no const, exit
-  
+
   std::string const_str = std::string(str_ref);
   if (const_str.empty())
     return true; // if no const, exit
-    
+
   // Number + not empty
   if (const_str != "" && is_number(const_str)) {
     int array_line_no = ((m_astContext->getSourceManager())
@@ -92,46 +92,59 @@ bool ConstantMutatorVisitor::VisitIntegerLiteral(IntegerLiteral *ilit) {
     const Expr *expr_un = cast<Expr>(ilit);
     if (!expr_un)
       return true;
-    
+
     // Control the aggressiveness
-    bool allow_bad_access = GrayCCustomRandom::GetInstance()->rnd_yes_no(__CONSTANT_MUTATOR_ALLOW_NEG_NUM_MEMORY_ACCESS_CONST);
-    bool allow_bad_size = GrayCCustomRandom::GetInstance()->rnd_yes_no(__CONSTANT_MUTATOR_ALLOW_BIG_NUM_MEMORY_CONST);
-    bool is_array_decl = (!isInArraySubsrcipt(*expr_un) && ((array_line_no != m_latest_array_line_no) || (array_line_no < 0)));
-    
+    bool allow_bad_access = GrayCCustomRandom::GetInstance()->rnd_yes_no(
+        __CONSTANT_MUTATOR_ALLOW_NEG_NUM_MEMORY_ACCESS_CONST);
+    bool allow_bad_size = GrayCCustomRandom::GetInstance()->rnd_yes_no(
+        __CONSTANT_MUTATOR_ALLOW_BIG_NUM_MEMORY_CONST);
+    bool is_array_decl =
+        (!isInArraySubsrcipt(*expr_un) &&
+         ((array_line_no != m_latest_array_line_no) || (array_line_no < 0)));
+
     // Check to reduce big array and access out of bounds
-    if (!is_array_decl || (allow_bad_access && allow_bad_size)) { // or not an decl, or we allow both big and neg
+    if (!is_array_decl ||
+        (allow_bad_access &&
+         allow_bad_size)) { // or not an decl, or we allow both big and neg
       int line_no = (m_astContext->getSourceManager())
-                  .getSpellingLineNumber(ilit->getBeginLoc());
+                        .getSpellingLineNumber(ilit->getBeginLoc());
       int line_no_next = line_no + 1;
       if (line_no < 0)
-        return true; // if line number invalid, exit 
-  
+        return true; // if line number invalid, exit
+
       // Extracting the line to be edited as a string
       SourceLocation thisline =
           (m_astContext->getSourceManager())
-              .translateLineCol((m_astContext->getSourceManager()).getMainFileID(),
-                                line_no, 1); // get the beginning of line line_no
+              .translateLineCol(
+                  (m_astContext->getSourceManager()).getMainFileID(), line_no,
+                  1); // get the beginning of line line_no
       if (thisline.isInvalid())
         return true;
-  
+
       SourceLocation nextline =
           (m_astContext->getSourceManager())
-              .translateLineCol((m_astContext->getSourceManager()).getMainFileID(),
-                                line_no_next,
-                                1); // get the beginning of line line_no+1
+              .translateLineCol(
+                  (m_astContext->getSourceManager()).getMainFileID(),
+                  line_no_next,
+                  1); // get the beginning of line line_no+1
       if (nextline.isInvalid())
         return true;
-  
+
       SourceRange srange(thisline, nextline);
       if (srange.isInvalid())
         return true;
-      
-      string string_to_rewrite = string(Lexer::getSourceText(CharSourceRange::getTokenRange(srange), m_astContext->getSourceManager(), m_astContext->getLangOpts(), 0));
-      // llvm::outs()<<string_to_rewrite<<"\n"; // log the extracted current line
+
+      string string_to_rewrite = string(Lexer::getSourceText(
+          CharSourceRange::getTokenRange(srange),
+          m_astContext->getSourceManager(), m_astContext->getLangOpts(), 0));
+      // llvm::outs()<<string_to_rewrite<<"\n"; // log the extracted current
+      // line
 
       // If we are not in array, then check the line is ok to edit
-      bool allow_bad = (is_array_decl && allow_bad_access && allow_bad_size) || (!is_array_decl && allow_bad_access);
-      if (!string_to_rewrite.empty() && (allow_bad || !GrayCUtils::is_bad_line(string_to_rewrite))) {
+      bool allow_bad = (is_array_decl && allow_bad_access && allow_bad_size) ||
+                       (!is_array_decl && allow_bad_access);
+      if (!string_to_rewrite.empty() &&
+          (allow_bad || !GrayCUtils::is_bad_line(string_to_rewrite))) {
         // Mutate the line
         m_rewriter->ReplaceText(
             const_range, "(" + mutate_constant_integers(const_str) + ")");
@@ -142,7 +155,7 @@ bool ConstantMutatorVisitor::VisitIntegerLiteral(IntegerLiteral *ilit) {
           "(" +
           mutate_constant_integers(
               const_str, ((array_line_no == m_latest_array_line_no) ? 1 : 0),
-              allow_bad_size ? UINT_MAX	: SHRT_MAX) +
+              allow_bad_size ? UINT_MAX : SHRT_MAX) +
           ")";
       m_rewriter->ReplaceText(const_range, to_append);
     }
@@ -155,7 +168,7 @@ ConstantMutatorVisitor::mutate_constant_integers(std::string constant,
                                                  int b_lower, int b_upper) {
   if (constant.empty())
     return "-0";
-  
+
   bool is_array_sub_script = (b_lower < b_upper);
   // Sign flip, bit flip, char flip or replace with hexa
   if (is_array_sub_script)
@@ -164,13 +177,16 @@ ConstantMutatorVisitor::mutate_constant_integers(std::string constant,
     return std::to_string(
         GrayCCustomRandom::GetInstance()->rnd_dice(b_upper - b_lower) +
         b_lower);
-  
-  if (GrayCCustomRandom::GetInstance()->rnd_yes_no(__CONSTANT_MUTATOR_INTEGER_EDITS_CONST))
-    return ((GrayCCustomRandom::GetInstance()->rnd_yes_no(__CONSTANT_MUTATOR_INTEGER_EDITS_CONST))
+
+  if (GrayCCustomRandom::GetInstance()->rnd_yes_no(
+          __CONSTANT_MUTATOR_INTEGER_EDITS_CONST))
+    return ((GrayCCustomRandom::GetInstance()->rnd_yes_no(
+                __CONSTANT_MUTATOR_INTEGER_EDITS_CONST))
                 ? bit_flip(constant)
                 : sign_flip(constant));
   else
-    return ((GrayCCustomRandom::GetInstance()->rnd_yes_no(__CONSTANT_MUTATOR_INTEGER_EDITS_CONST))
+    return ((GrayCCustomRandom::GetInstance()->rnd_yes_no(
+                __CONSTANT_MUTATOR_INTEGER_EDITS_CONST))
                 ? replace2hex(constant.length())
                 : replace1char(constant));
 }
@@ -179,7 +195,7 @@ cType ConstantMutatorVisitor::guessType(std::string const_str,
                                         bool is_sign_flip) {
   if (const_str.empty())
     return cUChar;
-  
+
   // If zero can be any of the data types
   if (const_str.compare("0") == 0) {
     return (
@@ -334,7 +350,7 @@ ConstantMutatorVisitor::bit_flip_ulong_long(unsigned long long constant) {
 std::string ConstantMutatorVisitor::sign_flip(std::string constant) {
   if (constant.empty())
     return "-0";
-    
+
   // Sign flip
   char *endptr;
   errno = 0; // init before using strtol
@@ -358,7 +374,7 @@ std::string ConstantMutatorVisitor::sign_flip(std::string constant) {
 std::string ConstantMutatorVisitor::bit_flip(std::string constant) {
   if (constant.empty())
     return "-0";
-    
+
   // Bit flip
   cType t = guessType(constant);
   long long number = 0;
@@ -410,15 +426,16 @@ std::string ConstantMutatorVisitor::bit_flip(std::string constant) {
 std::string ConstantMutatorVisitor::replace1char(std::string const_str) {
   if (const_str.empty())
     return "-0";
-    
+
   static std::string dec_characters = "0123456789";
   unsigned len = const_str.length();
   for (unsigned i = 1; i < len;
        i++) { // Starts from 1 and not 0, to avoid too large numbers
     if (std::isdigit(const_str[i]) &&
-        GrayCCustomRandom::GetInstance()->rnd_yes_no(__CONSTANT_MUTATOR_FLIP_CHARS_CONST)) {
-      const_str[i] =
-          dec_characters[GrayCCustomRandom::GetInstance()->rnd_dice(dec_characters.size())];
+        GrayCCustomRandom::GetInstance()->rnd_yes_no(
+            __CONSTANT_MUTATOR_FLIP_CHARS_CONST)) {
+      const_str[i] = dec_characters[GrayCCustomRandom::GetInstance()->rnd_dice(
+          dec_characters.size())];
       return const_str;
     }
   }
@@ -428,17 +445,19 @@ std::string ConstantMutatorVisitor::replace1char(std::string const_str) {
 std::string ConstantMutatorVisitor::replace2hex(unsigned length) {
   if (length < 1)
     return "0";
-    
+
   // Else replace with hexa
   static std::string hex_characters = "0123456789ABCDEF";
 
   // Avoid creating always small numbers vs. too big - can be at most 15 digits
   std::string rand_str = "0x";
   unsigned new_length =
-      (length + GrayCCustomRandom::GetInstance()->rnd_dice(5)) % hex_characters.size();
+      (length + GrayCCustomRandom::GetInstance()->rnd_dice(5)) %
+      hex_characters.size();
   for (unsigned i = 0; i < new_length; i++)
-    rand_str.append(hex_characters,
-                    GrayCCustomRandom::GetInstance()->rnd_dice(hex_characters.size()), 1);
+    rand_str.append(
+        hex_characters,
+        GrayCCustomRandom::GetInstance()->rnd_dice(hex_characters.size()), 1);
   return rand_str;
 }
 
@@ -449,8 +468,8 @@ int ConstantMutatorVisitor::mutate_constant_float() {
 void ConstantMutatorFrontendAction::EndSourceFileAction() {
   SourceManager &src_mngr = m_rewriter->getSourceMgr();
   std::error_code error_code;
-  std::string base_filename =
-      std::string(src_mngr.getFileEntryForID(src_mngr.getMainFileID())->getName());
+  std::string base_filename = std::string(
+      src_mngr.getFileEntryForID(src_mngr.getMainFileID())->getName());
   std::string::size_type const p(base_filename.find_last_of('.'));
   std::string file_without_extension = base_filename.substr(0, p);
   llvm::raw_fd_ostream outFile(file_without_extension + ".mutated.c",

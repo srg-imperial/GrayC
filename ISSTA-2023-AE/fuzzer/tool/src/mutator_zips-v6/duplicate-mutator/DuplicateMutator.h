@@ -4,8 +4,8 @@
 #include "clang/AST/AST.h"
 #include "clang/AST/ASTConsumer.h"
 #include "clang/AST/ASTContext.h"
-#include "clang/AST/RecursiveASTVisitor.h"
 #include "clang/AST/ParentMapContext.h"
+#include "clang/AST/RecursiveASTVisitor.h"
 #include "clang/Driver/Options.h"
 #include "clang/Frontend/ASTConsumers.h"
 #include "clang/Frontend/CompilerInstance.h"
@@ -27,7 +27,7 @@ private:
   Rewriter *m_rewriter;
   int m_tmp_latest_loop_line = -99;
   SourceLocation m_last_sloc;
-        
+
 public:
   explicit DuplicateMutatorVisitor(CompilerInstance *CI, Rewriter *rewriter)
       : m_astContext(&(CI->getASTContext())),
@@ -36,8 +36,8 @@ public:
     m_rewriter->setSourceMgr(m_astContext->getSourceManager(),
                              m_astContext->getLangOpts());
   }
-  
-  bool isInNestedAssignment(const clang::Expr& expr);
+
+  bool isInNestedAssignment(const clang::Expr &expr);
 
   bool VisitWhileStmt(WhileStmt *stmt) {
     m_tmp_latest_loop_line = (m_astContext->getSourceManager())

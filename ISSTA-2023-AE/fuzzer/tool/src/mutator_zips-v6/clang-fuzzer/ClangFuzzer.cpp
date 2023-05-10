@@ -49,7 +49,8 @@ std::vector<std::string> FuzzerArgument::_mutator_options = {
     "bin/duplicate-mutator",  "bin/constant-mutator",  "bin/delete-mutator",
     "bin/assignment-mutator", "bin/expression-mutator"};
 std::string FuzzerArgument::_fuzzer_remove_parens =
-    "(ulimit -Sf 2000 ; ulimit -St 30 ; /home/user42/remove-parens/build/remove-parens";
+    "(ulimit -Sf 2000 ; ulimit -St 30 ; "
+    "/home/user42/remove-parens/build/remove-parens";
 
 std::string FuzzerArgument::_fuzzer_csmith_cmd =
     "/home/user42/llvm-project/csmith/build/src/csmith";
@@ -65,7 +66,7 @@ std::string FuzzerArgument::_csmith_exec_command =
     "(ulimit -Sf 2000 ; ulimit -St 30 ; " + FuzzerArgument::_fuzzer_csmith_cmd +
     " --max-struct-fields 2 --max-block-depth 2 --no-global-variables "
     "--no-structs --no-unions --no-pointers --max-expr-complexity 4 "
-    "--concise --no-bitfields --no-checksum --no-jumps --no-volatile-pointers " 
+    "--concise --no-bitfields --no-checksum --no-jumps --no-volatile-pointers "
     "--no-const-pointers --no-builtins --no-global-variables --compact-output "
     "--no-arrays --max-funcs 1 --seed ";
 std::string FuzzerArgument::_original_corpus_dir = "";
@@ -324,7 +325,7 @@ extern "C" size_t LLVMFuzzerCustomMutator(uint8_t *Data, size_t Size,
             << ") " << FuzzerArgument::_comp_flags << " <" << get_date() << ">"
             << std::endl;
 #endif
-    
+
   // Outout to RAM folder
   std::string temp_file_name = exec_get_output(
       std::string("mktemp " + FuzzerArgument::_fuzzer_output_temp_dir +
@@ -469,7 +470,7 @@ extern "C" size_t LLVMFuzzerCustomMutator(uint8_t *Data, size_t Size,
                               std::to_string(Seed) + " > " +
                               FuzzerArgument::_fuzzer_csmith_c_file + ")")
                       .c_str());
-        
+
       // Call extract expression mutator
       std::system(std::string(mutator_path + "bin/extract-expression " +
                               FuzzerArgument::_fuzzer_csmith_c_file +
@@ -486,19 +487,20 @@ extern "C" size_t LLVMFuzzerCustomMutator(uint8_t *Data, size_t Size,
     } else {
       return Size;
     }
-      
+
     // If mutations did not fail
     if (result_libtooling == 0) {
       std::string rawname =
           temp_file_name.substr(0, temp_file_name.find_last_of("."));
-        
+
       // Fix mutated file - parentheses - remove any extra
-      std::system(std::string(FuzzerArgument::_fuzzer_remove_parens + 
-                            " " + rawname + ".mutated.c" + " -- -w " + 
-                            FuzzerArgument::_lib_paths + 
-                            " -\I/home/user42/remove-parens/third_party/clang+llvm-13.0.1/lib/clang/13.0.1/include/)")
-                            .c_str());
-        
+      std::system(std::string(FuzzerArgument::_fuzzer_remove_parens + " " +
+                              rawname + ".mutated.c" + " -- -w " +
+                              FuzzerArgument::_lib_paths +
+                              " -\I/home/user42/remove-parens/third_party/"
+                              "clang+llvm-13.0.1/lib/clang/13.0.1/include/)")
+                      .c_str());
+
       // Load mutated program from file
       std::ifstream in(rawname + ".mutated.c");
       std::cerr << "Processed File: " << copy_filename << " with mutation "
@@ -553,7 +555,7 @@ extern "C" size_t LLVMFuzzerCustomMutator(uint8_t *Data, size_t Size,
                     << "\n";
     }
   }
-  
+
   // Counter++ and return
   FuzzerArgument::_counter = FuzzerArgument::_counter + 1;
   return Size;

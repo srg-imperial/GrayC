@@ -21,7 +21,7 @@ using namespace clang::driver;
 using namespace clang::tooling;
 using namespace llvm;
 
-// Control fuzzing aggressiveness 
+// Control fuzzing aggressiveness
 #define _MUTATOR_MAX_EXPR_SIZE 50
 #define _MUTATOR_MAX_SUB_EXPR_SIZE 30
 #define _MUTATOR_EXPR_SIZE 5

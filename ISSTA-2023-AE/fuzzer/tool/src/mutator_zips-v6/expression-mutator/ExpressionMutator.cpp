@@ -17,7 +17,7 @@ static llvm::cl::OptionCategory MyToolCategory("Expression Mutator option");
 void ExpressionMutatorVisitor::collect_sub_expressions(BinaryOperator *stmt) {
   if (!stmt)
     return;
-  
+
   // Else continue with the edit
   CharSourceRange stmt_range =
       CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
@@ -30,11 +30,11 @@ void ExpressionMutatorVisitor::collect_sub_expressions(BinaryOperator *stmt) {
     Expr *sub_expr_l = stmt->getLHS();
     if (!sub_expr_l)
       return;
-    
+
     Expr *sub_expr_r = stmt->getRHS();
     if (!sub_expr_r)
       return;
- 
+
     Stmt *sub_stmt = cast<Stmt>(stmt);
     if (!sub_stmt)
       return;
@@ -44,46 +44,46 @@ void ExpressionMutatorVisitor::collect_sub_expressions(BinaryOperator *stmt) {
         sub_expr_r->getBeginLoc(), sub_expr_r->getEndLoc());
     if (sub_declRange_r.isInvalid())
       return; // if no decl, exit
-    
-    auto str_ref = Lexer::getSourceText(sub_declRange_r, 
-        m_astContext->getSourceManager(),
-        m_astContext->getLangOpts());
+
+    auto str_ref =
+        Lexer::getSourceText(sub_declRange_r, m_astContext->getSourceManager(),
+                             m_astContext->getLangOpts());
     if (str_ref.empty())
       return; // if no decl, exit
-    
+
     std::string sub_decl_str_r = std::string(str_ref);
     if (sub_decl_str_r.empty())
       return; // if no decl, exit
-    
+
     CharSourceRange sub_declRange_l = CharSourceRange::getTokenRange(
         sub_expr_l->getBeginLoc(), sub_expr_l->getEndLoc());
     if (sub_declRange_l.isInvalid())
       return; // if no decl, exit
-    
-    str_ref = Lexer::getSourceText(sub_declRange_l, 
-        m_astContext->getSourceManager(),
-        m_astContext->getLangOpts());
+
+    str_ref =
+        Lexer::getSourceText(sub_declRange_l, m_astContext->getSourceManager(),
+                             m_astContext->getLangOpts());
     if (str_ref.empty())
       return; // if no decl, exit
-    
+
     std::string sub_decl_str_l = std::string(str_ref);
     if (sub_decl_str_r.empty())
       return;
-    
+
     bool is_rhs_arithmetic = sub_expr_r->getType()->isArithmeticType();
     if (is_rhs_arithmetic) {
       if (sub_decl_str_r.empty())
         return;
       expr_to_add.push_back(sub_decl_str_r);
     }
-    
+
     bool is_lhs_arithmetic = sub_expr_l->getType()->isArithmeticType();
     if (is_lhs_arithmetic) {
       if (sub_decl_str_l.empty())
         return;
       expr_to_add.push_back(sub_decl_str_l);
     }
-    
+
     // For loop to iterate through the RHS expression sub-tree
     for (Stmt::child_iterator j_se = sub_stmt->child_begin(),
                               e = sub_stmt->child_end();
@@ -106,15 +106,16 @@ bool ExpressionMutatorVisitor::VisitBinaryOperator(BinaryOperator *stmt) {
     return true;
 
   // Randomly skip to avoid replacing the expression - higher more aggressive
-  if (GrayCCustomRandom::GetInstance()->rnd_yes_no(__EXPRESSION_MUTATOR_REPLACE_BIN_OP_SUB_EXPR))
+  if (GrayCCustomRandom::GetInstance()->rnd_yes_no(
+          __EXPRESSION_MUTATOR_REPLACE_BIN_OP_SUB_EXPR))
     return true;
-  
+
   // Check if visited
   int binary_op_node_id = (stmt)->getID(*m_astContext);
   if (std::find(visited_node_IDs.begin(), visited_node_IDs.end(),
                 binary_op_node_id) != visited_node_IDs.end())
     return true;
-  
+
   int line_no_check = (m_astContext->getSourceManager())
                           .getSpellingLineNumber(stmt->getBeginLoc());
   int line_no_next = line_no_check + 1;
@@ -133,12 +134,14 @@ bool ExpressionMutatorVisitor::VisitBinaryOperator(BinaryOperator *stmt) {
   SourceRange srange(thisline, nextline);
   if (srange.isInvalid())
     return true;
-  
+
   // Check if it is a bad line - do not edit
-  string string_to_rewrite = string(Lexer::getSourceText(CharSourceRange::getTokenRange(srange), m_astContext->getSourceManager(), m_astContext->getLangOpts(), 0));
+  string string_to_rewrite = string(Lexer::getSourceText(
+      CharSourceRange::getTokenRange(srange), m_astContext->getSourceManager(),
+      m_astContext->getLangOpts(), 0));
   if (string_to_rewrite.empty() || GrayCUtils::is_bad_line(string_to_rewrite)) {
     // Debug print
-    //llvm::outs() << ">>Stopped due to expression size\n";
+    // llvm::outs() << ">>Stopped due to expression size\n";
     return true;
   }
   // if (stmt->isAssignmentOp() && !isVisited) ==> then mutate
@@ -146,20 +149,20 @@ bool ExpressionMutatorVisitor::VisitBinaryOperator(BinaryOperator *stmt) {
       CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
   if (binop_range.isInvalid())
     return true; // if no decl, exit
-  
-  auto str_ref = Lexer::getSourceText(binop_range, 
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
+
+  auto str_ref =
+      Lexer::getSourceText(binop_range, m_astContext->getSourceManager(),
+                           m_astContext->getLangOpts());
   if (str_ref.empty())
     return true; // if no decl, exit
-      
+
   std::string bstmt_str = std::string(str_ref);
   if (bstmt_str.empty())
     return true; // if no decl, exit
   if (GrayCUtils::getAssignmentNos(bstmt_str) > 1) {
-    return true; // if got multiple assignement, return 
+    return true; // if got multiple assignement, return
   }
-  
+
   expr_to_add.clear();
   collect_sub_expressions(stmt);
   if (expr_to_add.empty())
@@ -193,17 +196,17 @@ bool ExpressionMutatorVisitor::VisitIfStmt(IfStmt *istmt) {
       CharSourceRange::getTokenRange(cond->getBeginLoc(), cond->getEndLoc());
   if (cond_range.isInvalid())
     return true; // if no cond, exit
-  
-  auto str_ref = Lexer::getSourceText(cond_range, 
-      m_astContext->getSourceManager(),
-      m_astContext->getLangOpts());
+
+  auto str_ref =
+      Lexer::getSourceText(cond_range, m_astContext->getSourceManager(),
+                           m_astContext->getLangOpts());
   if (str_ref.empty())
     return true; // if no cond, exit
-  
+
   std::string cond_str = std::string(str_ref);
   if (cond_str.empty())
     return true; // if no cond, exit
-  
+
   Stmt *sub_stmt = cast<Stmt>(cond);
   if (!sub_stmt)
     return true;
@@ -225,7 +228,7 @@ bool ExpressionMutatorVisitor::VisitIfStmt(IfStmt *istmt) {
           return true; // if cannot cast, return
         if (sub_bop->isAssignmentOp())
           return true;
-  
+
         int node_id_args = (sub_bop)->getID(*m_astContext);
         visited_node_IDs.push_back(node_id_args);
         collect_sub_expressions(sub_bop);

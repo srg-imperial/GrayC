@@ -12,7 +12,7 @@
 ///
 /// TODO: Add details and mapping to the mutations in the paper.
 ///
-/// Classes: ExtractExpressionMutatorVisitor, 
+/// Classes: ExtractExpressionMutatorVisitor,
 /// ExtractExpressionMutatorASTConsumer,
 /// ExtractExpressionMutatorFrontendAction
 /// </summary>
@@ -50,17 +50,17 @@ bool ExtractExpressionMutatorVisitor::VisitDeclStmt(clang::DeclStmt *stmt) {
         CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
     if (binop_range.isInvalid())
       return true; // if no expr, exit
-    
-    auto str_ref = Lexer::getSourceText(binop_range, 
-        m_astContext->getSourceManager(),
-        m_astContext->getLangOpts());
+
+    auto str_ref =
+        Lexer::getSourceText(binop_range, m_astContext->getSourceManager(),
+                             m_astContext->getLangOpts());
     if (str_ref.empty())
       return true;
-    
+
     std::string stmt_str = std::string(str_ref);
     if (stmt_str.empty())
       return true;
-    
+
     // Mutate if all okay
     appendLineToFile(_fuzzer_csmith_decl_file, stmt_str);
   }
@@ -78,25 +78,25 @@ bool ExtractExpressionMutatorVisitor::VisitBinaryOperator(
       "csmith_expr.txt";
 
   int line_no = (m_astContext->getSourceManager())
-                    .getSpellingLineNumber(stmt->getBeginLoc());  
+                    .getSpellingLineNumber(stmt->getBeginLoc());
 
   if (stmt->isAssignmentOp() && !done_one &&
       (line_no >= decl_start_line_number && line_no <= decl_end_line_number)) {
     CharSourceRange binop_range =
-      CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
+        CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
     if (binop_range.isInvalid())
       return true; // if no expr, exit
-  
-    auto str_ref = Lexer::getSourceText(binop_range, 
-        m_astContext->getSourceManager(),
-        m_astContext->getLangOpts());
+
+    auto str_ref =
+        Lexer::getSourceText(binop_range, m_astContext->getSourceManager(),
+                             m_astContext->getLangOpts());
     if (str_ref.empty())
       return true;
-    
+
     std::string bstmt_str = std::string(str_ref);
     if (bstmt_str.empty())
       return true;
-    
+
     done_one = true;
     appendLineToFile(_fuzzer_csmith_expr_file, bstmt_str + ";");
   }
