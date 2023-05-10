@@ -79,11 +79,8 @@ private:
 public:
   virtual std::unique_ptr<clang::ASTConsumer>
   CreateASTConsumer(CompilerInstance &CI, StringRef file) final {
-    // return std::unique_ptr<clang::ASTConsumer>(new
-    // DuplicateMutatorASTConsumer(&CI, m_rewriter)); // pass CI pointer to
-    // ASTConsumer
     return std::make_unique<DuplicateMutatorASTConsumer>(
-        &CI, m_rewriter); // KEM: you should not use new in this method at all.
+        &CI, m_rewriter);
   }
 
   virtual ~DuplicateMutatorFrontendAction() { delete m_rewriter; }
