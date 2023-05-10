@@ -1,6 +1,6 @@
 # GrayC: Greybox Fuzzing of Compilers and Analysers for C
 
-GrayC is a greybox fuzzer for C compilers and code analysers and a libfuzzer-based tool. In brief, GrayC works as follows. Starting with an initial corpus of test programs, it uses libfuzzer to perform coverage-guided mutation-based fuzzing of the Clang/LLVM compiler, for a time-limited period. Unconventionally, the purpose of this use of libfuzzer is not to find bugs at this stage, but rather to generate a large corpus of interesting test programs. This is achieved by (a) using a custom mutator to yield an interesting space of compiler test programs that are statically-valid, and (b) saving every test program that libfuzzer produces to an external directory.
+GrayC is a greybox fuzzer for C compilers and analysers and is a libfuzzer-based tool. In brief, GrayC works as follows. Starting with an initial corpus of test programs, it uses libfuzzer to perform coverage-guided mutation-based fuzzing of the Clang/LLVM compiler for a time-limited period. Unconventionally, the purpose of this use of libfuzzer is not to find bugs at this stage but rather to generate a large corpus of interesting test programs. It is achieved by (a) using a custom mutator to yield an interesting space of compiler test programs that are statically-valid, and (b) saving every test program that libfuzzer produces to an external directory.
 
 After the fuzzing run has completed, GrayC processes this external directory of test programs to test compilers (scripts) and code analysers and to extract new UB-free test programs for compilers test suites (via the enhanCer).
 
@@ -39,12 +39,16 @@ A copy of this README is in the working directory of the Docker image, ~/grayc/R
 
 ## Detailed Instructions
 
-Here we describe how to reproduce all the tables and graphs data for section 5 in the paper: the controlled experiments with the additionl other 8 tools compared with.
+Here we describe how to reproduce all the tables and graphs data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
 
 ### Step-by-Step instructions
 
+
+## Reusability of GrayC
+First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
+
 ### Build from source
-GrayC was implemented on top of LibFuzzer and so its build may take long, depends on your machine: it builds LLVM 12 with instrumentation.
+GrayC was implemented on top of LibFuzzer, and so its build may take long, depending on your machine: it builds LLVM 12 with instrumentation.
 
 Please follow the instructions in this README.md file.
 
