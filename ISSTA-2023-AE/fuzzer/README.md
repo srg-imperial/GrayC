@@ -271,6 +271,7 @@ This folder contains the code (tool), corpus (data), and seeds for randomisatin 
 The folder tool, contains include library for GrayC (llvm-fuzzer-includes/), and the sourc files of GrayC aggressive ( mutator_zips-v4) and GrayC conservative ( mutator_zips-v6).
 
 The full structure is:
+```
 .
 └── fuzzer/
     ├── data/
@@ -309,3 +310,4 @@ The full structure is:
                 ├── jump-mutator
                 ├── rename-transform
                 └── utils-fuzzer
+```
