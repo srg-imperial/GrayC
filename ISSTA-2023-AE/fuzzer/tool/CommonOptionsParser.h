@@ -87,9 +87,7 @@ public:
          const char *Overview = nullptr);
 
   /// Returns a reference to the loaded compilations database.
-  CompilationDatabase &getCompilations() {
-    return *Compilations;
-  }
+  CompilationDatabase &getCompilations() { return *Compilations; }
 
   /// Returns a list of source file paths to process.
   const std::vector<std::string> &getSourcePathList() const {
@@ -138,7 +136,7 @@ private:
   adjustCommands(std::vector<CompileCommand> Commands) const;
 };
 
-}  // namespace tooling
-}  // namespace clang
+} // namespace tooling
+} // namespace clang
 
-#endif  // LLVM_TOOLS_CLANG_INCLUDE_CLANG_TOOLING_COMMONOPTIONSPARSER_H
+#endif // LLVM_TOOLS_CLANG_INCLUDE_CLANG_TOOLING_COMMONOPTIONSPARSER_H
