@@ -22,16 +22,8 @@ void ExpressionMutatorVisitor::collect_sub_expressions(BinaryOperator *stmt) {
   if (!stmt->isCommaOp() && !stmt->isPtrMemOp()) {
     Expr *sub_expr_r = stmt->getRHS();
     Expr *sub_expr_l = stmt->getLHS();
-    // bool is_rhs_pointer = sub_expr_r->getType()->isAnyPointerType() ||
-    // sub_expr_r->getType()->isStructureType() ||
-    // sub_expr_r->getType()->isRecordType() ||
-    // sub_expr_r->getType()->isVectorType();
     bool is_rhs_arithmetic = sub_expr_r->getType()->isArithmeticType();
     bool is_lhs_arithmetic = sub_expr_l->getType()->isArithmeticType();
-    // bool is_lhs_pointer = sub_expr_l->getType()->isAnyPointerType() ||
-    // sub_expr_l->getType()->isStructureType() ||
-    // sub_expr_l->getType()->isRecordType() ||
-    // sub_expr_l->getType()->isVectorType();
     Stmt *sub_stmt = cast<Stmt>(stmt);
     CharSourceRange sub_declRange_r = CharSourceRange::getTokenRange(
         sub_expr_r->getBeginLoc(), sub_expr_r->getEndLoc());
@@ -195,7 +187,6 @@ int main(int argc, const char **argv) {
   // Create Random Generaton, uniform real dist
   unsigned long Seed = std::stoi(argv[argc - 1]); // Seed is always in the end
   ClangFuzzerCustomRandom::CreateInstance(Seed, 60); // Dice of 60
-  // std::cout << "Seed in mutator: " << Seed << "\n";
 
   // create a new Clang Tool instance (a LibTooling environment)
   ClangTool Tool(op.getCompilations(), op.getSourcePathList());
