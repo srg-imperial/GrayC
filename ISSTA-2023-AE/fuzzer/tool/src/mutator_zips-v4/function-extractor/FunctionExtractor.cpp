@@ -16,36 +16,12 @@
 
 static llvm::cl::OptionCategory MyToolCategory("Hook Extractor option");
 
-// map<string,string> global_varnames;
-// string filename = "";
-// string file_without_extension = "";
-//  bool GlobalTraverser::VisitDeclRefExpr(DeclRefExpr *dexpr) {
-//    if
-//    (astContext->getSourceManager().isInExternCSystemHeader(dexpr->getBeginLoc())){
-//      return true;
-//    }
-//
-//    if (auto *vdecl = dyn_cast<VarDecl>(dexpr->getDecl())) {
-//      CharSourceRange declRange =
-//      CharSourceRange::getTokenRange(vdecl->getBeginLoc(),
-//      vdecl->getEndLoc()); string decl_str =
-//      string(Lexer::getSourceText(declRange, astContext->getSourceManager(),
-//      astContext->getLangOpts())); if
-//      (decl_str.find("argc")!=std::string::npos ||
-//      decl_str.find("argv")!=std::string::npos){
-//        contains_call = true;
-//      }
-//    }
-//    return true;
-//  }
-
 void HookExtractorVisitor::appendLineToFile(string filepath, string line) {
   std::ofstream file;
   // can't enable exception now because of gcc bug that raises ios_base::failure
   // with useless message file.exceptions(file.exceptions() |
   // std::ios::failbit);
-  //  if (remove(filepath.c_str()) != 0)
-  //      errs() << "Problem deleting given file\n";
+  
   file.open(filepath, std::ios::out | std::ios::app);
   if (file.fail())
     errs() << "Problem opening given file\n";
@@ -73,10 +49,7 @@ bool HookExtractorVisitor::VisitFunctionDecl(FunctionDecl *func) {
       std::string func_text = std::string(Lexer::getSourceText(
           CharSourceRange::getCharRange(func->getSourceRange()),
           m_astContext->getSourceManager(), m_astContext->getLangOpts()));
-      // CharSourceRange bodyRange =
-      // CharSourceRange::getTokenRange(body->getBeginLoc(), body->getEndLoc());
-      // std::string body_str = std::string(Lexer::getSourceText(bodyRange,
-      // m_astContext->getSourceManager(), m_astContext->getLangOpts()));
+      
       for (unsigned i = 0; i < func->getNumParams(); i++)
         paramInfo = paramInfo +
                     func->parameters()[i]->getOriginalType().getAsString() +
