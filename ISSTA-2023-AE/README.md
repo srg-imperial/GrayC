@@ -46,6 +46,8 @@ Here we describe how to reproduce all the tables and graphs data for section 5 i
 ### Build from source
 GrayC was implemented on top of LibFuzzer and so its build may take long, depends on your machine: it builds LLVM 12 with instrumentation.
 
+Please follow the instructions in this README.md file.
+
 
 ### Project structure
 
