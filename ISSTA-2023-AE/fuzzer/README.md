@@ -267,5 +267,45 @@ Both modes use the same commands, however, one might be installed in /home/user4
 
 ## 4. Structure of the Source file of GrayC (fuzzer part)
 
-fuzzer
-  | 
+This folder contains the code (tool), corpus (data), and seeds for randomisatin (seeds).
+The folder tool, contains include library for GrayC (llvm-fuzzer-includes/), and the sourc files of GrayC aggressive ( mutator_zips-v4) and GrayC conservative ( mutator_zips-v6).
+
+The full structure is:
+.
+└── fuzzer/
+    ├── data/
+    │   ├── setA-Controlle-experiments-data-12-Nov-21
+    │   ├── setA
+    │   └── setB
+    ├── seeds
+    └── tool/
+        ├── llvm-fuzzer-includes/
+        │   └── lib
+        └── src/
+            ├── mutator_zips-v4/
+            │   ├── assignment-mutator
+            │   ├── clang-fuzzer
+            │   ├── constant-mutator
+            │   ├── delete-mutator
+            │   ├── duplicate-mutator
+            │   ├── expression-mutator
+            │   ├── function-extractor
+            │   ├── function-merger
+            │   ├── jump-mutator
+            │   ├── random-manager
+            │   └── rename-transform
+            └── mutator_zips-v6/
+                ├── append-expression
+                ├── assignment-mutator
+                ├── clang-fuzzer
+                ├── constant-mutator
+                ├── delete-mutator
+                ├── duplicate-mutator
+                ├── expression-mutator
+                ├── extract-expression
+                ├── function-extractor
+                ├── function-merger
+                ├── global-extractor
+                ├── jump-mutator
+                ├── rename-transform
+                └── utils-fuzzer
