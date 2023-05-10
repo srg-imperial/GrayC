@@ -72,6 +72,8 @@ There is NO warranty; not even for MERCHANTABILITY or
 FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
+*Note:* GrayC can work with newer versions of all of the above. However, it requires LLVM-12 source code, as we discuss next.
+
 ## 2. Download LLVM/CLANG 12 
 
 Use this script to download LLVM 12:
