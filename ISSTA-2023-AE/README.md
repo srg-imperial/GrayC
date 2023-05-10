@@ -10,7 +10,7 @@ This repository contains the data and code to reproduce the results in the paper
 
 # GrayC Artifact ISSTA 2023
 
-## Getting Started
+## 1. Getting Started
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes. To start the docker container:
 ```
@@ -37,14 +37,14 @@ todo
 
 A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
 
-## Detailed Instructions
+## 2. Detailed Instructions
 
 Here we describe how to reproduce all the tables and graphs data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
 
 ### Step-by-Step instructions
 
 
-## Reusability of GrayC
+## 3. Reusability of GrayC
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
 
 ### Build from source
