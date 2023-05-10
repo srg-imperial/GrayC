@@ -16,7 +16,6 @@
 static llvm::cl::OptionCategory MyToolCategory("Assignment Mutator option");
 
 bool AssignmentMutatorVisitor::VisitUnaryOperator(UnaryOperator *stmt) {
-  // if ((rand() % 100) >= 150) {
   if (ClangFuzzerCustomRandom::GetInstance()->rnd_yes_no(0.1)) {
     CharSourceRange decl_range =
         CharSourceRange::getTokenRange(stmt->getBeginLoc(), stmt->getEndLoc());
