@@ -16,7 +16,6 @@ static llvm::cl::OptionCategory MyToolCategory("Function Adder option");
 
 bool FunctionCombinerVisitor::VisitFunctionDecl(clang::FunctionDecl *func) {
   std::string append_string = getCandidateStatements();
-  // string funcName = func->getNameInfo().getName().getAsString();
   if ((func->isMain())) {
     std::string replace_func_text = getCandidateMutatingFunctionMap();
     replace_func_text = append_string + ";\n" + replace_func_text;
