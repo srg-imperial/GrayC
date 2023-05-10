@@ -264,3 +264,8 @@ for example:
 cd /home/user42/llvm-csmith-1/llvm-fuzzer-build/ ; bin/clang-fuzzer /home/user42/llvm-csmith-1/../setA/ -detect_leaks=0 -max_len=1000000 -rss_limit_mb=4096 -create_missing_dirs=1 -ignore_crashes=1 -ignore_timeouts=1 -ignore_ooms=1
 ```
 Both modes use the same commands, however, one might be installed in /home/user42/llvm-csmith-1/ while the othere in /home/user42/llvm-csmith-2/.
+
+## 4. Structure of the Source file of GrayC (fuzzer part)
+
+fuzzer
+  | 
