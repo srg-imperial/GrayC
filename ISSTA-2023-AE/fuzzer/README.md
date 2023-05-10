@@ -100,7 +100,7 @@ remote: Compressing objects: 100% (33/33), done.
 remote: Total 5796 (delta 16), reused 20 (delta 9), pack-reused 5754
 Receiving objects: 100% (5796/5796), 9.10 MiB | 1.28 MiB/s, done.
 Resolving deltas: 100% (3921/3921), done.
- >> Downloaded LLVM 12 and Csmith into /home/user42//.sources_12VL.Z5NTi89.tmp.
+ >> Downloaded LLVM 12 and Csmith into /home/user42/.sources_12VL.Z5NTi89.tmp.
 ```
 This script downloaded the source file of llvm 12 into /home/user42//.sources_12VL.Z5NTi89.tmp. Your folder will have a bit different name, but with a similar pattern.
 Next, we need to create a folder where the fuzzer will be installed and edit few files.
@@ -115,7 +115,7 @@ and for GrayC-aggeressive:
 ```
 for example:
 ```
-./install-fuzzers-agg.sh /home/user42/git /home/user42/git/.sources_12VL.9IeP8DH.tmp /home/user42/git/GrayC-AE 3
+./install-fuzzers-agg.sh /home/user42/ /home/user42/.sources_12VL.9IeP8DH.tmp /home/user42/GrayC/ISSTA-2023-AE 3
 ```
 
 Run first this script:
@@ -124,7 +124,7 @@ Run first this script:
 ```
 We use copy-number '1' unless we want to run the fuzzer in parallel with several copies. For this AE, please always use 1. For example:
 ```
-./2-prepare-env.sh /home/user42/ /home/user42//.sources_12VL.Z5NTi89.tmp 1
+./2-prepare-env.sh /home/user42/ /home/user42/.sources_12VL.Z5NTi89.tmp 1
 ```
 and it looks like this when running it:
 ```
@@ -150,11 +150,11 @@ drwxrwxr-x 4 user42 user42        4096 Jul 21 11:33 llvm-csmith-1
 
 Then copy the fuzzer files into the llvm-csmith-1 folder, using this script:
 ```
-./3-copy-fuzzer.sh <base-folder>/GrayC-AE/AE/tool/src/ <base-folder>/llvm-csmith-1/ <base-folder>
+./3-copy-fuzzer.sh <base-folder>/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ <base-folder>/llvm-csmith-1/ <base-folder>
 ```
 for example:
 ```
-./3-copy-fuzzer.sh /home/user42/GrayC-AE/AE/tool/src/ /home/user42/llvm-csmith-1/ /home/user42/
+./3-copy-fuzzer.sh /home/user42/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ /home/user42/llvm-csmith-1/ /home/user42/
 >> Done.
 ```
 To install the GrayC aggressive, use this script instead:
