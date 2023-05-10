@@ -1,6 +1,7 @@
 #!/bin/bash
 llvm_folder=$1
 
+## Build the fuzzer
 rm -rf $llvm_folder/llvm-fuzzer-build $llvm_folder/llvm-install $llvm_folder/build_info
 mkdir  $llvm_folder/llvm-fuzzer-build $llvm_folder/llvm-install $llvm_folder/build_info
 cd $llvm_folder/llvm-fuzzer-build
