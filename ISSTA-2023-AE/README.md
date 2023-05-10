@@ -1,4 +1,4 @@
-# GrayC: Greybox Fuzzing of Compilers and Analysers for C
+# I. GrayC: Greybox Fuzzing of Compilers and Analysers for C
 
 GrayC is a greybox fuzzer for C compilers and analysers and is a libfuzzer-based tool. In brief, GrayC works as follows. Starting with an initial corpus of test programs, it uses libfuzzer to perform coverage-guided mutation-based fuzzing of the Clang/LLVM compiler for a time-limited period. Unconventionally, the purpose of this use of libfuzzer is not to find bugs at this stage but rather to generate a large corpus of interesting test programs. It is achieved by (a) using a custom mutator to yield an interesting space of compiler test programs that are statically-valid, and (b) saving every test program that libfuzzer produces to an external directory.
 
@@ -8,16 +8,18 @@ Implementation Details: we have implemented our approach as a set of tools, the 
 
 This repository contains the data and code to reproduce the results in the paper "GrayC: Greybox Fuzzing of Compilers and Analysers for C".
 
-# GrayC Artifact ISSTA 2023
+# II. GrayC Artifact ISSTA 2023
 
-## 1. Getting Started
+## II.A Getting Started
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes. To start the docker container:
 ```
 docker run -it grayc
 ```
 
-### Artifact’s requirements
+If you do not wish to use a docker image, we discuss the next section how to install from source GrayC, however, since we are testing mature C compilers (that is the instumented code is huge!), we recommand using our docker image.
+
+## II.B Artifact’s requirements (for installing from source)
 gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, 
 
 Note 1: CMake 3.13.4 or higher is required.
@@ -29,10 +31,43 @@ Most of the packages required can be installed with (e.g.) brew or apt, however,
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
 3. Regexp based tool for mutating generic source code across numerous languages (for evaluation against other approaches): https://github.com/agroce/universalmutator/releases/tag/v1.0.18
 
-### Steps to check the basic functionality of the artifact
-todo
+You can then continue an follow the instructions in X.
 
-A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
+## II.C Steps to check the basic functionality of the artifact
+
+If you choose to install from source or use our docker image (recommanded), you can test if all is working by running the fuzzer.
+
+1. Docker. Run the following:
+```
+cd /home/user42/
+./run-grayc-conservative.sh
+```
+DO NOT WORRY IF YOU GET C ERROR MESSAGES, we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us.
+
+2. Installing from source scripts, prints a command at the end of the installation, please use this command "as is" to test all is working well.
+
+Once starting the fuzzer it should print into the screen or logger file (if you redirect it), something like these messages:
+```
+-I/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-includes/ -I/usr/include/x86_64-linux-gnu/ 
+INFO: found LLVMFuzzerCustomMutator (0x678f00). Disabling -len_control by default.
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1262126277
+INFO: Loaded 1 modules   (1580480 inline 8-bit counters): 1580480 [0xbc29090, 0xbdaae50),
+INFO: Loaded 1 PC tables (1580480 PCs): 1580480 [0xbdaae50,0xd5c8a50),
+INFO:     2005 files found in /home/user42/fuzzers//copy_1/llvm-csmith-1/../setA/
+INFO: seed corpus: files: 2005 min: 108b max: 38752b total: 1483224b rss: 108Mb
+#128	pulse  cov: 25891 ft: 50183 corp: 124/20Kb exec/s: 42 rss: 296Mb
+#256	pulse  cov: 30047 ft: 67200 corp: 242/44Kb exec/s: 28 rss: 451Mb
+#512	pulse  cov: 35096 ft: 85253 corp: 469/100Kb exec/s: 25 rss: 500Mb
+#1024	pulse  cov: 40160 ft: 115514 corp: 912/252Kb exec/s: 23 rss: 510Mb
+#2006	INITED cov: 46427 ft: 195668 corp: 1814/1356Kb exec/s: 16 rss: 547Mb
+Processed File: fuzzer-file-0 with mutation bin/delete-mutator
+	NEW_FUNC[1/3]: 0x67daca0 in llvm::opt::Arg::getAsString[abi:cxx11](llvm::opt::ArgList const&) const /home/user42/fuzzers/copy_1/llvm-csmith-1/llvm-source/lib/Option/Arg.cpp:68
+	NEW_FUNC[2/3]: 0x9328810 in llvm::AttributeSet::removeAttribute(llvm::LLVMContext&, llvm::Attribute::AttrKind) const /home/user42/fuzzers/copy_1/llvm-csmith-
+```
+and so on.
+
+NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
 
 ## 2. Detailed Instructions
 
