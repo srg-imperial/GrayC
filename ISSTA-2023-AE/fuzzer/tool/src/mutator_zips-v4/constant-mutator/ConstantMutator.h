@@ -79,7 +79,6 @@ private:
   static std::string bit_flip(std::string constant);
   static std::string replace2hex(unsigned length);
   static std::string replace1char(std::string const_str);
-  // TODO: can we think of other options to do so?
 
   ///////////////////////////
   // Float types mutations //
