@@ -18,14 +18,11 @@ docker run -it grayc
 ```
 
 ### Artifact’s requirements
-git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), 
+gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, 
 
 Note 1: CMake 3.13.4 or higher is required.
 
-Note 2: creduce installed with this command:
-```
-
-```
+Note 2: GCC-10 or higher is required. We have tested our artifact with GCC-10 and GCC-11.
 
 Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
 1. gfauto: https://github.com/google/graphicsfuzz.git
