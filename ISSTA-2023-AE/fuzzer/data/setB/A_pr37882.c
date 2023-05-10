@@ -1,0 +1,17 @@
+/* corpus/pr37882.c */
+/* PR middle-end/37882 */
+
+struct S
+{
+  unsigned char b : 3;
+} s;
+
+int
+main ()
+{
+  s.b = 4;
+  if (s.b > 0 && s.b < 4)
+    { __builtin_abort (); }
+  return 0;
+}
+/* ProgramSourceLLVM */
