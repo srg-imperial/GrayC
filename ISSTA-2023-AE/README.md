@@ -43,6 +43,9 @@ Here we describe how to reproduce all the tables and graphs data for section 5 i
 
 ### Step-by-Step instructions
 
+We are comparing aginst many other fuzzers in our experiments. Here are links to thier Git repositories:
+1. Csmith: 
+2. 
 
 ## 3. Reusability of GrayC
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
