@@ -34,10 +34,6 @@ public:
                              m_astContext->getLangOpts());
   }
 
-  // Caused memory leak because of how RecursiveASTVisitor is defined
-  // virtual ~AssignmentMutatorVisitor() { m_rewriter=0; Assignment
-  // m_astContext; }
-
   // Methods
   bool VisitUnaryOperator(UnaryOperator *stmt);
   bool VisitDeclStmt(clang::DeclStmt *stmt);
@@ -74,8 +70,6 @@ public:
   virtual std::unique_ptr<clang::ASTConsumer>
   CreateASTConsumer(CompilerInstance &CI, StringRef file) final {
     m_astContext = (&(CI.getASTContext()));
-    // return std::unique_ptr<clang::ASTConsumer>(new
-    // AssignmentMutatorASTConsumer(m_astContext, m_rewriter));
     return std::make_unique<AssignmentMutatorASTConsumer>(m_astContext,
                                                           m_rewriter);
   }
