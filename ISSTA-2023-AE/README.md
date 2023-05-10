@@ -202,8 +202,10 @@ First of all, GrayC can use to detect bugs in mature compilers. We discuss below
 ### Build from source
 GrayC was implemented on top of LibFuzzer, and so its build may take long, depending on your machine: it builds LLVM 12 with instrumentation.
 
-Please follow the instructions in this README.md file.
-
+Please follow the instructions in this README.md file (under GrayC/ISSTA-2023-AE/fuzzer/README.md).
+```
+nano GrayC/ISSTA-2023-AE/fuzzer/README.md
+```
 
 ### Project structure
 
