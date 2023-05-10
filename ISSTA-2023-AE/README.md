@@ -18,7 +18,7 @@ docker run -it grayc
 ```
 
 ### Artifact’s requirements
-git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev), 
+git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), 
 
 Note 1: CMake 3.13.4 or higher is required.
 
