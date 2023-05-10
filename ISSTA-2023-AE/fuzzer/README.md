@@ -265,6 +265,46 @@ cd /home/user42/llvm-csmith-1/llvm-fuzzer-build/ ; bin/clang-fuzzer /home/user42
 ```
 Both modes use the same commands, however, one might be installed in /home/user42/llvm-csmith-1/ while the othere in /home/user42/llvm-csmith-2/.
 
+What happens when you run GrayC?
+
+- The log is printed into the screen (or file, if you redirect it).
+- Each time a statically invalid program produced, it will dump the errors to the screen like this:
+```
+#2303	NEW    cov: 46591 ft: 196387 corp: 1881/1447Kb lim: 1000000 exec/s: 11 rss: 579Mb L: 427/38752 MS: 3 Custom-Custom-Custom-
+/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c:12:19: error: expected ')'
+loop_break_88894++;
+                  ^
+/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c:11:8: note: to match this '('
+    if (
+       ^
+/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c:14:1: error: 'break' statement not in loop or switch statement
+break;
+^
+/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c:17:25: error: expected ';' after expression
+e != ((29283) != (*b)--))
+                        ^
+                        ;
+/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c:17:25: error: expected expression
+4 errors generated.
+Error while processing /home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c.
+```
+BUT THIS IS A NORMAL BEHAVIOUR OF GRAYC - WHY? these errors can help tune the aggresivness of the tool, and hence it is useful to have them there. 
+- GrayC also logs the mutators activated and state on which program (fuzz/resultant program):
+```
+Processed File: fuzzer-file-277 with mutation bin/duplicate-mutator
+Processed File: fuzzer-file-278 with mutation bin/delete-mutator
+Processed File: fuzzer-file-279 with mutation bin/append-expression
+Processed File: fuzzer-file-280 with mutation bin/append-expression
+Processed File: fuzzer-file-281 with mutation bin/assignment-mutator
+Processed File: fuzzer-file-282 with mutation bin/jump-mutator
+Processed File: fuzzer-file-285 with mutation bin/duplicate-mutator
+Processed File: fuzzer-file-286 with mutation bin/expression-mutator
+#2293	NEW    cov: 46589 ft: 196382 corp: 1879/1446Kb lim: 1000000 exec/s: 11 rss: 579Mb L: 1830/38752 MS: 5 Custom-Custom-Custom-Custom-Custom-
+Processed File: fuzzer-file-287 with mutation bin/assignment-mutator
+Processed File: fuzzer-file-288 with mutation bin/append-expression
+#2295	NEW    cov: 46589 ft: 196383 corp: 1880/1447Kb lim: 1000000 exec/s: 11 rss: 579Mb L: 318/38752 MS: 2 Custom-Custom-
+```
+
 ## 4. Structure of the Source files of GrayC (fuzzer part)
 
 This folder contains the code (tool), corpus (data), and seeds for randomisatin (seeds).
