@@ -73,22 +73,7 @@ public:
     return true;
   }
 
-  // bool VisitTypedefNameDecl(TypedefNameDecl *tdef){
-  //   string tdef_text =
-  //   Lexer::getSourceText(CharSourceRange::getCharRange(tdef->getSourceRange()),
-  //   m_astContext->getSourceManager(), m_astContext->getLangOpts());
-  //   appendLineToFile("./Record-Info.txt","New-Typedef\t" + tdef_text + "\n");
-  //   return true;
-  // }
-  // bool VisitTypeDecl(TypeDecl *tdef){
-  //   string tdef_text =
-  //   Lexer::getSourceText(CharSourceRange::getCharRange(tdef->getSourceRange()),
-  //   m_astContext->getSourceManager(), m_astContext->getLangOpts());
-  //   appendLineToFile("./Record-Info.txt","New-Typedef\t" + tdef_text + "\n");
-  //   return true;
-  // }
   bool VisitRecordDecl(clang::RecordDecl *rd) {
-    // RecordDecl *r_decl = rd->getDefinition();
     appendLineToFile("./Record-Info.txt",
                      "New-Record\t" + rd->getNameAsString() + "\n");
     for (RecordDecl::field_iterator j_se = rd->field_begin(),
