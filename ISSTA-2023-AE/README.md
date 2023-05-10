@@ -43,9 +43,26 @@ Here we describe how to reproduce all the tables and graphs data for section 5 i
 
 ### Step-by-Step instructions
 
-We are comparing aginst many other fuzzers in our experiments. Here are links to thier Git repositories:
-1. Csmith: 
-2. 
+During our evaluation, we installed the following tools (with the exact versions used in the experiments)
+ 1. Experiments on LLVM 12.0.1 (version from the 4th of October 2021)
+ 2. ninja 1.8.2
+ 3. cmake 3.20.0
+ 4. fdupes 1.6.1
+ 5. remove-parens (Git version: 1b2c68e)
+ 6. flex 2.6.4
+ 7. m4 1.4.18
+
+
+ 
+We are comparing aginst many other fuzzers in our experiments. Here are links to thier Git repositories.
+
+### Evaluation with:
+ 1. Csmith 2.4.0: https://github.com/csmith-project/csmith
+ 2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
+ 3. universalmutator v1.0.18: TODO
+ 4. grammarinator-generate 19.3: TODO
+ 
+Note: Csmith requires also m4; we used m4 1.4.18.
 
 ## 3. Reusability of GrayC
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
