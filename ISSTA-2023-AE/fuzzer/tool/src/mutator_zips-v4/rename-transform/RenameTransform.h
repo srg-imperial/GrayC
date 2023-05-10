@@ -65,9 +65,6 @@ private:
 public:
   virtual std::unique_ptr<clang::ASTConsumer>
   CreateASTConsumer(CompilerInstance &CI, StringRef file) final {
-    // return std::unique_ptr<clang::ASTConsumer>(new
-    // HookExtractorASTConsumer(&CI, m_rewriter)); // pass CI pointer to
-    // ASTConsumer
     return std::make_unique<HookExtractorASTConsumer>(&CI, m_rewriter);
   }
 
