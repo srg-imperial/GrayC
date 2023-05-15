@@ -114,7 +114,7 @@ We prepared wrapper scripts for the rest of the scripts to install several insta
 ### 3.1 Quick Installation of GrayC (conservative and aggeressive modes)
 To run the wrapper for GrayC-conservative:
 ```
-./install-fuzzers.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
+./install-fuzzers-cons.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
 ```
 and for GrayC-aggeressive:
 ```
@@ -131,7 +131,7 @@ Note: it is enough to run the two scripts above to have GrayC installed in your 
 
 
 ### 3.2 Additional Details
-We disccus under the hood of install-fuzzers.sh and install-fuzzers-agg.sh scipts. These contain two stages: pre-processing and installaton
+We disccus under the hood of install-fuzzers-cons.sh and install-fuzzers-agg.sh scipts. These contain two stages: pre-processing and installaton
 
 #### 3.2.1 Pre-processing
 Run first this script:
