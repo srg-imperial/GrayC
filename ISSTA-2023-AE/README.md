@@ -16,6 +16,11 @@ This Docker image contains a pre-built version of GrayC. It also includes all th
 ```
 docker run -it grayc
 ```
+Then you need to run all the experiments as user42 (just a random user name we picked for this artifact!). Just in case, run:
+```
+su - user42
+```
+
 If you do not wish to use a docker image, we discuss in the next section how to install it from source GrayC. We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB). 
 
 ## II.B Artifact’s requirements - [SKIP](README.md#iic-steps-to-check-the-basic-functionality-of-the-artifact) THIS IF USING DOCKER IMAGE
