@@ -101,21 +101,23 @@ We are comparing aginst many other fuzzers in our experiments. Here are links to
  
 Note: Csmith requires also m4; we used m4 1.4.18.
 
+## III.B Results you can reproduced with this artifact
+
 We now discuss how to reproduce the results with short fuzzing campaign, each of which takes 5 minutes. 
 Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, which will bring the testing of this part to 2400 hours of fuzzing (because we also have 10 differnet tools).
 
-## Results you can reproduced:
 - Table 5: Throughput
-- Figure 2 - LLVM coverage
-- Figure 2 - GCC coverage
-- Figure 3 - LLVM middle-end coverage
-- Figure 3 - LLVM back-end coverage
+- Figure 2: LLVM coverage
+- Figure 2: GCC coverage
+- Figure 3: LLVM middle-end coverage
+- Figure 3: LLVM back-end coverage
 - Table 6: BUG Rate in 24 hours
 
 Seeds files for running fuzzers: we added some examples of such in seeds folder of the artifact as some of the fuzzers require seeds.
 
+We give details below how to reproduce each for the results. The scripts require no graphical terminal, and hence, the results are numbers and not the graphs in the paper. However, you can re-create the graphs yourself (e.g. via excel or graphPad).
 
---- OLD TEXT ---
+--- OLD TEXT --- NEED TO RUN AND MOVE UP
 Tools' Evaluation in the paper
 ==============================
 
