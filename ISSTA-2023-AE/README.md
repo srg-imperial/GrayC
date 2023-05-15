@@ -18,7 +18,7 @@ docker run -it grayc
 ```
 If you do not wish to use a docker image, we discuss in the next section how to install it from source GrayC. We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB). 
 
-## II.B Artifact’s requirements (for installing from source)
+## II.B Artifact’s requirements (for installing from source) - SKIP THIS PART IF USING DOCKER IMAGE IN II.A
 You will need to install the following: gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
 
 Note 1: CMake 3.13.4 or higher is required.
