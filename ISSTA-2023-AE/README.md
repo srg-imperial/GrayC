@@ -272,6 +272,9 @@ nano GrayC/ISSTA-2023-AE/fuzzer/README.md
 
 ### Project structure
 
+The project contains several folders.
+	
+The [fuzzer](fuzzer) folder contains the code of GrayC and instructions how to install GrayC with a detailed inner structure at the end of its [README.md](fuzzer/README.md) file.
 
 ### Original Testing Set-up
 
