@@ -76,11 +76,9 @@ NOTE: A copy of this README is in the working directory of the Docker image, ~/g
 
 After you loaded succesfull our docker image or installed from source GrayC. You can follow the instruction below to reproduce the results in Section 5 of our paper.
 
-## III.A Detailed Instructions
+## III.A General Information
 
-Here we describe how to reproduce all the tables and graphs data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
-
-### Step-by-Step instructions
+We first describe the exact set up of our machines for the controlled experiments.
 
 During our evaluation, we installed the following tools (with the exact versions used in the experiments)
  1. Experiments on LLVM 12.0.1 (version from the 4th of October 2021)
@@ -98,6 +96,7 @@ We are comparing aginst many other fuzzers in our experiments. Here are links to
  2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
  3. universalmutator v1.0.18: TODO
  4. grammarinator-generate 19.3: TODO
+ 5. TODO: add the rest of them.
  
 Note: Csmith requires also m4; we used m4 1.4.18.
 
@@ -116,6 +115,12 @@ Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, w
 Seeds files for running fuzzers: we added some examples of such in seeds folder of the artifact as some of the fuzzers require seeds.
 
 We give details below how to reproduce each for the results. The scripts require no graphical terminal, and hence, the results are numbers and not the graphs in the paper. However, you can re-create the graphs yourself (e.g. via excel or graphPad).
+
+## III.C Detailed Instructions
+
+We describe now how to reproduce all the tables and graphs' data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
+
+### Step-by-Step instructions
 
 --- OLD TEXT --- NEED TO RUN AND MOVE UP
 Tools' Evaluation in the paper
