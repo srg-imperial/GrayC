@@ -113,7 +113,7 @@ Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, w
 - Figure 3: LLVM back-end coverage
 - Table 6: BUG Rate in 24 hours
 
-Seeds files for running fuzzers: we added some examples of such in seeds folder of the artifact as some of the fuzzers require seeds.
+Seeds files for running fuzzers: we added some examples of such in [seeds folder](fuzzer/seeds) of the artifact as some of the fuzzers require seeds.
 
 We give details below how to reproduce each for the results. The scripts require no graphical terminal, and hence, the results are numbers and not the graphs in the paper. However, you can re-create the graphs yourself (e.g. via excel or graphPad).
 
