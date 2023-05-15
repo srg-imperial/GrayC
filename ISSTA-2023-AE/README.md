@@ -101,11 +101,23 @@ We are comparing aginst many other fuzzers in our experiments. Here are links to
  
 Note: Csmith requires also m4; we used m4 1.4.18.
 
+We now discuss how to reproduce the results with short fuzzing campaign, each of which takes 5 minutes. 
+Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, which will bring the testing of this part to 2400 hours of fuzzing (because we also have 10 differnet tools).
+
+## Results you can reproduced:
+- Table 5: Throughput
+- Figure 2 - LLVM coverage
+- Figure 2 - GCC coverage
+- Figure 3 - LLVM middle-end coverage
+- Figure 3 - LLVM back-end coverage
+- Table 6: BUG Rate in 24 hours
+
+Seeds files for running fuzzers: we added some examples of such in seeds folder of the artifact as some of the fuzzers require seeds.
+
+
 --- OLD TEXT ---
 Tools' Evaluation in the paper
 ==============================
-
-Seeds files for running fuzzers: we added some examples of such in seeds folder.
 
 ## Throughput
 
@@ -231,7 +243,10 @@ We used the coverage measured above for the whole llvm test suite, to find a new
 We first measure coverage for the whole llvm test suite (git ) using the set of scripts above (./coverage/llvm-test-suite/2-download-git-llvm-wt-rt.sh, ./coverage/0-install-csmith-llvm-ninja-cov.sh, ./coverage/llvm-test-suite/3-llvm-testsuite-reg-cov.sh, ./coverage/4-gen-statistic-gcov-diff-tab_gfauto.sh).
 
 Then we measure coverage with the fuzzed corpus too (setA), filter statically or dynamically invalid programs, cross with the coverage from script 4 and reduce the test case if possible.
- 
+
+	
+Bug Rate:
+	This table describes the total confirmed unique bugs found by each tool during 24 h of fuzzing (union over 10 repetitions) in the middle- and front-end components. In the script, we will summarised the number of bugs found per unique error message, however, to properly classify these into UNIQUE BUGS, there is a manual stage of the LLVM developers feedback (that is, present the bug and ask if it is unique, and get a confirmation by the bug reporting system of LLVM, which no one (yet) can automate!).
 --- END of Old text ---
 
 
