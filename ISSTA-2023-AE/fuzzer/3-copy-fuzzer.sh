@@ -1,5 +1,5 @@
 #!/bin/bash
-src_folder=$1 
+src_folder=$1
 llvm_folder=$2
 working_folder=$3
 mutators_code=$src_folder/mutator_zips-v6	# increase version when updating
