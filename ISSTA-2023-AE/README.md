@@ -98,12 +98,17 @@ We are comparing aginst many other fuzzers in our experiments. Here are links to
  1. Csmith 2.4.0: https://github.com/csmith-project/csmith
  2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
  3. universalmutator v1.0.18: Regexp based tool for mutating generic source code across numerous languages.
+    
     3.1. GitHub https://github.com/agroce/universalmutator
+    
     3.2. GitHub 1.0.18 release https://github.com/agroce/universalmutator/releases/tag/v1.0.18  
  4. Grammarinator version grammarinator-generate 19.3
+    
     4.1. GitHub https://github.com/renatahodovan/grammarinator
+    
     4.2. Pip https://pypi.org/project/grammarinator/
- 5. TODO: add the rest of them. 
+ 5. TODO: add the rest of them.
+
 Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
 ```
 pip3 install grammarinator
