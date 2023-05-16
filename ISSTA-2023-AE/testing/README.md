@@ -24,5 +24,5 @@ https://github.com/csmith-project/csmith#install-csmith
 ```
 If this is not working for you, you need to install git, m4, and probably other packages. You can also try using our script:
 ```
-./
+./0-install-csmith.sh
 ```
