@@ -36,11 +36,6 @@ Note 2: GCC-10 or higher is required. We have tested our artifact with GCC-10 an
 Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
 1. gfauto: https://github.com/google/graphicsfuzz.git
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
-3. Regexp based tool for mutating generic source code across numerous languages (for evaluation against other approaches): https://github.com/agroce/universalmutator/releases/tag/v1.0.18
-4. Grammarinator, which can be installed: (https://pypi.org/project/grammarinator/)
-```
-pip3 install grammarinator
-```
 
 You can then need to continue and follow the instructions in "VI. Reusability of GrayC - Additional details" (the last part of this README.md file).
 
@@ -102,13 +97,18 @@ We are comparing aginst many other fuzzers in our experiments. Here are links to
 ### Evaluation with:
  1. Csmith 2.4.0: https://github.com/csmith-project/csmith
  2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
- 3. universalmutator v1.0.18: https://github.com/agroce/universalmutator
- 4. grammarinator-generate 19.3: https://github.com/renatahodovan/grammarinator
- 5. TODO: add the rest of them.
- 
+ 3. universalmutator v1.0.18: Regexp based tool for mutating generic source code across numerous languages.
+    3.1. GitHub https://github.com/agroce/universalmutator
+    3.2. GitHub 1.0.18 release https://github.com/agroce/universalmutator/releases/tag/v1.0.18  
+ 4. Grammarinator version grammarinator-generate 19.3
+    4.1. GitHub https://github.com/renatahodovan/grammarinator
+    4.2. Pip https://pypi.org/project/grammarinator/
+ 5. TODO: add the rest of them. 
+Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
+```
+pip3 install grammarinator
+```
 Note: Csmith requires also m4; we used m4 1.4.18.
-
-Most of them are available via apt in Ubuntu OS or easy to install from source. 
 
 Our docker image has all of them installed. We also suppy [scripts to install each](testing), even if it is not our software.
 
