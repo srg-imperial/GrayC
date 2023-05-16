@@ -8,6 +8,9 @@ Implementation Details: we have implemented our approach as a set of tools, the 
 
 This repository contains the data and code to reproduce the results in the paper "GrayC: Greybox Fuzzing of Compilers and Analysers for C".
 
+
+
+
 # II. GrayC Artifact ISSTA 2023 - Phase 1
 
 ## II.A Getting Started
@@ -74,6 +77,9 @@ Processed File: fuzzer-file-0 with mutation bin/delete-mutator
 and so on.
 
 NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
+
+
+
 
 # III. GrayC Artifact ISSTA 2023 - Phase 2
 
@@ -274,6 +280,8 @@ Bug Rate:
 --- END of Old text ---
 
 
+	
+	
 # VI. Reusability of GrayC - Additional details
 	
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
