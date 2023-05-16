@@ -115,7 +115,7 @@ pip3 install grammarinator
 ```
 Note: Csmith requires also m4; we used m4 1.4.18.
 
-Our docker image has all of them installed. We also suppy [scripts to install each](testing), even if it is not our software.
+Our docker image has all of them installed. We also supply [scripts to install each](testing), even if it is not our software.
 
 ## III.B Results you can reproduced with this artifact
 
