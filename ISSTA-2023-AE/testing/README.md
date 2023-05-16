@@ -1,4 +1,4 @@
-# Install Software needed
+# Install Software (not our tool)
 
 Install Frama-C:
 ```
