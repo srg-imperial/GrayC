@@ -96,19 +96,21 @@ During our evaluation, we installed the following tools (with the exact versions
  5. remove-parens (Git version: 1b2c68e)
  6. flex 2.6.4
  7. m4 1.4.18
-Most of them are available via apt in Ubuntu OS. Our docker image has all of them installed.
-We also suppy scripts to install each, even if it is not our software.
 
 We are comparing aginst many other fuzzers in our experiments. Here are links to thier Git repositories.
 
 ### Evaluation with:
- 1. Csmith 2.4.0: https://github.com/csmith-project/csmith ([our own script to install Csmith](fuzzer/0-install-csmith.sh))
+ 1. Csmith 2.4.0: https://github.com/csmith-project/csmith
  2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
- 3. universalmutator v1.0.18: TODO
- 4. grammarinator-generate 19.3: via apt or with [our own script to install Grammarinator](fuzzer/0-install-grammarinator.sh)
+ 3. universalmutator v1.0.18: https://github.com/agroce/universalmutator
+ 4. grammarinator-generate 19.3: https://github.com/renatahodovan/grammarinator
  5. TODO: add the rest of them.
  
 Note: Csmith requires also m4; we used m4 1.4.18.
+
+Most of them are available via apt in Ubuntu OS or easy to install from source. 
+
+Our docker image has all of them installed. We also suppy [scripts to install each](testing), even if it is not our software.
 
 ## III.B Results you can reproduced with this artifact
 
