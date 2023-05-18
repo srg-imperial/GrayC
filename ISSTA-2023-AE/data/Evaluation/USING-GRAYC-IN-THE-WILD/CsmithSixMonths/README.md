@@ -1,5 +1,5 @@
-We ran a continuous six-month experiment with Csmith (single machine, Ubuntu 18.04 LTS x86_64 using two virtual CPU cores and 8 GB RAM) 
-as the initial corpus contained reduced Csmith-programs. 
+We ran a six-month experiment with Csmith on a single machine with Ubuntu 18.04 LTS x86_64 using two virtual CPU cores and 8 GB RAM.
+This is because our initial corpus contained reduced Csmith-programs.
 
 With GCC-11 and CLANG-13, we did not detect bugs during that time. We have not evaluated Csmith against sanitisers and code analysers.
 
