@@ -54,7 +54,7 @@ With three reports pending:
 [25871](https://github.com/llvm/llvm-project/issues/25871), 
 [50222](https://github.com/llvm/llvm-project/issues/50222) 
 and 
-[48633](https://github.com/llvm/llvm-project/issues/4863).
+[48633](https://github.com/llvm/llvm-project/issues/48633).
 
 During our fuzzing campaigns, we used 
 [Creduce](https://embed.cs.utah.edu/creduce/), 
