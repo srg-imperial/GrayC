@@ -16,4 +16,59 @@ The bug’s status is one on the following:
 - Ind. report: Bug was independently reported or fixed
 - Unreprod.: Bug is no longer reproducible in the latest version of the compiler
 
+## Confirmed Bugs detected by GrayC:
 
+GrayC has found 30 confirmed bugs (25 previously unknown bugs):
+GCC:99990:bug
+GCC:103813:bug
+GCC:104402:bug
+GCC:103816:bug
+GCC:105232:bug
+GCC:105910:bug
+GCC:103818:bug 
+GCC:106560:bug
+GCC:107170:bug
+LLVM:49983:bug
+LLVM:49993:bug
+msvc:1427550:bug
+msvc:1427553:bug
+msvc:1427557:bug
+framac:2550:bug
+framac:2551:bug
+framac:2576:bug
+framac:2555:bug
+framac:2556:bug
+framac:2563:bug
+framac:2588:bug
+framac:2590:bug
+framac:2592:bug
+framac:2610:bug
+framac:2585:bug
+GCC:103314:bug
+GCC:84964:bug
+GCC:101636:bug
+LLVM:49081:bug
+framac:2595:bug
+
+With three reports pending: 
+[25871](https://github.com/llvm/llvm-project/issues/25871), 
+[50222](https://github.com/llvm/llvm-project/issues/50222) 
+and 
+[48633](https://github.com/llvm/llvm-project/issues/4863).
+
+During our fuzzing campaigns, we used 
+[Creduce](https://embed.cs.utah.edu/creduce/), 
+the LLVM sanitizers ([ASAN](https://clang.llvm.org/docs/AddressSanitizer.html), [MSAN](https://clang.llvm.org/docs/MemorySanitizer.html) and [UBSAN](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html))
+and [Frama-C](https://frama-c.com) as part of investigating the bugs that we found.
+This led to us to report 11 additional bugs in these tools as a by-product of our work: 
+FRAMAC:2574:bug,
+FRAMAC:2573:bug,
+FRAMAC:2559:bug,
+CReduce:msg00537:bug,
+CReduce:msg00553:bug,
+CReduce:msg00555:bug,
+CReduce:msg00551:bug,
+CReduce:msg00563:bug,
+LLVM:50332:bug,
+LLVM:53105:bug,
+LLVM:51421:bug.
