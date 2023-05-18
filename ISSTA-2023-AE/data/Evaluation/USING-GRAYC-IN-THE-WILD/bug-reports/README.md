@@ -16,7 +16,7 @@ The bug’s status is one on the following:
 - Ind. report: Bug was independently reported or fixed
 - Unreprod.: Bug is no longer reproducible in the latest version of the compiler
 
-## Confirmed Bugs detected by GrayC:
+## Bugs detected by GrayC:
 
 GrayC has found 30 confirmed bugs:
 [Frama-C-2550](https://git.frama-c.com/pub/frama-c/-/issues/2550),
