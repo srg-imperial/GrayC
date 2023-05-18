@@ -61,14 +61,14 @@ During our fuzzing campaigns, we used
 the LLVM sanitizers ([ASAN](https://clang.llvm.org/docs/AddressSanitizer.html), [MSAN](https://clang.llvm.org/docs/MemorySanitizer.html) and [UBSAN](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html))
 and [Frama-C](https://frama-c.com) as part of investigating the bugs that we found.
 This led to us to report 11 additional bugs in these tools as a by-product of our work: 
-FRAMAC:2574:bug,
-FRAMAC:2573:bug,
-FRAMAC:2559:bug,
-CReduce:msg00537:bug,
-CReduce:msg00553:bug,
-CReduce:msg00555:bug,
-CReduce:msg00551:bug,
-CReduce:msg00563:bug,
-LLVM:50332:bug,
-LLVM:53105:bug,
-LLVM:51421:bug.
+[2559](https://git.frama-c.com/pub/frama-c/-/issues/2559),
+[2573](https://git.frama-c.com/pub/frama-c/-/issues/2573),
+[2574](https://git.frama-c.com/pub/frama-c/-/issues/2574),
+[00537](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00537.html),
+[00551](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00551.html),
+[00553](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00553.html),
+[00555](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00555.html),
+[00563](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00563.html),
+[50332](https://github.com/llvm/llvm-project/issues/50332),
+[51421](https://github.com/llvm/llvm-project/issues/51421) and 
+[53105](https://github.com/llvm/llvm-project/issues/53105).
