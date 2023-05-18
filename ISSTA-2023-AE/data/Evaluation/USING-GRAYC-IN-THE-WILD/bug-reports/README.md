@@ -18,7 +18,7 @@ The bug’s status is one on the following:
 
 ## Confirmed Bugs detected by GrayC:
 
-GrayC has found 30 confirmed bugs (25 previously unknown bugs):
+GrayC has found 30 confirmed bugs:
 [Frama-C-2550](https://git.frama-c.com/pub/frama-c/-/issues/2550),
 [Frama-C-2551](https://git.frama-c.com/pub/frama-c/-/issues/2551),
 [Frama-C-2555](https://git.frama-c.com/pub/frama-c/-/issues/2555),
@@ -48,7 +48,8 @@ GrayC has found 30 confirmed bugs (25 previously unknown bugs):
 [LLVM-49993](https://github.com/llvm/llvm-project/issues/49993),
 [msvc-1427550](https://developercommunity.visualstudio.com/t/syntactically-invalid-c-program-causes-microsoft-c/1427550),
 [msvc-1427553](https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427553) and
-[msvc-1427557](https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427557).
+[msvc-1427557](https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427557), 
+With 25 previously unknown bugs and 5 reported shortly before we managed to do so.
 
 With three reports pending: 
 [LLVM-25871](https://github.com/llvm/llvm-project/issues/25871), 
