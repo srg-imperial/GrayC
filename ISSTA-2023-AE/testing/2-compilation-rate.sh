@@ -11,10 +11,9 @@ includes=$3     # "-I/home/user42/git/cov/llvm-csmith-115/csmith/build/runtime/ 
 y=0
 
 # Check for a segement, how many passing compilation
-for testcaseFile in $testcaseDir/*.segment_"$seg".fuzzer-file-* ; do
-  rm basic_output.txt; echo "yeat" > basic_output.txt
-  grep "yeat" basic_output.txt
-  ( ulimit -t 50 -Sf 90000; gcc-11 -w -O0 $includes $testcaseFile ) >> basic_output.txt 2>&1
+#for testcaseFile in $testcaseDir/*.segment_"$seg".fuzzer-file-* ; do
+for testcaseFile in $testcaseDir/segment_"$seg"/*fuzzer-file-* ; do
+  ( ulimit -t 50 -Sf 90000; gcc-11 -w -O0 $includes $testcaseFile > basic_output.txt 2>&1 )
   warnings=`cat basic_output.txt | wc -l`
   errors=`grep "error:" basic_output.txt | wc -l`
   linker=`grep "error: linker command failed" basic_output.txt | wc -l`
