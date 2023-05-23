@@ -1,0 +1,207 @@
+#include <stdarg.h>
+
+f (int n, ...)
+{
+  va_list args;
+
+  va_start (args, n);
+
+  if (va_arg (args, int) != 10)
+    abort ();
+  if (va_arg (args, long long) != 10000000000LL)
+    abort ();
+  if (va_arg (args, int) != 11)
+    abort ();
+  if (va_arg (args, long double) != 3.14L)
+    abort ();
+  if (va_arg (args, int) != 12)
+    abort ();
+  if (va_arg (args, int) != 13)
+    abort ();
+  if (va_arg (args, long long) != 20000000000LL)
+    abort ();
+  if (va_arg (args, int) != 14)
+    abort ();
+  if (va_arg (args, double) != 2.72)
+    abort ();
+
+  va_end(args);
+}
+
+main ()
+{
+int i;
+struct test2 pom;
+int j = *g = b;
+int h = a;
+int x;
+int y;
+int a = 1;
+int f = x ? e : 0;
+int z = y;
+struct X x;
+int i = 0;
+int sh = 0x100;
+short r = *a;
+unsigned int tmp = (b[i] * 0xaf286bcbULL) >> 32;
+int o;
+double i;
+double o;
+vector(8, short) v0 = {one, 1, 2, 3, 4, 5, 6, 7};
+vector(8, short) v1;
+vector(4, float) f0 = {1., 2., 3., 4.};
+vector(2, double) d0 = {1., 2.};
+;
+int tmp = x;
+int *ip = &s.i;
+int c = 1;
+volatile double *pd;
+volatile float *pf;
+unsigned i;
+void *x;
+int count[7];
+int extent[7];
+int * dest;
+const int * base;
+int dim;
+int n;
+int len;
+int result = 0;
+int rdata[3];
+int adata[9];
+int dim = 2;
+struct data_record *p;
+unsigned ret = i + 1;
+unsigned ret = i - 1;
+int x = 37;
+int c = a + 512;
+int c = a + 513;
+int b0 = -1;
+int b1 = -1;
+int b = (-3 * a[0] -3 * a[1]) / 12;
+unsigned int i;
+unsigned char *s;
+struct S s;
+struct S e = {1, 1};
+int dummy[1532];
+void *p;
+int f2 = 0;
+struct tiny x[3];
+signed char k = -83;
+int error;
+char * tmp;
+int h;
+struct two t = { 0, 0 };
+double x = -0.0;
+unsigned long long i;
+struct event event;
+struct foo bar;
+const struct T t = { 0, 0, (void *) 0, 0 };
+struct V *u;
+void *v;
+struct V *c;
+unsigned int one = 1;
+unsigned char cy;
+unsigned short sy;
+unsigned int iy;
+unsigned long ly;
+unsigned long long Ly;
+struct S s[2];
+enum e x = a;
+unsigned long long uv = 0x1000000001ULL;
+char d = a;
+V *w = &v;
+struct S m = { 5, 0, -5, 9, 5 };
+int h = 0;
+int *k = 0;
+int j = 0;
+int j=1081;
+int x = a;
+int j = i;
+const char a[][4] = {    { '1', '2', '3', '4' }, { '5' },    { '1', '2', '3', '4' }, { '5', '6' },    { '1', '2', '3', '4' }, { '5', '6', '7' },    { '1', '2', '3', '4' }, { '5', '6', '7', '8' },    { '9' }  };
+int i = 2;
+int j = i - 1;
+char a[][4] = {    { '1', '2', '3', '4' }, { '5' },    { '1', '2', '3', '4' }, { '5', '6' },    { '1', '2', '3', '4' }, { '5', '6', '7' },    { '1', '2', '3', '4' }, { '5', '6', '7', '8' },    { '9' }  };
+int i = 1;
+int i = 4;
+const struct MemArrays ma[] = {    { { '1', '2', '3', '4' }, { '5' } },    { { '1', '2', '3', '4' }, { '5', '6' } },    { { '1', '2', '3', '4' }, { '5', '6' } },    { { '1', '2', '3', '4' }, { '5', '6', '7' } },    { { '1', '2', '3', '4' }, { '5', '6', '7', '8' } },    { { '9' }, { '\0' } }  };
+struct MemArrays ma[] = {    { { '1', '2', '3', '4' }, { '5' } },    { { '1', '2', '3', '4' }, { '5', '6' } },    { { '1', '2', '3', '4' }, { '5', '6' } },    { { '1', '2', '3', '4' }, { '5', '6', '7' } },    { { '1', '2', '3', '4' }, { '5', '6', '7', '8' } },    { { '9' }, { '\0' } }  };
+const union UnionMemberArrays clu = {    { { '1', '2', '3', '4' }, { '5', '6' } }  };
+union UnionMemberArrays lvu = {    { { '1', '2', '3', '4' }, { '5', '6', '7' } }  };
+int t1;
+int *t2 = 0;
+int *const *t3[] = {	      0, 0, 0, 0, 0, 0, 0, 0, 0, &t2, 0, 0, &t2, &t2, &t2,	      &t2, &t2, 0, 0, 0, 0, 0, 0, 0, &t2, 0, 0, 0, 0, 0, 0,	      0, 0, 0, 0, &t2, 0, 0, 0, 0, 0, 0, 0, &t2, &t2,	      &t2, &t2, &t2, 0, 0, 0, 0, 0, 0, 0, &t2, 0, 0, 0,	      &t2, 0, 0, 0, &t2, 0, &t2, 0, 0, &t2, 0, 0, 0, 0,	      0, &t2, 0, 0, 0, 0, &t2, &t2, 0, 0, 0, 0, &t2, 0,	      0, 0, 0, 0, 0, 0, &t2, 0, 0, 0, 0, 0, &t2, 0, 0, 0,	      &t2, &t2	    };
+int *const **t4[] = {&t3[0]};
+int t5;
+int *t6[6] = {&d, &d};
+int *t7[] = {0};
+int t8[5] = {0};
+int *const *t9 = &t6[0];
+int *const **t10 = &t9;
+struct S s = { 1, 2, 3, 4 };
+void **w = u;
+void *t[] = { u[2], u[4] };
+int s[] = { 7, 8, 9, 10, 11, 12 };
+int tmp;
+int a[32];
+register struct block *b;
+struct blockvector *bl;
+struct block a = { 0, 0x10000, 0, 0, 1, 20 };
+struct block b = { 0x10000, 0x20000, 0, 0, 1, 20 };
+struct blockvector bv = { 2, { &a, &b } };
+struct symtab s = { &bv };
+struct blockvector *ret;
+int b=INT_MIN;
+int b=INT_MIN+1;
+int b=INT_MAX;
+int b=-1;
+struct A h[] = {    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},    {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1}, {1},  };
+int timeout = 0;
+int x = 0;
+const struct F i = { x++, };
+int tmp[2];
+volatile int i;
+char *a = "test";
+char *b = a + 2;
+char buf[10];
+int count = 0;
+int b = 0x0332F5C8;
+unsigned int u = INT_MAX;
+unsigned len;
+short j = f;
+int k = 0;
+register int i;
+register int something;
+const char *rl_cp;
+double e;
+double f;
+double g;
+int Result = 0;
+int Array[100][100];
+signed char c=-1;
+int a = 0;
+int *p;
+char *f = "0123456789abcdef";
+int c = a ^ b;
+int g = -1L;
+int h = ~d;
+long double tmp = 1.0l;
+int eval;
+int flag1;
+int t1 = val;
+int t2 = t1;
+void *a = &&lab0 + b[x];
+struct a g;
+struct Foo *f = (struct Foo *)(x - 1);
+struct Foo f;
+int res;
+struct foo k;
+int intType;
+struct tiny x;
+long x = va_arg (ap, long);
+const unsigned top[2] = {0xff7a7a7a, 0xff7a7a7a};
+const unsigned left = 0xff7b7b7b;
+
+  f (4, 10, 10000000000LL, 11, 3.14L, 12, 13, 20000000000LL, 14, 2.72);
+  exit (0);
+}

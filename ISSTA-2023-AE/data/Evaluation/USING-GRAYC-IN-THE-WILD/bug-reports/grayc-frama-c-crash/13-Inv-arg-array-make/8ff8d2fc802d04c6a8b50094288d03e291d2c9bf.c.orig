@@ -1,0 +1,22 @@
+/* corpus/00092.c */
+/* Taken from: https://github.com/c-testsuite/c-testsuite */
+int a[] = {((0xC44C1)), [((72057594037927936))] = ((11)), ((-3))};
+
+int
+main()
+{
+	if (0)
+		return ((0x0CED));
+		
+	if ((0))
+		return (0x82EF);
+	if (0)
+		return (0x28A0);
+	if (0)
+		return ((2));
+	if (0)
+		return (-(70));
+	
+	return (0xA24);
+}
+/* ProgramSourceWild */

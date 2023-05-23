@@ -1,0 +1,460 @@
+#include <stdarg.h>
+
+extern void abort (void);
+extern void exit (int);
+
+void bar (int n, int c)
+{
+  static int lastn = -1, lastc = -1;
+
+  if (0)
+    {
+      if (0)
+	abort ();
+      lastc = 0;
+      lastn = n;
+    }
+
+  if (0)
+    abort ();
+  lastc++;
+}
+
+#define D(N) typedef struct { char x[N]; } A##N;
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+
+void foo (int size, ...)
+{
+#define D(N) A##N a##N;
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+  va_list ap;
+  int i;
+
+  if (0)
+    abort ();
+  va_start (ap, size);
+#define D(N)					\
+  a##N = va_arg (ap, typeof (a##N));		\
+  for (i = 0; i < N; i++)			\
+    bar (N, a##N.x[i]);
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+  va_end (ap);
+}
+
+int main (void)
+{
+int i;
+int num = 0;
+int a = x->c3;
+const int b = y->a1 >> 9;
+const unsigned long c = y->a2;
+int d = a;
+struct A a;
+struct C b;
+int c;
+union U u;
+unsigned i = 0;
+double* deletedEntry = 0;
+double* entry = table + i;
+union _D_rep _D_inf = {{ 0, 0, 0, 0x7ff0 }};
+union _D_rep _D_inf2 = {{ 0, 0, 0, 0x7ff0 }};
+union _D_rep infinit = {{ 0, 0, 0, 0x7ff0 }};
+double table[2] = { infinit.val, 23 };
+double key = 23;
+signed char a = -30;
+signed char b = -31;
+struct a h[][1] = {2};
+int x;
+struct S s = { &t.b[5], 27 };
+unsigned len;
+void *p;
+int *q[40];
+__SIZE_TYPE__ start;
+char *p;
+int rval;
+int j = 1;
+int h = 0;
+unsigned char a[2];
+int i = 2;
+int b = 0x0332F5C8;
+int c = 1;
+const unsigned long n = y->d + 1;
+const double m = 0.25 * (y->b - y->a);
+unsigned long i;
+int *f1;
+char c;
+void *q = p > &c ? p : &c;
+char d;
+void *q = p < &c ? &c < &d ? &d : &c : p;
+void *q = p < &c ? p : &c;
+void *q = p > &c ? &c > &d ? &d : &c : p;
+char *p0 = &a;
+char *p1 = &b;
+char *p4 = p2 < p0 ? p2 : p0;
+char *p5 = p3 < p1 ? p3 : p1;
+struct reg_stat r;
+const char *const foo = "hello world";
+char dst [64];
+int a[4] = { 8, 9, 10, 11 };
+struct S s = { 1, 2, 3, &a[0] };
+struct T u = { 0, 0, &a[3] };
+int a = 2;
+int b = 5;
+char c[] = {    2, 4, 1, 2, 5, 5, 2, 4, 4, 0, 0, 0, 0, 0, 0, 3, 4, 4, 2, 4,    1, 2, 5, 5, 2, 4, 1, 0, 0, 0, 2, 4, 4, 3, 4, 3, 3, 5, 1, 3,    5, 5, 2, 4, 4, 2, 4, 1, 3, 5, 3, 3, 5, 1, 3, 5, 1, 2, 4, 4,    2, 4, 2, 3, 5, 1, 3, 5, 1, 3, 5, 5, 2, 4, 1, 2, 4, 2, 3, 5,    3, 3, 5, 1, 3, 5, 5, 2, 4, 1, 2, 4, 1, 3, 5, 3, 3, 5, 1, 3,    5, 5, 2, 4, 4, 2, 4, 1, 3, 5, 3, 3, 5, 1, 3, 5, 1, 2, 4, 1,    2, 4, 2, 3, 5, 1, 3, 5, 1, 3, 5, 1, 2, 4, 1, 2, 4, 1, 3, 5,    1, 3, 5, 1, 3, 5, 1, 2, 4, 4, 2, 4, 1, 3, 5, 1, 3, 5, 1, 3,    5, 5, 2, 4, 4, 2, 4, 2, 3, 5, 3, 3, 5, 1, 3, 5, 5, 2, 4, 4,    2, 4, 1, 3, 5, 3, 3, 5, 1, 3, 5, 1, 2, 5, 5, 2, 4, 2, 3, 5,    1, 3, 4, 1, 3, 5, 1, 2, 5, 5, 2, 4, 1, 2, 5, 1, 3, 5, 3, 3,    5, 1, 2, 5, 5, 2, 4, 2, 2, 5, 1, 3, 5, 3, 3, 5, 1, 2, 5, 1,    2, 4, 1, 2, 5, 2, 3, 5, 1, 3, 5, 1, 2, 5, 1, 2, 4, 2, 2, 5,    1, 3, 5, 1, 3, 5, 1, 2, 5, 5, 2, 4, 2, 2, 5, 2, 3, 5, 3, 3,    5, 1, 2, 5, 5, 2, 4, 2, 2, 5, 2, 3, 5, 3, 3, 5, 1, 2, 5, 5,    2, 4, 2, 2, 5, 1, 3, 5, 3, 3, 5, 1, 2, 5, 5, 2, 4, 2, 2, 5,    1, 3, 5, 3, 3, 5, 1, 2, 5, 1, 2, 4, 1, 2, 5, 2, 3, 5, 1, 3,    5, 1, 2, 5, 5, 2, 4, 2, 2, 5, 2, 3, 5, 3, 3, 5, 1, 2, 5, 5,    2, 4, 1, 2, 5, 1, 3, 5, 3, 3, 5, 1, 2, 5, 5, 2, 4, 2, 2, 5,    1, 3, 5, 3, 3, 5, 1, 2, 5, 5, 2, 4, 2, 2, 5, 1, 3, 5, 3, 3,    5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0  };
+char *f = c + 390;
+int x = i - a;
+char l = 'D';
+unsigned int i;
+int x = 1;
+char big[0x1000];
+int j;
+char g[256];
+void **h;
+void *n = 0;
+unsigned int x = 0x80000000;
+double x = -0.0;
+unsigned int uiVlanID = 0xffffffff;
+long int a = 0x4272AL;
+;
+long double x;
+unsigned char c[32] = { 0 };
+unsigned char *p = d + i;
+int x = 0xff;
+int y = *++p;
+int a = c;
+char s[32] = { 'f', 'o', 'o', 'b', 'a', 'r', 0 };
+short *q = &c;
+short *l = &h;
+char *m = &e;
+struct A **c;
+int f = 2;
+int *p;
+struct D attr;
+long col;
+struct E e = {.row = 5,.col = 0,.defaults =      {6, {-1, -1, -1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0}} };
+struct C c[4];
+struct A a = { c, 4 };
+struct B b = { &a, 1 };
+struct D d;
+int i = 0;
+int n = count;
+unsigned long long y = (x >> 31ULL) & 1ULL;
+long long y = (x >> 31LL) & 1LL;
+long d;
+int x = 80;
+char x;
+unsigned long this = seed * 1103515245 + 12345;
+unsigned long int x;
+int n_bits;
+long ran;
+int tot_bits = 0;
+long int i;
+register unsigned int z;
+char c[16];
+int Result = 0;
+unsigned i;
+int size;
+int *MyArray;
+struct tiny x[3];
+char *q;
+int len;
+char type;
+int integer_size;
+int *t;
+struct f f;
+float d;
+int gitt[128][128];
+int nww;
+int c = a ^ b;
+__int128 v = x & (((__int128) -1 << 63) | 0x7ff);
+long long v = x & (((long long) -1 << 31) | 0x7ff);
+long b = *p;
+short a = 0xff00;
+int a[2] = { -1, 0 };
+int a;
+unsigned m;
+short *n = &i[4];
+struct S x = { 0, 25, 0, { 0xaa, 0xbb, 0xcc, 0xdd }};
+struct S y = { 0, 0, 0, { 0 }};
+int a = 0x12345678;
+short_a *b = (short_a*) &a;
+const int i = 5;
+unsigned long long l = 0x40000000000ULL;
+int n;
+unsigned int r;
+unsigned int *c = s->c;
+struct S s;
+unsigned int *c = s.c;
+unsigned int s;
+RenderBox *this = thisin;
+int __j;
+short f = a;
+int g = 15;
+int h = e;
+unsigned long a = (*p++) >> 24;
+unsigned long x = 0x80000000UL;
+int numbers[4] = { 0xdead, 0xbeef, 0x1337, 0x4242 };
+struct a f = {};
+int tmp = x;
+int *i = &a[sizeof(a)/sizeof(*a)];
+int g = b < 0 ? 0 : f + b;
+struct S s = { 1, 2, 3, 4 };
+void **w = u;
+void *t[] = { u[2], u[4] };
+int s[] = { 7, 8, 9, 10, 11, 12 };
+volatile struct s rec = { &rec };
+char s[] = "abcedfg012345";
+char *sp = s + 12;
+signed char c=-1;
+const char d = 0;
+const char c = 0;
+V *w = &v;
+const int j = i;
+int k;
+unsigned int l[288];
+int a[32];
+volatile int x1 = 0;
+volatile long long x2 = 0;
+volatile int x3 = 0;
+volatile int x4 = 1;
+volatile int x5 = 1;
+volatile long long x6 = 1;
+long long t = ((x1 * (x2 << x3)) / (x4 * x5)) + x6;
+__complex__ double x;
+__complex__ float y;
+__complex__ long double z;
+struct S e = {1, 1};
+int a = 0;
+unsigned char j;
+unsigned short a[256];
+unsigned short v = i << 8;
+int j = 0;
+int b=INT_MIN;
+int b=INT_MIN+1;
+int b=INT_MAX;
+int b=-1;
+short x = *p;
+short x = -10;
+int mask = -1 << bitcount;
+int c = 0;
+struct a a;
+int r[4];
+float a[]={5,1,3,5};
+float b[]={2,4,3,0};
+int number_columns=9;
+int cnt0 = 0;
+int cnt1 = 0;
+int b = a == 0 ? 0 : -a;
+int j[2];
+const unsigned short *f[36];
+const unsigned short **i = &f[0];
+struct S o = { 1, 1 };
+struct T p = { 1, 1 };
+long int srcp1 = (long int) &a;
+long int srcp2 = (long int) &b;
+unsigned long int a0;
+unsigned long int b0;
+long int srcp1 = (long int) s1;
+long int srcp2 = (long int) s2;
+int n = 0;
+int x[n % 1000 + 1];
+int d = b;
+double c;
+int d;
+unsigned int m = n;
+double darg;
+int iarg;
+int flag = 0;
+char a[ARRAY_SIZE];
+double sum = 0.0;
+double d;
+int tot = 0;
+int b = 0;
+unsigned char m[256];
+unsigned char n[256];
+vector(16, char) c1;
+vector(8, short) s1;
+vector(4, int) i1;
+vector(2, long) l1;
+float a[100000];
+struct B b = { 0, 1 };
+struct A a = { 2, b };
+struct S e = c[0];
+int a = ~x;
+struct s s = {1, 10, 3};
+struct s t = {1, 2, 3};
+unsigned char b;
+signed char e = ~d;
+void *res;
+int *u;
+int **v[] = {	    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,	    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,	    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,	    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,	    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,	    0, 0, 0, 0, 0, &u, 0, 0, 0, 0, &u, &u, &u, &u, &u, &u, &u, 0,	    &u, 0, &u, &u, &u, 0, &u, &u, 0, &u, &u, &u, &u, 0, &u, &u, &u,	    &u, &u, 0, &u, &u, 0, &u, 0, &u, &u, 0, &u, &u, &u, &u, &u, 0,	    &u, 0, 0, 0, &u, &u, &u, 0, 0, &u, &u, &u, 0, &u, 0, &u, &u	  };
+int ***w[] = { &v[0] };
+int *y[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+int *z[6] = { };
+int t1[7];
+int **t2 = &y[0];
+int ***t3 = &t2;
+int t4 = 0;
+float bdm[4][2][4][2];
+int op = ops[j];
+int y;
+char *x;
+struct S v;
+struct U v;
+struct U w;
+char c='a';
+char buf[64];
+const char *p;
+unsigned long long aLL = 1000000000000000000ULL;
+long a = 1;
+long val = 1;
+struct S s = { 0, 0, 0, 0, 2, &val };
+unsigned long a[18] = { 4, 2, -200, 200, 2, -400, 400, 3, -600, 0, 600, 5, -100, -66, 0, 66, 100, __LONG_MAX__ / 8 + 1 };
+int si1 = a;
+int si2 = b;
+unsigned a = ~b;
+struct test2 pom;
+struct S d = { 0x123456 };
+unsigned long *scan_fp_;
+int n_uses;
+struct du_chain *last;
+struct du_chain du1 = { 0, 0 };
+struct du_chain du0 = { &du1, 1 };
+unsigned align;
+int c = -1;
+unsigned char a = 0;
+unsigned int d = 3;
+unsigned int x7;
+volatile unsigned char a = 1;
+long long b = 0x80000000L;
+int c = -((int)(-b) - (-0x7fffffff * a));
+char *a = "test";
+char *b = a + 2;
+int g = -1L;
+int h = ~d;
+unsigned int n = x;
+unsigned int u = 32;
+struct S t = { 0, -3161L };
+int v = 0;
+struct A *a;
+char x[] = "IJKLMNOPQR";
+int cnt;
+int res;
+unsigned int ar[] = { 10, 11, 12, 13, 14 };
+unsigned long long int v;
+int x = (int) ((unsigned long long) (a[i] * 0x55555556LL) >> 32) - (a[i] >> 31);
+unsigned int x = ((unsigned int) ((b[i] * 0xaaaaaaabULL) >> 32) >> 1);
+int x = (((int) ((unsigned long long) (a[i] * 0x38e38e39LL) >> 32)) >> 2) - (a[i] >> 31);
+unsigned int x = (unsigned int) ((b[i] * 0x38e38e39ULL) >> 32) >> 2;
+int x = (((int) ((unsigned long long) (a[i] * 0x6bca1af3LL) >> 32)) >> 3) - (a[i] >> 31);
+unsigned int tmp = (b[i] * 0xaf286bcbULL) >> 32;
+unsigned int x = (((b[i] - tmp) >> 1) + tmp) >> 4;
+unsigned char error = 0;
+signed int arg1 = x->arg[0];
+long int arg2 = x->arg[1];
+struct S s = { 2, { 5, 0 } };
+int j = i;
+signed short s = -1;
+struct S *s;
+char c[] = { 97, 97, 97, 97, 97, 0 };
+int off;
+struct brfic_args *args = (struct brfic_args *) data;
+struct brfic_args args;
+long int b;
+char *arg = "test1234/";
+int ae = 0;
+struct c w;
+struct c *const ar = &w;
+double (*p) ();
+unsigned long long i;
+long dx[VLEN+1];
+long dy[VLEN+1];
+long s1[VLEN];
+long size;
+int y = INT_MIN;
+struct tiny x;
+long x = va_arg (ap, long);
+int r;
+int y = 2;
+struct R r;
+int i = 0x30011;
+struct s va_values;
+int n=2;
+double x[n];
+int dummy;
+char *bp = buf;
+struct spurious dummy;
+union tree_node **q;
+int dev_zero;
+int hicount = 0;
+unsigned char *c;
+char *str = "\x7f\xff";
+char c = 'c';
+long l = ((a + win) - b);
+int b;
+long long i;
+int t = x.x;
+struct foo x;
+volatile int k = v;
+const char X[8] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H' };
+char buffer[8];
+const char X[10] = { 'A', 'B', 'C', 'D', 'E' };
+char buffer[10];
+const struct foo X = { a : 'A', c : 'C', e : 'E', g : 'G', i : 'I' };
+const struct foo X = { .b = 'B', .d = 'D', .f = 'F', .h = 'H' , .j = 'J' };
+int h = d != 10;
+int *i = 0;
+unsigned int t = (unsigned char) (~b);
+struct x a = {x, y, z};
+struct x b = {x, y, z};
+struct x *c = &b;
+register char c;
+register char *ep = bp + n;
+register char *sp;
+int one = 1;
+struct foo bar;
+struct S *p;
+unsigned q = p + 7;
+int d = p + b;
+int c = p + a;
+int c = p;
+int d = p + a;
+unsigned x = 1234;
+int y = 0;
+const int *p = &x;
+int t;
+const int h = 0;
+
+#define D(N) A##N a##N;
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+  int i;
+
+#define D(N)					\
+  for (i = 0; i < N; i++)			\
+    a##N.x[i] = i ^ (N << 3);
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+
+  foo (21
+#define D(N) , a##N
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+      );
+  exit (0);
+}

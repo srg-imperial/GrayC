@@ -1,0 +1,79 @@
+[kernel] Parsing _rmv_fuzzer-file-240481.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] _rmv_fuzzer-file-240481.c:22: Warning: 
+  Calling undeclared function memset. Old style K&R code?
+[kernel:typing:implicit-conv-void-ptr] _rmv_fuzzer-file-240481.c:23: Warning: 
+  implicit conversion from void * to char (*)[N]
+[kernel:typing:implicit-function-declaration] _rmv_fuzzer-file-240481.c:25: Warning: 
+  Calling undeclared function abort. Old style K&R code?
+[kernel:typing:implicit-function-declaration] _rmv_fuzzer-file-240481.c:26: Warning: 
+  Calling undeclared function exit. Old style K&R code?
+[eva] Option -eva-precision 5 detected, automatic configuration of the analysis:
+  option -eva-min-loop-unroll set to 0 (default value).
+  option -eva-auto-loop-unroll set to 128.
+  option -eva-widening-delay set to 3 (default value).
+  option -eva-partition-history set to 0 (default value).
+  option -eva-slevel already set to 100.
+  option -eva-ilevel set to 48.
+  option -eva-plevel already set to 256 (not modified).
+  option -eva-subdivide-non-linear set to 100.
+  option -eva-remove-redundant-alarms set to true (default value).
+  option -eva-domains set to 'cvalue,equality,gauges,octagon,symbolic-locations'.
+  option -eva-split-return set to 'auto'.
+  option -eva-equality-through-calls set to 'formals' (default value).
+  option -eva-octagon-through-calls set to false (default value).
+[eva] Splitting return states on:
+[kernel:annot:missing-spec] _rmv_fuzzer-file-240481.c:7: Warning: 
+  Neither code nor specification for function memset, generating default assigns from the prototype
+[eva] Analyzing a complete application starting at main
+[eva] Computing initial state
+[eva] Initial state computed
+[eva:initial-state] Values of globals at initialization
+  N ∈ {1}
+[kernel] Current source was: _rmv_fuzzer-file-240481.c:22
+  The full backtrace is:
+  Raised at file "src/kernel_services/abstract_interp/map_lattice.ml", line 220, characters 14-29
+  Called from file "src/kernel_services/abstract_interp/map_lattice.ml", line 230, characters 25-42
+  Called from file "src/kernel_services/abstract_interp/map_lattice.ml", line 237, characters 25-42
+  Called from file "src/plugins/value/domains/cvalue/builtins_memory.ml", line 548, characters 35-73
+  Called from file "src/plugins/value/domains/cvalue/builtins_memory.ml", line 601, characters 10-61
+  Called from file "src/plugins/value/domains/cvalue/builtins.ml", line 266, characters 22-43
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 308, characters 10-76
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 329, characters 10-53
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 467, characters 22-70
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 772, characters 12-71
+  Called from file "src/kernel_services/abstract_interp/bottom.ml" (inlined), line 31, characters 18-21
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 767, characters 10-466
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 784, characters 24-59
+  Called from file "src/kernel_services/abstract_interp/bottom.ml" (inlined), line 31, characters 18-21
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 755, characters 6-1023
+  Called from file "src/plugins/value/engine/iterator.ml", line 274, characters 6-47
+  Called from file "src/plugins/value/partitioning/partition.ml", line 495, characters 29-34
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/plugins/value/engine/iterator.ml", line 430, characters 15-71
+  Called from file "src/plugins/value/engine/iterator.ml", line 494, characters 18-35
+  Called from file "list.ml", line 92, characters 20-23
+  Called from file "src/plugins/value/engine/iterator.ml", line 496, characters 18-60
+  Called from file "src/plugins/value/engine/iterator.ml", line 543, characters 13-31
+  Called from file "list.ml", line 110, characters 12-15
+  Called from file "src/plugins/value/engine/iterator.ml" (inlined), line 540, characters 4-31
+  Called from file "src/plugins/value/engine/iterator.ml", line 602, characters 6-22
+  Called from file "src/plugins/value/engine/iterator.ml", line 769, characters 20-39
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 202, characters 8-45
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 338, characters 8-63
+  Called from file "src/plugins/value/engine/analysis.ml", line 181, characters 2-49
+  Called from file "src/libraries/project/state_builder.ml", line 994, characters 9-13
+  Re-raised at file "src/libraries/project/state_builder.ml", line 1002, characters 9-18
+  Called from file "src/plugins/value/register.ml", line 39, characters 46-66
+  Called from file "queue.ml", line 121, characters 6-15
+  Called from file "src/kernel_internals/runtime/boot.ml", line 36, characters 4-20
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 846, characters 2-9
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 876, characters 18-64
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 235, characters 4-8
+  
+  Unexpected error (Not_found).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues
+  Your Frama-C version is 23.1 (Vanadium).
+  Note that a version and a backtrace alone often do not contain enough
+  information to understand the bug. Guidelines for reporting bugs are at:
+  https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs

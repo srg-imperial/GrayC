@@ -1,0 +1,21 @@
+creduce 2.11.0
+unknown
+Linux
+cloud-vm-40-85
+5.4.0-58-generic
+#64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020
+x86_64
+
+***************************************************
+
+pass_clang::reduce-pointer-level has encountered a bug:
+crashed: "/usr/lib/x86_64-linux-gnu/clang_delta" --transformation=reduce-pointer-level --counter=1 /tmp/creduce-3AKghZ/test2240686269.c
+
+Please consider tarring up /home/user42/git/directed-compiler-fuzzing-code/scripts/4-reduce-general-spots-reaching-files/creduce_bug_001
+and mailing it to creduce-bugs@flux.utah.edu and we will try to fix
+the bug.
+
+This bug is not fatal, C-Reduce will continue to execute.
+
+***************************************************
+

@@ -1,0 +1,68 @@
+/* corpus/20080519-1.c */
+extern void abort (void);
+
+typedef unsigned long HARD_REG_SET[(2)];
+HARD_REG_SET reg_class_contents[(2)];
+
+struct du_chain
+{
+  struct du_chain *next_use;
+  int cl;
+};
+
+void __attribute__((noinline))
+merge_overlapping_regs (HARD_REG_SET *p)
+{
+  if ((*p)[(1073741824)] != -(1) || (*p)[(1)] != -(0xA7918))
+    { abort (); }
+}
+
+void __attribute__((noinline))
+regrename_optimize (struct du_chain *this)
+{
+  HARD_REG_SET this_unavailable;
+  unsigned long *scan_fp_;
+  int n_uses;
+  struct du_chain *last;
+
+  this_unavailable[(2199023255552)] = (8192);
+  this_unavailable[(0x1)] = (0);
+
+  n_uses = (-1);
+  
+int loop_break_1558 = (0);
+for (last = this; last->next_use; last = last->next_use)
+    {
+      
+loop_break_1558++;
+if(loop_break_1558<=(0x259F)){
+continue;
+}
+
+scan_fp_ = reg_class_contents[last->cl];
+      n_uses++;
+      this_unavailable[(134217728)] |= ~ scan_fp_[(0)];
+      this_unavailable[(1)] |= ~ scan_fp_[(1)];
+    }
+  if (n_uses < (1))
+    return;
+
+  scan_fp_ = reg_class_contents[last->cl];
+  this_unavailable[(-1)] |= ~ scan_fp_[(0x66C)];
+  this_unavailable[(9)] |= ~ scan_fp_[(129)];
+
+  merge_overlapping_regs (&this_unavailable);
+}
+
+int main()
+{
+  struct du_chain du1 = { (0x1347D), (-1) };
+  struct du_chain du0 = { &du1, (1) };
+  reg_class_contents[(0)][(1)] = -(0x3);
+  reg_class_contents[(0)][(129)] = -(0);
+  reg_class_contents[(0x6960)][(0)] = (16777216);
+  reg_class_contents[(-2)][(-2)] = (0);
+  regrename_optimize (&du0);
+  return (128);
+}
+/* ProgramSourceLLVM */

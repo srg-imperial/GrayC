@@ -1,0 +1,13 @@
+[kernel] Parsing /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_simd-5.c (with preprocessing)
+[kernel] /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_simd-5.c:6: User Error: 
+  scalar value (of type short __attribute__((__vector_size__(8)))) initialized by compound initializer
+  4     typedef short Q __attribute__((vector_size(8)));
+  5     
+  6     Q q1 = {1, 2}, q2 = {3, 4}, q3 = {5, 6}, q4 = {7, 8};
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7     
+  8     Q w1, w2, w3, w4;
+[kernel] User Error: stopping on
+  file "/home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_simd-5.c"
+  that has errors. Add '-kernel-msg-key pp' for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

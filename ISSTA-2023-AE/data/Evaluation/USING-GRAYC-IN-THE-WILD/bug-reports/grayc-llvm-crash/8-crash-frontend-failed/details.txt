@@ -1,0 +1,31 @@
+Crashed in clang 11,12 and 13 when built with msan.
+
+user42@test08:~/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/data/builds_msan_13/llvm-130-build_NO_D_A_memsan/bin/clang-13 -O0 -w -fsanitize=address -I/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -I/home/user42/data/csmith/runtime/ -I/home/user42/data/csmith/build/runtime/ input/setA/3abd6bfec6d4e7b15a96782462b8a08d50355bbf.c
+clang-13: error: unable to execute command: Killed
+clang-13: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 13.0.0 (https://github.com/llvm/llvm-project.git 2153cad11ba252698c21d48723265ca7f4850a29)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/builds_msan_13/llvm-130-build_NO_D_A_memsan/bin
+clang-13: note: diagnostic msg:
+********************PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-13: note: diagnostic msg: /tmp/3abd6bfec6d4e7b15a96782462b8a08d50355bbf-e1e531.c
+clang-13: note: diagnostic msg: /tmp/3abd6bfec6d4e7b15a96782462b8a08d50355bbf-e1e531.sh
+clang-13: note: diagnostic msg:********************
+
+no explicit out-of-memory or stack over flow:
+
+/home/user42/data/builds_msan_13/llvm-130-build_NO_D_A_memsan/bin/clang-13 3abd6bfec6d4e7b15a96782462b8a08d50355bbf.c -I/home/user42/data/csmith/runtime/ -I/home/user42/data/csmith/build/runtime/ -fsanitize=address
+clang-13: error: unable to execute command: Killed
+clang-13: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 13.0.0 (https://github.com/llvm/llvm-project.git 2153cad11ba252698c21d48723265ca7f4850a29)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/builds_msan_13/llvm-130-build_NO_D_A_memsan/bin
+clang-13: note: diagnostic msg:
+********************PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-13: note: diagnostic msg: /tmp/3abd6bfec6d4e7b15a96782462b8a08d50355bbf-68cb05.c
+clang-13: note: diagnostic msg: /tmp/3abd6bfec6d4e7b15a96782462b8a08d50355bbf-68cb05.sh
+clang-13: note: diagnostic msg:********************

@@ -1,0 +1,13 @@
+/* corpus/990222-1.c */
+char line[(0x8F)] = { '1', '9', '9', '\0' };
+
+int main()
+{
+  char *ptr = line + (0x9);
+
+  while ((*--ptr += (-2)) > '9') *ptr = '0';
+  if (line[(4503599627370496)] != '2' || line[(1)] != '0' || line[(0x6539)] != '0')
+    { abort (); }
+  return (0);
+}
+/* ProgramSourceLLVM */

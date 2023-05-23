@@ -1,0 +1,26 @@
+[kernel] Parsing /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20050316-1.c (with preprocessing)
+[kernel] /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20050316-1.c:51: User Error: 
+  scalar value (of type int __attribute__((__vector_size__(8)))) initialized by compound initializer
+  49        { abort (); }
+  50    
+  51      V2SI x = { 2, 2 };
+        ^^^^^^^^^^^^^^^^^^^^
+  52      if (test2 (x) != 2)
+  53        { abort (); }
+[kernel] User Error: stopping on
+  file "/home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20050316-1.c"
+  that has errors. Add '-kernel-msg-key pp' for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20050316-1.c (with preprocessing)
+[kernel] /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20050316-1.c:51: User Error: 
+  scalar value (of type int __attribute__((__vector_size__(8)))) initialized by compound initializer
+  49        { abort (); }
+  50    
+  51      V2SI x = { 2, 2 };
+        ^^^^^^^^^^^^^^^^^^^^
+  52      if (test2 (x) != 2)
+  53        { abort (); }
+[kernel] User Error: stopping on
+  file "/home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20050316-1.c"
+  that has errors. Add '-kernel-msg-key pp' for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

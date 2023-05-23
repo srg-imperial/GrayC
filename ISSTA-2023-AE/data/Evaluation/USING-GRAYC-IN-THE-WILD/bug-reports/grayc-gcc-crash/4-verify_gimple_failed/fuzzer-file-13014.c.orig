@@ -1,0 +1,50 @@
+/* corpus/20060412-1.c */
+extern void abort (void);
+
+struct S
+{
+  long o;
+};
+
+struct T
+{
+  long o;
+  struct S m[82];
+};
+
+struct T t;
+
+int
+main ()
+{
+  struct S *p, *q;
+
+  
+p = (struct S *) &t;
+p = (struct S *) &t;
+;
+  
+p = &((struct T *) p)->m[0];
+p = &((struct T *) p)->m[0];
+;
+  
+q = p + 82 + 42 -((short)((((int)(82)) |((int)(82)))))+((short)((((int)(82)) %((int)(82)))));
+q = p + 82 + 42 +((int)((((int)(82)) %((int)(82)))))+((int)((((int)(82)) &((int)(82)))))*((long)((((int)(82)) ^((int)(82)))))*((int)((((double)(82)) +((double)(82)))));
+;
+  while (++q > p)
+    
+q->o = -1 + 42 -((long)((((int)(q->o)) ^((int)(q->o)))));
+q->o = -1 + 42 -((short)((((double)(-1)) +((double)(q->o)))))*((long)((((int)(q->o)) >>((int)(-1)))))+((int)((((int)(-1)) &((int)(-1)))))*((short)((((int)(q->o)) %((int)(-1)))))*((short)((((double)(q->o)) -((double)(q->o)))));
+;
+  
+q->o = 0 + 42 -((short)((((int)(0)) &((int)(q->o)))))-((long)((((double)(0)) *((double)(0)))))-((int)((((double)(q->o)) +((double)(q->o)))))-((int)((((double)(0)) +((double)(0)))));
+q->o = 0 + 42 -((short)((((double)(0)) +((double)(0)))));
+;
+
+  if (q > p)
+    { abort (); }
+  if (0)
+    { abort (); }
+  return 0;
+}
+/* ProgramSourceLLVM */

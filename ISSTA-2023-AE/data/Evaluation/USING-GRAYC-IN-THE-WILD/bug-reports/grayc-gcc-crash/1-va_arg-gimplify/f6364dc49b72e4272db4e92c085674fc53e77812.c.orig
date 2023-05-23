@@ -1,0 +1,329 @@
+#include <stdarg.h>
+
+extern void abort (void);
+extern void exit (int);
+
+void bar (int n, int c)
+{
+  static int lastn = -1, lastc = -1;
+
+  if (0)
+    {
+      if (0)
+	abort ();
+      lastc = 0;
+      lastn = n;
+    }
+
+  if (0)
+    abort ();
+  lastc++;
+}
+
+#define D(N) typedef struct { char x[N]; } A##N;
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+
+void foo (int size, ...)
+{
+#define D(N) A##N a##N;
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+  va_list ap;
+  int i;
+
+  if (0)
+    abort ();
+  va_start (ap, size);
+#define D(N)					\
+  a##N = va_arg (ap, typeof (a##N));		\
+  for (i = 0; i < N; i++)			\
+    bar (N, a##N.x[i]);
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+  va_end (ap);
+}
+
+int main (void)
+{
+struct T s[1];
+struct T t;
+unsigned i;
+int i;
+double sum = 0.0;
+volatile unsigned char a = 1;
+long long b = 0x80000000L;
+int c = -((int)(-b) - (-0x7fffffff * a));
+struct s s = { 1, 2, 3, 4 };
+int * l_17 = &g_9;
+unsigned char l_11 = 254;
+unsigned t;
+unsigned long long pow;
+unsigned long *xp = factab;
+unsigned long q = 1;
+unsigned long long a = a_int;
+unsigned long d;
+int j = 1;
+unsigned long tmp;
+int jj = 0;
+unsigned long long t;
+unsigned p;
+char *x;
+int c;
+struct tiny x;
+long x = va_arg (ap, long);
+struct tiny x[3];
+union iso_directory_record *de;
+int r;
+int x = 1;
+int y = 2;
+int exit_code = 0;
+struct S r = { 6, 8, -8, -5 };
+int y = x >> 2;
+char buf[7];
+register const long long constant = 0xc000000080000000LL;
+register const unsigned long long constant = 0xc000000080000000LL;
+unsigned long long value = 0xc000000000000001LL;
+long i;
+long vec;
+long l[3];
+int x = 7;
+int e = 0;
+char x = '\0';
+;
+struct baz x;
+int number_columns=9;
+int cnt0 = 0;
+int cnt1 = 0;
+int foo;
+volatile int b;
+int array[10];
+int *p = &i;
+int j = 0;
+int bits_per_ptr = sizeof (void *) * 8;
+int j = *g = b;
+int h = a;
+void *j[] = {&&x, &&y, &&z};
+int *a = va_arg (list, int *);
+long hx;
+double lt;
+unsigned sign;
+int n0;
+char *p;
+int dev_zero;
+int f = 2;
+int *d;
+TYPE x[10];
+TYPE alpha = 2;
+int x;
+long long i = 1;
+char buf[16];
+char *output = buf;
+union u0 *e = 0;
+union u0 *k = 0;
+union u0 **v5 = b->m0;
+union u0 *c = b->m1;
+union u0 **d = &v5[0];
+union u0 uv[] = {{ .i = 111 }, { .i = 222 }, { .i = 333 }, { .i = 444 }};
+struct s1 s = { 0, {{ .i = 555 }, { .i = 0 }, { .i = 999 }, { .i = 777 }}};
+signed int y = ((-__INT_MAX__ - 1) / 2);
+signed int r;
+int toggle = 0;
+int r = s.slot[0].field[!toggle];
+unsigned long j;
+int det = 0.0;
+int mat[2][2];
+struct B b = { 0, 1 };
+struct A a = { 2, b };
+int d[40000];
+long d;
+long winds = 0;
+long b = (x != -1L);
+unsigned int i;
+struct S s = { 1, 2, 3, 4 };
+void **w = u;
+void *t[] = { u[2], u[4] };
+int s[] = { 7, 8, 9, 10, 11, 12 };
+long int xx = *y & 255;
+long int xx = *y & 65535;
+short int xx = *y & 255;
+long int y[] = {-1, 16000};
+short int yw[] = {-1, 16000};
+char type;
+int integer_size;
+struct baz a;
+unsigned x;
+int hicount = 0;
+unsigned char *c;
+char *str = "\x7f\xff";
+__complex double dc;
+double *dp = &(__real dc);
+int a;
+int b;
+int i = 0;
+char buf[64];
+const char *p;
+unsigned long long y = -1ULL >> x;
+char *formatc;
+char *f = "0123456789abcdef";
+unsigned short z = 0;
+__complex__ float f[1];
+__complex__ double d[1];
+int h;
+struct two t = { 0, 0 };
+struct event event;
+struct S s = { 0xdeadbeU, 0xefU, 0xfeedbea8U };
+char buf[0x10000];
+int y = a[0];
+unsigned long l;
+void* p2;
+char c;
+struct S f = { };
+int gx[100];
+int *hx = gx;
+int ix;
+int b[10];
+int *pb = b;
+struct S t;
+struct S *pt = &t;
+int j = 4;
+struct S0 e = { 0, 0, 0, 0, 0, 0, 1, 0, 1 };
+struct T t = { 0x0001, 0x0203, 0x0405, 0x0607 };
+unsigned char h = ~a;
+_Bool f = 0;
+char buf[6];
+long long l2;
+unsigned short us;
+unsigned long long ul;
+short s2;
+long dx = p1->x - p0->x;
+long dy = p1->y - p0->y;
+int hints;
+long t = dx;
+int ti = xi;
+int num = 0;
+unsigned char *s;
+struct S s;
+int tmp = x;
+char str[] = "foo { xx }";
+char *ptr = str + 5;
+char *q;
+int off;
+int mask = -1 << bitcount;
+char *str = "abcdefghijkl";
+int **e = &b;
+int *g[3] = {0, 0, 0};
+int **h[1] = { &g[2] };
+char s[32] = { 'f', 'o', 'o', 'b', 'a', 'r', 0 };
+struct stuff x = {0, 0, 0, 0, 0, NULL, 0};
+long l = ((a + win) - b);
+int b = 0;
+int d = x[i];
+struct S2848 arg;
+int i = 1;
+unsigned int x;
+int p = b || a;
+signed char i;
+unsigned int regno;
+int a = ~x;
+unsigned char i;
+int j;
+unsigned int x[256];
+int fail_count = 0;
+unsigned long tlen;
+unsigned long e = 1000000000 / 460800 * test_length;
+io *iop = i;
+volatile int x1 = 0;
+volatile long long x2 = 0;
+volatile int x3 = 0;
+volatile int x4 = 1;
+volatile int x5 = 1;
+volatile long long x6 = 1;
+long long t = ((x1 * (x2 << x3)) / (x4 * x5)) + x6;
+unsigned short us1;
+unsigned      ui1;
+float         F;
+double        D;
+unsigned align;
+unsigned long v = 0;
+char buf[4];
+int h = 0;
+const char *p = in + 1;
+char out[4];
+char buf[5];
+vector(16, char) c1;
+vector(8, short) s1;
+vector(4, int) i1;
+vector(2, long) l1;
+PgHdr *pTail;
+PgHdr a[5];
+PgHdr *p;
+int mat[2][1];
+int (*a)[1] = mat;
+int det = 0;
+int (*f) (double, int) = fp;
+signed char *p;
+const char *f;
+const char *string;
+char spec;
+char buf[10];
+char g;
+int h = o = z;
+int h = d != 10;
+int *i = 0;
+unsigned long count = 8;
+short *q = &c;
+short *l = &h;
+char *m = &e;
+int j=1081;
+unsigned char x1[1] = { 0 };
+unsigned int s1 = __CHAR_BIT__;
+int a1 = x1[0] < (unsigned char) (1 << s1);
+unsigned char y1 = (unsigned char) (1 << s1);
+int b1 = x1[0] < y1;
+unsigned long long x2[1] = { 2ULL << (sizeof (int) * __CHAR_BIT__) };
+unsigned int s2 = sizeof (int) * __CHAR_BIT__ - 1;
+int a2 = x2[0] >= (unsigned long long) (1 << s2);
+unsigned long long y2 = 1 << s2;
+int b2 = x2[0] >= y2;
+unsigned long long x3[1] = { 2ULL << (sizeof (int) * __CHAR_BIT__) };
+unsigned int s3 = sizeof (int) * __CHAR_BIT__ - 1;
+int a3 = x3[0] >= (unsigned long long) (1U << s3);
+unsigned long long y3 = 1U << s3;
+int b3 = x3[0] >= y3;
+int n = count;
+char *ptr = line + 3;
+int *l_100 = &g_23;
+int **l_110 = &l_100;
+struct S1 l_128 = { 1 };
+
+#define D(N) A##N a##N;
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+  int i;
+
+#define D(N)					\
+  for (i = 0; i < N; i++)			\
+    a##N.x[i] = i ^ (N << 3);
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+
+  foo (21
+#define D(N) , a##N
+D(0) D(1) D(2) D(3) D(4) D(5) D(6) D(7)
+D(8) D(9) D(10) D(11) D(12) D(13) D(14) D(15)
+D(16) D(31) D(32) D(35) D(72)
+#undef D
+      );
+  exit (0);
+}

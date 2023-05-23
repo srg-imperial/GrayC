@@ -1,0 +1,39 @@
+[kernel] Parsing _rmv_fuzzer-file-76399.c (with preprocessing)
+[kernel] Current source was: _rmv_fuzzer-file-76399.c:6
+  The full backtrace is:
+  Raised by primitive operation at file "z.ml", line 212, characters 46-56
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 10027, characters 47-64
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9718, characters 25-48
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9708, characters 9-1023
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9798, characters 27-47
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9844, characters 12-35
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9997, characters 13-36
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9718, characters 25-48
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9708, characters 9-1023
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9349, characters 10-294
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 10347, characters 12-35
+  Called from file "list.ml", line 110, characters 12-15
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 10351, characters 2-25
+  Called from file "src/kernel_internals/typing/frontc.ml", line 82, characters 14-36
+  Called from file "src/kernel_services/ast_queries/file.ml", line 610, characters 25-44
+  Called from file "src/kernel_services/ast_queries/file.ml", line 630, characters 14-38
+  Called from file "src/kernel_services/ast_queries/file.ml", line 693, characters 46-72
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/kernel_services/ast_queries/file.ml", line 693, characters 17-89
+  Called from file "src/kernel_services/ast_queries/file.ml", line 1784, characters 24-60
+  Called from file "src/kernel_services/ast_queries/file.ml", line 1861, characters 4-27
+  Called from file "src/kernel_services/ast_data/ast.ml", line 110, characters 2-28
+  Called from file "src/kernel_services/ast_data/ast.ml", line 118, characters 53-71
+  Called from file "src/kernel_internals/runtime/boot.ml", line 29, characters 6-20
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 846, characters 2-9
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 876, characters 18-64
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 235, characters 4-8
+  
+  Unexpected error (Z.Overflow).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues
+  Your Frama-C version is 23.1 (Vanadium).
+  Note that a version and a backtrace alone often do not contain enough
+  information to understand the bug. Guidelines for reporting bugs are at:
+  https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs

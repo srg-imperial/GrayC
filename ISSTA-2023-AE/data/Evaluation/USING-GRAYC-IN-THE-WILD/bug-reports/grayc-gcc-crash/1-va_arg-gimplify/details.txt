@@ -1,0 +1,50 @@
+#include <stdarg.h>
+void a() {
+  va_arg(0, long);
+  void *b[] = 0;
+}
+
+GCC-11 crashed with this error:
+===
+/home/user42/data/gcc-csmith-0/gcc-install/bin/gcc  934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c
+In file included from 934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c:1:
+934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c: In function ‘a’:
+934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c:3:13: error: first argument to ‘va_arg’ not of type ‘va_list’
+    3 |   va_arg(0, long);
+      |             ^~~~
+934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c:4:15: error: invalid initializer
+    4 |   void *b[] = 0;
+      |               ^
+In file included from 934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c:1:
+934d08d3ee1bab940b2f2f2651e06ccaf8d82f87.c:3:13: internal compiler error: in gimplify_va_arg_expr, at gimplify.c:15594
+    3 |   va_arg(0, long);
+      |             ^
+0x6b7b93 gimplify_va_arg_expr(tree_node**, gimple**, gimple**)
+	.././../gcc-source/gcc/gimplify.c:15594
+0xb8e839 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.c:14156
+0xb91416 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.c:6876
+0xb8ecbb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.c:1879
+0xb8ecbb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.c:14526
+0xb91416 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.c:6876
+0xb91bd1 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.c:1421
+0xb8e1ee gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.c:14283
+0xba776f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.c:6876
+0xba776f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.c:15318
+0xba7b9d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.c:15472
+0x9dc057 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.c:670
+0x9debb7 analyze_functions
+	.././../gcc-source/gcc/cgraphunit.c:1236
+0x9df81d symbol_table::finalize_compilation_unit()
+	.././../gcc-source/gcc/cgraphunit.c:2514
+Please submit a full bug report,

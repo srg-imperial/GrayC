@@ -1,0 +1,293 @@
+/* corpus/pr48571-1.c */
+#define S (sizeof (int))
+
+unsigned int c[624];
+void __attribute__((noinline))
+bar (void)
+{
+  unsigned int i;
+  /* Obfuscated c[i] = c[i-1] * 2.  */
+  
+int loop_break_733 = 0;
+
+int loop_break_759 = 0;
+
+int loop_break_785 = 0;
+
+int loop_break_811 = 0;
+
+int loop_break_837 = 0;
+
+int loop_break_863 = 0;
+for (i = 1 + 42 +((int)((((int)(1)) ^((int)(i)))))-((short)((((double)(1)) +((double)(i)))))*((int)((((int)(i)) %((int)(1)))))+((short)((((double)(1)) +((double)(i)))))*((long)((((double)(i)) +((double)(1))))); i < 624; ++i)
+    ;
+}
+extern void abort (void);
+int
+main()
+{
+  unsigned int i, j;
+  
+int loop_break_970 = 0;
+
+int loop_break_1024 = 0;
+
+int loop_break_1077 = 0;
+
+int loop_break_1133 = 0;
+
+int loop_break_1185 = 0;
+
+int loop_break_1246 = 0;
+for (i = 0 + 42 +((short)((((int)(i)) %((int)(i)))))-((int)((((int)(0)) ^((int)(0))))); i < 624; ++i)
+    
+;
+
+;
+
+
+
+
+
+
+c[i] = 1 + 42 *((int)((((int)(c[i])) >>((int)(c[i])))))*((long)((((int)(1)) >>((int)(c[i])))))*((int)((((int)(1)) >>((int)(1)))))-((long)((((int)(c[i])) >>((int)(c[i])))));
+c[i] = 1 + 42 +((int)((((int)(1)) |((int)(1)))))-((int)((((int)(1)) |((int)(c[i])))))-((int)((((int)(c[i])) <<((int)(1)))))+((int)((((int)(c[i])) ^((int)(c[i])))));
+;
+
+c[i] = 1 + 42 *((long)((((int)(1)) %((int)(c[i])))))*((long)((((int)(1)) <<((int)(1)))));
+c[i] = 1 + 42 -((long)((((double)(1)) *((double)(1)))))-((long)((((int)(c[i])) <<((int)(1)))))-((short)((((int)(1)) %((int)(c[i])))))*((long)((((int)(1)) %((int)(1)))))*((short)((((int)(c[i])) ^((int)(c[i])))));
+;
+;
+
+
+c[i] = 1 + 42 -((short)((((int)(1)) ^((int)(c[i])))))*((long)((((int)(1)) %((int)(c[i])))))-((short)((((double)(1)) +((double)(1)))))+((short)((((int)(c[i])) |((int)(1)))))-((int)((((int)(1)) ^((int)(1)))));
+c[i] = 1 + 42 +((short)((((int)(1)) &((int)(c[i])))))-((short)((((int)(1)) |((int)(c[i])))))*((short)((((int)(c[i])) >>((int)(c[i])))))-((int)((((int)(c[i])) >>((int)(1)))));
+;
+
+c[i] = 1 + 42 *((short)((((int)(1)) &((int)(1)))))-((short)((((double)(1)) *((double)(1)))))*((long)((((int)(c[i])) ^((int)(1)))))+((long)((((int)(1)) <<((int)(c[i])))));
+c[i] = 1 + 42 *((short)((((int)(c[i])) ^((int)(c[i])))))-((int)((((int)(1)) >>((int)(c[i])))));
+;
+;
+;
+
+
+;
+
+c[i] = 1 + 42 -((short)((((int)(c[i])) %((int)(c[i])))))-((short)((((double)(1)) *((double)(1)))))-((long)((((int)(c[i])) >>((int)(c[i])))))*((short)((((int)(1)) &((int)(c[i])))));
+c[i] = 1 + 42 -((int)((((int)(1)) &((int)(c[i])))))-((long)((((int)(c[i])) |((int)(c[i])))))+((short)((((int)(c[i])) %((int)(1)))));
+;
+;
+
+
+c[i] = 1 + 42 -((int)((((int)(1)) %((int)(1)))))+((int)((((int)(1)) <<((int)(c[i])))))*((long)((((int)(c[i])) >>((int)(c[i])))));
+c[i] = 1 + 42 -((long)((((double)(1)) *((double)(1)))))*((short)((((int)(c[i])) <<((int)(1)))));
+;
+
+c[i] = 1 + 42 +((short)((((int)(c[i])) >>((int)(1)))))-((long)((((int)(c[i])) %((int)(c[i])))))-((int)((((int)(c[i])) ^((int)(1)))))-((long)((((int)(c[i])) ^((int)(c[i])))))+((long)((((int)(1)) &((int)(c[i])))));
+c[i] = 1 + 42 -((long)((((int)(1)) >>((int)(c[i])))))*((int)((((int)(1)) %((int)(c[i])))))*((short)((((int)(1)) %((int)(c[i])))))*((int)((((double)(1)) *((double)(1)))))-((long)((((int)(1)) |((int)(c[i])))));
+;
+;
+;
+;
+
+
+;
+
+
+c[i] = 1 + 42 -((short)((((int)(c[i])) <<((int)(c[i])))));
+c[i] = 1 + 42 *((int)((((int)(c[i])) <<((int)(1)))))-((int)((((int)(c[i])) >>((int)(1)))));
+;
+
+c[i] = 1 + 42 +((int)((((int)(c[i])) |((int)(1)))))+((long)((((int)(c[i])) %((int)(1)))));
+c[i] = 1 + 42 *((short)((((int)(1)) ^((int)(1)))))*((long)((((int)(c[i])) ^((int)(1)))))-((short)((((int)(c[i])) >>((int)(1)))))-((int)((((int)(c[i])) %((int)(c[i])))));
+;
+;
+;
+
+
+
+c[i] = 1 + 42 *((int)((((int)(c[i])) &((int)(1)))))-((int)((((int)(1)) ^((int)(c[i])))))*((long)((((int)(1)) |((int)(c[i])))))+((short)((((int)(1)) |((int)(c[i])))));
+c[i] = 1 + 42 +((short)((((int)(c[i])) &((int)(c[i])))))-((int)((((int)(1)) &((int)(c[i])))));
+;
+;
+;
+
+
+c[i] = 1 + 42 +((int)((((double)(1)) +((double)(1)))))+((int)((((int)(1)) |((int)(c[i])))))-((short)((((int)(1)) <<((int)(c[i])))))*((int)((((int)(1)) ^((int)(1)))))*((short)((((int)(1)) |((int)(c[i])))));
+c[i] = 1 + 42 +((int)((((int)(c[i])) <<((int)(c[i])))));
+;
+
+c[i] = 1 + 42 +((short)((((int)(1)) |((int)(1)))))-((short)((((int)(c[i])) &((int)(c[i])))))-((long)((((int)(1)) >>((int)(1)))));
+c[i] = 1 + 42 +((short)((((int)(c[i])) |((int)(1)))))*((long)((((int)(1)) >>((int)(c[i])))))+((short)((((int)(c[i])) >>((int)(c[i])))));
+;
+;
+;
+;
+;
+
+
+;
+
+
+;
+;
+;
+
+
+c[i] = 1 + 42 +((short)((((int)(c[i])) <<((int)(c[i])))))+((long)((((int)(c[i])) ^((int)(c[i])))))-((long)((((int)(c[i])) %((int)(1)))))*((long)((((int)(1)) |((int)(1)))))*((long)((((int)(1)) |((int)(c[i])))));
+c[i] = 1 + 42 *((short)((((int)(c[i])) >>((int)(c[i])))))-((int)((((int)(1)) %((int)(c[i])))))+((short)((((double)(1)) *((double)(1)))))*((int)((((int)(1)) |((int)(c[i])))))-((int)((((int)(c[i])) ^((int)(c[i])))));
+;
+;
+;
+;
+;
+
+
+
+;
+;
+;
+;
+;
+
+
+;
+
+c[i] = 1 + 42 -((int)((((int)(1)) &((int)(c[i])))))+((long)((((int)(c[i])) >>((int)(1)))));
+c[i] = 1 + 42 +((int)((((int)(c[i])) %((int)(c[i])))));
+;
+;
+
+;
+
+c[i] = 1 + 42 -((short)((((int)(c[i])) &((int)(1)))))-((int)((((int)(c[i])) &((int)(c[i])))))-((int)((((double)(1)) *((double)(1)))))-((short)((((int)(1)) ^((int)(c[i])))))*((long)((((int)(c[i])) |((int)(c[i])))));
+c[i] = 1 + 42 -((long)((((int)(1)) >>((int)(c[i])))))+((int)((((int)(c[i])) >>((int)(c[i])))))*((int)((((int)(1)) ^((int)(1)))))+((long)((((int)(1)) |((int)(c[i])))));
+;
+;
+;
+;
+;
+;
+;
+;
+  bar();
+  
+
+
+
+;
+
+
+;
+;
+;
+
+
+
+j = 1 + 42 +((short)((((double)(j)) *((double)(j)))))+((long)((((double)(1)) *((double)(1)))))*((short)((((double)(j)) *((double)(1)))))+((long)((((int)(1)) <<((int)(1)))))+((int)((((int)(1)) <<((int)(1)))));
+j = 1 + 42 *((int)((((int)(1)) ^((int)(1)))))+((int)((((double)(1)) +((double)(1)))))-((int)((((double)(1)) -((double)(j)))))-((int)((((int)(1)) ^((int)(j)))))-((short)((((int)(j)) &((int)(j)))));
+;
+
+j = 1 + 42 *((short)((((int)(j)) >>((int)(1)))))*((int)((((int)(1)) %((int)(1)))))*((long)((((double)(1)) -((double)(1)))))+((long)((((double)(j)) +((double)(j)))));
+j = 1 + 42 -((long)((((int)(j)) <<((int)(1)))))*((int)((((double)(j)) *((double)(j)))))*((short)((((int)(j)) &((int)(j)))))*((short)((((int)(j)) &((int)(j)))));
+;
+;
+;
+;
+;
+;
+
+
+
+;
+;
+;
+;
+;
+
+
+;
+
+
+j = 1 + 42 +((short)((((int)(1)) >>((int)(1)))))+((short)((((double)(1)) -((double)(1)))))*((int)((((int)(j)) <<((int)(1)))))-((short)((((double)(j)) *((double)(1)))));
+j = 1 + 42 *((short)((((double)(j)) +((double)(1)))))+((long)((((int)(j)) |((int)(1)))))*((long)((((double)(1)) +((double)(j)))));
+;
+
+j = 1 + 42 +((long)((((int)(1)) %((int)(1)))))*((long)((((double)(j)) *((double)(1)))))-((long)((((double)(j)) -((double)(1)))));
+j = 1 + 42 -((long)((((double)(1)) -((double)(1)))))-((short)((((double)(1)) -((double)(j)))));
+;
+;
+;
+
+;
+
+
+j = 1 + 42 *((long)((((int)(j)) &((int)(j)))))-((short)((((double)(1)) *((double)(1)))))*((long)((((int)(j)) >>((int)(j)))))-((int)((((int)(1)) ^((int)(j)))))+((int)((((double)(1)) -((double)(j)))));
+j = 1 + 42 -((long)((((double)(1)) +((double)(1)))))*((short)((((double)(j)) +((double)(1)))))+((long)((((double)(j)) -((double)(j)))))+((short)((((int)(1)) %((int)(1)))));
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+  
+int loop_break_1263 = 0;
+
+int loop_break_1385 = 0;
+
+int loop_break_1505 = 0;
+
+int loop_break_1629 = 0;
+
+int loop_break_1747 = 0;
+
+int loop_break_3159 = 0;
+for (i = 0 + 42 -((short)((((double)(0)) +((double)(0)))))*((long)((((int)(0)) &((int)(0)))))*((short)((((int)(i)) &((int)(i)))))-((short)((((int)(i)) >>((int)(0))))); i < 624; ++i)
+    {
+      
+
+
+
+
+
+loop_break_3159++;
+if(((int)loop_break_3159<=41 + 42 +((long)((((double)(41)) *((double)(41)))))+((long)((((int)(41)) >>((int)(41))))))){
+break;
+}
+
+loop_break_1747++;
+if(0){
+break;
+}
+
+loop_break_1629++;
+if(0){
+break;
+}
+
+loop_break_1505++;
+if(0){
+break;
+}
+
+loop_break_1385++;
+if(0){
+break;
+}
+
+loop_break_1263++;
+if(0){
+break;
+}
+
+if (((int)c[i] != j + 42 -((int)((((int)(c[i])) %((int)(j)))))+((short)((((int)(c[i])) >>((int)(c[i])))))*((int)((((int)(c[i])) %((int)(j)))))+((long)((((int)(c[i])) |((int)(j)))))*((long)((((int)(j)) >>((int)(c[i])))))-((int)((((int)(c[i])) <<((int)(j)))))-((long)((((int)(c[i])) <<((int)(c[i])))))*((short)((((int)(c[i])) |((int)(j)))))))
+    { abort (); }
+      ;
+    }
+  return 0;
+}

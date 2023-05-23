@@ -1,0 +1,52 @@
+struct a d;
+struct a {
+  int b;
+  int c[]
+} main() {
+  d.c[268435456] || d.c[1];
+}
+
+fuzzer-file-159198.c:6:3: internal compiler error: in decompose, at wide-int.h:984
+    6 |   d.c[268435456] || d.c[1];
+      |   ^
+0x6f4748 wi::int_traits<generic_wide_int<wide_int_ref_storage<false, false> > >::decompose(long*, unsigned int, generic_wide_int<wide_int_ref_storage<false, false> > const&)
+	.././../gcc-source/gcc/wide-int.h:984
+0x6fbea1 wi::int_traits<generic_wide_int<wide_int_ref_storage<false, false> > >::decompose(long*, unsigned int, generic_wide_int<wide_int_ref_storage<false, false> > const&)
+	.././../gcc-source/gcc/tree.h:3555
+0x6fbea1 wide_int_ref_storage<false, false>::wide_int_ref_storage<generic_wide_int<wide_int_ref_storage<false, false> > >(generic_wide_int<wide_int_ref_storage<false, false> > const&, unsigned int)
+	.././../gcc-source/gcc/wide-int.h:1034
+0x6fbea1 generic_wide_int<wide_int_ref_storage<false, false> >::generic_wide_int<generic_wide_int<wide_int_ref_storage<false, false> > >(generic_wide_int<wide_int_ref_storage<false, false> > const&, unsigned int)
+	.././../gcc-source/gcc/wide-int.h:790
+0x6fbea1 unsigned long wi::extract_uhwi<generic_wide_int<wide_int_ref_storage<false, false> > >(generic_wide_int<wide_int_ref_storage<false, false> > const&, unsigned int, unsigned int)
+	.././../gcc-source/gcc/wide-int.h:3212
+0x6fbea1 unextend
+	.././../gcc-source/gcc/fold-const.c:6110
+0xb991ed fold_truth_andor_1
+	.././../gcc-source/gcc/fold-const.c:6461
+0xb9a4bd fold_truth_andor
+	.././../gcc-source/gcc/fold-const.c:9687
+0xb7aaf4 fold_binary_loc(unsigned int, tree_code, tree_node*, tree_node*, tree_node*)
+	.././../gcc-source/gcc/fold-const.c:12036
+0xb82629 fold_build2_loc(unsigned int, tree_code, tree_node*, tree_node*, tree_node*)
+	.././../gcc-source/gcc/fold-const.c:13781
+0x9358b2 c_fully_fold_internal
+	.././../gcc-source/gcc/c/c-fold.c:545
+0x936089 c_fully_fold(tree_node*, bool, bool*, bool)
+	.././../gcc-source/gcc/c/c-fold.c:125
+0x8d00ec c_process_expr_stmt(unsigned int, tree_node*)
+	.././../gcc-source/gcc/c/c-typeck.c:11320
+0x8d03cd c_finish_expr_stmt(unsigned int, tree_node*)
+	.././../gcc-source/gcc/c/c-typeck.c:11365
+0x90409f c_parser_statement_after_labels
+	.././../gcc-source/gcc/c/c-parser.c:6261
+0x9067ac c_parser_compound_statement_nostart
+	.././../gcc-source/gcc/c/c-parser.c:5798
+0x927f75 c_parser_compound_statement
+	.././../gcc-source/gcc/c/c-parser.c:5607
+0x929b2a c_parser_declaration_or_fndef
+	.././../gcc-source/gcc/c/c-parser.c:2544
+0x932583 c_parser_external_declaration
+	.././../gcc-source/gcc/c/c-parser.c:1779
+0x933093 c_parser_translation_unit
+	.././../gcc-source/gcc/c/c-parser.c:1652
+Please submit a full bug report,

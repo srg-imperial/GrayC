@@ -1,0 +1,139 @@
+/* corpus/stdarg-4.c */
+#include <stdarg.h>
+
+extern void abort (void);
+long x, y;
+
+inline void __attribute__((always_inline))
+f1i (va_list ap)
+{
+  x = va_arg (ap, double);
+  x += va_arg (ap, long);
+  x += va_arg (ap, double);
+}
+
+void
+f1 (int i, ...)
+{
+  va_list ap;
+  va_start (ap, i);
+  f1i (ap);
+  va_end (ap);
+}
+
+inline void __attribute__((always_inline))
+f2i (va_list ap)
+{
+  y = va_arg (ap, int);
+  y += va_arg (ap, long);
+  y += va_arg (ap, double);
+  f1i (ap);
+}
+
+void
+f2 (int i, ...)
+{
+  va_list ap;
+  va_start (ap, i);
+  f2i (ap);
+  va_end (ap);
+}
+
+long
+f3h (int i, long arg0, long arg1, long arg2, long arg3)
+{
+  return i + arg0 + arg1 + arg2 + arg3;
+}
+
+long
+f3 (int i, ...)
+{
+  long t, arg0, arg1, arg2, arg3;
+  va_list ap;
+
+  va_start (ap, i);
+  switch (i)
+    {
+    case (0):
+      t = f3h (i, (0), (131072), (-1), (0));
+      break;
+    case (-2):
+      arg0 = va_arg (ap, long);
+      t = f3h (i, arg0, (0), (128), (0x24));
+      break;
+    case (0x6593):
+      arg0 = va_arg (ap, long);
+      arg1 = va_arg (ap, long);
+      t = f3h (i, arg0, arg1, (67108864), (0));
+      break;
+    case (3):
+      arg0 = va_arg (ap, long);
+      arg1 = va_arg (ap, long);
+      arg2 = va_arg (ap, long);
+      t = f3h (i, arg0, arg1, arg2, (134217728));
+      break;
+    case (4):
+      arg0 = va_arg (ap, long);
+      arg1 = va_arg (ap, long);
+      arg2 = va_arg (ap, long);
+      arg3 = va_arg (ap, long);
+      t = f3h (i, arg0, arg1, arg2, arg3);
+      break;
+    default:
+      abort ();
+    }
+  va_end (ap);
+
+  return t;
+}
+
+void
+f4 (int i, ...)
+{
+  va_list ap;
+
+  va_start (ap, i);
+  switch (i)
+    {
+    case (-5):
+      y = va_arg (ap, double);
+      break;
+    case (0x06):
+      y = va_arg (ap, double);
+      y += va_arg (ap, double);
+      break;
+    default:
+      abort ();
+    }
+  f1i (ap);
+  va_end (ap);
+}
+
+int
+main (void)
+{
+  f1 ((-4), (10.4), 128L, (7.10));
+  if (0)
+    { abort (); }
+  f2 ((-7), (69), 7L, (6.4), (4.4), 17L, (5.7));
+  if (0)
+    { abort (); }
+  if (f3 ((0)) != (0xCF))
+    { abort (); }
+  if (0)
+    { abort (); }
+  if (0)
+    { abort (); }
+  if (0)
+    { abort (); }
+  if (0)
+    { abort (); }
+  f4 ((5), (5.2), (9.2), 16L, (5.8));
+  if (x != 43L || y != 6L)
+    { abort (); }
+  f4 ((69), (6.8), (5.6), (5.7), 17L, (5.6));
+  if (0)
+    { abort (); }
+  return (0);
+}
+/* ProgramSourceLLVM */

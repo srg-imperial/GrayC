@@ -1,0 +1,51 @@
+[kernel] Warning: -slevel is a deprecated alias for option -eva-slevel.
+  Please use -eva-slevel instead.
+[kernel] Warning: -plevel is a deprecated alias for option -eva-plevel.
+  Please use -eva-plevel instead.
+[kernel] Warning: -val-warn-undefined-pointer-comparison is a deprecated alias
+  for option -eva-warn-undefined-pointer-comparison.
+  Please use -eva-warn-undefined-pointer-comparison instead.
+[kernel] Warning: -no-val-alloc-returns-null is a deprecated alias
+  for option -eva-no-alloc-returns-null.
+  Please use -eva-no-alloc-returns-null instead.
+[kernel] Warning: -no-val-show-progress is a deprecated alias for option -eva-no-show-progress.
+  Please use -eva-no-show-progress instead.
+[kernel] Parsing _rmv_87957a8f544d12a4a24b97700a42d7365631c827.c (with preprocessing)
+[kernel] Current source was: _rmv_87957a8f544d12a4a24b97700a42d7365631c827.c:6
+  The full backtrace is:
+  Raised by primitive operation at file "z.ml", line 212, characters 46-56
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 10006, characters 47-64
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9697, characters 25-48
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9687, characters 9-1023
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9777, characters 27-47
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9823, characters 12-35
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9976, characters 13-36
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9697, characters 25-48
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9687, characters 9-1023
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 9328, characters 10-294
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 10326, characters 12-35
+  Called from file "list.ml", line 110, characters 12-15
+  Called from file "src/kernel_internals/typing/cabs2cil.ml", line 10330, characters 2-25
+  Called from file "src/kernel_internals/typing/frontc.ml", line 83, characters 14-36
+  Called from file "src/kernel_services/ast_queries/file.ml", line 602, characters 25-44
+  Called from file "src/kernel_services/ast_queries/file.ml", line 622, characters 14-38
+  Called from file "src/kernel_services/ast_queries/file.ml", line 685, characters 46-72
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/kernel_services/ast_queries/file.ml", line 685, characters 17-89
+  Called from file "src/kernel_services/ast_queries/file.ml", line 1625, characters 24-60
+  Called from file "src/kernel_services/ast_queries/file.ml", line 1702, characters 4-27
+  Called from file "src/kernel_services/ast_data/ast.ml", line 110, characters 2-28
+  Called from file "src/kernel_services/ast_data/ast.ml", line 118, characters 53-71
+  Called from file "src/kernel_internals/runtime/boot.ml", line 29, characters 6-20
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 842, characters 2-9
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 872, characters 18-64
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 231, characters 4-8
+  
+  Unexpected error (Z.Overflow).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues
+  Your Frama-C version is 22.0 (Titanium).
+  Note that a version and a backtrace alone often do not contain enough
+  information to understand the bug. Guidelines for reporting bugs are at:
+  https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs

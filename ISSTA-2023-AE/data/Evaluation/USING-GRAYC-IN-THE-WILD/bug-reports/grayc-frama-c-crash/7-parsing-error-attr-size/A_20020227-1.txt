@@ -1,0 +1,11 @@
+[kernel] Parsing /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20020227-1.c (with preprocessing)
+[kernel] /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results_output/A_20020227-1.c:6: 
+  syntax error:
+  Location: line 6, between columns 8 and 20, before or at token: float
+  4        (reg:SF 293) (reg:SF 294)).  */
+  5     
+  6     typedef __complex__ float cf;
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7     struct x { char c; cf f; } __attribute__ ((__packed__));
+  8     extern void f2 (struct x*);
+[kernel] Frama-C aborted: invalid user input.

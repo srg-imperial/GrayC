@@ -1,0 +1,78 @@
+[kernel] Parsing _rmv_ebea947370688082c77cf8289ef8e827d1b89b4b.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] _rmv_ebea947370688082c77cf8289ef8e827d1b89b4b.c:13: Warning: 
+  Calling undeclared function abort. Old style K&R code?
+[eva] Option -eva-precision 5 detected, automatic configuration of the analysis:
+  option -eva-min-loop-unroll set to 0 (default value).
+  option -eva-auto-loop-unroll set to 128.
+  option -eva-widening-delay set to 3 (default value).
+  option -eva-partition-history set to 0 (default value).
+  option -eva-slevel already set to 100.
+  option -eva-ilevel set to 48.
+  option -eva-plevel already set to 256 (not modified).
+  option -eva-subdivide-non-linear set to 100.
+  option -eva-remove-redundant-alarms set to true (default value).
+  option -eva-domains set to 'cvalue,equality,gauges,octagon,symbolic-locations'.
+  option -eva-split-return set to 'auto'.
+  option -eva-equality-through-calls set to 'formals' (default value).
+  option -eva-octagon-through-calls set to false (default value).
+[eva] Splitting return states on:
+[eva] Analyzing a complete application starting at main
+[eva] Computing initial state
+[eva] Initial state computed
+[eva:initial-state] Values of globals at initialization
+  
+[kernel] Current source was: _rmv_ebea947370688082c77cf8289ef8e827d1b89b4b.c:47
+  The full backtrace is:
+  Raised at file "src/kernel_services/ast_queries/cil.ml", line 4038, characters 22-72
+  Called from file "src/kernel_services/ast_queries/cil.ml", line 4533, characters 42-58
+  Called from file "src/kernel_services/ast_queries/cil.ml", line 4793, characters 8-29
+  Called from file "src/plugins/value/engine/evaluation.ml", line 917, characters 12-35
+  Called from file "src/plugins/value/engine/evaluation.ml", line 864, characters 6-40
+  Called from file "src/plugins/value/engine/evaluation.ml", line 801, characters 27-57
+  Called from file "src/plugins/value/engine/evaluation.ml", line 907, characters 6-33
+  Called from file "src/plugins/value/engine/evaluation.ml", line 834, characters 35-69
+  Called from file "src/plugins/value/engine/evaluation.ml", line 801, characters 27-57
+  Called from file "src/plugins/value/engine/evaluation.ml", line 1103, characters 6-36
+  Called from file "src/plugins/value/engine/subdivided_evaluation.ml", line 737, characters 18-61
+  Called from file "src/plugins/value/engine/evaluation.ml" (inlined), line 1148, characters 4-67
+  Called from file "src/plugins/value/engine/evaluation.ml", line 1509, characters 23-77
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 157, characters 14-59
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 177, characters 4-54
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 526, characters 6-65
+  Called from file "src/plugins/value/eval.ml", line 48, characters 29-32
+  Called from file "list.ml", line 126, characters 16-37
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 564, characters 4-68
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 752, characters 29-72
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 769, characters 24-59
+  Called from file "src/kernel_services/abstract_interp/bottom.ml" (inlined), line 31, characters 18-21
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 742, characters 6-1023
+  Called from file "src/plugins/value/engine/iterator.ml", line 274, characters 6-47
+  Called from file "src/plugins/value/partitioning/partition.ml", line 494, characters 29-34
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/plugins/value/engine/iterator.ml", line 430, characters 15-71
+  Called from file "src/plugins/value/engine/iterator.ml", line 494, characters 18-35
+  Called from file "list.ml", line 92, characters 20-23
+  Called from file "src/plugins/value/engine/iterator.ml", line 496, characters 18-60
+  Called from file "src/plugins/value/engine/iterator.ml", line 543, characters 13-31
+  Called from file "list.ml", line 110, characters 12-15
+  Called from file "src/plugins/value/engine/iterator.ml" (inlined), line 540, characters 4-31
+  Called from file "src/plugins/value/engine/iterator.ml", line 602, characters 6-22
+  Called from file "src/plugins/value/engine/iterator.ml", line 769, characters 20-39
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 201, characters 8-45
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 333, characters 25-75
+  Called from file "src/libraries/project/state_builder.ml", line 994, characters 9-13
+  Re-raised at file "src/libraries/project/state_builder.ml", line 1002, characters 9-18
+  Called from file "src/plugins/value/register.ml", line 39, characters 46-66
+  Called from file "queue.ml", line 121, characters 6-15
+  Called from file "src/kernel_internals/runtime/boot.ml", line 36, characters 4-20
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 842, characters 2-9
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 872, characters 18-64
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 231, characters 4-8
+  
+  Unexpected error (Cil.SizeOfError("Undefined sizeof(void).", _)).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues
+  Your Frama-C version is 22.0 (Titanium).
+  Note that a version and a backtrace alone often do not contain enough
+  information to understand the bug. Guidelines for reporting bugs are at:
+  https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs
