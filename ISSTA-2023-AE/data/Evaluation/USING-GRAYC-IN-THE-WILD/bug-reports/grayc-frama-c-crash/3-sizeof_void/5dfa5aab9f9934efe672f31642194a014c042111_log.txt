@@ -26,7 +26,7 @@ void a(char *b, int align) {}
 #define f() c()
 #define a(e) a(f(), __alignof__(e))
 void main() { a(void); }
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ls -l
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ls -l
 total 376
 -rw-r--r-- 1 user42 user42    123 Apr  6 13:20 5dfa5aab9f9934efe672f31642194a014c042111.c
 -rw-rw-r-- 1 user42 user42   1272 Apr  6 13:18 5dfa5aab9f9934efe672f31642194a014c042111.c.orig
@@ -39,9 +39,9 @@ total 376
 -rw-rw-r-- 1 user42 user42   3048 Apr  6 12:21 outa.txt
 -rw-rw-r-- 1 user42 user42    535 Apr  6 12:21 outb.txt
 -rwxr-xr-x 1 user42 user42   1360 Apr  6 13:18 reduce_framac-crash.sh
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ gcc 5dfa5aab9f9934efe672f31642194a014c042111.c
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ./a.out 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ gcc 5dfa5aab9f9934efe672f31642194a014c042111.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ./a.out 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
 [kernel] Parsing 5dfa5aab9f9934efe672f31642194a014c042111.c (with preprocessing)
 [eva] Analyzing a complete application starting at main
 [eva] Computing initial state

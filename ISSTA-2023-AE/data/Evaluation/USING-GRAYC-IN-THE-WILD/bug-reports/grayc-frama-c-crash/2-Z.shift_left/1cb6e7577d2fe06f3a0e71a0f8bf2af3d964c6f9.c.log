@@ -1,4 +1,4 @@
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ frama-c -eva 1cb6e7577d2fe06f3a0e71a0f8bf2af3d964c6f9_copy1.c 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ frama-c -eva 1cb6e7577d2fe06f3a0e71a0f8bf2af3d964c6f9_copy1.c 
 [kernel] Parsing 1cb6e7577d2fe06f3a0e71a0f8bf2af3d964c6f9_copy1.c (with preprocessing)
 [eva] Analyzing a complete application starting at main
 [eva] Computing initial state
@@ -44,6 +44,6 @@ user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zon
   Note that a version and a backtrace alone often do not contain enough
   information to understand the bug. Guidelines for reporting bugs are at:
   https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ frama-c 1cb6e7577d2fe06f3a0e71a0f8bf2af3d964c6f9_copy1.c 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ frama-c 1cb6e7577d2fe06f3a0e71a0f8bf2af3d964c6f9_copy1.c 
 [kernel] Parsing 1cb6e7577d2fe06f3a0e71a0f8bf2af3d964c6f9_copy1.c (with preprocessing)
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ 

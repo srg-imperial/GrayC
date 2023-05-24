@@ -1,14 +1,10 @@
-Reported: https://git.frama-c.com/pub/frama-c/-/issues/2595
-
-
-user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-frama-c/15-cil-not-representable$ frama-c -eva fuzzer-file-2359.c
 [kernel] Parsing fuzzer-file-2359.c (with preprocessing)
-[kernel] Current source was: fuzzer-file-2359.c:2
+[kernel] Current source was: fuzzer-file-2359.c:1
   The full backtrace is:
   Raised at Cil.intKindForValue in file "src/kernel_services/ast_queries/cil.ml", line 3096, characters 7-30
   Called from Cabs2cil.doSpecList in file "src/kernel_internals/typing/cabs2cil.ml", line 4796, characters 24-57
-  Called from Cabs2cil.doTypedef in file "src/kernel_internals/typing/cabs2cil.ml", line 9669, characters 28-71
-  Called from Cabs2cil.doDecl in file "src/kernel_internals/typing/cabs2cil.ml", line 9178, characters 34-65
+  Called from Cabs2cil.doOnlyTypedef in file "src/kernel_internals/typing/cabs2cil.ml", line 9768, characters 28-53
+  Called from Cabs2cil.doDecl in file "src/kernel_internals/typing/cabs2cil.ml", line 9181, characters 34-68
   Called from Cabs2cil.convFile.doOneGlobal in file "src/kernel_internals/typing/cabs2cil.ml", line 10455, characters 12-35
   Called from Stdlib__List.iter in file "list.ml", line 110, characters 12-15
   Called from Cabs2cil.convFile in file "src/kernel_internals/typing/cabs2cil.ml", line 10459, characters 2-25
@@ -33,4 +29,3 @@ user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-frama-
   Note that a version and a backtrace alone often do not contain enough
   information to understand the bug. Guidelines for reporting bugs are at:
   https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs
-

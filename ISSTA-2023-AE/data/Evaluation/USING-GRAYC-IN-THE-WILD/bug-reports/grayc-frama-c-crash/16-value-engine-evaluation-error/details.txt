@@ -1,0 +1,1 @@
+https://git.frama-c.com/pub/frama-c/-/issues/2610 - reported

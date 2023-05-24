@@ -1,0 +1,3 @@
+We reported this bug here: https://git.frama-c.com/pub/frama-c/-/issues/2551 
+
+Found with a fuzzed file

@@ -30,7 +30,7 @@ void b() {
   case 0 ... 9999999999999999999:;
 }
 void main() {}
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ls -l
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ls -l
 total 360
 -rw-r--r-- 1 user42 user42   1272 Apr  6 12:06 5dfa5aab9f9934efe672f31642194a014c042111.c
 -rw-r--r-- 1 user42 user42    963 Apr  6 12:07 9399cd1f3efeddf56359d42f77d2754a67d41059.c
@@ -41,7 +41,7 @@ total 360
 -rw-rw-r-- 1 user42 user42   3048 Apr  6 12:21 outa.txt
 -rw-rw-r-- 1 user42 user42    535 Apr  6 12:21 outb.txt
 -rwxr-xr-x 1 user42 user42   1326 Apr  6 12:21 reduce_framac-crash.sh
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ frama-c -eva da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ frama-c -eva da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c
 [kernel] Parsing da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c (with preprocessing)
 [kernel] Current source was: da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c:4
   The full backtrace is:
@@ -76,7 +76,7 @@ user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ frama-c -e
   Note that a version and a backtrace alone often do not contain enough
   information to understand the bug. Guidelines for reporting bugs are at:
   http://bts.frama-c.com/dokuwiki/doku.php?id=mantis:frama-c:bug_reporting_guidelines
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ gcc da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ gcc da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c
 da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c: In function ‘b’:
 da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c:4:14: warning: integer constant is so large that it is unsigned
     4 |   case 0 ... 9999999999999999999:;
@@ -84,30 +84,30 @@ da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c:4:14: warning: integer constant is so
 da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c:4:3: warning: empty range specified
     4 |   case 0 ... 9999999999999999999:;
       |   ^~~~
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ls -l
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ ls -l
 total 372
 -rw-r--r-- 1 user42 user42   1272 Apr  6 12:06 5dfa5aab9f9934efe672f31642194a014c042111.c
 -rw-r--r-- 1 user42 user42    963 Apr  6 12:07 9399cd1f3efeddf56359d42f77d2754a67d41059.c
@@ -119,14 +119,14 @@ total 372
 -rw-rw-r-- 1 user42 user42   3048 Apr  6 12:21 outa.txt
 -rw-rw-r-- 1 user42 user42    535 Apr  6 12:21 outb.txt
 -rwxr-xr-x 1 user42 user42   1326 Apr  6 12:21 reduce_framac-crash.sh
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ more da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ more da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c
 long a;
 void b() {
   switch (a)
   case 0 ... 9999999999999999999:;
 }
 void main() {}
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ more da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c.orig
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs$ more da8af4f574fcb46b5bdc926cec29f39db03d1fb4.c.orig
 int foo( unsigned long long aLL )
 {
     switch( aLL )

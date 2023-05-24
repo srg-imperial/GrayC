@@ -1,4 +1,4 @@
-user42@test08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ frama-c -eva 0bd2a2aa5631e87ab09386dc82e092f5aab23f0e.c 
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/Frama-C-zone$ frama-c -eva 0bd2a2aa5631e87ab09386dc82e092f5aab23f0e.c 
 [kernel] Parsing 0bd2a2aa5631e87ab09386dc82e092f5aab23f0e.c (with preprocessing)
 [eva] Analyzing a complete application starting at main
 [eva] Computing initial state

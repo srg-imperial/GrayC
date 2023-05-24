@@ -1,0 +1,10 @@
+We reported this bug here: https://git.frama-c.com/pub/frama-c/-/issues/2559
+
+Happened when we did auto-diff-testing and tested if a diff is from UB or not.
+
+====
+I found the original file of this mutated code, which is an llvm test-case 20050121-1.c and also ended with the same error. The test-case was added to fix a bug or a request in gcc (the comment there says: PR middle-end/19551) and this is the actual file: https://github.com/llvm/llvm-test-suite/blob/main/SingleSource/Regression/C/gcc-c-torture/execute/20050121-1.c  and this is the bug that created this test-case: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=19551.
+=====
+point out that they don't support complex numbers via the keyword _Complex:
+
+https://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Complex.html
