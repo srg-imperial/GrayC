@@ -1,0 +1,7 @@
+Internal compiler error
+
+Report: https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427553
+
+Microsoft ® C/C++ Optimizing Compiler Version 19.28.29915
+
+Status: Closed - Lower Priority
