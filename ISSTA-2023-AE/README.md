@@ -8,7 +8,7 @@ Implementation Details: we have implemented our approach as a set of tools, the 
 
 This repository contains the data and code to reproduce the results in the paper "GrayC: Greybox Fuzzing of Compilers and Analysers for C".
 
-
+*NOTE:* see these links for bug reports and raw data for [section 4](data/Evaluation/USING-GRAYC-IN-THE-WILD) and TODO.
 
 
 # II. GrayC Artifact ISSTA 2023 - Phase 1
