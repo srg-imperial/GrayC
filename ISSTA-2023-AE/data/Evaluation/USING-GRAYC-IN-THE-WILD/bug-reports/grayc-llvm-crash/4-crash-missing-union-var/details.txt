@@ -1,0 +1,137 @@
+Reported to Clang: https://bugs.llvm.org/show_bug.cgi?id=50649
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/random_crashes/reduce$ /home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang -O0 test2.c 
+test2.c:11:26: warning: implicit declaration of function 'f' is invalid in C99 [-Wimplicit-function-declaration]
+     (*a) = ((*l_639) |= f(p_39.f0, p_39.f0));
+                         ^
+LLVM ERROR: out of memory
+Allocation failed
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12 -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name test2.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /home/user42/data/llvm-csmith-12/llvm-install/usr/local/lib/clang/12.0.0 -internal-isystem /usr/local/include -internal-isystem /home/user42/data/llvm-csmith-12/llvm-install/usr/local/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -fdebug-compilation-dir /home/user42/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/random_crashes/reduce -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -o /tmp/test2-d24cee.o -x c test2.c
+1.	test2.c:11:45: current parser token ')'
+2.	test2.c:8:35: parsing function body 'main'
+3.	test2.c:8:35: in compound statement ('{}')
+ #0 0x000055e22958953d llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x1c0b53d)
+ #1 0x000055e229587244 llvm::sys::RunSignalHandlers() (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x1c09244)
+ #2 0x000055e2295873bb SignalHandler(int) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x1c093bb)
+ #3 0x00007f7f1f675980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007f7f1e2a2fb7 raise /build/glibc-S9d2JN/glibc-2.27/signal/../sysdeps/unix/sysv/linux/raise.c:51:0
+ #5 0x00007f7f1e2a4921 abort /build/glibc-S9d2JN/glibc-2.27/stdlib/abort.c:81:0
+ #6 0x000055e2294feab1 llvm::report_bad_alloc_error(char const*, bool) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x1b80ab1)
+ #7 0x000055e2294feae5 (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x1b80ae5)
+ #8 0x00007f7f1ecb3c8f operator new(unsigned long) (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0xa8c8f)
+ #9 0x000055e22bdbfacc clang::Stmt::operator new(unsigned long, clang::ASTContext const&, unsigned int) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x4441acc)
+#10 0x000055e22b3cebd9 clang::Sema::ActOnParenExpr(clang::SourceLocation, clang::SourceLocation, clang::Expr*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3a50bd9)
+#11 0x000055e22b540b8d clang::TreeTransform<(anonymous namespace)::TransformTypos>::TransformBinaryOperator(clang::BinaryOperator*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3bc2b8d)
+#12 0x000055e22b540f25 clang::TreeTransform<(anonymous namespace)::TransformTypos>::TransformCompoundAssignOperator(clang::CompoundAssignOperator*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3bc2f25)
+#13 0x000055e22b50f0a2 (anonymous namespace)::TransformTypos::RecursiveTransformLoop(clang::Expr*, bool&) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3b910a2)
+#14 0x000055e22b5100bb clang::Sema::CorrectDelayedTyposInExpr(clang::Expr*, clang::VarDecl*, bool, llvm::function_ref<clang::ActionResult<clang::Expr*, true> (clang::Expr*)>) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3b920bb)
+#15 0x000055e22b04923d clang::Parser::ParseParenExpression(clang::Parser::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x36cb23d)
+#16 0x000055e22b03e2a5 clang::Parser::ParseCastExpression(clang::Parser::CastParseKind, bool, bool&, clang::Parser::TypeCastState, bool, bool*) (.localalias) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x36c02a5)
+#17 0x000055e22b0402ca clang::Parser::ParseCastExpression(clang::Parser::CastParseKind, bool, clang::Parser::TypeCastState, bool, bool*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x36c22ca)
+#18 0x000055e22b0405f6 clang::Parser::ParseRHSOfBinaryExpression(clang::ActionResult<clang::Expr*, true>, clang::prec::Level) (.localalias) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x36c25f6)
+#19 0x000055e22b044309 clang::Parser::ParseExpression(clang::Parser::TypeCastState) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x36c6309)
+#20 0x000055e22b0a34ad clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x37254ad)
+#21 0x000055e22b0a3ce3 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3725ce3)
+#22 0x000055e22b0a44bd clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x37264bd)
+#23 0x000055e22b0acc11 clang::Parser::ParseCompoundStatementBody(bool) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x372ec11)
+#24 0x000055e22b0b047a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x373247a)
+#25 0x000055e22afee7cf clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x36707cf)
+#26 0x000055e22b01a277 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x369c277)
+#27 0x000055e22afe9eed clang::Parser::ParseDeclarationOrFunctionDefinition(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (.part.0) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x366beed)
+#28 0x000055e22aff2938 clang::Parser::ParseExternalDeclaration(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*) (.localalias) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3674938)
+#29 0x000055e22aff2f88 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3674f88)
+#30 0x000055e22afe2c69 clang::ParseAST(clang::Sema&, bool, bool) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x3664c69)
+#31 0x000055e229e61a99 clang::FrontendAction::Execute() (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x24e3a99)
+#32 0x000055e229e022fb clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x24842fb)
+#33 0x000055e229f13538 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0x2595538)
+#34 0x000055e2284439ae cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0xac59ae)
+#35 0x000055e228441347 ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&) (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0xac3347)
+#36 0x000055e2283c4354 main (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0xa46354)
+#37 0x00007f7f1e285bf7 __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:344:0
+#38 0x000055e228440cea _start (/home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin/clang-12+0xac2cea)
+clang-12: error: unable to execute command: Aborted (core dumped)
+clang-12: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 12.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/llvm-csmith-12/llvm-install/usr/local/bin
+clang-12: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-12: note: diagnostic msg: /tmp/test2-44393c.c
+clang-12: note: diagnostic msg: /tmp/test2-44393c.sh
+clang-12: note: diagnostic msg: 
+
+********************
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/random_crashes/reduce$ /home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang -O0 test2.c 
+test2.c:11:26: warning: implicit declaration of function 'f' is invalid in C99 [-Wimplicit-function-declaration]
+     (*a) = ((*l_639) |= f(p_39.f0, p_39.f0));
+                         ^
+LLVM ERROR: out of memory
+Allocation failed
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13 -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name test2.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fcoverage-compilation-dir=/home/user42/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/random_crashes/reduce -resource-dir /home/user42/data/llvm-csmith-13/llvm-install/usr/local/lib/clang/13.0.0 -internal-isystem /home/user42/data/llvm-csmith-13/llvm-install/usr/local/lib/clang/13.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -fdebug-compilation-dir=/home/user42/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/random_crashes/reduce -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /tmp/test2-0468a8.o -x c test2.c
+1.	test2.c:11:45: current parser token ')'
+2.	test2.c:8:35: parsing function body 'main'
+3.	test2.c:8:35: in compound statement ('{}')
+ #0 0x000055d5ad6276cd llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x1e0c6cd)
+ #1 0x000055d5ad6251c4 llvm::sys::RunSignalHandlers() (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x1e0a1c4)
+ #2 0x000055d5ad62533b SignalHandler(int) Signals.cpp:0:0
+ #3 0x00007f65a26fc980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007f65a1329fb7 raise /build/glibc-S9d2JN/glibc-2.27/signal/../sysdeps/unix/sysv/linux/raise.c:51:0
+ #5 0x00007f65a132b921 abort /build/glibc-S9d2JN/glibc-2.27/stdlib/abort.c:81:0
+ #6 0x000055d5ad597c81 llvm::report_bad_alloc_error(char const*, bool) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x1d7cc81)
+ #7 0x000055d5ad597cb5 (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x1d7ccb5)
+ #8 0x00007f65a1d3ac8f operator new(unsigned long) (/usr/lib/x86_64-linux-gnu/libstdc++.so.6+0xa8c8f)
+ #9 0x000055d5aff9cd4c clang::Stmt::operator new(unsigned long, clang::ASTContext const&, unsigned int) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x4781d4c)
+#10 0x000055d5af54d5c9 clang::Sema::ActOnParenExpr(clang::SourceLocation, clang::SourceLocation, clang::Expr*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3d325c9)
+#11 0x000055d5af6a4d5d clang::TreeTransform<(anonymous namespace)::TransformTypos>::TransformBinaryOperator(clang::BinaryOperator*) SemaExprCXX.cpp:0:0
+#12 0x000055d5af6a50d3 clang::TreeTransform<(anonymous namespace)::TransformTypos>::TransformCompoundAssignOperator(clang::CompoundAssignOperator*) SemaExprCXX.cpp:0:0
+#13 0x000055d5af691a22 (anonymous namespace)::TransformTypos::RecursiveTransformLoop(clang::Expr*, bool&) SemaExprCXX.cpp:0:0
+#14 0x000055d5af692a3b clang::Sema::CorrectDelayedTyposInExpr(clang::Expr*, clang::VarDecl*, bool, llvm::function_ref<clang::ActionResult<clang::Expr*, true> (clang::Expr*)>) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3e77a3b)
+#15 0x000055d5af1baedd clang::Parser::ParseParenExpression(clang::Parser::ParenParseOption&, bool, bool, clang::OpaquePtr<clang::QualType>&, clang::SourceLocation&) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x399fedd)
+#16 0x000055d5af1b08f9 clang::Parser::ParseCastExpression(clang::Parser::CastParseKind, bool, bool&, clang::Parser::TypeCastState, bool, bool*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x39958f9)
+#17 0x000055d5af1b21da clang::Parser::ParseCastExpression(clang::Parser::CastParseKind, bool, clang::Parser::TypeCastState, bool, bool*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x39971da)
+#18 0x000055d5af1b250e clang::Parser::ParseRHSOfBinaryExpression(clang::ActionResult<clang::Expr*, true>, clang::prec::Level) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x399750e)
+#19 0x000055d5af1b6139 clang::Parser::ParseExpression(clang::Parser::TypeCastState) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x399b139)
+#20 0x000055d5af21987d clang::Parser::ParseExprStatement(clang::Parser::ParsedStmtContext) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x39fe87d)
+#21 0x000055d5af216f83 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::ParsedAttributesWithRange&) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x39fbf83)
+#22 0x000055d5af2178ac clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x39fc8ac)
+#23 0x000055d5af220011 clang::Parser::ParseCompoundStatementBody(bool) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3a05011)
+#24 0x000055d5af22386a clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3a0886a)
+#25 0x000055d5af16052f clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x394552f)
+#26 0x000055d5af18ca67 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3971a67)
+#27 0x000055d5af15bcad clang::Parser::ParseDeclarationOrFunctionDefinition(clang::ParsedAttributesWithRange&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (.part.0) Parser.cpp:0:0
+#28 0x000055d5af1646b0 clang::Parser::ParseExternalDeclaration(clang::ParsedAttributesWithRange&, clang::ParsingDeclSpec*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x39496b0)
+#29 0x000055d5af164d08 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3949d08)
+#30 0x000055d5af154a09 clang::ParseAST(clang::Sema&, bool, bool) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x3939a09)
+#31 0x000055d5adf70ef9 clang::FrontendAction::Execute() (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x2755ef9)
+#32 0x000055d5adf04d59 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x26e9d59)
+#33 0x000055d5ae025638 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0x280a638)
+#34 0x000055d5ac4711db cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0xc561db)
+#35 0x000055d5ac46e959 ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&) driver.cpp:0:0
+#36 0x000055d5ac3eb334 main (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0xbd0334)
+#37 0x00007f65a130cbf7 __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:344:0
+#38 0x000055d5ac46e2da _start (/home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin/clang-13+0xc532da)
+clang-13: error: unable to execute command: Aborted (core dumped)
+clang-13: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 13.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/llvm-csmith-13/llvm-install/usr/local/bin
+clang-13: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-13: note: diagnostic msg: /tmp/test2-27a0c2.c
+clang-13: note: diagnostic msg: /tmp/test2-27a0c2.sh
+clang-13: note: diagnostic msg: 
+
+********************
+

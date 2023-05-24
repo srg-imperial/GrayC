@@ -1,5 +1,6 @@
-Prev. reported by others.
-
+Crash: reported by someone else https://bugs.llvm.org/show_bug.cgi?id=50878
+https://github.com/llvm/llvm-project/issues/50222 <== new system
+Bug 17 in our table 26/08/2022
 
  ============ test /home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/setA/8ecaebffe8a5343f9c11497c4f72dcdc027b93fb.c ============ 
 clang-11: /home/user42/data/builds_asan/llvm-110/llvm/lib/CodeGen/AsmPrinter/AsmPrinter.cpp:2565: void emitGlobalConstantStruct(const llvm::DataLayout&, const llvm::ConstantStruct*, llvm::AsmPrinter&, const llvm::Constant*, uint64_t): Assertion `SizeSoFar == Layout->getSize

@@ -1,0 +1,273 @@
+REPORTED BUG: https://bugs.llvm.org/show_bug.cgi?id=50988
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/8-crash-testing$ more 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c
+static int d, b;
+static char c[];
+static int e[];
+static int *f = e;
+static short h(int m);
+void i(int k) {
+  h(k);
+}
+short h(int m) {
+  int *n = &b;
+  char *o = &d;
+  *n = ((&c == o) > (40 && m, e[6]), 1); /* HERE */
+  return 0;
+}
+int main() { printf("%d\n", b); }
+1:19
+home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/bin/clang-13 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c -o del.o
+1:20
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/8-crash-testing$ vi 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/bin/clang-13 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c -o del.o
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:11:9: warning: incompatible pointer types initializing 'char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+  char *o = &d;
+        ^   ~~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:12:13: warning: comparison of distinct pointer types ('char (*)[]' and 'char *') [-Wcompare-distinct-pointer-types]
+  *n = ((&c == o) > (40 && m, e[6]), 1); /* HERE */
+         ~~ ^  ~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:12:25: warning: expression result unused [-Wunused-value]
+  *n = ((&c == o) > (40 && m, e[6]), 1); /* HERE */
+                     ~~ ^  ~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:12:19: warning: relational comparison result unused [-Wunused-comparison]
+  *n = ((&c == o) > (40 && m, e[6]), 1); /* HERE */
+        ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:15:14: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+int main() { printf("%d\n", b); }
+             ^
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:15:14: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:2:13: warning: tentative array definition assumed to have one element
+static char c[];
+            ^
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:3:12: warning: tentative array definition assumed to have one element
+static int e[];
+           ^
+1:20
+clang-13: /home/user42/data/builds_asan_main/llvm-100/llvm/include/llvm/IR/Instructions.h:1182: void llvm::ICmpInst::AssertOK(): Assertion `getOperand(0)->getType() == getOperand(1)->getType() && "Both operands to ICmp instruction are not of the same type!"' failed.
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/bin/clang-13 -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fcoverage-compilation-dir=/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing -resource-dir /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/lib/clang/13.0.0 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-isystem /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/lib/clang/13.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /tmp/0e836490069ceb4a485d852034e50a9c_878_test2520436154-9991c6.o -x c 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c
+1:20
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:9:7: Generating code for declaration 'h'
+ #0 0x00007f222c7f55aa llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) /home/user42/data/builds_asan_main/llvm-100/llvm/lib/Support/Unix/Signals.inc:565:22
+ #1 0x00007f222c7f5661 PrintStackTraceSignalHandler(void*) /home/user42/data/builds_asan_main/llvm-100/llvm/lib/Support/Unix/Signals.inc:632:1
+ #2 0x00007f222c7f3339 llvm::sys::RunSignalHandlers() /home/user42/data/builds_asan_main/llvm-100/llvm/lib/Support/Signals.cpp:71:20
+ #3 0x00007f222c7f4f39 SignalHandler(int) /home/user42/data/builds_asan_main/llvm-100/llvm/lib/Support/Unix/Signals.inc:407:1
+ #4 0x00007f2227cf2040 (/lib/x86_64-linux-gnu/libc.so.6+0x3f040)
+ #5 0x00007f2227cf1fb7 raise /build/glibc-S9d2JN/glibc-2.27/signal/../sysdeps/unix/sysv/linux/raise.c:51:0
+ #6 0x00007f2227cf3921 abort /build/glibc-S9d2JN/glibc-2.27/stdlib/abort.c:81:0
+ #7 0x00007f2227ce348a __assert_fail_base /build/glibc-S9d2JN/glibc-2.27/assert/assert.c:89:0
+ #8 0x00007f2227ce3502 (/lib/x86_64-linux-gnu/libc.so.6+0x30502)
+ #9 0x00007f2229ce5f36 llvm::ICmpInst::AssertOK() /home/user42/data/builds_asan_main/llvm-100/llvm/include/llvm/IR/Instructions.h:1182:5
+#10 0x00007f2229ce601a llvm::ICmpInst::ICmpInst(llvm::CmpInst::Predicate, llvm::Value*, llvm::Value*, llvm::Twine const&) /home/user42/data/builds_asan_main/llvm-100/llvm/include/llvm/IR/Instructions.h:1239:3
+#11 0x00007f2229ce8e4d llvm::IRBuilderBase::CreateICmp(llvm::CmpInst::Predicate, llvm::Value*, llvm::Value*, llvm::Twine const&) /home/user42/data/builds_asan_main/llvm-100/llvm/include/llvm/IR/IRBuilder.h:2292:18
+#12 0x00007f2229fd32e7 (anonymous namespace)::ScalarExprEmitter::EmitCompare(clang::BinaryOperator const*, llvm::CmpInst::Predicate, llvm::CmpInst::Predicate, llvm::CmpInst::Predicate, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:4081:34
+#13 0x00007f2229fc237c (anonymous namespace)::ScalarExprEmitter::VisitBinEQ(clang::BinaryOperator const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:826:3
+#14 0x00007f2229fd8927 clang::StmtVisitorBase<std::add_pointer, (anonymous namespace)::ScalarExprEmitter, llvm::Value*>::Visit(clang::Stmt*) /home/user42/data/builds_asan_main/llvm-100/clang/include/clang/AST/StmtVisitor.h:63:26
+#15 0x00007f2229fbfe11 (anonymous namespace)::ScalarExprEmitter::Visit(clang::Expr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:409:57
+#16 0x00007f2229fc0042 (anonymous namespace)::ScalarExprEmitter::VisitParenExpr(clang::ParenExpr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:429:3
+#17 0x00007f2229fd9f56 clang::StmtVisitorBase<std::add_pointer, (anonymous namespace)::ScalarExprEmitter, llvm::Value*>::Visit(clang::Stmt*) /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/tools/clang/include/clang/AST/StmtNodes.inc:1309:1
+#18 0x00007f2229fbfe11 (anonymous namespace)::ScalarExprEmitter::Visit(clang::Expr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:409:57
+#19 0x00007f2229fcd1fd (anonymous namespace)::ScalarExprEmitter::EmitBinOps(clang::BinaryOperator const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:2948:14
+#20 0x00007f2229fd2ac5 (anonymous namespace)::ScalarExprEmitter::EmitCompare(clang::BinaryOperator const*, llvm::CmpInst::Predicate, llvm::CmpInst::Predicate, llvm::CmpInst::Predicate, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:3974:25
+#21 0x00007f2229fc22d4 (anonymous namespace)::ScalarExprEmitter::VisitBinGT(clang::BinaryOperator const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:823:3
+#22 0x00007f2229fd88df clang::StmtVisitorBase<std::add_pointer, (anonymous namespace)::ScalarExprEmitter, llvm::Value*>::Visit(clang::Stmt*) /home/user42/data/builds_asan_main/llvm-100/clang/include/clang/AST/StmtVisitor.h:60:26
+#23 0x00007f2229fbfe11 (anonymous namespace)::ScalarExprEmitter::Visit(clang::Expr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:409:57
+#24 0x00007f2229fd6d0b clang::CodeGen::CodeGenFunction::EmitScalarExpr(clang::Expr const*, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:4759:1
+#25 0x00007f2229f3bbb3 clang::CodeGen::CodeGenFunction::EmitAnyExpr(clang::Expr const*, clang::CodeGen::AggValueSlot, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExpr.cpp:218:55
+#26 0x00007f2229f3bb14 clang::CodeGen::CodeGenFunction::EmitIgnoredExpr(clang::Expr const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExpr.cpp:203:63
+#27 0x00007f2229fd5567 (anonymous namespace)::ScalarExprEmitter::VisitBinComma(clang::BinaryOperator const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:4427:3
+#28 0x00007f2229fd8aef clang::StmtVisitorBase<std::add_pointer, (anonymous namespace)::ScalarExprEmitter, llvm::Value*>::Visit(clang::Stmt*) /home/user42/data/builds_asan_main/llvm-100/clang/include/clang/AST/StmtVisitor.h:83:26
+#29 0x00007f2229fbfe11 (anonymous namespace)::ScalarExprEmitter::Visit(clang::Expr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:409:57
+#30 0x00007f2229fc0042 (anonymous namespace)::ScalarExprEmitter::VisitParenExpr(clang::ParenExpr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:429:3
+#31 0x00007f2229fd9f56 clang::StmtVisitorBase<std::add_pointer, (anonymous namespace)::ScalarExprEmitter, llvm::Value*>::Visit(clang::Stmt*) /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/tools/clang/include/clang/AST/StmtNodes.inc:1309:1
+#32 0x00007f2229fbfe11 (anonymous namespace)::ScalarExprEmitter::Visit(clang::Expr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:409:57
+#33 0x00007f2229fd3c27 (anonymous namespace)::ScalarExprEmitter::VisitBinAssign(clang::BinaryOperator const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:4168:9
+#34 0x00007f2229fd89e7 clang::StmtVisitorBase<std::add_pointer, (anonymous namespace)::ScalarExprEmitter, llvm::Value*>::Visit(clang::Stmt*) /home/user42/data/builds_asan_main/llvm-100/clang/include/clang/AST/StmtVisitor.h:72:26
+#35 0x00007f2229fbfe11 (anonymous namespace)::ScalarExprEmitter::Visit(clang::Expr*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:409:57
+#36 0x00007f2229fd6d0b clang::CodeGen::CodeGenFunction::EmitScalarExpr(clang::Expr const*, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExprScalar.cpp:4759:1
+#37 0x00007f2229f3bbb3 clang::CodeGen::CodeGenFunction::EmitAnyExpr(clang::Expr const*, clang::CodeGen::AggValueSlot, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExpr.cpp:218:55
+#38 0x00007f2229f3bb14 clang::CodeGen::CodeGenFunction::EmitIgnoredExpr(clang::Expr const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGExpr.cpp:203:63
+#39 0x00007f222a183591 clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGStmt.cpp:120:56
+#40 0x00007f222a18471a clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CGStmt.cpp:450:3
+#41 0x00007f222a23009e clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenFunction.cpp:1194:36
+#42 0x00007f222a230c7f clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenFunction.cpp:1351:21
+#43 0x00007f222a259a11 clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenModule.cpp:4780:3
+#44 0x00007f222a252778 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenModule.cpp:3166:47
+#45 0x00007f222a24ea61 clang::CodeGen::CodeGenModule::EmitDeferred() /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenModule.cpp:2400:31
+#46 0x00007f222a244b67 clang::CodeGen::CodeGenModule::Release() /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenModule.cpp:478:31
+#47 0x00007f222a426d0b (anonymous namespace)::CodeGeneratorImpl::HandleTranslationUnit(clang::ASTContext&) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/ModuleBuilder.cpp:271:11
+#48 0x00007f222a21de6f clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&) /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenAction.cpp:291:13
+#49 0x00007f2220dc1738 clang::ParseAST(clang::Sema&, bool, bool) /home/user42/data/builds_asan_main/llvm-100/clang/lib/Parse/ParseAST.cpp:178:14
+#50 0x00007f2229114e0b clang::ASTFrontendAction::ExecuteAction() /home/user42/data/builds_asan_main/llvm-100/clang/lib/Frontend/FrontendAction.cpp:1056:11
+#51 0x00007f222a218ae6 clang::CodeGenAction::ExecuteAction() /home/user42/data/builds_asan_main/llvm-100/clang/lib/CodeGen/CodeGenAction.cpp:1039:5
+#52 0x00007f22291146d8 clang::FrontendAction::Execute() /home/user42/data/builds_asan_main/llvm-100/clang/lib/Frontend/FrontendAction.cpp:953:38
+#53 0x00007f222903f8c2 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) /home/user42/data/builds_asan_main/llvm-100/clang/lib/Frontend/CompilerInstance.cpp:958:42
+#54 0x00007f2228c3c142 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) /home/user42/data/builds_asan_main/llvm-100/clang/lib/FrontendTool/ExecuteCompilerInvocation.cpp:278:38
+#55 0x00005637ab8a9fd1 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) /home/user42/data/builds_asan_main/llvm-100/clang/tools/driver/cc1_main.cpp:246:40
+#56 0x00005637ab89e9a7 ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&) /home/user42/data/builds_asan_main/llvm-100/clang/tools/driver/driver.cpp:335:20
+#57 0x00005637ab89f158 main /home/user42/data/builds_asan_main/llvm-100/clang/tools/driver/driver.cpp:412:26
+#58 0x00007f2227cd4bf7 __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:344:0
+#59 0x00005637ab89d00a _start (/home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/bin/clang-13+0x1100a)
+clang-13: error: unable to execute command: Aborted (core dumped)
+clang-13: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 13.0.0 (https://github.com/llvm/llvm-project.git 972b6a3a3471c2a742c5c5d8ec004ff640d544c4)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/builds_asan_main/llvm-100-build_NO_D_A_asan/bin
+clang-13: note: diagnostic msg:
+
+========================================================================================================================================
+FIXED bug prev.: llvm/lib/Transforms/Vectorize/VPlan.cpp
+
+=====================================================================================================================================
+   744	/// Generate the code inside the body of the vectorized loop. Assumes a single
+   745	/// LoopVectorBody basic-block was created for this. Introduce additional
+   746	/// basic-blocks as needed, and fill them all.
+   747	void VPlan::execute(VPTransformState *State) {
+   748	  // -1. Check if the backedge taken count is needed, and if so build it.
+   749	  if (BackedgeTakenCount && BackedgeTakenCount->getNumUsers()) {
+   750	    Value *TC = State->TripCount;
+   751	    IRBuilder<> Builder(State->CFG.PrevBB->getTerminator());
+   752	    auto *TCMO = Builder.CreateSub(TC, ConstantInt::get(TC->getType(), 1),
+   753	                                   "trip.count.minus.1");
+   754	    auto VF = State->VF;
+   755	    Value *VTCMO =
+   756	        VF.isScalar() ? TCMO : Builder.CreateVectorSplat(VF, TCMO, "broadcast");
+   757	    for (unsigned Part = 0, UF = State->UF; Part < UF; ++Part)
+   758	      State->set(BackedgeTakenCount, VTCMO, Part);
+   759	  }
+
+clang version 13.0.0 (https://github.com/llvm/llvm-project.git 5db826e4ce63a4d45a4695e5486841d08b86cd24)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin
+
+  1203	//===----------------------------------------------------------------------===//
+  1204	//                               ICmpInst Class
+  1205	//===----------------------------------------------------------------------===//
+  1206	
+  1207	/// This instruction compares its operands according to the predicate given
+  1208	/// to the constructor. It only operates on integers or pointers. The operands
+  1209	/// must be identical types.
+  1210	/// Represent an integer comparison operator.
+  1211	class ICmpInst: public CmpInst {
+  1212	  void AssertOK() {
+  1213	    assert(isIntPredicate() &&
+  1214	           "Invalid ICmp predicate value");
+  1215	    assert(getOperand(0)->getType() == getOperand(1)->getType() &&
+  1216	          "Both operands to ICmp instruction are not of the same type!");
+  1217	    // Check that the operands are the right type
+  1218	    assert((getOperand(0)->getType()->isIntOrIntVectorTy() ||
+  1219	            getOperand(0)->getType()->isPtrOrPtrVectorTy()) &&
+  1220	           "Invalid operand types for ICmp instruction");
+  1221	  }
+
+Trace in the last fixed version is:
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/clang-13  0e836490069ceb4a485d852034e50a9c_878_test2520436154.c -o del.o
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:8:9: warning: incompatible pointer types initializing 'char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+  char *o = &d;
+        ^   ~~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:9:13: warning: comparison of distinct pointer types ('char (*)[]' and 'char *') [-Wcompare-distinct-pointer-types]
+  *n = ((&c == o) > 40, 1); /* HERE */
+         ~~ ^  ~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:9:19: warning: relational comparison result unused [-Wunused-comparison]
+  *n = ((&c == o) > 40, 1); /* HERE */
+        ~~~~~~~~~~^~~~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:9:19: warning: result of comparison of constant 40 with boolean expression is always false [-Wtautological-constant-out-of-range-compare]
+  *n = ((&c == o) > 40, 1); /* HERE */
+        ~~~~~~~~~ ^ ~~
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:2:13: warning: tentative array definition assumed to have one element
+static char c[];
+            ^
+0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:3:12: warning: tentative array definition assumed to have one element
+static int e[];
+           ^
+clang-13: /home/user42/data/build_test/builds_asan/llvm-100/llvm/include/llvm/IR/Instructions.h:1215: void llvm::ICmpInst::AssertOK(): Assertion `getOperand(0)->getType() == getOperand(1)->getType() && "Both operands to ICmp instruction are not of the same type!"' failed.
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/clang-13 -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fcoverage-compilation-dir=/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing -resource-dir /home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/lib/clang/13.0.0 -internal-isystem /home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/lib/clang/13.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /tmp/0e836490069ceb4a485d852034e50a9c_878_test2520436154-bb54fc.o -x c 0e836490069ceb4a485d852034e50a9c_878_test2520436154.c
+1.	<eof> parser at end of file
+2.	Per-file LLVM IR generation
+3.	0e836490069ceb4a485d852034e50a9c_878_test2520436154.c:6:7: Generating code for declaration 'h'
+ #0 0x00007f079da1dd6e llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) /home/user42/data/build_test/builds_asan/llvm-100/llvm/lib/Support/Unix/Signals.inc:565:22
+ #1 0x00007f079da1de25 PrintStackTraceSignalHandler(void*) /home/user42/data/build_test/builds_asan/llvm-100/llvm/lib/Support/Unix/Signals.inc:632:1
+ #2 0x00007f079da1bb05 llvm::sys::RunSignalHandlers() /home/user42/data/build_test/builds_asan/llvm-100/llvm/lib/Support/Signals.cpp:76:20
+ #3 0x00007f079da1d6fd SignalHandler(int) /home/user42/data/build_test/builds_asan/llvm-100/llvm/lib/Support/Unix/Signals.inc:407:1
+ #4 0x00007f0798b56040 (/lib/x86_64-linux-gnu/libc.so.6+0x3f040)
+ #5 0x00007f0798b55fb7 raise /build/glibc-S9d2JN/glibc-2.27/signal/../sysdeps/unix/sysv/linux/raise.c:51:0
+ #6 0x00007f0798b57921 abort /build/glibc-S9d2JN/glibc-2.27/stdlib/abort.c:81:0
+ #7 0x00007f0798b4748a __assert_fail_base /build/glibc-S9d2JN/glibc-2.27/assert/assert.c:89:0
+ #8 0x00007f0798b47502 (/lib/x86_64-linux-gnu/libc.so.6+0x30502)
+ #9 0x00007f079ab5ae1c (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x139e1c)
+#10 0x00007f079ab5af00 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x139f00)
+#11 0x00007f079ab5df07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x13cf07)
+#12 0x00007f079ae6755b (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44655b)
+#13 0x00007f079ae562a2 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x4352a2)
+#14 0x00007f079ae6cb9d (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44bb9d)
+#15 0x00007f079ae53d07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432d07)
+#16 0x00007f079ae53f38 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432f38)
+#17 0x00007f079ae6e214 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44d214)
+#18 0x00007f079ae53d07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432d07)
+#19 0x00007f079ae6137b (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44037b)
+#20 0x00007f079ae66d39 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x445d39)
+#21 0x00007f079ae561fa (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x4351fa)
+#22 0x00007f079ae6cb55 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44bb55)
+#23 0x00007f079ae53d07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432d07)
+#24 0x00007f079ae6af81 clang::CodeGen::CodeGenFunction::EmitScalarExpr(clang::Expr const*, bool) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x449f81)
+#25 0x00007f079add12cb clang::CodeGen::CodeGenFunction::EmitAnyExpr(clang::Expr const*, clang::CodeGen::AggValueSlot, bool) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x3b02cb)
+#26 0x00007f079add122c clang::CodeGen::CodeGenFunction::EmitIgnoredExpr(clang::Expr const*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x3b022c)
+#27 0x00007f079ae697dd (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x4487dd)
+#28 0x00007f079ae6cd65 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44bd65)
+#29 0x00007f079ae53d07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432d07)
+#30 0x00007f079ae53f38 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432f38)
+#31 0x00007f079ae6e214 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44d214)
+#32 0x00007f079ae53d07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432d07)
+#33 0x00007f079ae67e9b (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x446e9b)
+#34 0x00007f079ae6cc5d (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x44bc5d)
+#35 0x00007f079ae53d07 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x432d07)
+#36 0x00007f079ae6af81 clang::CodeGen::CodeGenFunction::EmitScalarExpr(clang::Expr const*, bool) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x449f81)
+#37 0x00007f079add12cb clang::CodeGen::CodeGenFunction::EmitAnyExpr(clang::Expr const*, clang::CodeGen::AggValueSlot, bool) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x3b02cb)
+#38 0x00007f079add122c clang::CodeGen::CodeGenFunction::EmitIgnoredExpr(clang::Expr const*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x3b022c)
+#39 0x00007f079b012acb clang::CodeGen::CodeGenFunction::EmitStmt(clang::Stmt const*, llvm::ArrayRef<clang::Attr const*>) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x5f1acb)
+#40 0x00007f079b013cb6 clang::CodeGen::CodeGenFunction::EmitCompoundStmtWithoutScope(clang::CompoundStmt const&, bool, clang::CodeGen::AggValueSlot) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x5f2cb6)
+#41 0x00007f079b0c7215 clang::CodeGen::CodeGenFunction::EmitFunctionBody(clang::Stmt const*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x6a6215)
+#42 0x00007f079b0c7f0f clang::CodeGen::CodeGenFunction::GenerateCode(clang::GlobalDecl, llvm::Function*, clang::CodeGen::CGFunctionInfo const&) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x6a6f0f)
+#43 0x00007f079b0f1c1f clang::CodeGen::CodeGenModule::EmitGlobalFunctionDefinition(clang::GlobalDecl, llvm::GlobalValue*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x6d0c1f)
+#44 0x00007f079b0ea8a0 clang::CodeGen::CodeGenModule::EmitGlobalDefinition(clang::GlobalDecl, llvm::GlobalValue*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x6c98a0)
+#45 0x00007f079b0e6bb8 clang::CodeGen::CodeGenModule::EmitDeferred() (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x6c5bb8)
+#46 0x00007f079b0dc843 clang::CodeGen::CodeGenModule::Release() (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x6bb843)
+#47 0x00007f079b2c3873 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x8a2873)
+#48 0x00007f079b0b4f53 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x693f53)
+#49 0x00007f0791b89668 clang::ParseAST(clang::Sema&, bool, bool) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/../lib/libclangParse.so.13git+0x3a668)
+#50 0x00007f0799f7580b clang::ASTFrontendAction::ExecuteAction() (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangFrontend.so.13git+0x2bc80b)
+#51 0x00007f079b0afb06 clang::CodeGenAction::ExecuteAction() (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangCodeGen.so.13git+0x68eb06)
+#52 0x00007f0799f750d8 clang::FrontendAction::Execute() (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangFrontend.so.13git+0x2bc0d8)
+#53 0x00007f0799e99ff6 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangFrontend.so.13git+0x1e0ff6)
+#54 0x00007f0799a93882 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/../lib/libclangFrontendTool.so.13git+0x4882)
+#55 0x000055a70cfbcfc4 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/clang-13+0x1dfc4)
+#56 0x000055a70cfb1926 (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/clang-13+0x12926)
+#57 0x000055a70cfb20a3 main (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/clang-13+0x130a3)
+#58 0x00007f0798b38bf7 __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:344:0
+#59 0x000055a70cfaff7a _start (/home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin/clang-13+0x10f7a)
+clang-13: error: unable to execute command: Aborted (core dumped)
+clang-13: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 13.0.0 (https://github.com/llvm/llvm-project.git 5db826e4ce63a4d45a4695e5486841d08b86cd24)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/user42/data/build_test/builds_asan/llvm-100-install_NO_D_A_asan/bin
+clang-13: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-13: note: diagnostic msg: /tmp/0e836490069ceb4a485d852034e50a9c_878_test2520436154-26b047.c
+clang-13: note: diagnostic msg: /tmp/0e836490069ceb4a485d852034e50a9c_878_test2520436154-26b047.sh
+clang-13: note: diagnostic msg: 
+
+********************
+

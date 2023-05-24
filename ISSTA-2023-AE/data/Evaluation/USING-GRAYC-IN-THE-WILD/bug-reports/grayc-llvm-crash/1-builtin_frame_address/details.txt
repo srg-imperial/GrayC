@@ -1,0 +1,78 @@
+1. crashed llvm-10 compiler with memory issues (the default of Ubuntu 18): LLVM ERROR: out of memory.
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-clang/1-builtin_frame_address$ clang-10 18bd9559c17b0064bead6a085a8a59baafff3564.c
+LLVM ERROR: out of memory
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-10/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name 18bd9559c17b0064bead6a085a8a59baafff3564.c -mrelocation-model static -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-10/lib/clang/10.0.0 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-10/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/user42/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-clang/1-builtin_frame_address -ferror-limit 19 -fmessage-length 0 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -fcolor-diagnostics -faddrsig -o /tmp/18bd9559c17b0064bead6a085a8a59baafff3564-a1cd4a.o -x c 18bd9559c17b0064bead6a085a8a59baafff3564.c 
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module '18bd9559c17b0064bead6a085a8a59baafff3564.c'.
+4.	Running pass 'X86 DAG->DAG Instruction Selection' on function '@a'
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm3sys15PrintStackTraceERNS_11raw_ostreamE+0x1f)[0x7f4f73f47c3f]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm3sys17RunSignalHandlersEv+0x50)[0x7f4f73f45f00]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(+0x978205)[0x7f4f73f48205]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12980)[0x7f4f733c3980]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x7f4f6fb5ffb7]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x7f4f6fb61921]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm22report_bad_alloc_errorEPKcb+0x93)[0x7f4f73ea6003]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(+0x8e9a74)[0x7f4f73eb9a74]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm12MachineInstrC2ERNS_15MachineFunctionERKNS_11MCInstrDescENS_8DebugLocEb+0x107)[0x7f4f741eb3f7]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm15MachineFunction18CreateMachineInstrERKNS_11MCInstrDescERKNS_8DebugLocEb+0x7a)[0x7f4f741e0bfa]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(+0x26ae7e1)[0x7f4f75c7e7e1]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm8FastISel17selectInstructionEPKNS_11InstructionE+0x212)[0x7f4f74410122]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm16SelectionDAGISel20SelectAllBasicBlocksERKNS_8FunctionE+0xe56)[0x7f4f74534dd6]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm16SelectionDAGISel20runOnMachineFunctionERNS_15MachineFunctionE+0x796)[0x7f4f74533266]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(+0x26f3e88)[0x7f4f75cc3e88]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm19MachineFunctionPass13runOnFunctionERNS_8FunctionE+0x118)[0x7f4f741e7a58]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm13FPPassManager13runOnFunctionERNS_8FunctionE+0x466)[0x7f4f7404e866]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm13FPPassManager11runOnModuleERNS_6ModuleE+0x33)[0x7f4f7404eae3]
+/usr/lib/x86_64-linux-gnu/libLLVM-10.so.1(_ZN4llvm6legacy15PassManagerImpl3runERNS_6ModuleE+0x3c0)[0x7f4f7404ef90]
+/usr/lib/x86_64-linux-gnu/libclang-cpp.so.10(_ZN5clang17EmitBackendOutputERNS_17DiagnosticsEngineERKNS_19HeaderSearchOptionsERKNS_14CodeGenOptionsERKNS_13TargetOptionsERKNS_11LangOptionsERKN4llvm10DataLayoutEPNSE_6ModuleENS_13BackendActionESt10unique_ptrINSE_17raw_pwrite_streamESt14default_deleteISM_EE+0x317e)[0x7f4f71cc9c7e]
+/usr/lib/x86_64-linux-gnu/libclang-cpp.so.10(+0x16b27dc)[0x7f4f71f4e7dc]
+/usr/lib/x86_64-linux-gnu/libclang-cpp.so.10(_ZN5clang8ParseASTERNS_4SemaEbb+0x283)[0x7f4f710f2ad3]
+/usr/lib/x86_64-linux-gnu/libclang-cpp.so.10(_ZN5clang14FrontendAction7ExecuteEv+0x48)[0x7f4f725b5ed8]
+/usr/lib/x86_64-linux-gnu/libclang-cpp.so.10(_ZN5clang16CompilerInstance13ExecuteActionERNS_14FrontendActionE+0x631)[0x7f4f7256e4c1]
+/usr/lib/x86_64-linux-gnu/libclang-cpp.so.10(_ZN5clang25ExecuteCompilerInvocationEPNS_16CompilerInstanceE+0x66f)[0x7f4f7261a19f]
+/usr/lib/llvm-10/bin/clang(_Z8cc1_mainN4llvm8ArrayRefIPKcEES2_Pv+0x99d)[0x4122dd]
+/usr/lib/llvm-10/bin/clang[0x4105e1]
+/usr/lib/llvm-10/bin/clang(main+0x28dd)[0x41039d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7f4f6fb42bf7]
+/usr/lib/llvm-10/bin/clang(_start+0x2a)[0x40d7fa]
+clang: error: unable to execute command: Killed
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 10.0.0-4ubuntu1~18.04.2 
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+clang: note: diagnostic msg: PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/18bd9559c17b0064bead6a085a8a59baafff3564-4b449a.c
+clang: note: diagnostic msg: /tmp/18bd9559c17b0064bead6a085a8a59baafff3564-4b449a.sh
+clang: note: diagnostic msg: 
+
+********************
+
+
+2. Fixed for llvm-11: 
+user42@cloud-vm-43-108:~$ clang-11 --version
+Ubuntu clang version 11.0.0-2~ubuntu20.04.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+user42@cloud-vm-43-108:~$ vi main.c
+user42@cloud-vm-43-108:~$ clang-10 main.c
+^C
+user42@cloud-vm-43-108:~$ clang-11 main.c
+main.c:1:22: error: argument value 4294967295 is outside the valid range [0, 65535]
+void a() { char *b = __builtin_frame_address(-1); }
+                     ^                       ~~
+1 error generated.
+
+3. Bug is fixed but still open:
+https://bugs.llvm.org/show_bug.cgi?id=25497
+https://github.com/llvm/llvm-project/issues/25871 <== New system
+Bug 16 in our table - 26/08/2022
