@@ -1,4 +1,4 @@
-# Bug finding 
+# Bug finding (Table 6 in the paper)
 
 Bug-finding controlled experiments for all tools in the evaluation, for all the trails we got. 
 
