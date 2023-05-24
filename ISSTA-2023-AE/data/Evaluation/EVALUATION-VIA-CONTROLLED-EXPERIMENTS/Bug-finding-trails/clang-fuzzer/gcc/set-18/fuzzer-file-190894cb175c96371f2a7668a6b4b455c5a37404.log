@@ -1,0 +1,139 @@
+190894cb175c96371f2a7668a6b4b455c5a37404.c: In function ‘main’:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:56:21: error: stray ‘`’ in program
+   56 |                    {`0xcd0d0032, 0x5d47f5d7, 0x5a0afbf6, 0xaea87b24 },
+      |                     ^
+In file included from 190894cb175c96371f2a7668a6b4b455c5a37404.c:64:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:40:1: error: expected expression before ‘typedef’
+   40 | typedef __builtin_va_list __gnuc_va_list;
+      | ^~~~~~~
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:99:9: error: unknown type name ‘__gnuc_va_list’
+   99 | typedef __gnuc_va_list va_list;
+      |         ^~~~~~~~~~~~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:66:5: error: conflicting types for ‘a’; have ‘int’
+   66 | int a, b;
+      |     ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:52:12: note: previous definition of ‘a’ with type ‘struct S[6]’
+   52 |   struct S a[] = { { 0x000004d3, 0xbc5448db, 0xf22bde9f, 0xebb44f8f },
+      |            ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:70:1: error: invalid storage class for function ‘f1’
+   70 | f1 (const char *fmt, ...)
+      | ^~
+190894cb175c96371f2a7668a6b4b455c5a37404.c: In function ‘f1’:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:77:37: error: first argument to ‘va_arg’ not of type ‘va_list’
+   77 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |                                     ^~~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:77:53: error: expected expression before ‘{’ token
+   77 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |                                                     ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:78:12: error: expected ‘)’ before ‘}’ token
+   78 |   return 0;
+      |            ^
+      |            )
+   79 | }
+      | ~           
+190894cb175c96371f2a7668a6b4b455c5a37404.c:77:6: note: to match this ‘(’
+   77 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |      ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:79:1: error: expected expression before ‘}’ token
+   79 | }
+      | ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c: In function ‘main’:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:87:30: error: expected ‘;’ before ‘)’ token
+   87 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+190894cb175c96371f2a7668a6b4b455c5a37404.c:87:30: error: expected statement before ‘)’ token
+190894cb175c96371f2a7668a6b4b455c5a37404.c:87:32: error: expected expression before ‘!=’ token
+   87 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:89:66: error: expected statement before ‘)’ token
+   89 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)
+      |                                                                  ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:91:11: error: ‘ap’ undeclared (first use in this function); did you mean ‘a’?
+   91 |   va_end (ap);
+      |           ^~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:91:11: note: each undeclared identifier is reported only once for each function it appears in
+190894cb175c96371f2a7668a6b4b455c5a37404.c: At top level:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:95:22: error: unknown type name ‘va_list’
+   95 | f2 (const char *fmt, va_list ap)
+      |                      ^~~~~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:65:1: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+   64 | #include <stdarg.h>
+  +++ |+#include <stdarg.h>
+   65 | 
+190894cb175c96371f2a7668a6b4b455c5a37404.c:106:27: error: unknown type name ‘va_list’
+  106 | f3 (int x, char const *y, va_list z)
+      |                           ^~~~~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:106:27: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+190894cb175c96371f2a7668a6b4b455c5a37404.c: In function ‘f4’:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:116:3: error: unknown type name ‘va_list’
+  116 |   va_list z;
+      |   ^~~~~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:116:3: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+190894cb175c96371f2a7668a6b4b455c5a37404.c:118:14: error: ‘c’ undeclared (first use in this function)
+  118 |   if (!x && *c == '\0')
+      |              ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:119:7: error: ‘b’ undeclared (first use in this function)
+  119 |     ++b;
+      |       ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c: At top level:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:125:1: error: redefinition of ‘main’
+  125 | main ()
+      | ^~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c:50:1: note: previous definition of ‘main’ with type ‘int()’
+   50 | main ()
+      | ^~~~
+190894cb175c96371f2a7668a6b4b455c5a37404.c: In function ‘main’:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:129:7: error: ‘a’ undeclared (first use in this function)
+  129 |   if (a != 1 || b != 1)
+      |       ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c:129:17: error: ‘b’ undeclared (first use in this function)
+  129 |   if (a != 1 || b != 1)
+      |                 ^
+190894cb175c96371f2a7668a6b4b455c5a37404.c: In function ‘main’:
+190894cb175c96371f2a7668a6b4b455c5a37404.c:58:39: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   58 |   baz (&a[5], &a[0], &a[1],! &a[2], &a[3]);
+      |                                      ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,0 +1,1008 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aq’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:26:20: error: expected ‘)’ before ‘}’ token
+   26 |   j = j & 4095 ^ (j }
+      |                  ~ ^~
+      |                    )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:26:20: error: expected ‘;’ before ‘}’ token
+   26 |   j = j & 4095 ^ (j }
+      |                    ^~
+      |                    ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:28:18: warning: ‘struct A’ declared inside parameter list will not be visible outside of this definition or declaration
+   28 | void baz (struct A *a)
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘baz’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:30:8: error: invalid use of undefined type ‘struct A’
+   30 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |        ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:30:15: error: invalid digit "8" in octal constant
+   30 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |               ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:30:23: error: invalid use of undefined type ‘struct A’
+   30 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |                       ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:30:42: error: expected ‘)’ before ‘;’ token
+   30 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |      ~                                   ^
+      |                                          )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:31:1: error: expected expression before ‘}’ token
+   31 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:33:1: error: unknown type name ‘A’
+   33 | A *bar (const char *v, int w, int x, const char *y, int z)
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘bar’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:36:7: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+   36 |     { abort (); }
+      |       ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+  +++ |+#include <stdlib.h>
+    1 | /* corpus/20180921-1.c */
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:36:7: warning: incompatible implicit declaration of built-in function ‘abort’ [-Wbuiltin-declaration-mismatch]
+   36 |     { abort (); }
+      |       ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:36:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:37:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   37 |   exit (0);
+      |   ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:37:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:37:3: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:37:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘test’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:42:7: error: expected ‘;’ before ‘)’ token
+   42 |   f^ v) & 5;
+      |       ^
+      |       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:42:7: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:42:9: error: lvalue required as unary ‘&’ operand
+   42 |   f^ v) & 5;
+      |         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘at’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:50:6: error: expected ‘(’ before ‘,’ token
+   50 |   for, (; al; al--) {
+      |      ^
+      |      (
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:50:20: error: expected ‘;’ before ‘{’ token
+   50 |   for, (; al; al--) {
+      |                    ^~
+      |                    ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:59:6: warning: null character(s) ignored
+   59 |   r =<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>@turn 0;
+      |      ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:59:13: error: stray ‘@’ in program
+   59 |   r =       @turn 0;
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:71:48: error: ‘Q9’ undeclared (first use in this function)
+   71 |                4,       4, 2, 9, 2, 9, 8, 1, 7,Q9, 2, 9, 4, 4, 2};
+      |                                                ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:71:48: note: each undeclared identifier is reported only once for each function it appears in
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:73:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘|’ token
+   73 |       struct a ag | ae, bk = aj + 3, bl = u << e;
+      |                   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:73:19: error: expected expression before ‘|’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:75:24: error: ‘tic’ undeclared (first use in this function)
+   75 |                 if (ac)tic short m[1], t = 95, am;
+      |                        ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:75:27: error: expected ‘;’ before ‘short’
+   75 |                 if (ac)tic short m[1], t = 95, am;
+      |                           ^~~~~~
+      |                           ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aq’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:80:20: error: expected ‘)’ before ‘}’ token
+   80 |   j = j & 4095 ^ (j }
+      |                  ~ ^~
+      |                    )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:80:20: error: expected ‘;’ before ‘}’ token
+   80 |   j = j & 4095 ^ (j }
+      |                    ^~
+      |                    ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:82:18: warning: ‘struct A’ declared inside parameter list will not be visible outside of this definition or declaration
+   82 | void baz (struct A *a)
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘baz’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:84:8: error: invalid use of undefined type ‘struct A’
+   84 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |        ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:84:15: error: invalid digit "8" in octal constant
+   84 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |               ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:84:23: error: invalid use of undefined type ‘struct A’
+   84 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |                       ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:84:42: error: expected ‘)’ before ‘;’ token
+   84 |   if (a->a != 088 || a->b != 52  + z * 25;
+      |      ~                                   ^
+      |                                          )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:85:1: error: expected expression before ‘}’ token
+   85 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:87:1: error: unknown type name ‘A’
+   87 | A *bar (const char *v, int w, int x, const char *y, int z)
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:88:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   88 | {
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘test’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:96:7: error: expected ‘;’ before ‘)’ token
+   96 |   f^ v) & 5;
+      |       ^
+      |       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:96:7: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:96:9: error: lvalue required as unary ‘&’ operand
+   96 |   f^ v) & 5;
+      |         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘/’ token
+  102 | static uns/�������+serrpus/pr59014.c */
+      |           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:11: error: expected expression before ‘/’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:12: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |            ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:13: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:14: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                    ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:15: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:16: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                            ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:17: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:18: error: stray ‘\377’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                                    ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:102:19: error: stray ‘\6’ in program
+  102 | static uns/<ff><ff><ff><ff><ff><ff><ff><U+0006>+serrpus/pr59014.c */
+      |                                        ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:105:1: error: unknown type name ‘staticigned’
+  105 | staticigned at() {
+      | ^~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:105:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  105 | staticigned at() {
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:116:6: warning: null character(s) ignored
+  116 |   r =<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>@turn 0;
+      |      ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:116:13: error: stray ‘@’ in program
+  116 |   r =       @turn 0;
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:130:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘|’ token
+  130 |       struct a ag | ae, bk = aj + 3, bl = u << e;
+      |                   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:130:19: error: expected expression before ‘|’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:137:17: error: break statement not within loop or switch
+  137 |                 break;
+      |                 ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:138:19: error: ‘bj’ undeclared (first use in this function); did you mean ‘b’?
+  138 |               if (bj)
+      |                   ^~
+      |                   b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:142:15: error: ‘be’ undeclared (first use in this function); did you mean ‘b’?
+  142 |               be.d A= k;
+      |               ^~
+      |               b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:142:19: error: expected ‘;’ before ‘A’
+  142 |               be.d A= k;
+      |                   ^~
+      |                   ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:143:23: error: ‘bh’ undeclared (first use in this function); did you mean ‘b’?
+  143 |               w = f - bh;
+      |                       ^~
+      |                       b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:153:17: error: continue statement not within a loop
+  153 |                 continue;
+      |                 ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:158:21: error: ‘bk’ undeclared (first use in this function); did you mean ‘b’?
+  158 |               g.c = bk;
+      |                     ^~
+      |                     b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:162:19: error: ‘bg’ undeclared (first use in this function); did you mean ‘b’?
+  162 |                   bg[ah] = 8;
+      |                   ^~
+      |                   b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:165:19: error: ‘bl’ undeclared (first use in this function); did you mean ‘b’?
+  165 |               u = bl;
+      |                   ^~
+      |                   b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:166:19: error: ‘bf’ undeclared (first use in this function); did you mean ‘b’?
+  166 |               g = bf;
+      |                   ^~
+      |                   b
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:174:17: error: ‘bd’ undeclared (first use in this function); did you mean ‘bm’?
+  174 |             if (bd.c) {
+      |                 ^~
+      |                 bm
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:191:17: error: break statement not within loop or switch
+  191 |                 break;
+      |                 ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:196:17: error: expected ‘;’ before ‘void’
+  196 |               be void kb_wait_0(void)
+      |                 ^~~~~
+      |                 ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:223:13: error: invalid storage class for function ‘foo’
+  223 | static void foo(int i)
+      |             ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:225:3: error: ‘global’ undeclared (first use in this function)
+  225 |   global+=i;
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:226:3: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  226 |   printf ("g=%d\n", global);
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | /* corpus/20180921-1.c */
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:226:3: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  226 |   printf ("g=%d\n", global);
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:226:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:229:12: error: invalid storage class for function ‘check’
+  229 | static int check(void)
+      |            ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘check’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:231:3: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  231 |   printf ("check %d\n", global);
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:231:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:231:25: error: ‘global’ undeclared (first use in this function)
+  231 |   printf ("check %d\n", global);
+      |                         ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:235:13: error: invalid storage class for function ‘dowhile’
+  235 | static void dowhile(void)
+      |             ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘dowhile’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:239:11: error: ‘global’ undeclared (first use in this function)
+  239 |       if (global == 1) {
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:253:3: warning: implicit declaration of function ‘kb_wait_1’ [-Wimplicit-function-declaration]
+  253 |   kb_wait_1();
+      |   ^~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:256:3: error: expected expression before ‘.’ token
+  256 |   .d A= k;
+      |   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:267:17: error: continue statement not within a loop
+  267 |                 continue;
+      |                 ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:2: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:3: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:4: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:5: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:6: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:7: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:8: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:9: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:10: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:11: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:12: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:13: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:14: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:15: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:16: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:17: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:18: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:19: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:20: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:21: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:22: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:23: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:24: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:25: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:26: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:27: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:28: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:29: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:30: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:31: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:32: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:33: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:34: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:35: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:36: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:37: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:38: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:39: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:40: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:41: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:42: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:43: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:44: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:45: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:46: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:47: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:48: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:49: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:50: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:51: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:52: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:53: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:54: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:55: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:56: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:57: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:58: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:59: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:60: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:61: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:62: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:63: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:64: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:65: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:66: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:67: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:68: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:69: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:70: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:71: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:72: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:73: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:74: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:75: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:76: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:77: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:78: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:79: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:80: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:81: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:82: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:83: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:84: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:85: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:86: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:87: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:88: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:89: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:90: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:91: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:92: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:93: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:94: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:95: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:96: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:97: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:98: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:99: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:100: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:101: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:102: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:103: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:104: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:105: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:106: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:107: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:108: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:109: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:110: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:111: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:112: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:113: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:114: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:115: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:116: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:117: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:118: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:119: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:120: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:121: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:122: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:123: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:124: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:125: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:126: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:127: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:128: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:129: error: stray ‘\376’ in program
+  281 |  <fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe><fe>           } else
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:264:15: error: label ‘av’ used but not defined
+  264 |               goto av;
+      |               ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:260:17: error: label ‘bb’ used but not defined
+  260 |                 goto bb;
+      |                 ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:281:143: error: expected ‘}’ before ‘else’
+  281 |  ��������������������������������������������������������������������������������������������������������������������������������           } else
+      |                                                                                                                                               ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:282:25: error: invalid operands to binary + (have ‘int’ and ‘struct a’)
+  282 |               for (;; o += a[ap])
+      |                         ^~ ~~~~~
+      |                             |
+      |                             struct a
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:146:17: error: label ‘bb’ used but not defined
+  146 |                 goto bb;
+      |                 ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:308:22: error: expected ‘;’ before ‘if’
+  308 |             ay = az.c if (0) {
+      |                      ^~~
+      |                      ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:350:7: error: break statement not within loop or switch
+  350 |       break;
+      |       ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:351:12: warning: implicit declaration of function ‘check’ [-Wimplicit-function-declaration]
+  351 |   } while (check());
+      |            ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:362:7: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  362 |       printf ("yeah\n");
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:362:7: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:364:7: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  364 |       printf ("boo\n");
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:364:7: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:374:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  374 |           printf ("once\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:374:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:390:15: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  390 |               printf ("SEonce\n");
+      |               ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:390:15: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:402:20: error: ‘a’ undeclared (first use in this function)
+  402 |       for (i = 1&& a;
+      |                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:403:11: error: expected expression before ‘for’
+  403 |           for (; ac; ac++)
+      |           ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:405:9: error: expected expression before ‘}’ token
+  405 |         }
+      |         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:405:9: error: expected expression before ‘}’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:409:11: error: label ‘av’ used but not defined
+  409 |           goto av;
+      |           ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:412:3: error: expected identifier or ‘(’ before ‘return’
+  412 |   return 0;
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:413:1: error: expected identifier or ‘(’ before ‘}’ token
+  413 | }  return 0;
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:413:4: error: expected identifier or ‘(’ before ‘return’
+  413 | }  return 0;
+      |    ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:414:1: error: expected identifier or ‘(’ before ‘}’ token
+  414 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:445:3: warning: data definition has no type or storage class
+  445 |   i = 41;
+      |   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:445:3: warning: type defaults to ‘int’ in declaration of ‘i’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:445:3: error: conflicting types for ‘i’; have ‘int’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:12:5: note: previous declaration of ‘i’ with type ‘int[6]’
+   12 | int i[6];
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:446:3: error: expected identifier or ‘(’ before ‘switch’
+  446 |   switch (i) {
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:454:36: warning: missing terminating ' character
+  454 |      the first loop statements aren't actually dead.  */
+      |                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:454:36: error: missing terminating ' character
+  454 |      the first loop statements aren't actually dead.  */
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:594:5: error: redefinition of ‘main’
+  594 | int main (void)
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:416:5: note: previous definition of ‘main’ with type ‘int(void)’
+  416 | int main (void)
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:602:7: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  602 |       printf ("yeah\n");
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:602:7: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:604:7: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  604 |       printf ("boo\n");
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:604:7: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:614:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  614 |           printf ("once\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:614:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:630:15: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  630 |               printf ("SEonce\n");
+      |               ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:630:15: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:643:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  643 |           printf ("once2\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:643:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:654:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  654 |           printf ("once3\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:654:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:667:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  667 |           printf ("error\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:667:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:672:8: error: ‘oops’ undeclared (first use in this function)
+  672 |       }oops, so that even
+      |        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:672:14: error: ‘so’ undeclared (first use in this function); did you mean ‘ao’?
+  672 |       }oops, so that even
+      |              ^~
+      |              ao
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:672:16: error: expected ‘;’ before ‘that’
+  672 |       }oops, so that even
+      |                ^~~~~
+      |                ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:673:36: warning: missing terminating ' character
+  673 |      the first loop statements aren't actually dead.  */
+      |                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:673:36: error: missing terminating ' character
+  673 |      the first loop statements aren't actually dead.  */
+      |                                    ^~~~~~~~~~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:677:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  677 |           printf ("once\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:677:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:678:1: error: duplicate label ‘enterloop’
+  678 | enterloop:
+      | ^~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:615:1: note: previous definition of ‘enterloop’ with type ‘void’
+  615 | enterloop:
+      | ^~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:693:15: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  693 |               printf ("SEonce\n");
+      |               ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:693:15: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:694:5: error: duplicate label ‘enterexprloop’
+  694 |     enterexprloop:
+      |     ^~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:631:5: note: previous definition of ‘enterexprloop’ with type ‘void’
+  631 |     enterexprloop:
+      |     ^~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:699:9: error: jump into statement expression
+  699 |         goto enterexprloop;
+      |         ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:631:5: note: label ‘enterexprloop’ defined here
+  631 |     enterexprloop:
+      |     ^~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:706:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  706 |           printf ("once2\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:706:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:707:1: error: duplicate label ‘enterloop2’
+  707 | enterloop2:
+      | ^~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:644:1: note: previous definition of ‘enterloop2’ with type ‘void’
+  644 | enterloop2:
+      | ^~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:717:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  717 |           printf ("once3\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:717:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:718:1: error: duplicate label ‘enterloop3’
+  718 | enterloop3:
+      | ^~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:655:1: note: previous definition of ‘enterloop3’ with type ‘void’
+  655 | enterloop3:
+      | ^~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:730:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  730 |           printf ("error\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:730:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:741:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  741 |           printf ("error3\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:741:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:750:3: warning: implicit declaration of function ‘dowhile’ [-Wimplicit-function-declaration]
+  750 |   dowhile();
+      |   ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:752:13: error: ‘mization’ undeclared (first use in this function)
+  752 |   !!!!!!!!!!mization/59014 */
+      |             ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:752:29: error: expected expression before ‘/’ token
+  752 |   !!!!!!!!!!mization/59014 */
+      |                             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:760:7: error: stray ‘\1’ in program
+  760 |     if<U+0001><U+0000> ((b > 0) | (a & 1))
+      |       ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:760:8: warning: null character(s) ignored
+  760 |     if<U+0001><U+0000> ((b > 0) | (a & 1))
+      |               ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:760:12: error: ‘b’ undeclared (first use in this function)
+  760 |     if  ((b > 0) | (a & 1))
+      |            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:760:22: error: ‘a’ undeclared (first use in this function)
+  760 |     if  ((b > 0) | (a & 1))
+      |                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:764:9: error: ‘d’ undeclared (first use in this function)
+  764 |         d = a;
+      |         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:765:9: error: ‘retu’ undeclared (first use in this function)
+  765 |         retu]n 0;
+      |         ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:765:13: error: expected ‘;’ before ‘]’ token
+  765 |         retu]n 0;
+      |             ^
+      |             ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:765:13: error: expected statement before ‘]’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:765:15: error: expected ‘;’ before numeric constant
+  765 |         retu]n 0;
+      |               ^~
+      |               ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:773:7: error: ‘d’ undeclared (first use in this function)
+  773 |   if (d != 2)
+      |       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:775:3: warning: implicit declaration of function ‘returnf’ [-Wimplicit-function-declaration]
+  775 |   returnf ("once3\n");
+      |   ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:777:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  777 |           printf ("twice3\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:777:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:788:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  788 |           printf ("error\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:788:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:799:11: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+  799 |           printf ("error3\n");
+      |           ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:799:11: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:801:11: error: ‘pr’ undeclared (first use in this function); did you mean ‘r’?
+  801 |           pr/intf ("caseok2\n");
+      |           ^~
+      |           r
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:801:14: warning: implicit declaration of function ‘intf’ [-Wimplicit-function-declaration]
+  801 |           pr/intf ("caseok2\n");
+      |              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:810:29: error: expected expression before ‘/’ token
+  810 |   !!!!!!!!!!mization/59014 */
+      |                             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:819:7: error: stray ‘\1’ in program
+  819 |     if<U+0001><U+0000> ((b > 0) | (a & 1))
+      |       ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:819:8: warning: null character(s) ignored
+  819 |     if<U+0001><U+0000> ((b > 0) | (a & 1))
+      |               ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:819:12: error: ‘b’ undeclared (first use in this function)
+  819 |     if  ((b > 0) | (a & 1))
+      |            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:819:22: error: ‘a’ undeclared (first use in this function)
+  819 |     if  ((b > 0) | (a & 1))
+      |                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:823:9: error: ‘d’ undeclared (first use in this function)
+  823 |         d = a;
+      |         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:824:9: error: ‘retu’ undeclared (first use in this function)
+  824 |         retu]n 0;
+      |         ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:824:13: error: expected ‘;’ before ‘]’ token
+  824 |         retu]n 0;
+      |             ^
+      |             ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:824:13: error: expected statement before ‘]’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:824:15: error: expected ‘;’ before numeric constant
+  824 |         retu]n 0;
+      |               ^~
+      |               ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:832:7: error: ‘d’ undeclared (first use in this function)
+  832 |   if (d != 2)
+      |       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:835:1: error: expected declaration or statement at end of input
+  835 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c: In function ‘aq’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/1b684a0159a45a1a9e421575c68ae6bac206d210.c:24:16: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   24 |   j = j & 5 ^ i[j ^ v & 5];
+      |               ~^~~~~~~~~~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc2adaa gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15835
+0xc3bae7 gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:6043
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+0xc3d47d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16467
+0xa691f7 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.cc:675
+0xa6be47 analyze_functions
+	.././../gcc-source/gcc/cgraphunit.cc:1240
+0xa6cacd symbol_table::finalize_compilation_unit()
+	.././../gcc-source/gcc/cgraphunit.cc:2500
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

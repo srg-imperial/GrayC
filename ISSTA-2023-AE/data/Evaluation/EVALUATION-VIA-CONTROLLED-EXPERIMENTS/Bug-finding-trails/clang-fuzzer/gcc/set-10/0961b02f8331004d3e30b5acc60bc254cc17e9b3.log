@@ -1,0 +1,312 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: In function ‘lstrcpynW’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:8:4: error: expected expression before ‘?’ token
+    8 |    ?while ((count > 1) &                                                                                              & S',0};
+      |    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:8:25: warning: null character(s) ignored
+    8 |    ?while ((count > 1) &<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>& S',0};
+      |                         ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:8:122: warning: missing terminating ' character
+    8 |    ?while ((count > 1) &                                                                                              & S',0};
+      |                                                                                                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:8:122: error: missing terminating ' character
+    8 |    ?while ((count > 1) &                                                                                              & S',0};
+      |                                                                                                                          ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:11:14: error: stray ‘\4’ in program
+   11 |     short *p;<U+0004>
+      |              ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:12:1: warning: null character(s) ignored
+   12 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:12:37: warning: null character(s) ignored
+   12 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:12:184: warning: null character(s) ignored
+   12 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:34:5: error: expected identifier or ‘(’ before ‘if’
+   34 |     if (count) *d = 0;
+      |     ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:35:1: error: expected identifier or ‘(’ before ‘}’ token
+   35 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: In function ‘badfunc’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:46:1: warning: null character(s) ignored
+   46 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:46:37: warning: null character(s) ignored
+   46 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:46:183: warning: null character(s) ignored
+   46 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:46:63: error: ‘kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk’ undeclared (first use in this function)
+   46 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk      if (extfunc())
+      |                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:46:63: note: each undeclared identifier is reported only once for each function it appears in
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:46:183: error: expected ‘;’ before ‘if’
+   46 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk      if (extfunc())
+      |                                                                                                                                                                                       ^     ~~
+      |                                                                                                                                                                                       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:66:8: warning: null character(s) ignored
+   66 | int mai<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>& S',0};
+      |        ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:66:86: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘&’ token
+   66 | int mai                                                                              & S',0};
+      |                                                                                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:66:89: warning: missing terminating ' character
+   66 | int mai                                                                              & S',0};
+      |                                                                                         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:66:89: error: missing terminating ' character
+   66 | int mai                                                                              & S',0};
+      |                                                                                         ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:69:14: error: stray ‘\4’ in program
+   69 |     short *p;<U+0004>
+      |              ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:70:1: warning: null character(s) ignored
+   70 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkame_len);
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:70:36: error: expected identifier or ‘(’ before ‘!’ token
+   70 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkame_len);
+      |                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:70:37: warning: null character(s) ignored
+   70 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkame_len);
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:72:5: warning: data definition has no type or storage class
+   72 |     ret = 1;
+      |     ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:72:5: warning: type defaults to ‘int’ in declaration of ‘ret’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:72:5: error: redefinition of ‘ret’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:68:9: note: previous definition of ‘ret’ with type ‘int’
+   68 |     int ret = 0;
+      |         ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:73:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘:’ token
+   73 | done:
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:75:1: error: expected identifier or ‘(’ before ‘}’ token
+   75 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:77:13: error: redefinition of ‘f’
+   77 | static long f()
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:61:13: note: previous definition of ‘f’ with type ‘long int()’
+   61 | static long f()
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:83:14: error: stray ‘\4’ in program
+   83 |     short *p;<U+0004>
+      |              ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:84:1: warning: null character(s) ignored
+   84 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:84:36: error: expected identifier or ‘(’ before ‘!’ token
+   84 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!      if (extfunc())
+      |                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:84:37: warning: null character(s) ignored
+   84 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:84:184: warning: null character(s) ignored
+   84 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk!<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:86:5: warning: data definition has no type or storage class
+   86 |     p = (void *)extfunc();
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:86:5: warning: type defaults to ‘int’ in declaration of ‘p’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:86:5: error: conflicting types for ‘p’; have ‘int’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:83:12: note: previous declaration of ‘p’ with type ‘short int *’
+   83 |     short *p;
+      |            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:87:5: error: expected identifier or ‘(’ before ‘if’
+   87 |     if (p != 0)
+      |     ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:90:5: warning: data definition has no type or storage class
+   90 |     extfunc(superblock);
+      |     ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:90:5: warning: type defaults to ‘int’ in declaration of ‘extfunc’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:90:5: warning: parameter names (without types) in function declaration
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:90:5: error: ‘extfunc’ redeclared as different kind of symbol
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:2:8: note: previous declaration of ‘extfunc’ with type ‘long int (*)()’
+    2 | long (*extfunc)();
+      |        ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:92:5: warning: data definition has no type or storage class
+   92 |     lstrcpynW(fsname, ntfsW, fsname_len);
+      |     ^~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:92:5: warning: type defaults to ‘int’ in declaration of ‘lstrcpynW’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:92:5: warning: parameter names (without types) in function declaration
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:92:5: error: conflicting types for ‘lstrcpynW’; have ‘int()’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:4:20: note: previous definition of ‘lstrcpynW’ with type ‘void(short int *, const short int *, int)’
+    4 | static inline void lstrcpynW( short *d, const short *s, int n )
+      |                    ^~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:94:5: warning: data definition has no type or storage class
+   94 |     ret = 1;
+      |     ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:94:5: warning: type defaults to ‘int’ in declaration of ‘ret’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:94:5: error: redefinition of ‘ret’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:68:9: note: previous definition of ‘ret’ with type ‘int’
+   68 |     int ret = 0;
+      |         ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:95:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘:’ token
+   95 | done:
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:97:1: error: expected identifier or ‘(’ before ‘}’ token
+   97 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:99:13: error: redefinition of ‘f’
+   99 | static long f()
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:77:13: note: previous definition of ‘f’ with type ‘long int()’
+   77 | static long f()
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:104:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘*’ token
+  104 | int main  *d++ = *s++;
+      |           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:105:5: error: expected identifier or ‘(’ before ‘}’ token
+  105 |     }
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:106:5: error: expected identifier or ‘(’ before ‘if’
+  106 |     if (count) *d = 0;
+      |     ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:107:1: error: expected identifier or ‘(’ before ‘}’ token
+  107 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:110:1: error: redefinition of ‘badfunc’
+  110 | badfunc(int u0, int u1, int u2, int u3,
+      | ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:38:1: note: previous definition of ‘badfunc’ with type ‘int(int,  int,  int,  int,  short int *, unsigned int)’
+   38 | badfunc(int u0, int u1, int u2, int u3,
+      | ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: In function ‘badfunc’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:118:1: warning: null character(s) ignored
+  118 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:118:37: warning: null character(s) ignored
+  118 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:118:183: warning: null character(s) ignored
+  118 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:118:63: error: ‘kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk’ undeclared (first use in this function)
+  118 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk      if (extfunc())
+      |                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:118:183: error: expected ‘;’ before ‘if’
+  118 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk      if (extfunc())
+      |                                                                                                                                                                                       ^     ~~
+      |                                                                                                                                                                                       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:133:13: error: redefinition of ‘f’
+  133 | static long f()
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:99:13: note: previous definition of ‘f’ with type ‘long int()’
+   99 | static long f()
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:138:8: warning: null character(s) ignored
+  138 | int mai<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>& S',0};
+      |        ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:138:86: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘&’ token
+  138 | int mai                                                                              & S',0};
+      |                                                                                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:138:89: warning: missing terminating ' character
+  138 | int mai                                                                              & S',0};
+      |                                                                                         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:138:89: error: missing terminating ' character
+  138 | int mai                                                                              & S',0};
+      |                                                                                         ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:140:9: error: redefinition of ‘ret’
+  140 |     int ret = 0;
+      |         ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:68:9: note: previous definition of ‘ret’ with type ‘int’
+   68 |     int ret = 0;
+      |         ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:141:14: error: stray ‘\4’ in program
+  141 |     short *p;<U+0004>
+      |              ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:142:1: warning: null character(s) ignored
+  142 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*d++ = *s++;
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:142:36: error: expected identifier or ‘(’ before ‘!’ token
+  142 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*d++ = *s++;
+      |                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:142:37: warning: null character(s) ignored
+  142 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*d++ = *s++;
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:143:5: error: expected identifier or ‘(’ before ‘}’ token
+  143 |     }
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:144:5: error: expected identifier or ‘(’ before ‘if’
+  144 |     if (count) *d = 0;
+      |     ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:145:1: error: expected identifier or ‘(’ before ‘}’ token
+  145 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:148:1: error: redefinition of ‘badfunc’
+  148 | badfunc(int u0, int u1, int u2, int u3,
+      | ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:38:1: note: previous definition of ‘badfunc’ with type ‘int(int,  int,  int,  int,  short int *, unsigned int)’
+   38 | badfunc(int u0, int u1, int u2, int u3,
+      | ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: In function ‘badfunc’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:156:1: warning: null character(s) ignored
+  156 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:156:37: warning: null character(s) ignored
+  156 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                            ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:156:183: warning: null character(s) ignored
+  156 |   <U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>!<U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk<U+0000><U+0000><U+0000><U+0000>  if (extfunc())
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:156:63: error: ‘kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk’ undeclared (first use in this function)
+  156 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk      if (extfunc())
+      |                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:156:183: error: expected ‘;’ before ‘if’
+  156 |                                    !                          kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk      if (extfunc())
+      |                                                                                                                                                                                       ^     ~~
+      |                                                                                                                                                                                       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:160:18: error: expected ‘;’ before ‘(’ token
+  160 |         goto donn()
+      |                  ^
+      |                  ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:165:1: error: expected declaration or statement at end of input
+  165 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:160:9: error: label ‘donn’ used but not defined
+  160 |         goto donn()
+      |         ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c: In function ‘badfunc’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_1/0961b02f8331004d3e30b5acc60bc254cc17e9b3.c:52:5: internal compiler error: tree check: expected function_type or method_type, have error_mark in gimplify_call_expr, at gimplify.cc:3660
+   52 |     extfunc(superblock);
+      |     ^~~~~~~~~~~~~~~~~~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x725154 tree_check2(tree_node*, char const*, int, char const*, tree_code, tree_code)
+	.././../gcc-source/gcc/tree.h:3469
+0x725154 gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3660
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+0xc3d47d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16467
+0xa691f7 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.cc:675
+0xa6be47 analyze_functions
+	.././../gcc-source/gcc/cgraphunit.cc:1240
+0xa6cacd symbol_table::finalize_compilation_unit()
+	.././../gcc-source/gcc/cgraphunit.cc:2500
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,0 +1,123 @@
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c: In function ‘foo’:
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:12:49: error: ‘y’ undeclared (first use in this function)
+   12 |   tl = ((unsigned long long) in->u[1] << 32) |  y;
+      |                                                 ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:12:49: note: each undeclared identifier is reported only once for each function it appears in
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:13:3: warning: implicit declaration of function ‘bar’ [-Wimplicit-function-declaration]
+   13 |   bar (&x, a, 1);
+      |   ^~~
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:13:9: error: ‘x’ undeclared (first use in this function)
+   13 |   bar (&x, a, 1);
+      |         ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:13:12: error: ‘a’ undeclared (first use in this function)
+   13 |   bar (&x, a, 1);
+      |            ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:14:13: error: ‘c’ undeclared (first use in this function)
+   14 |  ; foo (&y, c, 1);
+      |             ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:15:3: error: ‘r’ undeclared (first use in this function)
+   15 |   r->u[0] = a->u[0] ^ x.u[0] ^ ((b->u[0] >> 11) & 0xdfffffefU) ^ y.u[0] ^ (d->u[0] << 18);
+      |   ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:15:34: error: ‘b’ undeclared (first use in this function)
+   15 |   r->u[0] = a->u[0] ^ x.u[0] ^ ((b->u[0] >> 11) & 0xdfffffefU) ^ y.u[0] ^ (d->u[0] << 18);
+      |                                  ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:15:76: error: ‘d’ undeclared (first use in this function)
+   15 |   r->u[0] = a->u[0] ^ x.u[0] ^ ((b->u[0] >> 11) & 0xdfffffefU) ^ y.u[0] ^ (d->u[0] << 18);
+      |                                                                            ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c: In function ‘main’:
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:30:3: warning: implicit declaration of function ‘baz’ [-Wimplicit-function-declaration]
+   30 |   baz (&a[5], &a[0], &a[1], &a[2], &a[3]);
+      |   ^~~
+In file included from 1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:34:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:40:1: error: expected expression before ‘typedef’
+   40 | typedef __builtin_va_list __gnuc_va_list;
+      | ^~~~~~~
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:99:9: error: unknown type name ‘__gnuc_va_list’
+   99 | typedef __gnuc_va_list va_list;
+      |         ^~~~~~~~~~~~~~
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:36:5: error: conflicting types for ‘a’; have ‘int’
+   36 | int a, b;
+      |     ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:24:12: note: previous definition of ‘a’ with type ‘struct S[6]’
+   24 |   struct S a[] = { { 0x000004d3, 0xbc5448db, 0xf22bde9f, 0xebb44f8f },
+      |            ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:37:7: error: expected identifier or ‘(’ before ‘>>’ token
+   37 | char  >> 11) & 0xbffaffffU) ^ y.u[2] ^ (d->u[2] << 18);
+      |       ^~
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:38:3: error: ‘r’ undeclared (first use in this function)
+   38 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |   ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:38:23: error: ‘x’ undeclared (first use in this function)
+   38 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                       ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:38:35: error: invalid type argument of ‘->’ (have ‘int’)
+   38 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                                   ^~
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:38:66: error: ‘y’ undeclared (first use in this function)
+   38 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                                                                  ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:38:76: error: ‘d’ undeclared (first use in this function)
+   38 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                                                                            ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c: At top level:
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:42:1: error: redefinition of ‘main’
+   42 | main ()
+      | ^~~~
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:22:1: note: previous definition of ‘main’ with type ‘int()’
+   22 | main ()
+      | ^~~~
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c: In function ‘main’:
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:53:1: error: expected expression before ‘}’ token
+   53 | }
+      | ^
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c: At top level:
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:4: error: unterminated #if
+    4 | #if __SIZEOF_INT__ == 4 && __SIZEOF_LONG_LONG__ == 8 && __CHAR_BIT__ == 8
+      | 
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c: In function ‘main’:
+1ecbcad8a4bcf73ea55d80d05ec3388b7f2dbccc.c:30:38: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   30 |   baz (&a[5], &a[0], &a[1], &a[2], &a[3]);
+      |                                     ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,0 +1,8 @@
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+clang: error: unable to execute command: CPU time limit exceeded
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+clang: note: diagnostic msg:
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+clang: note: diagnostic msg: /tmp/file_polyglot_015647-a1e2e2.c
+clang: note: diagnostic msg: /tmp/file_polyglot_015647-a1e2e2.sh
+clang: note: diagnostic msg: 

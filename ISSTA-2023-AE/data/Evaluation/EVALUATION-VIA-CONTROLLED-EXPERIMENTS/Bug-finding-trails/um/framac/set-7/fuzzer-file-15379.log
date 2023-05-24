@@ -1,0 +1,86 @@
+[kernel] Parsing _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c:53: Warning: 
+  Calling undeclared function abort. Old style K&R code?
+[kernel:typing:implicit-function-declaration] _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c:61: Warning: 
+  Calling undeclared function __builtin_memset. Old style K&R code?
+[kernel:typing:incompatible-types-call] _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c:65: Warning: 
+  expected 'struct table_elt *' but got argument of type 'struct write_data *': & writes
+[eva] Option -eva-precision 5 detected, automatic configuration of the analysis:
+  option -eva-min-loop-unroll set to 0 (default value).
+  option -eva-auto-loop-unroll set to 128.
+  option -eva-widening-delay set to 3 (default value).
+  option -eva-partition-history set to 0 (default value).
+  option -eva-slevel already set to 100.
+  option -eva-ilevel set to 48.
+  option -eva-plevel already set to 256 (not modified).
+  option -eva-subdivide-non-linear set to 100.
+  option -eva-remove-redundant-alarms set to true (default value).
+  option -eva-domains set to 'cvalue,equality,gauges,octagon,symbolic-locations'.
+  option -eva-split-return set to 'auto'.
+  option -eva-equality-through-calls set to 'formals' (default value).
+  option -eva-octagon-through-calls set to false (default value).
+[eva] Splitting return states on:
+  \return(cse_rtx_addr_varies_p) == 0 (auto)
+[eva] Analyzing a complete application starting at main
+[eva] Computing initial state
+[eva] Initial state computed
+[eva:initial-state] Values of globals at initialization
+  table[0..31] ∈ {0}
+[kernel:annot:missing-spec] _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c:61: Warning: 
+  Neither code nor specification for function __builtin_memset, generating default assigns from the prototype
+[eva] using specification for function __builtin_memset
+[eva:invalid-assigns] _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c:65: 
+  Completely invalid destination for assigns clause *x_0. Ignoring.
+[kernel] Current source was: _rmv_fuzzer-file-15379-2022-07-31-18:50:48.c:66
+  The full backtrace is:
+  Raised by primitive operation at file "z.ml", line 180, characters 4-20
+  Called from file "src/libraries/stdlib/integer.ml" (inlined), line 30, characters 2-22
+  Called from file "src/kernel_services/abstract_interp/int_val.ml", line 549, characters 14-45
+  Called from file "src/kernel_services/abstract_interp/int_val.ml", line 566, characters 10-63
+  Called from file "src/kernel_services/abstract_interp/ival.ml", line 525, characters 24-65
+  Called from file "src/plugins/value_types/cvalue.ml", line 427, characters 23-57
+  Called from file "src/plugins/value/engine/evaluation.ml", line 700, characters 18-50
+  Called from file "src/plugins/value/engine/evaluation.ml", line 747, characters 10-57
+  Called from file "src/plugins/value/engine/evaluation.ml", line 917, characters 14-39
+  Called from file "src/plugins/value/eval.ml", line 48, characters 29-32
+  Called from file "src/plugins/value/engine/evaluation.ml", line 845, characters 35-69
+  Called from file "src/plugins/value/engine/evaluation.ml", line 810, characters 27-57
+  Called from file "src/plugins/value/engine/evaluation.ml", line 1118, characters 6-36
+  Called from file "src/plugins/value/engine/subdivided_evaluation.ml", line 742, characters 18-73
+  Called from file "src/plugins/value/engine/evaluation.ml" (inlined), line 1166, characters 4-67
+  Called from file "src/plugins/value/engine/evaluation.ml", line 1527, characters 23-77
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 164, characters 14-59
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 184, characters 4-54
+  Called from file "src/plugins/value/engine/transfer_stmt.ml", line 258, characters 10-55
+  Called from file "src/plugins/value/engine/iterator.ml", line 234, characters 33-36
+  Called from file "src/plugins/value/partitioning/partition.ml", line 649, characters 29-42
+  Called from file "list.ml", line 121, characters 24-34
+  Called from file "src/plugins/value/engine/iterator.ml", line 436, characters 15-74
+  Called from file "src/plugins/value/engine/iterator.ml", line 501, characters 18-35
+  Called from file "list.ml", line 92, characters 20-23
+  Called from file "src/plugins/value/engine/iterator.ml", line 503, characters 18-60
+  Called from file "src/plugins/value/engine/iterator.ml", line 550, characters 13-31
+  Called from file "list.ml", line 110, characters 12-15
+  Called from file "src/plugins/value/engine/iterator.ml" (inlined), line 547, characters 4-31
+  Called from file "src/plugins/value/engine/iterator.ml", line 609, characters 6-22
+  Called from file "src/plugins/value/engine/iterator.ml", line 776, characters 20-39
+  Called from file "src/plugins/value/utils/value_util.ml", line 114, characters 6-10
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 206, characters 8-45
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 344, characters 8-63
+  Called from file "src/plugins/value/utils/value_util.ml", line 114, characters 6-10
+  Called from file "src/plugins/value/engine/analysis.ml", line 181, characters 2-49
+  Called from file "src/libraries/project/state_builder.ml", line 998, characters 9-13
+  Re-raised at file "src/libraries/project/state_builder.ml", line 1006, characters 9-18
+  Called from file "src/plugins/value/register.ml", line 39, characters 46-66
+  Called from file "queue.ml", line 121, characters 6-15
+  Called from file "src/kernel_internals/runtime/boot.ml", line 36, characters 4-20
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 846, characters 2-9
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 876, characters 18-64
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 235, characters 4-8
+  
+  Unexpected error (Invalid_argument("Z.shift_left: count argument must be positive")).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues
+  Your Frama-C version is 24.0 (Chromium).
+  Note that a version and a backtrace alone often do not contain enough
+  information to understand the bug. Guidelines for reporting bugs are at:
+  https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs

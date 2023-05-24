@@ -1,0 +1,316 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:8:6: error: expected ‘)’ before ‘=’ token
+    8 | f (le = 0x5[6789abcL;
+      |      ^~
+      |      )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:8:13: error: invalid suffix "abcL" on integer constant
+    8 | f (le = 0x5[6789abcL;
+      |             ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:14:71: error: expected identifier or ‘(’ before ‘}’ token
+   14 | /* { dg-xfail-if "ptxas crashes" { nvptx-*-* } { "-O1" } { "" LVM */} } */
+      |                                                                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:14:74: error: expected identifier or ‘(’ before ‘/’ token
+   14 | /* { dg-xfail-if "ptxas crashes" { nvptx-*-* } { "-O1" } { "" LVM */} } */
+      |                                                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:40:13: error: stray ‘\236’ in program
+   40 | __attribute_<9e> ((noinline)) char *
+      |             ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:40:16: error: expected declaration specifiers or ‘...’ before ‘(’ token
+   40 | __attribute_� ((noinline)) char *
+      |                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:47:6: error: unknown type name ‘charf’; did you mean ‘char’?
+   47 | baz (charf (t.t2) != (unsigned int) -1 && y > sizeof (t.t2))
+      |      ^~~~~
+      |      char
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:49:3: error: expected identifier or ‘(’ before ‘return’
+   49 |   return bar (x, y);
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:50:1: error: expected identifier or ‘(’ before ‘}’ token
+   50 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: In function ‘setup1’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:40: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:41: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                            ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:42: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:43: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                    ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:44: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:45: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                            ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:46: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:47: error: stray ‘\377’ in program
+   73 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                                    ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:73:48: error: wrong type argument to unary plus
+   73 |       for (h = e + 1; (*h = *i); ++i, +��������+h)
+      |                                                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:91:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘--’ token
+   91 |       d--;
+      |        ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:92:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   92 |       e++;
+      |        ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:93:5: error: expected identifier or ‘(’ before ‘}’ token
+   93 |     }
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:95:3: error: expected identifier or ‘(’ before ‘if’
+   95 |   if (d > 0 && !(j & 1))
+      |   ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:98:3: error: expected identifier or ‘(’ before ‘return’
+   98 |   return j;
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:99:1: error: expected identifier or ‘(’ before ‘}’ token
+   99 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:125:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘-’ token
+  125 |      vptx-*-* } { "-O1" } { "" LVM */} } */
+      |          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:125:24: error: expected ‘;’ before ‘}’ token
+  125 |      vptx-*-* } { "-O1" } { "" LVM */} } */
+      |                        ^~
+      |                        ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:125:31: error: expected ‘;’ before ‘LVM’
+  125 |      vptx-*-* } { "-O1" } { "" LVM */} } */
+      |                               ^~~~
+      |                               ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:125:43: error: expected expression before ‘/’ token
+  125 |      vptx-*-* } { "-O1" } { "" LVM */} } */
+      |                                           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:151:13: error: stray ‘\236’ in program
+  151 | __attribute_<9e> ((noinline)) char *
+      |             ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:151:17: error: ‘noinline’ undeclared (first use in this function)
+  151 | __attribute_� ((noinline)) char *
+      |                 ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:151:17: note: each undeclared identifier is reported only once for each function it appears in
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:151:27: error: expected ‘;’ before ‘char’
+  151 | __attribute_� ((noinline)) char *
+      |                           ^~~~~
+      |                           ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:160:18: error: ‘y’ undeclared (first use in this function)
+  160 |   return bar (x, y);
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:164:1: error: redefinition of ‘setup1’
+  164 | setup1 (int x)
+      | ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:53:1: note: previous definition of ‘setup1’ with type ‘int(int)’
+   53 | setup1 (int x)
+      | ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: In function ‘setup1’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:40: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:41: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                            ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:42: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:43: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                    ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:44: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:45: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                            ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:46: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:47: error: stray ‘\377’ in program
+  184 |       for (h = e + 1; (*h = *i); ++i, +<ff><ff><ff><ff><ff><ff><ff><ff>+h)
+      |                                                                    ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:184:48: error: wrong type argument to unary plus
+  184 |       for (h = e + 1; (*h = *i); ++i, +��������+h)
+      |                                                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:191:1: error: redefinition of ‘setup2’
+  191 | setup2 (void)
+      | ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:80:1: note: previous definition of ‘setup2’ with type ‘int(void)’
+   80 | setup2 (void)
+      | ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:202:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘--’ token
+  202 |       d--;
+      |        ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:203:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+  203 |       e++;
+      |        ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:204:5: error: expected identifier or ‘(’ before ‘}’ token
+  204 |     }
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:206:3: error: expected identifier or ‘(’ before ‘if’
+  206 |   if (d > 0 && !(j & 1))
+      |   ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:209:3: error: expected identifier or ‘(’ before ‘return’
+  209 |   return j;
+      |   ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:210:1: error: expected identifier or ‘(’ before ‘}’ token
+  210 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:213:1: error: redefinition of ‘main’
+  213 | main (void)
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:102:1: note: previous definition of ‘main’ with type ‘int(void)’
+  102 | main (void)
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:243:17: error: expected identifier or ‘(’ before ‘if’
+  243 | static          if (ac)
+      |                 ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:245:25: error: invalid operands to binary & (have ‘int’ and ‘struct T’)
+  245 |               ag = -(ag & t);
+      |                         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:248:17: error: break statement not within loop or switch
+  248 |                 break;
+      |                 ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:249:19: error: ‘bj’ undeclared (first use in this function); did you mean ‘aj’?
+  249 |               if (bj)
+      |                   ^~
+      |                   aj
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:253:15: error: ‘be’ undeclared (first use in this function); did you mean ‘ae’?
+  253 |               be.d = k;
+      |               ^~
+      |               ae
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:254:23: error: ‘bh’ undeclared (first use in this function); did you mean ‘ah’?
+  254 |               w = f - bh;
+      |                       ^~
+      |                       ah
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:258:15: error: ‘ao’ undeclared (first use in this function); did you mean ‘a’?
+  258 |               ao = r - aa && g.b;
+      |               ^~
+      |               a
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:264:17: error: continue statement not within a loop
+  264 |                 continue;
+      |                 ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:269:21: error: ‘bk’ undeclared (first use in this function); did you mean ‘ak’?
+  269 |               g.c = bk;
+      |                     ^~
+      |                     ak
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:273:19: error: ‘bg’ undeclared (first use in this function); did you mean ‘g’?
+  273 |                   bg[ah] = 8;
+      |                   ^~
+      |                   g
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:274:20: error: ‘ay’ undeclared (first use in this function); did you mean ‘a’?
+  274 |               if (!ay)
+      |                    ^~
+      |                    a
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:276:19: error: ‘bl’ undeclared (first use in this function); did you mean ‘al’?
+  276 |               u = bl;
+      |                   ^~
+      |                   al
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:277:19: error: ‘bf’ undeclared (first use in this function); did you mean ‘af’?
+  277 |               g = bf;
+      |                   ^~
+      |                   af
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:279:23: error: ‘o’ undeclared (first use in this function)
+  279 |               for (;; o += a[ap])
+      |                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:279:30: error: ‘ap’ undeclared (first use in this function); did you mean ‘av’?
+  279 |               for (;; o += a[ap])
+      |                              ^~
+      |                              av
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:282:20: error: ‘p’ undeclared (first use in this function)
+  282 |             for (; p; p++)
+      |                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:283:19: error: ‘ad’ undeclared (first use in this function); did you mean ‘av’?
+  283 |               c = ad;
+      |                   ^~
+      |                   av
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:284:18: error: ‘l’ undeclared (first use in this function)
+  284 |             ad = l;
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:285:17: error: ‘bd’ undeclared (first use in this function); did you mean ‘bm’?
+  285 |             if (bd.c) {
+      |                 ^~
+      |                 bm
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:261:15: error: label ‘av’ used but not defined
+  261 |               goto av;
+      |               ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:257:17: error: label ‘bb’ used but not defined
+  257 |                 goto bb;
+      |                 ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:293:3: error: expected ‘,’ or ‘;’ before ‘ex’
+  293 |   ex, 5, 2};
+      |   ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:294:20: error: array type has incomplete element type ‘struct a’
+  294 |           struct a a[] = {3440025416, 2, 8, 4, 2, 8, 4, 4, 2, 8, 4};
+      |                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:295:18: error: variable ‘b’ has initializer but incomplete type
+  295 |           struct a b = {3075920};
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:295:20: error: conflicting types for ‘b’; have ‘struct a’
+  295 |           struct a b = {3075920};
+      |                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:26:5: note: previous declaration of ‘b’ with type ‘int’
+   26 | int b;
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:296:10: error: expected declaration specifiers or ‘...’ before numeric constant
+  296 |      it (0);?}
+      |          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:296:13: error: expected identifier or ‘(’ before ‘?’ token
+  296 |      it (0);?}
+      |             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_6/224707965fa95436d0c0e78435ee8757cf4ed664.c:111:24: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+  111 |   if ((x & 0x400) && !a[4])
+      |                       ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc2ad71 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15833
+0xc3a02b gimplify_cond_expr
+	.././../gcc-source/gcc/gimplify.cc:4404
+0xc2b840 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15013
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3a7fe gimplify_cond_expr
+	.././../gcc-source/gcc/gimplify.cc:4468
+0xc2b840 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15013
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3a51f gimplify_cond_expr
+	.././../gcc-source/gcc/gimplify.cc:4393
+0xc2b840 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15013
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

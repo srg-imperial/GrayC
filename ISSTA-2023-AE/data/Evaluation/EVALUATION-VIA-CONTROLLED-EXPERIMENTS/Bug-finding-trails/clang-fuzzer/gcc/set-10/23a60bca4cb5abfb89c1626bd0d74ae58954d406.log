@@ -1,0 +1,156 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:37:26: error: stray ‘\377’ in program
+   37 |       x->c[n - 1] = m * y<ff><U+000E>->c[n - 2] / (n - 1.0);
+      |                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:37:27: error: stray ‘\16’ in program
+   37 |       x->c[n - 1] = m * y<ff><U+000E>->c[n - 2] / (n - 1.0);
+      |                              ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:56:18: error: stray ‘\’ in program
+   56 |   if (d[0] != 0 |\ d[1] != 20 || d[2] != 10 || d[3] != -10)
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:59:3: error: unknown type name ‘__b’
+   59 |   __b *c;
+      |   ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:59:8: error: conflicting types for ‘c’; have ‘int *’
+   59 |   __b *c;
+      |        ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:47:10: note: previous definition of ‘c’ with type ‘double[4]’
+   47 |   double c[4] = { 10, 20, 30, 40 }, d[4], e[4] = { 118, 118, 118, 118 };
+      |          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:60:17: error: conflicting types for ‘d’; have ‘long unsigned int’
+   60 |   unsigned long d;
+      |                 ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:47:37: note: previous declaration of ‘d’ with type ‘double[4]’
+   47 |   double c[4] = { 10, 20, 30, 40 }, d[4], e[4] = { 118, 118, 118, 118 };
+      |                                     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:64:1: error: redefinition of ‘foo’
+   64 | foo (struct S *x, const struct S *y)
+      | ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:11:1: note: previous definition of ‘foo’ with type ‘void(struct S *, const struct S *)’
+   11 | foo (struct S *x, const struct S *y)
+      | ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:90:26: error: stray ‘\377’ in program
+   90 |       x->c[n - 1] = m * y<ff><U+000E>->c[n - 2] / (n - 1.0);
+      |                          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:90:27: error: stray ‘\16’ in program
+   90 |       x->c[n - 1] = m * y<ff><U+000E>->c[n - 2] / (n - 1.0);
+      |                              ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:97:1: error: redefinition of ‘main’
+   97 | main (void)
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:44:1: note: previous definition of ‘main’ with type ‘int(void)’
+   44 | main (void)
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:109:18: error: stray ‘\’ in program
+  109 |   if (d[0] != 0 |\ d[1] != 20 || d[2] != 10 || d[3] != -10)
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:117:1: error: expected ‘(’ before ‘enum’
+  117 | enum E *e;
+      | ^~~~
+      | (
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:118:1: error: ‘constuse’ undeclared (first use in this function)
+  118 | constuse-soft-floatnum E const *e2;
+      | ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:118:1: note: each undeclared identifier is reported only once for each function it appears in
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:118:10: error: ‘soft’ undeclared (first use in this function)
+  118 | constuse-soft-floatnum E const *e2;
+      |          ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:118:15: error: ‘floatnum’ undeclared (first use in this function); did you mean ‘float’?
+  118 | constuse-soft-floatnum E const *e2;
+      |               ^~~~~~~~
+      |               float
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:118:23: error: expected ‘;’ before ‘E’
+  118 | constuse-soft-floatnum E const *e2;
+      |                       ^~
+      |                       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:140:1: error: ‘typ’ undeclared (first use in this function)
+  140 | typ>   edef int (*fptr2)(int x);
+      | ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:140:5: warning: null character(s) ignored
+  140 | typ><U+0000><U+0000><U+0000>edef int (*fptr2)(int x);
+      |     ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:140:8: error: ‘edef’ undeclared (first use in this function)
+  140 | typ>   edef int (*fptr2)(int x);
+      |        ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:140:12: error: expected ‘;’ before ‘int’
+  140 | typ>   edef int (*fptr2)(int x);
+      |            ^~~~
+      |            ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:142:20: error: expected ‘)’ before ‘tr3’
+  142 | typedef int (*fpARC tr3)(int);
+      |                    ^~~~
+      |                    )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:143:29: error: expected expression before ‘|’ token
+  143 |  (d[0] != 60 || d[1] != 20| | d[2] != -10 || d[3] != 118)
+      |                             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:143:58: error: expected ‘;’ before ‘builtin_memcpy’
+  143 |  (d[0] != 60 || d[1] != 20| | d[2] != -10 || d[3] != 118)
+      |                                                          ^
+      |                                                          ;
+  144 |    builtin_memcpy (d, e, sizeof d);
+      |    ~~~~~~~~~~~~~~                                         
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:146:57: warning: implicit declaration of function ‘uiltin_memcpy’ [-Wimplicit-function-declaration]
+  146 |   if (d[0] != 0 || d[1] != 118 || d[2] != 118 || d[3] !=uiltin_memcpy (d, e, sizeof d);
+      |                                                         ^~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:146:87: error: expected ‘)’ before ‘;’ token
+  146 |   if (d[0] != 0 || d[1] != 118 || d[2] != 118 || d[3] !=uiltin_memcpy (d, e, sizeof d);
+      |      ~                                                                                ^
+      |                                                                                       )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:174:5: warning: null character(s) ignored
+  174 | typ><U+0000><U+0000><U+0000>edef int (*fptr2)(int x);
+      |     ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:183:1: error: expected expression before ‘}’ token
+  183 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_3/23a60bca4cb5abfb89c1626bd0d74ae58954d406.c:56:8: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   56 |   if (d[0] != 0 |\ d[1] != 20 || d[2] != 10 || d[3] != -10)
+      |       ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc2ad71 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15833
+0xc2ad71 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15833
+0xc2ad71 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15833
+0xc3a02b gimplify_cond_expr
+	.././../gcc-source/gcc/gimplify.cc:4404
+0xc2b840 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15013
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3a51f gimplify_cond_expr
+	.././../gcc-source/gcc/gimplify.cc:4393
+0xc2b840 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15013
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

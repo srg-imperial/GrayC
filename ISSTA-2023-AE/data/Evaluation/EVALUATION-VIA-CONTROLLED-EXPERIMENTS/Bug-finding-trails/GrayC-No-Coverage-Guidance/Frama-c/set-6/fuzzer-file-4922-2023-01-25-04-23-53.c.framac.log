@@ -1,0 +1,2 @@
+Unexpected error (File "src/kernel_services/abstract_interp/ival.ml", line 444, characters 31-37: Assertion failed).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues

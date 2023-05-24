@@ -1,0 +1,9 @@
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+/usr/bin/ld: final link failed: Memory exhausted
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

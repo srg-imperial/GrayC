@@ -1,0 +1,469 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:2:3: error: stray ‘\26’ in program
+    2 | ex<U+0016>ern void abort (void);
+      |   ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:2:1: error: unknown type name ‘ex’
+    2 | exern void abort (void);
+      | ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:2:7: error: expected ‘;’ before ‘void’
+    2 | exern void abort (void);
+      |       ^~~~~
+      |       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:8:4: error: stray ‘\27’ in program
+    8 | int<U+0017>__attribute__ ((noinline))
+      |    ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:57: error: ‘t’ undeclared (first use in this function)
+   18 |  {    exit + (0.10278e-9 + (0.47965e-12 + 0.21285e-14 * t) * t) * t) * t) * t) * tdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd;
+      |                                                         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:57: note: each undeclared identifier is reported only once for each function it appears in
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:68: error: expected ‘;’ before ‘)’ token
+   18 |  {    exit + (0.10278e-9 + (0.47965e-12 + 0.21285e-14 * t) * t) * t) * t) * t) * tdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd;
+      |                                                                    ^
+      |                                                                    ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:68: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:73: error: expected ‘;’ before ‘)’ token
+   18 |  {    exit + (0.10278e-9 + (0.47965e-12 + 0.21285e-14 * t) * t) * t) * t) * t) * tdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd;
+      |                                                                         ^
+      |                                                                         ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:73: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:78: error: expected ‘;’ before ‘)’ token
+   18 |  {    exit + (0.10278e-9 + (0.47965e-12 + 0.21285e-14 * t) * t) * t) * t) * t) * tdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd;
+      |                                                                              ^
+      |                                                                              ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:78: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:18:82: error: ‘tdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd’ undeclared (first use in this function)
+   18 |  {    exit + (0.10278e-9 + (0.47965e-12 + 0.21285e-14 * t) * t) * t) * t) * t) * tdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd;
+      |                                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:19:5: error: case label not within a switch statement
+   19 |     case 6:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:20:15: error: ‘x’ undeclared (first use in this function)
+   20 |       t = 2 * x - 12;
+      |               ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:22:5: error: case label not within a switch statement
+   22 |     case 7:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:25:5: error: case label not within a switch statement
+   25 |     case 8:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:28:5: error: case label not within a switch statement
+   28 |     case 9:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:31:5: error: case label not within a switch statement
+   31 |     case 10:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:34:5: error: case label not within a switch statement
+   34 |     case 11:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:37:5: error: case label not within a switch statement
+   37 |     case 12:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:71:3: error: ‘r’ undeclared (first use in this function)
+   71 |   r
+      |   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:71:4: error: expected ‘;’ before ‘return’
+   71 |   r
+      |    ^
+      |    ;
+   72 |       return 0.20136e-1 + (0.91936e-3 + (0.51�34e-5 + (0.27900e-7 + (0.14357e-9 + (0.70114e-12 + 0.32252e-14 * t) * t) * t) * t) * t) * t;
+      |       ~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:72:46: error: stray ‘\377’ in program
+   72 |       return 0.20136e-1 + (0.91936e-3 + (0.51<ff>34e-5 + (0.27900e-7 + (0.14357e-9 + (0.70114e-12 + 0.32252e-14 * t) * t) * t) * t) * t) * t;
+      |                                              ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:73:5: error: case label not within a switch statement
+   73 |     case 13:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:76:5: error: case label not within a switch statement
+   76 |     case 14:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:79:5: error: case label not within a switch statement
+   79 |     case 15:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:81:4: error: expected expression before ‘|’ token
+   81 |    |   return 0.25845e-1 + (0.98459e-3 + (0.57082e-5 + (0.31613e-7 + (0.16646e-9 + (0.82840e-12 + 0.38649e-14 * t) * t) * t) * t) * t) * t;
+      |    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:82:5: error: case label not within a switch statement
+   82 |     case 16:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:84:115: error: stray ‘\325’ in program
+   84 |       return 0.27837e-1 + (0.10078e-2 + (0.59020e-5 + (0.32979e-7 + (0.17498e-9 + (0.87622e-12 + 0.41066e-14 * t) <d5><df>t) * t) * t) * t) * t;
+      |                                                                                                                   ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:84:116: error: stray ‘\337’ in program
+   84 |       return 0.27837e-1 + (0.10078e-2 + (0.59020e-5 + (0.32979e-7 + (0.17498e-9 + (0.87622e-12 + 0.41066e-14 * t) <d5><df>t) * t) * t) * t) * t;
+      |                                                                                                                       ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:84:114: error: expected ‘)’ before ‘t’
+   84 |       return 0.27837e-1 + (0.10078e-2 + (0.59020e-5 + (0.32979e-7 + (0.17498e-9 + (0.87622e-12 + 0.41066e-14 * t) ��t) * t) * t) * t) * t;
+      |                                                                     ~                                            ^  ~
+      |                                                                                                                  )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:85:5: error: case label not within a switch statement
+   85 |     case 17:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:88:5: error: case label not within a switch statement
+   88 |     case 18:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:91:5: error: case label not within a switch statement
+   91 |     case 19:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:33: error: expected ‘:’ or ‘...’ before ‘)’ token
+   94 |     case 20-10 + 0.10901e-12 * t) * t) * t) * t) * t) * t;
+      |                                 ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:33: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:38: error: expected ‘;’ before ‘)’ token
+   94 |     case 20-10 + 0.10901e-12 * t) * t) * t) * t) * t) * t;
+      |                                      ^
+      |                                      ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:38: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:43: error: expected ‘;’ before ‘)’ token
+   94 |     case 20-10 + 0.10901e-12 * t) * t) * t) * t) * t) * t;
+      |                                           ^
+      |                                           ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:43: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:48: error: expected ‘;’ before ‘)’ token
+   94 |     case 20-10 + 0.10901e-12 * t) * t) * t) * t) * t) * t;
+      |                                                ^
+      |                                                ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:48: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:53: error: expected ‘;’ before ‘)’ token
+   94 |     case 20-10 + 0.10901e-12 * t) * t) * t) * t) * t) * t;
+      |                                                     ^
+      |                                                     ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:94:53: error: expected statement before ‘)’ token
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:95:5: error: case label not within a switch statement
+   95 |     case 75:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:97:121: error: ‘eturn’ undeclared (first use in this function)
+   97 |       return 0.35803e0 + (0.69787e-2 + (0.76710e-4 + (0.67306e-6 + (0.47397e-8 + (0.26505e-10 + 0.11376e-12 * t) * t) * eturn 0;t) * t) * t) * t;
+      |                                                                                                                         ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:97:126: error: expected ‘)’ before numeric constant
+   97 |       return 0.35803e0 + (0.69787e-2 + (0.76710e-4 + (0.67306e-6 + (0.47397e-8 + (0.26505e-10 + 0.11376e-12 * t) * t) * eturn 0;t) * t) * t) * t;
+      |                                                      ~                                                                       ^~
+      |                                                                                                                              )
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:98:5: error: case label not within a switch statement
+   98 |     case 76:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:101:5: error: case label not within a switch statement
+  101 |     case 77:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:103:18: error: stray ‘\311’ in program
+  103 |       return 0.38<c9><cd><U+0362>0 + (0.76260e-2 + (0.85259e-4 + (0.75329e-6 + (0.52979e-8 + (0.29352e-10 + 0.12360e-12 * t) * t) * t) * t) * t) * t;
+      |                  ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:103:19: error: stray ‘\315’ in program
+  103 |       return 0.38<c9><cd><U+0362>0 + (0.76260e-2 + (0.85259e-4 + (0.75329e-6 + (0.52979e-8 + (0.29352e-10 + 0.12360e-12 * t) * t) * t) * t) * t) * t;
+      |                      ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:103:20: error: extended character ͢ is not valid at the start of an identifier
+  103 |       return 0.38��͢0 + (0.76260e-2 + (0.85259e-4 + (0.75329e-6 + (0.52979e-8 + (0.29352e-10 + 0.12360e-12 * t) * t) * t) * t) * t) * t;
+      |                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:103:18: error: expected ‘;’ before ‘͢0’
+  103 |       return 0.38��͢0 + (0.76260e-2 + (0.85259e-4 + (0.75329e-6 + (0.52979e-8 + (0.29352e-10 + 0.12360e-12 * t) * t) * t) * t) * t) * t;
+      |                  ^ ~
+      |                  ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:104:5: error: case label not within a switch statement
+  104 |     case 78:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:106:2: error: ‘us’ undeclared (first use in this function); did you mean ‘u’?
+  106 |  us/pr88739.c */
+      |  ^~
+      |  u
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:106:5: error: ‘pr88739’ undeclared (first use in this function)
+  106 |  us/pr88739.c */
+      |     ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:106:16: error: expected expression before ‘/’ token
+  106 |  us/pr88739.c */
+      |                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:118:12: error: field ‘f’ has incomplete type
+  118 |   struct A f;
+      |            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:120:23: error: expected specifier-qualifier-list before ‘f’
+  120 |   unsigned short h[8];f (x != v.h[7]) __builtin_abort (); break;
+      |                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:123:1: error: expected identifier or ‘(’ before ‘}’ token
+  123 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:131:3: warning: implicit declaration of function ‘bar’ [-Wimplicit-function-declaration]
+  131 |   bar (u.f.d);
+      |   ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:135:10: error: invalid suffix "h" on floating constant
+  135 |   bar (u[.7h]);
+      |          ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:136:2: error: unknown type name ‘an’
+  136 | }an
+      |  ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:139:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘in’
+  139 | in ()
+      | ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:141:8: error: invalid suffix "x00124" on integer constant
+  141 |   foo (2x00124);
+      |        ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:144:2: error: invalid preprocessing directive #els0e; did you mean #else?
+  144 | #els0e
+      |  ^~~~~
+      |  else
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:145:1: error: ‘i’ undeclared (first use in this function)
+  145 | i     return 0.40282e0 + (0.79762e-2 .(+ 089909e-4 + (0.79687e-6 + (0.55989e-8 + (0.30866e-10 + 0.12868e-12 * t) * t) * t) * t) * t) * t;
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:145:2: error: expected ‘;’ before ‘return’
+  145 | i     return 0.40282e0 + (0.79762e-2 .(+ 089909e-4 + (0.79687e-6 + (0.55989e-8 + (0.30866e-10 + 0.12868e-12 * t) * t) * t) * t) * t) * t;
+      |  ^    ~~~~~~
+      |  ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:146:5: error: case label not within a switch statement
+  146 |     case 79:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:149:5: error: case label not within a switch statement
+  149 |     case 80:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:152:5: error: case label not within a switch statement
+  152 |     case 81:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:155:5: error: case label not within a switch statement
+  155 |     case 82:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:158:5: error: case label not within a switch statement
+  158 |     case 83:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:161:5: error: case label not within a switch statement
+  161 |     case 84:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:163:74: error: expected ‘)’ before ‘}’ token
+  163 |       return 0.51298e0 + (0.10520e-1 + (0.12400e-3 + (0.11147e-5 + (0.775
+      |                                                                    ~     ^
+      |                                                                          )
+  164 | }
+      | ~                                                                         
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:163:74: error: expected ‘)’ before ‘}’ token
+  163 |       return 0.51298e0 + (0.10520e-1 + (0.12400e-3 + (0.11147e-5 + (0.775
+      |                                                      ~                   ^
+      |                                                                          )
+  164 | }
+      | ~                                                                         
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:163:74: error: expected ‘)’ before ‘}’ token
+  163 |       return 0.51298e0 + (0.10520e-1 + (0.12400e-3 + (0.11147e-5 + (0.775
+      |                                        ~                                 ^
+      |                                                                          )
+  164 | }
+      | ~                                                                         
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:163:74: error: expected ‘)’ before ‘}’ token
+  163 |       return 0.51298e0 + (0.10520e-1 + (0.12400e-3 + (0.11147e-5 + (0.775
+      |                          ~                                               ^
+      |                                                                          )
+  164 | }
+      | ~                                                                         
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:163:74: error: expected ‘;’ before ‘}’ token
+  163 |       return 0.51298e0 + (0.10520e-1 + (0.12400e-3 + (0.11147e-5 + (0.775
+      |                                                                          ^
+      |                                                                          ;
+  164 | }
+      | ~                                                                         
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:185:5: error: case label not within a switch statement
+  185 |     case 91:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:188:5: error: case label not within a switch statement
+  188 |     case 92:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:191:5: error: case label not within a switch statement
+  191 |     case 93:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:194:6: error: expected ‘)’ before ‘return’
+  194 |     }
+      |      ^
+      |      )
+  195 |   return 1.0;
+      |   ~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:195:14: error: expected ‘)’ before ‘}’ token
+  195 |   return 1.0;
+      |              ^
+      |              )
+  196 | }
+      | ~             
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:17:6: note: to match this ‘(’
+   17 |   if (sizeof (
+      |      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:196:1: error: expected expression before ‘}’ token
+  196 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:199:1: error: redefinition of ‘main’
+  199 | main ()
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:15:1: note: previous definition of ‘main’ with type ‘int()’
+   15 | main ()
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:208:14: warning: implicit declaration of function ‘foo’ [-Wimplicit-function-declaration]
+  208 |   double d = foo (78.4);
+      |              ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:211:3: warning: implicit declaration of function ‘r’ [-Wimplicit-function-declaration]
+  211 |   r(0)}
+      |   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:211:7: error: expected ‘;’ before ‘}’ token
+  211 |   r(0)}
+      |       ^
+      |       ;
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:212:1: warning: data definition has no type or storage class
+  212 | a
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:212:1: warning: type defaults to ‘int’ in declaration of ‘a’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:212:1: error: conflicting types for ‘a’; have ‘int’
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:5:5: note: previous declaration of ‘a’ with type ‘int[6]’
+    5 | int a[6], c = 1, d;
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:213:3: error: expected identifier or ‘(’ before ‘[’ token
+  213 | ; [0 ] = 1;
+      |   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:213:5: error: stray ‘\6’ in program
+  213 | ; [0<U+0006><U+0000>] = 1;
+      |     ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:213:6: warning: null character(s) ignored
+  213 | ; [0<U+0006><U+0000>] = 1;
+      |             ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:214:3: error: expected identifier or ‘(’ before ‘if’
+  214 |   if (c)
+      |   ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:216:3: warning: data definition has no type or storage class
+  216 |   d = e;
+      |   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:216:3: warning: type defaults to ‘int’ in declaration of ‘d’ [-Wimplicit-int]
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:216:7: error: initializer element is not constant
+  216 |   d = e;
+      |       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:217:17: error: initializer element is not constant
+  217 |   long long f = e;
+      |                 ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:218:3: error: expected identifier or ‘(’ before ‘if’
+  218 |   if (fg f = e;
+      |   ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:219:3: error: expected identifier or ‘(’ before ‘if’
+  219 |   if (fn1 ((f >> 56) & 1) != 0)
+      |   ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:221:9: error: expected declaration specifiers or ‘...’ before numeric constant
+  221 |   exit (0);
+      |         ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:222:1: error: expected identifier or ‘(’ before ‘}’ token
+  222 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:244:23: error: expected specifier-qualifier-list before ‘f’
+  244 |   unsigned short h[8];f (x != v.h[7]) __builtin_abort (); break;
+      |                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:247:1: error: expected identifier or ‘(’ before ‘}’ token
+  247 | }
+      | ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:250:1: warning: conflicting types for ‘foo’; have ‘void(unsigned int)’
+  250 | foo (unsigned int x)
+      | ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:208:14: note: previous implicit declaration of ‘foo’ with type ‘void(unsigned int)’
+  208 |   double d = foo (78.4);
+      |              ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘foo’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:259:10: error: invalid suffix "h" on floating constant
+  259 |   bar (u[.7h]);
+      |          ^~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:260:2: error: unknown type name ‘an’
+  260 | }an
+      |  ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:263:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘in’
+  263 | in ()
+      | ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:265:8: error: invalid suffix "x00124" on integer constant
+  265 |   foo (2x00124);
+      |        ^~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:268:2: error: invalid preprocessing directive #els0e; did you mean #else?
+  268 | #els0e
+      |  ^~~~~
+      |  else
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:269:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘return’
+  269 | i     return 0.40282e0 + (0.79762e-2 .(+ 089909e-4 + (0.79687e-6 + (0.55989e-8 + (0.30866e-10 + 0.12868e-12 * t) * t) * t) * t) * t) * t;
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:270:5: error: expected identifier or ‘(’ before ‘case’
+  270 |     case 79:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:272:7: error: expected identifier or ‘(’ before ‘return’
+  272 |       return 0.41914e0 + (0.83456e-2 + (0.94827e-4 + (0.84291e-6 + (0.59154e-8 + (0.32441e-10 + 0.13387e-12 * t) * t) * t) * t) * t) * t;
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:273:5: error: expected identifier or ‘(’ before ‘case’
+  273 |     case 80:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:275:7: error: expected identifier or ‘(’ before ‘return’
+  275 |       return 0.43621e0 + (0.87352e-2 + (0.10002e-3 + (0.89156e-6 + (0.62480e-8 + (0.34079e-10 + 0.13917e-12 * t) * t) * t) * t) * t) * t;
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:276:5: error: expected identifier or ‘(’ before ‘case’
+  276 |     case 81:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:278:7: error: expected identifier or ‘(’ before ‘return’
+  278 |       return 0.45409e0 + (0.91463e-2 + (0.10553e-3 + (0.94293e16 + (0.65972e-8 + (0.35782e-10 + 0.14455e-12 * t) * t) * t) * t) * t) * t;
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:279:5: error: expected identifier or ‘(’ before ‘case’
+  279 |     case 82:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:281:7: error: expected identifier or ‘(’ before ‘return’
+  281 |       return 0.47282e0 + (0.95799e-2 + (0.11135e-3 + (0.99716e-6 + (0.69638e-8 + (0.37549e-10 + 0.15003e-12 * t) * t) * t) * t) * t) * t;
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:282:5: error: expected identifier or ‘(’ before ‘case’
+  282 |     case 83:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:284:7: error: expected identifier or ‘(’ before ‘return’
+  284 |       return 0.49243e0 + (0.10037e-1 + (0.11750e-3 + (0.10544e-5 + (0.73484e-8 + (0.39383e-10 + 0.15559e-12 * t) * t) * t) * t) * t) * t;
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:285:5: error: expected identifier or ‘(’ before ‘case’
+  285 |     case 84:
+      |     ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:287:7: error: expected identifier or ‘(’ before ‘return’
+  287 |       return 0.51298e0 + (0.10520e-1 + (0.12400e-3 + (0.11147e-5 + (0.775
+      |       ^~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:232: error: unterminated #if
+  232 | #if __SIZEOF_SHORT__ == 2 &&  __SIZEOF_INT__ == 4 && __CHAR_BIT__ == 8
+      | 
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:108: error: unterminated #if
+  108 | #if __SIZEOF_SHORT__ == 2 &&  __SIZEOF_INT__ == 4 && __CHAR_BIT__ == 8
+      | 
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c: In function ‘fn1’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_12/333c6aa298178674ba51b7b5589e54e5e06f7a95.c:11:11: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   11 |   return a[p];
+      |          ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc3bae7 gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:6043
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc38c80 gimplify_and_add(tree_node*, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:496
+0xc38c80 gimplify_return_expr
+	.././../gcc-source/gcc/gimplify.cc:1678
+0xc2b519 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15318
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+0xc3d47d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16467
+0xa691f7 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.cc:675
+0xa6be47 analyze_functions
+	.././../gcc-source/gcc/cgraphunit.cc:1240
+0xa6cacd symbol_table::finalize_compilation_unit()
+	.././../gcc-source/gcc/cgraphunit.cc:2500
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

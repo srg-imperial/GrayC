@@ -1,0 +1,48 @@
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name fuzzer-file-42069-2022-07-09-08:51:15-e3dfe5.c -mrelocation-model static -mframe-pointer=none -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O1 -pedantic -w -fdebug-compilation-dir /home/user42/conserv_4_crash_15082022/llvm -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o /tmp/fuzzer-file-42069-2022-07-09-08:51:15-e3dfe5-9f0256.o -x c fuzzer-file-42069-2022-07-09-08:51:15-e3dfe5.c
+1.	<eof> parser at end of file
+2.	Code generation
+3.	Running pass 'Function Pass Manager' on module 'fuzzer-file-42069-2022-07-09-08:51:15-e3dfe5.c'.
+4.	Running pass 'Machine Instruction Scheduler' on function '@NSReturnAddress'
+ #0 0x00007f7f2a287001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+ #1 0x00007f7f2a285140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+ #2 0x00007f7f2a287712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+ #3 0x00007f7f31e9d980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007f7f2a629736 llvm::ScheduleDAGMILive::updatePressureDiffs(llvm::ArrayRef<llvm::RegisterMaskPair>) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0x10bc736)
+ #5 0x00007f7f2a62a5c9 llvm::ScheduleDAGMILive::scheduleMI(llvm::SUnit*, bool) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0x10bd5c9)
+ #6 0x00007f7f2a629d81 llvm::ScheduleDAGMILive::schedule() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0x10bcd81)
+ #7 0x00007f7f2a6309f4 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0x10c39f4)
+ #8 0x00007f7f2a6304ad (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0x10c34ad)
+ #9 0x00007f7f2a5ac7de llvm::MachineFunctionPass::runOnFunction(llvm::Function&) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0x103f7de)
+#10 0x00007f7f2a3bbbd0 llvm::FPPassManager::runOnFunction(llvm::Function&) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xe4ebd0)
+#11 0x00007f7f2a3c1883 llvm::FPPassManager::runOnModule(llvm::Module&) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xe54883)
+#12 0x00007f7f2a3bc208 llvm::legacy::PassManagerImpl::run(llvm::Module&) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xe4f208)
+#13 0x00007f7f306d6b06 clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::DataLayout const&, llvm::Module*, clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream> >) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x15ecb06)
+#14 0x00007f7f3098874e (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x189e74e)
+#15 0x00007f7f2fa2deb4 clang::ParseAST(clang::Sema&, bool, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x943eb4)
+#16 0x00007f7f309853b3 clang::CodeGenAction::ExecuteAction() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x189b3b3)
+#17 0x00007f7f310ba446 clang::FrontendAction::Execute() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1fd0446)
+#18 0x00007f7f31043c11 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1f59c11)
+#19 0x00007f7f31121576 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x2037576)
+#20 0x0000000000412a7a cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/usr/lib/llvm-12/bin/clang+0x412a7a)
+#21 0x0000000000410dbf (/usr/lib/llvm-12/bin/clang+0x410dbf)
+#22 0x0000000000410bb6 main (/usr/lib/llvm-12/bin/clang+0x410bb6)
+#23 0x00007f7f287dac87 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c87)
+#24 0x000000000040ddfa _start (/usr/lib/llvm-12/bin/clang+0x40ddfa)
+clang: error: unable to execute command: CPU time limit exceeded (core dumped)
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-12/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/fuzzer-file-42069-2022-07-09-08:51:15-e3dfe5-17f698.c
+clang: note: diagnostic msg: /tmp/fuzzer-file-42069-2022-07-09-08:51:15-e3dfe5-17f698.sh
+clang: note: diagnostic msg: 
+
+********************

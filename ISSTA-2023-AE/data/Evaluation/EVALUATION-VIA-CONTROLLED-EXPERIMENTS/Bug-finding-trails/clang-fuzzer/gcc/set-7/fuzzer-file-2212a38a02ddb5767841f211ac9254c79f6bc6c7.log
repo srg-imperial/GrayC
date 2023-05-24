@@ -1,0 +1,112 @@
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:1:1: error: expected identifier or ‘(’ before ‘/’ token
+    1 | /+pop* corpus/scal-to-vec1.c */
+      | ^
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c: In function ‘callee_af6’:
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:55:10: error: ‘struct et6’ has no member named ‘nv6’; did you mean ‘mv6’?
+   55 |   A (wv6.nv6 == ap6.nv6);
+      |          ^~~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:12:20: note: in definition of macro ‘A’
+   12 | #define A(x) if (!(x)) abort ()
+      |                    ^
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:55:21: error: ‘struct et6’ has no member named ‘nv6’; did you mean ‘mv6’?
+   55 |   A (wv6.nv6 == ap6.nv6);
+      |                     ^~~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:12:20: note: in definition of macro ‘A’
+   12 | #define A(x) if (!(x)) abort ()
+      |                    ^
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c: At top level:
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:145:5: error: expected identifier or ‘(’ before numeric constant
+  145 | v1, 2, &, l);
+      |     ^
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:14: error: ‘v0’ undeclared here (not in a function); did you mean ‘v1’?
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |              ^~
+      |              v1
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:147:5: error: redefinition of ‘v1’
+  147 |     v1 = 2 << v0;   check (short, 8, v0, v1, 2, <<, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:5: note: previous definition of ‘v1’ with type ‘int’
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:148:5: error: redefinition of ‘v1’
+  148 |     v1 = 2 >> v0;   check (short, 8, v0, v1, 2, >>, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:5: note: previous definition of ‘v1’ with type ‘int’
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:150:5: error: redefinition of ‘v1’
+  150 |     v1 = v0 + 2;   check (short, 8, v0, v1, 2, +, r);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:5: note: previous definition of ‘v1’ with type ‘int’
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:151:5: error: redefinition of ‘v1’
+  151 |     v1 = v0 - 2;   check (short, 8, v0, v1, 2, -, r);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:5: note: previous definition of ‘v1’ with type ‘int’
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:152:5: error: redefinition of ‘v1’
+  152 |     v1 = v0 * 2;   check (short, 8, v0, v1, 2, *, r);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:5: note: previous definition of ‘v1’ with type ‘int’
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:153:5: error: redefinition of ‘v1’
+  153 |     v1 = v0 / 2;   check (short, 8, v0, 2d2b8fac77f65087b_175_test3203275162.c */
+      |     ^~
+2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:146:5: note: previous definition of ‘v1’ with type ‘int’
+  146 |     v1 = 2 | v0;   check (short, 8, v0, v1, 2, |, l);
+      |     ^~
+In file included from /usr/include/x86_64-linux-gnu/sys/cdefs.h:427,
+                 from /usr/include/features.h:424,
+                 from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/string.h:26,
+                 from /home/user42/data/csmith/runtime/csmith.h:40,
+                 from 2212a38a02ddb5767841f211ac9254c79f6bc6c7.c:154:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:1: internal compiler error: Segmentation fault
+    1 | /* Determine the wordsize from the preprocessor defines.  */
+      | 
+0xf1db6f crash_signal
+	.././../gcc-source/gcc/toplev.cc:322
+0x1e69c16 get_data_from_adhoc_loc(line_maps const*, unsigned int)
+	.././../gcc-source/libcpp/line-map.cc:248
+0xf7be0f set_inlining_locations
+	.././../gcc-source/gcc/tree-diagnostic.cc:307
+0x1e20475 get_any_inlining_info
+	.././../gcc-source/gcc/diagnostic.cc:1059
+0x1e20475 diagnostic_enabled
+	.././../gcc-source/gcc/diagnostic.cc:1223
+0x1e1dcd2 diagnostic_report_diagnostic(diagnostic_context*, diagnostic_info*)
+	.././../gcc-source/gcc/diagnostic.cc:1337
+0x97b7da c_cpp_diagnostic(cpp_reader*, cpp_diagnostic_level, cpp_warning_reason, rich_location*, char const*, __va_list_tag (*) [1])
+	.././../gcc-source/gcc/c-family/c-common.cc:6674
+0x1e58b2d cpp_diagnostic_at
+	.././../gcc-source/libcpp/errors.cc:67
+0x1e58b2d cpp_diagnostic
+	.././../gcc-source/libcpp/errors.cc:82
+0x1e58c96 cpp_error(cpp_reader*, cpp_diagnostic_level, char const*, ...)
+	.././../gcc-source/libcpp/errors.cc:96
+0x1e6fd4a collect_args
+	.././../gcc-source/libcpp/macro.cc:1325
+0x1e6fd4a funlike_invocation_p
+	.././../gcc-source/libcpp/macro.cc:1387
+0x1e6fd4a enter_macro_context
+	.././../gcc-source/libcpp/macro.cc:1462
+0x1e7080f cpp_get_token_1
+	.././../gcc-source/libcpp/macro.cc:3018
+0x996921 c_lex_with_flags(tree_node**, unsigned int*, unsigned char*, int)
+	.././../gcc-source/gcc/c-family/c-lex.cc:483
+0x90afc9 c_lex_one_token
+	.././../gcc-source/gcc/c/c-parser.cc:279
+0x942f46 c_parser_peek_token(c_parser*)
+	.././../gcc-source/gcc/c/c-parser.cc:483
+0x942f46 c_parser_next_token_is
+	.././../gcc-source/gcc/c/c-parser.h:167
+0x942f46 c_parser_next_token_is_not
+	.././../gcc-source/gcc/c/c-parser.h:176
+0x942f46 c_parser_translation_unit
+	.././../gcc-source/gcc/c/c-parser.cc:1655
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,0 +1,123 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:18:8: error: use of undeclared identifier 'oid'
+       oid)                     \
+       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:57:12: error: source file is not valid UTF-8
+      || ((<D8><U+05C9><DF><D4>ߞ<CE> & mask) % 15) & mask) != r) \
+           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:57:15: error: source file is not valid UTF-8
+      || ((<D8><U+05C9><DF><D4>ߞ<CE> & mask) % 15) & mask) != r) \
+                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:57:16: error: source file is not valid UTF-8
+      || ((<D8><U+05C9><DF><D4>ߞ<CE> & mask) % 15) & mask) != r) \
+                           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:57:19: error: source file is not valid UTF-8
+      || ((<D8><U+05C9><DF><D4>ߞ<CE> & mask) % 15) & mask) != r) \
+                                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:63:3: error: source file is not valid UTF-8
+  <F2> = fn3##S (a);                               \
+  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:31: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                              ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:32: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:33: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:34: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:35: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                              ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:36: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:37: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:38: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:39: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                              ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:40: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:41: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                                      ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:42: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:71:43: error: source file is not valid UTF-8
+struct pck A { unsigned short <E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6><E6>i : 1, l : 1, j : 3, k : 11; }; T(A)
+                                                                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name 27d046a87bb38c95988a8beaeec765d8de637579-cae646.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -pedantic -w -fdebug-compilation-dir /home/user42/cf_4_crash_23082022/llvm -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o /tmp/27d046a87bb38c95988a8beaeec765d8de637579-cae646-5cf969.o -x c ./27d046a87bb38c95988a8beaeec765d8de637579-cae646.c
+1.	/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:373:36: current parser token ','
+2.	/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:14:1: parsing function body 'f'
+3.	/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:14:1: in compound statement ('{}')
+4.	/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:17:5: in compound statement ('{}')
+5.	/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/input/segment_20/27d046a87bb38c95988a8beaeec765d8de637579.c:373:1: parsing struct/union body
+ #0 0x00007efc981a7001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+ #1 0x00007efc981a5140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+ #2 0x00007efc981a7712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+ #3 0x00007efc9fdbd980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007efc9db6c944 clang::RecordDecl::isMsStruct(clang::ASTContext const&) const (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xb62944)
+ #5 0x00007efc9e13ae29 clang::Sema::CheckFieldDecl(clang::DeclarationName, clang::QualType, clang::TypeSourceInfo*, clang::RecordDecl*, clang::SourceLocation, bool, clang::Expr*, clang::InClassInitStyle, clang::SourceLocation, clang::AccessSpecifier, clang::NamedDecl*, clang::Declarator*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1130e29)
+ #6 0x00007efc9e13a8e7 clang::Sema::HandleField(clang::Scope*, clang::RecordDecl*, clang::SourceLocation, clang::Declarator&, clang::Expr*, clang::InClassInitStyle, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x11308e7)
+ #7 0x00007efc9e13a52a clang::Sema::ActOnField(clang::Scope*, clang::Decl*, clang::SourceLocation, clang::Declarator&, clang::Expr*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x113052a)
+ #8 0x00007efc9d976b4e (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x96cb4e)
+ #9 0x00007efc9d96b752 clang::Parser::ParseStructDeclaration(clang::ParsingDeclSpec&, llvm::function_ref<void (clang::ParsingFieldDeclarator&)>) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x961752)
+#10 0x00007efc9d96bd29 clang::Parser::ParseStructUnionBody(clang::SourceLocation, clang::TypeSpecifierType, clang::RecordDecl*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x961d29)
+#11 0x00007efc9d97f648 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x975648)
+#12 0x00007efc9d95f3de clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9553de)
+#13 0x00007efc9d95ee26 clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954e26)
+#14 0x00007efc9d95ebf7 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954bf7)
+#15 0x00007efc9d9e9503 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df503)
+#16 0x00007efc9d9e87ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#17 0x00007efc9d9f0880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#18 0x00007efc9d9e9216 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df216)
+#19 0x00007efc9d9e87ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#20 0x00007efc9d9ee417 clang::Parser::ParseForStatement(clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e4417)
+#21 0x00007efc9d9e8f08 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9def08)
+#22 0x00007efc9d9e87ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#23 0x00007efc9d9f0880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#24 0x00007efc9d9f17a0 clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e77a0)
+#25 0x00007efc9da0a9e3 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xa009e3)
+#26 0x00007efc9d964fb0 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x95afb0)
+#27 0x00007efc9da09c0d clang::Parser::ParseDeclOrFunctionDefInternal(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ffc0d)
+#28 0x00007efc9da09600 clang::Parser::ParseDeclarationOrFunctionDefinition(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ff600)
+#29 0x00007efc9da086f5 clang::Parser::ParseExternalDeclaration(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fe6f5)
+#30 0x00007efc9da06e64 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fce64)
+#31 0x00007efc9d94df5d clang::ParseAST(clang::Sema&, bool, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x943f5d)
+#32 0x00007efc9e8a53b3 clang::CodeGenAction::ExecuteAction() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x189b3b3)
+#33 0x00007efc9efda446 clang::FrontendAction::Execute() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1fd0446)
+#34 0x00007efc9ef63c11 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1f59c11)
+#35 0x00007efc9f041576 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x2037576)
+#36 0x0000000000412a7a cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/usr/lib/llvm-12/bin/clang+0x412a7a)
+#37 0x0000000000410dbf (/usr/lib/llvm-12/bin/clang+0x410dbf)
+#38 0x0000000000410bb6 main (/usr/lib/llvm-12/bin/clang+0x410bb6)
+#39 0x00007efc966fac87 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c87)
+#40 0x000000000040ddfa _start (/usr/lib/llvm-12/bin/clang+0x40ddfa)
+clang: error: unable to execute command: Segmentation fault (core dumped)
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-12/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/27d046a87bb38c95988a8beaeec765d8de637579-cae646-bdc6e1.c
+clang: note: diagnostic msg: /tmp/27d046a87bb38c95988a8beaeec765d8de637579-cae646-bdc6e1.sh
+clang: note: diagnostic msg: 
+
+********************

@@ -1,0 +1,981 @@
+In function ‘test_nonconst_local_arrays’:
+cc1: error: unterminated argument list invoking macro "A"
+087e0258b4447044aae06512b48796f3658d0153.c:216:3: error: ‘A’ undeclared (first use in this function)
+  216 |   A (&a[idx][idpedef struct { s1 i12; s2 i16; } io;
+      |   ^
+087e0258b4447044aae06512b48796f3658d0153.c:216:3: note: each undeclared identifier is reported only once for each function it appears in
+087e0258b4447044aae06512b48796f3658d0153.c:216:4: error: expected ‘;’ before ‘typedef’
+  216 |   A (&a[idx][idpedef struct { s1 i12; s2 i16; } io;
+      |    ^
+      |    ;
+In file included from /home/user42/data/csmith/runtime/csmith.h:40,
+                 from 087e0258b4447044aae06512b48796f3658d0153.c:232:
+/usr/include/string.h:43:22: error: unknown type name ‘size_t’
+   43 |                      size_t __n) __THROW __nonnull ((1, 2));
+      |                      ^~~~~~
+/usr/include/string.h:34:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+   33 | #include <stddef.h>
+  +++ |+#include <stddef.h>
+   34 | 
+/usr/include/string.h:46:56: error: unknown type name ‘size_t’
+   46 | extern void *memmove (void *__dest, const void *__src, size_t __n)
+      |                                                        ^~~~~~
+/usr/include/string.h:46:56: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:54:32: error: unknown type name ‘size_t’
+   54 |                       int __c, size_t __n)
+      |                                ^~~~~~
+/usr/include/string.h:54:32: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:60:42: error: unknown type name ‘size_t’
+   60 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+      |                                          ^~~~~~
+/usr/include/string.h:60:42: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:63:56: error: unknown type name ‘size_t’
+   63 | extern int memcmp (const void *__s1, const void *__s2, size_t __n)
+      |                                                        ^~~~~~
+/usr/include/string.h:63:56: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:90:48: error: unknown type name ‘size_t’
+   90 | extern void *memchr (const void *__s, int __c, size_t __n)
+      |                                                ^~~~~~
+/usr/include/string.h:90:48: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:125:53: error: unknown type name ‘size_t’
+  125 |                       const char *__restrict __src, size_t __n)
+      |                                                     ^~~~~~
+/usr/include/string.h:125:53: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:133:23: error: unknown type name ‘size_t’
+  133 |                       size_t __n) __THROW __nonnull ((1, 2));
+      |                       ^~~~~~
+/usr/include/string.h:133:23: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:139:57: error: unknown type name ‘size_t’
+  139 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                                         ^~~~~~
+/usr/include/string.h:139:57: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:146:8: error: unknown type name ‘size_t’
+  146 | extern size_t strxfrm (char *__restrict __dest,
+      |        ^~~~~~
+/usr/include/string.h:147:54: error: unknown type name ‘size_t’
+  147 |                        const char *__restrict __src, size_t __n)
+      |                                                      ^~~~~~
+/usr/include/string.h:147:54: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:159:8: error: unknown type name ‘size_t’
+  159 | extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+      |        ^~~~~~
+/usr/include/string.h:159:59: error: unknown type name ‘size_t’
+  159 | extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+      |                                                           ^~~~~~
+/usr/include/string.h:159:59: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:174:45: error: unknown type name ‘size_t’
+  174 | extern char *strndup (const char *__string, size_t __n)
+      |                                             ^~~~~~
+/usr/include/string.h:174:45: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:272:8: error: unknown type name ‘size_t’
+  272 | extern size_t strcspn (const char *__s, const char *__reject)
+      |        ^~~~~~
+/usr/include/string.h:276:8: error: unknown type name ‘size_t’
+  276 | extern size_t strspn (const char *__s, const char *__accept)
+      |        ^~~~~~
+/usr/include/string.h:384:8: error: unknown type name ‘size_t’
+  384 | extern size_t strlen (const char *__s)
+      |        ^~~~~~
+/usr/include/string.h:384:15: error: conflicting types for ‘strlen’; have ‘int(const char *)’
+  384 | extern size_t strlen (const char *__s)
+      |               ^~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c:6:22: note: previous declaration of ‘strlen’ with type ‘long unsigned int(const char *)’
+    6 | extern __SIZE_TYPE__ strlen (const char *);
+      |                      ^~~~~~
+/usr/include/string.h:390:8: error: unknown type name ‘size_t’
+  390 | extern size_t strnlen (const char *__string, size_t __maxlen)
+      |        ^~~~~~
+/usr/include/string.h:390:46: error: unknown type name ‘size_t’
+  390 | extern size_t strnlen (const char *__string, size_t __maxlen)
+      |                                              ^~~~~~
+/usr/include/string.h:390:46: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from /usr/include/features.h:424,
+                 from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/string.h:26:
+/usr/include/string.h:409:12: error: unknown type name ‘size_t’
+  409 | extern int __REDIRECT_NTH (strerror_r,
+      |            ^~~~~~~~~~~~~~
+/usr/include/string.h:409:12: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from /usr/include/string.h:431:
+/usr/include/strings.h:34:54: error: unknown type name ‘size_t’
+   34 | extern int bcmp (const void *__s1, const void *__s2, size_t __n)
+      |                                                      ^~~~~~
+/usr/include/strings.h:24:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+   23 | #include <stddef.h>
+  +++ |+#include <stddef.h>
+   24 | 
+/usr/include/strings.h:38:53: error: unknown type name ‘size_t’
+   38 | extern void bcopy (const void *__src, void *__dest, size_t __n)
+      |                                                     ^~~~~~
+/usr/include/strings.h:38:53: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/strings.h:42:31: error: unknown type name ‘size_t’
+   42 | extern void bzero (void *__s, size_t __n) __THROW __nonnull ((1));
+      |                               ^~~~~~
+/usr/include/strings.h:42:31: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/strings.h:120:61: error: unknown type name ‘size_t’
+  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
+      |                                                             ^~~~~~
+/usr/include/strings.h:120:61: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/strings.h:134:27: error: unknown type name ‘size_t’
+  134 |                           size_t __n, locale_t __loc)
+      |                           ^~~~~~
+/usr/include/strings.h:134:27: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:435:40: error: unknown type name ‘size_t’
+  435 | extern void explicit_bzero (void *__s, size_t __n) __THROW __nonnull ((1));
+      |                                        ^~~~~~
+/usr/include/string.h:435:40: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:457:55: error: unknown type name ‘size_t’
+  457 |                         const char *__restrict __src, size_t __n)
+      |                                                       ^~~~~~
+/usr/include/string.h:457:55: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:460:53: error: unknown type name ‘size_t’
+  460 |                       const char *__restrict __src, size_t __n)
+      |                                                     ^~~~~~
+/usr/include/string.h:460:53: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from /usr/include/stdio.h:41,
+                 from /home/user42/data/csmith/runtime/platform_generic.h:39,
+                 from /home/user42/data/csmith/runtime/random_inc.h:89,
+                 from /home/user42/data/csmith/runtime/csmith.h:45:
+/usr/include/x86_64-linux-gnu/bits/libio.h:306:3: error: unknown type name ‘size_t’
+  306 |   size_t __pad5;
+      |   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:309:67: error: ‘size_t’ undeclared (first use in this function)
+  309 |   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+      |                                                                   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:54:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+   53 | #include <stdarg.h>
+  +++ |+#include <stddef.h>
+   54 | #ifdef __GNUC_VA_LIST
+/usr/include/x86_64-linux-gnu/bits/libio.h:337:62: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  337 | typedef __ssize_t __io_read_fn (void *__cookie, char *__buf, size_t __nbytes);
+      |                                                              ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:346:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  346 |                                  size_t __n);
+      |                                  ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:467:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_IO_sgetn’
+  467 | extern _IO_size_t _IO_sgetn (_IO_FILE *, void *, _IO_size_t);
+      |                   ^~~~~~~~~
+/usr/include/x86_64-linux-gnu/bits/libio.h:467:30: error: expected expression before ‘_IO_FILE’
+  467 | extern _IO_size_t _IO_sgetn (_IO_FILE *, void *, _IO_size_t);
+      |                              ^~~~~~~~
+/usr/include/stdio.h:278:35: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  278 | extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+      |                                   ^~~~~~
+/usr/include/stdio.h:284:47: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  284 | extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW __wur;
+      |                                               ^~~~~~
+/usr/include/stdio.h:295:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  295 |                     int __modes, size_t __n) __THROW;
+      |                                  ^~~~~~
+/usr/include/stdio.h:301:24: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  301 |                        size_t __size) __THROW;
+      |                        ^~~~~~
+/usr/include/stdio.h:340:44: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  340 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                                            ^~~~~~
+/usr/include/stdio.h:344:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  344 | extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+      |                                             ^~~~~~
+/usr/include/stdio.h:604:32: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  604 |                                size_t *__restrict __n, int __delimiter,
+      |                                ^~~~~~
+/usr/include/stdio.h:607:30: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  607 |                              size_t *__restrict __n, int __delimiter,
+      |                              ^~~~~~
+/usr/include/stdio.h:617:29: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  617 |                             size_t *__restrict __n,
+      |                             ^~~~~~
+/usr/include/stdio.h:646:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread’
+  646 | extern size_t fread (void *__restrict __ptr, size_t __size,
+      |               ^~~~~
+/usr/include/stdio.h:646:22: error: expected expression before ‘void’
+  646 | extern size_t fread (void *__restrict __ptr, size_t __size,
+      |                      ^~~~
+/usr/include/stdio.h:652:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite’
+  652 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~
+/usr/include/stdio.h:652:23: error: expected expression before ‘const’
+  652 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |                       ^~~~~
+/usr/include/stdio.h:652:15: error: too few arguments to function ‘fwrite’
+  652 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~
+/usr/include/stdio.h:673:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread_unlocked’
+  673 | extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:673:31: error: expected expression before ‘void’
+  673 | extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+      |                               ^~~~
+/usr/include/stdio.h:675:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite_unlocked’
+  675 | extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~~
+/usr/include/stdio.h:675:32: error: expected expression before ‘const’
+  675 | extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+      |                                ^~~~~
+/usr/include/stdio.h:675:15: error: too few arguments to function ‘fwrite_unlocked’
+  675 | extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~~
+/home/user42/data/csmith/runtime/platform_generic.h:43:1: error: invalid storage class for function ‘platform_main_begin’
+   43 | platform_main_begin(void)
+      | ^~~~~~~~~~~~~~~~~~~
+/home/user42/data/csmith/runtime/platform_generic.h:49:1: error: invalid storage class for function ‘platform_main_end’
+   49 | platform_main_end(uint32_t crc, int flag)
+      | ^~~~~~~~~~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_int8_t_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:14:1: note: in expansion of macro ‘FUNC_NAME’
+   14 | FUNC_NAME(unary_minus_func_int8_t_s)(int8_t si LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:28:1: note: in expansion of macro ‘FUNC_NAME’
+   28 | FUNC_NAME(add_func_int8_t_s_s)(int8_t si1, int8_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:42:1: note: in expansion of macro ‘FUNC_NAME’
+   42 | FUNC_NAME(sub_func_int8_t_s_s)(int8_t si1, int8_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:56:1: note: in expansion of macro ‘FUNC_NAME’
+   56 | FUNC_NAME(mul_func_int8_t_s_s)(int8_t si1, int8_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:70:1: note: in expansion of macro ‘FUNC_NAME’
+   70 | FUNC_NAME(mod_func_int8_t_s_s)(int8_t si1, int8_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:82:1: note: in expansion of macro ‘FUNC_NAME’
+   82 | FUNC_NAME(div_func_int8_t_s_s)(int8_t si1, int8_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:94:1: note: in expansion of macro ‘FUNC_NAME’
+   94 | FUNC_NAME(lshift_func_int8_t_s_s)(int8_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int8_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:106:1: note: in expansion of macro ‘FUNC_NAME’
+  106 | FUNC_NAME(lshift_func_int8_t_s_u)(int8_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int8_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:118:1: note: in expansion of macro ‘FUNC_NAME’
+  118 | FUNC_NAME(rshift_func_int8_t_s_s)(int8_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int8_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:130:1: note: in expansion of macro ‘FUNC_NAME’
+  130 | FUNC_NAME(rshift_func_int8_t_s_u)(int8_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_int16_t_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:144:1: note: in expansion of macro ‘FUNC_NAME’
+  144 | FUNC_NAME(unary_minus_func_int16_t_s)(int16_t si LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:158:1: note: in expansion of macro ‘FUNC_NAME’
+  158 | FUNC_NAME(add_func_int16_t_s_s)(int16_t si1, int16_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:172:1: note: in expansion of macro ‘FUNC_NAME’
+  172 | FUNC_NAME(sub_func_int16_t_s_s)(int16_t si1, int16_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:186:1: note: in expansion of macro ‘FUNC_NAME’
+  186 | FUNC_NAME(mul_func_int16_t_s_s)(int16_t si1, int16_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:200:1: note: in expansion of macro ‘FUNC_NAME’
+  200 | FUNC_NAME(mod_func_int16_t_s_s)(int16_t si1, int16_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:212:1: note: in expansion of macro ‘FUNC_NAME’
+  212 | FUNC_NAME(div_func_int16_t_s_s)(int16_t si1, int16_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:224:1: note: in expansion of macro ‘FUNC_NAME’
+  224 | FUNC_NAME(lshift_func_int16_t_s_s)(int16_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int16_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:236:1: note: in expansion of macro ‘FUNC_NAME’
+  236 | FUNC_NAME(lshift_func_int16_t_s_u)(int16_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int16_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:248:1: note: in expansion of macro ‘FUNC_NAME’
+  248 | FUNC_NAME(rshift_func_int16_t_s_s)(int16_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int16_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:260:1: note: in expansion of macro ‘FUNC_NAME’
+  260 | FUNC_NAME(rshift_func_int16_t_s_u)(int16_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_int32_t_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:274:1: note: in expansion of macro ‘FUNC_NAME’
+  274 | FUNC_NAME(unary_minus_func_int32_t_s)(int32_t si LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:288:1: note: in expansion of macro ‘FUNC_NAME’
+  288 | FUNC_NAME(add_func_int32_t_s_s)(int32_t si1, int32_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:302:1: note: in expansion of macro ‘FUNC_NAME’
+  302 | FUNC_NAME(sub_func_int32_t_s_s)(int32_t si1, int32_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:316:1: note: in expansion of macro ‘FUNC_NAME’
+  316 | FUNC_NAME(mul_func_int32_t_s_s)(int32_t si1, int32_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:330:1: note: in expansion of macro ‘FUNC_NAME’
+  330 | FUNC_NAME(mod_func_int32_t_s_s)(int32_t si1, int32_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:342:1: note: in expansion of macro ‘FUNC_NAME’
+  342 | FUNC_NAME(div_func_int32_t_s_s)(int32_t si1, int32_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:354:1: note: in expansion of macro ‘FUNC_NAME’
+  354 | FUNC_NAME(lshift_func_int32_t_s_s)(int32_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int32_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:366:1: note: in expansion of macro ‘FUNC_NAME’
+  366 | FUNC_NAME(lshift_func_int32_t_s_u)(int32_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int32_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:378:1: note: in expansion of macro ‘FUNC_NAME’
+  378 | FUNC_NAME(rshift_func_int32_t_s_s)(int32_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int32_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:390:1: note: in expansion of macro ‘FUNC_NAME’
+  390 | FUNC_NAME(rshift_func_int32_t_s_u)(int32_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_int64_t_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:405:1: note: in expansion of macro ‘FUNC_NAME’
+  405 | FUNC_NAME(unary_minus_func_int64_t_s)(int64_t si LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:419:1: note: in expansion of macro ‘FUNC_NAME’
+  419 | FUNC_NAME(add_func_int64_t_s_s)(int64_t si1, int64_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:433:1: note: in expansion of macro ‘FUNC_NAME’
+  433 | FUNC_NAME(sub_func_int64_t_s_s)(int64_t si1, int64_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:447:1: note: in expansion of macro ‘FUNC_NAME’
+  447 | FUNC_NAME(mul_func_int64_t_s_s)(int64_t si1, int64_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:461:1: note: in expansion of macro ‘FUNC_NAME’
+  461 | FUNC_NAME(mod_func_int64_t_s_s)(int64_t si1, int64_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:473:1: note: in expansion of macro ‘FUNC_NAME’
+  473 | FUNC_NAME(div_func_int64_t_s_s)(int64_t si1, int64_t si2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:485:1: note: in expansion of macro ‘FUNC_NAME’
+  485 | FUNC_NAME(lshift_func_int64_t_s_s)(int64_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_int64_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:497:1: note: in expansion of macro ‘FUNC_NAME’
+  497 | FUNC_NAME(lshift_func_int64_t_s_u)(int64_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int64_t_s_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:509:1: note: in expansion of macro ‘FUNC_NAME’
+  509 | FUNC_NAME(rshift_func_int64_t_s_s)(int64_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_int64_t_s_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:521:1: note: in expansion of macro ‘FUNC_NAME’
+  521 | FUNC_NAME(rshift_func_int64_t_s_u)(int64_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_uint8_t_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:539:1: note: in expansion of macro ‘FUNC_NAME’
+  539 | FUNC_NAME(unary_minus_func_uint8_t_u)(uint8_t ui LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:546:1: note: in expansion of macro ‘FUNC_NAME’
+  546 | FUNC_NAME(add_func_uint8_t_u_u)(uint8_t ui1, uint8_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:553:1: note: in expansion of macro ‘FUNC_NAME’
+  553 | FUNC_NAME(sub_func_uint8_t_u_u)(uint8_t ui1, uint8_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:560:1: note: in expansion of macro ‘FUNC_NAME’
+  560 | FUNC_NAME(mul_func_uint8_t_u_u)(uint8_t ui1, uint8_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:567:1: note: in expansion of macro ‘FUNC_NAME’
+  567 | FUNC_NAME(mod_func_uint8_t_u_u)(uint8_t ui1, uint8_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:579:1: note: in expansion of macro ‘FUNC_NAME’
+  579 | FUNC_NAME(div_func_uint8_t_u_u)(uint8_t ui1, uint8_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint8_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:591:1: note: in expansion of macro ‘FUNC_NAME’
+  591 | FUNC_NAME(lshift_func_uint8_t_u_s)(uint8_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:603:1: note: in expansion of macro ‘FUNC_NAME’
+  603 | FUNC_NAME(lshift_func_uint8_t_u_u)(uint8_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint8_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:615:1: note: in expansion of macro ‘FUNC_NAME’
+  615 | FUNC_NAME(rshift_func_uint8_t_u_s)(uint8_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint8_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:627:1: note: in expansion of macro ‘FUNC_NAME’
+  627 | FUNC_NAME(rshift_func_uint8_t_u_u)(uint8_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_uint16_t_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:641:1: note: in expansion of macro ‘FUNC_NAME’
+  641 | FUNC_NAME(unary_minus_func_uint16_t_u)(uint16_t ui LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:648:1: note: in expansion of macro ‘FUNC_NAME’
+  648 | FUNC_NAME(add_func_uint16_t_u_u)(uint16_t ui1, uint16_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:655:1: note: in expansion of macro ‘FUNC_NAME’
+  655 | FUNC_NAME(sub_func_uint16_t_u_u)(uint16_t ui1, uint16_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:662:1: note: in expansion of macro ‘FUNC_NAME’
+  662 | FUNC_NAME(mul_func_uint16_t_u_u)(uint16_t ui1, uint16_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:669:1: note: in expansion of macro ‘FUNC_NAME’
+  669 | FUNC_NAME(mod_func_uint16_t_u_u)(uint16_t ui1, uint16_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:681:1: note: in expansion of macro ‘FUNC_NAME’
+  681 | FUNC_NAME(div_func_uint16_t_u_u)(uint16_t ui1, uint16_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint16_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:693:1: note: in expansion of macro ‘FUNC_NAME’
+  693 | FUNC_NAME(lshift_func_uint16_t_u_s)(uint16_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:705:1: note: in expansion of macro ‘FUNC_NAME’
+  705 | FUNC_NAME(lshift_func_uint16_t_u_u)(uint16_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint16_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:717:1: note: in expansion of macro ‘FUNC_NAME’
+  717 | FUNC_NAME(rshift_func_uint16_t_u_s)(uint16_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint16_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:729:1: note: in expansion of macro ‘FUNC_NAME’
+  729 | FUNC_NAME(rshift_func_uint16_t_u_u)(uint16_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_uint32_t_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:743:1: note: in expansion of macro ‘FUNC_NAME’
+  743 | FUNC_NAME(unary_minus_func_uint32_t_u)(uint32_t ui LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:750:1: note: in expansion of macro ‘FUNC_NAME’
+  750 | FUNC_NAME(add_func_uint32_t_u_u)(uint32_t ui1, uint32_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:757:1: note: in expansion of macro ‘FUNC_NAME’
+  757 | FUNC_NAME(sub_func_uint32_t_u_u)(uint32_t ui1, uint32_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:764:1: note: in expansion of macro ‘FUNC_NAME’
+  764 | FUNC_NAME(mul_func_uint32_t_u_u)(uint32_t ui1, uint32_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:771:1: note: in expansion of macro ‘FUNC_NAME’
+  771 | FUNC_NAME(mod_func_uint32_t_u_u)(uint32_t ui1, uint32_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:783:1: note: in expansion of macro ‘FUNC_NAME’
+  783 | FUNC_NAME(div_func_uint32_t_u_u)(uint32_t ui1, uint32_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint32_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:795:1: note: in expansion of macro ‘FUNC_NAME’
+  795 | FUNC_NAME(lshift_func_uint32_t_u_s)(uint32_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:807:1: note: in expansion of macro ‘FUNC_NAME’
+  807 | FUNC_NAME(lshift_func_uint32_t_u_u)(uint32_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint32_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:819:1: note: in expansion of macro ‘FUNC_NAME’
+  819 | FUNC_NAME(rshift_func_uint32_t_u_s)(uint32_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint32_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:831:1: note: in expansion of macro ‘FUNC_NAME’
+  831 | FUNC_NAME(rshift_func_uint32_t_u_u)(uint32_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_unary_minus_func_uint64_t_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:846:1: note: in expansion of macro ‘FUNC_NAME’
+  846 | FUNC_NAME(unary_minus_func_uint64_t_u)(uint64_t ui LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:853:1: note: in expansion of macro ‘FUNC_NAME’
+  853 | FUNC_NAME(add_func_uint64_t_u_u)(uint64_t ui1, uint64_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:860:1: note: in expansion of macro ‘FUNC_NAME’
+  860 | FUNC_NAME(sub_func_uint64_t_u_u)(uint64_t ui1, uint64_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:867:1: note: in expansion of macro ‘FUNC_NAME’
+  867 | FUNC_NAME(mul_func_uint64_t_u_u)(uint64_t ui1, uint64_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mod_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:874:1: note: in expansion of macro ‘FUNC_NAME’
+  874 | FUNC_NAME(mod_func_uint64_t_u_u)(uint64_t ui1, uint64_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:886:1: note: in expansion of macro ‘FUNC_NAME’
+  886 | FUNC_NAME(div_func_uint64_t_u_u)(uint64_t ui1, uint64_t ui2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint64_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:898:1: note: in expansion of macro ‘FUNC_NAME’
+  898 | FUNC_NAME(lshift_func_uint64_t_u_s)(uint64_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_lshift_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:910:1: note: in expansion of macro ‘FUNC_NAME’
+  910 | FUNC_NAME(lshift_func_uint64_t_u_u)(uint64_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint64_t_u_s’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:922:1: note: in expansion of macro ‘FUNC_NAME’
+  922 | FUNC_NAME(rshift_func_uint64_t_u_s)(uint64_t left, int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_rshift_func_uint64_t_u_u’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:934:1: note: in expansion of macro ‘FUNC_NAME’
+  934 | FUNC_NAME(rshift_func_uint64_t_u_u)(uint64_t left, unsigned int right LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_float_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:954:1: note: in expansion of macro ‘FUNC_NAME’
+  954 | FUNC_NAME(add_func_float_f_f)(float sf1, float sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_float_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:966:1: note: in expansion of macro ‘FUNC_NAME’
+  966 | FUNC_NAME(sub_func_float_f_f)(float sf1, float sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_float_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:978:1: note: in expansion of macro ‘FUNC_NAME’
+  978 | FUNC_NAME(mul_func_float_f_f)(float sf1, float sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_float_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:994:1: note: in expansion of macro ‘FUNC_NAME’
+  994 | FUNC_NAME(div_func_float_f_f)(float sf1, float sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_add_func_double_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:1013:1: note: in expansion of macro ‘FUNC_NAME’
+ 1013 | FUNC_NAME(add_func_double_f_f)(double sf1, double sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_sub_func_double_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:1025:1: note: in expansion of macro ‘FUNC_NAME’
+ 1025 | FUNC_NAME(sub_func_double_f_f)(double sf1, double sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_mul_func_double_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:1037:1: note: in expansion of macro ‘FUNC_NAME’
+ 1037 | FUNC_NAME(mul_func_double_f_f)(double sf1, double sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_div_func_double_f_f’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:1053:1: note: in expansion of macro ‘FUNC_NAME’
+ 1053 | FUNC_NAME(div_func_double_f_f)(double sf1, double sf2 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/random_inc.h:99:23: error: invalid storage class for function ‘safe_convert_func_float_to_int32_t’
+   99 | #define FUNC_NAME(x) (safe_##x)
+      |                       ^~~~~
+/home/user42/data/csmith/build/runtime/safe_math.h:1194:1: note: in expansion of macro ‘FUNC_NAME’
+ 1194 | FUNC_NAME(convert_func_float_to_int32_t)(float sf1 LOG_INDEX)
+      | ^~~~~~~~~
+/home/user42/data/csmith/runtime/csmith.h:51:1: error: invalid storage class for function ‘crc32_gentab’
+   51 | crc32_gentab (void)
+      | ^~~~~~~~~~~~
+/home/user42/data/csmith/runtime/csmith.h:71:1: error: invalid storage class for function ‘crc32_byte’
+   71 | crc32_byte (uint8_t b) {
+      | ^~~~~~~~~~
+/home/user42/data/csmith/runtime/csmith.h:97:1: error: invalid storage class for function ‘crc32_8bytes’
+   97 | crc32_8bytes (uint64_t val)
+      | ^~~~~~~~~~~~
+/home/user42/data/csmith/runtime/csmith.h:110:1: error: invalid storage class for function ‘transparent_crc’
+  110 | transparent_crc (uint64_t val, char* vname, int flag)
+      | ^~~~~~~~~~~~~~~
+/home/user42/data/csmith/runtime/csmith.h:121:1: error: invalid storage class for function ‘transparent_crc_bytes’
+  121 | transparent_crc_bytes (char *ptr, int nbytes, char* vname, int flag)
+      | ^~~~~~~~~~~~~~~~~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c:233:16: error: conflicting types for ‘a’; have ‘int32_t’ {aka ‘int’}
+  233 | int32_t static a;
+      |                ^
+087e0258b4447044aae06512b48796f3658d0153.c:186:8: note: previous definition of ‘a’ with type ‘char[9][4]’
+  186 |   char a[][4] = {
+      |        ^
+087e0258b4447044aae06512b48796f3658d0153.c:243:33: error: ‘iop’ undeclared (first use in this function)
+  243 | /* ProgramSourceCsmithReduce */*iop = i;
+      |                                 ^~~
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘f0’:
+087e0258b4447044aae06512b48796f3658d0153.c:253:3: error: unknown type name ‘io’
+  253 |   io iop* = i;
+      |   ^~
+087e0258b4447044aae06512b48796f3658d0153.c:253:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘*’ token
+  253 |   io iop* = i;
+      |         ^
+087e0258b4447044aae06512b48796f3658d0153.c:254:3: error: ‘ifx’ undeclared (first use in this function); did you mean ‘idx’?
+  254 |   ifx + 2], 3);
+      |   ^~~
+      |   idx
+087e0258b4447044aae06512b48796f3658d0153.c:254:10: error: expected ‘;’ before ‘]’ token
+  254 |   ifx + 2], 3);
+      |          ^
+      |          ;
+087e0258b4447044aae06512b48796f3658d0153.c:254:10: error: expected statement before ‘]’ token
+087e0258b4447044aae06512b48796f3658d0153.c:254:11: error: expected expression before ‘,’ token
+  254 |   ifx + 2], 3);
+      |           ^
+087e0258b4447044aae06512b48796f3658d0153.c:254:14: error: expected statement before ‘)’ token
+  254 |   ifx + 2], 3);
+      |              ^
+087e0258b4447044aae06512b48796f3658d0153.c:256:7: error: ‘a’ undeclared (first use in this function)
+  256 |   A (&a[0][++j], 4);
+      |       ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c:256:14: error: ‘j’ undeclared (first use in this function)
+  256 |   A (&a[0][++j], 4);
+      |              ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘test_const_global_member_arrays’:
+087e0258b4447044aae06512b48796f3658d0153.c:309:6: error: expected ‘;’ before ‘]’ token
+  309 |   + 1], 5);
+      |      ^
+      |      ;
+087e0258b4447044aae06512b48796f3658d0153.c:309:6: error: expected statement before ‘]’ token
+087e0258b4447044aae06512b48796f3658d0153.c:309:7: error: expected expression before ‘,’ token
+  309 |   + 1], 5);
+      |       ^
+087e0258b4447044aae06512b48796f3658d0153.c:309:10: error: expected statement before ‘)’ token
+  309 |   + 1], 5);
+      |          ^
+087e0258b4447044aae06512b48796f3658d0153.c:310:9: error: ‘ma’ undeclared (first use in this function); did you mean ‘cma’?
+  310 |     A (&ma[i].a[j + 2], 4);
+      |         ^~
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c:310:12: error: ‘i’ undeclared (first use in this function)
+  310 |     A (&ma[i].a[j + 2], 4);
+      |            ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c:310:17: error: ‘j’ undeclared (first use in this function)
+  310 |     A (&ma[i].a[j + 2], 4);
+      |                 ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘test_nonconst_global_member_arrays’:
+087e0258b4447044aae06512b48796f3658d0153.c:362:9: error: ‘ma’ undeclared (first use in this function); did you mean ‘vma’?
+  362 |     A (&ma[i].a[j], 6);
+      |         ^~
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c:362:12: error: ‘i’ undeclared (first use in this function)
+  362 |     A (&ma[i].a[j], 6);
+      |            ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c:362:17: error: ‘j’ undeclared (first use in this function)
+  362 |     A (&ma[i].a[j], 6);
+      |                 ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c: At top level:
+087e0258b4447044aae06512b48796f3658d0153.c:376:18: error: redefinition of ‘vma’
+  376 | struct MemArrays vma[] = {
+      |                  ^~~
+087e0258b4447044aae06512b48796f3658d0153.c:348:18: note: previous definition of ‘vma’ with type ‘struct MemArrays[6]’
+  348 | struct MemArrays vma[] = {
+      |                  ^~~
+087e0258b4447044aae06512b48796f3658d0153.c:385:13: error: redefinition of ‘test_nonconst_global_member_arrays’
+  385 | static void test_nonconst_global_member_arrays (void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c:357:13: note: previous definition of ‘test_nonconst_global_member_arrays’ with type ‘void(void)’
+  357 | static void test_nonconst_global_member_arrays (void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘test_nonconst_local_member_arrays’:
+087e0258b4447044aae06512b48796f3658d0153.c:542:14: error: expected ‘,’ or ‘;’ before ‘)’ token
+  542 |     int j = i);
+      |              ^
+087e0258b4447044aae06512b48796f3658d0153.c:543:6: error: ‘clu’ undeclared (first use in this function)
+  543 |   A (clu.a.b, 2);
+      |      ^~~
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+087e0258b4447044aae06512b48796f3658d0153.c:548:7: error: variable ‘vu’ has initializer but incomplete type
+  548 | union UnionMemberArrays vu = {
+      |       ^~~~~~~~~~~~~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c:549:3: error: extra brace group at end of initializer
+  549 |   { { '1', '2', '3', '4' }, { '5', '6' } }
+      |   ^
+087e0258b4447044aae06512b48796f3658d0153.c:549:3: note: (near initialization for ‘vu’)
+087e0258b4447044aae06512b48796f3658d0153.c:549:5: error: extra brace group at end of initializer
+  549 |   { { '1', '2', '3', '4' }, { '5', '6' } }
+      |     ^
+087e0258b4447044aae06512b48796f3658d0153.c:549:5: note: (near initialization for ‘vu’)
+087e0258b4447044aae06512b48796f3658d0153.c:549:29: error: extra brace group at end of initializer
+  549 |   { { '1', '2', '3', '4' }, { '5', '6' } }
+      |                             ^
+087e0258b4447044aae06512b48796f3658d0153.c:549:29: note: (near initialization for ‘vu’)
+087e0258b4447044aae06512b48796f3658d0153.c:548:25: error: storage size of ‘vu’ isn’t known
+  548 | union UnionMemberArrays vu = {
+      |                         ^~
+087e0258b4447044aae06512b48796f3658d0153.c:552:13: error: invalid storage class for function ‘test_nonconst_union_member_arrays’
+  552 | static void test_nonconst_union_member_arrays (void)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘test_nonconst_union_member_arrays’:
+087e0258b4447044aae06512b48796f3658d0153.c:558:9: error: variable ‘lvu’ has initializer but incomplete type
+  558 |   union UnionMemberArrays lvu = {
+      |         ^~~~~~~~~~~~~~~~~
+087e0258b4447044aae06512b48796f3658d0153.c:559:5: error: extra brace group at end of initializer
+  559 |     { { '1', '2', '3', '4' }, { '5', '6', '7' } }
+      |     ^
+087e0258b4447044aae06512b48796f3658d0153.c:559:5: note: (near initialization for ‘lvu’)
+087e0258b4447044aae06512b48796f3658d0153.c:559:7: error: extra brace group at end of initializer
+  559 |     { { '1', '2', '3', '4' }, { '5', '6', '7' } }
+      |       ^
+087e0258b4447044aae06512b48796f3658d0153.c:559:7: note: (near initialization for ‘lvu’)
+087e0258b4447044aae06512b48796f3658d0153.c:559:31: error: extra brace group at end of initializer
+  559 |     { { '1', '2', '3', '4' }, { '5', '6', '7' } }
+      |                               ^
+087e0258b4447044aae06512b48796f3658d0153.c:559:31: note: (near initialization for ‘lvu’)
+087e0258b4447044aae06512b48796f3658d0153.c:558:27: error: storage size of ‘lvu’ isn’t known
+  558 |   union UnionMemberArrays lvu = {
+      |                           ^~~
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘test_nonconst_local_member_arrays’:
+087e0258b4447044aae06512b48796f3658d0153.c:587:1: error: expected declaration or statement at end of input
+  587 | }
+      | ^
+087e0258b4447044aae06512b48796f3658d0153.c: In function ‘test_nonconst_local_arrays’:
+087e0258b4447044aae06512b48796f3658d0153.c:194:7: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+  194 |   A (a[0], 5);
+      |       ^
+087e0258b4447044aae06512b48796f3658d0153.c:12:22: note: in definition of macro ‘A’
+   12 |     const char *s = (expr);                                     \
+      |                      ^~~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc3bae7 gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:6043
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3931a gimplify_and_add(tree_node*, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:496
+0xc3931a gimplify_decl_expr
+	.././../gcc-source/gcc/gimplify.cc:1936
+0xc2b1a2 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15253
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,0 +1,438 @@
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘bar’:
+76df37625536a1839efd127256deed7840fe331d.c:26:38: error: subscripted value is neither array nor pointer nor vector
+   26 |   th = ((unsigned long long) in->u[3u[1] = ol >> 32;
+      |                                      ^
+76df37625536a1839efd127256deed7840fe331d.c:26:52: error: expected ‘]’ before ‘;’ token
+   26 |   th = ((unsigned long long) in->u[3u[1] = ol >> 32;
+      |                                                    ^
+      |                                                    ]
+76df37625536a1839efd127256deed7840fe331d.c:29:18: error: expected ‘)’ before ‘}’ token
+   29 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+   30 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c:26:8: note: to match this ‘(’
+   26 |   th = ((unsigned long long) in->u[3u[1] = ol >> 32;
+      |        ^
+76df37625536a1839efd127256deed7840fe331d.c:29:18: error: expected ‘;’ before ‘}’ token
+   29 |   out->u[2] = oh;
+      |                  ^
+      |                  ;
+   30 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:33:1: error: redefinition of ‘bar’
+   33 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:23:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+   23 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘bar’:
+76df37625536a1839efd127256deed7840fe331d.c:41:10: error: expected ‘;’ before ‘)’ token
+   41 | shift * 8);
+      |          ^
+      |          ;
+76df37625536a1839efd127256deed7840fe331d.c:41:10: error: expected statement before ‘)’ token
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:49:1: error: redefinition of ‘bar’
+   49 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:33:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+   33 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+In file included from 76df37625536a1839efd127256deed7840fe331d.c:90:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h: In function ‘main’:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:40:1: error: expected expression before ‘typedef’
+   40 | typedef __builtin_va_list __gnuc_va_list;
+      | ^~~~~~~
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:99:9: error: unknown type name ‘__gnuc_va_list’
+   99 | typedef __gnuc_va_list va_list;
+      |         ^~~~~~~~~~~~~~
+76df37625536a1839efd127256deed7840fe331d.c:92:5: error: conflicting types for ‘a’; have ‘int’
+   92 | int a, b;
+      |     ^
+76df37625536a1839efd127256deed7840fe331d.c:78:12: note: previous definition of ‘a’ with type ‘struct S[6]’
+   78 |   struct S a[] = { { 0x000004d3, 0xbc5448db, 0xf22bde9f, 0xebb44f8f },
+      |            ^
+76df37625536a1839efd127256deed7840fe331d.c:93:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘t’
+   93 | char c[128]t
+      |            ^
+76df37625536a1839efd127256deed7840fe331d.c:93:12: error: unknown type name ‘t’
+76df37625536a1839efd127256deed7840fe331d.c:94:4: error: unknown type name ‘__’
+   94 | ta;__
+      |    ^~
+76df37625536a1839efd127256deed7840fe331d.c:95:10: error: expected declaration specifiers or ‘...’ before ‘(’ token
+   95 | ribute__((noinline, noclone)) static void
+      |          ^
+76df37625536a1839efd127256deed7840fe331d.c:113:30: error: expected ‘;’ before ‘)’ token
+  113 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+76df37625536a1839efd127256deed7840fe331d.c:113:30: error: expected statement before ‘)’ token
+76df37625536a1839efd127256deed7840fe331d.c:113:32: error: expected expression before ‘!=’ token
+  113 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+76df37625536a1839efd127256deed7840fe331d.c:116:3: error: ‘out’ undeclared (first use in this function)
+  116 |   out->u[0] = ol;
+      |   ^~~
+76df37625536a1839efd127256deed7840fe331d.c:116:3: note: each undeclared identifier is reported only once for each function it appears in
+76df37625536a1839efd127256deed7840fe331d.c:116:15: error: ‘ol’ undeclared (first use in this function)
+  116 |   out->u[0] = ol;
+      |               ^~
+76df37625536a1839efd127256deed7840fe331d.c:117:15: error: ‘oh’ undeclared (first use in this function)
+  117 |   out->u[3] = oh >> 32;
+      |               ^~
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:122:1: error: redefinition of ‘baz’
+  122 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:64:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+   64 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘baz’:
+76df37625536a1839efd127256deed7840fe331d.c:130:41: error: subscripted value is neither array nor pointer nor vector
+  130 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                         ^
+76df37625536a1839efd127256deed7840fe331d.c:130:47: error: ‘ol’ undeclared (first use in this function)
+  130 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                               ^~
+76df37625536a1839efd127256deed7840fe331d.c:130:55: error: expected ‘]’ before ‘;’ token
+  130 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                                       ^
+      |                                                       ]
+76df37625536a1839efd127256deed7840fe331d.c:133:18: error: expected ‘)’ before ‘}’ token
+  133 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+  134 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c:130:33: note: to match this ‘(’
+  130 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                 ^
+76df37625536a1839efd127256deed7840fe331d.c:133:18: error: expected ‘)’ before ‘}’ token
+  133 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+  134 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c:130:32: note: to match this ‘(’
+  130 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                ^
+76df37625536a1839efd127256deed7840fe331d.c:133:18: error: expected ‘;’ before ‘}’ token
+  133 |   out->u[2] = oh;
+      |                  ^
+      |                  ;
+  134 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:137:1: error: redefinition of ‘bar’
+  137 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:49:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+   49 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘bar’:
+76df37625536a1839efd127256deed7840fe331d.c:141:23: error: expected ‘)’ before ‘lonf’
+  141 |   tl = ((unsigned long lonf) in->u[1] << 32) | in->u[0];
+      |         ~             ^~~~~
+      |                       )
+76df37625536a1839efd127256deed7840fe331d.c:145:10: error: expected ‘;’ before ‘)’ token
+  145 | shift * 8);
+      |          ^
+      |          ;
+76df37625536a1839efd127256deed7840fe331d.c:145:10: error: expected statement before ‘)’ token
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:153:1: error: redefinition of ‘bar’
+  153 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:137:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+  137 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘bar’:
+76df37625536a1839efd127256deed7840fe331d.c:160:21: error: ‘shi’ undeclared (first use in this function)
+  160 |   oh |= tl >> (64 - shi int) != 1
+      |                     ^~~
+76df37625536a1839efd127256deed7840fe331d.c:160:24: error: expected ‘)’ before ‘int’
+  160 |   oh |= tl >> (64 - shi int) != 1
+      |               ~        ^~~~
+      |                        )
+76df37625536a1839efd127256deed7840fe331d.c:161:36: error: ‘ap’ undeclared (first use in this function)
+  161 |       || __builtin_strcmp (va_arg (ap, const char *), "bar")  out->u[1] = ol >> 32;
+      |                                    ^~
+76df37625536a1839efd127256deed7840fe331d.c:161:61: error: expected ‘;’ before ‘out’
+  161 |       || __builtin_strcmp (va_arg (ap, const char *), "bar")  out->u[1] = ol >> 32;
+      |                                                             ^ ~~~
+      |                                                             ;
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:168:1: error: redefinition of ‘baz’
+  168 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:122:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+  122 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:180:1: error: redefinition of ‘main’
+  180 | main ()
+      | ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:76:1: note: previous definition of ‘main’ with type ‘int()’
+   76 | main ()
+      | ^~~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘main’:
+76df37625536a1839efd127256deed7840fe331d.c:270:1: error: expected expression before ‘int’
+  270 | int a, b;
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:271:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘t’
+  271 | char c[128]t
+      |            ^
+76df37625536a1839efd127256deed7840fe331d.c:271:12: error: unknown type name ‘t’
+76df37625536a1839efd127256deed7840fe331d.c:272:4: error: unknown type name ‘__’
+  272 | ta;__
+      |    ^~
+76df37625536a1839efd127256deed7840fe331d.c:273:10: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  273 | ribute__((noinline, noclone)) static void
+      |          ^
+76df37625536a1839efd127256deed7840fe331d.c:284:2: error: #else without #if
+  284 | #else
+      |  ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:290:2: error: #endif without #if
+  290 | #endif
+      |  ^~~~~
+76df37625536a1839efd127256deed7840fe331d.c:291:30: error: expected ‘;’ before ‘)’ token
+  291 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+76df37625536a1839efd127256deed7840fe331d.c:291:30: error: expected statement before ‘)’ token
+76df37625536a1839efd127256deed7840fe331d.c:291:32: error: expected expression before ‘!=’ token
+  291 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+76df37625536a1839efd127256deed7840fe331d.c:294:3: error: ‘out’ undeclared (first use in this function)
+  294 |   out->u[0] = ol;
+      |   ^~~
+76df37625536a1839efd127256deed7840fe331d.c:294:15: error: ‘ol’ undeclared (first use in this function)
+  294 |   out->u[0] = ol;
+      |               ^~
+76df37625536a1839efd127256deed7840fe331d.c:295:15: error: ‘oh’ undeclared (first use in this function)
+  295 |   out->u[3] = oh >> 32;
+      |               ^~
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:300:1: error: redefinition of ‘baz’
+  300 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:168:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+  168 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘baz’:
+76df37625536a1839efd127256deed7840fe331d.c:308:41: error: subscripted value is neither array nor pointer nor vector
+  308 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                         ^
+76df37625536a1839efd127256deed7840fe331d.c:308:47: error: ‘ol’ undeclared (first use in this function)
+  308 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                               ^~
+76df37625536a1839efd127256deed7840fe331d.c:308:55: error: expected ‘]’ before ‘;’ token
+  308 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                                       ^
+      |                                                       ]
+76df37625536a1839efd127256deed7840fe331d.c:311:18: error: expected ‘)’ before ‘}’ token
+  311 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+  312 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c:308:33: note: to match this ‘(’
+  308 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                 ^
+76df37625536a1839efd127256deed7840fe331d.c:311:18: error: expected ‘)’ before ‘}’ token
+  311 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+  312 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c:308:32: note: to match this ‘(’
+  308 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                ^
+76df37625536a1839efd127256deed7840fe331d.c:311:18: error: expected ‘;’ before ‘}’ token
+  311 |   out->u[2] = oh;
+      |                  ^
+      |                  ;
+  312 | }
+      | ~                 
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:315:1: error: redefinition of ‘bar’
+  315 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:153:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+  153 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘bar’:
+76df37625536a1839efd127256deed7840fe331d.c:319:23: error: expected ‘)’ before ‘lonf’
+  319 |   tl = ((unsigned long lonf) in->u[1] << 32) | in->u[0];
+      |         ~             ^~~~~
+      |                       )
+76df37625536a1839efd127256deed7840fe331d.c:323:10: error: expected ‘;’ before ‘)’ token
+  323 | shift * 8);
+      |          ^
+      |          ;
+76df37625536a1839efd127256deed7840fe331d.c:323:10: error: expected statement before ‘)’ token
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:331:1: error: redefinition of ‘bar’
+  331 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:315:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+  315 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:346:1: error: redefinition of ‘baz’
+  346 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:300:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+  300 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:358:1: error: redefinition of ‘main’
+  358 | main ()
+      | ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:76:1: note: previous definition of ‘main’ with type ‘int()’
+   76 | main ()
+      | ^~~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘main’:
+76df37625536a1839efd127256deed7840fe331d.c:374:1: error: expected expression before ‘int’
+  374 | int a, b;
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:375:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘t’
+  375 | char c[128]t
+      |            ^
+76df37625536a1839efd127256deed7840fe331d.c:375:12: error: unknown type name ‘t’
+76df37625536a1839efd127256deed7840fe331d.c:376:4: error: unknown type name ‘__’
+  376 | ta;__
+      |    ^~
+76df37625536a1839efd127256deed7840fe331d.c:377:10: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  377 | ribute__((noinline, noclone)) static void
+      |          ^
+76df37625536a1839efd127256deed7840fe331d.c:388:2: error: #else without #if
+  388 | #else
+      |  ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:394:2: error: #endif without #if
+  394 | #endif
+      |  ^~~~~
+76df37625536a1839efd127256deed7840fe331d.c:395:30: error: expected ‘;’ before ‘)’ token
+  395 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+76df37625536a1839efd127256deed7840fe331d.c:395:30: error: expected statement before ‘)’ token
+76df37625536a1839efd127256deed7840fe331d.c:395:32: error: expected expression before ‘!=’ token
+  395 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+76df37625536a1839efd127256deed7840fe331d.c:398:3: error: ‘out’ undeclared (first use in this function)
+  398 |   out->u[0] = ol;
+      |   ^~~
+76df37625536a1839efd127256deed7840fe331d.c:398:15: error: ‘ol’ undeclared (first use in this function)
+  398 |   out->u[0] = ol;
+      |               ^~
+76df37625536a1839efd127256deed7840fe331d.c:399:15: error: ‘oh’ undeclared (first use in this function)
+  399 |   out->u[3] = oh >> 32;
+      |               ^~
+76df37625536a1839efd127256deed7840fe331d.c: At top level:
+76df37625536a1839efd127256deed7840fe331d.c:404:1: error: redefinition of ‘baz’
+  404 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:346:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+  346 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:416:1: error: redefinition of ‘main’
+  416 | main ()
+      | ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:76:1: note: previous definition of ‘main’ with type ‘int()’
+   76 | main ()
+      | ^~~~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘main’:
+76df37625536a1839efd127256deed7840fe331d.c:432:1: error: expected expression before ‘int’
+  432 | int a, b;
+      | ^~~
+76df37625536a1839efd127256deed7840fe331d.c:436:1: error: invalid storage class for function ‘f1’
+  436 | f1 (const char *fmt, ...)
+      | ^~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘f1’:
+76df37625536a1839efd127256deed7840fe331d.c:438:3: error: unknown type name ‘va_list’
+  438 |   va_list ap;
+      |   ^~~~~~~
+76df37625536a1839efd127256deed7840fe331d.c:91:1: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+   90 | #include <stdarg.h>
+  +++ |+#include <stdarg.h>
+   91 | 
+76df37625536a1839efd127256deed7840fe331d.c:439:4: error: stray ‘\320’ in program
+  439 |   a<d0>sm volatile ("" : : : "memory");
+      |    ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:439:4: error: expected ‘;’ before ‘sm’
+  439 |   a�sm volatile ("" : : : "memory");
+      |    ^~~
+      |    ;
+76df37625536a1839efd127256deed7840fe331d.c:504:2: error: #else without #if
+  504 | #else
+      |  ^~~~
+76df37625536a1839efd127256deed7840fe331d.c:510:2: error: #endif without #if
+  510 | #endif
+      |  ^~~~~
+76df37625536a1839efd127256deed7840fe331d.c:558:24: error: unterminated argument list invoking macro "va_arg"
+  558 | /* ProgramSourceLLVM */
+      |                        ^
+76df37625536a1839efd127256deed7840fe331d.c:443:25: error: ‘va_arg’ undeclared (first use in this function)
+  443 |   if (__builtin_strcmp (va_arg (ap, const chcorpus/pr56205.c */
+      |                         ^~~~~~
+76df37625536a1839efd127256deed7840fe331d.c:443:31: error: expected ‘)’ at end of input
+  443 |   if (__builtin_strcmp (va_arg (ap, const chcorpus/pr56205.c */
+      |                        ~      ^
+      |                               )
+......
+76df37625536a1839efd127256deed7840fe331d.c:443:7: error: too few arguments to function ‘__builtin_strcmp’
+  443 |   if (__builtin_strcmp (va_arg (ap, const chcorpus/pr56205.c */
+      |       ^~~~~~~~~~~~~~~~
+76df37625536a1839efd127256deed7840fe331d.c:443:3: error: expected declaration or statement at end of input
+  443 |   if (__builtin_strcmp (va_arg (ap, const chcorpus/pr56205.c */
+      |   ^~
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘main’:
+76df37625536a1839efd127256deed7840fe331d.c:443:3: error: expected declaration or statement at end of input
+76df37625536a1839efd127256deed7840fe331d.c: In function ‘main’:
+76df37625536a1839efd127256deed7840fe331d.c:84:38: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   84 |   baz (&a[5], &a[0], &a[1], &a[2], &a[3]);
+      |                                     ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

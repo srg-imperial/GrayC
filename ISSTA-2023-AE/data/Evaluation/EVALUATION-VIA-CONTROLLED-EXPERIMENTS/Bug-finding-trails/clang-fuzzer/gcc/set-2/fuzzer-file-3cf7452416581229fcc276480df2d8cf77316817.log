@@ -1,0 +1,2211 @@
+3cf7452416581229fcc276480df2d8cf77316817.c:17:3: error: unknown type name ‘it’; did you mean ‘int’?
+   17 | f(it n*x)
+      |   ^~
+      |   int
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘main’:
+3cf7452416581229fcc276480df2d8cf77316817.c:25:3: error: unknown type name ‘cqar’; did you mean ‘char’?
+   25 |   cqar a[] = "c";
+      |   ^~~~
+      |   char
+3cf7452416581229fcc276480df2d8cf77316817.c:25:14: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+   25 |   cqar a[] = "c";
+      |              ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:26:1: error: expected expression before ‘=’ token
+   26 | = 0;
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:29:1: error: redefinition of ‘main’
+   29 | main()
+      | ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:22:1: note: previous definition of ‘main’ with type ‘int()’
+   22 | main()
+      | ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘main’:
+3cf7452416581229fcc276480df2d8cf77316817.c:34:6: error: ‘no’ undeclared (first use in this function)
+   34 |   f(&no-$rapping-maths);
+      |      ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:34:6: note: each undeclared identifier is reported only once for each function it appears in
+3cf7452416581229fcc276480df2d8cf77316817.c:34:9: error: ‘$rapping’ undeclared (first use in this function)
+   34 |   f(&no-$rapping-maths);
+      |         ^~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:34:18: error: ‘maths’ undeclared (first use in this function)
+   34 |   f(&no-$rapping-maths);
+      |                  ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:35:34: error: expected ‘)’ before ‘a’
+   35 |   a[c = 1] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                       ~          ^
+      |                                  )
+3cf7452416581229fcc276480df2d8cf77316817.c:35:48: error: missing terminating ' character
+   35 |   a[c = 1] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                                                ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:2: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:3: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:4: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:5: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:6: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:7: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:8: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:9: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:10: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:11: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:12: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:13: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:14: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:15: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:16: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:17: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:18: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:19: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:20: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:21: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:22: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:23: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:24: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:25: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:26: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:27: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:28: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:29: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:30: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:31: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:32: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:33: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:36:34: error: stray ‘\377’ in program
+   36 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:37:4: error: expected ‘:’ before ‘;’ token
+   37 |  s);
+      |    ^
+      |    :
+3cf7452416581229fcc276480df2d8cf77316817.c:38:20: error: expected ‘;’ before '\x3d312c20'
+   38 |   a[c = 0] = s == 0 ' (x=1, 'a') : (x=2, 'b');
+      |                    ^~~~~~~~~~
+      |                    ;
+3cf7452416581229fcc276480df2d8cf77316817.c:38:44: error: missing terminating ' character
+   38 |   a[c = 0] = s == 0 ' (x=1, 'a') : (x=2, 'b');
+      |                                            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:40:26: error: ‘ls’ undeclared (first use in this function); did you mean ‘pls’?
+   40 |   const struct S *pls = &ls;
+      |                          ^~
+      |                          pls
+3cf7452416581229fcc276480df2d8cf77316817.c:41:10: error: variable ‘ls21’ has initializer but incomplete type
+   41 |   struct S ls21 = *pls;
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:41:19: error: invalid use of undefined type ‘const struct S’
+   41 |   struct S ls21 = *pls;
+      |                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:41:12: error: storage size of ‘ls21’ isn’t known
+   41 |   struct S ls21 = *pls;
+      |            ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:42:10: error: variable ‘lu22’ has initializer but incomplete type
+   42 |   struct U lu22 = {3, *pls, 4, {"huhu", 43}};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:42:23: error: invalid use of undefined type ‘const struct S’
+   42 |   struct U lu22 = {3, *pls, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:42:32: error: extra brace group at end of initializer
+   42 |   struct U lu22 = {3, *pls, 4, {"huhu", 43}};
+      |                                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:42:32: note: (near initialization for ‘lu22’)
+3cf7452416581229fcc276480df2d8cf77316817.c:42:12: error: storage size of ‘lu22’ isn’t known
+   42 |   struct U lu22 = {3, *pls, 4, {"huhu", 43}};
+      |            ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:44:10: error: variable ‘lu21’ has initializer but incomplete type
+   44 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:44:12: error: storage size of ‘lu21’ isn’t known
+   44 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |            ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘g’:
+3cf7452416581229fcc276480df2d8cf77316817.c:57:12: error: expected ‘;’ before ‘struct’
+   57 |   **nextPtr
+      |            ^
+      |            ;
+   58 | struct S gs3 = { (1), {(2)}, {(((3))), {4}}};
+      | ~~~~~~      
+3cf7452416581229fcc276480df2d8cf77316817.c:60:8: error: variable ‘gv’ has initializer but incomplete type
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:60:16: error: extra brace group at end of initializer
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:60:16: note: (near initialization for ‘gv’)
+3cf7452416581229fcc276480df2d8cf77316817.c:60:17: error: extra brace group at end of initializer
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                 ^
+3cf7452416581229fcc276480df2d8cf77316817.c:60:17: note: (near initialization for ‘gv’)
+3cf7452416581229fcc276480df2d8cf77316817.c:60:23: error: extra brace group at end of initializer
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:60:23: note: (near initialization for ‘gv’)
+3cf7452416581229fcc276480df2d8cf77316817.c:60:40: error: ‘u8’ undeclared (first use in this function)
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                                        ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:60:43: error: expected ‘}’ before numeric constant
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |               ~                           ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:60:10: error: storage size of ‘gv’ isn’t known
+   60 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:62:8: error: variable ‘gv2’ has initializer but incomplete type
+   62 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:62:32: error: extra brace group at end of initializer
+   62 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |                                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:62:32: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:62:27: error: invalid use of undefined type ‘struct S’
+   62 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |                           ^
+3cf7452416581229fcc276480df2d8cf77316817.c:62:41: error: extra brace group at end of initializer
+   62 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |                                         ^
+3cf7452416581229fcc276480df2d8cf77316817.c:62:41: note: (near initialization for ‘gv2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:62:10: error: storage size of ‘gv2’ isn’t known
+   62 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:64:8: error: variable ‘gv3’ has initializer but incomplete type
+   64 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:64:33: error: extra brace group at end of initializer
+   64 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                 ^
+3cf7452416581229fcc276480df2d8cf77316817.c:64:33: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:64:28: error: invalid use of undefined type ‘struct S’
+   64 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:64:43: error: extra brace group at end of initializer
+   64 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                           ^
+3cf7452416581229fcc276480df2d8cf77316817.c:64:43: note: (near initialization for ‘gv3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:64:10: error: storage size of ‘gv3’ isn’t known
+   64 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:66:8: error: variable ‘gw’ has initializer but incomplete type
+   66 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:66:16: error: extra brace group at end of initializer
+   66 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:66:16: note: (near initialization for ‘gw’)
+3cf7452416581229fcc276480df2d8cf77316817.c:66:27: error: extra brace group at end of initializer
+   66 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |                           ^
+3cf7452416581229fcc276480df2d8cf77316817.c:66:27: note: (near initialization for ‘gw’)
+3cf7452416581229fcc276480df2d8cf77316817.c:66:10: error: storage size of ‘gw’ isn’t known
+   66 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:68:6: error: stray ‘\340’ in program
+   68 | union<e0><a9>U {
+      |      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:68:7: error: stray ‘\251’ in program
+   68 | union<e0><a9>U {
+      |          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:69:5: error: expected specifier-qualifier-list before ‘u8’
+   69 |     u8 a;
+      |     ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:89:16: error: expected identifier or ‘(’ before ‘)’ token
+   89 |   volatile lon]) - i1), 5);
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:90:10: error: ‘paa’ undeclared (first use in this function)
+   90 |   A (*(*(paa[1]) - i2), 3);
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:90:20: error: ‘i2’ undeclared (first use in this function)
+   90 |   A (*(*(paa[1]) - i2), 3);
+      |                    ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:91:20: error: ‘i3’ undeclared (first use in this function)
+   91 |   A (*(*(paa[1]) - i3), 1);
+      |                    ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:93:20: error: ‘i0’ undeclared (first use in this function)
+   93 |   A (*(*(paa[0]) + i0) + i1, 0);
+      |                    ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:93:26: error: ‘i1’ undeclared (first use in this function)
+   93 |   A (*(*(paa[0]) + i0) + i1, 0);
+      |                          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘main’:
+3cf7452416581229fcc276480df2d8cf77316817.c:102:3: error: ‘test_ptr_ag’ undeclared (first use in this function)
+  102 |   test_ptr_ag long l1 = 1;
+      |   ^~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:102:14: error: expected ‘;’ before ‘long’
+  102 |   test_ptr_ag long l1 = 1;
+      |              ^~~~~
+      |              ;
+3cf7452416581229fcc276480df2d8cf77316817.c:106:8: error: ‘INT64_MIN’ undeclared (first use in this function)
+  106 |   if ((INT64_MIN % 1LL) != 0(INT64_MIN % -l3) != 0)
+      |        ^~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:106:28: error: called object is not a function or function pointer
+  106 |   if ((INT64_MIN % 1LL) != 0(INT64_MIN % -l3) != 0)
+      |                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘main’:
+3cf7452416581229fcc276480df2d8cf77316817.c:112:1: error: unknown type name ‘t’
+  112 | t T t;
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:112:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘t’
+  112 | t T t;
+      |     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:113:3: error: unknown type name ‘u8’
+  113 |   u8 a;
+      |   ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:113:6: error: conflicting types for ‘a’; have ‘int’
+  113 |   u8 a;
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:32:8: note: previous definition of ‘a’ with type ‘char[2]’
+   32 |   char a[] = "c";
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:118:12: error: field ‘t’ has incomplete type
+  118 |   struct V t;
+      |            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:119:12: error: array type has incomplete element type ‘struct S’
+  119 |   struct S s[];
+      |            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:122:8: error: variable ‘gs’ has initializer but incomplete type
+  122 | struct S gs = ((struct S){1, 2, 3, 4});
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:122:26: error: invalid use of undefined type ‘struct S’
+  122 | struct S gs = ((struct S){1, 2, 3, 4});
+      |                          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:123:8: error: variable ‘gs2’ has initializer but incomplete type
+  123 | struct S gs2 = {1, 2, {3, 4}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:123:23: error: extra brace group at end of initializer
+  123 | struct S gs2 = {1, 2, {3, 4}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:123:23: note: (near initialization for ‘gs2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:124:8: error: variable ‘gt’ has initializer but incomplete type
+  124 | struct T gt = {"hello", 42};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:125:8: error: variable ‘gu’ has initializer but incomplete type
+  125 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:126:8: error: variable ‘gu2’ has initializer but incomplete type
+  126 | struct U gu2 = {3, {5,6,7,8}, 4, {u"hh",u 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:126:20: error: extra brace group at end of initializer
+  126 | struct U gu2 = {3, {5,6,7,8}, 4, {u"hh",u 43}};
+      |                    ^
+3cf7452416581229fcc276480df2d8cf77316817.c:126:20: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:126:34: error: extra brace group at end of initializer
+  126 | struct U gu2 = {3, {5,6,7,8}, 4, {u"hh",u 43}};
+      |                                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:126:34: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:126:41: error: ‘u’ undeclared here (not in a function)
+  126 | struct U gu2 = {3, {5,6,7,8}, 4, {u"hh",u 43}};
+      |                                         ^
+3cf7452416581229fcc276480df2d8cf77316817.c:126:43: error: expected ‘}’ before numeric constant
+  126 | struct U gu2 = {3, {5,6,7,8}, 4, {u"hh",u 43}};
+      |                                  ~        ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:129:8: error: variable ‘gu3’ has initializer but incomplete type
+  129 | struct U gu3 = { {3urther extensions to that under -fms-extension.*/
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:129:18: error: extra brace group at end of initializer
+  129 | struct U gu3 = { {3urther extensions to that under -fms-extension.*/
+      |                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:129:18: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:129:19: error: invalid suffix "urther" on integer constant
+  129 | struct U gu3 = { {3urther extensions to that under -fms-extension.*/
+      |                   ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:129:27: error: expected ‘}’ before ‘extensions’
+  129 | struct U gu3 = { {3urther extensions to that under -fms-extension.*/
+      |                  ~        ^~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:165:3: error: expected ‘}’ before ‘struct’
+  165 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |   ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:129:16: note: to match this ‘{’
+  129 | struct U gu3 = { {3urther extensions to that under -fms-extension.*/
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:241:1: error: expected ‘,’ or ‘;’ before ‘struct’
+  241 | struct SEA { int i; int j; int k; int l; };
+      | ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:242:25: error: field ‘a’ has incomplete type
+  242 | struct SEB { struct SEA a; int r[1]; };
+      |                         ^
+3cf7452416581229fcc276480df2d8cf77316817.c:243:25: error: field ‘a’ has incomplete type
+  243 | struct SEC { struct SEA a; int r[0]; };
+      |                         ^
+3cf7452416581229fcc276480df2d8cf77316817.c:244:26: error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ before ‘accept’
+  244 | struct SED { struct S we accept them like gcc, except for this case)
+      |                          ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:244:68: error: expected identifier or ‘(’ before ‘)’ token
+  244 | struct SED { struct S we accept them like gcc, except for this case)
+      |                                                                    ^
+3cf7452416581229fcc276480df2d8cf77316817.c:247:11: error: array type has incomplete element type ‘struct SS’
+  247 | struct SS sinit16[] = { { 1 }, 2 };
+      |           ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:250:3: error: unknown type name ‘u8’
+  250 |   u8 a,b;
+      |   ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:251:3: error: expected specifier-qualifier-list before ‘g’
+  251 |   g-maths);
+      |   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:251:10: error: expected identifier or ‘(’ before ‘)’ token
+  251 |   g-maths);
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:252:5: error: ‘c’ undeclared here (not in a function)
+  252 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:252:14: error: ‘s’ undeclared here (not in a function)
+  252 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |              ^
+3cf7452416581229fcc276480df2d8cf77316817.c:252:24: error: ‘x’ undeclared here (not in a function)
+  252 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:252:34: error: expected ‘)’ before ‘a’
+  252 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                       ~          ^
+      |                                  )
+3cf7452416581229fcc276480df2d8cf77316817.c:252:48: error: missing terminating ' character
+  252 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                                                ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:2: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:3: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:4: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:5: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:6: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:7: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:8: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:9: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:10: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:11: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:12: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:13: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:14: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:15: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:16: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:17: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:18: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:19: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:20: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:21: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:22: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:23: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:24: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:25: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:26: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:27: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:28: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:29: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:30: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:31: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:32: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:33: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:253:34: error: stray ‘\377’ in program
+  253 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:254:4: error: expected ‘:’ before ‘;’ token
+  254 |  s);
+      |    ^
+      |    :
+3cf7452416581229fcc276480df2d8cf77316817.c:255:44: error: missing terminating ' character
+  255 |   a[c = 0] = s == 0 ' (x=1, 'a') : (x=2, 'b');
+      |                                            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:257:1: error: expected identifier or ‘(’ before ‘}’ token
+  257 | };
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:261:3: error: unknown type name ‘u8’
+  261 |   u8 s[16];
+      |   ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:262:3: error: unknown type name ‘u8’
+  262 |   u8 a;
+      |   ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:264:1: error: invalid suffix "struct" on integer constant
+  264 | 0struct U
+      | ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:264:1: error: expected identifier or ‘(’ before numeric constant
+3cf7452416581229fcc276480df2d8cf77316817.c:276:3: error: unknown type name ‘u8’
+  276 |   u8 a;
+      |   ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:279:8: error: redefinition of ‘struct W’
+  279 | struct W
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:116:8: note: originally defined here
+  116 | struct W
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:286:23: error: extra brace group at end of initializer
+  286 | struct S gs2 = {1, 2, {3, 4}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:286:23: note: (near initialization for ‘gs2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:287:16: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  287 | struct T gt = {"hello", 42};
+      |                ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:287:16: note: (near initialization for ‘gt.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:288:8: error: variable ‘gu’ has initializer but incomplete type
+  288 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:289:8: error: variable ‘gu2’ has initializer but incomplete type
+  289 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:289:20: error: extra brace group at end of initializer
+  289 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |                    ^
+3cf7452416581229fcc276480df2d8cf77316817.c:289:20: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:289:34: error: extra brace group at end of initializer
+  289 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |                                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:289:34: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:292:8: error: variable ‘gu3’ has initializer but incomplete type
+  292 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:292:18: error: extra brace group at end of initializer
+  292 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:292:18: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:292:23: error: extra brace group at end of initializer
+  292 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:292:23: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:292:38: error: extra brace group at end of initializer
+  292 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:292:38: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:294:8: error: variable ‘gu4’ has initializer but incomplete type
+  294 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:294:21: error: extra brace group at end of initializer
+  294 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:294:21: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:294:35: error: extra brace group at end of initializer
+  294 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:294:35: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:294:44: error: extra brace group at end of initializer
+  294 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:294:44: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘g’:
+3cf7452416581229fcc276480df2d8cf77316817.c:307:12: error: expected ‘;’ before ‘struct’
+  307 |   **nextPtr
+      |            ^
+      |            ;
+  308 | struct S gs3 = { (1), {(2)}, {(((3))), {4}}};
+      | ~~~~~~      
+3cf7452416581229fcc276480df2d8cf77316817.c:310:23: error: extra brace group at end of initializer
+  310 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:310:23: note: (near initialization for ‘gv.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:310:31: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  310 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                               ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:310:31: note: (near initialization for ‘gv.t.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:310:40: error: ‘u8’ undeclared (first use in this function)
+  310 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                                        ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:310:43: error: expected ‘}’ before numeric constant
+  310 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |               ~                           ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:312:18: error: expected ‘;’ before ‘{’ token
+  312 | str (a[c] != 'a')
+      |                  ^
+      |                  ;
+  313 |     { abort (); }
+      |     ~             
+3cf7452416581229fcc276480df2d8cf77316817.c:316:33: error: extra brace group at end of initializer
+  316 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                 ^
+3cf7452416581229fcc276480df2d8cf77316817.c:316:33: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:316:44: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  316 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                            ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:316:44: note: (near initialization for ‘gv3.t.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:318:27: error: non-static initialization of a flexible array member
+  318 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |                           ^
+3cf7452416581229fcc276480df2d8cf77316817.c:318:27: note: (near initialization for ‘gw’)
+3cf7452416581229fcc276480df2d8cf77316817.c:321:5: error: expected specifier-qualifier-list before ‘u8’
+  321 |     u8 a;
+      |     ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:326:5: error: expected specifier-qualifier-list before ‘u8’
+  326 |     u8 c;
+      |     ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:333:13: error: expected specifier-qualifier-list before ‘u8’
+  333 |     struct {u8 a,b;};
+      |             ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:336:1: error: unknown type name ‘uniont’; did you mean ‘union’?
+  336 | uniont i, length = 100;
+      | ^~~~~~
+      | union
+3cf7452416581229fcc276480df2d8cf77316817.c:336:11: error: ‘length’ redeclared as different kind of symbol
+  336 | uniont i, length = 100;
+      |           ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:302:34: note: previous definition of ‘length’ with type ‘int’
+  302 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |                              ~~~~^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:341:28: error: ‘element’ undeclared (first use in this function); did you mean ‘elementPtr’?
+  341 |       g (0, list, length, &element, &list);
+      |                            ^~~~~~~
+      |                            elementPtr
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:367:10: error: variable ‘lu21’ has initializer but incomplete type
+  367 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:367:23: error: ‘ls’ undeclared here (not in a function); did you mean ‘gs’?
+  367 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |                       ^~
+      |                       gs
+3cf7452416581229fcc276480df2d8cf77316817.c:370:10: error: variable ‘lu3’ has initializer but incomplete type
+  370 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:370:23: error: extra brace group at end of initializer
+  370 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:370:23: note: (near initialization for ‘lu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:370:38: error: extra brace group at end of initializer
+  370 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:370:38: note: (near initialization for ‘lu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:372:10: error: variable ‘lu4’ has initializer but incomplete type
+  372 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:372:23: error: extra brace group at end of initializer
+  372 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:372:23: note: (near initialization for ‘lu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:372:37: error: extra brace group at end of initializer
+  372 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |                                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:372:37: note: (near initialization for ‘lu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:374:30: error: extra brace group at end of initializer
+  374 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |                              ^
+3cf7452416581229fcc276480df2d8cf77316817.c:374:30: note: (near initialization for ‘ls3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:376:23: error: extra brace group at end of initializer
+  376 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:376:23: note: (near initialization for ‘lv.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:376:31: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  376 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |                               ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:376:31: note: (near initialization for ‘lv.t.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:376:40: error: ‘u8’ undeclared here (not in a function)
+  376 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |                                        ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:376:43: error: expected ‘}’ before numeric constant
+  376 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |                 ~                         ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:378:29: error: ‘w’ undeclared here (not in a function)
+  378 |   struct V lv2 = {(struct S)w->t.s, {"hihi", 47}, 48};
+      |                             ^
+3cf7452416581229fcc276480df2d8cf77316817.c:378:38: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  378 |   struct V lv2 = {(struct S)w->t.s, {"hihi", 47}, 48};
+      |                                      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:378:38: note: (near initialization for ‘lv2.t.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:380:35: error: extra brace group at end of initializer
+  380 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:380:35: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:381:31: error: ‘phdr_’ undeclared here (not in a function); did you mean ‘phdr’?
+  381 |   const struct pkthdr *phdr = phdr_;
+      |                               ^~~~~
+      |                               phdr
+3cf7452416581229fcc276480df2d8cf77316817.c:382:10: error: variable ‘flow’ has initializer but incomplete type
+  382 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |          ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:382:27: error: ‘struct flowi6’ has no member named ‘daddr’
+  382 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                           ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:382:39: error: invalid use of undefined type ‘const struct pkthdr’
+  382 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                       ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:382:49: error: ‘struct flowi6’ has no member named ‘saddr’
+  382 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                                 ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:382:61: error: invalid use of undefined type ‘const struct pkthdr’
+  382 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                                             ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: error: initializer element is not constant
+  385 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |                                                  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: note: (near initialization for ‘lt2.s[6]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: note: (near initialization for ‘lt2.s[7]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: note: (near initialization for ‘lt2.s[8]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: note: (near initialization for ‘lt2.s[9]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:50: note: (near initialization for ‘lt2.s[10]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: error: initializer element is not constant
+  385 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |                                                                   ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: note: (near initialization for ‘lt2.s[4]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: note: (near initialization for ‘lt2.s[5]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: note: (near initialization for ‘lt2.s[6]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:385:67: note: (near initialization for ‘lt2.s[7]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:387:2: error: expected identifier or ‘(’ before ‘/’ token
+  387 |  / print(ls2);
+      |  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:389:1: error: expected identifier or ‘(’ before ‘}’ token
+  389 | }
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:444:8: error: redefinition of ‘struct SEB’
+  444 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:242:8: note: originally defined here
+  242 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:445:8: error: redefinition of ‘struct SEC’
+  445 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:243:8: note: originally defined here
+  243 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:446:8: error: redefinition of ‘struct SED’
+  446 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:244:8: note: originally defined here
+  244 | struct SED { struct S we accept them like gcc, except for this case)
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_zero_init’:
+3cf7452416581229fcc276480df2d8cf77316817.c:465:12: error: stray ‘\7’ in program
+  465 |   struct SE<U+0007><U+0000><U+0000><U+0000>= { .a.j = 5 };
+      |            ^~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:465:16: error: expected identifier or ‘(’ before ‘=’ token
+  465 |   struct SE   = { .a.j = 5 };
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:468:26: error: ‘b’ undeclared (first use in this function)
+  468 |   test_correct_filling (&b.a);
+      |                          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:470:2: error: ‘one’ undeclared (first use in this function)
+  470 |  one,
+      |  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:471:5: error: expected expression before ‘[’ token
+  471 |     [1] = sys_two,
+      |     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:471:11: error: ‘sys_two’ undeclared (first use in this function)
+  471 |     [1] = sys_two,
+      |           ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:472:11: error: ‘sys_three’ undeclared (first use in this function)
+  472 |     [2] = sys_three,
+      |           ^~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_multi_relocs’:
+3cf7452416581229fcc276480df2d8cf77316817.c:479:26: error: ‘table’ undeclared (first use in this function)
+  479 |   for (i = 0; i < sizeof(table)/sizeof(table[0]); i++)
+      |                          ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:485:8: error: redefinition of ‘struct SEA’
+  485 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:443:8: note: originally defined here
+  443 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:486:8: error: redefinition of ‘struct SEB’
+  486 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:444:8: note: originally defined here
+  444 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:487:8: error: redefinition of ‘struct SEC’
+  487 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:445:8: note: originally defined here
+  445 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:488:8: error: redefinition of ‘struct SED’
+  488 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:446:8: note: originally defined here
+  446 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:491:1: error: conflicting types for ‘test_correct_filling’; have ‘void(struct SEA *)’
+  491 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:449:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+  449 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:502:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘-’ token
+  502 | test_20050613-1.c.  */
+      |              ^
+3cf7452416581229fcc276480df2d8cf77316817.c:502:15: error: invalid suffix "c." on floating constant
+  502 | test_20050613-1.c.  */
+      |               ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:505:8: error: redefinition of ‘struct SEB’
+  505 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:486:8: note: originally defined here
+  486 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:506:8: error: redefinition of ‘struct SEC’
+  506 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:487:8: note: originally defined here
+  487 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:507:8: error: redefinition of ‘struct SED’
+  507 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:488:8: note: originally defined here
+  488 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:510:1: error: redefinition of ‘test_correct_filling’
+  510 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:491:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+  491 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:521:1: error: redefinition of ‘test_zero_init’
+  521 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:460:1: note: previous definition of ‘test_zero_init’ with type ‘int(void)’
+  460 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_zero_init’:
+3cf7452416581229fcc276480df2d8cf77316817.c:526:12: error: stray ‘\7’ in program
+  526 |   struct SE<U+0007><U+0000><U+0000><U+0000>= { .a.j = 5 };
+      |            ^~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:526:16: error: expected identifier or ‘(’ before ‘=’ token
+  526 |   struct SE   = { .a.j = 5 };
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:529:26: error: ‘b’ undeclared (first use in this function)
+  529 |   test_correct_filling (&b.a);
+      |                          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:531:2: error: ‘one’ undeclared (first use in this function)
+  531 |  one,
+      |  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:532:5: error: expected expression before ‘[’ token
+  532 |     [1] = sys_two,
+      |     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:532:11: error: ‘sys_two’ undeclared (first use in this function)
+  532 |     [1] = sys_two,
+      |           ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:533:11: error: ‘sys_three’ undeclared (first use in this function)
+  533 |     [2] = sys_three,
+      |           ^~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:536:6: error: redefinition of ‘test_multi_relocs’
+  536 | void test_multi_relocs(void)
+      |      ^~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:475:6: note: previous definition of ‘test_multi_relocs’ with type ‘void(void)’
+  475 | void test_multi_relocs(void)
+      |      ^~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_multi_relocs’:
+3cf7452416581229fcc276480df2d8cf77316817.c:540:26: error: ‘table’ undeclared (first use in this function)
+  540 |   for (i = 0; i < sizeof(table)/sizeof(table[0]); i++)
+      |                          ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:546:8: error: redefinition of ‘struct SEA’
+  546 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:485:8: note: originally defined here
+  485 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:547:8: error: redefinition of ‘struct SEB’
+  547 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:505:8: note: originally defined here
+  505 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:548:8: error: redefinition of ‘struct SEC’
+  548 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:506:8: note: originally defined here
+  506 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:549:8: error: redefinition of ‘struct SED’
+  549 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:507:8: note: originally defined here
+  507 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:552:1: error: conflicting types for ‘test_correct_filling’; have ‘void(struct SEA *)’
+  552 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:510:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+  510 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:562:6: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before numeric constant
+  562 | intn 0;
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:563:1: error: expected identifier or ‘(’ before ‘}’ token
+  563 | }
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:573:32: error: extra brace group at end of initializer
+  573 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |                                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:573:32: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:573:42: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  573 | struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+      |                                          ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:573:42: note: (near initialization for ‘gv2.t.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:575:33: error: extra brace group at end of initializer
+  575 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                 ^
+3cf7452416581229fcc276480df2d8cf77316817.c:575:33: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:575:44: error: cannot initialize array of ‘int’ from a string literal with type array of ‘char’
+  575 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                            ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:575:44: note: (near initialization for ‘gv3.t.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:580:5: error: expected specifier-qualifier-list before ‘u8’
+  580 |     u8 a;
+      |     ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:585:5: error: expected specifier-qualifier-list before ‘u8’
+  585 |     u8 c;
+      |     ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:606:8: error: redefinition of ‘struct S’
+  606 | struct S
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:248:8: note: originally defined here
+  248 | struct S
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:609:3: error: expected specifier-qualifier-list before ‘g’
+  609 |   g-maths);
+      |   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:609:10: error: expected identifier or ‘(’ before ‘)’ token
+  609 |   g-maths);
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:610:34: error: expected ‘)’ before ‘a’
+  610 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                       ~          ^
+      |                                  )
+3cf7452416581229fcc276480df2d8cf77316817.c:610:48: error: missing terminating ' character
+  610 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                                                ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:2: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:3: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:4: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:5: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:6: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:7: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:8: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:9: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:10: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:11: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:12: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:13: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:14: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:15: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:16: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:17: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:18: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:19: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:20: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:21: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:22: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:23: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:24: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:25: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:26: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:27: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:28: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:29: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:30: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:31: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:32: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:33: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:611:34: error: stray ‘\377’ in program
+  611 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:612:4: error: expected ‘:’ before ‘;’ token
+  612 |  s);
+      |    ^
+      |    :
+3cf7452416581229fcc276480df2d8cf77316817.c:613:44: error: missing terminating ' character
+  613 |   a[c = 0] = s == 0 ' (x=1, 'a') : (x=2, 'b');
+      |                                            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:615:1: error: expected identifier or ‘(’ before ‘}’ token
+  615 | };
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:617:8: error: redefinition of ‘struct T’
+  617 | struct T
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:259:8: note: originally defined here
+  259 | struct T
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:622:1: error: invalid suffix "struct" on integer constant
+  622 | 0struct U
+      | ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:622:1: error: expected identifier or ‘(’ before numeric constant
+3cf7452416581229fcc276480df2d8cf77316817.c:630:8: error: redefinition of ‘struct V’
+  630 | struct V
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:272:8: note: originally defined here
+  272 | struct V
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:637:8: error: redefinition of ‘struct W’
+  637 | struct W
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:279:8: note: originally defined here
+  279 | struct W
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:643:10: error: conflicting types for ‘gs’; have ‘struct S’
+  643 | struct S gs = ((struct S){1, 2, 3, 4});
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:285:10: note: previous definition of ‘gs’ with type ‘struct S’
+  285 | struct S gs = ((struct S){1, 2, 3, 4});
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:644:10: error: conflicting types for ‘gs2’; have ‘struct S’
+  644 | struct S gs2 = {1, 2, {3, 4}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:286:10: note: previous definition of ‘gs2’ with type ‘struct S’
+  286 | struct S gs2 = {1, 2, {3, 4}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:644:23: error: extra brace group at end of initializer
+  644 | struct S gs2 = {1, 2, {3, 4}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:644:23: note: (near initialization for ‘gs2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:645:10: error: conflicting types for ‘gt’; have ‘struct T’
+  645 | struct T gt = {"hello", 42};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:287:10: note: previous definition of ‘gt’ with type ‘struct T’
+  287 | struct T gt = {"hello", 42};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:646:8: error: variable ‘gu’ has initializer but incomplete type
+  646 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:647:8: error: variable ‘gu2’ has initializer but incomplete type
+  647 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:647:20: error: extra brace group at end of initializer
+  647 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |                    ^
+3cf7452416581229fcc276480df2d8cf77316817.c:647:20: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:647:34: error: extra brace group at end of initializer
+  647 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |                                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:647:34: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:650:8: error: variable ‘gu3’ has initializer but incomplete type
+  650 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:650:18: error: extra brace group at end of initializer
+  650 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:650:18: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:650:23: error: extra brace group at end of initializer
+  650 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:650:23: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:650:38: error: extra brace group at end of initializer
+  650 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:650:38: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:652:8: error: variable ‘gu4’ has initializer but incomplete type
+  652 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:652:21: error: extra brace group at end of initializer
+  652 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:652:21: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:652:35: error: extra brace group at end of initializer
+  652 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:652:35: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:652:44: error: extra brace group at end of initializer
+  652 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:652:44: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:658:6: error: redefinition of ‘g_list’
+  658 | char g_list[] = { '1' };
+      |      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:300:6: note: previous definition of ‘g_list’ with type ‘char[1]’
+  300 | char g_list[] = { '1' };
+      |      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:660:6: error: redefinition of ‘g’
+  660 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:302:6: note: previous definition of ‘g’ with type ‘void(void *, char *, int,  char **, char **)’
+  302 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘g’:
+3cf7452416581229fcc276480df2d8cf77316817.c:665:12: error: expected ‘;’ before ‘struct’
+  665 |   **nextPtr
+      |            ^
+      |            ;
+  666 | struct S gs3 = { (1), {(2)}, {(((3))), {4}}};
+      | ~~~~~~      
+3cf7452416581229fcc276480df2d8cf77316817.c:668:23: error: extra brace group at end of initializer
+  668 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:668:23: note: (near initialization for ‘gv.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:670:18: error: expected ‘;’ before ‘{’ token
+  670 | str (a[c] != 'a')
+      |                  ^
+      |                  ;
+  671 |     { abort (); }
+      |     ~             
+3cf7452416581229fcc276480df2d8cf77316817.c:674:33: error: extra brace group at end of initializer
+  674 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                 ^
+3cf7452416581229fcc276480df2d8cf77316817.c:674:33: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:676:27: error: non-static initialization of a flexible array member
+  676 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |                           ^
+3cf7452416581229fcc276480df2d8cf77316817.c:676:27: note: (near initialization for ‘gw’)
+3cf7452416581229fcc276480df2d8cf77316817.c:694:1: error: unknown type name ‘uniont’; did you mean ‘union’?
+  694 | uniont i, length = 100;
+      | ^~~~~~
+      | union
+3cf7452416581229fcc276480df2d8cf77316817.c:694:11: error: ‘length’ redeclared as different kind of symbol
+  694 | uniont i, length = 100;
+      |           ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:660:34: note: previous definition of ‘length’ with type ‘int’
+  660 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |                              ~~~~^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:699:28: error: ‘element’ undeclared (first use in this function); did you mean ‘elementPtr’?
+  699 |       g (0, list, length, &element, &list);
+      |                            ^~~~~~~
+      |                            elementPtr
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:725:10: error: variable ‘lu21’ has initializer but incomplete type
+  725 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:728:10: error: variable ‘lu3’ has initializer but incomplete type
+  728 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:728:23: error: extra brace group at end of initializer
+  728 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:728:23: note: (near initialization for ‘lu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:728:38: error: extra brace group at end of initializer
+  728 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:728:38: note: (near initialization for ‘lu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:730:10: error: variable ‘lu4’ has initializer but incomplete type
+  730 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:730:23: error: extra brace group at end of initializer
+  730 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:730:23: note: (near initialization for ‘lu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:730:37: error: extra brace group at end of initializer
+  730 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |                                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:730:37: note: (near initialization for ‘lu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:732:12: error: conflicting types for ‘ls3’; have ‘struct S’
+  732 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:374:12: note: previous definition of ‘ls3’ with type ‘struct S’
+  374 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:732:30: error: extra brace group at end of initializer
+  732 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |                              ^
+3cf7452416581229fcc276480df2d8cf77316817.c:732:30: note: (near initialization for ‘ls3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:734:12: error: conflicting types for ‘lv’; have ‘struct V’
+  734 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |            ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:376:12: note: previous definition of ‘lv’ with type ‘struct V’
+  376 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |            ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:734:23: error: extra brace group at end of initializer
+  734 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:734:23: note: (near initialization for ‘lv.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:736:12: error: conflicting types for ‘lv2’; have ‘struct V’
+  736 |   struct V lv2 = {(struct S)w->t.s, {"hihi", 47}, 48};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:378:12: note: previous definition of ‘lv2’ with type ‘struct V’
+  378 |   struct V lv2 = {(struct S)w->t.s, {"hihi", 47}, 48};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:738:12: error: conflicting types for ‘lv3’; have ‘struct V’
+  738 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:380:12: note: previous definition of ‘lv3’ with type ‘struct V’
+  380 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:738:35: error: extra brace group at end of initializer
+  738 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:738:35: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:739:24: error: redefinition of ‘phdr’
+  739 |   const struct pkthdr *phdr = phdr_;
+      |                        ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:381:24: note: previous definition of ‘phdr’ with type ‘const struct pkthdr *’
+  381 |   const struct pkthdr *phdr = phdr_;
+      |                        ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:740:10: error: variable ‘flow’ has initializer but incomplete type
+  740 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |          ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:740:27: error: ‘struct flowi6’ has no member named ‘daddr’
+  740 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                           ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:740:39: error: invalid use of undefined type ‘const struct pkthdr’
+  740 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                       ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:740:49: error: ‘struct flowi6’ has no member named ‘saddr’
+  740 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                                 ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:740:61: error: invalid use of undefined type ‘const struct pkthdr’
+  740 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                                             ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:741:7: error: redefinition of ‘elt’
+  741 |   int elt = 0x42;
+      |       ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:383:7: note: previous definition of ‘elt’ with type ‘int’
+  383 |   int elt = 0x42;
+      |       ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:743:12: error: conflicting types for ‘lt2’; have ‘struct T’
+  743 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:385:12: note: previous definition of ‘lt2’ with type ‘struct T’
+  385 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: error: initializer element is not constant
+  743 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |                                                  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: note: (near initialization for ‘lt2.s[6]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: note: (near initialization for ‘lt2.s[7]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: note: (near initialization for ‘lt2.s[8]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: note: (near initialization for ‘lt2.s[9]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:50: note: (near initialization for ‘lt2.s[10]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: error: initializer element is not constant
+  743 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |                                                                   ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: note: (near initialization for ‘lt2.s[4]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: note: (near initialization for ‘lt2.s[5]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: note: (near initialization for ‘lt2.s[6]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:743:67: note: (near initialization for ‘lt2.s[7]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:745:2: error: expected identifier or ‘(’ before ‘/’ token
+  745 |  / print(ls2);
+      |  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:747:1: error: expected identifier or ‘(’ before ‘}’ token
+  747 | }
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:801:8: error: redefinition of ‘struct SEA’
+  801 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:546:8: note: originally defined here
+  546 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:802:8: error: redefinition of ‘struct SEB’
+  802 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:547:8: note: originally defined here
+  547 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:803:8: error: redefinition of ‘struct SEC’
+  803 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:548:8: note: originally defined here
+  548 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:804:8: error: redefinition of ‘struct SED’
+  804 | struct SED { struct S we accept them like gcc, except for this case)
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:549:8: note: originally defined here
+  549 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:804:26: error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ before ‘accept’
+  804 | struct SED { struct S we accept them like gcc, except for this case)
+      |                          ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:804:68: error: expected identifier or ‘(’ before ‘)’ token
+  804 | struct SED { struct S we accept them like gcc, except for this case)
+      |                                                                    ^
+3cf7452416581229fcc276480df2d8cf77316817.c:808:8: error: redefinition of ‘struct S’
+  808 | struct S
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:606:8: note: originally defined here
+  606 | struct S
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:811:3: error: expected specifier-qualifier-list before ‘g’
+  811 |   g-maths);
+      |   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:811:10: error: expected identifier or ‘(’ before ‘)’ token
+  811 |   g-maths);
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:812:34: error: expected ‘)’ before ‘a’
+  812 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                       ~          ^
+      |                                  )
+3cf7452416581229fcc276480df2d8cf77316817.c:812:48: error: missing terminating ' character
+  812 |   a[c = 0] = s == 0 ? (x=1, '1, 'a') : (x=2, 'b');
+      |                                                ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:2: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:3: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:4: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:5: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:6: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:7: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:8: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:9: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:10: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:11: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:12: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:13: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:14: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:15: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:16: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:17: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:18: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:19: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:20: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:21: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:22: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:23: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:24: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:25: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:26: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:27: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:28: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:29: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:30: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:31: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:32: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                          ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:33: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                              ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:813:34: error: stray ‘\377’ in program
+  813 |  <ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff> if (a[c] != 'a')
+      |                                                                                                                                  ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:814:4: error: expected ‘:’ before ‘;’ token
+  814 |  s);
+      |    ^
+      |    :
+3cf7452416581229fcc276480df2d8cf77316817.c:815:44: error: missing terminating ' character
+  815 |   a[c = 0] = s == 0 ' (x=1, 'a') : (x=2, 'b');
+      |                                            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:817:1: error: expected identifier or ‘(’ before ‘}’ token
+  817 | };
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:819:8: error: redefinition of ‘struct T’
+  819 | struct T
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:617:8: note: originally defined here
+  617 | struct T
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:824:1: error: invalid suffix "struct" on integer constant
+  824 | 0struct U
+      | ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:824:1: error: expected identifier or ‘(’ before numeric constant
+3cf7452416581229fcc276480df2d8cf77316817.c:832:8: error: redefinition of ‘struct V’
+  832 | struct V
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:630:8: note: originally defined here
+  630 | struct V
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:839:8: error: redefinition of ‘struct W’
+  839 | struct W
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:637:8: note: originally defined here
+  637 | struct W
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:845:10: error: conflicting types for ‘gs’; have ‘struct S’
+  845 | struct S gs = ((struct S){1, 2, 3, 4});
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:285:10: note: previous definition of ‘gs’ with type ‘struct S’
+  285 | struct S gs = ((struct S){1, 2, 3, 4});
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:846:10: error: conflicting types for ‘gs2’; have ‘struct S’
+  846 | struct S gs2 = {1, 2, {3, 4}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:286:10: note: previous definition of ‘gs2’ with type ‘struct S’
+  286 | struct S gs2 = {1, 2, {3, 4}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:846:23: error: extra brace group at end of initializer
+  846 | struct S gs2 = {1, 2, {3, 4}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:846:23: note: (near initialization for ‘gs2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:847:10: error: conflicting types for ‘gt’; have ‘struct T’
+  847 | struct T gt = {"hello", 42};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:287:10: note: previous definition of ‘gt’ with type ‘struct T’
+  287 | struct T gt = {"hello", 42};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:848:8: error: variable ‘gu’ has initializer but incomplete type
+  848 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:849:8: error: variable ‘gu2’ has initializer but incomplete type
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:849:20: error: extra brace group at end of initializer
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |                    ^
+3cf7452416581229fcc276480df2d8cf77316817.c:849:20: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:849:34: error: extra brace group at end of initializer
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |                                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:849:34: note: (near initialization for ‘gu2’)
+3cf7452416581229fcc276480df2d8cf77316817.c:852:8: error: variable ‘gu3’ has initializer but incomplete type
+  852 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:852:18: error: extra brace group at end of initializer
+  852 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:852:18: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:852:23: error: extra brace group at end of initializer
+  852 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:852:23: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:852:38: error: extra brace group at end of initializer
+  852 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:852:38: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:854:8: error: variable ‘gu4’ has initializer but incomplete type
+  854 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:854:21: error: extra brace group at end of initializer
+  854 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:854:21: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:854:35: error: extra brace group at end of initializer
+  854 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:854:35: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:854:44: error: extra brace group at end of initializer
+  854 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:854:44: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:860:6: error: redefinition of ‘g_list’
+  860 | char g_list[] = { '1' };
+      |      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:300:6: note: previous definition of ‘g_list’ with type ‘char[1]’
+  300 | char g_list[] = { '1' };
+      |      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:862:6: error: redefinition of ‘g’
+  862 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:302:6: note: previous definition of ‘g’ with type ‘void(void *, char *, int,  char **, char **)’
+  302 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘g’:
+3cf7452416581229fcc276480df2d8cf77316817.c:867:12: error: expected ‘;’ before ‘struct’
+  867 |   **nextPtr
+      |            ^
+      |            ;
+  868 | struct S gs3 = { (1), {(2)}, {(((3))), {4}}};
+      | ~~~~~~      
+3cf7452416581229fcc276480df2d8cf77316817.c:870:23: error: extra brace group at end of initializer
+  870 | struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:870:23: note: (near initialization for ‘gv.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:872:18: error: expected ‘;’ before ‘{’ token
+  872 | str (a[c] != 'a')
+      |                  ^
+      |                  ;
+  873 |     { abort (); }
+      |     ~             
+3cf7452416581229fcc276480df2d8cf77316817.c:876:33: error: extra brace group at end of initializer
+  876 | struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+      |                                 ^
+3cf7452416581229fcc276480df2d8cf77316817.c:876:33: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:878:27: error: non-static initialization of a flexible array member
+  878 | struct W gw = {{1,2,3,4}, {1,2,3,4,5}};
+      |                           ^
+3cf7452416581229fcc276480df2d8cf77316817.c:878:27: note: (near initialization for ‘gw’)
+3cf7452416581229fcc276480df2d8cf77316817.c:896:1: error: unknown type name ‘uniont’; did you mean ‘union’?
+  896 | uniont i, length = 100;
+      | ^~~~~~
+      | union
+3cf7452416581229fcc276480df2d8cf77316817.c:896:11: error: ‘length’ redeclared as different kind of symbol
+  896 | uniont i, length = 100;
+      |           ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:862:34: note: previous definition of ‘length’ with type ‘int’
+  862 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |                              ~~~~^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:901:28: error: ‘element’ undeclared (first use in this function); did you mean ‘elementPtr’?
+  901 |       g (0, list, length, &element, &list);
+      |                            ^~~~~~~
+      |                            elementPtr
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:927:10: error: variable ‘lu21’ has initializer but incomplete type
+  927 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:930:10: error: variable ‘lu3’ has initializer but incomplete type
+  930 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:930:23: error: extra brace group at end of initializer
+  930 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:930:23: note: (near initialization for ‘lu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:930:38: error: extra brace group at end of initializer
+  930 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:930:38: note: (near initialization for ‘lu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:932:10: error: variable ‘lu4’ has initializer but incomplete type
+  932 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:932:23: error: extra brace group at end of initializer
+  932 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:932:23: note: (near initialization for ‘lu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:932:37: error: extra brace group at end of initializer
+  932 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |                                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:932:37: note: (near initialization for ‘lu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:934:12: error: conflicting types for ‘ls3’; have ‘struct S’
+  934 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:374:12: note: previous definition of ‘ls3’ with type ‘struct S’
+  374 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:934:30: error: extra brace group at end of initializer
+  934 |   struct S ls3 = { (1), (2), {(((3))), 4}};
+      |                              ^
+3cf7452416581229fcc276480df2d8cf77316817.c:934:30: note: (near initialization for ‘ls3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:936:12: error: conflicting types for ‘lv’; have ‘struct V’
+  936 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |            ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:376:12: note: previous definition of ‘lv’ with type ‘struct V’
+  376 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |            ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:936:23: error: extra brace group at end of initializer
+  936 |   struct V lv = {{3,4,{5,6}}, "haha", (u8)45, 46};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:936:23: note: (near initialization for ‘lv.s’)
+3cf7452416581229fcc276480df2d8cf77316817.c:938:12: error: conflicting types for ‘lv2’; have ‘struct V’
+  938 |   struct V lv2 = {(struct S)w->t.s, {"hihi", 47}, 48};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:378:12: note: previous definition of ‘lv2’ with type ‘struct V’
+  378 |   struct V lv2 = {(struct S)w->t.s, {"hihi", 47}, 48};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:940:12: error: conflicting types for ‘lv3’; have ‘struct V’
+  940 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:380:12: note: previous definition of ‘lv3’ with type ‘struct V’
+  380 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:940:35: error: extra brace group at end of initializer
+  940 |   struct V lv3 = {((struct S){7,8,{9,10}}), ((const struct W *)w)->t.t, 50};
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:940:35: note: (near initialization for ‘(anonymous)’)
+3cf7452416581229fcc276480df2d8cf77316817.c:941:24: error: redefinition of ‘phdr’
+  941 |   const struct pkthdr *phdr = phdr_;
+      |                        ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:381:24: note: previous definition of ‘phdr’ with type ‘const struct pkthdr *’
+  381 |   const struct pkthdr *phdr = phdr_;
+      |                        ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:10: error: variable ‘flow’ has initializer but incomplete type
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |          ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:27: error: ‘struct flowi6’ has no member named ‘daddr’
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                           ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:39: error: invalid use of undefined type ‘const struct pkthdr’
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                       ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:49: error: ‘struct flowi6’ has no member named ‘saddr’
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                                 ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:61: error: invalid use of undefined type ‘const struct pkthdr’
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                                                             ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:943:7: error: redefinition of ‘elt’
+  943 |   int elt = 0x42;
+      |       ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:383:7: note: previous definition of ‘elt’ with type ‘int’
+  383 |   int elt = 0x42;
+      |       ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:945:12: error: conflicting types for ‘lt2’; have ‘struct T’
+  945 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:385:12: note: previous definition of ‘lt2’ with type ‘struct T’
+  385 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: error: initializer element is not constant
+  945 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |                                                  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: note: (near initialization for ‘lt2.s[6]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: note: (near initialization for ‘lt2.s[7]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: note: (near initialization for ‘lt2.s[8]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: note: (near initialization for ‘lt2.s[9]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:50: note: (near initialization for ‘lt2.s[10]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: error: initializer element is not constant
+  945 |   struct T lt2 = { { [1 ... 5] = 9, [6 ... 10] = elt, [4 ... 7] = elt+1 }, 1 };
+      |                                                                   ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: note: (near initialization for ‘lt2.s[4]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: note: (near initialization for ‘lt2.s[5]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: note: (near initialization for ‘lt2.s[6]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: error: initializer element is not constant
+3cf7452416581229fcc276480df2d8cf77316817.c:945:67: note: (near initialization for ‘lt2.s[7]’)
+3cf7452416581229fcc276480df2d8cf77316817.c:947:2: error: expected identifier or ‘(’ before ‘/’ token
+  947 |  / print(ls2);
+      |  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:949:1: error: expected identifier or ‘(’ before ‘}’ token
+  949 | }
+      | ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1003:8: error: redefinition of ‘struct SEA’
+ 1003 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:801:8: note: originally defined here
+  801 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1004:8: error: redefinition of ‘struct SEB’
+ 1004 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:802:8: note: originally defined here
+  802 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1005:8: error: redefinition of ‘struct SEC’
+ 1005 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:803:8: note: originally defined here
+  803 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1006:8: error: redefinition of ‘struct SED’
+ 1006 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:804:8: note: originally defined here
+  804 | struct SED { struct S we accept them like gcc, except for this case)
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1009:1: error: conflicting types for ‘test_correct_filling’; have ‘void(struct SEA *)’
+ 1009 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:552:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+  552 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1020:1: error: redefinition of ‘test_zero_init’
+ 1020 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:460:1: note: previous definition of ‘test_zero_init’ with type ‘int(void)’
+  460 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_zero_init’:
+3cf7452416581229fcc276480df2d8cf77316817.c:1025:12: error: stray ‘\7’ in program
+ 1025 |   struct SE<U+0007><U+0000><U+0000><U+0000>= { .a.j = 5 };
+      |            ^~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1025:16: error: expected identifier or ‘(’ before ‘=’ token
+ 1025 |   struct SE   = { .a.j = 5 };
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1028:26: error: ‘b’ undeclared (first use in this function)
+ 1028 |   test_correct_filling (&b.a);
+      |                          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1030:2: error: ‘one’ undeclared (first use in this function)
+ 1030 |  one,
+      |  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1031:5: error: expected expression before ‘[’ token
+ 1031 |     [1] = sys_two,
+      |     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1031:11: error: ‘sys_two’ undeclared (first use in this function)
+ 1031 |     [1] = sys_two,
+      |           ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1032:11: error: ‘sys_three’ undeclared (first use in this function)
+ 1032 |     [2] = sys_three,
+      |           ^~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:1035:6: error: redefinition of ‘test_multi_relocs’
+ 1035 | void test_multi_relocs(void)
+      |      ^~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:475:6: note: previous definition of ‘test_multi_relocs’ with type ‘void(void)’
+  475 | void test_multi_relocs(void)
+      |      ^~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_multi_relocs’:
+3cf7452416581229fcc276480df2d8cf77316817.c:1039:26: error: ‘table’ undeclared (first use in this function)
+ 1039 |   for (i = 0; i < sizeof(table)/sizeof(table[0]); i++)
+      |                          ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:1045:8: error: redefinition of ‘struct SEA’
+ 1045 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1003:8: note: originally defined here
+ 1003 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1046:8: error: redefinition of ‘struct SEB’
+ 1046 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1004:8: note: originally defined here
+ 1004 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1047:8: error: redefinition of ‘struct SEC’
+ 1047 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1005:8: note: originally defined here
+ 1005 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1048:8: error: redefinition of ‘struct SED’
+ 1048 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1006:8: note: originally defined here
+ 1006 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1051:1: error: conflicting types for ‘test_correct_filling’; have ‘void(struct SEA *)’
+ 1051 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1009:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+ 1009 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1062:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘-’ token
+ 1062 | test_20050613-1.c.  */
+      |              ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1062:15: error: invalid suffix "c." on floating constant
+ 1062 | test_20050613-1.c.  */
+      |               ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1065:8: error: redefinition of ‘struct SEB’
+ 1065 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1046:8: note: originally defined here
+ 1046 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1066:8: error: redefinition of ‘struct SEC’
+ 1066 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1047:8: note: originally defined here
+ 1047 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1067:8: error: redefinition of ‘struct SED’
+ 1067 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1048:8: note: originally defined here
+ 1048 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1070:1: error: redefinition of ‘test_correct_filling’
+ 1070 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1051:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+ 1051 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1081:1: error: redefinition of ‘test_zero_init’
+ 1081 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:460:1: note: previous definition of ‘test_zero_init’ with type ‘int(void)’
+  460 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_zero_init’:
+3cf7452416581229fcc276480df2d8cf77316817.c:1086:12: error: stray ‘\7’ in program
+ 1086 |   struct SE<U+0007><U+0000><U+0000><U+0000>= { .a.j = 5 };
+      |            ^~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1086:16: error: expected identifier or ‘(’ before ‘=’ token
+ 1086 |   struct SE   = { .a.j = 5 };
+      |                ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1089:26: error: ‘b’ undeclared (first use in this function)
+ 1089 |   test_correct_filling (&b.a);
+      |                          ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1091:2: error: ‘one’ undeclared (first use in this function)
+ 1091 |  one,
+      |  ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1092:5: error: expected expression before ‘[’ token
+ 1092 |     [1] = sys_two,
+      |     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1092:11: error: ‘sys_two’ undeclared (first use in this function)
+ 1092 |     [1] = sys_two,
+      |           ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1093:11: error: ‘sys_three’ undeclared (first use in this function)
+ 1093 |     [2] = sys_three,
+      |           ^~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:1096:6: error: redefinition of ‘test_multi_relocs’
+ 1096 | void test_multi_relocs(void)
+      |      ^~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:475:6: note: previous definition of ‘test_multi_relocs’ with type ‘void(void)’
+  475 | void test_multi_relocs(void)
+      |      ^~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘test_multi_relocs’:
+3cf7452416581229fcc276480df2d8cf77316817.c:1100:26: error: ‘table’ undeclared (first use in this function)
+ 1100 |   for (i = 0; i < sizeof(table)/sizeof(table[0]); i++)
+      |                          ^~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:1106:8: error: redefinition of ‘struct SEA’
+ 1106 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1045:8: note: originally defined here
+ 1045 | struct SEA { int i; int j; int k; int l; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1107:8: error: redefinition of ‘struct SEB’
+ 1107 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1065:8: note: originally defined here
+ 1065 | struct SEB { struct SEA a; int r[1]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1108:8: error: redefinition of ‘struct SEC’
+ 1108 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1066:8: note: originally defined here
+ 1066 | struct SEC { struct SEA a; int r[0]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1109:8: error: redefinition of ‘struct SED’
+ 1109 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1067:8: note: originally defined here
+ 1067 | struct SED { struct SEA a; int r[]; };
+      |        ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1112:1: error: conflicting types for ‘test_correct_filling’; have ‘void(struct SEA *)’
+ 1112 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1070:1: note: previous definition of ‘test_correct_filling’ with type ‘void(struct SEA *)’
+ 1070 | test_correct_filling (struct SEA *x)
+      | ^~~~~~~~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1123:1: error: redefinition of ‘test_zero_init’
+ 1123 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:460:1: note: previous definition of ‘test_zero_init’ with type ‘int(void)’
+  460 | test_zero_init (void)
+      | ^~~~~~~~~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1137:5: error: redefinition of ‘main’
+ 1137 | int main()
+      |     ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:22:1: note: previous definition of ‘main’ with type ‘int()’
+   22 | main()
+      | ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘main’:
+3cf7452416581229fcc276480df2d8cf77316817.c:1143:9: error: ‘gu’ has an incomplete type ‘struct U’
+ 1143 |   print(gu);
+      |         ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:1144:9: error: ‘gu2’ has an incomplete type ‘struct U’
+ 1144 |   print(gu2)o that under -fms-extension.*/
+      |         ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1144:13: error: expected ‘;’ before ‘o’
+ 1144 |   print(gu2)o that under -fms-extension.*/
+      |             ^
+      |             ;
+3cf7452416581229fcc276480df2d8cf77316817.c:1149:1: error: unknown type name ‘uniont’; did you mean ‘union’?
+ 1149 | uniont i, length = 100;
+      | ^~~~~~
+      | union
+3cf7452416581229fcc276480df2d8cf77316817.c:1151:16: error: ‘list’ undeclared (first use in this function)
+ 1151 |   for (i = 0; *list != 0; i++)
+      |                ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1154:28: error: ‘element’ undeclared (first use in this function)
+ 1154 |       g (0, list, length, &element, &lLVM */ist);
+      |                            ^~~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1154:38: error: ‘lLVM’ undeclared (first use in this function)
+ 1154 |       g (0, list, length, &element, &lLVM */ist);
+      |                                      ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1154:44: error: expected expression before ‘/’ token
+ 1154 |       g (0, list, length, &element, &lLVM */ist);
+      |                                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:8: error: variable ‘gu3’ has initializer but incomplete type
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:18: error: extra brace group at end of initializer
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                  ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:18: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:23: error: extra brace group at end of initializer
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                       ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:23: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:38: error: extra brace group at end of initializer
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |                                      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:38: note: (near initialization for ‘gu3’)
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:8: error: variable ‘gu4’ has initializer but incomplete type
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |        ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:21: error: extra brace group at end of initializer
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                     ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:21: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:35: error: extra brace group at end of initializer
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                   ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:35: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:44: error: extra brace group at end of initializer
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |                                            ^
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:44: note: (near initialization for ‘gu4’)
+3cf7452416581229fcc276480df2d8cf77316817.c:1180:6: error: redefinition of ‘g_list’
+ 1180 | char g_list[] = { '1' };
+      |      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:300:6: note: previous definition of ‘g_list’ with type ‘char[1]’
+  300 | char g_list[] = { '1' };
+      |      ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1182:6: error: redefinition of ‘g’
+ 1182 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c:302:6: note: previous definition of ‘g’ with type ‘void(void *, char *, int,  char **, char **)’
+  302 | void g (void *p, char *list, int length, char **elementPtr, char **nextPtr)
+      |      ^
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘g’:
+3cf7452416581229fcc276480df2d8cf77316817.c:1187:12: error: expected ‘;’ before ‘struct’
+ 1187 |   **nextPtr
+      |            ^
+      |            ;
+ 1188 | struct S gs3 = { (1), {(2)}, {(((3))),
+      | ~~~~~~      
+3cf7452416581229fcc276480df2d8cf77316817.c:1188:1: error: expected declaration or statement at end of input
+ 1188 | struct S gs3 = { (1), {(2)}, {(((3))),
+      | ^~~~~~
+3cf7452416581229fcc276480df2d8cf77316817.c: At top level:
+3cf7452416581229fcc276480df2d8cf77316817.c:848:10: error: storage size of ‘gu’ isn’t known
+  848 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:849:10: error: storage size of ‘gu2’ isn’t known
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:10: error: storage size of ‘gu3’ isn’t known
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:848:10: error: storage size of ‘gu’ isn’t known
+  848 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:849:10: error: storage size of ‘gu2’ isn’t known
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:10: error: storage size of ‘gu3’ isn’t known
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:10: error: storage size of ‘gu4’ isn’t known
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:927:12: error: storage size of ‘lu21’ isn’t known
+  927 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |            ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:930:12: error: storage size of ‘lu3’ isn’t known
+  930 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:932:12: error: storage size of ‘lu4’ isn’t known
+  932 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:17: error: storage size of ‘flow’ isn’t known
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                 ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:848:10: error: storage size of ‘gu’ isn’t known
+  848 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:849:10: error: storage size of ‘gu2’ isn’t known
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:10: error: storage size of ‘gu3’ isn’t known
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:10: error: storage size of ‘gu4’ isn’t known
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:927:12: error: storage size of ‘lu21’ isn’t known
+  927 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |            ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:930:12: error: storage size of ‘lu3’ isn’t known
+  930 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:932:12: error: storage size of ‘lu4’ isn’t known
+  932 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:17: error: storage size of ‘flow’ isn’t known
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                 ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:848:10: error: storage size of ‘gu’ isn’t known
+  848 | struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+      |          ^~
+3cf7452416581229fcc276480df2d8cf77316817.c:849:10: error: storage size of ‘gu2’ isn’t known
+  849 | struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:10: error: storage size of ‘gu3’ isn’t known
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:10: error: storage size of ‘gu4’ isn’t known
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:927:12: error: storage size of ‘lu21’ isn’t known
+  927 |   struct U lu21 = {3, ls, 4, "huhu", 43};
+      |            ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:930:12: error: storage size of ‘lu3’ isn’t known
+  930 |   struct U lu3 = { 3, {5,6,7,8,}, 4, {"huhu", 43}};
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:932:12: error: storage size of ‘lu4’ isn’t known
+  932 |   struct U lu4 = { 3, {5,6,7,},  5, { "bla", 44} };
+      |            ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:942:17: error: storage size of ‘flow’ isn’t known
+  942 |   struct flowi6 flow = { .daddr = phdr->daddr, .saddr = phdr->saddr };
+      |                 ^~~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1172:10: error: storage size of ‘gu3’ isn’t known
+ 1172 | struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c:1174:10: error: storage size of ‘gu4’ isn’t known
+ 1174 | struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+      |          ^~~
+3cf7452416581229fcc276480df2d8cf77316817.c: In function ‘main’:
+3cf7452416581229fcc276480df2d8cf77316817.c:38:4: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   38 |   a[c = 0] = s == 0 ' (x=1, 'a') : (x=2, 'b');
+      |   ~^~~~~~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc3bb2b gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:6059
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+0xc3d47d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16467
+0xa691f7 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.cc:675
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

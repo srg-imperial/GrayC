@@ -1,0 +1,1868 @@
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:10:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+   10 | ty..);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:26:9: error: expected ‘;’ before ‘int’
+   26 | volZtile int v2 = 2;
+      |         ^~~~
+      |         ;
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:29:4: error: missing terminating " character
+   29 | vol"atile int v5 = 5;
+      |    ^~~~~~~~~~~~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:29:4: error: expected ‘;’ before ‘volatile’
+   29 | vol"atile int v5 = 5;
+      |    ^
+      |    ;
+   30 | volatile int v6 = 6;
+      | ~~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c: In function ‘test_array_ptr’:
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:45:3: note: in expansion of macro ‘A’
+   45 |   A (*(&a[0][0] + 0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:5: error: ‘str’ undeclared (first use in this function)
+   34 |   ((str�en (expr) == N)                                                 \
+      |     ^~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:45:3: note: in expansion of macro ‘A’
+   45 |   A (*(&a[0][0] + 0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:5: note: each undeclared identifier is reported only once for each function it appears in
+   34 |   ((str�en (expr) == N)                                                 \
+      |     ^~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:45:3: note: in expansion of macro ‘A’
+   45 |   A (*(&a[0][0] + 0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:45:3: note: in expansion of macro ‘A’
+   45 |   A (*(&a[0][0] + 0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:46:3: note: in expansion of macro ‘A’
+   46 |   A (*(&a[0][0] + 1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:46:3: note: in expansion of macro ‘A’
+   46 |   A (*(&a[0][0] + 1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:47:3: note: in expansion of macro ‘A’
+   47 |   A (*(&a[0][0] + 2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:47:3: note: in expansion of macro ‘A’
+   47 |   A (*(&a[0][0] + 2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:49:3: note: in expansion of macro ‘A’
+   49 |   A (*(&a[0][1] - 1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:49:3: note: in expansion of macro ‘A’
+   49 |   A (*(&a[0][1] - 1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:50:3: note: in expansion of macro ‘A’
+   50 |   A (*(&a[0][1] + 0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:50:3: note: in expansion of macro ‘A’
+   50 |   A (*(&a[0][1] + 0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:51:3: note: in expansion of macro ‘A’
+   51 |   A (*(&a[0][1] + 1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:51:3: note: in expansion of macro ‘A’
+   51 |   A (*(&a[0][1] + 1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:53:3: note: in expansion of macro ‘A’
+   53 |   A (*(&a[0][2] - 2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:53:3: note: in expansion of macro ‘A’
+   53 |   A (*(&a[0][2] - 2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:55:3: note: in expansion of macro ‘A’
+   55 |   A (*(&a[0][2] + 0), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:55:3: note: in expansion of macro ‘A’
+   55 |   A (*(&a[0][2] + 0), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:57:3: note: in expansion of macro ‘A’
+   57 |   A (*(&a[1][0] + 0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:57:3: note: in expansion of macro ‘A’
+   57 |   A (*(&a[1][0] + 0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:58:3: note: in expansion of macro ‘A’
+   58 |   A (*(&a[1][0] + 1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:58:3: note: in expansion of macro ‘A’
+   58 |   A (*(&a[1][0] + 1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:59:3: note: in expansion of macro ‘A’
+   59 |   A (*(&a[1][0] + 2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:59:3: note: in expansion of macro ‘A’
+   59 |   A (*(&a[1][0] + 2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:61:3: note: in expansion of macro ‘A’
+   61 |   A (*(&a[1][1] - 1), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:61:3: note: in expansion of macro ‘A’
+   61 |   A (*(&a[1][1] - 1), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:62:3: note: in expansion of macro ‘A’
+   62 |   A (*(&a[1][1] + 0), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |    ~    ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:62:3: note: in expansion of macro ‘A’
+   62 |   A (*(&a[1][1] + 0), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:63:3: error: unknown type name ‘AU’; did you mean ‘A’?
+   63 |   AU e:tLLr urn 19 ;
+      |   ^~
+      |   A
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:63:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘:’ token
+   63 |   AU e:tLLr urn 19 ;
+      |       ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c: At top level:
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:66:1: error: expected identifier or ‘(’ before ‘}’ token
+   66 | };
+      | ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:67:7: error: expected declaration specifiers or ‘...’ before ‘*’ token
+   67 | exte (*(&a[1][1] + 1), 11);
+      |       ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:67:24: error: expected declaration specifiers or ‘...’ before numeric constant
+   67 | exte (*(&a[1][1] + 1), 11);
+      |                        ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:69:3: note: in expansion of macro ‘A’
+   69 |   A (*(&a[1][2] - 2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:69:3: note: in expansion of macro ‘A’
+   69 |   A (*(&a[1][2] - 2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:69:3: note: in expansion of macro ‘A’
+   69 |   A (*(&a[1][2] - 2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:70:3: note: in expansion of macro ‘A’
+   70 |   A (*(&a[1][2] - 1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:70:3: note: in expansion of macro ‘A’
+   70 |   A (*(&a[1][2] - 1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:70:3: note: in expansion of macro ‘A’
+   70 |   A (*(&a[1][2] - 1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:71:3: note: in expansion of macro ‘A’
+   71 |   A (*(&a[1][2] - 0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:71:3: note: in expansion of macro ‘A’
+   71 |   A (*(&a[1][2] - 0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:71:3: note: in expansion of macro ‘A’
+   71 |   A (*(&a[1][2] - 0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:74:3: note: in expansion of macro ‘A’
+   74 |   A (*(&a[0][0] + 0) + 2, 2);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:74:3: note: in expansion of macro ‘A’
+   74 |   A (*(&a[0][0] + 0) + 2, 2);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:74:3: note: in expansion of macro ‘A’
+   74 |   A (*(&a[0][0] + 0) + 2, 2);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:75:3: note: in expansion of macro ‘A’
+   75 |   A (*(&a[0][0] + 1) + 4, 4);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:75:3: note: in expansion of macro ‘A’
+   75 |   A (*(&a[0][0] + 1) + 4, 4);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:75:3: note: in expansion of macro ‘A’
+   75 |   A (*(&a[0][0] + 1) + 4, 4);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:76:3: note: in expansion of macro ‘A’
+   76 |   A (*(&a[0][0] + 2) + 6, 6);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:76:3: note: in expansion of macro ‘A’
+   76 |   A (*(&a[0][0] + 2) + 6, 6);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:76:3: note: in expansion of macro ‘A’
+   76 |   A (*(&a[0][0] + 2) + 6, 6);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:79:3: note: in expansion of macro ‘A’
+   79 |   A (*(&a[0][0] + 0) + 5, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:79:3: note: in expansion of macro ‘A’
+   79 |   A (*(&a[0][0] + 0) + 5, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:79:3: note: in expansion of macro ‘A’
+   79 |   A (*(&a[0][0] + 0) + 5, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:80:3: note: in expansion of macro ‘A’
+   80 |   A (*(&a[0][0] + 1) + 10, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:80:3: note: in expansion of macro ‘A’
+   80 |   A (*(&a[0][0] + 1) + 10, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:80:3: note: in expansion of macro ‘A’
+   80 |   A (*(&a[0][0] + 1) + 10, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:81:3: note: in expansion of macro ‘A’
+   81 |   A (*(&a[0][0] + 2) + 14, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:81:3: note: in expansion of macro ‘A’
+   81 |   A (*(&a[0][0] + 2) + 14, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:81:3: note: in expansion of macro ‘A’
+   81 |   A (*(&a[0][0] + 2) + 14, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:84:12: error: initializer element is not constant
+   84 |   int i1 = i0 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:85:12: error: initializer element is not constant
+   85 |   int i2 = i1 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:86:12: error: initializer element is not constant
+   86 |   int i3 = i2 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:87:12: error: initializer element is not constant
+   87 |   int i4 = i3 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:88:12: error: initializer element is not constant
+   88 |   int i5 = i4 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:90:3: note: in expansion of macro ‘A’
+   90 |   A (*(&a[0][0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:90:3: note: in expansion of macro ‘A’
+   90 |   A (*(&a[0][0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:90:3: note: in expansion of macro ‘A’
+   90 |   A (*(&a[0][0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:91:3: note: in expansion of macro ‘A’
+   91 |   A (*(&a[0][0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:91:3: note: in expansion of macro ‘A’
+   91 |   A (*(&a[0][0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:91:3: note: in expansion of macro ‘A’
+   91 |   A (*(&a[0][0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:92:3: note: in expansion of macro ‘A’
+   92 |   A (*(&a[0][0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:92:3: note: in expansion of macro ‘A’
+   92 |   A (*(&a[0][0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:92:3: note: in expansion of macro ‘A’
+   92 |   A (*(&a[0][0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:94:3: note: in expansion of macro ‘A’
+   94 |   A (*(&a[0][1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:94:3: note: in expansion of macro ‘A’
+   94 |   A (*(&a[0][1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:94:3: note: in expansion of macro ‘A’
+   94 |   A (*(&a[0][1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:95:3: note: in expansion of macro ‘A’
+   95 |   A (*(&a[0][1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:95:3: note: in expansion of macro ‘A’
+   95 |   A (*(&a[0][1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:95:3: note: in expansion of macro ‘A’
+   95 |   A (*(&a[0][1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:96:3: note: in expansion of macro ‘A’
+   96 |   A (*(&a[0][1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:96:3: note: in expansion of macro ‘A’
+   96 |   A (*(&a[0][1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:96:3: note: in expansion of macro ‘A’
+   96 |   A (*(&a[0][1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:98:3: note: in expansion of macro ‘A’
+   98 |   A (*(&a[0][2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:98:3: note: in expansion of macro ‘A’
+   98 |   A (*(&a[0][2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:98:3: note: in expansion of macro ‘A’
+   98 |   A (*(&a[0][2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:99:3: note: in expansion of macro ‘A’
+   99 |   A (*(&a[0][2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:99:3: note: in expansion of macro ‘A’
+   99 |   A (*(&a[0][2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:99:3: note: in expansion of macro ‘A’
+   99 |   A (*(&a[0][2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:8: error: stray ‘\336’ in program
+   34 |   ((str<de>en (expr) == N)                                                      \
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:100:3: note: in expansion of macro ‘A’
+  100 |   A (*(&apedef char A28[28];
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:9: error: expected ‘)’ before ‘en’
+   34 |   ((str�en (expr) == N)                                                 \
+      |         ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:100:3: note: in expansion of macro ‘A’
+  100 |   A (*(&apedef char A28[28];
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:104:13: error: stray ‘\31’ in program
+  104 | static const<U+0019>A2_3_82 a = {
+      |             ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:3: error: stray ‘\1’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |   ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:5: error: stray ‘`’ in program
+  175 |    `@ �0][0] + i2), 5);
+      |     ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:6: error: stray ‘@’ in program
+  175 |    `@ �0][0] + i2), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:8: error: stray ‘\3’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |                             ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:9: error: stray ‘\255’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |                                     ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:10: error: stray ‘\20’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |                                         ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:34:13: note: in definition of macro ‘A’
+   34 |   ((str�en (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:35:4: error: expected ‘)’ before ‘?’ token
+   35 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:100:3: note: in expansion of macro ‘A’
+  100 |   A (*(&apedef char A28[28];
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:104:13: error: stray ‘\31’ in program
+  104 | static const<U+0019>A2_3_82 a = {
+      |             ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:3: error: stray ‘\1’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |   ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:5: error: stray ‘`’ in program
+  175 |    `@ �0][0] + i2), 5);
+      |     ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:6: error: stray ‘@’ in program
+  175 |    `@ �0][0] + i2), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:8: error: stray ‘\3’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |                             ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:9: error: stray ‘\255’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |                                     ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:175:10: error: stray ‘\20’ in program
+  175 |   <U+0001><U+0000>`@<U+0000><U+0003><ad><U+0010>0][0] + i2), 5);
+      |                                         ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:36:42: note: in definition of macro ‘A’
+   36 |                         __LINE__, #expr, expr, N),                      \
+      |                                          ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:177:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  177 |   A (*(&a[0][1] - i1), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:177:3: note: in expansion of macro ‘A’
+  177 |   A (*(&a[0][1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:177:3: note: in expansion of macro ‘A’
+  177 |   A (*(&a[0][1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:178:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  178 |   A (*(&a[0][1] + i0), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:178:3: note: in expansion of macro ‘A’
+  178 |   A (*(&a[0][1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:178:3: note: in expansion of macro ‘A’
+  178 |   A (*(&a[0][1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:179:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  179 |   A (*(&a[0][1] + i1), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:179:3: note: in expansion of macro ‘A’
+  179 |   A (*(&a[0][1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:179:3: note: in expansion of macro ‘A’
+  179 |   A (*(&a[0][1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:181:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  181 |   A (*(&a[0][2] - i2), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:181:3: note: in expansion of macro ‘A’
+  181 |   A (*(&a[0][2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:181:3: note: in expansion of macro ‘A’
+  181 |   A (*(&a[0][2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:182:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  182 |   A (*(&a[0][2] - i1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:182:3: note: in expansion of macro ‘A’
+  182 |   A (*(&a[0][2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:182:3: note: in expansion of macro ‘A’
+  182 |   A (*(&a[0][2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:183:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  183 |   A (*(&a[0][2] + i0), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:183:3: note: in expansion of macro ‘A’
+  183 |   A (*(&a[0][2] + i0), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:183:3: note: in expansion of macro ‘A’
+  183 |   A (*(&a[0][2] + i0), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:185:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  185 |   A (*(&a[1][0] + i0), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:185:3: note: in expansion of macro ‘A’
+  185 |   A (*(&a[1][0] + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:185:3: note: in expansion of macro ‘A’
+  185 |   A (*(&a[1][0] + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:186:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  186 |   A (*(&a[1][0] + i1), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:186:3: note: in expansion of macro ‘A’
+  186 |   A (*(&a[1][0] + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:186:3: note: in expansion of macro ‘A’
+  186 |   A (*(&a[1][0] + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:187:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  187 |   A (*(&a[1][0] + i2), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:187:3: note: in expansion of macro ‘A’
+  187 |   A (*(&a[1][0] + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:187:3: note: in expansion of macro ‘A’
+  187 |   A (*(&a[1][0] + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:189:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  189 |   A (*(&a[1][1] - i1), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:189:3: note: in expansion of macro ‘A’
+  189 |   A (*(&a[1][1] - i1), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:189:3: note: in expansion of macro ‘A’
+  189 |   A (*(&a[1][1] - i1), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:190:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  190 |   A (*(&a[1][1] + i0), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:190:3: note: in expansion of macro ‘A’
+  190 |   A (*(&a[1][1] + i0), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:190:3: note: in expansion of macro ‘A’
+  190 |   A (*(&a[1][1] + i0), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:191:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  191 |   A (*(&a[1][1] + i1), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:191:3: note: in expansion of macro ‘A’
+  191 |   A (*(&a[1][1] + i1), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:191:3: note: in expansion of macro ‘A’
+  191 |   A (*(&a[1][1] + i1), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:193:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  193 |   A (*(&a[1][2] - i2), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:193:3: note: in expansion of macro ‘A’
+  193 |   A (*(&a[1][2] - i2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:193:3: note: in expansion of macro ‘A’
+  193 |   A (*(&a[1][2] - i2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:194:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  194 |   A (*(&a[1][2] - i1), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:194:3: note: in expansion of macro ‘A’
+  194 |   A (*(&a[1][2] - i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:194:3: note: in expansion of macro ‘A’
+  194 |   A (*(&a[1][2] - i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:195:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  195 |   A (*(&a[1][2] - i0), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:195:3: note: in expansion of macro ‘A’
+  195 |   A (*(&a[1][2] - i0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:195:3: note: in expansion of macro ‘A’
+  195 |   A (*(&a[1][2] - i0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:198:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  198 |   A (*(&a[i0][i0] + i0), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:198:3: note: in expansion of macro ‘A’
+  198 |   A (*(&a[i0][i0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:198:3: note: in expansion of macro ‘A’
+  198 |   A (*(&a[i0][i0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:199:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  199 |   A (*(&a[i0][i0] + i1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:199:3: note: in expansion of macro ‘A’
+  199 |   A (*(&a[i0][i0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:199:3: note: in expansion of macro ‘A’
+  199 |   A (*(&a[i0][i0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:200:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  200 |   A (*(&a[i0][i0] + i2), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:200:3: note: in expansion of macro ‘A’
+  200 |   A (*(&a[i0][i0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:200:3: note: in expansion of macro ‘A’
+  200 |   A (*(&a[i0][i0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:202:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  202 |   A (*(&a[i0][i1] - i1), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:202:3: note: in expansion of macro ‘A’
+  202 |   A (*(&a[i0][i1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:202:3: note: in expansion of macro ‘A’
+  202 |   A (*(&a[i0][i1] - i1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:203:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  203 |   A (*(&a[i0][i1] + i0), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:203:3: note: in expansion of macro ‘A’
+  203 |   A (*(&a[i0][i1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:203:3: note: in expansion of macro ‘A’
+  203 |   A (*(&a[i0][i1] + i0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:204:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  204 |   A (*(&a[i0][i1] + i1), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:204:3: note: in expansion of macro ‘A’
+  204 |   A (*(&a[i0][i1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:204:3: note: in expansion of macro ‘A’
+  204 |   A (*(&a[i0][i1] + i1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:206:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  206 |   A (*(&a[i0][i2] - i2), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:206:3: note: in expansion of macro ‘A’
+  206 |   A (*(&a[i0][i2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:206:3: note: in expansion of macro ‘A’
+  206 |   A (*(&a[i0][i2] - i2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:207:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  207 |   A (*(&a[i0][i2] - i1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:207:3: note: in expansion of macro ‘A’
+  207 |   A (*(&a[i0][i2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:207:3: note: in expansion of macro ‘A’
+  207 |   A (*(&a[i0][i2] - i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:208:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  208 |   A (*(&a[i0][i2] + i0), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:208:3: note: in expansion of macro ‘A’
+  208 |   A (*(&a[i0][i2] + i0), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:208:3: note: in expansion of macro ‘A’
+  208 |   A (*(&a[i0][i2] + i0), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:210:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  210 |   A (*(&a[i1][i0] + i0), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:210:3: note: in expansion of macro ‘A’
+  210 |   A (*(&a[i1][i0] + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:210:3: note: in expansion of macro ‘A’
+  210 |   A (*(&a[i1][i0] + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:211:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  211 |   A (*(&a[i1][i0] + i1), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:211:3: note: in expansion of macro ‘A’
+  211 |   A (*(&a[i1][i0] + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:211:3: note: in expansion of macro ‘A’
+  211 |   A (*(&a[i1][i0] + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:212:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  212 |   A (*(&a[i1][i0] + i2), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:212:3: note: in expansion of macro ‘A’
+  212 |   A (*(&a[i1][i0] + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:212:3: note: in expansion of macro ‘A’
+  212 |   A (*(&a[i1][i0] + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:214:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  214 |   A (*(&a[i1][i1] - i1), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:214:3: note: in expansion of macro ‘A’
+  214 |   A (*(&a[i1][i1] - i1), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:214:3: note: in expansion of macro ‘A’
+  214 |   A (*(&a[i1][i1] - i1), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:215:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  215 |   A (*(&a[i1][i1] + i0), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:215:3: note: in expansion of macro ‘A’
+  215 |   A (*(&a[i1][i1] + i0), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:215:3: note: in expansion of macro ‘A’
+  215 |   A (*(&a[i1][i1] + i0), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:216:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  216 |   A (*(&a[i1][i1] + i1), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:216:3: note: in expansion of macro ‘A’
+  216 |   A (*(&a[i1][i1] + i1), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:216:3: note: in expansion of macro ‘A’
+  216 |   A (*(&a[i1][i1] + i1), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:218:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  218 |   A (*(&a[i1][i2] - i2), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:218:3: note: in expansion of macro ‘A’
+  218 |   A (*(&a[i1][i2] - i2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:218:3: note: in expansion of macro ‘A’
+  218 |   A (*(&a[i1][i2] - i2), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:219:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  219 |   A (*(&a[i1][i2] - i1), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:219:3: note: in expansion of macro ‘A’
+  219 |   A (*(&a[i1][i2] - i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:219:3: note: in expansion of macro ‘A’
+  219 |   A (*(&a[i1][i2] - i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:220:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  220 |   A (*(&a[i1][i2] - i0), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:220:3: note: in expansion of macro ‘A’
+  220 |   A (*(&a[i1][i2] - i0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:220:3: note: in expansion of macro ‘A’
+  220 |   A (*(&a[i1][i2] - i0), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:223:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  223 |   A (*(&a[i0][i0] + v0), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:223:3: note: in expansion of macro ‘A’
+  223 |   A (*(&a[i0][i0] + v0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:223:3: note: in expansion of macro ‘A’
+  223 |   A (*(&a[i0][i0] + v0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:224:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  224 |   A (*(&a[i0][i0] + v1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:224:3: note: in expansion of macro ‘A’
+  224 |   A (*(&a[i0][i0] + v1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:224:3: note: in expansion of macro ‘A’
+  224 |   A (*(&a[i0][i0] + v1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:225:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  225 |   A (*(&a[i0][i0] + v2), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:225:3: note: in expansion of macro ‘A’
+  225 |   A (*(&a[i0][i0] + v2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:225:3: note: in expansion of macro ‘A’
+  225 |   A (*(&a[i0][i0] + v2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:227:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  227 |   A (*(&a[i0][i1] - v1), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:227:3: note: in expansion of macro ‘A’
+  227 |   A (*(&a[i0][i1] - v1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:227:3: note: in expansion of macro ‘A’
+  227 |   A (*(&a[i0][i1] - v1), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:228:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  228 |   A (*(&a[i0][i1] + v0), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:228:3: note: in expansion of macro ‘A’
+  228 |   A (*(&a[i0][i1] + v0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:228:3: note: in expansion of macro ‘A’
+  228 |   A (*(&a[i0][i1] + v0), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:229:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  229 |   A (*(&a[i0][i1] + v1), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:229:3: note: in expansion of macro ‘A’
+  229 |   A (*(&a[i0][i1] + v1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:229:3: note: in expansion of macro ‘A’
+  229 |   A (*(&a[i0][i1] + v1), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:231:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  231 |   A (*(&a[i0][i2] - v2), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:231:3: note: in expansion of macro ‘A’
+  231 |   A (*(&a[i0][i2] - v2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:231:3: note: in expansion of macro ‘A’
+  231 |   A (*(&a[i0][i2] - v2), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:232:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  232 |   A (*(&a[i0][i2] - v1), 3)/       * corpus/pr24141.c */
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:232:3: note: in expansion of macro ‘A’
+  232 |   A (*(&a[i0][i2] - v1), 3)/       * corpus/pr24141.c */
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:232:3: note: in expansion of macro ‘A’
+  232 |   A (*(&a[i0][i2] - v1), 3)/       * corpus/pr24141.c */
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:232:29: error: stray ‘\1’ in program
+  232 |   A (*(&a[i0][i2] - v1), 3)/<U+0001><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>* corpus/pr24141.c */
+      |                             ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c: In function ‘main’:
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:242:3: error: ‘d’ undeclared (first use in this function)
+  242 |   d = foo (a == 0, (0, 35536));
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:244:3: error: ‘b’ undeclared (first use in this function)
+  244 |   b = e && c;
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:244:12: error: ‘c’ undeclared (first use in this function)
+  244 |   b = e && c;
+      |            ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:246:8: error: stray ‘\250’ in program
+  246 |     { a<a8><90>rt (); }
+      |        ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:246:9: error: stray ‘\220’ in program
+  246 |     { a<a8><90>rt (); }
+      |            ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:246:8: error: expected ‘;’ before ‘rt’
+  246 |     { a��rt (); }
+      |        ^ ~~
+      |        ;
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c: At top level:
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:259:5: error: conflicting types for ‘a’; have ‘int’
+  259 | int a, c, d;
+      |     ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:17:22: note: previous definition of ‘a’ with type ‘A2_3_28’ {aka ‘char[2][3][28]’}
+   17 | static const A2_3_28 a = {
+      |                      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:263:1: error: conflicting types for ‘foo’; have ‘int(int,  short int)’
+  263 | foo (int p1, short p2)
+      | ^~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:264:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  264 | {
+      | ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:242:7: note: previous implicit declaration of ‘foo’ with type ‘int()’
+  242 |   d = foo (a == 0, (0, 35536));
+      |       ^~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:268:1: error: unknown type name ‘in’; did you mean ‘int’?
+  268 | in
+      | ^~
+      | int
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:306:1: error: redefinition of ‘i1’
+  306 | i1 = i0 + 1;
+      | ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:84:7: note: previous definition of ‘i1’ with type ‘int’
+   84 |   int i1 = i0 + 1;
+      |       ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:306:6: error: initializer element is not constant
+  306 | i1 = i0 + 1;
+      |      ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:307:7: error: redefinition of ‘i2’
+  307 |   int i2 = i1 + 1;
+      |       ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:85:7: note: previous definition of ‘i2’ with type ‘int’
+   85 |   int i2 = i1 + 1;
+      |       ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:307:12: error: initializer element is not constant
+  307 |   int i2 = i1 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:308:7: error: redefinition of ‘i3’
+  308 |   int i3 = i2 + 1;
+      |       ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:86:7: note: previous definition of ‘i3’ with type ‘int’
+   86 |   int i3 = i2 + 1;
+      |       ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:308:12: error: initializer element is not constant
+  308 |   int i3 = i2 + 1;
+      |            ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:310:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  310 |   A (*((*pa0) + i0), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:310:3: note: in expansion of macro ‘A’
+  310 |   A (*((*pa0) + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:310:3: note: in expansion of macro ‘A’
+  310 |   A (*((*pa0) + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:311:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  311 |   A (*((*pa0) + i1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:311:3: note: in expansion of macro ‘A’
+  311 |   A (*((*pa0) + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:311:3: note: in expansion of macro ‘A’
+  311 |   A (*((*pa0) + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:312:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  312 |   A (*((*pa0) + i2), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:312:3: note: in expansion of macro ‘A’
+  312 |   A (*((*pa0) + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:312:3: note: in expansion of macro ‘A’
+  312 |   A (*((*pa0) + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:314:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  314 |   A (*(pa0[0] + i0), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:314:3: note: in expansion of macro ‘A’
+  314 |   A (*(pa0[0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:314:3: note: in expansion of macro ‘A’
+  314 |   A (*(pa0[0] + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:315:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  315 |   A (*(pa0[0] + i1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:315:3: note: in expansion of macro ‘A’
+  315 |   A (*(pa0[0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:315:3: note: in expansion of macro ‘A’
+  315 |   A (*(pa0[0] + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:316:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  316 |   A (*(pa0[0] + i2), 5);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:316:3: note: in expansion of macro ‘A’
+  316 |   A (*(pa0[0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:316:3: note: in expansion of macro ‘A’
+  316 |   A (*(pa0[0] + i2), 5);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:318:6: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  318 |   A ((*pa0)[i0] + i1, 0);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:318:3: note: in expansion of macro ‘A’
+  318 |   A ((*pa0)[i0] + i1, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:318:3: note: in expansion of macro ‘A’
+  318 |   A ((*pa0)[i0] + i1, 0);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:319:6: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  319 |   A ((*pa0)[i1] + i2, 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:319:3: note: in expansion of macro ‘A’
+  319 |   A ((*pa0)[i1] + i2, 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:319:3: note: in expansion of macro ‘A’
+  319 |   A ((*pa0)[i1] + i2, 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:320:6: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  320 |   A ((*pa0)[i2] + i3, 2);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:320:3: note: in expansion of macro ‘A’
+  320 |   A ((*pa0)[i2] + i3, 2);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:320:3: note: in expansion of macro ‘A’
+  320 |   A ((*pa0)[i2] + i3, 2);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:323:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  323 |   A (*((*pa1) + i0), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:323:3: note: in expansion of macro ‘A’
+  323 |   A (*((*pa1) + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:323:3: note: in expansion of macro ‘A’
+  323 |   A (*((*pa1) + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:324:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  324 |   A (*((*pa1) + i1), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:324:3: note: in expansion of macro ‘A’
+  324 |   A (*((*pa1) + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:324:3: note: in expansion of macro ‘A’
+  324 |   A (*((*pa1) + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:325:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  325 |   A (*((*pa1) + i2), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:325:3: note: in expansion of macro ‘A’
+  325 |   A (*((*pa1) + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:325:3: note: in expansion of macro ‘A’
+  325 |   A (*((*pa1) + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:327:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  327 |   A (*(pa1[0] + i0), 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:327:3: note: in expansion of macro ‘A’
+  327 |   A (*(pa1[0] + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:327:3: note: in expansion of macro ‘A’
+  327 |   A (*(pa1[0] + i0), 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:328:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  328 |   A (*(pa1[0] + i1), 9);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:328:3: note: in expansion of macro ‘A’
+  328 |   A (*(pa1[0] + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:328:3: note: in expansion of macro ‘A’
+  328 |   A (*(pa1[0] + i1), 9);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:329:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  329 |   A (*(pa1[0] + i2), 11);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:329:3: note: in expansion of macro ‘A’
+  329 |   A (*(pa1[0] + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:329:3: note: in expansion of macro ‘A’
+  329 |   A (*(pa1[0] + i2), 11);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:331:6: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  331 |   A ((*pa1)[i0] + i1, 6);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:331:3: note: in expansion of macro ‘A’
+  331 |   A ((*pa1)[i0] + i1, 6);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:331:3: note: in expansion of macro ‘A’
+  331 |   A ((*pa1)[i0] + i1, 6);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:332:6: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  332 |   A ((*pa1)[i1] + i2, 7);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:332:3: note: in expansion of macro ‘A’
+  332 |   A ((*pa1)[i1] + i2, 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:332:3: note: in expansion of macro ‘A’
+  332 |   A ((*pa1)[i1] + i2, 7);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:333:6: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  333 |   A ((*pa1)[i2] + i3, 8);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:333:3: note: in expansion of macro ‘A’
+  333 |   A ((*pa1)[i2] + i3, 8);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:333:3: note: in expansion of macro ‘A’
+  333 |   A ((*pa1)[i2] + i3, 8);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:335:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  335 |   A (*(*(paa[0]) + i0), 1);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:335:3: note: in expansion of macro ‘A’
+  335 |   A (*(*(paa[0]) + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:335:3: note: in expansion of macro ‘A’
+  335 |   A (*(*(paa[0]) + i0), 1);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:336:6: error: expected declaration specifiers or ‘...’ before ‘*’ token
+  336 |   A (*(*(paa[0]) + i1), 3);
+      |      ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:13: note: in definition of macro ‘A’
+  121 |   ((strlen (expr) == N)                                                 \
+      |             ^~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:121:19: error: expected ‘)’ before ‘==’ token
+  121 |   ((strlen (expr) == N)                                                 \
+      |                   ^~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:336:3: note: in expansion of macro ‘A’
+  336 |   A (*(*(paa[0]) + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:122:4: error: expected ‘)’ before ‘?’ token
+  122 |    ? (void)0 : (printf ("line %i: strlen (%s = \"%s\") != %i\n",        \
+      |    ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:336:3: note: in expansion of macro ‘A’
+  336 |   A (*(*(paa[0]) + i1), 3);
+      |   ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:337:4: error: expected ‘;’ before ‘struct’
+  337 |   A/* corpus/pr44164.c */
+      |    ^
+      |    ;
+  338 | struct X {
+      | ~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:339:16: error: expected specifier-qualifier-list before ‘(’ token
+  339 |     struct Y { (*(*(paa[0]) + i2), 5);
+      |                ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:450:29: error: stray ‘\1’ in program
+  450 |   A (*(&a[i0][i2] - v1), 3)/<U+0001><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>*
+      |                             ^~~~~~~~
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:456:7: error: conflicting type qualifiers for ‘b’
+  456 |     } b;
+      |       ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:260:14: note: previous declaration of ‘b’ with type ‘int’
+  260 | volatile int b;
+      |              ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:457:1: error: expected identifier or ‘(’ before ‘}’ token
+  457 | } a;
+      | ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:458:19: error: expected ‘(’ before ‘if’
+  458 | int __attribute__(if (foo (&a.b.bb.c) corpus/pr24141.c */
+      |                   ^~
+      |                   (
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:572:7: error: unterminated argument list invoking macro "A"
+  572 | LVM */
+      |       ^
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c: In function ‘test_array_ptr’:
+./6ff413782f9356fc6ede5ba524aa2c43714f80e4.c:54:44: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   54 |   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXA (*(&a[0][2] - 1), 3);
+      |                                        ~~~~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc2b3e2 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15771
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

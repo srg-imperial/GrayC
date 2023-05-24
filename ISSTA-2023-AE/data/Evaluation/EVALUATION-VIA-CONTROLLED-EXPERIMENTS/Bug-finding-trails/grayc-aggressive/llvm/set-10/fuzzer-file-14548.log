@@ -1,0 +1,19 @@
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x26): relocation truncated to fit: R_X86_64_GOTPCRELX against symbol `__libc_start_main@@GLIBC_2.2.5' defined in .text section in /lib/x86_64-linux-gnu/libc.so.6
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../x86_64-linux-gnu/crt1.o:(.eh_frame+0x20): relocation truncated to fit: R_X86_64_PC32 against `.text'
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../x86_64-linux-gnu/crt1.o:(.eh_frame+0x50): relocation truncated to fit: R_X86_64_PC32 against `.text'
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../x86_64-linux-gnu/crti.o: In function `_init':
+(.init+0x7): relocation truncated to fit: R_X86_64_REX_GOTPCRELX against undefined symbol `__gmon_start__'
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtbegin.o: In function `deregister_tm_clones':
+crtstuff.c:(.text+0x8): relocation truncated to fit: R_X86_64_32S against `.tm_clone_table'
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtbegin.o: In function `register_tm_clones':
+crtstuff.c:(.text+0x39): relocation truncated to fit: R_X86_64_32S against `.tm_clone_table'
+/usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtbegin.o: In function `__do_global_dtors_aux':
+crtstuff.c:(.text+0x72): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+crtstuff.c:(.text+0x84): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+/tmp/fuzzer-file-14548-2022-01-06-11:36:01-9fbc2a-0e54ee.o: In function `test_array_ptr':
+fuzzer-file-14548-2022-01-06-11:36:01-9fbc2a.c:(.text+0x1e2c): relocation truncated to fit: R_X86_64_32S against symbol `v0' defined in .bss section in /tmp/fuzzer-file-14548-2022-01-06-11:36:01-9fbc2a-0e54ee.o
+fuzzer-file-14548-2022-01-06-11:36:01-9fbc2a.c:(.text+0x1e79): relocation truncated to fit: R_X86_64_32S against symbol `v0' defined in .bss section in /tmp/fuzzer-file-14548-2022-01-06-11:36:01-9fbc2a-0e54ee.o
+fuzzer-file-14548-2022-01-06-11:36:01-9fbc2a.c:(.text+0x1edd): additional relocation overflows omitted from the output
+a.out: PC-relative offset overflow in PLT entry for `abort@@GLIBC_2.2.5'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

@@ -1,0 +1,3 @@
+gcc:  internal compiler error: File size limit exceeded signal terminated program as
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+See <https://gcc.gnu.org/bugs/> for instructions.

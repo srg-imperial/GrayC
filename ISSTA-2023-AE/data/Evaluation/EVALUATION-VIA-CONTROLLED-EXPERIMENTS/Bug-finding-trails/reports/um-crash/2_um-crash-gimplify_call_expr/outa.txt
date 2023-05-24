@@ -1,0 +1,17 @@
+fuzzer-file-3565.c: In function ‘foo’:
+fuzzer-file-3565.c:13:1: error: expected declaration specifiers before ‘continue’
+   13 | continue;
+      | ^~~~~~~~
+fuzzer-file-3565.c:15:1: error: break statement not within loop or switch
+   15 | break;
+      | ^~~~~
+fuzzer-file-3565.c:17:3: error: continue statement not within a loop
+   17 |   continue;
+      |   ^~~~~~~~
+fuzzer-file-3565.c:25:3: error: continue statement not within a loop
+   25 |   continue;
+      |   ^~~~~~~~
+fuzzer-file-3565.c: In function ‘main’:
+fuzzer-file-3565.c:35:5: error: continue statement not within a loop
+   35 |     continue;
+      |     ^~~~~~~~

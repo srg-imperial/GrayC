@@ -1,0 +1,135 @@
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:11:18: error: expected ',' or ')', found "addresses"
+   11 | #define A(expthe addresses in the base and index reloads require further reloads.  */
+      |                  ^~~~~~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:14:9: warning: ISO C99 requires whitespace after the macro name
+   14 | #define MUL  TI(X) \
+      |         ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:14:14: warning: null character(s) ignored
+   14 | #define MUL<U+0001><U+000F><U+0000><U+0000>TI(X) \
+      |                            ^~~~~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:35:6: error: expected ‘)’ before ‘*’ token
+   35 | float *ptrs[NVARS];
+      |      ^~
+      |      )
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:39:18: error: expected identifier or ‘(’ before ‘)’ token
+   39 | struct biginline))
+      |                  ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘foo’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:48:18: warning: ISO C forbids empty initializer braces [-Wpedantic]
+   48 |   struct big b = {};
+      |                  ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:49:3: warning: parameter names (without types) in function declaration
+   49 |   int MULTI (DECLAREI);
+      |   ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:58:9: warning: ISO C99 requires whitespace after the macro name
+   58 | #define MUL  TI(X) \
+      |         ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:58:14: warning: null character(s) ignored
+   58 | #define MUL<U+0001><U+000F><U+0000><U+0000>TI(X) \
+      |                            ^~~~~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:50:16: error: unknown type name ‘DECLA’; did you mean ‘DECLAREI’?
+   50 |   float MULTI (DECLA/* corpus/pr28982b.c */
+      |                ^~~~~
+      |                DECLAREI
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:50:16: warning: ISO C forbids forward parameter declarations [-Wpedantic]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘no’ attribute directive ignored [-Wattributes]
+   75 | REF);
+      | ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘X’ attribute directive ignored [-Wattributes]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘X’ attribute directive ignored [-Wattributes]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘X’ attribute directive ignored [-Wattributes]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘X’ attribute directive ignored [-Wattributes]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘X’ attribute directive ignored [-Wattributes]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:75:1: warning: ‘X’ attribute directive ignored [-Wattributes]
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:76:3: error: expected declaration specifiers or ‘...’ before ‘while’
+   76 |   while (n--)
+      |   ^~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:78:3: error: expected declaration specifiers or ‘...’ before ‘MULTI’
+   78 |   MULTI (COPYOUT);
+      |   ^~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:79:3: error: unknown type name ‘bar’
+   79 |   bar (b);
+      |   ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:80:1: error: expected declaration specifiers or ‘...’ before ‘}’ token
+   80 | }
+      | ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:80:1: error: expected ‘;’, ‘,’ or ‘)’ before ‘}’ token
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:84:1: warning: ISO C forbids nested functions [-Wpedantic]
+   84 | int
+      | ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:85:1: warning: ‘main’ is normally a non-static function [-Wmain]
+   85 | main (void)
+      | ^~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘main’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:95:19: error: expected ‘)’ before ‘N’
+   95 |     if (results[i] N=!  *i ITER * (NITER + 1) / 2)
+      |        ~          ^~
+      |                   )
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘foo’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:187:50: warning: "/*" within comment [-Wcomment]
+  187 | static const wchar_t ws2[2] = L"\x1234\x5678";   /* no terminating nul */
+      |                                                   
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:188:51: warning: hex escape sequence out of range
+  188 | static const wchar_t ws4[] = L"\x0012\x1200\x1234";
+      |                                                   ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:188:51: warning: hex escape sequence out of range
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:190:1: warning: ISO C forbids nested functions [-Wpedantic]
+  190 | void test_wide (void)
+      | ^~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘test_wide’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:196:3: warning: implicit declaration of function ‘A’ [-Wimplicit-function-declaration]
+  196 |   A (sizeof (wchar_t) == 2);
+      |   ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:199:15: error: ‘wc’ undeclared (first use in this function)
+  199 |   A (memchr (&wc + 1, 0, 0) == 0);
+      |               ^~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:199:15: note: each undeclared identifier is reported only once for each function it appears in
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:200:23: warning: hex escape sequence out of range
+  200 |   A (memchr (L"\x1234", 0, sizeof (wchar_t)) == 0);
+      |                       ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:200:3: internal compiler error: in constant_byte_string, at expr.cc:12049
+  200 |   A (memchr (L"\x1234", 0, sizeof (wchar_t)) == 0);
+      |   ^
+0x6f8579 constant_byte_string
+	.././../gcc-source/gcc/expr.cc:12049
+0xb80b5f getbyterep(tree_node*, unsigned long*)
+	.././../gcc-source/gcc/fold-const.cc:16436
+0xbb5489 fold_const_call(combined_fn, tree_node*, tree_node*, tree_node*, tree_node*)
+	.././../gcc-source/gcc/fold-const-call.cc:1819
+0x9f8aa8 fold_builtin_3
+	.././../gcc-source/gcc/builtins.cc:9450
+0x9f8aa8 fold_builtin_n
+	.././../gcc-source/gcc/builtins.cc:9531
+0xbae833 fold(tree_node*)
+	.././../gcc-source/gcc/fold-const.cc:13416
+0x943925 c_fully_fold_internal
+	.././../gcc-source/gcc/c/c-fold.cc:244
+0x943de9 c_fully_fold_internal
+	.././../gcc-source/gcc/c/c-fold.cc:354
+0x945f79 c_fully_fold(tree_node*, bool, bool*, bool)
+	.././../gcc-source/gcc/c/c-fold.cc:125
+0x8fccaf convert_arguments
+	.././../gcc-source/gcc/c/c-typeck.cc:3628
+0x8fccaf build_function_call_vec(unsigned int, vec<unsigned int, va_heap, vl_ptr>, tree_node*, vec<tree_node*, va_gc, vl_embed>*, vec<tree_node*, va_gc, vl_embed>*, tree_node*)
+	.././../gcc-source/gcc/c/c-typeck.cc:3171
+0x91fc30 c_parser_postfix_expression_after_primary
+	.././../gcc-source/gcc/c/c-parser.cc:10561
+0x916b68 c_parser_postfix_expression
+	.././../gcc-source/gcc/c/c-parser.cc:10234
+0x91b15a c_parser_unary_expression
+	.././../gcc-source/gcc/c/c-parser.cc:8261
+0x91ca01 c_parser_cast_expression
+	.././../gcc-source/gcc/c/c-parser.cc:8103
+0x91cca1 c_parser_binary_expression
+	.././../gcc-source/gcc/c/c-parser.cc:7906
+0x91e16e c_parser_conditional_expression
+	.././../gcc-source/gcc/c/c-parser.cc:7606
+0x91e9c0 c_parser_expr_no_commas
+	.././../gcc-source/gcc/c/c-parser.cc:7521
+0x91ec51 c_parser_expression
+	.././../gcc-source/gcc/c/c-parser.cc:10697
+0x91f4b8 c_parser_expression_conv
+	.././../gcc-source/gcc/c/c-parser.cc:10736
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

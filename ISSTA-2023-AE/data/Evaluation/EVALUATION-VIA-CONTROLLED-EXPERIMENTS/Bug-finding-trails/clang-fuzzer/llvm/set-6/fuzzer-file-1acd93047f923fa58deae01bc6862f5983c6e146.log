@@ -1,0 +1,134 @@
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:1:1: error: expected identifier or '('
+/<U+0003><U+0000>corpus/builtin-bitops-1.c */
+^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:2:34: error: expected '>'
+#include <lif BITSIZEOF_INT == 32
+                                 ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:2:10: note: to match this '<'
+#include <lif BITSIZEOF_INT == 32
+         ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:4:2: error: #else without #if
+#else
+ ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:6:2: error: #endif without #if
+#endif
+ ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:12:1: error: use of undeclared identifier 'NUMS32'
+NUMS32;
+^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:19:1: error: use of undeclared identifier 'NUMS32'
+NUMS32;
+^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:29:21: error: use of undeclared identifier 'ints'; did you mean 'int'?
+  for (i = 0; i < N(ints); i++)
+                    ^~~~
+                    int
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:22:27: note: expanded from macro 'N'
+#define N(table) (sizeof (table) / sizeof (table[0]))
+                          ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:29:19: error: reference to overloaded function could not be resolved; did you mean to call it?
+  for (i = 0; i < N(ints); i++)
+                  ^~~~~~~
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:22:26: note: expanded from macro 'N'
+#define N(table) (sizeof (table) / sizeof (table[0]))
+                         ^~~~~~~
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:29:21: error: use of undeclared identifier 'ints'; did you mean 'int'?
+  for (i = 0; i < N(ints); i++)
+                    ^~~~
+                    int
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:22:44: note: expanded from macro 'N'
+#define N(table) (sizeof (table) / sizeof (table[0]))
+                                           ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:29:21: error: expected expression
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:31:26: error: use of undeclared identifier 'ints'
+      if (__builtin_ffs (ints[i]) != my_ffs (ints[i]))
+                         ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:31:46: error: use of undeclared identifier 'ints'
+      if (__builtin_ffs (ints[i]) != my_ffs (ints[i]))
+                                             ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:33:11: error: use of undeclared identifier 'ints'
+      if (ints[i] != 0
+          ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:34:22: error: use of undeclared identifier 'ints'
+          && __builtin_clz (ints[i]) != my_clz (ints[i]))
+                            ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:34:42: error: use of undeclared identifier 'ints'
+          && __builtin_clz (ints[i]) != my_clz (ints[i]))
+                                                ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:36:11: error: use of undeclared identifier 'ints'
+      if (ints[i] != 0
+          ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:37:22: error: use of undeclared identifier 'ints'
+          && __builtin_ctz (ints[i]) != my_ctz (ints[i]))
+                            ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:37:42: error: use of undeclared identifier 'ints'
+          && __builtin_ctz (ints[i]) != my_ctz (ints[i]))
+                                                ^
+./1acd93047f923fa58deae01bc6862f5983c6e146.c:39:28: error: use of undeclared identifier 'ints'
+      if (__builtin_clrsb (ints[i]) != my_clrsb (ints[i]))
+                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name 1acd93047f923fa58deae01bc6862f5983c6e146.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -pedantic -w -fdebug-compilation-dir /home/user42/cf_6_crash_24082022/llvm -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o /tmp/1acd93047f923fa58deae01bc6862f5983c6e146-f7c9cb.o -x c ./1acd93047f923fa58deae01bc6862f5983c6e146.c
+1.	./1acd93047f923fa58deae01bc6862f5983c6e146.c:129:24: current parser token ';'
+2.	./1acd93047f923fa58deae01bc6862f5983c6e146.c:26:1: parsing function body 'main'
+3.	./1acd93047f923fa58deae01bc6862f5983c6e146.c:26:1: in compound statement ('{}')
+4.	./1acd93047f923fa58deae01bc6862f5983c6e146.c:72:5: in compound statement ('{}')
+5.	./1acd93047f923fa58deae01bc6862f5983c6e146.c:77:5: in compound statement ('{}')
+6.	./1acd93047f923fa58deae01bc6862f5983c6e146.c:129:1: parsing struct/union body
+ #0 0x00007f18d124d001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+ #1 0x00007f18d124b140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+ #2 0x00007f18d124d712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+ #3 0x00007f18d8e63980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007f18d6c24368 clang::DeclContext::addHiddenDecl(clang::Decl*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xb74368)
+ #5 0x00007f18d6c24409 clang::DeclContext::addDecl(clang::Decl*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xb74409)
+ #6 0x00007f18d71a9532 clang::Sema::PushOnScopeChains(clang::NamedDecl*, clang::Scope*, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x10f9532)
+ #7 0x00007f18d71e095c clang::Sema::HandleField(clang::Scope*, clang::RecordDecl*, clang::SourceLocation, clang::Declarator&, clang::Expr*, clang::InClassInitStyle, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x113095c)
+ #8 0x00007f18d71e052a clang::Sema::ActOnField(clang::Scope*, clang::Decl*, clang::SourceLocation, clang::Declarator&, clang::Expr*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x113052a)
+ #9 0x00007f18d6a1cb4e (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x96cb4e)
+#10 0x00007f18d6a11752 clang::Parser::ParseStructDeclaration(clang::ParsingDeclSpec&, llvm::function_ref<void (clang::ParsingFieldDeclarator&)>) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x961752)
+#11 0x00007f18d6a11d29 clang::Parser::ParseStructUnionBody(clang::SourceLocation, clang::TypeSpecifierType, clang::RecordDecl*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x961d29)
+#12 0x00007f18d6a25648 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x975648)
+#13 0x00007f18d6a053de clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9553de)
+#14 0x00007f18d6a04e26 clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954e26)
+#15 0x00007f18d6a04bf7 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954bf7)
+#16 0x00007f18d6a8f503 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df503)
+#17 0x00007f18d6a8e7ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#18 0x00007f18d6a96880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#19 0x00007f18d6a8f216 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df216)
+#20 0x00007f18d6a8e7ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#21 0x00007f18d6a91965 clang::Parser::ParseIfStatement(clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e1965)
+#22 0x00007f18d6a8ecef clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9decef)
+#23 0x00007f18d6a8e7ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#24 0x00007f18d6a96880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#25 0x00007f18d6a8f216 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df216)
+#26 0x00007f18d6a8e7ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#27 0x00007f18d6a94417 clang::Parser::ParseForStatement(clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e4417)
+#28 0x00007f18d6a8ef08 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9def08)
+#29 0x00007f18d6a8e7ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#30 0x00007f18d6a96880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#31 0x00007f18d6a977a0 clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e77a0)
+#32 0x00007f18d6ab09e3 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xa009e3)
+#33 0x00007f18d6a0afb0 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x95afb0)
+#34 0x00007f18d6aafc0d clang::Parser::ParseDeclOrFunctionDefInternal(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ffc0d)
+#35 0x00007f18d6aaf600 clang::Parser::ParseDeclarationOrFunctionDefinition(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ff600)
+#36 0x00007f18d6aae6f5 clang::Parser::ParseExternalDeclaration(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fe6f5)
+#37 0x00007f18d6aace64 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fce64)
+#38 0x00007f18d69f3f5d clang::ParseAST(clang::Sema&, bool, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x943f5d)
+#39 0x00007f18d794b3b3 clang::CodeGenAction::ExecuteAction() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x189b3b3)
+#40 0x00007f18d8080446 clang::FrontendAction::Execute() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1fd0446)
+#41 0x00007f18d8009c11 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1f59c11)
+#42 0x00007f18d80e7576 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x2037576)
+#43 0x0000000000412a7a cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/usr/lib/llvm-12/bin/clang+0x412a7a)
+#44 0x0000000000410dbf (/usr/lib/llvm-12/bin/clang+0x410dbf)
+#45 0x0000000000410bb6 main (/usr/lib/llvm-12/bin/clang+0x410bb6)
+#46 0x00007f18cf7a0c87 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c87)
+#47 0x000000000040ddfa _start (/usr/lib/llvm-12/bin/clang+0x40ddfa)
+clang: error: unable to execute command: Segmentation fault (core dumped)
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-12/bin
+clang: note: diagnostic msg: Error generating preprocessed source(s).

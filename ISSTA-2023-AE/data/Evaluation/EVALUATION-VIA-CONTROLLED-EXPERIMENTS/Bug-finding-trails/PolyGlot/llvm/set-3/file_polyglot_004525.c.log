@@ -1,0 +1,97 @@
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/set-3$ (ulimit -St 45 -Sf 90000; clang-12 -w -O2 -pedantic file_polyglot_004525.c)
+file_polyglot_004525.c:2:59: error: expression is not assignable
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+                                                      ~~~ ^
+file_polyglot_004525.c:2:79: error: expression is not assignable
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+                                                                          ~~~ ^
+file_polyglot_004525.c:2:92: error: expression is not assignable
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+                                                                                       ~~~ ^
+file_polyglot_004525.c:2:105: error: expression is not assignable
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+                                                                                                    ~~~ ^
+file_polyglot_004525.c:2:117: error: expression is not assignable
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+                                                                                                                ~~~ ^
+file_polyglot_004525.c:2:129: error: expression is not assignable
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+                                                                                                                            ~~~ ^
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name file_polyglot_004525.c -mrelocation-model static -mframe-pointer=none -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -pedantic -w -fdebug-compilation-dir /home/user42/git/directed-compiler-fuzzing-code/scripts/set-3 -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -vectorize-loops -vectorize-slp -faddrsig -o /tmp/file_polyglot_004525-eebc93.o -x c file_polyglot_004525.c
+1.	file_polyglot_004525.c:2:146: current parser token '}'
+#0 0x00007fb30101f001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+#1 0x00007fb30101d140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+#2 0x00007fb30101f712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+#3 0x00007fb308c35980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+#4 0x00007fb30689fd07 clang::ASTContext::getAsArrayType(clang::QualType) const (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xa1dd07)
+#5 0x0000000001a41d20 
+clang: error: unable to execute command: Segmentation fault
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/file_polyglot_004525-804704.c
+clang: note: diagnostic msg: /tmp/file_polyglot_004525-804704.sh
+clang: note: diagnostic msg: 
+
+********************
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/set-3$ more file_polyglot_004525.c
+enum X {
+ b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+ ;
+ static volatile enum X short test = 0 ;
+ static void y ( int ) ;
+ int main ( ) {
+ switch ( test ) {
+ struct x {
+ int x ;
+ }
+ ;
+ }
+ return 0 ;
+ }
+ static void y ( int x ) {
+ abort ( ) ;
+ }
+ 
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/set-3$ gcc file_polyglot_004525.c
+file_polyglot_004525.c:2:55: warning: implicit declaration of function 'x' [-Wimplicit-function-declaration]
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                       ^
+file_polyglot_004525.c:2:59: error: lvalue required as left operand of assignment
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                           ^~~
+file_polyglot_004525.c:2:79: error: lvalue required as left operand of assignment
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                                               ^~
+file_polyglot_004525.c:2:92: error: lvalue required as left operand of assignment
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                                                            ^~
+file_polyglot_004525.c:2:105: error: lvalue required as left operand of assignment
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                                                                         ^
+file_polyglot_004525.c:2:117: error: lvalue required as left operand of assignment
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                                                                                     ^
+file_polyglot_004525.c:2:129: error: lvalue required as left operand of assignment
+    2 |  b = sizeof ( int ) >= 51 && sizeof ( void * ) >= 1 ? x() <<= x() , x() , x() -= x() , x() -= x() , x() = x() , x() = x() , x() += x() : 28 , X2 }
+      |                                                                                                                                 ^~
+file_polyglot_004525.c:4:25: error: two or more data types in declaration specifiers
+    4 |  static volatile enum X short test = 0 ;
+      |                         ^~~~~
+file_polyglot_004525.c: In function 'y':
+file_polyglot_004525.c:16:2: warning: implicit declaration of function 'abort' [-Wimplicit-function-declaration]
+   16 |  abort ( ) ;
+      |  ^~~~~
+file_polyglot_004525.c:16:2: warning: incompatible implicit declaration of built-in function 'abort'
+file_polyglot_004525.c:1:1: note: include '<stdlib.h>' or provide a declaration of 'abort'
+  +++ |+#include <stdlib.h>
+    1 | enum X {

@@ -1,0 +1,612 @@
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘bar’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:31:10: error: expected ‘;’ before ‘)’ token
+   31 | shift * 8);
+      |          ^
+      |          ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:31:10: error: expected statement before ‘)’ token
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: At top level:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:39:1: error: redefinition of ‘bar’
+   39 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:23:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+   23 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+In file included from 13150e5c9bc346f8918046024f56d08fed6c0aca.c:80:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h: In function ‘main’:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:40:1: error: expected expression before ‘typedef’
+   40 | typedef __builtin_va_list __gnuc_va_list;
+      | ^~~~~~~
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:99:9: error: unknown type name ‘__gnuc_va_list’
+   99 | typedef __gnuc_va_list va_list;
+      |         ^~~~~~~~~~~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:82:5: error: conflicting types for ‘a’; have ‘int’
+   82 | int a, b;
+      |     ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:68:12: note: previous definition of ‘a’ with type ‘struct S[6]’
+   68 |   struct S a[] = { { 0x000004d3, 0xbc5448db, 0xf22bde9f, 0xebb44f8f },
+      |            ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:83:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘t’
+   83 | char c[128]t
+      |            ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:83:12: error: unknown type name ‘t’
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:84:4: error: unknown type name ‘__’
+   84 | ta;__
+      |    ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:85:10: error: expected declaration specifiers or ‘...’ before ‘(’ token
+   85 | ribute__((noinline, noclone)) static void
+      |          ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:1: error: expected expression before ‘/’ token
+  103 | /�������������������������������������������������* ProgramSourceLLVM */ "foo") != 0
+      | ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:2: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:3: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:4: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:5: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:6: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:7: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:8: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:9: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:10: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:11: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:12: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:13: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:14: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:15: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:16: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:17: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:18: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:19: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:20: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:21: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:22: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:23: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:24: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:25: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:26: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:27: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:28: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:29: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:30: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:31: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:32: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:33: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:34: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:35: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:36: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:37: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:38: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:39: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:40: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:41: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:42: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:43: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:44: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:45: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:46: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:47: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:48: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:49: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                                              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:50: error: stray ‘\377’ in program
+  103 | /<ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff><ff>* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                                                                                                                                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:79: error: expected statement before ‘)’ token
+  103 | /�������������������������������������������������* ProgramSourceLLVM */ "foo") != 0
+      |                                                                               ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:103:81: error: expected expression before ‘!=’ token
+  103 | /�������������������������������������������������* ProgramSourceLLVM */ "foo") != 0
+      |                                                                                 ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:106:3: error: ‘out’ undeclared (first use in this function)
+  106 |   out->u[0] = ol;
+      |   ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:106:3: note: each undeclared identifier is reported only once for each function it appears in
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:106:15: error: ‘ol’ undeclared (first use in this function)
+  106 |   out->u[0] = ol;
+      |               ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:107:15: error: ‘oh’ undeclared (first use in this function)
+  107 |   out->u[3] = oh >> 32;
+      |               ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: At top level:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:112:1: error: redefinition of ‘baz’
+  112 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:54:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+   54 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘baz’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:120:41: error: subscripted value is neither array nor pointer nor vector
+  120 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                         ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:120:47: error: ‘ol’ undeclared (first use in this function)
+  120 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                               ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:120:55: error: expected ‘]’ before ‘;’ token
+  120 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                                       ^
+      |                                                       ]
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:123:18: error: expected ‘)’ before ‘}’ token
+  123 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+  124 | }
+      | ~                 
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:120:33: note: to match this ‘(’
+  120 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                 ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:123:18: error: expected ‘)’ before ‘}’ token
+  123 |   out->u[2] = oh;
+      |                  ^
+      |                  )
+  124 | }
+      | ~                 
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:120:32: note: to match this ‘(’
+  120 |   r->u[3] = a->u[3] ^ x.u[3] ^ ((b->u[3u[1] = ol >> 32;
+      |                                ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:123:18: error: expected ‘;’ before ‘}’ token
+  123 |   out->u[2] = oh;
+      |                  ^
+      |                  ;
+  124 | }
+      | ~                 
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: At top level:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:127:1: error: redefinition of ‘bar’
+  127 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:39:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+   39 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘bar’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:135:10: error: expected ‘;’ before ‘)’ token
+  135 | shift * 8);
+      |          ^
+      |          ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:135:10: error: expected statement before ‘)’ token
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: At top level:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:143:1: error: redefinition of ‘bar’
+  143 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:127:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+  127 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:158:1: error: redefinition of ‘baz’
+  158 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:112:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+  112 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:170:1: error: redefinition of ‘main’
+  170 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:66:1: note: previous definition of ‘main’ with type ‘int()’
+   66 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:186:1: error: expected expression before ‘int’
+  186 | int a, b;
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:187:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘t’
+  187 | char c[128]t
+      |            ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:187:12: error: unknown type name ‘t’
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:188:4: error: unknown type name ‘__’
+  188 | ta;__
+      |    ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:189:10: error: expected declaration specifiers or ‘...’ before ‘(’ token
+  189 | ribute__((noinline, noclone)) static void
+      |          ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:200:2: error: #else without #if
+  200 | #else
+      |  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:206:2: error: #endif without #if
+  206 | #endif
+      |  ^~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:207:30: error: expected ‘;’ before ‘)’ token
+  207 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:207:30: error: expected statement before ‘)’ token
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:207:32: error: expected expression before ‘!=’ token
+  207 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:210:3: error: ‘out’ undeclared (first use in this function)
+  210 |   out->u[0] = ol;
+      |   ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:210:15: error: ‘ol’ undeclared (first use in this function)
+  210 |   out->u[0] = ol;
+      |               ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:211:15: error: ‘oh’ undeclared (first use in this function)
+  211 |   out->u[3] = oh >> 32;
+      |               ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: At top level:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:216:1: error: redefinition of ‘baz’
+  216 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:158:1: note: previous definition of ‘baz’ with type ‘void(struct S *, struct S *, struct S *, struct S *, struct S *)’
+  158 | baz (struct S *r, struct S *a, struct S *b, struct S *c, struct S *d)
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:228:1: error: redefinition of ‘main’
+  228 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:66:1: note: previous definition of ‘main’ with type ‘int()’
+   66 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:244:1: error: expected expression before ‘int’
+  244 | int a, b;
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:248:1: error: invalid storage class for function ‘f1’
+  248 | f1 (const char *fmt, ...)
+      | ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘f1’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:250:3: error: unknown type name ‘va_list’
+  250 |   va_list ap;
+      |   ^~~~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:81:1: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+   80 | #include <stdarg.h>
+  +++ |+#include <stdarg.h>
+   81 | 
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:251:4: error: stray ‘\320’ in program
+  251 |   a<d0>sm volatile ("" : : : "memory");
+      |    ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:251:4: error: expected ‘;’ before ‘sm’
+  251 |   a�sm volatile ("" : : : "memory");
+      |    ^~~
+      |    ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:255:37: error: first argument to ‘va_arg’ not of type ‘va_list’
+  255 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |                                     ^~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:255:53: error: expected expression before ‘{’ token
+  255 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |                                                     ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:256:12: error: expected ‘)’ before ‘}’ token
+  256 |   return 0;
+      |            ^
+      |            )
+  257 | }
+      | ~           
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:255:6: note: to match this ‘(’
+  255 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |      ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:257:1: error: expected expression before ‘}’ token
+  257 | }
+      | ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:258:2: error: #else without #if
+  258 | #else
+      |  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:264:2: error: #endif without #if
+  264 | #endif
+      |  ^~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:265:30: error: expected ‘;’ before ‘)’ token
+  265 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:265:30: error: expected statement before ‘)’ token
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:265:32: error: expected expression before ‘!=’ token
+  265 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:267:66: error: expected statement before ‘)’ token
+  267 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)ize "8*100*100" } */
+      |                                                                  ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:267:67: error: ‘ize’ undeclared (first use in this function)
+  267 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)ize "8*100*100" } */
+      |                                                                   ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:267:70: error: expected ‘;’ before string constant
+  267 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)ize "8*100*100" } */
+      |                                                                      ^~~~~~~~~~~~
+      |                                                                      ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: At top level:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:267:86: error: expected identifier or ‘(’ before ‘/’ token
+  267 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)ize "8*100*100" } */
+      |                                                                                      ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:270:5: error: redefinition of ‘main’
+  270 | int main ()
+      |     ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:66:1: note: previous definition of ‘main’ with type ‘int()’
+   66 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:272:6: error: stray ‘\340’ in program
+  272 |   int<e0><96><c4><f5><f5><df><U+07D6> = 99;
+      |      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:272:7: error: stray ‘\226’ in program
+  272 |   int<e0><96><c4><f5><f5><df><U+07D6> = 99;
+      |          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:272:8: error: stray ‘\304’ in program
+  272 |   int<e0><96><c4><f5><f5><df><U+07D6> = 99;
+      |              ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:272:9: error: stray ‘\365’ in program
+  272 |   int<e0><96><c4><f5><f5><df><U+07D6> = 99;
+      |                  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:272:10: error: stray ‘\365’ in program
+  272 |   int<e0><96><c4><f5><f5><df><U+07D6> = 99;
+      |                      ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:272:11: error: stray ‘\337’ in program
+  272 |   int<e0><96><c4><f5><f5><df><U+07D6> = 99;
+      |                          ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:273:3: error: ‘x’ undeclared (first use in this function)
+  273 |   x[i][0] = 42;
+      |   ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:273:5: error: ‘i’ undeclared (first use in this function)
+  273 |   x[i][0] = 42;
+      |     ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:274:19: error: invalid suffix "mt" on integer constant
+  274 |   if (x[99][0] != 4mt, va_list ap)
+      |                   ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:274:24: error: ‘va_list’ undeclared (first use in this function)
+  274 |   if (x[99][0] != 4mt, va_list ap)
+      |                        ^~~~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:274:24: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:274:31: error: expected ‘)’ before ‘ap’
+  274 |   if (x[99][0] != 4mt, va_list ap)
+      |      ~                        ^~~
+      |                               )
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:277:25: error: ‘fmt’ undeclared (first use in this function)
+  277 |   if (__builtin_strcmp (fmt, "baz") != 0
+      |                         ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:278:36: error: ‘ap’ undeclared (first use in this function)
+  278 |       || __builtin_strcmp (va_arg (ap, const char *), "foo") != 0
+      |                                    ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:10: error: ‘va’ undeclared (first use in this function)
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |          ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:12: error: expected ‘)’ before ‘]’ token
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |            ^
+      |            )
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:277:6: note: to match this ‘(’
+  277 |   if (__builtin_strcmp (fmt, "baz") != 0
+      |      ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:12: error: expected statement before ‘]’ token
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |            ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:14: error: expected expression before ‘>>’ token
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |              ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:19: error: expected statement before ‘)’ token
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                   ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:21: error: lvalue required as unary ‘&’ operand
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                     ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:34: error: expected ‘;’ before ‘)’ token
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                                  ^
+      |                                  ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:34: error: expected statement before ‘)’ token
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:280:36: error: expected expression before ‘^’ token
+  280 |       || va] >> 11) & 0xbffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                                    ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:300:1: error: expected expression before ‘int’
+  300 | int a, b;
+      | ^~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:304:1: error: invalid storage class for function ‘f1’
+  304 | f1 (const char *fmt, ...)
+      | ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘f1’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:306:10: error: expected ‘;’ before ‘ap’
+  306 |   va_list ap;
+      |          ^~~
+      |          ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:307:4: error: stray ‘\320’ in program
+  307 |   a<d0>sm volatile ("" : : : "memory");
+      |    ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:307:4: error: expected ‘;’ before ‘sm’
+  307 |   a�sm volatile ("" : : : "memory");
+      |    ^~~
+      |    ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:311:53: error: expected expression before ‘{’ token
+  311 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |                                                     ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:312:12: error: expected ‘)’ before ‘}’ token
+  312 |   return 0;
+      |            ^
+      |            )
+  313 | }
+      | ~           
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:311:6: note: to match this ‘(’
+  311 |   if (__builtin_strcmp (va_arg (ap, const char *),  { __builtin_abort (); }
+      |      ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:313:1: error: expected expression before ‘}’ token
+  313 | }
+      | ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:314:2: error: #else without #if
+  314 | #else
+      |  ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:320:2: error: #endif without #if
+  320 | #endif
+      |  ^~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:321:30: error: expected ‘;’ before ‘)’ token
+  321 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:321:30: error: expected statement before ‘)’ token
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:321:32: error: expected expression before ‘!=’ token
+  321 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:323:66: error: expected statement before ‘)’ token
+  323 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)
+      |                                                                  ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:329:22: error: expected declaration specifiers or ‘...’ before ‘va_list’
+  329 | f2 (const char *fmt, va_list ap)
+      |                      ^~~~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:340:27: error: expected declaration specifiers or ‘...’ before ‘va_list’
+  340 | f3 (int x, char const *y, va_list z)
+      |                           ^~~~~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘f4’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:350:10: error: expected ‘;’ before ‘z’
+  350 |   va_list z;
+      |          ^~
+      |          ;
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:351:13: error: ‘z’ undeclared (first use in this function)
+  351 |   va_start (z, y);
+      |             ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:352:14: error: ‘c’ undeclared (first use in this function)
+  352 |   if (!x && *c == '\0')
+      |              ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:353:7: error: ‘b’ undeclared (first use in this function)
+  353 |     ++b;
+      |       ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:359:1: error: redefinition of ‘main’
+  359 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:284:1: note: previous definition of ‘main’ with type ‘int()’
+  284 | main ()
+      | ^~~~
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:363:7: error: ‘a’ undeclared (first use in this function)
+  363 |   if (a != 1 || b != 1)
+      |       ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:363:17: error: ‘b’ undeclared (first use in this function)
+  363 |   if (a != 1 || b != 1)
+      |                 ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:367:1: error: expected declaration or statement at end of input
+  367 | }
+      | ^
+13150e5c9bc346f8918046024f56d08fed6c0aca.c: In function ‘main’:
+13150e5c9bc346f8918046024f56d08fed6c0aca.c:74:38: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   74 |   baz (&a[5], &a[0], &a[1], &a[2], &a[3]);
+      |                                     ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

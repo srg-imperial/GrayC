@@ -1,0 +1,25 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing-copy1/fuzzer-24-50s-set-1/segment_23/fuzzer-file-15048-2022-02-09-00:14:43.c: In function ‘main’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing-copy1/fuzzer-24-50s-set-1/segment_23/fuzzer-file-15048-2022-02-09-00:14:43.c:32:3: sorry, unimplemented: passing too large argument on stack
+   32 |   f (x, "", ((0x503AC)), 'x', ((0xD9DFA)));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+during RTL pass: expand
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing-copy1/fuzzer-24-50s-set-1/segment_23/fuzzer-file-15048-2022-02-09-00:14:43.c:32:3: internal compiler error: in expand_call, at calls.cc:3905
+0x6d81b5 expand_call(tree_node*, rtx_def*, int)
+	.././../gcc-source/gcc/calls.cc:3905
+0xb558cd expand_expr_real_1(tree_node*, rtx_def*, machine_mode, expand_modifier, rtx_def**, bool)
+	.././../gcc-source/gcc/expr.cc:11539
+0xa25fc1 expand_expr
+	.././../gcc-source/gcc/expr.h:301
+0xa25fc1 expand_call_stmt
+	.././../gcc-source/gcc/cfgexpand.cc:2831
+0xa25fc1 expand_gimple_stmt_1
+	.././../gcc-source/gcc/cfgexpand.cc:3869
+0xa25fc1 expand_gimple_stmt
+	.././../gcc-source/gcc/cfgexpand.cc:4033
+0xa2bafe expand_gimple_basic_block
+	.././../gcc-source/gcc/cfgexpand.cc:6080
+0xa2d9b7 execute
+	.././../gcc-source/gcc/cfgexpand.cc:6806
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

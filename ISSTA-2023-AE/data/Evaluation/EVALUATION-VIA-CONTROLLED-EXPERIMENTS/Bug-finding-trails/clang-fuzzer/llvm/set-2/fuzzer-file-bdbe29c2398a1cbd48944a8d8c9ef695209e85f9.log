@@ -1,0 +1,108 @@
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:28:32: error: source file is not valid UTF-8
+  const char *s = output_25 ()/<FF><FF>a<U+0010><U+0001> <D9>`
+                               ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:28:33: error: source file is not valid UTF-8
+  const char *s = output_25 ()/<FF><FF>a<U+0010><U+0001> <D9>`
+                                   ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:28:34: error: use of undeclared identifier 'a'
+  const char *s = output_25 ()/<FF><FF>a<U+0010><U+0001> <D9>`
+                                       ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:28:35: error: expected ';' at end of declaration
+  const char *s = output_25 ()/<FF><FF>a<U+0010><U+0001> <D9>`
+                                        ^
+                                        ;
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:28:38: error: source file is not valid UTF-8
+  const char *s = output_25 ()/<FF><FF>a<U+0010><U+0001> <D9>`
+                                                         ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:31:1: error: use of undeclared identifier 'in'
+in at6
+^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:84:11: error: expected ';' at end of declaration list
+  float qv/* corpus/pr23324.c */
+          ^
+          ;
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:88:1: error: type name does not allow storage class to be specified
+static union at6 {} vv6 = {};
+^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:88:24: error: expected ';' at end of declaration list
+static union at6 {} vv6 = {};
+                       ^
+                       ;
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:104:3: error: type name requires a specifier or qualifier
+  signed0qv6:2;
+  ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:106:15: error: type name requires a specifier or qualifier
+  union ct6 { lo7;
+              ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:109:6: error: expected ';' at end of declaration list
+} zv7 = { 5042.227886 };
+     ^
+     ;
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:110:1: error: type name does not allow storage class to be specified
+static int bav7 = 1345451862;
+^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:110:16: error: expected ';' at end of declaration list
+static int bav7 = 1345451862;
+               ^
+               ;
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:111:1: error: type name does not allow storage class to be specified
+static struct gt7 { double tv7; } bbv7 = { 47<U+0003><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>54 };ng int hv6; float iv6; float jv6; } sv6;
+^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:111:39: error: expected ';' at end of declaration list
+static struct gt7 { double tv7; } bbv7 = { 47<U+0003><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>54 };ng int hv6; float iv6; float jv6; } sv6;
+                                      ^
+                                      ;
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:111:59: error: unknown type name 'ng'
+static struct gt7 { double tv7; } bbv7 = { 47<U+0003><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>54 };ng int hv6; float iv6; float jv6; } sv6;
+                                                                                                                  ^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:89:1: error: type name does not allow storage class to be specified
+static struct et6
+^
+bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:113:37: error: type name requires a specifier or qualifier
+  union dt6 { double kv6; float lv6;" } uv6;
+                                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -pedantic -w -fdebug-compilation-dir /home/user42/cf_2_crash_22082022/llvm -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o /tmp/bdbe29c2398a1cbd48944a8d8c9ef695209e85f9-9b82b9.o -x c bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c
+1.	bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:228:21: current parser token 'xv7'
+2.	bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:27:1: parsing function body 'main'
+3.	bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:27:1: in compound statement ('{}')
+4.	bdbe29c2398a1cbd48944a8d8c9ef695209e85f9.c:228:8: parsing struct/union body
+ #0 0x00007faea1c2c001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+ #1 0x00007faea1c2a140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+ #2 0x00007faea1c2c712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+ #3 0x00007faea9842980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007faea75f17d4 clang::RecordDecl::field_begin() const (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xb627d4)
+ #5 0x00007faea73f10e9 clang::Parser::ParseStructUnionBody(clang::SourceLocation, clang::TypeSpecifierType, clang::RecordDecl*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9620e9)
+ #6 0x00007faea7404648 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x975648)
+ #7 0x00007faea73e43de clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9553de)
+ #8 0x00007faea73e3e26 clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954e26)
+ #9 0x00007faea73e3bf7 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954bf7)
+#10 0x00007faea746e503 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df503)
+#11 0x00007faea746d7ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#12 0x00007faea7475880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#13 0x00007faea74767a0 clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e77a0)
+#14 0x00007faea748f9e3 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xa009e3)
+#15 0x00007faea73e9fb0 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x95afb0)
+#16 0x00007faea748ec0d clang::Parser::ParseDeclOrFunctionDefInternal(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ffc0d)
+#17 0x00007faea748e600 clang::Parser::ParseDeclarationOrFunctionDefinition(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ff600)
+#18 0x00007faea748d6f5 clang::Parser::ParseExternalDeclaration(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fe6f5)
+#19 0x00007faea748be64 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fce64)
+#20 0x00007faea73d2f5d clang::ParseAST(clang::Sema&, bool, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x943f5d)
+#21 0x00007faea832a3b3 clang::CodeGenAction::ExecuteAction() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x189b3b3)
+#22 0x00007faea8a5f446 clang::FrontendAction::Execute() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1fd0446)
+#23 0x00007faea89e8c11 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1f59c11)
+#24 0x00007faea8ac6576 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x2037576)
+#25 0x0000000000412a7a cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/usr/lib/llvm-12/bin/clang+0x412a7a)
+#26 0x0000000000410dbf (/usr/lib/llvm-12/bin/clang+0x410dbf)
+#27 0x0000000000410bb6 main (/usr/lib/llvm-12/bin/clang+0x410bb6)
+#28 0x00007faea017fc87 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c87)
+#29 0x000000000040ddfa _start (/usr/lib/llvm-12/bin/clang+0x40ddfa)
+clang: error: unable to execute command: Segmentation fault (core dumped)
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+clang: note: diagnostic msg: Error generating preprocessed source(s).

@@ -1,0 +1,107 @@
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:1:1: error: expected identifier or '('
+/final<U+0001><U+0000><U+0000><U+0000><U+0000><U+0000><U+0004>l/990128-1.c */
+^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:6:2: error: invalid preprocessing directive
+#defik( str<8B>ct; }
+ ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:8:5: error: unknown type name 'exit'
+    exit/* corpus/00216.c */
+    ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:5: error: source file is not valid UTF-8
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+    ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:6: error: source file is not valid UTF-8
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+        ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:7: error: source file is not valid UTF-8
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+            ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:8: error: source file is not valid UTF-8
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+                ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:9: error: source file is not valid UTF-8
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+                    ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:12: error: source file is not valid UTF-8
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+                         ^
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:39:12: error: expected ';' at end of declaration list
+  u8<E0><9E><C4><F5><DF>ߌ<8B>ruct S s;
+                         ^
+                         ;
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:59:16: error: initializer element is not a compile-time constant
+struct T gt = {"hello", 42};
+               ^~~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:60:31: error: initializer element is not a compile-time constant
+struct U gu = {3, 5,6,7,8, 4, "huhu", 43};
+                              ^~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:61:34: error: initializer element is not a compile-time constant
+struct U gu2 = {3, {5,6,7,8}, 4, {"huhu", 43}};
+                                 ^~~~~~~~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:64:38: error: initializer element is not a compile-time constant
+struct U gu3 = { {3}, {5,6,7,8,}, 4, {"huhu", 43}};
+                                     ^~~~~~~~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:66:35: error: initializer element is not a compile-time constant
+struct U gu4 = { 3, {5,6,7,},  5, { "bla", {44}} };
+                                  ^~~~~~~~~~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:70:31: error: initializer element is not a compile-time constant
+struct V gv = {{{3},4,{5,6}}, "haha", (u8)45, 46};
+                              ^~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:72:42: error: initializer element is not a compile-time constant
+struct V gv2 = {(struct S){7,8,{9,10}}, {"hihi", 47}, 48};
+                                         ^~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:74:44: error: initializer element is not a compile-time constant
+struct V gv3 = {((struct S){7,8,{9,10}}), {"hoho", 49}, 50};
+                                           ^~~~~~
+./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:109:1: error: type name requires a specifier or qualifier
+)u8 u6_addr8[16]:;
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name 04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -I /home/user42/data/csmith/runtime/ -I /home/user42/data/csmith/build/runtime/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O0 -pedantic -w -fdebug-compilation-dir /home/user42/cf_6_crash_24082022/llvm -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -o /tmp/04ea486e1b3c59acfc6c71b771af02da9bd7fd0c-0d6194.o -x c ./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c
+1.	./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:769:14: current parser token ''t ISO C, but it''
+2.	./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:273:1: parsing function body 'test_narrow'
+3.	./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:273:1: in compound statement ('{}')
+4.	./04ea486e1b3c59acfc6c71b771af02da9bd7fd0c.c:769:1: parsing struct/union body
+ #0 0x00007f593f904001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+ #1 0x00007f593f902140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+ #2 0x00007f593f904712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+ #3 0x00007f594751a980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+ #4 0x00007f59452cfe25 clang::Decl::setInvalidDecl(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xb68e25)
+ #5 0x00007f5945897903 clang::Sema::HandleField(clang::Scope*, clang::RecordDecl*, clang::SourceLocation, clang::Declarator&, clang::Expr*, clang::InClassInitStyle, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1130903)
+ #6 0x00007f594589752a clang::Sema::ActOnField(clang::Scope*, clang::Decl*, clang::SourceLocation, clang::Declarator&, clang::Expr*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x113052a)
+ #7 0x00007f59450d3b4e (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x96cb4e)
+ #8 0x00007f59450c8752 clang::Parser::ParseStructDeclaration(clang::ParsingDeclSpec&, llvm::function_ref<void (clang::ParsingFieldDeclarator&)>) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x961752)
+ #9 0x00007f59450c8d29 clang::Parser::ParseStructUnionBody(clang::SourceLocation, clang::TypeSpecifierType, clang::RecordDecl*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x961d29)
+#10 0x00007f59450dc648 clang::Parser::ParseClassSpecifier(clang::tok::TokenKind, clang::SourceLocation, clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, bool, clang::Parser::DeclSpecContext, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x975648)
+#11 0x00007f59450bc3de clang::Parser::ParseDeclarationSpecifiers(clang::DeclSpec&, clang::Parser::ParsedTemplateInfo const&, clang::AccessSpecifier, clang::Parser::DeclSpecContext, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9553de)
+#12 0x00007f59450bbe26 clang::Parser::ParseSimpleDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, bool, clang::Parser::ForRangeInit*, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954e26)
+#13 0x00007f59450bbbf7 clang::Parser::ParseDeclaration(clang::DeclaratorContext, clang::SourceLocation&, clang::Parser::ParsedAttributesWithRange&, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x954bf7)
+#14 0x00007f5945146503 clang::Parser::ParseStatementOrDeclarationAfterAttributes(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*, clang::Parser::ParsedAttributesWithRange&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9df503)
+#15 0x00007f59451457ed clang::Parser::ParseStatementOrDeclaration(llvm::SmallVector<clang::Stmt*, 32u>&, clang::Parser::ParsedStmtContext, clang::SourceLocation*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9de7ed)
+#16 0x00007f594514d880 clang::Parser::ParseCompoundStatementBody(bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e6880)
+#17 0x00007f594514e7a0 clang::Parser::ParseFunctionStatementBody(clang::Decl*, clang::Parser::ParseScope&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9e77a0)
+#18 0x00007f59451679e3 clang::Parser::ParseFunctionDefinition(clang::ParsingDeclarator&, clang::Parser::ParsedTemplateInfo const&, clang::Parser::LateParsedAttrList*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xa009e3)
+#19 0x00007f59450c1fb0 clang::Parser::ParseDeclGroup(clang::ParsingDeclSpec&, clang::DeclaratorContext, clang::SourceLocation*, clang::Parser::ForRangeInit*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x95afb0)
+#20 0x00007f5945166c0d clang::Parser::ParseDeclOrFunctionDefInternal(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec&, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ffc0d)
+#21 0x00007f5945166600 clang::Parser::ParseDeclarationOrFunctionDefinition(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*, clang::AccessSpecifier) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9ff600)
+#22 0x00007f59451656f5 clang::Parser::ParseExternalDeclaration(clang::Parser::ParsedAttributesWithRange&, clang::ParsingDeclSpec*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fe6f5)
+#23 0x00007f5945163e64 clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x9fce64)
+#24 0x00007f59450aaf5d clang::ParseAST(clang::Sema&, bool, bool) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x943f5d)
+#25 0x00007f59460023b3 clang::CodeGenAction::ExecuteAction() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x189b3b3)
+#26 0x00007f5946737446 clang::FrontendAction::Execute() (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1fd0446)
+#27 0x00007f59466c0c11 clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x1f59c11)
+#28 0x00007f594679e576 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0x2037576)
+#29 0x0000000000412a7a cc1_main(llvm::ArrayRef<char const*>, char const*, void*) (/usr/lib/llvm-12/bin/clang+0x412a7a)
+#30 0x0000000000410dbf (/usr/lib/llvm-12/bin/clang+0x410dbf)
+#31 0x0000000000410bb6 main (/usr/lib/llvm-12/bin/clang+0x410bb6)
+#32 0x00007f593de57c87 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x21c87)
+#33 0x000000000040ddfa _start (/usr/lib/llvm-12/bin/clang+0x40ddfa)
+clang: error: unable to execute command: Segmentation fault (core dumped)
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-12/bin
+clang: note: diagnostic msg: Error generating preprocessed source(s).

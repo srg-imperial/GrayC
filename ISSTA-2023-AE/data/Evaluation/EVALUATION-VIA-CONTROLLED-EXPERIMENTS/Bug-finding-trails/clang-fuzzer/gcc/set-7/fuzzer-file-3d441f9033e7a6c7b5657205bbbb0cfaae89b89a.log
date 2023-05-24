@@ -1,0 +1,799 @@
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:1: error: expected identifier or ‘(’ before ‘/’ token
+    1 | /`�gb     �������* corpus/pr69691.c */
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:2: error: stray ‘`’ in program
+    1 | /`�gb     �������* corpus/pr69691.c */
+      |  ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:3: error: stray ‘\236’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |   ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:5: error: stray ‘\1’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |        ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:6: error: stray ‘\20’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:10: error: stray ‘\1’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                         ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:14: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:15: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                             ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:16: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                                 ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:17: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                                     ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:18: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                                         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:19: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                                             ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:20: error: stray ‘\377’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                                                 ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1:21: error: stray ‘\6’ in program
+    1 | /`<9e>g<U+0001><U+0010>b<U+0000><U+0000><U+0001><U+0000><U+0000><U+0000><ff><ff><ff><ff><ff><ff><ff><U+0006>* corpus/pr69691.c */
+      |                                                                                                     ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:5:15: error: ‘u’ undeclared here (not in a function)
+    5 | char *v[] = { u, 0 };
+      |               ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:6:19: error: invalid suffix "p" on integer constant
+    6 | struct S { char a[1p]; struct S *b[31]; };
+      |                   ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘bar’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:37:29: error: expected identifier or ‘(’ before ‘]’ token
+   37 |   char **b, c, *d, e[500], *], g[10];
+      |                             ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:45:7: error: ‘f’ undeclared (first use in this function)
+   45 |       f = e;
+      |       ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:45:7: note: each undeclared identifier is reported only once for each function it appears in
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:54:29: error: ‘g’ undeclared (first use in this function)
+   54 |           __builtin_memset (g, 0, sizeof (g));
+      |                             ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:65:34: error: expected ‘]’ before ‘;’ token
+   65 |                       s->b[irt (); }
+      |                                  ^
+      |                                  ]
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:65:35: error: expected ‘;’ before ‘}’ token
+   65 |                       s->b[irt (); }
+      |                                   ^~
+      |                                   ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:67:22: error: expected expression before ‘::’ token
+   67 |     return (fn (x) - ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::96);
+      |                      ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘bar’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:85:11: error: conflicting types for ‘b’; have ‘struct S *[31]’
+   85 | struct S *b[31]; };
+      |           ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:80:10: note: previous declaration of ‘b’ with type ‘char **’
+   80 |   char **b, c, *d, e[500], *f, g[10];
+      |          ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘bar’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:129:1: error: expected ‘while’ before ‘}’ token
+  129 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:138:20: error: expected ‘;’ before ‘}’ token
+  138 |  97, 99, 104, 52, 0 };
+      |                    ^~
+      |                    ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘bar’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:140:19: error: invalid suffix "p" on integer constant
+  140 | struct S { char a[1p]; struct S *b[31]; };
+      |                   ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:141:1: error: unknown type name ‘strukt’; did you mean ‘struct’?
+  141 | strukt S r[7], *r2 = r;
+      | ^~~~~~
+      | struct
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:141:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘r’
+  141 | strukt S r[7], *r2 = r;
+      |          ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘foo’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:155:10: error: stray ‘\220’ in program
+  155 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |          ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:155:11: error: stray ‘\265’ in program
+  155 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |              ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:155:12: error: stray ‘\324’ in program
+  155 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:155:13: error: stray ‘\10’ in program
+  155 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                      ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:155:14: error: stray ‘\20’ in program
+  155 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                              ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘bar’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:216:1: error: redefinition of ‘baz’
+  216 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:132:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  132 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:235:34: error: expected ‘;’ before ‘g’
+  235 |     returnif (c >= 48 && c <= 57)
+      |                                  ^
+      |                                  ;
+  236 |                 g[h] = c - 48;
+      |                 ~                 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:240:33: error: expected expression before ‘]’ token
+  240 |                   if (!s->b[    ]
+      |                                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: At top level:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:256:1: error: expected identifier or ‘(’ before ‘}’ token
+  256 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:285:23: error: expected ‘]’ before ‘for’
+  285 |           s = s->b[foo   for (b = x; *b; b++)
+      |                       ^  ~~~
+      |                       ]
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:285:19: error: array subscript is not an integer
+  285 |           s = s->b[foo   for (b = x; *b; b++)
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:308:23: error: expected ‘;’ before ‘}’ token
+  308 |             f = d + 1;
+      |                       ^
+      |                       ;
+  309 |         }
+      |         ~              
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:310:14: error: ‘d’ undeclared (first use in this function)
+  310 |       while (d);
+      |              ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: At top level:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:315:1: error: redefinition of ‘baz’
+  315 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:321:20: error: expected ‘;’ before ‘}’ token
+  321 |  97, 99, 104, 52, 0 };
+      |                    ^~
+      |                    ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: At top level:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:322:7: error: redefinition of ‘v’
+  322 | char *v[] = { u, 0 };
+      |       ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:5:7: note: previous definition of ‘v’ with type ‘char *[1]’
+    5 | char *v[] = { u, 0 };
+      |       ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:323:8: error: redefinition of ‘struct S’
+  323 | struct S { char a[1p]; struct S *b[31]; };
+      |        ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:6:8: note: originally defined here
+    6 | struct S { char a[1p]; struct S *b[31]; };
+      |        ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:323:19: error: invalid suffix "p" on integer constant
+  323 | struct S { char a[1p]; struct S *b[31]; };
+      |                   ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:324:10: error: conflicting types for ‘r’; have ‘struct S[7]’
+  324 | struct S r[7], *r2 = r;
+      |          ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:7:10: note: previous declaration of ‘r’ with type ‘struct S[7]’
+    7 | struct S r[7], *r2 = r;
+      |          ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:324:17: error: conflicting types for ‘r2’; have ‘struct S *’
+  324 | struct S r[7], *r2 = r;
+      |                 ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:7:17: note: previous definition of ‘r2’ with type ‘struct S *’
+    7 | struct S r[7], *r2 = r;
+      |                 ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:325:18: error: conflicting types for ‘w’; have ‘struct S *’
+  325 | static struct S *w = 0;
+      |                  ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:8:18: note: previous definition of ‘w’ with type ‘struct S *’
+    8 | static struct S *w = 0;
+      |                  ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:328:1: error: redefinition of ‘fn’
+  328 | fn (int x)
+      | ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:11:1: note: previous definition of ‘fn’ with type ‘int(int)’
+   11 | fn (int x)
+      | ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:336:1: error: redefinition of ‘foo’
+  336 | foo (char x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:19:1: note: previous definition of ‘foo’ with type ‘int(char)’
+   19 | foo (char x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘foo’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:338:10: error: stray ‘\220’ in program
+  338 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |          ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:338:11: error: stray ‘\265’ in program
+  338 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |              ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:338:12: error: stray ‘\324’ in program
+  338 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:338:13: error: stray ‘\10’ in program
+  338 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                      ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:338:14: error: stray ‘\20’ in program
+  338 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                              ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:338:15: error: ‘b’ undeclared (first use in this function)
+  338 |   if (x =���b  = 0)
+      |               ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:346:7: error: ‘__bui0fi’ undeclared (first use in this function)
+  346 |       __bui0fi);
+      |       ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:346:15: error: expected ‘;’ before ‘)’ token
+  346 |       __bui0fi);
+      |               ^
+      |               ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:346:15: error: expected statement before ‘)’ token
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:347:1: error: unknown type name ‘floa’; did you mean ‘float’?
+  347 | floa x;-
+      | ^~~~
+      | float
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:349:1: error: ‘m128’ undeclared (first use in this function)
+  349 | m128)));
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:349:5: error: expected ‘;’ before ‘)’ token
+  349 | m128)));
+      |     ^
+      |     ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:349:5: error: expected statement before ‘)’ token
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:349:6: error: expected statement before ‘)’ token
+  349 | m128)));
+      |      ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:349:7: error: expected statement before ‘)’ token
+  349 | m128)));
+      |       ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:350:1: error: ‘t’ undeclared (first use in this function)
+  350 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:350:2: error: expected ‘;’ before ‘__complex__’
+  350 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      |  ^~~~~~~~~~~~
+      |  ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:353:1: error: ‘main’ undeclared (first use in this function)
+  353 | main
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:353:5: error: expected ‘;’ before ‘void’
+  353 | main
+      |     ^
+      |     ;
+  354 | void func(void)
+      | ~~~~ 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:378:9: error: stray ‘\232’ in program
+  378 |   short <9a>:3, g:3{, h:10;
+      |         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:388:2: error: stray ‘\213’ in program
+  388 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:388:3: error: stray ‘\220’ in program
+  388 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |      ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:388:9: error: stray ‘\2’ in program
+  388 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |               ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:392:7: error: expected statement before ‘)’ token
+  392 | m128)));
+      |       ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:393:2: error: expected ‘;’ before ‘__complex__’
+  393 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      |  ^~~~~~~~~~~~
+      |  ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:394:20: error: redeclaration of ‘z’ with no linkage
+  394 | float __complex__  z;
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:351:20: note: previous declaration of ‘z’ with type ‘complex float’
+  351 | float __complex__  z;
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:396:5: error: expected ‘;’ before ‘void’
+  396 | main
+      |     ^
+      |     ;
+  397 | void fun/       /complex-5.c */
+      | ~~~~ 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:397:27: error: invalid suffix "c" on floating constant
+  397 | void fun/       /complex-5.c */
+      |                           ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:398:38: error: expected statement before ‘)’ token
+  398 | float __complea, float __complex__  b)
+      |                                      ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:400:10: error: ‘a’ undeclared (first use in this function)
+  400 |   return a + b;
+      |          ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:403:9: error: stray ‘\2’ in program
+  403 | float __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |         ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:403:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_’
+  403 | float __       _  x = 1.0 + 14.0 * (1.0fi);
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:403:17: error: unknown type name ‘_’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:403:20: error: redeclaration of ‘x’ with no linkage
+  403 | float __       _  x = 1.0 + 14.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:347:6: note: previous declaration of ‘x’ with type ‘int’
+  347 | floa x;-
+      |      ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:406:20: error: redeclaration of ‘z’ with no linkage
+  406 | float __complex__  z;
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:394:20: note: previous declaration of ‘z’ with type ‘complex float’
+  394 | float __complex__  z;
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:408:8: error: expected ‘;’ before ‘{’ token
+  408 | main ()
+      |        ^
+      |        ;
+  409 | {
+      | ~       
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:485:15: error: ‘c’ undeclared (first use in this function)
+  485 |     returnif (c >= 48 && c <= 57)
+      |               ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:485:34: error: expected ‘;’ before ‘g’
+  485 |     returnif (c >= 48 && c <= 57)
+      |                                  ^
+      |                                  ;
+  486 |                 g[h] = c - 48;
+      |                 ~                 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:489:19: error: ‘i’ undeclared (first use in this function)
+  489 |                   i = foo (c);
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:490:33: error: expected expression before ‘]’ token
+  490 |                   if (!s->b[    ]
+      |                                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:497:19: error: ‘h’ undeclared (first use in this function)
+  497 |                   h++;
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘foo’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:500:29: error: ‘s’ undeclared (first use in this function)
+  500 |           __builtin_memcpy (s->a, g, 10);
+      |                             ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:500:35: error: ‘g’ undeclared (first use in this function)
+  500 |           __builtin_memcpy (s->a, g, 10);
+      |                                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:501:15: error: ‘d’ undeclared (first use in this function)
+  501 |           if (d)
+      |               ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:502:13: error: ‘f’ undeclared (first use in this function)
+  502 |             f = d + 1;
+      |             ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: At top level:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:504:7: error: expected identifier or ‘(’ before ‘while’
+  504 |       while (d);
+      |       ^~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:505:5: error: expected identifier or ‘(’ before ‘}’ token
+  505 |     }
+      |     ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:506:1: error: expected identifier or ‘(’ before ‘}’ token
+  506 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:509:1: error: redefinition of ‘baz’
+  509 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:860:9: error: stray ‘\232’ in program
+  860 |   short <9a>:3, g:3{, h:10;
+      |         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:860:17: error: expected ‘,’, ‘;’ or ‘}’ before ‘{’ token
+  860 |   short �:3, g:3{, h:10;
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:870:2: error: stray ‘\213’ in program
+  870 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:870:3: error: stray ‘\220’ in program
+  870 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |      ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:870:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘at’
+  870 | f��at __       _  x = 1.0 + 14.0 * (1.0fi);
+      |    ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:870:4: error: unknown type name ‘at’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:870:9: error: stray ‘\2’ in program
+  870 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |               ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:872:1: error: unknown type name ‘floa’; did you mean ‘float’?
+  872 | floa x;
+      | ^~~~
+      | float
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:874:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+  874 | m128)));
+      |     ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:875:2: error: expected ‘;’ before ‘__complex__’
+  875 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      |  ^~~~~~~~~~~~
+      |  ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:875:16: error: conflicting types for ‘w’; have ‘complex double’
+  875 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      |                ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:325:18: note: previous definition of ‘w’ with type ‘struct S *’
+  325 | static struct S *w = 0;
+      |                  ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:878:5: error: expected ‘;’ before ‘void’
+  878 | main
+      |     ^
+      |     ;
+  879 | void fun/       /complex-5.c */
+      | ~~~~ 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:879:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘/’ token
+  879 | void fun/       /complex-5.c */
+      |         ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:879:27: error: invalid suffix "c" on floating constant
+  879 | void fun/       /complex-5.c */
+      |                           ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:885:9: error: stray ‘\2’ in program
+  885 | float __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |         ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:885:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_’
+  885 | float __       _  x = 1.0 + 14.0 * (1.0fi);
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:885:17: error: unknown type name ‘_’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:886:20: error: redefinition of ‘y’
+  886 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:871:20: note: previous definition of ‘y’ with type ‘complex float’
+  871 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:890:1: error: redefinition of ‘main’
+  890 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:549:1: note: previous definition of ‘main’ with type ‘int()’
+  549 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:898:1: error: expected identifier or ‘(’ before ‘}’ token
+  898 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:901:1: error: redefinition of ‘bar’
+  901 | bar (char **x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:35:1: note: previous definition of ‘bar’ with type ‘void(char **)’
+   35 | bar (char **x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:948:1: error: redefinition of ‘baz’
+  948 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:967:15: error: ‘c’ undeclared (first use in this function)
+  967 |     returnif (c >= 48 && c <= 57)
+      |               ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:967:34: error: expected ‘;’ before ‘g’
+  967 |     returnif (c >= 48 && c <= 57)
+      |                                  ^
+      |                                  ;
+  968 |                 g[h] = c - 48;
+      |                 ~                 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:971:19: error: ‘i’ undeclared (first use in this function)
+  971 |                   i = foo (c);
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:972:33: error: expected expression before ‘]’ token
+  972 |                   if (!s->b[    ]
+      |                                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:979:19: error: ‘h’ undeclared (first use in this function)
+  979 |                   h++;
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: At top level:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:982:30: error: expected ‘)’ before ‘->’ token
+  982 |           __builtin_memcpy (s->a, g, 10);
+      |                              ^~
+      |                              )
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:983:11: error: expected identifier or ‘(’ before ‘if’
+  983 |           if (d)
+      |           ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:985:9: error: expected identifier or ‘(’ before ‘}’ token
+  985 |         }
+      |         ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:986:7: error: expected identifier or ‘(’ before ‘while’
+  986 |       while (d);
+      |       ^~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:987:5: error: expected identifier or ‘(’ before ‘}’ token
+  987 |     }
+      |     ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:988:1: error: expected identifier or ‘(’ before ‘}’ token
+  988 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:991:1: error: redefinition of ‘baz’
+  991 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1031:1: error: redefinition of ‘main’
+ 1031 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:549:1: note: previous definition of ‘main’ with type ‘int()’
+  549 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1232:9: error: stray ‘\232’ in program
+ 1232 |   short <9a>:3, g:3{, h:10;
+      |         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1232:17: error: expected ‘,’, ‘;’ or ‘}’ before ‘{’ token
+ 1232 |   short �:3, g:3{, h:10;
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1242:2: error: stray ‘\213’ in program
+ 1242 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1242:3: error: stray ‘\220’ in program
+ 1242 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |      ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1242:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘at’
+ 1242 | f��at __       _  x = 1.0 + 14.0 * (1.0fi);
+      |    ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1242:4: error: unknown type name ‘at’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1242:9: error: stray ‘\2’ in program
+ 1242 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |               ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1243:20: error: redefinition of ‘y’
+ 1243 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:871:20: note: previous definition of ‘y’ with type ‘complex float’
+  871 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1244:1: error: unknown type name ‘floa’; did you mean ‘float’?
+ 1244 | floa x;
+      | ^~~~
+      | float
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1246:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+ 1246 | m128)));
+      |     ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1247:2: error: expected ‘;’ before ‘__complex__’
+ 1247 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      |  ^~~~~~~~~~~~
+      |  ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1250:5: error: expected ‘;’ before ‘void’
+ 1250 | main
+      |     ^
+      |     ;
+ 1251 | void fun/       /complex-5.c */
+      | ~~~~ 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1251:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘/’ token
+ 1251 | void fun/       /complex-5.c */
+      |         ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1251:27: error: invalid suffix "c" on floating constant
+ 1251 | void fun/       /complex-5.c */
+      |                           ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1257:9: error: stray ‘\2’ in program
+ 1257 | float __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |         ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1257:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_’
+ 1257 | float __       _  x = 1.0 + 14.0 * (1.0fi);
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1257:17: error: unknown type name ‘_’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1258:20: error: redefinition of ‘y’
+ 1258 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:871:20: note: previous definition of ‘y’ with type ‘complex float’
+  871 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1262:1: error: redefinition of ‘main’
+ 1262 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:549:1: note: previous definition of ‘main’ with type ‘int()’
+  549 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1270:1: error: expected identifier or ‘(’ before ‘}’ token
+ 1270 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1273:1: error: redefinition of ‘bar’
+ 1273 | bar (char **x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:35:1: note: previous definition of ‘bar’ with type ‘void(char **)’
+   35 | bar (char **x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1320:1: error: redefinition of ‘baz’
+ 1320 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘baz’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1339:15: error: ‘c’ undeclared (first use in this function)
+ 1339 |     returnif (c >= 48 && c <= 57)
+      |               ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1339:34: error: expected ‘;’ before ‘g’
+ 1339 |     returnif (c >= 48 && c <= 57)
+      |                                  ^
+      |                                  ;
+ 1340 |                 g[h] = c - 48;
+      |                 ~                 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1343:19: error: ‘i’ undeclared (first use in this function)
+ 1343 |                   i = foo (c);
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1344:33: error: expected expression before ‘]’ token
+ 1344 |                   if (!s->b[    ]
+      |                                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1351:19: error: ‘h’ undeclared (first use in this function)
+ 1351 |                   h++;
+      |                   ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: At top level:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1354:30: error: expected ‘)’ before ‘->’ token
+ 1354 |           __builtin_memcpy (s->a, g, 10);
+      |                              ^~
+      |                              )
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1355:11: error: expected identifier or ‘(’ before ‘if’
+ 1355 |           if (d)
+      |           ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1357:9: error: expected identifier or ‘(’ before ‘}’ token
+ 1357 |         }
+      |         ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1358:7: error: expected identifier or ‘(’ before ‘while’
+ 1358 |       while (d);
+      |       ^~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1359:5: error: expected identifier or ‘(’ before ‘}’ token
+ 1359 |     }
+      |     ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1360:1: error: expected identifier or ‘(’ before ‘}’ token
+ 1360 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1363:1: error: redefinition of ‘baz’
+ 1363 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1403:1: error: redefinition of ‘main’
+ 1403 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:549:1: note: previous definition of ‘main’ with type ‘int()’
+  549 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1776:9: error: stray ‘\232’ in program
+ 1776 |   short <9a>:3, g:3{, h:10;
+      |         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1776:17: error: expected ‘,’, ‘;’ or ‘}’ before ‘{’ token
+ 1776 |   short �:3, g:3{, h:10;
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1786:2: error: stray ‘\213’ in program
+ 1786 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1786:3: error: stray ‘\220’ in program
+ 1786 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |      ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1786:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘at’
+ 1786 | f��at __       _  x = 1.0 + 14.0 * (1.0fi);
+      |    ^~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1786:4: error: unknown type name ‘at’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1786:9: error: stray ‘\2’ in program
+ 1786 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |               ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1787:20: error: redefinition of ‘y’
+ 1787 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:871:20: note: previous definition of ‘y’ with type ‘complex float’
+  871 | float __complex__  y = 7.0 + 5.0 * (1.0fi);
+      |                    ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1788:1: error: unknown type name ‘floa’; did you mean ‘float’?
+ 1788 | floa x;
+      | ^~~~
+      | float
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1790:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+ 1790 | m128)));
+      |     ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1791:2: error: expected ‘;’ before ‘__complex__’
+ 1791 | t __complex__  w = 8.0 + 38.0 * (1.0fi);
+      |  ^~~~~~~~~~~~
+      |  ;
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1794:5: error: expected ‘;’ before ‘void’
+ 1794 | main
+      |     ^
+      |     ;
+ 1795 | void fun/       /complex-5.c */
+      | ~~~~ 
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1795:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘/’ token
+ 1795 | void fun/       /complex-5.c */
+      |         ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1795:27: error: invalid suffix "c" on floating constant
+ 1795 | void fun/       /complex-5.c */
+      |                           ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1801:9: error: stray ‘\2’ in program
+ 1801 | float __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * lone)) int
+      |         ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1801:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘_’
+ 1801 | float __       _  x = 1.0 + 14.0 * lone)) int
+      |                 ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1801:17: error: unknown type name ‘_’
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1804:10: error: stray ‘\220’ in program
+ 1804 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |          ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1804:11: error: stray ‘\265’ in program
+ 1804 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |              ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1804:12: error: stray ‘\324’ in program
+ 1804 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1804:13: error: stray ‘\10’ in program
+ 1804 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                      ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1804:14: error: stray ‘\20’ in program
+ 1804 |   if (x =<90><b5><d4><U+0008><U+0010>b<U+0000><U+0000>= 0)
+      |                              ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1844:9: error: stray ‘\232’ in program
+ 1844 |   short <9a>:3, g:3{, h:10;
+      |         ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1854:2: error: stray ‘\213’ in program
+ 1854 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |  ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1854:3: error: stray ‘\220’ in program
+ 1854 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |      ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1854:9: error: stray ‘\2’ in program
+ 1854 | f<8b><90>at __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |               ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1863:27: error: invalid suffix "c" on floating constant
+ 1863 | void fun/       /complex-5.c */
+      |                           ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1869:9: error: stray ‘\2’ in program
+ 1869 | float __<U+0002><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000><U+0000>_  x = 1.0 + 14.0 * (1.0fi);
+      |         ^~~~~~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1972:1: error: expected identifier or ‘(’ before ‘}’ token
+ 1972 | }
+      | ^
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:1975:1: error: redefinition of ‘baz’
+ 1975 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:259:1: note: previous definition of ‘baz’ with type ‘void(char *)’
+  259 | baz (char *x)
+      | ^~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:2015:1: error: redefinition of ‘main’
+ 2015 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:549:1: note: previous definition of ‘main’ with type ‘int()’
+  549 | main ()
+      | ^~~~
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c: In function ‘bar’:
+3d441f9033e7a6c7b5657205bbbb0cfaae89b89a.c:437:13: internal compiler error: tree check: expected class ‘type’, have ‘exceptional’ (error_mark) in useless_type_conversion_p, at gimple-expr.cc:87
+  437 |           s = w;
+      |           ~~^~~
+0x7e4445 tree_class_check_failed(tree_node const*, tree_code_class, char const*, int, char const*)
+	.././../gcc-source/gcc/tree.cc:8738
+0x7114ec tree_class_check(tree_node*, tree_code_class, char const*, int, char const*)
+	.././../gcc-source/gcc/tree.h:3573
+0x7114ec useless_type_conversion_p(tree_node*, tree_node*)
+	.././../gcc-source/gcc/gimple-expr.cc:87
+0xc3ba21 gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:5993
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+0xc3d47d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16467
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

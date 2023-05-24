@@ -1,0 +1,21 @@
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+<unknown>:0: error: invalid number of bytes
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x26): relocation truncated to fit: R_X86_64_GOTPCRELX against symbol `__libc_start_main@@GLIBC_2.2.5' defined in .text section in /lib/x86_64-linux-gnu/libc.so.6
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o:(.eh_frame+0x20): relocation truncated to fit: R_X86_64_PC32 against `.text'
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crt1.o:(.eh_frame+0x50): relocation truncated to fit: R_X86_64_PC32 against `.text'
+/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o: In function `_init':
+(.init+0x7): relocation truncated to fit: R_X86_64_REX_GOTPCRELX against undefined symbol `__gmon_start__'
+/usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o: In function `deregister_tm_clones':
+crtstuff.c:(.text+0x1): relocation truncated to fit: R_X86_64_32 against symbol `__TMC_END__' defined in .data section in a.out
+crtstuff.c:(.text+0x7): relocation truncated to fit: R_X86_64_32S against `.tm_clone_table'
+crtstuff.c:(.text+0x18): relocation truncated to fit: R_X86_64_32 against `.tm_clone_table'
+/usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o: In function `register_tm_clones':
+crtstuff.c:(.text+0x31): relocation truncated to fit: R_X86_64_32 against symbol `__TMC_END__' defined in .data section in a.out
+crtstuff.c:(.text+0x38): relocation truncated to fit: R_X86_64_32S against `.tm_clone_table'
+crtstuff.c:(.text+0x5a): relocation truncated to fit: R_X86_64_32 against `.tm_clone_table'
+/usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o: In function `__do_global_dtors_aux':
+crtstuff.c:(.text+0x72): additional relocation overflows omitted from the output
+clang: error: unable to execute command: CPU time limit exceeded (core dumped)
+clang: error: linker command failed due to signal (use -v to see invocation)

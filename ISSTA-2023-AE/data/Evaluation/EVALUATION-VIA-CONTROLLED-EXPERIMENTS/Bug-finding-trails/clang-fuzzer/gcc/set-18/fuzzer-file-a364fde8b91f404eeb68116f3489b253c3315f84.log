@@ -1,0 +1,187 @@
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘bar’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:31:10: error: expected ‘;’ before ‘)’ token
+   31 | shift * 8);
+      |          ^
+      |          ;
+a364fde8b91f404eeb68116f3489b253c3315f84.c:31:10: error: expected statement before ‘)’ token
+a364fde8b91f404eeb68116f3489b253c3315f84.c: At top level:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:39:1: error: redefinition of ‘bar’
+   39 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:23:1: note: previous definition of ‘bar’ with type ‘void(struct S *, const struct S *, int)’
+   23 | bar (struct S *out, struct S const *in, int shift)
+      | ^~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:54:32: error: unknown type name ‘struc’; did you mean ‘struct’?
+   54 | baz (struct S *r, struct S *a, struc  b��0t S *b, struct S *c, struct S *d)
+      |                                ^~~~~
+      |                                struct
+a364fde8b91f404eeb68116f3489b253c3315f84.c:54:40: error: stray ‘\20’ in program
+   54 | baz (struct S *r, struct S *a, struc<U+0000><U+0000>b<U+0010><U+0004><d5><d8>0t S *b, struct S *c, struct S *d)
+      |                                                      ^~~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:54:41: error: stray ‘\4’ in program
+   54 | baz (struct S *r, struct S *a, struc<U+0000><U+0000>b<U+0010><U+0004><d5><d8>0t S *b, struct S *c, struct S *d)
+      |                                                              ^~~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:54:42: error: stray ‘\325’ in program
+   54 | baz (struct S *r, struct S *a, struc<U+0000><U+0000>b<U+0010><U+0004><d5><d8>0t S *b, struct S *c, struct S *d)
+      |                                                                      ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:54:43: error: stray ‘\330’ in program
+   54 | baz (struct S *r, struct S *a, struc<U+0000><U+0000>b<U+0010><U+0004><d5><d8>0t S *b, struct S *c, struct S *d)
+      |                                                                          ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:54:44: error: invalid suffix "t" on integer constant
+   54 | baz (struct S *r, struct S *a, struc  b��0t S *b, struct S *c, struct S *d)
+      |                                            ^~
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘main’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:68:36: error: expected ‘}’ before ‘)’ token
+   68 |   struct S a[] = { { 0x000bffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                    ~               ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:68:36: error: expected ‘}’ before ‘)’ token
+   68 |   struct S a[] = { { 0x000bffffff6U) ^ y.u[3] ^ (d->u[3] << 18);
+      |                  ~                 ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:68:36: error: expected ‘,’ or ‘;’ before ‘)’ token
+a364fde8b91f404eeb68116f3489b253c3315f84.c: At top level:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:72:1: error: redefinition of ‘main’
+   72 | main ()
+      | ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:66:1: note: previous definition of ‘main’ with type ‘int()’
+   66 | main ()
+      | ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘main’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:74:46: error: invalid suffix "xbfde9f" on integer constant
+   74 |   struct S a[] = { { 0x000004d3, 0xbc5448db, 022xbfde9f, 0xebb44f8f },
+      |                                              ^~~~~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:77:39: error: ‘ptw66’ undeclared (first use in this function)
+   77 |                    { 0x88274b07, 0xe7+ptw66, 0xc0ea9f47, 0xb6a83c43 },
+      |                                       ^~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:77:39: note: each undeclared identifier is reported only once for each function it appears in
+In file included from a364fde8b91f404eeb68116f3489b253c3315f84.c:86:
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:40:1: error: expected expression before ‘typedef’
+   40 | typedef __builtin_va_list __gnuc_va_list;
+      | ^~~~~~~
+/home/user42/data/gcc-csmith-1201/gcc-install/lib/gcc/x86_64-pc-linux-gnu/12.0.1/include/stdarg.h:99:9: error: unknown type name ‘__gnuc_va_list’
+   99 | typedef __gnuc_va_list va_list;
+      |         ^~~~~~~~~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:88:5: error: conflicting types for ‘a’; have ‘int’
+   88 | int a, b;
+      |     ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:74:12: note: previous definition of ‘a’ with type ‘struct S[1]’
+   74 |   struct S a[] = { { 0x000004d3, 0xbc5448db, 022xbfde9f, 0xebb44f8f },
+      |            ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:92:1: error: invalid storage class for function ‘f1’
+   92 | f1 (const char *fmt, ...)
+      | ^~
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘f1’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:95:7: error: expected ‘(’ before ‘vola’
+   95 |   asm vola, const char *),  { __builtin_abort (); }
+      |       ^~~~
+      |       (
+a364fde8b91f404eeb68116f3489b253c3315f84.c:95:7: error: ‘vola’ undeclared (first use in this function)
+   95 |   asm vola, const char *),  { __builtin_abort (); }
+      |       ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:95:13: error: expected expression before ‘const’
+   95 |   asm vola, const char *),  { __builtin_abort (); }
+      |             ^~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:95:25: error: expected statement before ‘)’ token
+   95 |   asm vola, const char *),  { __builtin_abort (); }
+      |                         ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:95:26: error: expected expression before ‘,’ token
+   95 |   asm vola, const char *),  { __builtin_abort (); }
+      |                          ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘main’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:105:30: error: expected ‘;’ before ‘)’ token
+  105 | /* ProgramSourceLLVM */ "foo") != 0
+      |                              ^
+      |                              ;
+a364fde8b91f404eeb68116f3489b253c3315f84.c:105:30: error: expected statement before ‘)’ token
+a364fde8b91f404eeb68116f3489b253c3315f84.c:105:32: error: expected expression before ‘!=’ token
+  105 | /* ProgramSourceLLVM */ "foo") != 0
+      |                                ^~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:107:66: error: expected statement before ‘)’ token
+  107 |       || __builtin_strcmp (va_arg (ap, const char *), "bar") != 0)
+      |                                                                  ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:109:11: error: ‘ap’ undeclared (first use in this function); did you mean ‘a’?
+  109 |   va_end (ap);
+      |           ^~
+a364fde8b91f404eeb68116f3489b253c3315f84.c: At top level:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:113:22: error: unknown type name ‘va_list’
+  113 | f2 (const char *fmt, va_list ap)
+      |                      ^~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:87:1: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+   86 | #include <stdarg.h>
+  +++ |+#include <stdarg.h>
+   87 | 
+a364fde8b91f404eeb68116f3489b253c3315f84.c:124:27: error: unknown type name ‘va_list’
+  124 | f3 (int x, char const *y, va_list z)
+      |                           ^~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:124:27: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘f4’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:134:3: error: unknown type name ‘va_list’
+  134 |   va_list z;
+      |   ^~~~~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:134:3: note: ‘va_list’ is defined in header ‘<stdarg.h>’; did you forget to ‘#include <stdarg.h>’?
+a364fde8b91f404eeb68116f3489b253c3315f84.c:136:14: error: ‘c’ undeclared (first use in this function)
+  136 |   if (!x && *c == '\0')
+      |              ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:137:7: error: ‘b’ undeclared (first use in this function)
+  137 |     ++b;
+      |       ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c: At top level:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:143:1: error: redefinition of ‘main’
+  143 | main ()
+      | ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c:66:1: note: previous definition of ‘main’ with type ‘int()’
+   66 | main ()
+      | ^~~~
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘main’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:147:7: error: ‘a’ undeclared (first use in this function)
+  147 |   if (a != 1 || b != 1)
+      |       ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c:147:17: error: ‘b’ undeclared (first use in this function)
+  147 |   if (a != 1 || b != 1)
+      |                 ^
+a364fde8b91f404eeb68116f3489b253c3315f84.c: In function ‘main’:
+a364fde8b91f404eeb68116f3489b253c3315f84.c:80:38: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   80 |   baz (&a[5], &a[0], &a[1], &a[2], &a[3]);
+      |                                     ~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc32c23 gimplify_addr_expr
+	.././../gcc-source/gcc/gimplify.cc:6451
+0xc2b471 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15103
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

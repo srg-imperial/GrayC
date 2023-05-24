@@ -1,0 +1,60 @@
+** NOT A BUG **
+
+We reported this UM-generated program as a bug to the Frama-C developers:
+===
+void main() { char a[1][3 % 1] = {'3'}; }
+===
+
+The developers response:
+"Actually, the code is not well-formed:
+
+the initializer attempts to initialize an array with the scalar '3'
+
+
+3%1 is 0, so that the inner array is in fact empty
+
+Anyways, the crash is still present for a[2][3%2] = { { '3' } } or a[2][3%1] = { { } } (note that the latter require a gcc machdep such as -machdep gcc_x86_64)
+Moreover, the issue only lies with local arrays. Global arrays are perfectly well handled"
+=================
+
+Note that: shortly after that the bug report was closed with no fix.
+
+
+=====
+Trace:
+[kernel] Current source was: test.c:1
+  The full backtrace is:
+  Raised at file "src/kernel_services/ast_queries/ast_info.ml", line 53, characters 12-24
+  Called from file "src/kernel_services/ast_queries/ast_info.ml", line 416, characters 41-60
+  Called from file "src/plugins/inout/cumulative_analysis.ml", line 36, characters 9-32
+  Called from file "src/plugins/inout/operational_inputs.ml", line 412, characters 25-73
+  Called from file "src/plugins/inout/operational_inputs.ml", line 454, characters 34-59
+  Called from file "src/kernel_services/analysis/dataflows.ml", line 515, characters 12-42
+  Called from file "src/kernel_services/analysis/dataflows.ml", line 523, characters 19-30
+  Called from file "src/kernel_services/analysis/dataflows.ml", line 524, characters 5-14
+  Called from file "src/kernel_services/analysis/dataflows.ml" (inlined), line 583, characters 10-48
+  Called from file "src/kernel_services/analysis/dataflows.ml" (inlined), line 583, characters 10-57
+  Called from file "src/kernel_services/analysis/dataflows.ml", line 583, characters 10-60
+  Called from file "src/plugins/inout/operational_inputs.ml" (inlined), line 695, characters 6-37
+  Called from file "src/plugins/inout/operational_inputs.ml", line 695, characters 6-48
+  Called from file "src/plugins/inout/operational_inputs.ml", line 706, characters 15-79
+  Called from file "queue.ml", line 121, characters 6-15
+  Called from file "src/plugins/value/engine/iterator.ml", line 732, characters 8-214
+  Called from file "src/plugins/value/engine/iterator.ml", line 781, characters 6-42
+  Called from file "src/plugins/value/utils/eva_utils.ml", line 121, characters 6-10
+  Called from file "src/plugins/value/engine/compute_functions.ml" (inlined), line 214, characters 17-68
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 247, characters 8-47
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 252, characters 38-63
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 178, characters 24-54
+  Called from file "src/plugins/value/engine/compute_functions.ml", line 358, characters 25-66
+  Called from file "src/plugins/value/utils/eva_utils.ml", line 121, characters 6-10
+  Called from file "src/libraries/project/state_builder.ml", line 998, characters 9-13
+  Re-raised at file "src/libraries/project/state_builder.ml", line 1006, characters 9-18
+  Called from file "src/plugins/value/register.ml", line 31, characters 40-59
+  Called from file "queue.ml", line 121, characters 6-15
+  Called from file "src/kernel_internals/runtime/boot.ml", line 36, characters 4-20
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 846, characters 2-9
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 876, characters 18-64
+  Called from file "src/kernel_services/cmdline_parameters/cmdline.ml", line 235, characters 4-8
+  
+  Unexpected error (File "src/kernel_services/ast_queries/ast_info.ml", line 53, characters 12-18: Assertion failed).

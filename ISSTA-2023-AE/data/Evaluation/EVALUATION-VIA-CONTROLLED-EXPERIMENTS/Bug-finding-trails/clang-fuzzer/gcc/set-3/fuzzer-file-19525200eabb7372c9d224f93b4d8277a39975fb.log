@@ -1,0 +1,262 @@
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘test4’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:30:3: error: built-in function ‘__builtin_return_address’ must be directly called
+   30 |   volatile long long a = (long long) __builtin_return_address 2(0);
+      |   ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:30:63: error: expected ‘,’ or ‘;’ before numeric constant
+   30 |   volatile long long a = (long long) __builtin_return_address 2(0);
+      |                                                               ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: At top level:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:34:11: error: unknown type name ‘vrget’
+   34 | int main (vrget return_address } */
+      |           ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:34:32: error: expected ‘;’, ‘,’ or ‘)’ before ‘}’ token
+   34 | int main (vrget return_address } */
+      |                                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:34:35: error: expected identifier or ‘(’ before ‘/’ token
+   34 | int main (vrget return_address } */
+      |                                   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:41:5: error: conflicting types for ‘i0’; have ‘int’
+   41 | int i0,i; 0[]1
+      |     ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:10:5: note: previous declaration of ‘i0’ with type ‘int[0]’
+   10 | int i0[0], i1;
+      |     ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:41:11: error: expected identifier or ‘(’ before numeric constant
+   41 | int i0,i; 0[]1
+      |           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:49:6: error: redefinition of ‘test2’
+   49 | void test2 (void)
+      |      ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:18:6: note: previous definition of ‘test2’ with type ‘void(void)’
+   18 | void test2 (void)
+      |      ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:54:6: error: redefinition of ‘test3’
+   54 | void test3 (void)
+      |      ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:23:6: note: previous definition of ‘test3’ with type ‘void(void)’
+   23 | void test3 (void)
+      |      ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘test3’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:56:26: error: ‘__builtin_return_addres’ undeclared (first use in this function); did you mean ‘__builtin_return_address’?
+   56 |   i1 = (int) (long long) __builtin_return_addres/* corpus/20180921-1.c */
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~
+      |                          __builtin_return_address
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:56:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:56:49: error: expected ‘;’ before ‘const’
+   56 |   i1 = (int) (long long) __builtin_return_addres/* corpus/20180921-1.c */
+      |                                                 ^
+      |                                                 ;
+......
+   60 | const char *ss;
+      | ~~~~~                                            
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘dummy’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:64:3: error: ‘ss’ undeclared (first use in this function); did you mean ‘s’?
+   64 |   ss = s;
+      |   ^~
+      |   s
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘test3’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:75: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                                           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:73:5: error: redeclaration of ‘i’ with no linkage
+   73 | int i[6];
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:67:5: note: previous declaration of ‘i’ with type ‘int[6]’
+   67 | int i[6];
+      |     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:12: error: redeclaration of ‘j’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:12: note: previous declaration of ‘j’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:15: error: redeclaration of ‘v’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |               ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:15: note: previous declaration of ‘v’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |               ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:18: error: redeclaration of ‘e’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:18: note: previous declaration of ‘e’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:21: error: redeclaration of ‘f’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:21: note: previous declaration of ‘f’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:24: error: redefinition of ‘h’
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                        ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:24: note: previous definition of ‘h’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                        ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:31: error: redeclaration of ‘k’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                               ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:31: note: previous declaration of ‘k’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                               ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:34: error: redeclaration of ‘l’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:34: note: previous declaration of ‘l’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                  ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:37: error: redeclaration of ‘n’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:37: note: previous declaration of ‘n’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                     ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:40: error: redeclaration of ‘o’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                        ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:40: note: previous declaration of ‘o’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                        ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:43: error: redeclaration of ‘p’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:43: note: previous declaration of ‘p’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                           ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:46: error: redeclaration of ‘q’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                              ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:46: note: previous declaration of ‘q’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                              ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:49: error: redeclaration of ‘r’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                 ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:49: note: previous declaration of ‘r’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                 ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:52: error: redeclaration of ‘s’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:52: note: previous declaration of ‘s’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:55: error: redeclaration of ‘u’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:55: note: previous declaration of ‘u’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                       ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:58: error: redeclaration of ‘w’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:58: note: previous declaration of ‘w’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                          ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:61: error: redeclaration of ‘x’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:61: note: previous declaration of ‘x’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                             ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:64: error: redeclaration of ‘y’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:64: note: previous declaration of ‘y’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                                ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:67: error: redeclaration of ‘z’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                                   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:67: note: previous declaration of ‘z’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                                   ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:70: error: redeclaration of ‘aa’ with no linkage
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                                      ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:68:70: note: previous declaration of ‘aa’ with type ‘int’
+   68 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, a..)
+      |                                                                      ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:93:17: error: invalid storage class for function ‘at’
+   93 | static unsigned at() {
+      |                 ^~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘aw’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:117:14: error: expected expression before ‘_Bool’
+  117 | #define bool _Bool
+      |              ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:119:1: note: in expansion of macro ‘bool’
+  119 | bool f(int a, bool c) __attribute__((noinline));
+      | ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:153:44: error: called object ‘s’ is not a function or function pointer
+  153 |               int bg[3], bh = k, bj = ag | s (0);
+      |                                            ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:74:52: note: declared here
+   74 | static int j, v, e, f, h = 5, k, l, n, o, p, q, r, s, u, w, x, y, z, aa, ab, ac,
+      |                                                    ^
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:156:1: error: ‘voidae’ undeclared (first use in this function); did you mean ‘void’?
+  156 | voidae, test4 (void)
+      | ^~~~~~
+      | void
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:156:16: error: expected expression before ‘void’
+  156 | voidae, test4 (void)
+      |                ^~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:156:9: error: too many arguments to function ‘test4’
+  156 | voidae, test4 (void)
+      |         ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:28:6: note: declared here
+   28 | void test4 (void)
+      |      ^~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:156:21: error: expected ‘;’ before ‘{’ token
+  156 | voidae, test4 (void)
+      |                     ^
+      |                     ;
+  157 | {
+      | ~                    
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:158:3: error: expected declaration or statement at end of input
+  158 |   volatile long long a = ( bk = aj + l3
+      |   ^~~~~~~~
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:158:3: error: expected declaration or statement at end of input
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:158:3: error: expected declaration or statement at end of input
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:158:3: error: expected declaration or statement at end of input
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘test3’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:158:3: error: expected declaration or statement at end of input
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c: In function ‘test2’:
+/home/user42/directed-compiler-fuzzing-code/scripts/8-crash-testing/tar-data/clang-fuzzer-3/segment_5/19525200eabb7372c9d224f93b4d8277a39975fb.c:20:5: internal compiler error: tree check: expected array_type, have error_mark in array_ref_low_bound, at tree.cc:12479
+   20 |   i0[0] = (int) (long long) __builtin_return_address (0);
+      |   ~~^~~
+0x7e3fd0 tree_check_failed(tree_node const*, char const*, int, char const*, ...)
+	.././../gcc-source/gcc/tree.cc:8688
+0x7edb6d tree_check(tree_node*, char const*, int, char const*, tree_code)
+	.././../gcc-source/gcc/tree.h:3450
+0x7edb6d array_ref_low_bound(tree_node*)
+	.././../gcc-source/gcc/tree.cc:12479
+0xc310ef gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3204
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc3bb2b gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:6059
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2efb4 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1428
+0xc2b891 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15257
+0xc3d02f gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc3d02f gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16313
+0xc3d47d gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16467
+0xa691f7 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.cc:675
+0xa6be47 analyze_functions
+	.././../gcc-source/gcc/cgraphunit.cc:1240
+0xa6cacd symbol_table::finalize_compilation_unit()
+	.././../gcc-source/gcc/cgraphunit.cc:2500
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

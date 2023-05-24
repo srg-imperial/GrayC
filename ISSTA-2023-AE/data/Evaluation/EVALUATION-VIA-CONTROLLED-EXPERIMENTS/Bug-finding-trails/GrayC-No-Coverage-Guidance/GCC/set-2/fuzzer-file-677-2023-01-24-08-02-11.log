@@ -1,0 +1,6 @@
+/home/user42/git/directed-compiler-fuzzing-code/scripts/8-crash-testing-copy-2/input/segment_17/__27.segment_17.fuzzer-file-677-2023-01-24-08-02-11.c:130:5: internal compiler error: in expand_call, at calls.cc:3601
+--
+	.././../gcc-source/gcc/cfgexpand.cc:6806
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

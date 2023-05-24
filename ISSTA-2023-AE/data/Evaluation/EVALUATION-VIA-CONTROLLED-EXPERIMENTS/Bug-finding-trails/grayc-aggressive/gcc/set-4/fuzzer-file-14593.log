@@ -1,0 +1,30 @@
+during GIMPLE pass: modref
+fuzzer-file-14593-2021-12-13-16:34:20.c: In function ‘bar’:
+fuzzer-file-14593-2021-12-13-16:34:20.c:108:1: internal compiler error: in insert, at ipa-modref-tree.cc:590
+  108 | }
+      | ^
+0x73c1d3 modref_access_node::insert(vec<modref_access_node, va_gc, vl_embed>*&, modref_access_node, unsigned long, bool)
+	.././../gcc-source/gcc/ipa-modref-tree.cc:590
+0xcd4a4a modref_ref_node<int>::insert_access(modref_access_node, unsigned long, bool)
+	.././../gcc-source/gcc/ipa-modref-tree.h:194
+0xcd4a4a modref_tree<int>::insert(unsigned int, unsigned int, unsigned int, int, int, modref_access_node, bool)
+	.././../gcc-source/gcc/ipa-modref-tree.h:444
+0xcc5a6c modref_tree<int>::insert(tree_node*, int, int, modref_access_node const&, bool)
+	.././../gcc-source/gcc/ipa-modref-tree.h:471
+0xcc5a6c record_access
+	.././../gcc-source/gcc/ipa-modref.cc:1076
+0xcc6398 analyze_load
+	.././../gcc-source/gcc/ipa-modref.cc:1707
+0xc1bb11 walk_stmt_load_store_addr_ops(gimple*, void*, bool (*)(gimple*, tree_node*, tree_node*, void*), bool (*)(gimple*, tree_node*, tree_node*, void*), bool (*)(gimple*, tree_node*, tree_node*, void*))
+	.././../gcc-source/gcc/gimple-walk.cc:800
+0xccf1d1 analyze_stmt
+	.././../gcc-source/gcc/ipa-modref.cc:1788
+0xccf1d1 analyze
+	.././../gcc-source/gcc/ipa-modref.cc:1900
+0xccf1d1 analyze_function
+	.././../gcc-source/gcc/ipa-modref.cc:3219
+0xcd165a execute
+	.././../gcc-source/gcc/ipa-modref.cc:4186
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

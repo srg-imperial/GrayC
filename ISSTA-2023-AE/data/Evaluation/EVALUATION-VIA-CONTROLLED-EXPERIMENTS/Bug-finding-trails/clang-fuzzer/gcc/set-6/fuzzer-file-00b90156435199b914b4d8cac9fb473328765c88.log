@@ -1,0 +1,86 @@
+00b90156435199b914b4d8cac9fb473328765c88.c: In function ‘main’:
+00b90156435199b914b4d8cac9fb473328765c88.c:3:3: error: ‘in’ undeclared (first use in this function); did you mean ‘int’?
+    3 |   in/* corpus/20020213-1.c */
+      |   ^~
+      |   int
+00b90156435199b914b4d8cac9fb473328765c88.c:3:3: note: each undeclared identifier is reported only once for each function it appears in
+00b90156435199b914b4d8cac9fb473328765c88.c:3:5: error: expected ‘;’ before ‘int’
+    3 |   in/* corpus/20020213-1.c */
+      |     ^
+      |     ;
+......
+    7 | int bar (float);
+      | ~~~  
+00b90156435199b914b4d8cac9fb473328765c88.c: In function ‘foo’:
+00b90156435199b914b4d8cac9fb473328765c88.c:20:21: error: ‘h’ undeclared (first use in this function)
+   20 |   if (a.a2 >= b - 1)h    { abort (); }
+      |                     ^
+00b90156435199b914b4d8cac9fb473328765c88.c:20:22: error: expected ‘;’ before ‘{’ token
+   20 |   if (a.a2 >= b - 1)h    { abort (); }
+      |                      ^   ~
+      |                      ;
+00b90156435199b914b4d8cac9fb473328765c88.c: In function ‘main’:
+00b90156435199b914b4d8cac9fb473328765c88.c:23:1: error: unknown type name ‘intloat’; did you mean ‘float’?
+   23 | intloat a = 0;
+      | ^~~~~~~
+      | float
+00b90156435199b914b4d8cac9fb473328765c88.c:23:9: error: conflicting types for ‘a’; have ‘int’
+   23 | intloat a = 0;
+      |         ^
+00b90156435199b914b4d8cac9fb473328765c88.c:12:3: note: previous declaration of ‘a’ with type ‘struct A’
+   12 | } a;
+      |   ^
+00b90156435199b914b4d8cac9fb473328765c88.c: At top level:
+00b90156435199b914b4d8cac9fb473328765c88.c:40:1: error: unknown type name ‘ithReduce’
+   40 | ithReduce */
+      | ^~~~~~~~~
+00b90156435199b914b4d8cac9fb473328765c88.c:40:12: error: expected identifier or ‘(’ before ‘/’ token
+   40 | ithReduce */
+      |            ^
+00b90156435199b914b4d8cac9fb473328765c88.c: In function ‘foo’:
+00b90156435199b914b4d8cac9fb473328765c88.c:18:16: internal compiler error: tree check: expected class ‘type’, have ‘exceptional’ (error_mark) in create_tmp_from_val, at gimplify.cc:570
+   18 |   a.a2 = bar (a.a1);
+      |               ~^~~
+0x7e4445 tree_class_check_failed(tree_node const*, tree_code_class, char const*, int, char const*)
+	.././../gcc-source/gcc/tree.cc:8738
+0x7230d8 tree_class_check(tree_node*, tree_code_class, char const*, int, char const*)
+	.././../gcc-source/gcc/tree.h:3573
+0x7230d8 create_tmp_from_val
+	.././../gcc-source/gcc/gimplify.cc:570
+0x7230d8 lookup_tmp_var
+	.././../gcc-source/gcc/gimplify.cc:589
+0x7230d8 internal_get_tmp_var
+	.././../gcc-source/gcc/gimplify.cc:642
+0xc3062a get_initialized_tmp_var(tree_node*, gimple**, gimple**, bool)
+	.././../gcc-source/gcc/gimplify.cc:681
+0xc3062a prepare_gimple_addressable
+	.././../gcc-source/gcc/gimplify.cc:4538
+0xc3117a gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3265
+0xc2a904 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15008
+0xc2b184 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15159
+0xc36a0b gimplify_expr
+	.././../gcc-source/gcc/gimplify.cc:16115
+0xc36a0b gimplify_arg(tree_node**, gimple**, unsigned int, bool)
+	.././../gcc-source/gcc/gimplify.cc:3487
+0xc3718b gimplify_call_expr
+	.././../gcc-source/gcc/gimplify.cc:3724
+0xc2b877 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15028
+0xc3bae7 gimplify_modify_expr
+	.././../gcc-source/gcc/gimplify.cc:6043
+0xc2b126 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15056
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+0xc2b8eb gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2019
+0xc2b8eb gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15501
+0xc2e7f6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7111
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

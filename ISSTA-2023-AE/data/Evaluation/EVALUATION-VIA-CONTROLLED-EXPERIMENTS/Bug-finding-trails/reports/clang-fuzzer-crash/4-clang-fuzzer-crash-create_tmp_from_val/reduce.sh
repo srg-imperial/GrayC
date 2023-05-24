@@ -1,0 +1,14 @@
+#!/bin/bash
+clang=clang-12
+gcc=/home/user42/data/gcc-csmith-1201/gcc-install/bin/gcc
+src=02021d3b54a898d36d126c423b2c82b57c500705.c #1934d6e2aee70d21f4a7d16c0d1ff2867764c085.c
+
+rm -rf *.out
+rm -rf *out*.*
+rm -rf *.err.*
+
+ulimit -t 500
+
+! $gcc -O0 -g -pedantic -Wall -Wextra -I/home/user42/data/csmith/runtime/ -I/home/user42/data/csmith/build/runtime/ $src -o gcc.out >outa.txt 2>&1 &&\
+  cat outa.txt | grep "Please submit a full bug report" &&\
+  cat outa.txt | grep "internal compiler error: tree check: expected class ‘type’, have ‘exceptional’ (error_mark) in create_tmp_from_val, at gimplify" 

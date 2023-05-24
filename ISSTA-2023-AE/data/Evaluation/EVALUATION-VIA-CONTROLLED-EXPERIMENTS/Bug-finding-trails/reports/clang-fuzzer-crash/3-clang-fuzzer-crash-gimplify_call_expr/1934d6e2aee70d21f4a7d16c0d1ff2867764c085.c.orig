@@ -1,0 +1,92 @@
+/* corpus/pr67037.c */
+long (*extfunc)();
+
+static inline void lstrcpynW( short *d, const short *s, int n )
+{
+    unsigned int count = n;
+
+    while ((count > 1) && *s)
+    {
+        count--;
+        *d++ = *s++;
+    }
+    if (count) *d = 0;
+}
+
+int __attribute__((noinline,noclone))
+badfunc(int u0, int u1, int u2, int u3,
+  short *fsname, unsigned int fsname_len)
+{
+    static const short ntf/* corpus/76efea38142c0ee9807e15d5d8a679ed_731_test2113538949.c */
+#include "csmith.h"
+static int32_t a=0, c=int ret = 0;
+    short *p;
+
+    if (extfunc())
+    { return 0; }
+    p = (void *)extfunc();
+    if (p != 0)
+        goto done;
+
+    extfunc(superblock);
+
+    lstratform_main_end(0, 0);
+}
+/* ProgramSourceCsmithRedcpynW(fsname, ntfsW, fsname_len);
+
+    ret = 1;
+done:
+    return ret;
+}
+
+static long f()
+{
+    return 0;
+}
+
+int main()
+{
+    short buf[6];
+    extfunללללpus/76efea38142c0ee9807e15d5d8a679ed_731_test2113538949.c */
+#include "csmith.h"
+static int32_t a=0, c=0, b=0;
+int32_t d() {
+  int e = 0;
+  for (; e < 2; a--)
+    for (; e < 2; e++)
+      for (; b >= 0; b--)
+        ;
+  return 0;
+}
+int main() {
+  int f = 0;
+  crc3,'F','S',0};
+    char superblock[2048+3300];
+    int ret = 0;
+    short *p;
+
+    if (extfunc())
+    { return 0; }
+    p = (void *)extfunc();
+    if (p != 0)
+        goto done;
+
+    extfunc(superblock);
+
+    lstratform_main_end(0, 0);
+}
+/* ProgramSourceCsmithRedcpynW(fsname, ntfsW, fsname_len);
+
+    ret = 1;
+done:
+    return ret;
+}
+
+static long f()
+{
+    return 0;
+}לללללללללללללללללללללללללללללללללללללללללללללללללללללללללללללללללc = f;
+    return !badfunc(0, 0, 0, 0, buf, 6);
+}
+/* ProgramSouce ז*/
+urceLLVM */

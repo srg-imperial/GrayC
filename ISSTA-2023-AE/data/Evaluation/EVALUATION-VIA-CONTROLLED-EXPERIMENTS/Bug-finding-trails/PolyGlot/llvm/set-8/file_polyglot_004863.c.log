@@ -1,0 +1,60 @@
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/set-8$ (ulimit -St 45 -Sf 90000; clang-12 -w -O2 -pedantic file_polyglot_004863.c)
+file_polyglot_004863.c:3:19: error: expression is not assignable
+ X1 = ( ano1280() ^= ano1280() ) , X2 , X3 , X4 }
+        ~~~~~~~~~ ^
+PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /usr/lib/llvm-12/bin/clang -cc1 -triple x86_64-pc-linux-gnu -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name file_polyglot_004863.c -mrelocation-model static -mframe-pointer=none -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -resource-dir /usr/lib/llvm-12/lib/clang/12.0.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -pedantic -w -fdebug-compilation-dir /home/user42/git/directed-compiler-fuzzing-code/scripts/set-8 -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -vectorize-loops -vectorize-slp -faddrsig -o /tmp/file_polyglot_004863-333bc1.o -x c file_polyglot_004863.c
+1.	file_polyglot_004863.c:3:39: current parser token ','
+2.	file_polyglot_004863.c:1:1: parsing struct/union body '(anonymous)'
+#0 0x00007f59f3a68001 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a001)
+#1 0x00007f59f3a66140 llvm::sys::RunSignalHandlers() (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd18140)
+#2 0x00007f59f3a68712 (/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1+0xd1a712)
+#3 0x00007f59fb67e980 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x12980)
+#4 0x00007f59f92e8d07 clang::ASTContext::getAsArrayType(clang::QualType) const (/usr/lib/x86_64-linux-gnu/libclang-cpp.so.12+0xa1dd07)
+#5 0x000000000084ad20 
+clang: error: unable to execute command: Segmentation fault
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Ubuntu clang version 12.0.1-++20211102090516+fed41342a82f-1~exp1~20211102211019.11
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/file_polyglot_004863-3e37fc.c
+clang: note: diagnostic msg: /tmp/file_polyglot_004863-3e37fc.sh
+clang: note: diagnostic msg: 
+
+********************
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/set-8$ more file_polyglot_004863.c
+#struct {
+ enum X {
+ X1 = ( ano1280() ^= ano1280() ) , X2 , X3 , X4 }
+ int x ;
+ }
+ s ;
+ int main ( ) {
+ X ;
+ }
+ 
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/set-8$ gcc file_polyglot_004863.c
+file_polyglot_004863.c:3:9: warning: implicit declaration of function 'ano1280' [-Wimplicit-function-declaration]
+    3 |  X1 = ( ano1280() ^= ano1280() ) , X2 , X3 , X4 }
+      |         ^~~~~~~
+file_polyglot_004863.c:3:19: error: lvalue required as left operand of assignment
+    3 |  X1 = ( ano1280() ^= ano1280() ) , X2 , X3 , X4 }
+      |                   ^~
+file_polyglot_004863.c:4:2: error: expected identifier or '(' before 'int'
+    4 |  int x ;
+      |  ^~~
+file_polyglot_004863.c:5:2: warning: no semicolon at end of struct or union
+    5 |  }
+      |  ^
+file_polyglot_004863.c: In function 'main':
+file_polyglot_004863.c:8:2: error: 'X' undeclared (first use in this function)
+    8 |  X ;
+      |  ^
+file_polyglot_004863.c:8:2: note: each undeclared identifier is reported only once for each function it appears in

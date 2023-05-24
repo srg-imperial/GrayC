@@ -1,0 +1,84 @@
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:11:18: error: expected ',' or ')', found "addresses"
+   11 | #define A(expthe addresses in the base and index reloads require further reloads.  */
+      |                  ^~~~~~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:35:6: error: expected ‘)’ before ‘*’ token
+   35 | float *ptrs[NVARS];
+      |      ^~
+      |      )
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:39:18: error: expected identifier or ‘(’ before ‘)’ token
+   39 | struct biginline))
+      |                  ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘foo’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:50:16: error: unknown type name ‘DECLA’; did you mean ‘DECLAREI’?
+   50 |   float MULTI (DECLA/* corpus/pr28982b.c */
+      |                ^~~~~
+      |                DECLAREI
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:76:3: error: expected declaration specifiers or ‘...’ before ‘while’
+   76 |   while (n--)
+      |   ^~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:78:3: error: expected declaration specifiers or ‘...’ before ‘MULTI’
+   78 |   MULTI (COPYOUT);
+      |   ^~~~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:79:3: error: unknown type name ‘bar’
+   79 |   bar (b);
+      |   ^~~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:80:1: error: expected declaration specifiers or ‘...’ before ‘}’ token
+   80 | }
+      | ^
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:80:1: error: expected ‘;’, ‘,’ or ‘)’ before ‘}’ token
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘main’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:95:19: error: expected ‘)’ before ‘N’
+   95 |     if (results[i] N=!  *i ITER * (NITER + 1) / 2)
+      |        ~          ^~
+      |                   )
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c: In function ‘test_wide’:
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:199:15: error: ‘wc’ undeclared (first use in this function)
+  199 |   A (memchr (&wc + 1, 0, 0) == 0);
+      |               ^~
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:199:15: note: each undeclared identifier is reported only once for each function it appears in
+3f985ea6ca098a09555bf6e694c514a506f3eadd.c:200:3: internal compiler error: in constant_byte_string, at expr.cc:12049
+  200 |   A (memchr (L"\x1234", 0, sizeof (wchar_t)) == 0);
+      |   ^
+0x6f8579 constant_byte_string
+	.././../gcc-source/gcc/expr.cc:12049
+0xb80b5f getbyterep(tree_node*, unsigned long*)
+	.././../gcc-source/gcc/fold-const.cc:16436
+0xbb5489 fold_const_call(combined_fn, tree_node*, tree_node*, tree_node*, tree_node*)
+	.././../gcc-source/gcc/fold-const-call.cc:1819
+0x9f8aa8 fold_builtin_3
+	.././../gcc-source/gcc/builtins.cc:9450
+0x9f8aa8 fold_builtin_n
+	.././../gcc-source/gcc/builtins.cc:9531
+0xbae833 fold(tree_node*)
+	.././../gcc-source/gcc/fold-const.cc:13416
+0x943925 c_fully_fold_internal
+	.././../gcc-source/gcc/c/c-fold.cc:244
+0x943de9 c_fully_fold_internal
+	.././../gcc-source/gcc/c/c-fold.cc:354
+0x945f79 c_fully_fold(tree_node*, bool, bool*, bool)
+	.././../gcc-source/gcc/c/c-fold.cc:125
+0x8fccaf convert_arguments
+	.././../gcc-source/gcc/c/c-typeck.cc:3628
+0x8fccaf build_function_call_vec(unsigned int, vec<unsigned int, va_heap, vl_ptr>, tree_node*, vec<tree_node*, va_gc, vl_embed>*, vec<tree_node*, va_gc, vl_embed>*, tree_node*)
+	.././../gcc-source/gcc/c/c-typeck.cc:3171
+0x91fc30 c_parser_postfix_expression_after_primary
+	.././../gcc-source/gcc/c/c-parser.cc:10561
+0x916b68 c_parser_postfix_expression
+	.././../gcc-source/gcc/c/c-parser.cc:10234
+0x91b15a c_parser_unary_expression
+	.././../gcc-source/gcc/c/c-parser.cc:8261
+0x91ca01 c_parser_cast_expression
+	.././../gcc-source/gcc/c/c-parser.cc:8103
+0x91cca1 c_parser_binary_expression
+	.././../gcc-source/gcc/c/c-parser.cc:7906
+0x91e16e c_parser_conditional_expression
+	.././../gcc-source/gcc/c/c-parser.cc:7606
+0x91e9c0 c_parser_expr_no_commas
+	.././../gcc-source/gcc/c/c-parser.cc:7521
+0x91ec51 c_parser_expression
+	.././../gcc-source/gcc/c/c-parser.cc:10697
+0x91f4b8 c_parser_expression_conv
+	.././../gcc-source/gcc/c/c-parser.cc:10736
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

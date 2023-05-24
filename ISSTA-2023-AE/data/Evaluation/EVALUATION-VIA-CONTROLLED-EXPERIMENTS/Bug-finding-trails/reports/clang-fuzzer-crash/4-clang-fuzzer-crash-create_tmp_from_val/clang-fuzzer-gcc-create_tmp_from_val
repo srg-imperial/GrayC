@@ -1,0 +1,58 @@
+This code leads to ICE in GCC-12 and 13:
+===
+struct a {
+  int b
+} c() {
+  struct a a;
+  a.b;
+  d a;
+===
+
+Related to: error-recovery, ice-checking, ice-on-invalid-code
+
+02021d3b54a898d36d126c423b2c82b57c500705.c:5:4: internal compiler error: tree check: expected class 'type', have 'exceptional' (error_mark) in create_tmp_from_val, at gimplify.cc:570
+    5 |   a.b;
+      |   ~^~
+0x7ee86d tree_class_check_failed(tree_node const*, tree_code_class, char const*, int, char const*)
+	.././../gcc-source/gcc/tree.cc:8867
+0x72b8e0 tree_class_check(tree_node*, tree_code_class, char const*, int, char const*)
+	.././../gcc-source/gcc/tree.h:3631
+0x72b8e0 create_tmp_from_val
+	.././../gcc-source/gcc/gimplify.cc:570
+0x72b8e0 lookup_tmp_var
+	.././../gcc-source/gcc/gimplify.cc:593
+0x72b8e0 internal_get_tmp_var
+	.././../gcc-source/gcc/gimplify.cc:648
+0xc447f0 prepare_gimple_addressable
+	.././../gcc-source/gcc/gimplify.cc:4586
+0xc45148 gimplify_compound_lval
+	.././../gcc-source/gcc/gimplify.cc:3286
+0xc3e494 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15158
+0xc426e6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7153
+0xc3fb1b gimplify_statement_list
+	.././../gcc-source/gcc/gimplify.cc:2025
+0xc3fb1b gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15651
+0xc426e6 gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7153
+0xc42ea5 gimplify_bind_expr
+	.././../gcc-source/gcc/gimplify.cc:1434
+0xc3f176 gimplify_expr(tree_node**, gimple**, gimple**, bool (*)(tree_node*), int)
+	.././../gcc-source/gcc/gimplify.cc:15407
+0xc50fbf gimplify_stmt(tree_node**, gimple**)
+	.././../gcc-source/gcc/gimplify.cc:7153
+0xc50fbf gimplify_body(tree_node*, bool)
+	.././../gcc-source/gcc/gimplify.cc:16463
+0xc5140b gimplify_function_tree(tree_node*)
+	.././../gcc-source/gcc/gimplify.cc:16662
+0xa7d1b7 cgraph_node::analyze()
+	.././../gcc-source/gcc/cgraphunit.cc:676
+0xa7fc87 analyze_functions
+	.././../gcc-source/gcc/cgraphunit.cc:1240
+0xa8095d symbol_table::finalize_compilation_unit()
+	.././../gcc-source/gcc/cgraphunit.cc:2500
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.
