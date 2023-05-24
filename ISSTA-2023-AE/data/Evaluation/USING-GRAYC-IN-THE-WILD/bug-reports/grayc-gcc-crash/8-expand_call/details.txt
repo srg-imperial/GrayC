@@ -1,0 +1,5 @@
+In GCC-12, was working well in GCC-11 and GCC-10.
+
+The bug is unconf. because several bug reports opened, but poorly written. I tried to clearfy better what is the issue.
+
+Contrinuted to a very poorly written bug reports: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=100536 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=101314 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=84964

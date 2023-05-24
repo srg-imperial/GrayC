@@ -1,0 +1,73 @@
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/data/gcc-csmith-12/gcc-install/bin/gcc --version
+gcc (GCC) 12.0.0 20210811 (experimental)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+user42@srg01:~/git/directed-compiler-fuzzing-code/AE$ ./../../cov/gcc-csmith-0/gcc-install/bin/gcc --version
+gcc (GCC) 12.0.0 20211118 (experimental)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+========
+Error in GCC-12 version from August 2021, fixed in GCC-12 later on, cannot find it in GCC-12 from Novmber.
+
+main() {
+fuzzer-file-108673.c:5:1: internal compiler error: in get_imports, at gimple-range-gori.cc:220
+Please submit a full bug report,
+
+
+=================================
+during GIMPLE pass: evrp
+fuzzer-file-108673.c: In function ‘main’:
+fuzzer-file-108673.c:5:1: internal compiler error: in get_imports, at gimple-range-gori.cc:220
+    5 | }
+      | ^
+0x8199a7 range_def_chain::get_imports(tree_node*)
+	.././../gcc-source/gcc/gimple-range-gori.cc:220
+0x18eeb23 range_def_chain::register_dependency(tree_node*, tree_node*, basic_block_def*)
+	.././../gcc-source/gcc/gimple-range-gori.cc:278
+0x18eed1a range_def_chain::get_def_chain(tree_node*)
+	.././../gcc-source/gcc/gimple-range-gori.cc:372
+0x18ef380 range_def_chain::in_chain_p(tree_node*, tree_node*)
+	.././../gcc-source/gcc/gimple-range-gori.cc:188
+0x18ef96d gori_compute::compute_operand_range(irange&, gimple*, irange const&, tree_node*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:708
+0x18f0178 gori_compute::compute_operand_range(irange&, gimple*, irange const&, tree_node*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:686
+0x18f0178 gori_compute::compute_operand1_range(irange&, gimple*, irange const&, tree_node*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:974
+0x18f0178 gori_compute::compute_operand_range(irange&, gimple*, irange const&, tree_node*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:686
+0x18f0178 gori_compute::compute_operand1_range(irange&, gimple*, irange const&, tree_node*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:974
+0x18f0f0d gori_compute::compute_operand_range(irange&, gimple*, irange const&, tree_node*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:686
+0x18f0f0d gori_compute::outgoing_edge_range_p(irange&, edge_def*, tree_node*, range_query&)
+	.././../gcc-source/gcc/gimple-range-gori.cc:1125
+0x18e5896 ranger_cache::range_on_edge(irange&, edge_def*, tree_node*)
+	.././../gcc-source/gcc/gimple-range-cache.cc:963
+0x18e5f88 ranger_cache::range_on_edge(irange&, edge_def*, tree_node*)
+	.././../gcc-source/gcc/gimple-range-fold.h:97
+0x18e5f88 ranger_cache::propagate_cache(tree_node*)
+	.././../gcc-source/gcc/gimple-range-cache.cc:1062
+0x18e6686 ranger_cache::fill_block_cache(tree_node*, basic_block_def*, basic_block_def*)
+	.././../gcc-source/gcc/gimple-range-cache.cc:1274
+0x18e6b2f ranger_cache::block_range(irange&, basic_block_def*, tree_node*, bool)
+	.././../gcc-source/gcc/gimple-range-cache.cc:1006
+0x18e1882 gimple_ranger::range_on_entry(irange&, basic_block_def*, tree_node*)
+	.././../gcc-source/gcc/gimple-range.cc:93
+0x18e2716 gimple_ranger::range_of_expr(irange&, tree_node*, gimple*)
+	.././../gcc-source/gcc/gimple-range.cc:76
+0x18eb247 fold_using_range::range_of_range_op(irange&, gimple*, fur_source&)
+	.././../gcc-source/gcc/gimple-range-fold.cc:564
+0x18ed611 fold_using_range::fold_stmt(irange&, gimple*, fur_source&, tree_node*)
+	.././../gcc-source/gcc/gimple-range-fold.cc:516
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,0 +1,52 @@
+fuzzer-file-37731.c: In function ‘main’:
+fuzzer-file-37731.c:14:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   14 |   exit ((4));
+      |   ^~~~
+fuzzer-file-37731.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+  +++ |+#include <stdlib.h>
+    1 | /* corpus/20020227-1.c */
+fuzzer-file-37731.c:14:3: warning: incompatible implicit declaration of built-in function ‘exit’ [-Wbuiltin-declaration-mismatch]
+   14 |   exit ((4));
+      |   ^~~~
+fuzzer-file-37731.c:14:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+fuzzer-file-37731.c: In function ‘f2’:
+fuzzer-file-37731.c:42:7: warning: implicit declaration of function ‘abort’ [-Wimplicit-function-declaration]
+   42 |     { abort (); }
+      |       ^~~~~
+fuzzer-file-37731.c:42:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+fuzzer-file-37731.c:42:7: warning: incompatible implicit declaration of built-in function ‘abort’ [-Wbuiltin-declaration-mismatch]
+fuzzer-file-37731.c:42:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘abort’
+fuzzer-file-37731.c: In function ‘f1’:
+fuzzer-file-37731.c:23:34: warning: ‘s’ is used uninitialized [-Wuninitialized]
+   23 | s.f = (1) + 42 +((long)((((int)(s.f)) |((int)(s.f)))))+((short)((((int)(s.f)) >>((int)(s.f)))))-((long)((((int)(s.f)) ^((int)((1))))))-((short)((((int)((1))) >>((int)((1))))));
+      |                                ~~^~~
+fuzzer-file-37731.c:20:12: note: ‘s’ declared here
+   20 |   struct x s;
+      |            ^
+during RTL pass: expand
+fuzzer-file-37731.c: In function ‘f2’:
+fuzzer-file-37731.c:39:1: internal compiler error: in do_jump_1, at dojump.c:207
+   39 | f2 (struct x *y)
+      | ^~
+0x6e6d97 do_jump_1
+	.././../gcc-source/gcc/dojump.c:207
+0xb49847 expand_expr_real_2(separate_ops*, rtx_def*, machine_mode, expand_modifier)
+	.././../gcc-source/gcc/expr.c:10242
+0xb4f24f expand_expr_real_1(tree_node*, rtx_def*, machine_mode, expand_modifier, rtx_def**, bool)
+	.././../gcc-source/gcc/expr.c:10502
+0xa9b916 expand_normal
+	.././../gcc-source/gcc/expr.h:307
+0xa9b916 do_compare_and_jump
+	.././../gcc-source/gcc/dojump.c:1257
+0xa9d929 do_jump_1
+	.././../gcc-source/gcc/dojump.c:219
+0xa238e0 expand_gimple_cond
+	.././../gcc-source/gcc/cfgexpand.c:2645
+0xa240fc expand_gimple_basic_block
+	.././../gcc-source/gcc/cfgexpand.c:5928
+0xa25ce7 execute
+	.././../gcc-source/gcc/cfgexpand.c:6795
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.

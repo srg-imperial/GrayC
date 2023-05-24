@@ -1,0 +1,16 @@
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/8-crash-testing$ vi test4.c 
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/git/gcc-csmith-12/gcc-install/bin/gcc -O2 test4.c -g
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/git/gcc-csmith-12/gcc-install/bin/gcc -O0 test4.c -g
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/8-crash-testing$ /home/user42/git/gcc-csmith-12/gcc-install/bin/gcc -O1 test4.c -g
+gcc: internal compiler error: Segmentation fault signal terminated program cc1
+Please submit a full bug report, with preprocessed source (by using -freport-bug).
+See <https://gcc.gnu.org/bugs/> for instructions.
+user42@srg01:~/git/directed-compiler-fuzzing-code/scripts/8-crash-testing$ more test4.c 
+int a;
+void b() {
+  a = ((long)__builtin_return_address(0) ^ (long)__builtin_return_address(0)) *
+      (long)__builtin_return_address(524288);
+}
+int main(void) { return 0;}
+
+Reported: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105910

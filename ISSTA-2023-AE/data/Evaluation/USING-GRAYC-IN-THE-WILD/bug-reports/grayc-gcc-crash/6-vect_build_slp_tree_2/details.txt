@@ -1,0 +1,233 @@
+Reported here: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=103816
+
+GCC-12 with -O2 and -O3
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc --version
+gcc (GCC) 12.0.0 20211023 (experimental)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-11/gcc-install/bin/gcc --version
+bash: /home/user42/data/gcc-csmith-11/gcc-install/bin/gcc: No such file or directory
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-12/gcc-install/bin/gcc --version
+gcc (GCC) 12.0.0 20211118 (experimental)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-112/gcc-install/bin/gcc --version
+gcc (GCC) 12.0.0 20211130 (experimental)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1112/gcc-install/bin/gcc --version
+gcc (GCC) 12.0.0 20211216 (experimental)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+user42@srg08:~/directed-compiler-fuzzing-co
+
+
+
+Bug:
+===
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O1 -w fuzzer-file-54092.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O2 -w fuzzer-file-54092.c
+during GIMPLE pass: slp
+fuzzer-file-54092.c: In function ‘main’:
+fuzzer-file-54092.c:8:6: internal compiler error: in vect_build_slp_tree_2, at tree-vect-slp.c:1736
+    8 | void main() { g[0].b = (g[0].b & g[4].b) * g[2305843009213693952].c; }
+      |      ^~~~
+0x7cf8dc vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:1736
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119f2f0 vect_build_slp_instance
+	.././../gcc-source/gcc/tree-vect-slp.c:3012
+0x11a4df6 vect_analyze_slp(vec_info*, unsigned int)
+	.././../gcc-source/gcc/tree-vect-slp.c:3375
+0x11a9562 vect_slp_analyze_bb_1
+	.././../gcc-source/gcc/tree-vect-slp.c:5746
+0x11a9562 vect_slp_region
+	.././../gcc-source/gcc/tree-vect-slp.c:5848
+0x11a9562 vect_slp_bbs
+	.././../gcc-source/gcc/tree-vect-slp.c:6040
+0x11ab501 vect_slp_function(function*)
+	.././../gcc-source/gcc/tree-vect-slp.c:6128
+0x11b2a62 execute
+	.././../gcc-source/gcc/tree-vectorizer.c:1456
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O2 -w fuzzer-file-59120.c
+during GIMPLE pass: slp
+fuzzer-file-59120.c: In function ‘a’:
+fuzzer-file-59120.c:1:6: internal compiler error: in vect_build_slp_tree_2, at tree-vect-slp.c:1736
+    1 | void a() {
+      |      ^
+0x7cf8dc vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:1736
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119f2f0 vect_build_slp_instance
+	.././../gcc-source/gcc/tree-vect-slp.c:3012
+0x11a4df6 vect_analyze_slp(vec_info*, unsigned int)
+	.././../gcc-source/gcc/tree-vect-slp.c:3375
+0x11a9562 vect_slp_analyze_bb_1
+	.././../gcc-source/gcc/tree-vect-slp.c:5746
+0x11a9562 vect_slp_region
+	.././../gcc-source/gcc/tree-vect-slp.c:5848
+0x11a9562 vect_slp_bbs
+	.././../gcc-source/gcc/tree-vect-slp.c:6040
+0x11ab501 vect_slp_function(function*)
+	.././../gcc-source/gcc/tree-vect-slp.c:6128
+0x11b2a62 execute
+	.././../gcc-source/gcc/tree-vectorizer.c:1456
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O2 -w fuzzer-file-49557.c
+during GIMPLE pass: slp
+fuzzer-file-49557.c: In function ‘c’:
+fuzzer-file-49557.c:2:6: internal compiler error: in vect_build_slp_tree_2, at tree-vect-slp.c:1736
+    2 | void c() {
+      |      ^
+0x7cf8dc vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:1736
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119d9bb vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2270
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119d9bb vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2270
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119f2f0 vect_build_slp_instance
+	.././../gcc-source/gcc/tree-vect-slp.c:3012
+0x11a4df6 vect_analyze_slp(vec_info*, unsigned int)
+	.././../gcc-source/gcc/tree-vect-slp.c:3375
+0x11a9562 vect_slp_analyze_bb_1
+	.././../gcc-source/gcc/tree-vect-slp.c:5746
+0x11a9562 vect_slp_region
+	.././../gcc-source/gcc/tree-vect-slp.c:5848
+0x11a9562 vect_slp_bbs
+	.././../gcc-source/gcc/tree-vect-slp.c:6040
+0x11ab501 vect_slp_function(function*)
+	.././../gcc-source/gcc/tree-vect-slp.c:6128
+0x11b2a62 execute
+	.././../gcc-source/gcc/tree-vectorizer.c:1456
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O2 -w fuzzer-file-49558.c
+during GIMPLE pass: slp
+fuzzer-file-49558.c: In function ‘c’:
+fuzzer-file-49558.c:2:6: internal compiler error: in vect_build_slp_tree_2, at tree-vect-slp.c:1736
+    2 | void c() {
+      |      ^
+0x7cf8dc vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:1736
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119d9bb vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2270
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119d9bb vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2270
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119f2f0 vect_build_slp_instance
+	.././../gcc-source/gcc/tree-vect-slp.c:3012
+0x11a4df6 vect_analyze_slp(vec_info*, unsigned int)
+	.././../gcc-source/gcc/tree-vect-slp.c:3375
+0x11a9562 vect_slp_analyze_bb_1
+	.././../gcc-source/gcc/tree-vect-slp.c:5746
+0x11a9562 vect_slp_region
+	.././../gcc-source/gcc/tree-vect-slp.c:5848
+0x11a9562 vect_slp_bbs
+	.././../gcc-source/gcc/tree-vect-slp.c:6040
+0x11ab501 vect_slp_function(function*)
+	.././../gcc-source/gcc/tree-vect-slp.c:6128
+0x11b2a62 execute
+	.././../gcc-source/gcc/tree-vectorizer.c:1456
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O3 -w fuzzer-file-49558.c
+during GIMPLE pass: slp
+fuzzer-file-49558.c: In function ‘c’:
+fuzzer-file-49558.c:2:6: internal compiler error: in vect_build_slp_tree_2, at tree-vect-slp.c:1736
+    2 | void c() {
+      |      ^
+0x7cf8dc vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:1736
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119b617 vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2199
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119d9bb vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2270
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119d9bb vect_build_slp_tree_2
+	.././../gcc-source/gcc/tree-vect-slp.c:2270
+0x119adfd vect_build_slp_tree
+	.././../gcc-source/gcc/tree-vect-slp.c:1531
+0x119f2f0 vect_build_slp_instance
+	.././../gcc-source/gcc/tree-vect-slp.c:3012
+0x11a4df6 vect_analyze_slp(vec_info*, unsigned int)
+	.././../gcc-source/gcc/tree-vect-slp.c:3375
+0x11a9562 vect_slp_analyze_bb_1
+	.././../gcc-source/gcc/tree-vect-slp.c:5746
+0x11a9562 vect_slp_region
+	.././../gcc-source/gcc/tree-vect-slp.c:5848
+0x11a9562 vect_slp_bbs
+	.././../gcc-source/gcc/tree-vect-slp.c:6040
+0x11ab501 vect_slp_function(function*)
+	.././../gcc-source/gcc/tree-vect-slp.c:6128
+0x11b2a62 execute
+	.././../gcc-source/gcc/tree-vectorizer.c:1456
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <https://gcc.gnu.org/bugs/> for instructions.
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O1 -w fuzzer-file-49558.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -O0 -w fuzzer-file-49558.c
+user42@srg08:~/directed-compiler-fuzzing-code/scripts/9-reduce-bugs/crash-gcc/6-vect_build_slp_tree_2$ /home/user42/data/gcc-csmith-1/gcc-install/bin/gcc -Os -w fuzzer-file-49558.c
+

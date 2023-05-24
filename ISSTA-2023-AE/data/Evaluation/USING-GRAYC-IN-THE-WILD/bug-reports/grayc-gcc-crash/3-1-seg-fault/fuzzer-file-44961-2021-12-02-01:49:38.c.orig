@@ -1,0 +1,334 @@
+/* corpus/20120808-1.c */
+extern void exit (int);
+extern void abort (void);
+
+volatile int i;
+unsigned char *volatile cp;
+unsigned char d[(0xCB)] = { (0) };
+
+int
+main (void)
+{
+  unsigned char c[(32)] = { (0xFDC5) };
+  unsigned char *p = d + i;
+  int j;
+  for (j = (5) + (0x1659AE) *((short)((((double)((8))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (0xFB9) -((int)((((int)((0) + (-43) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((32) + (0xF5) *((short)((((double)((4503599627370496))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((16384) + (106) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0) + (0x3CC64) *((short)((((double)((32))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))) + (46) -((long)((((int)(j)) <<((int)((0) + (0x959D) *((short)((((double)((0xA5))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (0xEEF9) -((int)((((int)((0) + (-43) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((524288) + (43) *((short)((((double)((0xE468))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0) + (40) *((short)((((double)((8192))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((1024) + (106) *((short)((((double)((0xF))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))))))*((short)((((int)((-1) + (0x104) *((short)((((double)((0xE0B))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (0xD21B7A) -((int)((((int)((7) + (-43) *((short)((((double)((0x9))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((549755813888) + (0x7A563F) *((short)((((double)((9007199254740992))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0) + (58) *((short)((((double)((17179869184))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0xF2F7) + (0xD0A) *((short)((((double)((0x42B))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))) &((int)((0xB2C) + (46) *((short)((((double)((0xF5DEB))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (-43) -((int)((((int)((0) + (0xAA7) *((short)((((double)((512))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((0) + (-43) *((short)((((double)((0x6D6))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((262144) + (0x62F) *((short)((((double)((0xF479))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((8) + (-43) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j)))))))))) + (106) -((short)((((int)((-1) + (-43) *((short)((((double)((0xFD))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (42) -((int)((((int)((3) + (-43) *((short)((((double)((5))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((4096) + (0xBC456) *((short)((((double)((-1))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((32) + (0xCD8) *((short)((((double)((0x0287))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0) + (0x293F86) *((short)((((double)((0xF))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))) + (10) -((long)((((int)(j)) <<((int)((0) + (42) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (34) -((int)((((int)((64) + (40) *((short)((((double)((4))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((0) + (170) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((-1) + (34) *((short)((((double)((0xF77))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((-1) + (-43) *((short)((((double)((512))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))))))*((short)((((int)((131072) + (0x648DA4) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (42) -((int)((((int)((0x20) + (-43) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((0xB5F) + (42) *((short)((((double)((2))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0) + (0x5E68E) *((short)((((double)((32))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((-1) + (0x2CBFA) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))) &((int)((0) + (-43) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (-43) -((int)((((int)((1) + (0xF9) *((short)((((double)((281474976710656))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((1) + (02) *((short)((((double)((0xBE51))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0) + (40) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0) + (-43) *((short)((((double)((-1))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j)))))))))))) >>((int)((0x50) + (40) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (42) -((int)((((int)((0x8C1) + (42) *((short)((((double)((0xD1))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((0xC497E) + (-43) *((short)((((double)((1024))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0x97) + (170) *((short)((((double)((8589934592))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0xABE91) + (-43) *((short)((((double)((0xA1))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))) + (42) -((long)((((int)(j)) <<((int)((0) + (-43) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (42) -((int)((((int)((-1) + (42) *((short)((((double)((274877906944))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((34359738368) + (170) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((144115188075855872) + (42) *((short)((((double)((0x768))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((1125899906842624) + (106) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0x5) + (0x68) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (-43) -((int)((((int)((16) + (-43) *((short)((((double)((2097152))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((16) + (106) *((short)((((double)((512))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0) + (42) *((short)((((double)((0xC7C))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0) + (10) *((short)((((double)((0x8))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))) &((int)((0) + (0x28DD8) *((short)((((double)((0x6B7F2))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))) + (42) -((int)((((int)((0) + (58) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) %((int)((0xB25) + (-43) *((short)((((double)((64))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))*((short)((((int)((0x90F55) + (-43) *((short)((((double)((68719476736))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))) &((int)(j)))))+((long)((((int)(j)) ^((int)((0) + (0x871) *((short)((((double)((0))) *((double)(j)))))-((long)((((double)(j)) +((double)(j)))))-((int)((((double)(j)) -((double)(j))))))))))+((long)((((double)(j)) -((double)(j)))))*((short)((((double)(j)) -((double)(j))))))))))))))); j < (30); j++)
+    {
+      int x = (-9);
+      int y = (72);
+      switch (j)
+	{
+	case (0x3): ; break;
+	case (0xB6): ; break;
+	case (25): ; break;
+	default: break;
+	}
+      
+c[j] = y | x + (0x265323) *((short)((((int)(y | x)) |((int)(y | x))))) + (42) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (0xF2B054) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (10) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))) + (-43) -((int)((((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))) + (-43) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (40) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (0xEF) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))))) |((int)(c[j])))))*((short)((((int)(c[j])) |((int)(y | x + (0x4655) *((short)((((int)(y | x)) |((int)(y | x))))) + (170) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (43) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (58) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j])))))))))) + (0x295B12) *((long)((((int)(c[j])) >>((int)(c[j])))));
+c[j] = y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))) + (0xF3) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (0xFBB07) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (58) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (0x13C7C) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))) + (0x1C4A0) -((int)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))) + (0x4352) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (0x3AD8) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))))) |((int)(c[j])))))*((short)((((int)(c[j])) |((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))) + (0xF5BC) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (106) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j])))))))))) + (43) +((short)((((int)(c[j])) >>((int)(c[j])))))-((int)((((int)(c[j])) ^((int)(c[j])))))*((long)((((int)(y | x + (0x2EF1) *((short)((((int)(y | x)) |((int)(y | x))))) + (0xA097) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (0xEA7F90) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (46) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))) + (0x2E1FAC) -((int)((((int)(y | x + (40) *((short)((((int)(y | x)) |((int)(y | x))))) + (42) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (02) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))))) |((int)(c[j])))))*((short)((((int)(c[j])) |((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))) + (42) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (0x64812) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j])))))))))))) >>((int)(c[j])))))-((int)((((int)(c[j])) |((int)(y | x + (10) *((short)((((int)(y | x)) |((int)(y | x))))) + (40) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (-43) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (0xC6CA) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))) + (-43) -((int)((((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))) + (42) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (0x806) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (46) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j]))))))) |((int)(c[j])))))*((short)((((int)(c[j])) |((int)(y | x + (45) *((short)((((int)(y | x)) |((int)(y | x))))) + (0x3EBAE) +((long)((((int)(c[j])) %((int)(c[j])))))+((short)((((int)(y | x + (40) *((short)((((int)(y | x)) |((int)(y | x))))))) %((int)(c[j])))))*((long)((((int)(y | x + (10) *((short)((((int)(y | x)) |((int)(y | x))))))) ^((int)(y | x + (42) *((short)((((int)(y | x)) |((int)(y | x))))))))))*((int)((((int)(c[j])) |((int)(c[j])))))))))))))));
+;
+      ;
+    }
+  if (((int)((int)((int)((int)c[(-1)] != 0xff
+      || c[(0x0)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(0xF7A4)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(0xB5)] != 0xfe
+      || cp != d + (-31) + (0xAF09EB) +((short)((((int)((30))) &((int)(c[(0xEFD)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(7)] != 0xff
+      || c[(4)] != 0xff)))))*((short)((((int)(c[(2)] != 0xfb)) %((int)(c[(0xFE2C)])))))+((long)((((int)(c[(-1)] != 0xff
+      || c[(129)] != 0xfd)) >>((int)((30))))))+((long)((((int)(c[(-1)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(130)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(0x55F)] != 0xfd)) >>((int)(c[(3)])))))) + (58) *((short)((((int)(c[(0xEDFE)] != 0xfe)) |((int)(c[(0xC4F)])))))*((int)((((int)(c[(0xB3)] != 0xfe)) >>((int)(cp != d + (0xBAD38) + (42) +((short)((((int)((0x934))) &((int)(c[(0xB4DD)] != 0xff
+      || c[(3)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(-5)] != 0xff)))))*((short)((((int)(c[(18)] != 0xfb)) %((int)(c[(17)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((30))))))+((long)((((int)(c[(0)] != 0xff
+      || c[(0xF71D)] != 0xfd
+      || c[(0x4F724)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(1)] != 0xfd)) >>((int)(c[(131)]))))))))))-((short)((((int)(c[(0x33)])) >>((int)(0xff)))))-((short)((((int)(c[(0xE1)])) &((int)(c[(3)] != 0xff)))))+((long)((((int)(c[(2)])) |((int)(((long)((((int)(c[(0xF72A)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((-31)))))))))))-((long)((((int)(c[(-4)])) <<((int)((int)c[(0x058)] != 0xff
+      || c[(0x6D)] != 0xfd
+      || c[(130)] != 0xfb
+      || c[(0x8E)] != 0xff
+      || c[(0xC87)] != 0xff
+      || c[(0x106)] != 0xfe)))))*((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(0x9DC6)])))))-((short)((((int)((int)c[(0xE)])) %((int)(c[(1)] != 0xfd)))))-((int)((((int)(c[(0xB2CEC)])) >>((int)((int)c[(0)] != 0xff
+      || c[(0x0B70)] != 0xfd)))))-((short)((((int)(c[(0x0E4BA)] != 0xff)) >>((int)((int)c[(0)])))))) + (-43) *((int)((((int)(((long)((((int)(c[(-4)])) <<((int)((int)c[(4)] != 0xff
+      || c[(0x432C)] != 0xfd
+      || c[(8)] != 0xfb
+      || c[(0x8)] != 0xff
+      || c[(20)] != 0xff
+      || c[(25)] != 0xfe))))))) &((int)(((long)((((int)(c[(0x1A5B)])) <<((int)((int)c[(18014398509481984)] != 0xff
+      || c[(65)] != 0xfd
+      || c[(0xEB507)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(28)] != 0xfe)))))*((int)((((int)((int)c[(0xBC7)] != 0xff)) |((int)(c[(25)]))))))))))*((long)((((int)(((long)((((int)(c[(2)])) |((int)(((long)((((int)(c[(0x5)] != 0xff
+      || c[(17)] != 0xfd)) >>((int)((-31))))))))))))) %((int)((int)((int)c[(0x12973)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(0x6C99F)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(-26)] != 0xfe
+      || cp != d + (-31) + (106) +((short)((((int)((-31))) &((int)(c[(-1)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(4)] != 0xff)))))*((short)((((int)(c[(10)] != 0xfb)) %((int)(c[(-2)])))))+((long)((((int)(c[(16384)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((30))))))+((long)((((int)(c[(-1)] != 0xff
+      || c[(3)] != 0xfd
+      || c[(-3)] != 0xfb)) >>((int)(c[(89)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(1)])))))) + (34) *((short)((((int)(c[(-26)] != 0xfe)) |((int)(c[(3)])))))*((int)((((int)(c[(0x31734)] != 0xfe)) >>((int)(cp != d + (-31) + (170) +((short)((((int)((39))) &((int)(c[(16)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(19)] != 0xff
+      || c[(0x1)] != 0xff)))))*((short)((((int)(c[(-3)] != 0xfb)) %((int)(c[(0xE2)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(32)] != 0xff
+      || c[(7)] != 0xfd
+      || c[(0xED2E2)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(1)] != 0xfd)) >>((int)(c[(-4)]))))))))))-((short)((((int)(c[(0x44F82)])) >>((int)(0xff)))))-((short)((((int)(c[(1)])) &((int)(c[(3)] != 0xff))))))))))*((long)((((int)(((long)((((int)(c[(-4)])) <<((int)((int)c[(70368744177664)] != 0xff
+      || c[(129)] != 0xfd
+      || c[(0xD)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(0)] != 0xff
+      || c[(0xD3C66A)] != 0xfe))))))) |((int)(((long)((((int)(c[(0xEC)])) <<((int)((int)c[(0xC)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(89)] != 0xfe)))))*((int)((((int)((int)c[(-1)] != 0xff)) |((int)(c[(0x2334D)]))))))))))*((int)((((int)(((long)((((int)(c[(3)])) |((int)(((long)((((int)(c[(524288)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((0xD61750))))))))))))) &((int)((int)((int)c[(-1)] != 0xff
+      || c[(0x2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(0x2)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(0x9E1F)] != 0xfe
+      || cp != d + (-31) + (-43) +((short)((((int)((0x469))) &((int)(c[(-1)] != 0xff
+      || c[(0x433)] != 0xfd
+      || c[(0x6A4)] != 0xfb
+      || c[(35)] != 0xff
+      || c[(-5)] != 0xff)))))*((short)((((int)(c[(2)] != 0xfb)) %((int)(c[(65)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(129)] != 0xfd)) >>((int)((22))))))+((long)((((int)(c[(0)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(66)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(0x7A)] != 0xfd)) >>((int)(c[(3)])))))) + (34) *((short)((((int)(c[(0x93)] != 0xfe)) |((int)(c[(11)])))))*((int)((((int)(c[(0xC143)] != 0xfe)) >>((int)(cp != d + (-31) + (0xE40454) +((short)((((int)((0x14DD7))) &((int)(c[(0)] != 0xff
+      || c[(0xDB08)] != 0xfd
+      || c[(0x23)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(0)] != 0xff)))))*((short)((((int)(c[(0x637B)] != 0xfb)) %((int)(c[(33)])))))+((long)((((int)(c[(8388608)] != 0xff
+      || c[(0xB)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(0x91FAD)] != 0xff
+      || c[(0xAAC)] != 0xfd
+      || c[(0xC85)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(5)]))))))))))-((short)((((int)(c[(4)])) >>((int)(0xff)))))-((short)((((int)(c[(0x4FF8)])) &((int)(c[(0x7929)] != 0xff)))))+((long)((((int)(c[(0x6)])) |((int)(((long)((((int)(c[(0)] != 0xff
+      || c[(33)] != 0xfd)) >>((int)((-31)))))))))))-((long)((((int)(c[(-4)])) <<((int)((int)c[(0x9610)] != 0xff
+      || c[(0x684C)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(4)] != 0xff
+      || c[(89)] != 0xfe)))))*((int)((((int)((int)c[(33554432)] != 0xff)) |((int)(c[(153)])))))-((short)((((int)((int)c[(0xA)])) %((int)(c[(9)] != 0xfd))))))))))*((int)((((int)((int)((int)c[(0xC)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(0x7)] != 0xfb
+      || c[(0x1A)] != 0xff
+      || c[(0x8B)] != 0xff
+      || c[(17)] != 0xfe
+      || cp != d + (0xD5B) + (0xB619) +((short)((((int)((0xDF))) &((int)(c[(16)] != 0xff
+      || c[(129)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(-5)] != 0xff)))))*((short)((((int)(c[(2)] != 0xfb)) %((int)(c[(5)])))))+((long)((((int)(c[(256)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((0x7C1))))))+((long)((((int)(c[(1)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(29)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(0x1BEE)])))))) + (43) *((short)((((int)(c[(0x32)] != 0xfe)) |((int)(c[(0x63CF)])))))*((int)((((int)(c[(17)] != 0xfe)) >>((int)(cp != d + (30) + (-43) +((short)((((int)((0xBF58AD))) &((int)(c[(281474976710656)] != 0xff
+      || c[(129)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(0x73)] != 0xff)))))*((short)((((int)(c[(-3)] != 0xfb)) %((int)(c[(0x356F4)])))))+((long)((((int)(c[(-1)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((0x85))))))+((long)((((int)(c[(0x7CF2)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb)) >>((int)(c[(25)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(-4)]))))))))))-((short)((((int)(c[(4)])) >>((int)(0xff)))))-((short)((((int)(c[(1)])) &((int)(c[(5)] != 0xff))))))) %((int)((int)((int)c[(0x9)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(35)] != 0xff
+      || c[(0xFC)] != 0xff
+      || c[(0x95)] != 0xfe
+      || cp != d + (0xA4) + (42) +((short)((((int)((-31))) &((int)(c[(0)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(0x3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(0xEB0F0)] != 0xff)))))*((short)((((int)(c[(0x635)] != 0xfb)) %((int)(c[(1)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(0x6A587)] != 0xfd)) >>((int)((62))))))+((long)((((int)(c[(0)] != 0xff
+      || c[(33)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(0x73DCA)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(35)])))))) + (42) *((short)((((int)(c[(-26)] != 0xfe)) |((int)(c[(67)])))))*((int)((((int)(c[(29)] != 0xfe)) >>((int)(cp != d + (158) + (0xA54B) +((short)((((int)((62))) &((int)(c[(0)] != 0xff
+      || c[(129)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(0xD)] != 0xff
+      || c[(0x59B)] != 0xff)))))*((short)((((int)(c[(-3)] != 0xfb)) %((int)(c[(33)])))))+((long)((((int)(c[(0x60EA)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((26))))))+((long)((((int)(c[(512)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(0)] != 0xfb)) >>((int)(c[(24)] != 0xfe)))))+((short)((((int)(c[(0xDE2)] != 0xfd)) >>((int)(c[(0xDC5D)]))))))))))-((short)((((int)(c[(68)])) >>((int)(0xff)))))-((short)((((int)(c[(129)])) &((int)(c[(3)] != 0xff))))))))))+((int)((((int)(((int)((((int)(c[(-3)])) >>((int)((int)c[(0x3EACF)] != 0xff
+      || c[(3)] != 0xfd))))))) <<((int)(((long)((((int)(c[(-3)])) |((int)(((long)((((int)(c[(0x375)] != 0xff
+      || c[(65)] != 0xfd)) >>((int)((0x29))))))))))))))))*((short)((((int)(((int)((((int)(c[(0xCB4)])) >>((int)((int)c[(0xBB)] != 0xff
+      || c[(-2)] != 0xfd))))))) |((int)(((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(0xA4FA)]))))))))))-((int)((((int)((int)((int)c[(-1)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(25)] != 0xfe
+      || cp != d + (38) + (42) +((short)((((int)((31))) &((int)(c[(0)] != 0xff
+      || c[(17)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(0xF6)] != 0xff
+      || c[(4)] != 0xff)))))*((short)((((int)(c[(0x02)] != 0xfb)) %((int)(c[(0xE)])))))+((long)((((int)(c[(0x5DC)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((20))))))+((long)((((int)(c[(0xD55A)] != 0xff
+      || c[(3)] != 0xfd
+      || c[(34)] != 0xfb)) >>((int)(c[(9)] != 0xfe)))))+((short)((((int)(c[(65)] != 0xfd)) >>((int)(c[(0xA3)])))))) + (0xC1CE6E) *((short)((((int)(c[(25)] != 0xfe)) |((int)(c[(0xCDA)])))))*((int)((((int)(c[(27)] != 0xfe)) >>((int)(cp != d + (0xEC) + (42) +((short)((((int)((-31))) &((int)(c[(2)] != 0xff
+      || c[(3)] != 0xfd
+      || c[(0xA01A8)] != 0xfb
+      || c[(0x2F1C7)] != 0xff
+      || c[(4)] != 0xff)))))*((short)((((int)(c[(-3)] != 0xfb)) %((int)(c[(1)])))))+((long)((((int)(c[(0xF3)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(0x56B0E)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(0xCA61)] != 0xfe)))))+((short)((((int)(c[(0xB56)] != 0xfd)) >>((int)(c[(0x976AC)]))))))))))-((short)((((int)(c[(-5)])) >>((int)(0xff)))))-((short)((((int)(c[(-2)])) &((int)(c[(-4)] != 0xff)))))+((long)((((int)(c[(-3)])) |((int)(((long)((((int)(c[(0)] != 0xff
+      || c[(0x6060)] != 0xfd)) >>((int)((94)))))))))))-((long)((((int)(c[(-4)])) <<((int)((int)c[(0)] != 0xff
+      || c[(0)] != 0xfd
+      || c[(0xC8)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(68)] != 0xff
+      || c[(-26)] != 0xfe)))))*((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(25)])))))-((short)((((int)((int)c[(0x2C)])) %((int)(c[(-2)] != 0xfd))))))) <<((int)(((long)((((int)(c[(67)])) <<((int)((int)c[(0)] != 0xff
+      || c[(17)] != 0xfd
+      || c[(34)] != 0xfb
+      || c[(0x218)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(0x714)] != 0xfe)))))*((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(0x00F)]))))))))))) + (62) +((short)((((int)((0xA95) *((int)((((int)(((long)((((int)(c[(8)])) <<((int)((int)c[(0)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(0xE9A34)] != 0xfb
+      || c[(0x2)] != 0xff
+      || c[(0xC902)] != 0xff
+      || c[(0xD7F)] != 0xfe))))))) &((int)(((long)((((int)(c[(19)])) <<((int)((int)c[(32768)] != 0xff
+      || c[(0xC2F7)] != 0xfd
+      || c[(0xE)] != 0xfb
+      || c[(0xE6748)] != 0xff
+      || c[(0xCF5)] != 0xff
+      || c[(25)] != 0xfe)))))*((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(27)]))))))))))*((long)((((int)(((long)((((int)(c[(0x10594)])) |((int)(((long)((((int)(c[(0)] != 0xff
+      || c[(9)] != 0xfd)) >>((int)((0xF557))))))))))))) %((int)((int)((int)c[(0xA)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(12)] != 0xff
+      || c[(-26)] != 0xfe
+      || cp != d + (0x3F7) + (106) +((short)((((int)((-31))) &((int)(c[(2048)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(-5)] != 0xff)))))*((short)((((int)(c[(7)] != 0xfb)) %((int)(c[(0xF6F)])))))+((long)((((int)(c[(-1)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(0)] != 0xff
+      || c[(0x24)] != 0xfd
+      || c[(34)] != 0xfb)) >>((int)(c[(25)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(3)])))))) + (-43) *((short)((((int)(c[(25)] != 0xfe)) |((int)(c[(-4)])))))*((int)((((int)(c[(-26)] != 0xfe)) >>((int)(cp != d + (0x6BA) + (-43) +((short)((((int)((30))) &((int)(c[(0)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(0)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(0x5494F)] != 0xff)))))*((short)((((int)(c[(5)] != 0xfb)) %((int)(c[(65)])))))+((long)((((int)(c[(536870912)] != 0xff
+      || c[(9)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(0)] != 0xff
+      || c[(5)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(25)] != 0xfe)))))+((short)((((int)(c[(33)] != 0xfd)) >>((int)(c[(35)]))))))))))-((short)((((int)(c[(6)])) >>((int)(0xff)))))-((short)((((int)(c[(-2)])) &((int)(c[(0x3B)] != 0xff))))))))))*((long)((((int)(((long)((((int)(c[(-4)])) <<((int)((int)c[(0)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(18)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(68)] != 0xff
+      || c[(25)] != 0xfe))))))) |((int)(((long)((((int)(c[(-4)])) <<((int)((int)c[(9007199254740992)] != 0xff
+      || c[(0xB46E)] != 0xfd
+      || c[(0x9EA)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(36)] != 0xff
+      || c[(57)] != 0xfe)))))*((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(89)])))))))))))) ^((int)(((int)((((int)(((long)((((int)(c[(130)])) |((int)(((long)((((int)(c[(0x753)] != 0xff
+      || c[(0xAFEF)] != 0xfd)) >>((int)((-31))))))))))))) &((int)((int)((int)c[(8192)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(0x3681)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(0x0C3)] != 0xfe
+      || cp != d + (0x748CA) + (42) +((short)((((int)((28))) &((int)(c[(2)] != 0xff
+      || c[(0x0F23A)] != 0xfd
+      || c[(0x5479E)] != 0xfb
+      || c[(7)] != 0xff
+      || c[(0x599)] != 0xff)))))*((short)((((int)(c[(-3)] != 0xfb)) %((int)(c[(-2)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((0xCBAD))))))+((long)((((int)(c[(64)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb)) >>((int)(c[(25)] != 0xfe)))))+((short)((((int)(c[(1)] != 0xfd)) >>((int)(c[(7)])))))) + (58) *((short)((((int)(c[(0x730354)] != 0xfe)) |((int)(c[(-4)])))))*((int)((((int)(c[(25)] != 0xfe)) >>((int)(cp != d + (00) + (0xBAB) +((short)((((int)((30))) &((int)(c[(128)] != 0xff
+      || c[(0x31F)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(6)] != 0xff)))))*((short)((((int)(c[(2)] != 0xfb)) %((int)(c[(1)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(32)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(25)] != 0xfe)))))+((short)((((int)(c[(9)] != 0xfd)) >>((int)(c[(0x90D8A)]))))))))))-((short)((((int)(c[(36)])) >>((int)(0xff)))))-((short)((((int)(c[(9)])) &((int)(c[(35)] != 0xff)))))+((long)((((int)(c[(2)])) |((int)(((long)((((int)(c[(0x7)] != 0xff
+      || c[(65)] != 0xfd)) >>((int)((30)))))))))))-((long)((((int)(c[(-4)])) <<((int)((int)c[(16)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(0)] != 0xfb
+      || c[(0x5D009)] != 0xff
+      || c[(0x82E58)] != 0xff
+      || c[(17)] != 0xfe)))))*((int)((((int)((int)c[(64)] != 0xff)) |((int)(c[(25)])))))-((short)((((int)((int)c[(0)])) %((int)(c[(-2)] != 0xfd)))))))))))))))+((short)((((int)(((int)((((int)(((int)((((int)(c[(0xFC)])) >>((int)((int)c[(0)] != 0xff
+      || c[(17)] != 0xfd))))))) <<((int)(((long)((((int)(c[(0x51189)])) |((int)(((long)((((int)(c[(131072)] != 0xff
+      || c[(1)] != 0xfd)) >>((int)((30))))))))))))))))*((short)((((int)(((int)((((int)(c[(0)])) >>((int)((int)c[(-1)] != 0xff
+      || c[(-2)] != 0xfd))))))) |((int)(((int)((((int)((int)c[(64)] != 0xff)) |((int)(c[(25)])))))))))))) |((int)(((long)((((int)(((long)((((int)(c[(0x93EE3)])) |((int)(((long)((((int)(c[(16)] != 0xff
+      || c[(33)] != 0xfd)) >>((int)((-31))))))))))))) %((int)((int)((int)c[(0x0F)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(34)] != 0xfb
+      || c[(0x5027)] != 0xff
+      || c[(0x2C)] != 0xff
+      || c[(27)] != 0xfe
+      || cp != d + (-31) + (-43) +((short)((((int)((0x03B98B))) &((int)(c[(0)] != 0xff
+      || c[(0xE35)] != 0xfd
+      || c[(3)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(6)] != 0xff)))))*((short)((((int)(c[(2)] != 0xfb)) %((int)(c[(-2)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(-2)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(128)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(3)] != 0xfd)) >>((int)(c[(3)])))))) + (42) *((short)((((int)(c[(29)] != 0xfe)) |((int)(c[(0xBD1)])))))*((int)((((int)(c[(25)] != 0xfe)) >>((int)(cp != d + (0x06A55E) + (-43) +((short)((((int)((-31))) &((int)(c[(0)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(-4)] != 0xff
+      || c[(0x7)] != 0xff)))))*((short)((((int)(c[(-3)] != 0xfb)) %((int)(c[(-2)])))))+((long)((((int)(c[(-1)] != 0xff
+      || c[(0x028A0)] != 0xfd)) >>((int)((28))))))+((long)((((int)(c[(32)] != 0xff
+      || c[(0x483B3)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(65)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(3)]))))))))))-((short)((((int)(c[(5)])) >>((int)(0xff)))))-((short)((((int)(c[(1)])) &((int)(c[(0x36)] != 0xff)))))))))))))))*((short)((((int)((0xD0291) *((int)((((int)(((long)((((int)(c[(3)])) <<((int)((int)c[(0)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(66)] != 0xfb
+      || c[(0x60)] != 0xff
+      || c[(-5)] != 0xff
+      || c[(-26)] != 0xfe))))))) &((int)(((long)((((int)(c[(1)])) <<((int)((int)c[(4398046511104)] != 0xff
+      || c[(1)] != 0xfd
+      || c[(2)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(0xF45)] != 0xff
+      || c[(17)] != 0xfe)))))*((int)((((int)((int)c[(4)] != 0xff)) |((int)(c[(9)])))))))))))) |((int)((int)((int)((int)c[(-1)] != 0xff
+      || c[(33)] != 0xfd
+      || c[(-3)] != 0xfb
+      || c[(35)] != 0xff
+      || c[(20)] != 0xff
+      || c[(25)] != 0xfe
+      || cp != d + (30) + (42) +((short)((((int)((0x30BBD1))) &((int)(c[(0x5E5C8)] != 0xff
+      || c[(0x2CF7)] != 0xfd
+      || c[(10)] != 0xfb
+      || c[(3)] != 0xff
+      || c[(4)] != 0xff)))))*((short)((((int)(c[(6)] != 0xfb)) %((int)(c[(1)])))))+((long)((((int)(c[(0)] != 0xff
+      || c[(0x6795D)] != 0xfd)) >>((int)((22))))))+((long)((((int)(c[(0)] != 0xff
+      || c[(33)] != 0xfd
+      || c[(66)] != 0xfb)) >>((int)(c[(-26)] != 0xfe)))))+((short)((((int)(c[(17)] != 0xfd)) >>((int)(c[(-4)])))))) + (0x9AF1E) *((short)((((int)(c[(25)] != 0xfe)) |((int)(c[(0x06)])))))*((int)((((int)(c[(-26)] != 0xfe)) >>((int)(cp != d + (0x854) + (0xC7) +((short)((((int)((14))) &((int)(c[(0xCE37)] != 0xff
+      || c[(0x3C)] != 0xfd
+      || c[(3)] != 0xfb
+      || c[(2)] != 0xff
+      || c[(0x1)] != 0xff)))))*((short)((((int)(c[(2)] != 0xfb)) %((int)(c[(-2)])))))+((long)((((int)(c[(0x3F1E)] != 0xff
+      || c[(0x136)] != 0xfd)) >>((int)((-31))))))+((long)((((int)(c[(134217728)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(2)] != 0xfb)) >>((int)(c[(0x024236)] != 0xfe)))))+((short)((((int)(c[(-2)] != 0xfd)) >>((int)(c[(3)]))))))))))-((short)((((int)(c[(-5)])) >>((int)(0xff)))))-((short)((((int)(c[(1)])) &((int)(c[(2)] != 0xff)))))+((long)((((int)(c[(18)])) |((int)(((long)((((int)(c[(4)] != 0xff
+      || c[(0x86)] != 0xfd)) >>((int)((0x828)))))))))))-((long)((((int)(c[(-4)])) <<((int)((int)c[(-1)] != 0xff
+      || c[(-2)] != 0xfd
+      || c[(18)] != 0xfb
+      || c[(11)] != 0xff
+      || c[(0x913)] != 0xff
+      || c[(25)] != 0xfe)))))*((int)((((int)((int)c[(0)] != 0xff)) |((int)(c[(57)])))))-((short)((((int)((int)c[(0)])) %((int)(c[(-2)] != 0xfd)))))-((int)((((int)(c[(66)])) >>((int)((int)c[(0)] != 0xff
+      || c[(0xA27CF)] != 0xfd)))))-((short)((((int)(c[(11)] != 0xff)) >>((int)((int)c[(0)])))))))))))))
+    { abort (); }
+  exit ((3));
+}
+/* ProgramSourceLLVM */
