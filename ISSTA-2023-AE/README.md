@@ -147,7 +147,7 @@ ninja regexp
 ninja nofuss
 ```
 	
-**Test Case Generation**. To generate the test programs with each of the fuzzers, starting with GrayC:
+**Test Case Generation** (Section 5.1). To generate the test programs with each of the fuzzers, starting with GrayC:
 ```
 cd ~
 ./1-run-grayc-small.sh
@@ -190,13 +190,13 @@ mkdir AFLCompiler
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* AFLCompiler
 ```
 
-**Throughput of Fuzzing**. Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
+**Throughput of Fuzzing** (Section 5.2). Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
 Run the following scripts:
 ```
 TODO
 ```
 	
-**Coverage**. We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
+**Coverage** (Section 5.3). We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
 --- OLD TEXT --- NEED TO RUN AND MOVE UP
 ### gfauto tool
