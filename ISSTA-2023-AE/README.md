@@ -18,7 +18,6 @@ NOTE: A copy of this README is in the working directory of the Docker image, ~/g
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes. To start the docker container:
 ```
 docker load -i grayc.tar
-docker run -it grayc
 ```
 Check if the conatainer is present with and get the container id as <container-id>:
 ```
