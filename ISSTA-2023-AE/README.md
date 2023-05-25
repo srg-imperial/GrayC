@@ -207,13 +207,14 @@ cd ~
 Which outputs how many files are in the folder and how many **failed** compilation. For example:
 ```
 ./11-get-gen-comp-rate.sh AFLCompiler/
-Total files processed: 4020
-Total files failing compilation: 3212
+Total files processed: 2075
+Total files failing compilation: 2075
 ./11-get-gen-comp-rate.sh csmith/
 Total files processed: 321
 Total files failing compilation: 0
 ```
-Hence the compilation rate for No-fuss-fuzzer (AFLCompiler) is X and for Csmith is 100%.
+Hence the compilation rate for No-fuss-fuzzer (AFLCompiler) is 0% and for Csmith is 100%.
+The rate is the number of hours ran divided by 2075 and 321. 
 	
 **Coverage** (Section 5.3). We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
