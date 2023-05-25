@@ -19,7 +19,7 @@ NOTE: A copy of this README is in the working directory of the Docker image, ~/g
 
 # II. GrayC Artifact ISSTA 2023 - Phase 1
 
-## II.A Getting Started
+## II.A Loading the Docker Image
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we comapred against in our controlled evaluation and includes to set ups of GrayC: aggressive and conservative modes. To start the docker container:
 ```
@@ -32,42 +32,27 @@ su - user42
 ```
 (do not run it if you are already user42, e.g. you see the home folder that way: user42@96ac044ddeef:~/).
 
-If you do not wish to use a docker image, we discuss in the next section how to install it from source GrayC. We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB). 
+We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB).
+
+If you do not wish to use a docker image, we discuss later how to install GrayC from source (last section of this artifact).
 
 ## II.B Steps to check the basic functionality of the artifact
 
-If you choose to install from source or use our docker image (recommanded), you can test if all is working by running the fuzzer.
+Once you load and attached the docker image of GrayC artifact, do the following to test all is working:
 
-1. Docker. Run the following:
+1. Inside the docker the main user is user42, not root. Please do not switch to root.
+2. Run the following for each of the tools in our controlled experiments. There are 10 fuzzers in this study.
 ```
 cd /home/user42/
-./run-grayc-conservative.sh
 ```
+The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzer produced data, as some of them (like Clang-fuzzer) has a longer loading time.
+
 DO NOT WORRY IF YOU GET C ERROR MESSAGES, we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us.
 
-2. Installing from source scripts, prints a command at the end of the installation, please use this command "as is" to test all is working well.
-
-Once starting the fuzzer it should print into the screen or logger file (if you redirect it), something like these messages:
+The results should look like this:
 ```
--I/home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-includes/ -I/usr/include/x86_64-linux-gnu/ 
-INFO: found LLVMFuzzerCustomMutator (0x678f00). Disabling -len_control by default.
-INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 1262126277
-INFO: Loaded 1 modules   (1580480 inline 8-bit counters): 1580480 [0xbc29090, 0xbdaae50),
-INFO: Loaded 1 PC tables (1580480 PCs): 1580480 [0xbdaae50,0xd5c8a50),
-INFO:     2005 files found in /home/user42/fuzzers//copy_1/llvm-csmith-1/../setA/
-INFO: seed corpus: files: 2005 min: 108b max: 38752b total: 1483224b rss: 108Mb
-#128	pulse  cov: 25891 ft: 50183 corp: 124/20Kb exec/s: 42 rss: 296Mb
-#256	pulse  cov: 30047 ft: 67200 corp: 242/44Kb exec/s: 28 rss: 451Mb
-#512	pulse  cov: 35096 ft: 85253 corp: 469/100Kb exec/s: 25 rss: 500Mb
-#1024	pulse  cov: 40160 ft: 115514 corp: 912/252Kb exec/s: 23 rss: 510Mb
-#2006	INITED cov: 46427 ft: 195668 corp: 1814/1356Kb exec/s: 16 rss: 547Mb
-Processed File: fuzzer-file-0 with mutation bin/delete-mutator
-	NEW_FUNC[1/3]: 0x67daca0 in llvm::opt::Arg::getAsString[abi:cxx11](llvm::opt::ArgList const&) const /home/user42/fuzzers/copy_1/llvm-csmith-1/llvm-source/lib/Option/Arg.cpp:68
-	NEW_FUNC[2/3]: 0x9328810 in llvm::AttributeSet::removeAttribute(llvm::LLVMContext&, llvm::Attribute::AttrKind) const /home/user42/fuzzers/copy_1/llvm-csmith-
-```
-and so on.
 
+```
 
 
 
