@@ -131,7 +131,7 @@ cd /home/user42/
 ```
 You can see all the scripts to reproduce Section 5's results (ls -l).
 
-The fuzzers are installed in /home/user42/fuzzers/copy_5/, but the data are in /home/user42/fuzzers/. 
+**Build. ** The fuzzers are installed in /home/user42/fuzzers/copy_5/, but the data are in /home/user42/fuzzers/. 
 The source code is in /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-source/tools/clang/tools/.
 You can rebuild the code by:
 ```
@@ -147,7 +147,7 @@ ninja regexp
 ninja nofuss
 ```
 	
-To generate the test programs with each of the fuzzers, starting with GrayC:
+**Test Case Generation. ** To generate the test programs with each of the fuzzers, starting with GrayC:
 ```
 cd ~
 ./1-run-grayc-small.sh
@@ -190,7 +190,7 @@ mkdir AFLCompiler
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* AFLCompiler
 ```
 
-Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
+**Throughput of Fuzzing. ** Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
 Run the following scripts:
 ```
 TODO
