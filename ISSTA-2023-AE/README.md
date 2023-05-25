@@ -51,7 +51,8 @@ cd /home/user42/
 ./5-run-clang-fuzzer-tiny.sh
 ./6-run-csmith-tiny.sh
 ./7-run-grammarinator-tiny.sh
-./9-run-RegExpMutator.sh
+./9-run-RegExpMutator-tiny.sh
+./8-run-PolyGlot-tiny.sh
 ./10-run-AFLCompiler-tiny.sh
 ```
 The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzer produced data, as some of them (like Clang-fuzzer) has a longer loading time.
@@ -131,19 +132,57 @@ We describe now how to reproduce all the tables and graphs' data for section 5 i
 
 ### Step-by-Step instructions
 
-#### Throughput
-
+To reproduce the sets of test cases in Section 5.1, run the following scripts. 
+These will run for 10 minutes each, and in total 90 minutes as we skip PolyGlot. 
+In the docker do:
 ```
 cd /home/user42/
-./1-run-grayc-aggressive-tiny.sh
-./2-run-grayc-conservative-tiny.sh
-./3-run-grayc-no-cov-guidance-tiny.sh
-./4-run-grayc-fragments-fuzzing-tiny.sh
-./5-run-clang-fuzzer-tiny.sh
-./6-run-csmith-tiny.sh
-./7-run-grammarinator-tiny.sh
-./9-run-RegExpMutator.sh
-./10-run-AFLCompiler-tiny.sh
+```
+Then you can start generating the files per tool. For GrayC Aggressive:
+```
+./1-run-grayc-aggressive-small.sh
+mkdir grayc-aggressive
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-aggressive
+```
+For GrayC Conservative:
+```
+./2-run-grayc-conservative-small.sh
+mkdir grayc-conservative
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-conservative
+```
+and for the rest of the tools:
+```
+./3-run-grayc-no-cov-guidance-small.sh
+mkdir grayc-no-cov-guidance
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-no-cov-guidance
+
+./4-run-grayc-fragments-fuzzing-small.sh
+mkdir grayc-fragments
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-fragments
+
+./5-run-clang-fuzzer-small.sh
+mkdir clang-fuzzer
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ clang-fuzzer
+
+./6-run-csmith-small.sh
+mkdir csmith
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ csmith
+
+./7-run-grammarinator-small.sh
+mkdir grammarinator
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grammarinator
+
+./8-run-PolyGlot-small.sh
+mkdir PolyGlot
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ PolyGlot
+
+./9-run-RegExpMutator-small.sh
+mkdir RegExpMutator
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ RegExpMutator
+
+./10-run-AFLCompiler-small.sh
+mkdir AFLCompiler
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ AFLCompiler
 ``
 We measured the throughput of Csmith vs. GrayC on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
 
