@@ -151,26 +151,13 @@ mkdir AFLCompiler
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ AFLCompiler
 ```
 
+Next, we describe how to get the results for Section 5.2 and Table 5.
 
---- OLD TEXT --- NEED TO RUN AND MOVE UP
-Tools' Evaluation in the paper
-==============================
-Using the following commands with the installation above of GrayC
-```
-(ulimit -St 86400; ./throughput/GrayC-24H.sh <fuzzer-build> <setA-path> <seeds-file>) > run_24h.log 2>&1 &
-```
-and with a wrapper to run Csmith for 24H
-```
-git clone https://github.com/csmith-project/csmith.git
-cd csmith; git checkout 900729a; mkdir build; cd build; cmake ../ ; make;
-(ulimit -St 86400; ./throughput/csmith-24H.sh <csmith-folder> <output-folder>)
-```
-which generates sets of programs from each of the tools for a period of 24 hours with timeout per generated program is set to be 50 s.
-
-## Coverage
-
+TODO
+	
 We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
+--- OLD TEXT --- NEED TO RUN AND MOVE UP
 ### gfauto tool
 If you don't have gfauto installed, please follow the instructions here: https://github.com/google/graphicsfuzz.
 You can try the following instruction we used to set the tool:
