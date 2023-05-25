@@ -30,21 +30,7 @@ su - user42
 
 If you do not wish to use a docker image, we discuss in the next section how to install it from source GrayC. We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB). 
 
-## II.B Artifact’s requirements - [SKIP](README.md#iic-steps-to-check-the-basic-functionality-of-the-artifact) THIS IF USING DOCKER IMAGE
-
-*For installing from source,* you will need to install the following: gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
-
-Note 1: CMake 3.13.4 or higher is required.
-
-Note 2: GCC-10 or higher is required. We have tested our artifact with GCC-10 and GCC-11.
-
-Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
-1. gfauto: https://github.com/google/graphicsfuzz.git
-2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
-
-You can then need to continue and follow the instructions in "VI. Reusability of GrayC - Additional details" (the last part of this README.md file).
-
-## II.C Steps to check the basic functionality of the artifact
+## II.B Steps to check the basic functionality of the artifact
 
 If you choose to install from source or use our docker image (recommanded), you can test if all is working by running the fuzzer.
 
@@ -288,14 +274,27 @@ Bug Rate:
 	
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
 
+	
+## VI.A Artifact’s requirements
+
+*For installing from source,* you will need to install the following: gcc, gcov, g++, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
+
+Note 1: CMake 3.13.4 or higher is required.
+
+Note 2: GCC-10 or higher is required. We have tested our artifact with GCC-10 and GCC-11.
+
+Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
+1. gfauto: https://github.com/google/graphicsfuzz.git
+2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
+
+	
 ### Build from source
 GrayC was implemented on top of LibFuzzer, and so its build may take long, depending on your machine: it builds LLVM 12 with instrumentation.
 
 Please follow the instructions in this README.md file (under GrayC/ISSTA-2023-AE/fuzzer/README.md).
 ```
 nano GrayC/ISSTA-2023-AE/fuzzer/README.md
-```
-
+```	
 ### Project structure
 
 The project contains several folders.
