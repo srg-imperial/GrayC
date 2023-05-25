@@ -59,7 +59,7 @@ cd /home/user42/
 ```
 The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzers produced data, as some of them (like Clang-fuzzer) has a longer loading time.
 
-DO NOT WORRY IF YOU GET C ERROR MESSAGES, we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us. For example, this is a normal output of compiler fuzzer fuzzing process:
+DO NOT WORRY IF YOU GET C ERROR MESSAGES. we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us. For example, this is a normal output of compiler fuzzer fuzzing process:
 ```
 Processed File: fuzzer-file-467 with mutation bin/constant-mutator
 Processed File: fuzzer-file-470 with mutation bin/duplicate-mutator
@@ -78,7 +78,7 @@ Processed File: fuzzer-file-470 with mutation bin/duplicate-mutator
 2 errors generated.
 Error while processing /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-Tt4q9a.mutated.c.
 ```
-This is great results! why? We generated a new fuzzed program via two mutators (constant-mutator and duplicate-mutator) and got new coverage: "#2362	NEW    cov: ", this is true even if you see this error printed. It means that the new coverage achieved in the parser or other front-end parts of the compiler, that's all. Nothing bad. However, if you get a real error, like you cannot upload the fuzzer, then please let us know.
+This is great results! why? We generated a new fuzzed program via two mutators (constant-mutator and duplicate-mutator) and got new coverage: "#2362	NEW    cov: ", this is true even if you see this error printed. It means that the new coverage achieved in the parser or other front-end parts of the compiler, that's all. Nothing bad.
 
 The results should look like this:
 ```
