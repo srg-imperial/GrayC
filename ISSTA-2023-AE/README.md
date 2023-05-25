@@ -142,7 +142,6 @@ mkdir AFLCompiler
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ AFLCompiler
 ```
 
-We measured the throughput of Csmith vs. GrayC on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
 
 --- OLD TEXT --- NEED TO RUN AND MOVE UP
 Tools' Evaluation in the paper
@@ -341,6 +340,8 @@ Most of them are available via apt in Ubuntu OS or via pip but also easy to inst
 pip3 install grammarinator
 ```
 Note: Csmith requires also m4; we used m4 1.4.18.
+
+We measured the throughput of Csmith vs. GrayC on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
 
 	
 ### Build from source
