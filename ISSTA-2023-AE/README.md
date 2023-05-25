@@ -158,10 +158,6 @@ cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-
 and for the rest of the tools:
 ```
 cd ~
-./2-run-grayc-conservative-small.sh
-mkdir grayc-conservative
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-conservative
-
 ./3-run-grayc-no-cov-guidance-small.sh
 mkdir grayc-no-cov-guidance
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-no-cov-guidance
@@ -195,9 +191,11 @@ mkdir AFLCompiler
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* AFLCompiler
 ```
 
-Next, we describe how to get the results for Section 5.2 and Table 5.
-
+Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
+Run the following scripts:
+```
 TODO
+```
 	
 We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
