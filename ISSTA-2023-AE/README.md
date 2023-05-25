@@ -131,7 +131,7 @@ cd /home/user42/
 ```
 You can see all the scripts to reproduce Section 5's results (ls -l).
 
-**Build. ** The fuzzers are installed in /home/user42/fuzzers/copy_5/, but the data are in /home/user42/fuzzers/. 
+**Build**. The fuzzers are installed in /home/user42/fuzzers/copy_5/, but the data are in /home/user42/fuzzers/. 
 The source code is in /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-source/tools/clang/tools/.
 You can rebuild the code by:
 ```
