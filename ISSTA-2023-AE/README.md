@@ -78,7 +78,7 @@ Processed File: fuzzer-file-470 with mutation bin/duplicate-mutator
 2 errors generated.
 Error while processing /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-Tt4q9a.mutated.c.
 ```
-This is great results! why? We generated a new fuzzed program via two mutators (constant-mutator and duplicate-mutator) and got new coverage: "#2362	NEW    cov: ", this is true even if you see this error printed. It means that the new coverage achieved in the parser or other front-end parts of the compiler, that's all. Nothing bad.
+This is great results! why? We generated a new fuzzed program via two mutators (constant-mutator and duplicate-mutator) and got new coverage: "#2362	NEW    cov: ". It is true even if you see errors printed. It means that the new coverage achieved in the parser or other front-end parts of the compiler, that's all. Nothing bad.
 
 The results should look like this:
 ```
