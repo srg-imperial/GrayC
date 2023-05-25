@@ -47,7 +47,7 @@ Once you load and attached the docker image of GrayC artifact, do the following 
 2. Run the following for each of the tools in our controlled experiments. There are 10 fuzzers in this study.
 ```
 cd /home/user42/
-./1-run-grayc-aggressive-tiny.sh
+./1-run-grayc-tiny.sh
 ./2-run-grayc-conservative-tiny.sh
 ./3-run-grayc-no-cov-guidance-tiny.sh
 ./4-run-grayc-fragments-fuzzing-tiny.sh
@@ -104,51 +104,68 @@ In the docker do:
 ```
 cd /home/user42/
 ```
-Then you can start generating the files per tool. For GrayC Aggressive:
+Where you can see all the script you need to reproduce Section 5's results.
+
+The fuzzers installed in /home/user42/fuzzers/copy_5/ but the data are in /home/user42/fuzzers/.
+You can rebuild the code by:
 ```
-./1-run-grayc-aggressive-small.sh
-mkdir grayc-aggressive
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-aggressive
+cd /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build
+ninja
+ninja clang-fuzzer
+ninja grayc-aggressive
+```
+and for the rest of the tools (we compared against several fuzzers):
+```
+ninja grayc-conservative
+ninja regexp
+ninja nofuss
+```
+	
+To generate the test programs with each of the fuzzers, starting with GrayC:
+```
+./1-run-grayc-small.sh
+mkdir GrayC
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* GrayC
 ```
 For GrayC Conservative:
 ```
 ./2-run-grayc-conservative-small.sh
 mkdir grayc-conservative
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-conservative
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-conservative
 ```
 and for the rest of the tools:
 ```
 ./3-run-grayc-no-cov-guidance-small.sh
 mkdir grayc-no-cov-guidance
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-no-cov-guidance
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-no-cov-guidance
 
 ./4-run-grayc-fragments-fuzzing-small.sh
 mkdir grayc-fragments
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grayc-fragments
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-fragments
 
 ./5-run-clang-fuzzer-small.sh
 mkdir clang-fuzzer
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ clang-fuzzer
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* clang-fuzzer
 
 ./6-run-csmith-small.sh
 mkdir csmith
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ csmith
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* csmith
 
 ./7-run-grammarinator-small.sh
 mkdir grammarinator
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ grammarinator
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grammarinator
 
 ./8-run-PolyGlot-small.sh
 mkdir PolyGlot
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ PolyGlot
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* PolyGlot
 
 ./9-run-RegExpMutator-small.sh
 mkdir RegExpMutator
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ RegExpMutator
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* RegExpMutator
 
 ./10-run-AFLCompiler-small.sh
 mkdir AFLCompiler
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory/ AFLCompiler
+cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* AFLCompiler
 ```
 
 Next, we describe how to get the results for Section 5.2 and Table 5.
