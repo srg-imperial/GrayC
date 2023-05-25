@@ -9,7 +9,10 @@ Please see these links for bug reports and raw data [for the whole paper](data) 
 NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/ISSTA-2023-AE/README.md.
 
 
-
+	
+	
+	
+	
 
 # II. GrayC Artifact ISSTA 2023 - Phase 1
 
@@ -89,6 +92,11 @@ End Fuzzing with Csmith. Generated 34 files in /home/user42/fuzzers/copy_5/llvm-
 Note: Polyglot works with an AFL-instrumented C compiler. Adding this to the docker container would impose a serious restriction on the size of the resultant tar (as the install is over 100Gb). The authors of the paper do provide a docker image which can be used to run the tool and it follows our methodology.
 
 
+	
+	
+	
+	
+	
 # III. GrayC Artifact ISSTA 2023 - Phase 2
 
 After you loaded succesfull our docker image (or installed from source GrayC). 
