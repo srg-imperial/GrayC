@@ -65,7 +65,7 @@ The results should look like this:
 Starts Csmith 2023-05-25 12:31:43 and will end at 2023-05-25 12:32:43
 End Fuzzing with Csmith. Generated 34 files in /home/user42/fuzzers/copy_5/llvm-csmith-5/csmith/../llvm-fuzzer-build/fuzzer-output-directory-prev/
 ```
-
+Note: Polyglot works with an AFL-instrumented C compiler. Adding this to the docker container would impose a serious restriction on the size of the resultant tar (as the install is over 80Gb). The authors of the paper do provide a docker image which can be used to run the tool and it follows our methodology.
 # III. GrayC Artifact ISSTA 2023 - Phase 2
 
 After you loaded succesfull our docker image or installed from source GrayC. You can follow the instruction below to reproduce the results in Section 5 of our paper.
