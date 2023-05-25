@@ -6,7 +6,7 @@ This repository contains the data and code to reproduce the results in the paper
 
 Please see these links for bug reports and raw data [for the whole paper](data) and for [section 4](data/Evaluation/USING-GRAYC-IN-THE-WILD) and [section 5](data/Evaluation/EVALUATION-VIA-CONTROLLED-EXPERIMENTS/Bug-finding-trails).
 
-NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/README.md.
+NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/ISSTA-2023-AE/README.md.
 
 
 
