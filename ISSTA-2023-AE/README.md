@@ -44,7 +44,7 @@ If you do not wish to use a docker image, we discuss later how to install GrayC 
 Once you load and attached the docker image of GrayC artifact, do the following to test all is working:
 
 1. Inside the docker the main user is user42, not root. Please do not switch to root.
-2. Run the following for each of the tools in our controlled experiments. There are 10 fuzzers in this study.
+2. Run the following for each of the tools in our controlled experiments. There are several fuzzers in this study.
 ```
 cd /home/user42/
 ./1-run-grayc-tiny.sh
@@ -57,7 +57,7 @@ cd /home/user42/
 ./8-run-PolyGlot-tiny.sh
 ./10-run-AFLCompiler-tiny.sh
 ```
-The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzer produced data, as some of them (like Clang-fuzzer) has a longer loading time.
+The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzers produced data, as some of them (like Clang-fuzzer) has a longer loading time.
 
 DO NOT WORRY IF YOU GET C ERROR MESSAGES, we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us. For example, this is a normal output of compiler fuzzer fuzzing process:
 ```
