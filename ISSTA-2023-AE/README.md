@@ -99,8 +99,7 @@ Note: Polyglot works with an AFL-instrumented C compiler. Adding this to the doc
 	
 # III. GrayC Artifact ISSTA 2023 - Phase 2
 
-After you loaded succesfull our docker image (or installed from source GrayC). 
-You can follow the instruction below to reproduce the results in Section 5 of our paper.
+After you have successfully loaded our docker image (or installed it from source GrayC), you can follow the instruction below to reproduce the results in Section 5 of our paper.
 
 ## III.A Results you can reproduced with this artifact
 
