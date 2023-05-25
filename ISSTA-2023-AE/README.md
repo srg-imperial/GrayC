@@ -340,7 +340,7 @@ rm Pipfile.lock (if Python3.8 or above)
 ```
 
 #### remove-parens tool
-'''
+```
 git clone https://github.com/mc-imperial/remove-parens
 cd remove-parens/third_party/
 wget https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/clang+llvm-13.0.1-x86_64-linux-gnu-ubuntu-18.04.tar.xz
@@ -353,7 +353,7 @@ mkdir build
 cd build
 cmake -G Ninja ..
 ninja
-'''
+```
 	
 A full installation of the artifact can be at least 60 GB and the experiments can take up to 100 GB as coverage information on LLVM and GCC can take many GBs.
 	
