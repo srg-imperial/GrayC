@@ -193,6 +193,7 @@ cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-
 **Throughput of Fuzzing** (Section 5.2). Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
 Run the following scripts:
 ```
+cd ~
 ./11-get-gen-comp-rate.sh GrayC
 ./11-get-gen-comp-rate.sh grayc-no-cov-guidance
 ./11-get-gen-comp-rate.sh grayc-fragments-fuzzing
@@ -205,7 +206,7 @@ Run the following scripts:
 ```
 Which outputs how many files are in the folder and how many **failed** compilation. For example:
 ```
-./11-get-gen-comp-rate.sh AFLCompiler
+./11-get-gen-comp-rate.sh AFLCompiler/
 Total files processed: 4020
 Total files failing compilation: 3212
 ./11-get-gen-comp-rate.sh csmith/
