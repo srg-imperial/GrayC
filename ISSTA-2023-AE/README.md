@@ -106,7 +106,8 @@ cd /home/user42/
 ```
 Where you can see all the script you need to reproduce Section 5's results.
 
-The fuzzers installed in /home/user42/fuzzers/copy_5/ but the data are in /home/user42/fuzzers/.
+The fuzzers installed in /home/user42/fuzzers/copy_5/ but the data are in /home/user42/fuzzers/. 
+The source code is in /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-source/tools/clang/tools/.
 You can rebuild the code by:
 ```
 cd /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build
