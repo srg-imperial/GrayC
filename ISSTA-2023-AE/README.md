@@ -101,11 +101,11 @@ Note: Polyglot works with an AFL-instrumented C compiler. Adding this to the doc
 
 After you have successfully loaded our docker image (or installed it from source GrayC), you can follow the instruction below to reproduce the results in Section 5 of our paper.
 
-## III.A Results you can reproduced with this artifact
+## III.A Results you can reproduce with this artifact
 
-We now discuss how to reproduce the results with short fuzzing campaign, each of which takes 10 minutes. We reproduce results from Section 5.
-Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, which will bring the testing of this part to 2400 hours of fuzzing (because we also have 10 differnet tools).
-
+We now discuss how to reproduce the results with a short fuzzing campaign, each of which takes 10 minutes, for Section 5.
+Note: in the paper, the fuzzing campaign is 24 hours long, repeated several times, which will bring the testing of this part to over 2000 hours of fuzzing (because we also have several different tools).
+	
 - Table 5: Throughput
 - Figure 2: LLVM coverage
 - Figure 2: GCC coverage
@@ -113,25 +113,25 @@ Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, w
 - Figure 3: LLVM back-end coverage
 - Table 6: BUG Rate in 24 hours
 
-Seeds files for running fuzzers: we added some examples of such in [seeds folder](fuzzer/seeds) of the artifact as some of the fuzzers require seeds.
+Seeds files for running fuzzers: we added some examples of such in [seeds folder](fuzzer/seeds) of the artifact because some fuzzers require seeds.
 
-We give details below how to reproduce each for the results. The scripts require no graphical terminal, and hence, the results are numbers and not the graphs in the paper. However, you can re-create the graphs yourself (e.g. via excel or graphPad).
+We give details below on how to reproduce each for the results. The scripts made no use of graphical terminals. Consequentially, the results are numbers and not the graphs in the paper. However, you can re-create these graphs and table from the data (e.g. via Excel or GraphPad).
 
 ## III.B Detailed Instructions
 
-We describe now how to reproduce all the tables and graphs' data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
+Next, we describe the process of reproducing the tables and graphs' data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
 
 ### Step-by-Step instructions
 
 To reproduce the sets of test cases in Section 5.1, run the following scripts. 
-These will run for 10 minutes each, and in total 90 minutes as we skip PolyGlot. 
-In the docker do:
+These will run for 10 minutes each (a bit more than an hour for all the tools, as we skip PolyGlot).
+In the docker image run:
 ```
 cd /home/user42/
 ```
-Where you can see all the script you need to reproduce Section 5's results.
+You can see all the scripts to reproduce Section 5's results (ls -l).
 
-The fuzzers installed in /home/user42/fuzzers/copy_5/ but the data are in /home/user42/fuzzers/. 
+The fuzzers are installed in /home/user42/fuzzers/copy_5/, but the data are in /home/user42/fuzzers/. 
 The source code is in /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-source/tools/clang/tools/.
 You can rebuild the code by:
 ```
@@ -140,7 +140,7 @@ ninja
 ninja clang-fuzzer
 ninja grayc-aggressive
 ```
-and for the rest of the tools (we compared against several fuzzers):
+and for the rest of the tools (we compared them against several fuzzers):
 ```
 ninja grayc-conservative
 ninja regexp
