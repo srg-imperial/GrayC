@@ -73,48 +73,9 @@ Note: Polyglot works with an AFL-instrumented C compiler. Adding this to the doc
 After you loaded succesfull our docker image (or installed from source GrayC). 
 You can follow the instruction below to reproduce the results in Section 5 of our paper.
 
-## III.A General Information - No Action Needed with Docker Image
+## III.A Results you can reproduced with this artifact
 
-We first describe the exact set up of our machines for the controlled experiments.
-Our docker image has all of them installed. We also supply [scripts to install each](testing), even if it is not our software.
-
-During our evaluation, we installed the following tools (with the exact versions used in the experiments)
- 1. Experiments on LLVM 12.0.1 (version from the 4th of October 2021)
- 2. ninja 1.8.2
- 3. cmake 3.20.0
- 4. fdupes 1.6.1
- 5. remove-parens (Git version: 1b2c68e)
- 6. flex 2.6.4
- 7. m4 1.4.18
-
-We are comparing aginst many other fuzzers in our experiments. Here are links to thier Git repositories.
-
-### Evaluation with:
- 1. Csmith 2.4.0: https://github.com/csmith-project/csmith
- 2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
- 3. universalmutator v1.0.18: Regexp based tool for mutating generic source code across numerous languages.
-    
-    3.1. GitHub https://github.com/agroce/universalmutator
-    
-    3.2. GitHub 1.0.18 release https://github.com/agroce/universalmutator/releases/tag/v1.0.18  
- 4. Grammarinator version grammarinator-generate 19.3
-    
-    4.1. GitHub https://github.com/renatahodovan/grammarinator
-    
-    4.2. Pip https://pypi.org/project/grammarinator/
- 5. TODO: add the rest of them.
-
-Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
-```
-pip3 install grammarinator
-```
-Note: Csmith requires also m4; we used m4 1.4.18.
-
-
-
-## III.B Results you can reproduced with this artifact
-
-We now discuss how to reproduce the results with short fuzzing campaign, each of which takes 5 minutes. 
+We now discuss how to reproduce the results with short fuzzing campaign, each of which takes 10 minutes. We reproduce results from Section 5.
 Note: in the paper the fuzzing campaign are 24 hours longs, repeated 10 times, which will bring the testing of this part to 2400 hours of fuzzing (because we also have 10 differnet tools).
 
 - Table 5: Throughput
@@ -128,7 +89,7 @@ Seeds files for running fuzzers: we added some examples of such in [seeds folder
 
 We give details below how to reproduce each for the results. The scripts require no graphical terminal, and hence, the results are numbers and not the graphs in the paper. However, you can re-create the graphs yourself (e.g. via excel or graphPad).
 
-## III.C Detailed Instructions
+## III.B Detailed Instructions
 
 We describe now how to reproduce all the tables and graphs' data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
 
@@ -336,6 +297,44 @@ Note 2: GCC-10 or higher is required. We have tested our artifact with GCC-10 an
 Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
 1. gfauto: https://github.com/google/graphicsfuzz.git
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
+
+	
+## VI.B General Information - No Action Needed with Docker Image
+
+We first describe the exact set up of our machines for the controlled experiments.
+Our docker image has all of them installed. We also supply [scripts to install each](testing), even if it is not our software.
+
+During our evaluation, we installed the following tools (with the exact versions used in the experiments)
+ 1. Experiments on LLVM 12.0.1 (version from the 4th of October 2021)
+ 2. ninja 1.8.2
+ 3. cmake 3.20.0
+ 4. fdupes 1.6.1
+ 5. remove-parens (Git version: 1b2c68e)
+ 6. flex 2.6.4
+ 7. m4 1.4.18
+
+We are comparing aginst many other fuzzers in our experiments. Here are links to thier Git repositories.
+
+### Evaluation with:
+ 1. Csmith 2.4.0: https://github.com/csmith-project/csmith
+ 2. ClangFuzzer/LLVM v12.0.1 x86: https://github.com/llvm-mirror/llvm/blob/master/docs/LibFuzzer.rst
+ 3. universalmutator v1.0.18: Regexp based tool for mutating generic source code across numerous languages.
+    
+    3.1. GitHub https://github.com/agroce/universalmutator
+    
+    3.2. GitHub 1.0.18 release https://github.com/agroce/universalmutator/releases/tag/v1.0.18  
+ 4. Grammarinator version grammarinator-generate 19.3
+    
+    4.1. GitHub https://github.com/renatahodovan/grammarinator
+    
+    4.2. Pip https://pypi.org/project/grammarinator/
+ 5. TODO: add the rest of them.
+
+Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
+```
+pip3 install grammarinator
+```
+Note: Csmith requires also m4; we used m4 1.4.18.
 
 	
 ### Build from source
