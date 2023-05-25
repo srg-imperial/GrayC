@@ -62,7 +62,7 @@ cd /home/user42/
 ```
 The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzers produced data, as some of them (like Clang-fuzzer) has a longer loading time.
 
-DO NOT WORRY IF YOU GET C ERROR MESSAGES. we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us. For example, this is a normal output of compiler fuzzer fuzzing process:
+DO NOT WORRY IF YOU GET C ERROR MESSAGES. we test C compilers, and hence do bad things to it. However, if you fuzzer does not start or stop suddenly, please contact us. For example, this is a normal output when fuzzing compilers:
 ```
 Processed File: fuzzer-file-467 with mutation bin/constant-mutator
 Processed File: fuzzer-file-470 with mutation bin/duplicate-mutator
