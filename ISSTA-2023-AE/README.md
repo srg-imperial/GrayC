@@ -70,11 +70,13 @@ Note: Polyglot works with an AFL-instrumented C compiler. Adding this to the doc
 
 # III. GrayC Artifact ISSTA 2023 - Phase 2
 
-After you loaded succesfull our docker image or installed from source GrayC. You can follow the instruction below to reproduce the results in Section 5 of our paper.
+After you loaded succesfull our docker image (or installed from source GrayC). 
+You can follow the instruction below to reproduce the results in Section 5 of our paper.
 
-## III.A General Information
+## III.A General Information - No Action Needed with Docker Image
 
 We first describe the exact set up of our machines for the controlled experiments.
+Our docker image has all of them installed. We also supply [scripts to install each](testing), even if it is not our software.
 
 During our evaluation, we installed the following tools (with the exact versions used in the experiments)
  1. Experiments on LLVM 12.0.1 (version from the 4th of October 2021)
@@ -108,7 +110,7 @@ pip3 install grammarinator
 ```
 Note: Csmith requires also m4; we used m4 1.4.18.
 
-Our docker image has all of them installed. We also supply [scripts to install each](testing), even if it is not our software.
+
 
 ## III.B Results you can reproduced with this artifact
 
