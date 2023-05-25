@@ -131,14 +131,25 @@ We describe now how to reproduce all the tables and graphs' data for section 5 i
 
 ### Step-by-Step instructions
 
+#### Throughput
+
+```
+cd /home/user42/
+./1-run-grayc-aggressive-tiny.sh
+./2-run-grayc-conservative-tiny.sh
+./3-run-grayc-no-cov-guidance-tiny.sh
+./4-run-grayc-fragments-fuzzing-tiny.sh
+./5-run-clang-fuzzer-tiny.sh
+./6-run-csmith-tiny.sh
+./7-run-grammarinator-tiny.sh
+./9-run-RegExpMutator.sh
+./10-run-AFLCompiler-tiny.sh
+``
+We measured the throughput of Csmith vs. GrayC on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
+
 --- OLD TEXT --- NEED TO RUN AND MOVE UP
 Tools' Evaluation in the paper
 ==============================
-
-## Throughput
-
-We measured the throughput of Csmith vs. GrayC on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
-
 Using the following commands with the installation above of GrayC
 ```
 (ulimit -St 86400; ./throughput/GrayC-24H.sh <fuzzer-build> <setA-path> <seeds-file>) > run_24h.log 2>&1 &
