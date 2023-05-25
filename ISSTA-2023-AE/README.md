@@ -199,17 +199,6 @@ TODO
 **Coverage** (Section 5.3). We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
 --- OLD TEXT --- NEED TO RUN AND MOVE UP
-### gfauto tool
-If you don't have gfauto installed, please follow the instructions here: https://github.com/google/graphicsfuzz.
-You can try the following instruction we used to set the tool:
-```
-git clone https://github.com/google/graphicsfuzz.git
-cd graphicsfuzz/gfauto/
-vi dev_shell.sh.template
-EDIT TO YOUR LOCAL VERSION of Python3: PYTHON=${PYTHON-python3.6}
-rm Pipfile.lock (if Python3.8 or above)
-./dev_shell.sh.template
-```
 
 ### LLVM Coverage
 First, build a copy of LLVM 13 with coveage. First download llvm-13 (as above for the fuzzer):
@@ -337,7 +326,23 @@ Note 2: GCC-10 or higher is required. We have tested our artifact with GCC-10 an
 Most of the packages required can be installed with (e.g.) brew or apt, however, some need to be build from source.
 1. gfauto: https://github.com/google/graphicsfuzz.git
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
+	
+#### gfauto tool
+If you don't have gfauto installed, please follow the instructions here: https://github.com/google/graphicsfuzz.
+You can try the following instruction we used to set the tool:
+```
+git clone https://github.com/google/graphicsfuzz.git
+cd graphicsfuzz/gfauto/
+vi dev_shell.sh.template
+EDIT TO YOUR LOCAL VERSION of Python3: PYTHON=${PYTHON-python3.6}
+rm Pipfile.lock (if Python3.8 or above)
+./dev_shell.sh.template
+```
 
+### remove-parens tool
+'''
+'''
+	
 A full installation of the artifact can be at least 60 GB and the experiments can take up to 100 GB as coverage information on LLVM and GCC can take many GBs.
 	
 	
