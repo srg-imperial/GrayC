@@ -340,6 +340,7 @@ rm Pipfile.lock (if Python3.8 or above)
 ```
 
 #### remove-parens tool
+Please follow the instructions here to install a small utility we use remove-parens tool:
 ```
 git clone https://github.com/mc-imperial/remove-parens
 cd remove-parens/third_party/
