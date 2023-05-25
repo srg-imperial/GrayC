@@ -193,8 +193,26 @@ cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-
 **Throughput of Fuzzing** (Section 5.2). Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
 Run the following scripts:
 ```
-TODO
+./11-get-gen-comp-rate.sh GrayC
+./11-get-gen-comp-rate.sh grayc-no-cov-guidance
+./11-get-gen-comp-rate.sh grayc-fragments-fuzzing
+./11-get-gen-comp-rate.sh clang-fuzzer
+./11-get-gen-comp-rate.sh csmith
+./11-get-gen-comp-rate.sh grammarinator
+./11-get-gen-comp-rate.sh PolyGlot
+./11-get-gen-comp-rate.sh RegExpMutator
+./11-get-gen-comp-rate.sh AFLCompiler
 ```
+Which outputs how many files are in the folder and how many **failed** compilation. For example:
+```
+./11-get-gen-comp-rate.sh AFLCompiler
+Total files processed: 4020
+Total files failing compilation: 3212
+./11-get-gen-comp-rate.sh csmith/
+Total files processed: 321
+Total files failing compilation: 0
+```
+Hence the compilation rate for No-fuss-fuzzer (AFLCompiler) is X and for Csmith is 100%.
 	
 **Coverage** (Section 5.3). We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
