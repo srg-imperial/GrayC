@@ -44,6 +44,16 @@ Once you load and attached the docker image of GrayC artifact, do the following 
 2. Run the following for each of the tools in our controlled experiments. There are 10 fuzzers in this study.
 ```
 cd /home/user42/
+./1-run-grayc-aggressive-tiny.sh
+./2-run-grayc-conservative-tiny.sh
+./3-run-grayc-no-cov-guidance-tiny.sh
+./4-run-grayc-fragments-fuzzing-tiny.sh
+./5-run-clang-fuzzer-tiny.sh
+./6-run-csmith-tiny.sh
+./7-run-grammarinator-tiny.sh
+./8-TOD
+./9-TODO
+./10-run-AFLCompiler-tiny.sh
 ```
 The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzer produced data, as some of them (like Clang-fuzzer) has a longer loading time.
 
@@ -51,11 +61,10 @@ DO NOT WORRY IF YOU GET C ERROR MESSAGES, we test C compilers, and hence do bad 
 
 The results should look like this:
 ```
-
+./6-run-csmith-tiny.sh
+Starts Csmith 2023-05-25 12:31:43 and will end at 2023-05-25 12:32:43
+End Fuzzing with Csmith. Generated 34 files in /home/user42/fuzzers/copy_5/llvm-csmith-5/csmith/../llvm-fuzzer-build/fuzzer-output-directory-prev/
 ```
-
-
-
 
 # III. GrayC Artifact ISSTA 2023 - Phase 2
 
