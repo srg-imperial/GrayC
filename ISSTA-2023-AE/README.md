@@ -123,18 +123,18 @@ ninja nofuss
 	
 To generate the test programs with each of the fuzzers, starting with GrayC:
 ```
+cd ~
 ./1-run-grayc-small.sh
 mkdir GrayC
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* GrayC
 ```
-For GrayC Conservative:
+and for the rest of the tools:
 ```
+cd ~
 ./2-run-grayc-conservative-small.sh
 mkdir grayc-conservative
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-conservative
-```
-and for the rest of the tools:
-```
+
 ./3-run-grayc-no-cov-guidance-small.sh
 mkdir grayc-no-cov-guidance
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* grayc-no-cov-guidance
