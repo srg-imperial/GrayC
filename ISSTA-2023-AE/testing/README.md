@@ -100,9 +100,9 @@ The source files will be in a subfolder in the \<base-folder\>. The output is a 
 ```
 Next, you need to compile llvm with at least 32 GB of RAM or 4 GB swap file (as before):
 ```
-./coverage/0-install-csmith-llvm-ninja-cov.sh <base-folder> <temp-folder-with-llvm-13> 13
+./coverage/0-install-llvm-cov.sh <base-folder> <temp-folder-with-llvm-13> 13
 ```
-where temp-folder-with-llvm-13 is the folder "/home/user42/coverage//.sources.1zbBYGq.tmp" in the example above. Your machine will generate a different name but with a similar format; use it as an input for the script 0-install-csmith-llvm-ninja-cov.sh.
+where temp-folder-with-llvm-13 is the folder "/home/user42/coverage//.sources.1zbBYGq.tmp" in the example above. Your machine will generate a different name but with a similar format; use it as an input for the script 0-install-llvm-cov.sh.
  
 Then use this script to measure coverage for the whole llvm test suite:
 ```
