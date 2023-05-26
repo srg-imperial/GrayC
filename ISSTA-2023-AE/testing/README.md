@@ -73,7 +73,7 @@ Base-folder=where the installation of LLVM 13 with coverage is, that is, \<base-
  
 We use script 1-wrapper-get-coverage.sh to measure the coverage of setA, setB, and setA after 24 hours of fuzzing, and Csmith's generated test cases (also for 24 hours). We also present a comparison with the LLVM test suite (whole and single source) in the paper. For that, we prepared additional scripts.
 
-#### Coverage for LLVM test suite 
+### Coverage for LLVM test suite 
 To measure LLVM's single source tests, first download these tests:
 ```
 sudo apt install fdupes ## if not yet installed
@@ -115,11 +115,11 @@ Put in comment: add_subdirectory(XRay)
 That is, after the change, it should look like this:
 ```
 grep -e"XRay" -e"sqlite3" /home/user42/coverage/llvm-csmith-13/test-suite/MultiSource/Applications/CMakeLists.txt 
-#  add_subdirectory(sqlite3)
+# add_subdirectory(sqlite3)
 grep -e"XRay" -e"sqlite3" /home/user42/coverage/llvm-csmith-13/test-suite/CTMark/CMakeLists.txt
-#add_subdirectory(sqlite3)
+# add_subdirectory(sqlite3)
 grep -e"XRay" -e"sqlite3" /home/user42/coverage/llvm-csmith-13/test-suite/MicroBenchmarks/CMakeLists.txt
-#add_subdirectory(XRay)
+# add_subdirectory(XRay)
 ```
 
 Last, use this script to get a human-readable summary of the results:
@@ -128,13 +128,8 @@ Last, use this script to get a human-readable summary of the results:
 ./coverage/4-gen-statistic-gcov-diff-tab_gfauto.sh <base-folder>/llvm-csmith-13/coverage_processed/x-func-13/ table__llvm-13-func.csv >> llvm-testsuit-13.log
 ```
 which will output a summary of a line and function coverage for the whole llvm test suite (in general and per file).
+
  
-## Test Contribution
  
-We used the coverage measured above for the whole llvm test suite, to find a newly covered code by our fuzzed programs. 
-
-We first measure coverage for the whole llvm test suite (git ) using the set of scripts above (./coverage/llvm-test-suite/2-download-git-llvm-wt-rt.sh, ./coverage/0-install-csmith-llvm-ninja-cov.sh, ./coverage/llvm-test-suite/3-llvm-testsuite-reg-cov.sh, ./coverage/4-gen-statistic-gcov-diff-tab_gfauto.sh).
-
-Then we measure coverage with the fuzzed corpus too (setA), filter statically or dynamically invalid programs, cross with the coverage from script 4, and reduce the test case if possible.
-
+ 
 ## GCC Code Coverage 
