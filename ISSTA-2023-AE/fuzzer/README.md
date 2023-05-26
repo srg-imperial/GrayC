@@ -308,7 +308,8 @@ Processed File: fuzzer-file-288 with mutation bin/append-expression
 ## 4. Structure of the Source files of GrayC (fuzzer part)
 
 This folder contains the code (tool), corpus (data), and seeds for randomisatin (seeds).
-The folder tool, contains include library for GrayC (llvm-fuzzer-includes/), and the sourc files of GrayC aggressive ( mutator_zips-v4) and GrayC conservative ( mutator_zips-v6).
+The folder tool, contains include library for GrayC (llvm-fuzzer-includes/), and the sourc files of GrayC (mutator_zips-v4) 
+and GrayC conservative (mutator_zips-v6).
 
 The full structure is:
 ```
