@@ -4,7 +4,7 @@ base=$1		# /home/user42/
 llvm=$2		# /home/user42/.sources_12VL.9IeP8DH.tmp
 dcovsrc=$3	# /home/user42/GrayC/ISSTA-2023-AE
 copies=$4	# 3
-## ./install-fuzzers-agg.sh /home/user42/ /home/user42/.sources_12VL.9IeP8DH.tmp /home/user42/GrayC/ISSTA-2023-AE 3
+## ./install-fuzzers-grayc.sh /home/user42/ /home/user42/.sources_12VL.9IeP8DH.tmp /home/user42/GrayC/ISSTA-2023-AE 3
 
 current_folder=`pwd`
 copy_folder="$base/copy_"
