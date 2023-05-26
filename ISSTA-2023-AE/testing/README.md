@@ -36,6 +36,11 @@ Or you can use our script:
 ./0-install-remove-parens.sh
 ```
 
+Set up GCOV-10 to be main code coverage insturmentation tool:
+```
+./coverage/0-set-gcov-version.sh
+```
+
 # Code Coverage of Mature Compilers (Open Source Only)
 
 We measure coverage for several sets when evaluating GrayC's ability to find new code coverage in GCC-12 and LLVM-13. We have measured it with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
