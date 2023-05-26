@@ -29,8 +29,11 @@ If this is not working for you, you need to install git, m4, and probably other 
 
 Install remove-parens util instaructions:
 ```
+https://github.com/mc-imperial/remove-parens
 ```
 Or you can use our script:
 ```
 ./0-install-remove-parens.sh
 ```
+
+# Coverage
