@@ -266,13 +266,13 @@ We provide 2 additional scripts to perform coverage runs on the provided <sets> 
 
 	
 	
-# VI. Reusability of GrayC - Additional details
+# IV. Reusability of GrayC - Additional details
 	
 First of all, GrayC can use to detect bugs in mature compilers. We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
 
 Second, we believe the data and the scripts are very useful for the compiler testing community as the coverage scripts and the installation of all the other fuzzers on top of LibFuzzer. We shared all our scripts here for other researchers to use.
 	
-## VI.A GrayC
+## IV.A GrayC
 
 GrayC is a greybox fuzzer for C compilers and analysers and is a libfuzzer-based tool. In brief, GrayC works as follows. Starting with an initial corpus of test programs, it uses libfuzzer to perform coverage-guided mutation-based fuzzing of the Clang/LLVM compiler for a time-limited period. Unconventionally, the purpose of this use of libfuzzer is not to find bugs at this stage but rather to generate a large corpus of interesting test programs. It is achieved by (a) using a custom mutator to yield an interesting space of compiler test programs that are statically-valid, and (b) saving every test program that libfuzzer produces to an external directory.
 
@@ -281,7 +281,7 @@ After the fuzzing run has completed, GrayC processes this external directory of 
 Implementation Details: we have implemented our approach as a set of tools, the direct coverage fuzzer, GrayC, the program transformer, enhanCer, and a set of bash scripts for crash and differential testing. GrayC and the code analysis part of enhanCer were implemented in the LLVM 12.0.1 Framework with additional C/C++ code implementing our mutators on top of ClangFuzzer/libtooling. The enhanCer code transformation was implemented in python3 with a set of bash scripts.
 
 	
-## VI.B Software Requirements
+## IV.B Software Requirements
 
 *For installing from source,* you will need to install the following: gcc, gcov, g++, flex, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
 
@@ -293,7 +293,7 @@ Most of the packages required can be installed with (e.g.) brew or apt, however,
 1. gfauto: https://github.com/google/graphicsfuzz.git
 2. remove-parens (Git version: 1b2c68e): https://github.com/mc-imperial/remove-parens
 	
-#### gfauto tool
+### gfauto tool
 If you don't have gfauto installed, please follow the instructions here: https://github.com/google/graphicsfuzz.
 You can try the following instruction we used to set the tool:
 ```
@@ -305,7 +305,7 @@ rm Pipfile.lock (if Python3.8 or above)
 ./dev_shell.sh.template
 ```
 
-#### remove-parens tool
+### remove-parens tool
 Please follow the instructions here to install a small utility we use remove-parens tool:
 ```
 git clone https://github.com/mc-imperial/remove-parens
@@ -325,7 +325,7 @@ ninja
 A full installation of the artifact can be at least 60 GB and the experiments can take up to 100 GB as coverage information on LLVM and GCC can take many GBs.
 	
 	
-## VI.B General Information - No Action Needed with Docker Image
+## IV.C General Information - No Action Needed with Docker Image
 
 We first describe the exact set up of our machines for the controlled experiments.
 Our docker image has all of them installed. We also supply [scripts to install each](testing), even if it is not our software.
@@ -365,18 +365,14 @@ Note: Csmith requires also m4; we used m4 1.4.18.
 We measured the throughput of GrayC and other fuzzers on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
 
 	
-### Build from source
+## IV.D Build from Source and Project's Structure
 GrayC was implemented on top of LibFuzzer, and so its build may take long, depending on your machine: it builds LLVM 12 with instrumentation.
 
 Please follow the instructions in this README.md file (under GrayC/ISSTA-2023-AE/fuzzer/README.md).
 ```
 nano GrayC/ISSTA-2023-AE/fuzzer/README.md
 ```	
-### Project structure
 
 The project contains several folders.
 	
 The [fuzzer](fuzzer) folder contains the code of GrayC and instructions how to install GrayC with a detailed inner structure at the end of its [README.md](fuzzer/README.md) file.
-
-### Docker Image Structure
-TODO
