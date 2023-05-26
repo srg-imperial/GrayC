@@ -24,17 +24,10 @@ We first measured coverage for the whole [LLVM test suite](https://github.com/ll
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we compared against in our controlled evaluation and the setting up of GrayC. To start the docker container:
 ```
-docker load -i grayc.tar
+cat grayc.tar | docker import - grayc-artifact 
+docker run -i -t grayc-artifact  /bin/bash
 ```
-Check if the container is present with the following command and get the container id as <container-id>:
-```
-docker container ls --all
-```
-And then start and attach to the container using:
-```
-docker start <container-id>
-docker attach <container-id>
-```
+
 Then you need to run all the experiments as user42 (just a random user name we picked for this artifact!). 
 In case you are running as root (e.g., you see the home folder that way: root@96ac044ddeef:/home/user42/), please run this command within the docker image:
 ```
