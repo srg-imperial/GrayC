@@ -24,6 +24,7 @@ do
  
 	### Update Csmith settings
 	cd $working_folder/gcc-csmith-$i
+	mkdir -p ./csmith/scripts/
 	echo $working_folder/gcc-csmith-$i"/gcc-build/gcc/xgcc -B"$working_folder/gcc-csmith-$i"/gcc-build/gcc/. -O3" > ./csmith/scripts/compiler_test.in
 	
  	### GCC PART: with instrumentation
