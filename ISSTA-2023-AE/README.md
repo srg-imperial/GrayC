@@ -386,7 +386,9 @@ We are comparing against many other fuzzers in our experiments. Here are links t
     4.1. GitHub https://github.com/renatahodovan/grammarinator
     
     4.2. Pip https://pypi.org/project/grammarinator/
- 5. PolyGlot: TODO
+ 5. PolyGlot from GitHub: https://github.com/s3team/Polyglot
+	
+NOTE: Polyglot was taken from GitHub project with a few modifications made to the readme for a successful install, based on correspondence with the authors. Specifically, the clang compiler was supposed to be built with regular afl and then was supposed to be fuzzed by the polyglot binary available in the afl_replace_mutate folder.
 
 Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
 ```
