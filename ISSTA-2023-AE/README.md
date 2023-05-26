@@ -283,7 +283,7 @@ Implementation Details: we have implemented our approach as a set of tools, the 
 	
 ## IV.B Software Requirements
 
-*For installing from source,* you will need to install the following: gcc, gcov, g++, flex, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
+*For installing from source,* you will need to install the following: gcc, gcov, g++, flex, bison, binutils, git, python3, python3-pip, gfauto (under Google's graphicsfuzz), cmake, m4, ninja-build, curl, wget, zip, unzip, frama-c, creduce, openSSL (libcurl4-openssl-dev, libssl-dev), frama-c, creduce, grammarinator. 
 
 Note 1: CMake 3.13.4 or higher is required.
 
