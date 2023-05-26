@@ -1,6 +1,6 @@
 # Bug finding (Table 6 in the paper)
 
-Bug-finding controlled experiments for all tools in the evaluation, for all the trails we got. 
+Bug-finding controlled experiments, for all tools in the evaluation, for all the trials we got. 
 
 The new reports (maybe bugs) found via this evaluation with the other fuzzers are [here](reports).
 
@@ -37,11 +37,11 @@ Find the results with all details [here](data_grayc_paper.xlsx).
 
 ### ClangFuzzer Statically Invalid Code Examples
 
-Since the programs are statically invalid, the order in which the are presented shows the degree to which they are invalid and their likelihood of being accepted for a fix by developers. For instance example C is barely a C program while example A is closer to following the C grammar, yet being invalid.
+Since the programs are statically invalid, the order in which they are presented shows the degree to which they are invalid and their likelihood of being accepted for a fix by developers. For instance, example C is barely a C program while example A is closer to following the C grammar, yet being invalid.
 
-We reported Example B to the LLVM developers, which accepted this as a valid bug report, but this bug was never fixed or further discussed except for basic triage (since 6 of May 2022). We kept the bug report anonymised for the review.
+We reported "Example B" to the LLVM developers, which accepted this as a valid bug report, but this bug was never fixed or further discussed except for basic triage (since May 6, 2022). We kept the bug report anonymised for review.
 
-These examples are reduced to hit the ICE or compiler hand. See the table above the links to the original fuzzed programs.
+These examples were reduced to hitting the ICE or compiler hand. See the table above for the links to the original fuzzed programs.
 
 Example A (Statically invalid):
 ```
@@ -67,7 +67,7 @@ Example C (Statically invalid and incomplete program):
 a() {
   L"<an invalid UTF-8 byte sequence>"
 ```
-This example crahsed an instrumented compiler but ended normally (with errors) with regular clang. We did not report this bug as it has stray charecters and in general, the source file is not valid UTF-8.
+This example crashed an instrumented compiler but ended normally (with errors) with a regular clang. We did not report this bug as it has stray characters, and in general, the source file is not valid UTF-8.
 
 Example D (Statically invalid and incomplete program):
 ```
@@ -81,6 +81,6 @@ It leads to ICE in GCC with the following error:
 0x700760 constant_byte_string
 	.././../gcc-source/gcc/expr.cc:12202
 ```
-however, we did not report this bug as it has stray charecters and in general, the source file is not valid UTF-8.
+however, we did not report this bug as it has stray characters and in general, the source file is not valid UTF-8.
 
 **NOTE: GrayC never generated such examples: all GrayC-generated files are complete programs in valid UTF-8.**
