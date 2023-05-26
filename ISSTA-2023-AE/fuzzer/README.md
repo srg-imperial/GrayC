@@ -109,10 +109,11 @@ Next, we need to create a folder where the fuzzer will be installed and edit few
 
 ## 3. Installing the GrayC 
 
-We prepared wrapper scripts for the rest of the scripts to install several instances of the fuzzer (to fuzz in parallel), for the conservative and aggressive versions. You may use the wrapper or run each of the script separatly. 
+We prepared wrapper scripts for the rest of the scripts to install several instances of the fuzzer (to fuzz in parallel). 
+You may use the wrapper or run each of the script separatly. 
 
 ### 3.1 Quick Installation of GrayC
-To run the wrapper for GrayC-aggeressive:
+To run the wrapper for GrayC:
 ```
 ./install-fuzzers-grayc.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
 ```
