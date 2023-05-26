@@ -138,5 +138,9 @@ Download the source code of GCC:
 ```
 ./1-download-gcc.sh <base-folder> 12 
 ```
-The source files will be in a subfolder in the \<base-folder\>.
- 
+The source files will be in a subfolder in the \<base-folder\> with ".sources_" prefix. This is your \<temp-folder-with-gcc-12\> folder.
+
+With GCC source files, build GCC-12 with coverage:
+```
+./coverage/0-install-csmith-gcc-ninja-cov.sh <base-folder> <temp-folder-with-gcc-12> 12
+```
