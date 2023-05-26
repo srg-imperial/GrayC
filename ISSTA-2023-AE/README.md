@@ -236,7 +236,7 @@ cd ~
 ```
 Which outputs how many files are in the folder and how many **failed** compilation. For example:
 ```
- ./11-get-gen-comp-rate.sh grammarinator
+ ./11-get-gen-comp-rate.sh grammarinator/
  Total files processed: 12
  Total files failing compilation: 12
 ./11-get-gen-comp-rate.sh csmith/
