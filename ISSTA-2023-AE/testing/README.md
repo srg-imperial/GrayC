@@ -76,7 +76,8 @@ Last, run this script per set to measure its coverage; no need to rebuild LLVM-1
 ```
 Base-folder=where the installation of LLVM 13 with coverage is, that is, \<base-folder\>/llvm-csmith-13/
  
-We use script 1-wrapper-get-coverage.sh to measure the coverage of setA, setB, and setA after 24 hours of fuzzing, and Csmith's generated test cases (also for 24 hours). We also present a comparison with the LLVM test suite (whole and single source) in the paper. For that, we prepared additional scripts.
+We use script 1-wrapper-get-coverage.sh to measure the coverage of corpus after 24 hours of fuzzing. 
+ We also present a comparison with the LLVM test suite (whole and single source) in the paper. For that, we prepared additional scripts.
 
 ### Coverage for LLVM test suite 
 To measure LLVM's single source tests, first download these tests:
