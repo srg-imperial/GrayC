@@ -262,7 +262,7 @@ We provide 2 additional scripts to perform coverage runs on the provided <sets> 
 ./12-get-cov-gcc.sh <sets>
 ./13-get-cov-llvm.sh <sets>
 ```
-
+Due to resource constraints, we provide the aforementioned scripts that will allow for the coverage analysis to be carried out, but outside the docker container. 
 
 	
 	
