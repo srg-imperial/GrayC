@@ -248,6 +248,14 @@ The rate is the number of hours ran divided by 12 and 321.
 	
 **Coverage** (Section 5.3). We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
+The Docker image contains 3 files of the LLVM and GCC instrumented with coverage. You will need first to "un-tar" these to be able to measure coverage:
+```
+cd ~
+tar -xf gcc-csmith-0.tar.gz
+tar -xf gcc-csmith-1.tar.gz
+tar -xf llvm-csmith-2.tar.gz
+```
+	
 We provide 2 additional scripts to perform coverage runs on the provided <sets> for reproducibility. They can be run using the following commands where `<sets>` is the path of the folder containing the fuzzer-generated sets.
 ```
 ./12-get-cov-gcc.sh <sets>
