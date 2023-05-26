@@ -306,12 +306,12 @@ Here we covered 26,200 lines in the GCC codebase with a set of fuzzed programs f
 **Bug Finding (Crash testing only)** (Section 5.4). To check if a set of programs \<set-of-programs\> detects crashes in LLVM and GCC, run the script:
 ```
 cd ~/fuzzers/crash-testing 
-./9-run-all-wrapper.sh /home/user42/fuzzers/crash-testing/input /home/user42/fuzzers/crash-testing/output <set-of-programs> 2
+./8-testing_all.sh <set-of-programs> <output-folder> <log-file> <includes> > crash-testing.log 2>&1
 ```
 For example:
 ```
 cd ~/fuzzers/crash-testing 
-./9-run-all-wrapper.sh /home/user42/fuzzers/crash-testing/input /home/user42/fuzzers/crash-testing/output /home/user42/grammarinator/ 2	
+./8-testing_all.sh /home/user42/grammarinator/ /home/user42/fuzzers/crash-testing/output /home/user42/fuzzers/crash-testing/output/output.log  "-I/home/user42/fuzzers/copy_5/llvm-csmith-5/csmith/runtime/ -I/home/user42/fuzzers/copy_5/llvm-csmith-5/csmith/build/runtime/" > crash-testing_grammarinator.log 2>&1
 ```
 The rest of the bug report classification happens in Bugzilla and other reporting platforms and hence cannot be scripted.
 	
