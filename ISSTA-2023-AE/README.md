@@ -56,9 +56,8 @@ cd /home/user42/
 ./5-run-clang-fuzzer-tiny.sh
 ./6-run-csmith-tiny.sh
 ./7-run-grammarinator-tiny.sh
-./9-run-RegExpMutator-tiny.sh
 ./8-run-PolyGlot-tiny.sh
-./10-run-AFLCompiler-tiny.sh
+./9-run-RegExpMutator-tiny.sh
 ```
 The *tiny.sh scripts run each for 1 minute. Do not worry if not all fuzzers produced data, as some of them (like Clang-fuzzer) has a longer loading time.
 
@@ -201,6 +200,19 @@ and a version of AFL compilers (no-fuss fuzzer work) embedded into LibFuzzer (ex
 ./10-run-AFLCompiler.sh
 ```
 Note: there is no AFL dictionary for C programming language.
+	
+Lastly, the full experiments, of **24 hour each**, repeated 10 times, can be reproduce with these scripts:	
+```
+./1-run-grayc.sh
+./3-run-grayc-no-cov-guidance.sh
+./4-run-grayc-fragments-fuzzing.sh
+./5-run-clang-fuzzer.sh
+./6-run-csmith.sh
+./7-run-grammarinator.sh
+./8-run-PolyGlot.sh
+./9-run-RegExpMutator.sh
+```
+However, we do not expect the reviewers of the artifact to spend days to run these scripts (each tools requires 10 days(!!) of fuzzing).
 	
 	
 	
