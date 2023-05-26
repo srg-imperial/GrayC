@@ -5,10 +5,8 @@ rm -rf /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output
 mkdir -p /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/
 
 cp /home/user42/fuzzers/copy_5/setA-12-Nov-21/A_* /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/
-sleep 1m
-
 ./fuzzers/copy_5/add-c-extn.sh $1 2>&1 /dev/null
-(for i in $1/*.c; do touch "$i" ; done)
+(for i in $1/*.c;: do touch "$i" ; done)
 cp $1/* /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/
 
 fdupes -dN /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/ > black-list.log
@@ -23,4 +21,4 @@ fi
 rm black-list.log 2> /dev/null
 
 # Check the rate
-python3 fuzzers/copy_5/rate.py
+python3 /home/user42/fuzzers/copy_5/rate.py
