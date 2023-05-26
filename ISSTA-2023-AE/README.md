@@ -8,7 +8,11 @@ Please see these links for bug reports and raw data [for the whole paper](data) 
 
 NOTE: A copy of this README is in the working directory of the Docker image, ~/grayc/ISSTA-2023-AE/README.md.
 
+## Test Contribution
+ 
+We used the coverage measured for the whole llvm test suite (and compared it to our own fuzzed programs code coverage on the LLVM compiler) to find a newly covered code by our fuzzed programs and contribute them to the LLVM test suite.
 
+We first measured coverage for the whole [LLVM test suite](https://github.com/llvm/llvm-test-suite) using the set of [scripts](testing/coverage). We then measured coverage with our fuzzed corpus, filtering statically or dynamically invalid programs, crossed with the coverage of the LLVM test suite, and reduced the test case if possible. The report data is available [here](data/Evaluation/USING-GRAYC-IN-THE-WILD/LLVM-test-contributions).
 	
 	
 	
