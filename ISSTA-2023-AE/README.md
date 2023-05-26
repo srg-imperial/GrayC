@@ -296,7 +296,7 @@ Total files in /home/user42//gcc-csmith-1/coverage_processed/x-line-0/cov.out/: 
 #line 1 HIT ............. ==> 26200
 user42@7a15342fc0b2:~$ 
 ```
-	
+Here we covered 26200 lines in the GCC codebase with a set of fuzzed programs from Grammarinator.	
 	
 # IV. Reusability of GrayC - Additional details
 	
