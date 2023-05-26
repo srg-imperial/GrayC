@@ -42,7 +42,7 @@ We measure coverage for several sets when evaluating GrayC's ability to find new
 
 We describe next how to measure coverage for LLVM and GCC with specific versions. If you wish to use other versions, then please feel free to contact us.
 
-Instrumentation of such a large codebase (15 Millions lines of code for GCC while LLVM is much larger) can take around 50 GB HD and around a day for all the scripts to finish.
+**NOTE: Instrumentation of such a large codebase (15 Millions lines of code for GCC while LLVM is much larger) can take around 50 GB HD and around a day for all the scripts to finish.** We are not expecting this part to be part of the artifact evaluation.
 
 ## LLVM Code Coverage 
 First, build a copy of LLVM 13 with coverage. First download llvm-13 (as above for the fuzzer):
