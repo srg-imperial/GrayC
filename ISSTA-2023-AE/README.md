@@ -24,7 +24,7 @@ We first measured coverage for the whole [LLVM test suite](https://github.com/ll
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we compared against in our controlled evaluation and the setting up of GrayC. To start the docker container:
 ```
-cat grayc.tar | docker import - grayc-artifact 
+cat GrayC-v1.tar | docker import - grayc-artifact 
 docker run -i -t grayc-artifact  /bin/bash
 ```
 
@@ -34,6 +34,12 @@ In case you are running as root (e.g., you see the home folder that way: root@96
 su - user42
 ```
 (do not run it if you are already user42, e.g. you see the home folder that way: user42@96ac044ddeef:~/).
+Then you need to install the tool:
+```
+cd ~
+./install.sh
+```
+After installation the docker image will be 70 GB. The GrayC-v1.tar is 20 GB before any installation.
 
 We recommend using our docker image since we are testing mature C compilers (i.e. the instrumented code is 50 GB).
 
