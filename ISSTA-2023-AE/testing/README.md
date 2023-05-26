@@ -151,4 +151,9 @@ With GCC source files, build GCC-12 with coverage:
 ./coverage/0-install-gcc-cov.sh <base-folder> <temp-folder-with-gcc-12> 12
 ```
 However, you need to double check that the version is 12, and not newer, as this script works for GCC 12. We have not tested it for other GCC versions. However, if you wish to try our tool with GCC-14 for example, than please contact us.
- 
+
+Last, run this script per set to measure its coverage; no need to rebuild GCC-12 between runs of this script.
+```
+./coverage/1-wrapper-get-coverage.sh <base-folder> <set-of-progs-path> 1 0 <csmith-folder> <gfauto-folder> <func-cov-out.csv> <line-cov-out.csv>  <coverage_summary.log> gcc 0
+```
+The resutls are in the instrumented build of GCC-12, under the folder <coverage_processed>.
