@@ -3,12 +3,12 @@ Installing GrayC (the fuzzer)
 
 ## 1. Download Software Packages
 
-First download the prerequirements by running script 0:
+First, download the pre-requirements by running script 0:
 ```
 ./0-install-req.sh
 ```
 
-Then please test that all installation were done:
+Then please test the packages' installations:
 ```
 clang --version
 ```
@@ -19,14 +19,14 @@ Target: x86_64-pc-linux-gnu
 Thread model: posix
 InstalledDir: /usr/bin
 ```
-The same goes to the rest of the packages:
+The same goes for the rest of the packages:
 
 Cmake:
 ```
 cmake --version
 cmake version 3.20.0
 
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
+CMake suite is maintained and supported by Kitware (kitware.com/cmake).
 ```
 
 Python3:
@@ -72,7 +72,8 @@ There is NO warranty; not even for MERCHANTABILITY or
 FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-*Note:* GrayC can work with newer versions of all of the above. However, it requires LLVM-12 source code, as we discuss next.
+*Note:* GrayC can work with newer versions of all of the above.
+However, it requires LLVM-12 source code, as we discuss next.
 
 ## 2. Download LLVM/CLANG 12 
 
@@ -80,7 +81,7 @@ Use this script to download LLVM 12:
 ```
 ./1-download-llvm.sh <base-folder> <LLVM-ver-no>
 ```
-for example:
+For example:
 ```
 ./1-download-llvm.sh /home/user42/ 12
 ```
@@ -104,13 +105,13 @@ Receiving objects: 100% (5796/5796), 9.10 MiB | 1.28 MiB/s, done.
 Resolving deltas: 100% (3921/3921), done.
  >> Downloaded LLVM 12 and Csmith into /home/user42/.sources_12VL.Z5NTi89.tmp.
 ```
-This script downloaded the source file of llvm 12 into /home/user42//.sources_12VL.Z5NTi89.tmp. Your folder will have a bit different name, but with a similar pattern.
-Next, we need to create a folder where the fuzzer will be installed and edit few files.
+This script downloaded the source file of llvm 12 into /home/user42//.sources_12VL.Z5NTi89.tmp. Your folder will have a bit different name but with a similar pattern.
+Next, we need to create a folder where the fuzzer will be installed and edit a few files.
 
 ## 3. Installing the GrayC 
 
 We prepared wrapper scripts for the rest of the scripts to install several instances of the fuzzer (to fuzz in parallel). 
-You may use the wrapper or run each of the script separatly. 
+You may use the wrapper or run each of the scripts separately. 
 
 ### 3.1 Quick Installation of GrayC
 To run the wrapper for GrayC:
@@ -127,20 +128,20 @@ To build it run the wrapper for GrayC-conservative:
 ```
 ./install-fuzzers-cons.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
 ```
-The two wrapper scripts contains three other scripts. We describe them below.
+The two wrapper scripts contain three other scripts. We describe them below.
 
 Note: it is enough to run the two scripts above to have GrayC installed in your system. 
 
 
 ### 3.2 Additional Details
-We disccus under the hood of install-fuzzers-grayc and install-fuzzers-cons.sh scipts. These contain two stages: pre-processing and installaton
+We discuss under the hood of install-fuzzers-grayc and install-fuzzers-cons.sh scripts for pre-processing and installation of GrayC.
 
 #### 3.2.1 Pre-processing
 Run first this script:
 ```
 ./2-prepare-env.sh <base-folder> <temp-folder-with-llvm-12> <copy-number>
 ```
-We use copy-number '1' unless we want to run the fuzzer in parallel with several copies. For this AE, please always use 1. For example:
+We use copy-number '1' unless we want to run the fuzzer in parallel with several copies. For example:
 ```
 ./2-prepare-env.sh /home/user42/ /home/user42/.sources_12VL.Z5NTi89.tmp 1
 ```
@@ -157,7 +158,7 @@ and it looks like this when running it:
 >> Done.
 ```
 
-At this stage please check that your base-folder contains the following files:
+At this stage, please check that your base folder contains the following files:
 ```
 ls -l /home/user42
 total 11718764
@@ -166,11 +167,11 @@ drwxrwxr-x 4 user42 user42        4096 Jul 21 11:33 llvm-csmith-1
 -rw------- 1 root   root   12000000000 May 20 14:43 swapfile
 ```
 
-Then copy the fuzzer files into the llvm-csmith-1 folder, using this script:
+Then copy the fuzzer files into the llvm-csmith-1 folder with the script:
 ```
 ./3-copy-fuzzer-agg.sh <base-folder>/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ <base-folder>/llvm-csmith-1/ <base-folder>
 ```
-for example:
+For example:
 ```
 ./3-copy-fuzzer-agg.sh /home/user42/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ /home/user42/llvm-csmith-1/ /home/user42/
 >> Done.
@@ -179,26 +180,26 @@ for example:
 Last, check and apply (when needed) the following changes before compiling it:
 * Check that the script added 'add_subdirectory(tools/mutator-name)' to the llvm-source/tools/clang/CMakeLists.txt
 * Check that the script added mutator folders to llvm-source/tools/clang/tools/
-* Check that the script updated settings.txt file with appropriate paths
-* Check that the script updated CommonOptionsParser.h file so constructor is public instead of protected
+* Check that the script updated the settings.txt file with the appropriate paths
+* Check that the script updated CommonOptionsParser.h file so the constructor is public instead of protected
 
 At this stage, your folder llvm-csmith-1 should contain all files in place to be ready to build the fuzzer.
 
-#### 3.2.2 Installaton of GrayC (the fuzzer)
+#### 3.2.2 Installation of GrayC (the fuzzer)
 
 Build GrayC (the fuzzer):
 ```
 ./4-build-fuzzer.sh <llvm-main-folder>
 ```
-for example:
+For example:
 ```
 ./4-build-fuzzer.sh /home/user42/llvm-csmith-1
 ```
 
 Troubleshooting:
-1. Incase you cannot pass cmake configue with the following message: 
+1. In case you cannot pass cmake configure with the following message: 
 "/usr/bin/ld: cannot find -lstdc++ "
-try edit the library symbolic link:
+try to edit the library symbolic link:
 ```
 sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib/libstdc++.so
 ```
@@ -206,7 +207,7 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib/libstdc++.so
 
 If script 4 ended with no error, you can expect the following output:
 ```
-Please check compilation here:
+Please check the compilation here:
 total 640
 -rw-rw-r-- 1 user42 user42 393524 Sep 29 18:47 build.log
 -rw-rw-r-- 1 user42 user42  14276 Sep 29 11:52 configure.log
@@ -257,16 +258,16 @@ Run GrayC (the fuzzer):
 ```
 cd <fuzzer-build> ; bin/clang-fuzzer <setA-path> -detect_leaks=0 -max_len=1000000 -rss_limit_mb=4096 -create_missing_dirs=1 -ignore_crashes=1 -ignore_timeouts=1 -ignore_ooms=1
 ```
-for example:
+For example:
 ```
 cd /home/user42/llvm-csmith-1/llvm-fuzzer-build/ ; bin/clang-fuzzer /home/user42/llvm-csmith-1/../setA/ -detect_leaks=0 -max_len=1000000 -rss_limit_mb=4096 -create_missing_dirs=1 -ignore_crashes=1 -ignore_timeouts=1 -ignore_ooms=1
 ```
-Both modes use the same commands, however, one might be installed in /home/user42/llvm-csmith-1/ while the othere in /home/user42/llvm-csmith-2/.
+Both modes use the same commands; however, one might be installed in /home/user42/llvm-csmith-1/ while the other is in /home/user42/llvm-csmith-2/.
 
 What happens when you run GrayC?
 
 - The log is printed into the screen (or file, if you redirect it).
-- Each time a statically invalid program produced, it will dump the errors to the screen like this:
+- When producing a statically invalid program: GrayC dumps the errors to the screen like this:
 ```
 #2303	NEW    cov: 46591 ft: 196387 corp: 1881/1447Kb lim: 1000000 exec/s: 11 rss: 579Mb L: 427/38752 MS: 3 Custom-Custom-Custom-
 /home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c:12:19: error: expected ')'
@@ -286,7 +287,8 @@ e != ((29283) != (*b)--))
 4 errors generated.
 Error while processing /home/user42/fuzzers//copy_1/llvm-csmith-1/llvm-fuzzer-build/fuzzer_ram-tmp//mutator-S94jRZ.c.
 ```
-BUT THIS IS A NORMAL BEHAVIOUR OF GRAYC - WHY? these errors can help tune the aggresivness of the tool, and hence it is useful to have them there. 
+BUT THIS IS A NORMAL BEHAVIOUR OF GRAYC - WHY?
+These errors can help tune the aggressiveness of the tool, and hence it is useful to have them there. 
 - GrayC also logs the mutators activated and state on which program (fuzz/resultant program):
 ```
 Processed File: fuzzer-file-277 with mutation bin/duplicate-mutator
@@ -305,16 +307,16 @@ Processed File: fuzzer-file-288 with mutation bin/append-expression
 
 ## 4. Structure of the Source files of GrayC (fuzzer part)
 
-This folder contains the code (tool), corpus (data), and seeds for randomisatin (seeds).
-The folder tool, contains include library for GrayC (llvm-fuzzer-includes/), and the sourc files of GrayC (mutator_zips-v4) 
+This folder contains the code (tool), corpus (data), and seeds for randomisation (seeds).
+The folder <tool> contains include folder for GrayC (llvm-fuzzer-includes/), and the source files of GrayC (mutator_zips-v4) 
 and GrayC conservative (mutator_zips-v6).
 
-The full structure is:
+The full structure:
 ```
 .
 └── fuzzer/
     ├── data/
-    │   ├── setA-Controlle-experiments-data-12-Nov-21
+    │   ├── setA-Controlled-experiments-data-12-Nov-21
     │   ├── setA
     │   └── setB
     ├── seeds
