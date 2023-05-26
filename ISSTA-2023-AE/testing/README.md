@@ -150,3 +150,5 @@ With GCC source files, build GCC-12 with coverage:
 ```
 ./coverage/0-install-gcc-cov.sh <base-folder> <temp-folder-with-gcc-12> 12
 ```
+However, you need to double check that the version is 12, and not newer, as this script works for GCC 12. We have not tested it for other GCC versions. However, if you wish to try our tool with GCC-14 for example, than please contact us.
+ 
