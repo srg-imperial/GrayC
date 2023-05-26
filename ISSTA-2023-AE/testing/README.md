@@ -4,7 +4,7 @@ Install Frama-C:
 ```
 sudo apt install frama-c
 ```
-If this is not workig for your distribution, you can install it via this script:
+If this is not working for your distribution, you can install it via this script:
 ```
 ./0-install-frama-c.sh
 ```
@@ -22,12 +22,12 @@ Csmith installation instructions:
 ```
 https://github.com/csmith-project/csmith#install-csmith
 ```
-If this is not working for you, you need to install git, m4, and probably other packages. You can also try using our script:
+If this is not working for you, you shall install git, m4, and probably other packages. You can also try using our script:
 ```
 ./0-install-csmith.sh
 ```
 
-Install remove-parens util instaructions:
+Install remove-parens util instructions:
 ```
 https://github.com/mc-imperial/remove-parens
 ```
@@ -36,7 +36,7 @@ Or you can use our script:
 ./0-install-remove-parens.sh
 ```
 
-Set up GCOV-10 to be main code coverage insturmentation tool:
+Set up GCOV-10 to be the main code coverage instrumentation tool:
 ```
 ./coverage/0-set-gcov-version.sh
 ```
@@ -58,8 +58,8 @@ Second, compile llvm-13 with coverage:
 ```
 ./coverage/0-install-llvm-cov.sh <base-folder> <temp-folder-with-llvm-13> 13
 ```
-We recommend setting a large swap file for that (between 4 - 12 GB) for standard laptop configuration (servers and stronger machines do not have to follow this). 
-Note: the output of the first script includes a name of a temporary folder where the LLVM source is, please use it as <temp-folder-with-llvm-13> as a parameter for the next script. 
+We recommend setting a large swap file (between 4 - 12 GB) for standard laptop configuration (servers do not have to follow this). 
+Note: the output of the first script includes a name of a temporary folder where the LLVM source is; please use it as <temp-folder-with-llvm-13> as a parameter for the next script. 
 
 ```
 cd ~
@@ -76,8 +76,7 @@ Last, run this script per set to measure its coverage; no need to rebuild LLVM-1
 ```
 Base-folder=where the installation of LLVM 13 with coverage is, that is, \<base-folder\>/llvm-csmith-13/
  
-We use script 1-wrapper-get-coverage.sh to measure the coverage of corpus after 24 hours of fuzzing. 
- We also present a comparison with the LLVM test suite (whole and single source) in the paper. For that, we prepared additional scripts.
+We used script 1-wrapper-get-coverage.sh to measure the coverage of the corpus (after 24 hours of fuzzing). We furthermore presented a comparison with the LLVM test suite (whole and single source) in the paper. For that, we prepared additional scripts.
 
 ### Coverage for LLVM test suite 
 To measure LLVM's single source tests, first download these tests:
@@ -87,7 +86,7 @@ sudo apt install fdupes ## if not yet installed
 ```
 and then use script ./coverage/1-wrapper-get-coverage.sh with \<set-of-progs-path\>=\<output-dir\>.
 
-To measure LLVM's coverage with its *complete* test suite, use these scripts. 
+To measure LLVM's coverage with its *complete* test suite: use these scripts. 
 
 DO NOT MOVE SUB-FOLDERS OR RENAME FOLDERS WHILE RUNNING THESE SCRIPTS. 
 
@@ -133,7 +132,7 @@ Last, use this script to get a human-readable summary of the results:
 ./coverage/4-gen-statistic-gcov-diff-tab_gfauto.sh <base-folder>/llvm-csmith-13/coverage_processed/x-line-13/ table__llvm-13-line.csv >> llvm-testsuit-13.log
 ./coverage/4-gen-statistic-gcov-diff-tab_gfauto.sh <base-folder>/llvm-csmith-13/coverage_processed/x-func-13/ table__llvm-13-func.csv >> llvm-testsuit-13.log
 ```
-which will output a summary of a line and function coverage for the whole llvm test suite (in general and per file).
+that outputs a summary of a line and function coverage for the whole llvm test suite (in general and per file).
 
  
  
@@ -144,16 +143,16 @@ Download the source code of GCC:
 ```
 ./1-download-gcc.sh <base-folder> 12 
 ```
-The source files will be in a subfolder in the \<base-folder\> with ".sources_" prefix. This is your \<temp-folder-with-gcc-12\> folder.
+The source files will be in a subfolder in the \<base-folder\> with the ".sources_" prefix. This is your \<temp-folder-with-gcc-12\> folder.
 
 With GCC source files, build GCC-12 with coverage:
 ```
 ./coverage/0-install-gcc-cov.sh <base-folder> <temp-folder-with-gcc-12> 12
 ```
-However, you need to double check that the version is 12, and not newer, as this script works for GCC 12. We have not tested it for other GCC versions. However, if you wish to try our tool with GCC-14 for example, than please contact us.
+However, double-check that the version is 12 and not newer, as this script works for GCC 12. We have not tested it for other GCC versions.
 
 Last, run this script per set to measure its coverage; no need to rebuild GCC-12 between runs of this script.
 ```
 ./coverage/1-wrapper-get-coverage.sh <base-folder> <set-of-progs-path> 1 0 <csmith-folder> <gfauto-folder> <func-cov-out.csv> <line-cov-out.csv>  <coverage_summary.log> gcc 0
 ```
-The resutls are in the instrumented build of GCC-12, under the folder <coverage_processed>.
+The results are in the instrumented build of GCC-12, under the folder <coverage_processed>.
