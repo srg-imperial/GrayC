@@ -132,5 +132,11 @@ which will output a summary of a line and function coverage for the whole llvm t
  
  
  
-## GCC Code Coverage 
-TODO
+## GCC Code Coverage
+ 
+Download the source code of GCC:
+```
+./coverage/1-download-gcc.sh <base-folder> 12 
+```
+The source files will be in a subfolder in the \<base-folder\>.
+ 
