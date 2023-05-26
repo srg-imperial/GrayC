@@ -354,7 +354,7 @@ We are comparing aginst many other fuzzers in our experiments. Here are links to
     4.1. GitHub https://github.com/renatahodovan/grammarinator
     
     4.2. Pip https://pypi.org/project/grammarinator/
- 5. TODO: add the rest of them.
+ 5. PolyGlot: TODO
 
 Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
 ```
@@ -362,7 +362,7 @@ pip3 install grammarinator
 ```
 Note: Csmith requires also m4; we used m4 1.4.18.
 
-We measured the throughput of Csmith vs. GrayC on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
+We measured the throughput of GrayC and other fuzzers on 2-core, 8 GB, Intel, Ubuntu 20.04, virtual machine for 24 hours.
 
 	
 ### Build from source
