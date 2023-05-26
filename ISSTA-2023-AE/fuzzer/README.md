@@ -111,27 +111,28 @@ Next, we need to create a folder where the fuzzer will be installed and edit few
 
 We prepared wrapper scripts for the rest of the scripts to install several instances of the fuzzer (to fuzz in parallel), for the conservative and aggressive versions. You may use the wrapper or run each of the script separatly. 
 
-### 3.1 Quick Installation of GrayC (conservative and aggeressive modes)
-To run the wrapper for GrayC-conservative:
+### 3.1 Quick Installation of GrayC
+To run the wrapper for GrayC-aggeressive:
 ```
-./install-fuzzers-cons.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
-```
-and for GrayC-aggeressive:
-```
-./install-fuzzers-agg.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
+./install-fuzzers-grayc.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
 ```
 for example:
 ```
-./install-fuzzers-agg.sh /home/user42/ /home/user42/.sources_12VL.9IeP8DH.tmp /home/user42/GrayC/ISSTA-2023-AE 3
+./install-fuzzers-grayc.sh /home/user42/ /home/user42/.sources_12VL.9IeP8DH.tmp /home/user42/GrayC/ISSTA-2023-AE 3
 ```
 
+You can also try an experimental version of GrayC, which we call Gray Conservative mode, that imposes more checks for higher dynamic validity of test programs.
+To build it run the wrapper for GrayC-conservative:
+```
+./install-fuzzers-cons.sh <base-folder> <temp-folder-with-llvm-12> <GrayC-AE-folder> <number-of-copies>
+```
 The two wrapper scripts contains three other scripts. We describe them below.
 
 Note: it is enough to run the two scripts above to have GrayC installed in your system. 
 
 
 ### 3.2 Additional Details
-We disccus under the hood of install-fuzzers-cons.sh and install-fuzzers-agg.sh scipts. These contain two stages: pre-processing and installaton
+We disccus under the hood of install-fuzzers-grayc and install-fuzzers-cons.sh scipts. These contain two stages: pre-processing and installaton
 
 #### 3.2.1 Pre-processing
 Run first this script:
@@ -166,16 +167,12 @@ drwxrwxr-x 4 user42 user42        4096 Jul 21 11:33 llvm-csmith-1
 
 Then copy the fuzzer files into the llvm-csmith-1 folder, using this script:
 ```
-./3-copy-fuzzer.sh <base-folder>/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ <base-folder>/llvm-csmith-1/ <base-folder>
+./3-copy-fuzzer-agg.sh <base-folder>/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ <base-folder>/llvm-csmith-1/ <base-folder>
 ```
 for example:
 ```
-./3-copy-fuzzer.sh /home/user42/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ /home/user42/llvm-csmith-1/ /home/user42/
+./3-copy-fuzzer-agg.sh /home/user42/GrayC/ISSTA-2023-AE/fuzzer/tool/src/ /home/user42/llvm-csmith-1/ /home/user42/
 >> Done.
-```
-To install the GrayC aggressive, use this script instead:
-```
-./3-copy-fuzzer-agg.sh <base-folder>/GrayC-AE/AE/tool/src/ <base-folder>/llvm-csmith-1/ <base-folder>
 ```
 
 Last, check and apply (when needed) the following changes before compiling it:
