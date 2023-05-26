@@ -34,6 +34,7 @@ do
 	### Update Csmith settings
 	mkdir -p $working_folder/llvm-csmith-$i/csmith/scripts/ ## Just incase it isn't there
 	cd $working_folder/llvm-csmith-$i
+	mkdir -p ./csmith/scripts/
  	echo $working_folder/llvm-csmith-$i"/llvm-install/usr/local/bin/clang -O3" > $working_folder/llvm-csmith-$i/csmith/scripts/compiler_test.in
 
 	## Save information regarding the version and how we compile it
