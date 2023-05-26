@@ -1,0 +1,3 @@
+mutator_path:/home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/
+lib_paths:/home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-includes/	/usr/include/x86_64-linux-gnu/	
+compilation_flags:-O3
