@@ -248,7 +248,11 @@ The rate is the number of hours ran divided by 12 and 321.
 	
 **Coverage** (Section 5.3). We measure coverage for several sets when evaluationg GrayC ability to find additional new coverage in GCC-12 and LLVM-13. We measure coveage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
-TODO
+We provide 2 additional scripts to perform coverage runs on the provided <sets> for reproducibility. They can be run using the following commands where `<sets>` is the path of the folder containing the fuzzer-generated sets.
+```
+./12-get-cov-gcc.sh <sets>
+./13-get-cov-llvm.sh <sets>
+```
 
 
 	
