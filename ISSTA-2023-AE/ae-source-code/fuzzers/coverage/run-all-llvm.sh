@@ -1,0 +1,8 @@
+./1-wrapper-get-coverage.sh /home/user42/coverage data/08042021/corpus_all_v0_2021-02-15-compiled 11 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v11.csv line_cov_v11.csv coverage_summary_v11.log llvm
+./1-wrapper-get-coverage.sh /home/user42/coverage data/08042021/corpus_all_v0_2021-02-15-compiled 12 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v12.csv line_cov_v12.csv coverage_summary_v12.log llvm
+./1-wrapper-get-coverage.sh /home/user42/coverage data/08042021/corpus_all_v0_2021-02-15-compiled 13 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v13.csv line_cov_v13.csv coverage_summary_v13.log llvm
+#./1-wrapper-get-coverage.sh /home/user42/coverage data/init-c/corpus_all_v0_2021-02-15 11 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v11i.csv line_cov_v11i.csv coverage_summary_v11i.log llvm
+#./1-wrapper-get-coverage.sh /home/user42/coverage data/init-c/corpus_all_v0_2021-02-15 12 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v12i.csv line_cov_v12i.csv coverage_summary_v12i.log llvm
+#./1-wrapper-get-coverage.sh /home/user42/coverage data/init-c/corpus_all_v0_2021-02-15 13 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v13i.csv line_cov_v13i.csv coverage_summary_v13i.log llvm
+#./1-wrapper-get-coverage.sh /home/user42/coverage data/corpus_all_v0_2021-02-15 1 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v11_gcc.csv line_cov_v11_gcc.csv coverage_summary_v11_gcc.log gcc
+#./1-wrapper-get-coverage.sh /home/user42/coverage data/init-c/corpus_all_v0_2021-02-15 1 0 /home/user42/data/csmith /home/user42/graphicsfuzz/gfauto func_cov_v11_gcci.csv line_cov_v11_gcci.csv coverage_summary_v11_gcci.log gcc
