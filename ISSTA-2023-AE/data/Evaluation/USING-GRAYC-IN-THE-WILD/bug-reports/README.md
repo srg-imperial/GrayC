@@ -8,7 +8,7 @@ The bug’s kind is one of the following:
 - Hang: Compilation not terminating for hours
 - False Neg.: Test program being incorrectly reported error-free by an analyser
 
-The bug’s status is one on the following:
+The bug’s status is one of the following:
 - New: Recently added bug, unconfirmed
 - Confirmed: Valid bug
 - Fixed: Bug fixed by developers
@@ -48,8 +48,7 @@ GrayC has found 30 confirmed bugs:
 [LLVM-49993](https://github.com/llvm/llvm-project/issues/49993),
 [msvc-1427550](https://developercommunity.visualstudio.com/t/syntactically-invalid-c-program-causes-microsoft-c/1427550),
 [msvc-1427553](https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427553) and
-[msvc-1427557](https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427557), 
-With 25 previously unknown bugs and 5 reported shortly before we managed to do so.
+[msvc-1427557](https://developercommunity.visualstudio.com/t/internal-compiler-error-when-compiling-program-wit/1427557), with 25 previously unknown bugs and five reported shortly before we managed to do so.
 
 With three reports pending: 
 [LLVM-25871](https://github.com/llvm/llvm-project/issues/25871), 
@@ -61,7 +60,7 @@ During our fuzzing campaigns, we used
 [Creduce](https://embed.cs.utah.edu/creduce/), 
 the LLVM sanitizers ([ASAN](https://clang.llvm.org/docs/AddressSanitizer.html), [MSAN](https://clang.llvm.org/docs/MemorySanitizer.html) and [UBSAN](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html))
 and [Frama-C](https://frama-c.com) as part of investigating the bugs that we found.
-This led to us to report 11 additional bugs in these tools as a by-product of our work: 
+It led us to report 11 additional bugs in these tools as a by-product of our work: 
 [Creduce-00537](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00537.html),
 [Creduce-00551](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00551.html),
 [Creduce-00553](https://www.flux.utah.edu/listarchives/creduce-bugs/msg00553.html),
