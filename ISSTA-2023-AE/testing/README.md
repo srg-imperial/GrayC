@@ -26,3 +26,11 @@ If this is not working for you, you need to install git, m4, and probably other 
 ```
 ./0-install-csmith.sh
 ```
+
+Install remove-parens util instaructions:
+```
+```
+Or you can use our script:
+```
+./0-install-remove-parens.sh
+```
