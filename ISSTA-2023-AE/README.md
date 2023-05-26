@@ -121,6 +121,9 @@ We give details below on how to reproduce each for the results. The scripts made
 
 Next, we describe the process of reproducing the tables and graphs' data for section 5 in the paper: the controlled experiments with the additional tools compared against GrayC's performance.
 
+	
+	
+	
 ### Step-by-Step instructions
 
 To reproduce the sets of test cases in Section 5.1, run the following scripts. 
@@ -146,6 +149,9 @@ ninja grayc-conservative
 ninja regexp
 ninja nofuss
 ```
+
+	
+	
 	
 **Test Case Generation** (Section 5.1). To generate the test programs with each of the fuzzers, starting with GrayC:
 ```
@@ -184,12 +190,21 @@ cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-
 ./9-run-RegExpMutator-small.sh
 mkdir RegExpMutator
 cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* RegExpMutator
-
-./10-run-AFLCompiler-small.sh
-mkdir AFLCompiler
-cp -r /home/user42/fuzzers/copy_5/llvm-csmith-5/llvm-fuzzer-build/fuzzer-output-directory-prev/* AFLCompiler
 ```
-
+	
+In addition to the above, we tried two experimental versions and have these installed in our artifact codebase because we believe these migh be useful for future research; however, we did not get interesting results with these to include them fully in the artifact or the paper. You can also explore more conservative settings of GrayC via this script:
+```
+./2-run-grayc-conservative.sh
+```
+and a version of AFL compilers (no-fuss fuzzer work) embedded into LibFuzzer (excluding the AFL mechanism for dictionaries and other specific unique fetchures of AFL):
+```
+./10-run-AFLCompiler.sh
+```
+Note: there is no AFL dictionary for C programming language.
+	
+	
+	
+	
 **Throughput of Fuzzing** (Section 5.2). Next, we describe how to get the results for Section 5.2 and Table 5. For this you need to use the results from *small.sh scripts.
 Run the following scripts:
 ```
