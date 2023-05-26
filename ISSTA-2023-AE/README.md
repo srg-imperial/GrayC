@@ -247,6 +247,9 @@ Which outputs how many files are in the folder and how many **failed** compilati
 Hence the compilation rate for Grammarinator is 0%, and for Csmith is 100%.
 The rate is the number of hours the tool has run, dividing 12 and 321. 
 	
+	
+	
+	
 **Coverage** (Section 5.3). We measure coverage for several sets when evaluating GrayC's ability to find additional new coverage in GCC-12 and LLVM-13. We measured the code coverage with gcov-10 and gfauto. Please check both are installed correctly before starting this part (including gcov, gcc and cc versions).
 
 To generate Figure 2: You need to have 24 hours of fuzzing. To simplify the evaluation, the scripts below measure coverage only for the first hour only. The scripts for 24 hours are in the [coverage folder](testing/coverage).
@@ -297,6 +300,23 @@ Total files in /home/user42//gcc-csmith-1/coverage_processed/x-line-0/cov.out/: 
 user42@7a15342fc0b2:~$ 
 ```
 Here we covered 26,200 lines in the GCC codebase with a set of fuzzed programs from Grammarinator.	
+	
+	
+	
+**Bug Finding (Crash testing only)** (Section 5.4). To check if a set of programs \<set-of-programs\> detects crashes in LLVM and GCC, run the script:
+```
+cd ~/fuzzers/crash-testing 
+./9-run-all-wrapper.sh /home/user42/fuzzers/crash-testing/input /home/user42/fuzzers/crash-testing/output <set-of-programs> 2
+```
+For example:
+```
+cd ~/fuzzers/crash-testing 
+./9-run-all-wrapper.sh /home/user42/fuzzers/crash-testing/input /home/user42/fuzzers/crash-testing/output /home/user42/grammarinator/ 2	
+```
+The rest of the bug report classification happens in Bugzilla and other reporting platforms and hence cannot be scripted.
+	
+	
+	
 	
 # IV. Reusability of GrayC - Additional details
 	
