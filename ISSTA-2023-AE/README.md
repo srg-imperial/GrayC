@@ -236,12 +236,12 @@ cd ~
 ```
 Which outputs how many files are in the folder and how many **failed** compilation. For example:
 ```
- ./11-get-gen-comp-rate.sh grammarinator/
+./11-get-gen-comp-rate.sh grammarinator/
  Total files processed: 12
  Total files failing compilation: 12
 ./11-get-gen-comp-rate.sh csmith/
-Total files processed: 321
-Total files failing compilation: 0
+ Total files processed: 321
+ Total files failing compilation: 0
 ```
 Hence the compilation rate for Grammarinator is 0% and for Csmith is 100%.
 The rate is the number of hours ran divided by 12 and 321. 
