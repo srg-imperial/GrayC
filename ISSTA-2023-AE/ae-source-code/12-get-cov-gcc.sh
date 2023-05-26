@@ -18,6 +18,6 @@ output_folder=`pwd`
 cd /home/user42/fuzzers/coverage/
 /home/user42/fuzzers/coverage/1-wrapper-get-coverage.sh /home/user42/ $data 1 0 /home/user42/fuzzers/copy_5/llvm-csmith-5/csmith/ /home/user42/graphicsfuzz/gfauto/ $output_folder/gcc-func-cov-out.csv $output_folder/gcc-line-cov-out.csv $output_folder/gcc-coverage_summary.log gcc 0
 echo "Results are in GCC-coverage folder. Summary of it below:"
-cat $woutput_folder/gcc-coverage_summary.log
+cat $output_folder/gcc-coverage_summary.log
 # DONE
 
