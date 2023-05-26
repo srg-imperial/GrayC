@@ -376,3 +376,7 @@ nano GrayC/ISSTA-2023-AE/fuzzer/README.md
 The project contains several folders.
 	
 The [fuzzer](fuzzer) folder contains the code of GrayC and instructions how to install GrayC with a detailed inner structure at the end of its [README.md](fuzzer/README.md) file.
+	
+The [data](data) folder contains all the logs and outputs collected during testing with the fuzzers. Larger files are omitted from the GitHub Repository, but can be found in [our artifact in Zenodo](https://zenodo.org/record/7967714).
+
+The [testing](testing) folder contains extra scripts to build instrumented with coverage compilers and to install some of the fuzzers and code analysers used here.
