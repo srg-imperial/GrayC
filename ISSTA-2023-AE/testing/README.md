@@ -56,7 +56,7 @@ First, build a copy of LLVM 13 with coverage. First download llvm-13 (as above f
 ```
 Second, compile llvm-13 with coverage:
 ```
-./coverage/0-install-csmith-llvm-cov.sh <base-folder> <temp-folder-with-llvm-13> 13
+./coverage/0-install-llvm-cov.sh <base-folder> <temp-folder-with-llvm-13> 13
 ```
 We recommend setting a large swap file for that (between 4 - 12 GB) for standard laptop configuration (servers and stronger machines do not have to follow this). 
 Note: the output of the first script includes a name of a temporary folder where the LLVM source is, please use it as <temp-folder-with-llvm-13> as a parameter for the next script. 
@@ -147,5 +147,5 @@ The source files will be in a subfolder in the \<base-folder\> with ".sources_" 
 
 With GCC source files, build GCC-12 with coverage:
 ```
-./coverage/0-install-csmith-gcc-cov.sh <base-folder> <temp-folder-with-gcc-12> 12
+./coverage/0-install-gcc-cov.sh <base-folder> <temp-folder-with-gcc-12> 12
 ```
