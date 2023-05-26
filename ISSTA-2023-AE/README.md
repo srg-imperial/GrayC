@@ -49,7 +49,7 @@ If you do not wish to use a docker image, we discuss later how to install GrayC 
 
 Once you load and attach the docker image of the GrayC artifact, do the following to test that all is working:
 
-1. Inside the Docker image, use user is user42, not root. Please do not switch to root.
+1. Inside the Docker image, execute the scripts with user42, not root. Please do not switch to root.
 2. Run the following for each tool in our controlled experiments. There are several fuzzers in this study.
 ```
 cd /home/user42/
@@ -264,7 +264,7 @@ We provide two additional scripts to perform coverage runs on the provided <sets
 ./12-get-cov-gcc.sh <sets>
 ./13-get-cov-llvm.sh <sets>
 ```
-Due to resource constraints in Docker images in general, we provide the aforementioned scripts that will allow for the coverage analysis to be carried out, but outside the docker container. Check the [coverage](tools/coverage) folder for that.
+Due to resource constraints in Docker images in general, we provide the aforementioned scripts that will allow for the coverage analysis to be carried out, but outside the Docker container. Check the [coverage](tools/coverage) folder for that.
 
 With the pre-installed and pre-instrumented GCC compiler, you can expect this output inside the Docker image:
 ```
@@ -388,7 +388,7 @@ We are comparing against many other fuzzers in our experiments. Here are links t
     4.2. Pip https://pypi.org/project/grammarinator/
  5. PolyGlot from GitHub: https://github.com/s3team/Polyglot
 	
-NOTE: Polyglot was taken from GitHub project with a few modifications made to the readme for a successful install, based on correspondence with the authors. Specifically, the clang compiler was supposed to be built with regular afl and then was supposed to be fuzzed by the polyglot binary available in the afl_replace_mutate folder.
+NOTE: Polyglot was taken from the GitHub project with a few modifications made to the readme for a successful install, based on correspondence with the authors. Specifically, the clang compiler was supposed to be built with regular afl and then was supposed to be fuzzed by the polyglot binary available in the afl_replace_mutate folder.
 
 Most of them are available via apt in Ubuntu OS or via pip but also easy to install from source. For example to install Grammarinator, run:
 ```
@@ -413,4 +413,4 @@ The [fuzzer](fuzzer) folder contains the code of GrayC and instructions on how t
 	
 The [data](data) folder contains all the logs and outputs collected during testing with the fuzzers. Larger files are omitted from the GitHub Repository but can be found in [our artifact in Zenodo](https://zenodo.org/record/7967714).
 
-The [testing](testing) folder contains extra scripts to build instruments with coverage compilers and to install some of the fuzzers and code analysers used here.
+The [testing](testing) folder contains extra scripts to build instruments with coverage compilers and to install some of the fuzzers and code analysers used here. The code of our artifact with all the scripts in the Docker image is [here](ae-source-code).
