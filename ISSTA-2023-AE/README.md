@@ -259,7 +259,7 @@ The Docker image contains three files of the LLVM and GCC instrumented with cove
 cd ~
 tar -xf gcc-csmith-0.tar.gz
 tar -xf gcc-csmith-1.tar.gz
-tar -xf llvm-csmith-2.tar.gz
+tar -xf llvm-csmith-3.tar.gz
 ```
 	
 We provide two additional scripts to perform coverage runs on the provided <sets> for reproducibility. Run them using the following commands where `<sets>` is the path of the folder containing the fuzzer-generated sets.
