@@ -20,6 +20,8 @@ We first measured coverage for the whole [LLVM test suite](https://github.com/ll
 
 # II. GrayC Artifact ISSTA 2023 - Phase 1
 
+**===> Docker Image can be found in [here](https://emckclac-my.sharepoint.com/:f:/g/personal/k1510625_kcl_ac_uk/Ep7kEJdbLLtJmi-nnnMSALUBTn-s5h3ovUaBg6aKFLRtbA?e=ZiF4Tk) in case Zenodo blocks the upload <===**
+
 ## II.A Loading the Docker Image
 
 This Docker image contains a pre-built version of GrayC. It also includes all the tools we compared against in our controlled evaluation and the setting up of GrayC. To start the docker container:
