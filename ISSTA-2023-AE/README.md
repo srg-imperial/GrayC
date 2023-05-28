@@ -322,9 +322,13 @@ The rest of the bug report classification happens in Bugzilla and other reportin
 	
 # IV. Reusability of GrayC - Additional details
 	
-First of all, GrayC can be used to detect bugs in mature compilers like GCC and LLVM. 
+Firstly, GrayC can be used to detect bugs in mature compilers like GCC and LLVM. 
 	
-Second, we believe the data and the scripts are useful for the compiler testing community, like the coverage scripts and the installation of other fuzzers built on top of LibFuzzer. We shared all scripts for other researchers to use.
+Secondly, we believe the data and the scripts are useful for the compiler testing community, like the coverage scripts and the installation of other fuzzers built on top of LibFuzzer. We shared all scripts for other researchers to use.
+
+Thirdly, the artifact is highly automated and easy to use. Moreover, we believe our automated scripts are valuable (in general) for any project on testing C compilers and code analysers. Not many code coverage fully automated scripts are available online, and we hope this artifact will help close this gap. The scripts can be extended to support other compilers and code analysers, easily.
+
+Lastly, the artifact is comprehensively documented. Each folder contains an extended README.md file to elaborate further on how to use our code.
 	
 We discuss below the structure of the source code of GrayC and give detailed instructions on how to build the tool from the source. Note that compilers such as LLVM and GGC are very complex pieces of code; hence the build process of these with instrumentation is a heavy task, by definition. It can take several hours, even on a machine with 16 GB RAM. We recommend adding swap files.
 
