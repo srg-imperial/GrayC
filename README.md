@@ -8,7 +8,7 @@ of the "GrayC: Greybox Fuzzing of Compilers and Analysers for C" publication.
 
 ## Description
 
-The repository contains the sources for the various mutations that GrayC applies. The `transformation` folder contains, as sub-directories, the mutations which rely on the Clang AST to carry out the transfomrations.
+The repository contains the sources for the various mutations that GrayC applies. The `transformation` folder contains, as sub-directories, the mutations which rely on the Clang AST to carry out the transformations.
 
 ## Installation
 
