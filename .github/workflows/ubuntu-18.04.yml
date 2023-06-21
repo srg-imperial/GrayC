@@ -1,4 +1,4 @@
-name: Build Ubuntu 18.04 
+name: Build Ubuntu latest
 
 # Controls when the workflow will run
 on:
@@ -15,7 +15,7 @@ on:
 jobs:
   build-1:
     # The type of runner that the job will run on
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
