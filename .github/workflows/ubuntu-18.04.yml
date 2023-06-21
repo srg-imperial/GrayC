@@ -2,9 +2,9 @@ name: Build Ubuntu 18.04
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push or pull request events but only for the out-of-tree branch; change once this becomes main
   push:
-    branches: [ master ]
+    branches: [ out-of-tree ] 
   pull_request:
     branches: [ master ]
 
