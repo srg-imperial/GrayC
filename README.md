@@ -6,6 +6,9 @@ See the following links for the ISSTA 2023 [artifact](https://zenodo.org/record/
 [code](ISSTA-2023-AE) and [general instructions](ISSTA-2023-AE/README.md) 
 of the "GrayC: Greybox Fuzzing of Compilers and Analysers for C" publication.
 
+## Description
+
+The repository contains the sources for the various mutations that GrayC applies. The `transformation` folder contains, as sub-directories, the mutations which rely on the Clang AST to carry out the transfomrations.
 
 ## Installation
 
