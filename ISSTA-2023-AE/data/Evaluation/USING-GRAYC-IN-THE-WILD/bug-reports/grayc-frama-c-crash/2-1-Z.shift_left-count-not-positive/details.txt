@@ -1,4 +1,0 @@
-Reported here: https://git.frama-c.com/pub/frama-c/-/issues/2592
-
-A fix can be error like this: 
-file.c:3: User Error: zero-size bitfield width

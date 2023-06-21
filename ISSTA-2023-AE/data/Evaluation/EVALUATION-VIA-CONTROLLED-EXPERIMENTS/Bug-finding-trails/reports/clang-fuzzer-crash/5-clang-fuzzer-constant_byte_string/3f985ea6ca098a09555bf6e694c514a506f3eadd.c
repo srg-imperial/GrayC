@@ -1,1 +1,0 @@
-               __attribute__(( a(memchr(L"\x1234", 0, sizeof 0

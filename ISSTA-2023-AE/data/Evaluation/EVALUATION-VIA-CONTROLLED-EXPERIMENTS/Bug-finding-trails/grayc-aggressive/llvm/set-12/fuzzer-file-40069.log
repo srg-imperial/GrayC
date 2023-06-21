@@ -1,8 +1,0 @@
-/usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o: In function `deregister_tm_clones':
-crtstuff.c:(.text+0x7): relocation truncated to fit: R_X86_64_32S against `.tm_clone_table'
-/usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o: In function `register_tm_clones':
-crtstuff.c:(.text+0x38): relocation truncated to fit: R_X86_64_32S against `.tm_clone_table'
-/usr/lib/gcc/x86_64-linux-gnu/11/crtbegin.o: In function `__do_global_dtors_aux':
-crtstuff.c:(.text+0x72): relocation truncated to fit: R_X86_64_PC32 against `.bss'
-crtstuff.c:(.text+0x84): relocation truncated to fit: R_X86_64_PC32 against `.bss'
-clang: error: linker command failed with exit code 1 (use -v to see invocation)

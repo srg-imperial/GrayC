@@ -1,7 +1,0 @@
-/home/user42/git/directed-compiler-fuzzing-code/scripts/8-crash-testing-copy-4/input/segment_11/__21.segment_11.fuzzer-file-147-2023-01-24-02-00-37.c:39:3: internal compiler error: in decompose, at wide-int.h:984
---
-	.././../gcc-source/gcc/c/c-fold.cc:125
-Please submit a full bug report, with preprocessed source (by using -freport-bug).
-Please include the complete backtrace with any bug report.
-See <https://gcc.gnu.org/bugs/> for instructions.
---

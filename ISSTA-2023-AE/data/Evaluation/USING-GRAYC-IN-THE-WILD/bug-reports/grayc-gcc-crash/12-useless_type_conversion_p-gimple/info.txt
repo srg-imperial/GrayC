@@ -1,3 +1,0 @@
-Reported by others here: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=100525
-
-We added information. Then it was flaged as a new bug, and moved here: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106560

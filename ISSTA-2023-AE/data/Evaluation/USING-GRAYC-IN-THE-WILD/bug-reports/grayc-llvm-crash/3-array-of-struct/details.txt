@@ -1,5 +1,0 @@
-Compiler hang, related to an array of structs.
-
-The .c.fix version is a version that doesn't cause a compiler hang because we remove the array of struct and pathced the code.
-
-We reported it here: https://bugs.llvm.org/show_bug.cgi?id=50639 

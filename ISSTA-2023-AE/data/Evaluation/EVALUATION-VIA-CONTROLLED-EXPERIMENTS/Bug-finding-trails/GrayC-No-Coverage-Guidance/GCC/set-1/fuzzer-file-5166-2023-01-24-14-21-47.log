@@ -1,7 +1,0 @@
-/home/user42/git/directed-compiler-fuzzing-code/scripts/8-crash-testing-copy-1/input/segment_23/__33.segment_23.fuzzer-file-5166-2023-01-24-14-21-47.c:18:1: internal compiler error: verify_gimple failed
---
-.././../gcc-source/gcc/passes.cc:2138
-Please submit a full bug report, with preprocessed source (by using -freport-bug).
-Please include the complete backtrace with any bug report.
-See <https://gcc.gnu.org/bugs/> for instructions.
---

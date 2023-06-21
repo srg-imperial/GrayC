@@ -1,3 +1,0 @@
-gcc: internal compiler error: Segmentation fault signal terminated program cc1
-Please submit a full bug report, with preprocessed source (by using -freport-bug).
-See <https://gcc.gnu.org/bugs/> for instructions.

@@ -1,3 +1,0 @@
-mutator_path:/home/user42/llvm-project/llvm-fuzzer/
-lib_paths:/home/user42/llvm-project/llvm-fuzzer-includes/	/usr/include/x86_64-linux-gnu/	
-compilation_flags:-O3
