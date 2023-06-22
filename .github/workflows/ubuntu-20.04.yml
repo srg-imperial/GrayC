@@ -39,7 +39,7 @@ jobs:
           context: ./
           file: ./dockerfiles/ubuntu-20.04.dockerfile
           push: false
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/GrayC:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/grayc:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
