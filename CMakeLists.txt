@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.13.4)
-project(product-program)
+project(GrayC)
 
 #===============================================================================
 # 0. GET CLANG INSTALLATION DIR
 #===============================================================================
-# In product-program, `CT_Clang_INSTALL_DIR` is the key CMake variable - it points
+# In GrayC, `CT_Clang_INSTALL_DIR` is the key CMake variable - it points
 # to a Clang installation directory. We, however, use `LLVM_CONFIG_BINARY` as
 # our primary source of truth.
 
@@ -70,7 +70,7 @@ message("CLANG STATUS:
 include_directories(SYSTEM "${LLVM_INCLUDE_DIRS};${CLANG_INCLUDE_DIRS}")
 
 #===============================================================================
-# 3. product-program BUILD CONFIGURATION
+# 3. GrayC BUILD CONFIGURATION
 #===============================================================================
 # Use the same C++ standard as LLVM does
 set(CMAKE_CXX_STANDARD 17 CACHE STRING "")
@@ -91,7 +91,7 @@ if(NOT LLVM_ENABLE_RTTI)
 endif()
 
 # -fvisibility-inlines-hidden is set when building LLVM and on Darwin warnings
-# are triggered if PRODUCT-PROGRAM is built without this flag (though otherwise it
+# are triggered if GrayC is built without this flag (though otherwise it
 # builds fine). For consistency, add it here too.
 include(CheckCXXCompilerFlag)
 link_libraries(stdc++fs)
