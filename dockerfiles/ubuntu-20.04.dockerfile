@@ -36,7 +36,6 @@ RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
 COPY ./ /GrayC/
 WORKDIR /GrayC
 
-FROM sources AS prebuilt
 ARG JOBS=$(nproc)
 
 RUN \
