@@ -24,7 +24,7 @@ git clone https://github.com/srg-imperial/GrayC.git
 cd GrayC
 mkdir build
 cd build
-cmake -GNinja -DCMAKE_C_COMPILER=gcc-11 -DCMAKE_CXX_COMPILER=g++-11 -DLLVM_CONFIG_BINARY=llvm-config-12 ../
+cmake -GNinja -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 -DLLVM_CONFIG_BINARY=llvm-config-12 ../
 ninja
 ```
 
