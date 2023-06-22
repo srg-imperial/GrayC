@@ -1,4 +1,4 @@
-name: Build Ubuntu latest
+name: Build Ubuntu 20.04
 
 # Controls when the workflow will run
 on:
@@ -15,7 +15,7 @@ on:
 jobs:
   build-1:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -37,9 +37,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: ./dockerfiles/ubuntu-18.04.dockerfile
+          file: ./dockerfiles/ubuntu-20.04.dockerfile
           push: false
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/apislicer:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/GrayC:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}

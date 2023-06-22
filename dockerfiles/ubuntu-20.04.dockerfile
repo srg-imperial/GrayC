@@ -1,4 +1,4 @@
-FROM docker.io/library/ubuntu:18.04 AS base
+FROM docker.io/library/ubuntu:20.04 AS base
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
