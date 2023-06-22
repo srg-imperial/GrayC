@@ -83,10 +83,6 @@ endif()
 
 # Compiler flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3 -DDEBUG \
-    -Wall -Wextra -pedantic -Wnull-dereference -Wstrict-aliasing \
-    -Wduplicated-branches -Wduplicated-cond -Wshadow=local -Wcast-qual \
-    -Wconversion -Wlogical-op -Wmissing-declarations -Wredundant-decls \
-    -Wvla \
     -fdiagnostics-color=always")
 
 # LLVM/Clang is normally built without RTTI. Be consistent with that.
@@ -98,11 +94,6 @@ endif()
 # are triggered if PRODUCT-PROGRAM is built without this flag (though otherwise it
 # builds fine). For consistency, add it here too.
 include(CheckCXXCompilerFlag)
-check_cxx_compiler_flag("-fvisibility-inlines-hidden"
-  SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG)
-if(${SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG} EQUAL "1")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility-inlines-hidden")
-endif()
 link_libraries(stdc++fs)
 # Set the build directories
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/bin")
