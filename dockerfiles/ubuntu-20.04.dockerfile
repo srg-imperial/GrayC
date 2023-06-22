@@ -29,7 +29,7 @@ RUN apt-get update && \
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
         && apt-add-repository "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-12 main" \
         && apt-get update \
-        && apt-get install -y llvm-12 llvm-12-dev llvm-12-tools clang-12 clang-format-12 clang-tidy-12 libclang-common-12-dev libclang-12-dev
+        && apt-get install -y llvm-12 llvm-12-dev llvm-12-tools clang-12 clang-format-12 clang-tidy-12 libclang-common-12-dev libclang-12-dev g++-11 gcc-11 
 
 
 
