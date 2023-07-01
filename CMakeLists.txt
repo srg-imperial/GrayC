@@ -105,14 +105,9 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 # Doing this at the end so that all definitions and link/include paths are
 # available for the sub-projects.
 #===============================================================================
-# add_subdirectory(vendor/fmtlib)
-# find_package(fmt)
 
-add_subdirectory(Utils)
-add_subdirectory(transformation)
 
-# add_subdirectory(test/cbseq)
+# add_subdirectory(Utils)
 
-# add_test(NAME add-stmt-patch-func-call-test
-#         COMMAND lit ${CMAKE_CURRENT_BINARY_DIR}/test/add-stmt-patch-func-call
-#         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+add_subdirectory(clang-diff)
+add_subdirectory(grayc)
