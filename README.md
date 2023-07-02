@@ -40,10 +40,10 @@ bin/grayc --apply-mutation ../b.cpp --
 The inspiration behind this functionality was the extensible framework introduced by `clang-tidy`. More technically, the `WYOM` functionality is realised by making use of the `add_new_mutator.py` script, which automatically updates the various files while providing the boilerplate code to write a new mutation. 
 
 ### WYOM Example Usage
-Let's see the case for development of a simple mutator that converts a `+` to a `-`. For now, we would like the mutator to work on `C` programs. We will start off by calling the `add_new_mutator.py` as follows:
+Let's see the case for development of a simple mutator that converts a `+` to a `-`. For now, we would like the mutator to work on `C` programs. We will start off by calling the `add_new_mutator.py`, which sits in the `grayc` folder, as follows:
 
 ```
-python3 add_new_mutator.py cmutation binary-operator-mutator
+./add_new_mutator.py cmutation binary-operator-mutator
 ```
 GrayC's mutators are divided into modules, based on the language that it targets. `cmutation` is the module corresponding to mutators for `C` files, while `cxxmutation` houses the `C++` mutators. The script does the following tasks:
 
