@@ -15,22 +15,19 @@ namespace clang {
 namespace grayc {
 namespace cmutation {
 
-/// Checks that bodies of `if` statements and loops (`for`, `range-for`,
-/// `do-while`, and `while`) are inside braces
+/// Transforms increment and decrement unary operators 
+/// into their opposite types
 ///
 /// Before:
 ///
 /// \code
-///   if (condition)
-///     statement;
+///   ++a;
 /// \endcode
 ///
 /// After:
 ///
 /// \code
-///   if (condition) {
-///     statement;
-///   }
+///   --a;
 /// \endcode
 ///
 class UnaryOperatorCheck : public GrayCCheck {

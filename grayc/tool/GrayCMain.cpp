@@ -33,7 +33,7 @@ static cl::OptionCategory GrayCCategory("GrayC options");
 static cl::extrahelp CommonHelp(CommonOptionsParser::HelpMessage);
 
 const char DefaultChecks[] = // Enable these checks by default:
-    "cmutator-*,cxxmutator-*";    //   * mutator transformations
+    "cmutation-*,cxxmutation-*";    //   * mutator transformations
 
 static cl::opt<std::string> Checks("checks", cl::desc(R"(
 Comma-separated list of globs with optional '-'

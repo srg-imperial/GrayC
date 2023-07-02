@@ -1,5 +1,7 @@
 add_library(GrayCCMutator
+  AssignmentExpressionMutator.cpp
   CMutationModule.cpp
+  ConditionalExpressionMutator.cpp
   UnaryOperatorCheck.cpp
 )
 

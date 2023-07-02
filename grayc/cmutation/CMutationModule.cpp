@@ -9,6 +9,8 @@
 #include "../GrayC.h"
 #include "../GrayCModule.h"
 #include "../GrayCModuleRegistry.h"
+#include "AssignmentExpressionMutator.h"
+#include "ConditionalExpressionMutator.h"
 #include "UnaryOperatorCheck.h"
 
 
@@ -19,8 +21,12 @@ namespace cmutation {
 class CMutationModule : public GrayCModule {
 public:
   void addCheckFactories(GrayCCheckFactories &CheckFactories) override {
+    CheckFactories.registerCheck<AssignmentExpressionMutator>(
+        "cmutation-assignment-expression-mutator");
+    CheckFactories.registerCheck<ConditionalExpressionMutator>(
+        "cmutation-conditional-expression-mutator");
     CheckFactories.registerCheck<UnaryOperatorCheck>(
-        "cmutator-unary");
+        "cmutation-unary");
   }
 };
 

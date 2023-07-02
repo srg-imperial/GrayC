@@ -20,7 +20,7 @@ class CXXMutationModule : public GrayCModule {
 public:
   void addCheckFactories(GrayCCheckFactories &CheckFactories) override {
     CheckFactories.registerCheck<CXXUnaryOperatorCheck>(
-        "cxxmutator-unary");
+        "cxxmutaion-unary");
   }
 };
 
