@@ -5,10 +5,11 @@ The GrayC approach involves using mutation-based fuzzing as a program generation
 This version is the revamped version of the one presented in our ISSTA '23 paper. It contains the following enhancements:
 
 1. Write-Your-Own-Mutator
-2. Interface to extend the tool for the entire C-family
-3. Out-of-tree implementation of the tool
-4. Rewrite of the codebase which now heavily relies on the LLVM/Clang framework
-5. Better debugging due to reliance on ASTMatchers and Clang's internal debugging framework
+2. Remove dependence on `libfuzzer`
+3. Interface to extend the tool for the entire C-family
+4. Out-of-tree implementation of the tool
+5. Rewrite of the codebase which now heavily relies on the LLVM/Clang framework
+6. Better debugging due to reliance on ASTMatchers and Clang's internal debugging framework
 
 ## Installation
 
