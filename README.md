@@ -2,7 +2,7 @@
 <a href="https://srg.doc.ic.ac.uk/files/papers/grayc-issta-23.pdf" target="_blank"><img src="img/grayc.png" align="right" width="250"></a>
 The GrayC approach involves using mutation-based fuzzing as a program generation technique, and then using the generated programs to test compilers and analysers.  
 
-This version is the revamped version of the one presented in our ISSTA '23 paper. It contains the following enhancements:
+This is the revamped version of the one presented in our ISSTA '23 paper. It contains the following enhancements:
 
 1. Write-Your-Own-Mutator
 2. Remove dependence on `libfuzzer`
