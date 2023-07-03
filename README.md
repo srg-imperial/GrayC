@@ -70,7 +70,7 @@ Let's see the case for development of a simple mutator that converts a `+` to a 
 ```
 ./add_new_mutator.py cmutation binary-operator-mutator
 ```
-GrayC's mutators are divided into modules, based on the language that it targets. `cmutation` is the module corresponding to mutators for `C` files, while `cxxmutation` houses the `C++` mutators. The script does the following tasks:
+GrayC's mutators are divided into modules, based on the language that it targets. `cmutation` is the module corresponding to mutators for the entire `C` family program files, while `cxxmutation` houses the `C++` specific mutators. The script does the following tasks:
 
 1. Registers the `binary-operator-mutator` within the `cmutation` module 
 2. Provides `BinaryOperatorMutator.cpp` and `BinaryOperatorMutator.h` files
