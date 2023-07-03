@@ -121,6 +121,9 @@ List all enabled checks and exit. Use with
 )"),
                                 cl::init(false), cl::cat(GrayCCategory));
 
+static cl::opt<long> Seed("seed", cl::desc(R"(
+Provide an integer seed to be used during mutations.)"),
+                                cl::init(1234567), cl::cat(GrayCCategory));
 
 static cl::opt<std::string> Config("config", cl::desc(R"(
 Specifies a configuration in YAML/JSON format:

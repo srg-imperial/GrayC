@@ -95,6 +95,9 @@ struct GrayCOptions {
   /// comments in the relevant check.
   llvm::Optional<std::string> User;
 
+  // Specifies the seed to be used during mutations
+  llvm::Optional<long> Seed;
+  
   /// Helper structure for storing option value with priority of the value.
   struct GrayCValue {
     GrayCValue() : Value(), Priority(0) {}

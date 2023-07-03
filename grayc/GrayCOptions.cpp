@@ -91,6 +91,7 @@ template <> struct MappingTraits<GrayCOptions> {
     IO.mapOptional("HeaderFilterRegex", Options.HeaderFilterRegex);
     IO.mapOptional("AnalyzeTemporaryDtors", Ignored); // legacy compatibility
     IO.mapOptional("FormatStyle", Options.FormatStyle);
+    IO.mapOptional("Seed", Options.Seed);
     IO.mapOptional("User", Options.User);
     IO.mapOptional("CheckOptions", NOpts->Options);
     IO.mapOptional("ExtraArgs", Options.ExtraArgs);
@@ -113,6 +114,7 @@ GrayCOptions GrayCOptions::getDefaults() {
   Options.HeaderFilterRegex = "";
   Options.SystemHeaders = false;
   Options.FormatStyle = "none";
+  Options.Seed = 1234567;
   Options.User = llvm::None;
   unsigned Priority = 0;
   for (const GrayCModuleRegistry::entry &Module :

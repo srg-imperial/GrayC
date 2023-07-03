@@ -69,7 +69,7 @@ namespace clang
         auto Diag = diag(InitialLoc, "found binary assignment statement to mutate");
         if (isa<const BinaryOperator>(B->getRHS()))
         {
-          llvm::dbgs() << "INFO: " << "Found RHS expression: " << B->getEndLoc().printToString(SM) << "\n";
+          llvm::WithColor::remark() << "Found RHS expression: " << B->getEndLoc().printToString(SM) << "\n";
           buildExpressionVector(Result, expressions, dyn_cast<const BinaryOperator>(B->getRHS()));
         }
         else
@@ -80,15 +80,15 @@ namespace clang
         BinaryOperatorKind BK = BinaryOperatorKind(19092727 % (Last - 11));
         // FIXIT: Avoid using pointer-to-member operators
         llvm::Twine SelectedBinaryOperator(BinaryOperatorStrings[1 + BK]);
-        llvm::dbgs() << "INFO: " << "Selected binary operator: " << SelectedBinaryOperator.str() << "\n";
-        llvm::dbgs() << "INFO: " << "Number of subexpressions: " << expressions.size() << "\n";
+        llvm::WithColor::remark() << "Selected binary operator: " << SelectedBinaryOperator.str() << "\n";
+        llvm::WithColor::remark() << "Number of subexpressions: " << expressions.size() << "\n";
 
         assert(expressions.size() > 0 && "No sub-expressions collected!!");
         llvm::Twine NewRHS(expressions[121276325 % expressions.size()]);
         llvm::Twine NewLHS(expressions[190927277 % expressions.size()]);
         llvm::Twine MutatedAssignment(NewLHS + SelectedBinaryOperator + NewRHS);
         
-        llvm::dbgs() << "INFO: " << "Expression built : " << MutatedAssignment.str() << "\n";
+        llvm::WithColor::remark() << "Expression built : " << MutatedAssignment.str() << "\n";
 
         Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedAssignment.str());
         return true;
@@ -110,8 +110,8 @@ namespace clang
           SourceRange RHSRange(RHS->getBeginLoc(), RHS->getEndLoc());
           expressions.push_back(Lexer::getSourceText(CharSourceRange::getTokenRange(LHSRange), SM, Context->getLangOpts()));
           expressions.push_back(Lexer::getSourceText(CharSourceRange::getTokenRange(RHSRange), SM, Context->getLangOpts()));
-          llvm::dbgs() << "INFO: " << "Number of expressions collected: " << expressions.size() << "\n";
-          llvm::dbgs() << "INFO: " << "Collected subexpressions: " << Lexer::getSourceText(CharSourceRange::getTokenRange(LHSRange), SM, Context->getLangOpts()) << "," << Lexer::getSourceText(CharSourceRange::getTokenRange(RHSRange), SM, Context->getLangOpts()) << "\n";
+          llvm::WithColor::remark() << "Number of expressions collected: " << expressions.size() << "\n";
+          llvm::WithColor::remark() << "Collected subexpressions: " << Lexer::getSourceText(CharSourceRange::getTokenRange(LHSRange), SM, Context->getLangOpts()) << "," << Lexer::getSourceText(CharSourceRange::getTokenRange(RHSRange), SM, Context->getLangOpts()) << "\n";
 
           if (isa<BinaryOperator>(LHS))
           {

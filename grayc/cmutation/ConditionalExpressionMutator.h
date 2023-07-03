@@ -24,9 +24,10 @@ namespace clang
       {
       public:
         ConditionalExpressionMutator(StringRef Name, GrayCContext *Context)
-            : GrayCCheck(Name, Context) {}
+            : GrayCCheck(Name, Context) { Seed = Context->getOptions().Seed;}
         void registerMatchers(ast_matchers::MatchFinder *Finder) override;
         void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
+        llvm::Optional<long> Seed;
         // Taken from LLVM source repo
         // [C++ 5.5] Pointer-to-member operators.
         // [C99 6.5.5] Multiplicative operators.
