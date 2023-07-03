@@ -79,18 +79,18 @@ namespace clang
         // FIXIT: (Last-11) as, without extra checks, we can't use assignment operators without ensuring that the lvalue is modifiable.
         BinaryOperatorKind BK = BinaryOperatorKind(19092727 % (Last - 11));
         // FIXIT: Avoid using pointer-to-member operators
-        llvm::StringRef SelectedBinaryOperator = BinaryOperatorStrings[1 + BK];
-        llvm::dbgs() << "Selected binary operator: " << SelectedBinaryOperator << "\n";
+        llvm::Twine SelectedBinaryOperator(BinaryOperatorStrings[1 + BK]);
+        llvm::dbgs() << "Selected binary operator: " << SelectedBinaryOperator.str() << "\n";
         llvm::dbgs() << "Number of subexpressions: " << expressions.size() << "\n";
 
         assert(expressions.size() > 0 && "No sub-expressions collected!!");
-        llvm::StringRef NewRHS = expressions[121276325 % expressions.size()];
-        llvm::StringRef NewLHS = expressions[190927277 % expressions.size()];
-        // FIXIT: With proper use of llvm::Twine for concatenation
-        llvm::StringRef MutatedAssignment = NewRHS.str() + SelectedBinaryOperator.str() + NewLHS.str();
+        llvm::Twine NewRHS(expressions[121276325 % expressions.size()]);
+        llvm::Twine NewLHS(expressions[190927277 % expressions.size()]);
+        llvm::Twine MutatedAssignment(NewLHS + SelectedBinaryOperator + NewRHS);
+        
         llvm::dbgs() << "Expression built : " << MutatedAssignment.str() << "\n";
 
-        Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedAssignment);
+        Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedAssignment.str());
         return true;
       }
       void AssignmentExpressionMutator::buildExpressionVector(const MatchFinder::MatchResult &Result, llvm::SmallVector<llvm::StringRef, 20> &expressions, const Expr *E)
