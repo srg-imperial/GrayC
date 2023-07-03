@@ -11,6 +11,7 @@
 #include "../GrayCModuleRegistry.h"
 #include "AssignmentExpressionMutator.h"
 #include "ConditionalExpressionMutator.h"
+#include "JumpMutator.h"
 #include "UnaryOperatorCheck.h"
 
 
@@ -25,6 +26,8 @@ public:
         "cmutation-assignment-expression-mutator");
     CheckFactories.registerCheck<ConditionalExpressionMutator>(
         "cmutation-conditional-expression-mutator");
+    CheckFactories.registerCheck<JumpMutator>(
+        "cmutation-jump-mutator");
     CheckFactories.registerCheck<UnaryOperatorCheck>(
         "cmutation-unary");
   }
