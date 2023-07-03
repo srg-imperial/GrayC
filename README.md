@@ -10,6 +10,7 @@ This is the revamped version of the one presented in our ISSTA '23 paper. It con
 4. Out-of-tree implementation of the tool
 5. Rewrite of the codebase which now heavily relies on the LLVM/Clang framework
 6. Better debugging due to reliance on ASTMatchers and Clang's internal debugging framework
+7. Per mutation profiling mechanism for long fuzzing runs (courtesy LLVM's `clang-tidy`)
 
 ## Installation
 
