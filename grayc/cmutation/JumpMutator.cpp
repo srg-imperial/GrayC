@@ -81,7 +81,7 @@ namespace clang
           {
             Body = dyn_cast<ForStmt>(S)->getBody();
             auto Diag = diag(Body->getEndLoc(), "found for loop to mutate");
-            llvm::dbgs() << "INFO: Adding jump statement (`break` or `continue`) at " << Body->getEndLoc().printToString(SM) << "\n";
+            llvm::WithColor::remark() << "Adding jump statement (`break` or `continue`) at " << Body->getEndLoc().printToString(SM) << "\n";
             Diag << FixItHint::CreateInsertion(Body->getEndLoc(), JumpConstruct);
           }
           else
@@ -95,7 +95,7 @@ namespace clang
           {
             Body = dyn_cast<WhileStmt>(S)->getBody();
             auto Diag = diag(InitialLoc, "found while loop to mutate");
-            llvm::dbgs() << "INFO: Adding jump statement (`break` or `continue`) at " << Body->getEndLoc().printToString(SM) << "\n";
+            llvm::WithColor::remark() << "Adding jump statement (`break` or `continue`) at " << Body->getEndLoc().printToString(SM) << "\n";
             Diag << FixItHint::CreateInsertion(Body->getBeginLoc(), JumpConstruct);
           }
           else
@@ -109,7 +109,7 @@ namespace clang
           {
             Body = dyn_cast<DoStmt>(S)->getBody();
             auto Diag = diag(InitialLoc, "found do while loop to mutate");
-            llvm::dbgs() << "INFO: Adding jump statement (`break` or `continue`) at " << Body->getEndLoc().printToString(SM) << "\n";
+            llvm::WithColor::remark() << "Adding jump statement (`break` or `continue`) at " << Body->getEndLoc().printToString(SM) << "\n";
             Diag << FixItHint::CreateInsertion(Body->getBeginLoc(), JumpConstruct);
           }
           else
