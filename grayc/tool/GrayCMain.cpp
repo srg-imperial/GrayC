@@ -35,7 +35,7 @@ static cl::extrahelp CommonHelp(CommonOptionsParser::HelpMessage);
 const char DefaultChecks[] = // Enable these checks by default:
     "cmutation-*,cxxmutation-*";    //   * mutator transformations
 
-static cl::opt<std::string> Checks("checks", cl::desc(R"(
+static cl::opt<std::string> Checks("mutations", cl::desc(R"(
 Comma-separated list of globs with optional '-'
 prefix. Globs are processed in order of
 appearance in the list. Globs without '-'
@@ -50,7 +50,7 @@ file, if any.
 
 static cl::opt<std::string> WarningsAsErrors("warnings-as-errors", cl::desc(R"(
 Upgrades warnings to errors. Same format as
-'-checks'.
+'-mutations'.
 This option's value is appended to the value of
 the 'WarningsAsErrors' option in .grayc
 file, if any.
@@ -115,9 +115,9 @@ information about formatting styles and options.
                                    cl::init("none"),
                                    cl::cat(GrayCCategory));
 
-static cl::opt<bool> ListChecks("list-checks", cl::desc(R"(
+static cl::opt<bool> ListMutations("list-mutations", cl::desc(R"(
 List all enabled checks and exit. Use with
--checks=* to list all available checks.
+-mutations=* to list all available checks.
 )"),
                                 cl::init(false), cl::cat(GrayCCategory));
 
@@ -327,12 +327,12 @@ int GrayCMain(int argc, const char **argv) {
       getCheckNames(EffectiveOptions, false);
 
 
-  if (ListChecks) {
+  if (ListMutations) {
     if (EnabledChecks.empty()) {
-      llvm::errs() << "No checks enabled.\n";
+      llvm::errs() << "No mutations enabled.\n";
       return 1;
     }
-    llvm::outs() << "Enabled checks:";
+    llvm::outs() << "Enabled mutations:";
     for (const auto &CheckName : EnabledChecks)
       llvm::outs() << "\n    " << CheckName;
     llvm::outs() << "\n\n";

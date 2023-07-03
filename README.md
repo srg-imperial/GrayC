@@ -32,12 +32,12 @@ ninja
 Check the installation in the build directory as
 
 ```
-bin/grayc --list-checks
+bin/grayc --list-mutations
 ```
 
 which should produce the following output
 ```
-Enabled checks:
+Enabled mutations:
     cmutation-assignment-expression-mutator
     cmutation-conditional-expression-mutator
     cmutation-jump-mutator
@@ -48,7 +48,7 @@ Enabled checks:
 ```
 cd build 
 echo "int main(){int a=0; ++a;return 0;}" > b.cpp
-bin/grayc -checks="-*,cmutation-unary" --apply-mutation b.cpp -- 
+bin/grayc -mutations="-*,cmutation-unary" --apply-mutation b.cpp -- 
 ```
 
 This should result in the following program
