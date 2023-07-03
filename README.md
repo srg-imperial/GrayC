@@ -71,7 +71,7 @@ Let's see the case for development of a simple mutator that converts a `+` to a 
 ```
 ./add_new_mutator.py cmutation binary-operator-mutator
 ```
-GrayC's mutators are divided into modules, based on the language that it targets. `cmutation` is the module corresponding to mutators for the entire `C` family program files, while `cxxmutation` houses the `C++` specific mutators. The script does the following tasks:
+ The script does the following tasks:
 
 1. Registers the `binary-operator-mutator` within the `cmutation` module 
 2. Provides `BinaryOperatorMutator.cpp` and `BinaryOperatorMutator.h` files
@@ -80,3 +80,7 @@ GrayC's mutators are divided into modules, based on the language that it targets
 The user is then expected to refine the `ASTMatcher` in the `BinaryOperatorMutator::registerMatchers` function and the callback code in the `BinaryOperatorMutator::check` function. 
 
 Once refined, the check can be called on a sample file in the aforementioned manner. 
+
+GrayC's mutators are divided into modules, based on the language that it targets. `cmutation` is the most general module corresponding to mutators applicable for the entire `C` family , while `cxxmutation` houses the `C++` specific mutators. We aim to extend this by having modules for Objective C and Objective C++ in the near future. 
+
+
