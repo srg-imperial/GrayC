@@ -169,7 +169,7 @@ GrayCOptions GrayCOptions::mergeWith(const GrayCOptions &Other,
 const char grayc::GrayCOptionsProvider::OptionsSourceTypeDefaultBinary[] =
     "grayc binary";
 const char grayc::GrayCOptionsProvider::OptionsSourceTypeCheckCommandLineOption[] =
-    "command-line option '-checks'";
+    "command-line option '-mutations'";
 const char
     grayc::GrayCOptionsProvider::OptionsSourceTypeConfigCommandLineOption[] =
         "command-line option '-config'";
