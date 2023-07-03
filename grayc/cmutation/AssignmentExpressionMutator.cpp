@@ -1,6 +1,6 @@
 //===--- AssignmentExpressionMutator.cpp - grayc ---------------------===//
 //
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// Taken from the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 //
@@ -69,7 +69,7 @@ namespace clang
         auto Diag = diag(InitialLoc, "found binary assignment statement to mutate");
         if (isa<const BinaryOperator>(B->getRHS()))
         {
-          llvm::dbgs() << "Found RHS expression: " << B->getEndLoc().printToString(SM) << "\n";
+          llvm::dbgs() << "INFO: " << "Found RHS expression: " << B->getEndLoc().printToString(SM) << "\n";
           buildExpressionVector(Result, expressions, dyn_cast<const BinaryOperator>(B->getRHS()));
         }
         else
@@ -80,15 +80,15 @@ namespace clang
         BinaryOperatorKind BK = BinaryOperatorKind(19092727 % (Last - 11));
         // FIXIT: Avoid using pointer-to-member operators
         llvm::Twine SelectedBinaryOperator(BinaryOperatorStrings[1 + BK]);
-        llvm::dbgs() << "Selected binary operator: " << SelectedBinaryOperator.str() << "\n";
-        llvm::dbgs() << "Number of subexpressions: " << expressions.size() << "\n";
+        llvm::dbgs() << "INFO: " << "Selected binary operator: " << SelectedBinaryOperator.str() << "\n";
+        llvm::dbgs() << "INFO: " << "Number of subexpressions: " << expressions.size() << "\n";
 
         assert(expressions.size() > 0 && "No sub-expressions collected!!");
         llvm::Twine NewRHS(expressions[121276325 % expressions.size()]);
         llvm::Twine NewLHS(expressions[190927277 % expressions.size()]);
         llvm::Twine MutatedAssignment(NewLHS + SelectedBinaryOperator + NewRHS);
         
-        llvm::dbgs() << "Expression built : " << MutatedAssignment.str() << "\n";
+        llvm::dbgs() << "INFO: " << "Expression built : " << MutatedAssignment.str() << "\n";
 
         Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedAssignment.str());
         return true;
@@ -110,8 +110,8 @@ namespace clang
           SourceRange RHSRange(RHS->getBeginLoc(), RHS->getEndLoc());
           expressions.push_back(Lexer::getSourceText(CharSourceRange::getTokenRange(LHSRange), SM, Context->getLangOpts()));
           expressions.push_back(Lexer::getSourceText(CharSourceRange::getTokenRange(RHSRange), SM, Context->getLangOpts()));
-          llvm::dbgs() << "Number of expressions collected: " << expressions.size() << "\n";
-          llvm::dbgs() << "Collected subexpressions: " << Lexer::getSourceText(CharSourceRange::getTokenRange(LHSRange), SM, Context->getLangOpts()) << "," << Lexer::getSourceText(CharSourceRange::getTokenRange(RHSRange), SM, Context->getLangOpts()) << "\n";
+          llvm::dbgs() << "INFO: " << "Number of expressions collected: " << expressions.size() << "\n";
+          llvm::dbgs() << "INFO: " << "Collected subexpressions: " << Lexer::getSourceText(CharSourceRange::getTokenRange(LHSRange), SM, Context->getLangOpts()) << "," << Lexer::getSourceText(CharSourceRange::getTokenRange(RHSRange), SM, Context->getLangOpts()) << "\n";
 
           if (isa<BinaryOperator>(LHS))
           {

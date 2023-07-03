@@ -2,7 +2,7 @@
 #
 #===- add_new_check.py - GrayC check generator ---------*- python -*--===#
 #
-# Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+# Taken from the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 # See https://llvm.org/LICENSE.txt for license information.
 # SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 #
@@ -61,7 +61,7 @@ def write_header(module_path, module, namespace, check_name, check_name_camel):
     f.write('*- C++ -*-===//')
     f.write("""
 //
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// Taken from the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 //
@@ -110,7 +110,7 @@ def write_implementation(module_path, module, namespace, check_name_camel):
     f.write('-===//')
     f.write("""
 //
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// Taken from the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 //
