@@ -24,10 +24,10 @@ namespace clang
       {
       public:
         JumpMutator(StringRef Name, GrayCContext *Context)
-            : GrayCCheck(Name, Context) {}
+            : GrayCCheck(Name, Context) {Seed = Context->getOptions().Seed;}
         void registerMatchers(ast_matchers::MatchFinder *Finder) override;
         void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
-        
+        llvm::Optional<long> Seed;
       private:
         enum LoopKind {For,While,DoWhile};
         bool mutateLoop(const ast_matchers::MatchFinder::MatchResult &Result,LoopKind L, 

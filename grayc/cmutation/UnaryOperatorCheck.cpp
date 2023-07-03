@@ -111,9 +111,6 @@ SourceLocation findEndLocation(SourceLocation LastTokenLoc,
 
 } // namespace
 
-UnaryOperatorCheck::UnaryOperatorCheck(
-    StringRef Name, GrayCContext *Context)
-    : GrayCCheck(Name, Context) {}
 
 
 void UnaryOperatorCheck::registerMatchers(MatchFinder *Finder) {
@@ -124,6 +121,7 @@ void UnaryOperatorCheck::check(
     const MatchFinder::MatchResult &Result) {
   const SourceManager &SM = *Result.SourceManager;
   const ASTContext *Context = Result.Context;
+  llvm::WithColor::remark()<<"Using SEED: "<<Seed<<"\n";
   if (auto S = Result.Nodes.getNodeAs<UnaryOperator>("unary-operator")) {
       mutateUnaryOperator(Result,S, S->getOperatorLoc(),S->getExprLoc());
   }

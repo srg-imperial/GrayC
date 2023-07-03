@@ -32,10 +32,10 @@ namespace cmutation {
 ///
 class UnaryOperatorCheck : public GrayCCheck {
 public:
-  UnaryOperatorCheck(StringRef Name, GrayCContext *Context);
+  UnaryOperatorCheck(StringRef Name, GrayCContext *Context) : GrayCCheck(Name, Context) {Seed = Context->getOptions().Seed;}
   void registerMatchers(ast_matchers::MatchFinder *Finder) override;
   void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
-
+  llvm::Optional<long> Seed;
 private:
   bool mutateUnaryOperator(const ast_matchers::MatchFinder::MatchResult &Result,
                  const UnaryOperator *S, SourceLocation StartLoc,
