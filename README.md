@@ -29,12 +29,36 @@ cmake -GNinja -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 -DLLVM
 ninja
 ```
 
+Check the installation in the build directory as
+
+```
+bin/grayc --list-checks
+```
+
+which should produce the following output
+```
+Enabled checks:
+    cmutation-assignment-expression-mutator
+    cmutation-conditional-expression-mutator
+    cmutation-jump-mutator
+    cmutation-unary
+```
 ## Example
 
 ```
 cd build 
 echo "int main(){int a=0; ++a;return 0;}" > b.cpp
-bin/grayc --apply-mutation ../b.cpp --
+bin/grayc -checks="-*,cmutation-unary" --apply-mutation b.cpp -- 
+```
+
+This should result in the following program
+```
+int main()
+{
+    int a = 0;
+    --a;
+    return 0;
+}
 ```
 
 ## GrayC: Write-Your-Own-Mutator (WYOM)
