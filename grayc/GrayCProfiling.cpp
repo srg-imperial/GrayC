@@ -80,7 +80,7 @@ GrayCProfiling::GrayCProfiling(llvm::Optional<StorageParams> Storage)
     : Storage(std::move(Storage)) {}
 
 GrayCProfiling::~GrayCProfiling() {
-  TG.emplace("grayc", "grayc checks profiling", Records);
+  TG.emplace("grayc", "GrayC checks profiling", Records);
 
   if (!Storage.hasValue())
     printUserFriendlyTable(llvm::errs());

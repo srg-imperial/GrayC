@@ -85,15 +85,15 @@ JSON array of objects:
                                        cl::init(""),
                                        cl::cat(GrayCCategory));
 
-static cl::opt<bool> Fix("fix", cl::desc(R"(
-Apply suggested fixes. Without -apply-mutation
+static cl::opt<bool> Fix("mutate", cl::desc(R"(
+Apply suggested mutations. Without -apply-mutation
 GrayC will bail out if any compilation
 errors were found.
 )"),
                          cl::init(false), cl::cat(GrayCCategory));
 
 static cl::opt<bool> ApplyMutations("apply-mutation", cl::desc(R"(
-Apply suggested fixes even if compilation
+Apply suggested mutations even if compilation
 errors were found. If compiler errors have
 attached fix-its, GrayC will apply them as
 well.
@@ -101,7 +101,7 @@ well.
                                cl::init(false), cl::cat(GrayCCategory));
 
 static cl::opt<std::string> FormatStyle("format-style", cl::desc(R"(
-Style for formatting code around applied fixes:
+Style for formatting code around applied mutations:
   - 'none' (default) turns off formatting
   - 'file' (literally 'file', not a placeholder)
     uses .clang-format file in the closest parent
@@ -109,8 +109,6 @@ Style for formatting code around applied fixes:
   - '{ <json> }' specifies options inline, e.g.
     -format-style='{BasedOnStyle: llvm, IndentWidth: 8}'
   - 'llvm', 'google', 'webkit', 'mozilla'
-See clang-format documentation for the up-to-date
-information about formatting styles and options.
 )"),
                                    cl::init("none"),
                                    cl::cat(GrayCCategory));
@@ -125,16 +123,16 @@ static cl::opt<long> Seed("seed", cl::desc(R"(
 Provide an integer seed to be used during mutations.)"),
                                 cl::init(1234567), cl::cat(GrayCCategory));
 
-static cl::opt<std::string> Config("config", cl::desc(R"(
-Specifies a configuration in YAML/JSON format:
-  -config="{Checks: '*',
-            CheckOptions: [{key: x,
-                            value: y}]}"
-When the value is empty, GrayC will
-attempt to find a file named .grayc for
-each source file in its parent directories.
-)"),
-                                   cl::init(""), cl::cat(GrayCCategory));
+// static cl::opt<std::string> Config("config", cl::desc(R"(
+// Specifies a configuration in YAML/JSON format:
+//   -config="{Checks: '*',
+//             CheckOptions: [{key: x,
+//                             value: y}]}"
+// When the value is empty, GrayC will
+// attempt to find a file named .grayc for
+// each source file in its parent directories.
+// )"),
+//                                    cl::init(""), cl::cat(GrayCCategory));
 
 
 static cl::opt<bool> EnableCheckProfile("enable-check-profile", cl::desc(R"(
@@ -154,9 +152,9 @@ these per-TU profiles are instead stored as JSON.
                                               cl::cat(GrayCCategory));
 
 
-static cl::opt<std::string> ExportFixes("export-fixes", cl::desc(R"(
-YAML file to store suggested fixes in. The
-stored fixes can be applied to the input source
+static cl::opt<std::string> ExportFixes("export-mutations", cl::desc(R"(
+YAML file to store suggested mutations in. The
+stored mutations can be applied to the input source
 code with clang-apply-replacements.
 )"),
                                         cl::value_desc("filename"),
@@ -246,19 +244,19 @@ static std::unique_ptr<GrayCOptionsProvider> createOptionsProvider(
   if (UseColor.getNumOccurrences() > 0)
     OverrideOptions.UseColor = UseColor;
 
-  if (!Config.empty()) {
-    if (llvm::ErrorOr<GrayCOptions> ParsedConfig =
-            parseConfiguration(Config)) {
-      return std::make_unique<ConfigOptionsProvider>(
-          GlobalOptions,
-          GrayCOptions::getDefaults().mergeWith(DefaultOptions, 0),
-          *ParsedConfig, OverrideOptions, std::move(FS));
-    } else {
-      llvm::errs() << "Error: invalid configuration specified.\n"
-                   << ParsedConfig.getError().message() << "\n";
-      return nullptr;
-    }
-  }
+  // if (!Config.empty()) {
+  //   if (llvm::ErrorOr<GrayCOptions> ParsedConfig =
+  //           parseConfiguration(Config)) {
+  //     return std::make_unique<ConfigOptionsProvider>(
+  //         GlobalOptions,
+  //         GrayCOptions::getDefaults().mergeWith(DefaultOptions, 0),
+  //         *ParsedConfig, OverrideOptions, std::move(FS));
+  //   } else {
+  //     llvm::errs() << "Error: invalid configuration specified.\n"
+  //                  << ParsedConfig.getError().message() << "\n";
+  //     return nullptr;
+  //   }
+  // }
   return std::make_unique<FileOptionsProvider>(GlobalOptions, DefaultOptions,
                                                 OverrideOptions, std::move(FS));
 }
@@ -390,7 +388,7 @@ int GrayCMain(int argc, const char **argv) {
     if (DisableFixes)
       llvm::errs()
           << "Found compiler errors, but -apply-mutation was not specified.\n"
-             "Fixes have NOT been applied.\n\n";
+             "Mutations have NOT been applied.\n\n";
   }
 
   if (WErrorCount) {
