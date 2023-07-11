@@ -2,7 +2,9 @@
 
 The GrayC approach involves using mutation-based fuzzing as a program generation technique, and then using the generated programs to test compilers and analysers.
 
-See the following links for the ISSTA 2023 [artifact](https://zenodo.org/record/7973856), 
+See the following links for the ISSTA 2023 [paper](https://doi.org/10.1145/3597926.3598130), 
+[artifact](https://zenodo.org/record/7978251), 
+the [docker image](https://zenodo.org/record/7977197), 
 [code](ISSTA-2023-AE) and [general instructions](ISSTA-2023-AE/README.md) 
 of the "GrayC: Greybox Fuzzing of Compilers and Analysers for C" publication.
 
