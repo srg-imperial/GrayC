@@ -1,7 +1,7 @@
 <img src="img/grayc-logo.png" align="right" width="300">
 
 # Mutation-based Testing Tool for C Family Compilers and Code Analyzers
-The GrayC approach involves using mutation-based fuzzing as a program generation technique (as described in our [ISSTA '23 paper](https://srg.doc.ic.ac.uk/files/papers/grayc-issta-23.pdf)) and then using the generated programs to test compilers and analysers. It is currently usable for generating programs across the C family i.e. `C`,`C++`,`Objective C` and `Objective C++`.
+The GrayC approach involves using mutation-based fuzzing as a program generation technique (as described in our [ISSTA '23 paper](https://srg.doc.ic.ac.uk/files/papers/grayc-issta-23.pdf)) and then using the generated programs to test compilers and analysers. It is currently usable for generating programs across the C family i.e. `C`,`C++`,`Objective C` and `Objective C++`. For replication of the results presented in our [ISSTA '23 paper](https://srg.doc.ic.ac.uk/files/papers/grayc-issta-23.pdf), please checkout and use the tool from the [issta-2023](https://github.com/srg-imperial/GrayC/tree/issta-2023) branch.
 
 
 ## Features
