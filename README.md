@@ -44,6 +44,7 @@ which should produce the following output
 Enabled mutations:
     cmutation-assignment-expression-mutator
     cmutation-conditional-expression-mutator
+    cmutation-duplicate-statement-mutator
     cmutation-jump-mutator
     cmutation-unary
 ```
