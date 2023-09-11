@@ -5,9 +5,8 @@ input=$1"_input"    # Where are all the original tests
 output=$1"_output"  # Where to put transformed tests - ready for diff-testing
 error=$1"_error-programs-fuzzed" # where to put programs that failed the transformation: e.g. /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/error-programs-fuzzed
 zipf=$2             # The tests can be in a single zip file or as a folder: 1 for zip, 2 for a folder.
-corrected=$3        # e.g. /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/corrected
-zip_or_folder=$4    # zip 1, folder 2
-csmith=$5           # Add location of csmith installation if corpus tests contain csmith's generated tests fed to GrayC.
+zip_or_folder=$3    # zip 1, folder 2
+csmith=$4           # Add location of csmith installation if corpus tests contain csmith's generated tests fed to GrayC.
 
 lib1=$csmith/runtime
 lib2=$csmith/build/runtime
@@ -85,9 +84,6 @@ if [[ $anythingCompiled -le 1 ]] ; then
 	echo ">> Cannot compile programs. Exit. ($sizeComp)"
 	exit
 fi
-
-## Bring back files in corrected that we couldn't parse:
-cp -f $corrected/*.c $output/
 
 ## Remove duplicates
 fdupes -dN $output/.
