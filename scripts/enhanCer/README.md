@@ -15,7 +15,7 @@ To be able to run these scripts you will need to install several packages:
 - Install Csmith
 - Install C-reduce
 
-For script 1-3:
+For script 1-3-transform.py:
 ```
 sudo apt-get install ctags
 sudo apt install python3
