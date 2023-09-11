@@ -104,8 +104,4 @@ noGErrMain=`grep "No Global Variable and no valid main" $output/*.c | wc -l`
 echo "Compiled (initially): $anythingCompiled"
 echo "Results - translated = $trans, valid without translating = $noGOKMain, error with main = $gErrMain and $noGErrMain"
 echo "## DONE. Check Results in: <$output/logger/output.log>"
-
-## If all ok, run diff-testing
-echo "PLEASE run:"
-echo "(./5-testing_all.sh $output $output/logger $output/logger/output.log $compile_line)"
 ## ./1-main-enhanCer-option-1.sh /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results /home/user42/corpus-zips-for-fuzzing/corpus-v0-compiled.tar.xz /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/corrected
