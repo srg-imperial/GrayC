@@ -22,9 +22,9 @@ pip3 install pandas
 
 ## Run the enhanCer (part-1)
 
-To transform programs to have a hash print in the end (we used the Csmith mechanism to do so, but you can pull these and implement yours)
+To transform programs to have a checksum print in the end (we used the Csmith mechanism to do so, but you can pull these and implement yours):
 ```
-./1-main-enhanCer-option-1.sh /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/results /home/user42/corpus-zips-for-fuzzing/corpus-v0-compiled.tar.xz /home/user42/directed-compiler-fuzzing-code/scripts/7-diff-testing/corrected
+./1-main-enhanCer-option-1.sh <working-folder-all-results> <input-data> <output-folder> <1-2-zip-or-folder> <csmith-installation>
 ```
 
 ## Run the enhanCer (part-2)
