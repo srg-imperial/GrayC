@@ -12,6 +12,9 @@ Scripts here start with (1-) or (2-) according to which functionality they perfo
 
 To be able to run these scripts you will need to install several packages:
 
+- Install Csmith
+- Install C-reduce
+
 For script 1-3:
 ```
 sudo apt-get install ctags
