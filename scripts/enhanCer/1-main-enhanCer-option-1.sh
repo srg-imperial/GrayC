@@ -55,7 +55,7 @@ for input_d in $input/* ; do
 		working_dir=$output/transform/$prog_to_path_name
 		mkdir $working_dir
 		cp $program $working_dir
-    echo "(python3 1-3-transform.py $working_dir $working_dir $lib1 $lib2 $lib3 $input_d 2>&1 errors_transform_py.log)"
+    		echo "(python3 1-3-transform.py $working_dir $working_dir $lib1 $lib2 $lib3 $input_d 2>&1 errors_transform_py.log)"
 		(python3 1- 3-transform.py $working_dir $working_dir $lib1 $lib2 $lib3 $input_d 2>&1 errors_transform_py.log)
 		cp $working_dir/*_copy.c $output 2>/dev/null
 		cp errors_transform_py.log $working_dir 2>/dev/null
