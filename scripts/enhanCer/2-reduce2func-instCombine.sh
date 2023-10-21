@@ -1,5 +1,4 @@
-# This scritp is an interestingness test script for C-reduce to hit InstCombine functions.
-
+# This script is an interestingness test script for C-reduce to hit InstCombine functions.
 gcc=gcc-11 
 llvm=clang-13
 llvminst=/home/user42/git/cov/llvm-csmith-113/llvm-build-test-cases # REPLACE THIS WITH YOUR OWN COVERAGE INSTRUMENTED PATH
@@ -75,4 +74,3 @@ cat $src | grep 'return 1;' &&\
 cat llvminst.out.txt | grep "__23__" 			&&\
 diff llvminst.out.txt llvm.out.txt 	 		&&\
 diff llvm.out.txt gcc.out.txt
- 
