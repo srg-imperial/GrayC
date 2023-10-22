@@ -1,5 +1,6 @@
 # Coverage Scripts
 
+To use these script to measure coverage for GrayC follow the steps below.
 
 ## Software Requirements
 
