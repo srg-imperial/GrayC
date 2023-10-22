@@ -26,4 +26,4 @@ rm Pipfile.lock (if Python3.8 or above)
 
 ## Download GCC and LLVM source code
 
-Follow the instructions [here](GrayC/scripts/general).
+Follow the instructions [here](GrayC/tree/main/scripts/general).
