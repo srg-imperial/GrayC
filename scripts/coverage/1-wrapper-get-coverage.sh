@@ -2,7 +2,7 @@
 base=$1				# /home/user42
 testcaseDir=$2			# where is basic.c
 process_number=$3		# 5
-itr=$4				# 0 
+itr=$4				# 0
 csmith_location=$5		# Where are the runtime folder of csmith
 gfauto=$6			# gfauto location, e.g., /home/user42/git/graphicsfuzz/gfauto
 output_table_file_func=$7	# Where to dump the results (table of the results per file int the working_folder
@@ -33,20 +33,20 @@ rm -f $output_table_file_func $output_table_file_line $output_report
 
 ## Add .c to all files
 echo "Prepare folder"
-(./0-prepare-folder.sh $testcaseDir)
+(./coverage-sub-scripts/0-prepare-folder.sh $testcaseDir)
 
 ## if gcc set the env.
 if [[ "$compiler" == "gcc" ]]; then
-	(./2-pre-gcc-cov-run.sh $base $compiler $process_number)
+	(./coverage-sub-scripts/2-pre-gcc-cov-run.sh $base $compiler $process_number)
 fi
 
 ## Compute the coverage from gcov files
 echo "Compute coverage"
-(./2-compute-coverage_DIR_gfauto.sh $base $testcaseDir $process_number $itr $csmith_location $gfauto $compiler $gfauto_old_version)
+(./coverage-sub-scripts/2-compute-coverage_DIR_gfauto.sh $base $testcaseDir $process_number $itr $csmith_location $gfauto $compiler $gfauto_old_version)
 
 ## if gcc set the env.
 if [[ "$compiler" == "gcc" ]]; then
-	(./2-post-gcc-cov-run.sh)
+	(./coverage-sub-scripts/2-post-gcc-cov-run.sh)
 fi
 
 ## Add total of files in cov reports
@@ -56,9 +56,9 @@ echo ">> Total of files in coverage report: $files_no" >> $output_report
 ## Report for function coverage
 echo "Get statistics for functions"
 cov_func=$working_folder/coverage_processed/x-$itr/cov.out/
-(./3-gen-statistic-gcov-diff-tab_gfauto.sh "$cov_func" $output_table_file_func >> $output_report)
+(./coverage-sub-scripts/3-gen-statistic-gcov-diff-tab_gfauto.sh "$cov_func" $output_table_file_func >> $output_report)
 
 ## Report for line coverage
 echo "Get statistics for lines"
 cov_line=$working_folder/coverage_processed/x-line-$itr/cov.out/
-(./3-gen-statistic-gcov-diff-tab_gfauto.sh "$cov_line" $output_table_file_line >> $output_report)
+(./coverage-sub-scripts/3-gen-statistic-gcov-diff-tab_gfauto.sh "$cov_line" $output_table_file_line >> $output_report)

@@ -8,7 +8,7 @@ unitest_skip=utils/unittest	# unittest folder should not be part of cov measurem
 rm $output_table_file
 rm list_gcov.txt
 
-wf_size=${#working_folder}
+wf1_size=${#working_folder}
 
 ## START ##
 
@@ -28,17 +28,17 @@ echo "Total files in $working_folder: <$linecount>"
 ## #line 1: number of lines in file 1
 ## #line 1 hit: number of lines hit in file 1
 echo ">> file name,#line 1,#line 1 hit" >> $output_table_file
-while IFS= read -r -u 4 file_name ; do		
-		fn=${file_name:$wf_size}
-		if [[ ! "$fn" == *"$unitest_skip"* ]] && [[ "$fn" == *.c* ]] ; then 	
-			## Add a row to the csv file
-			tmp=__tmp_x.txt
-			test=__test_x.txt
-			cat $file_name | sed 's:^        :      0 :1' | sed -n 's/\(^......[0-9]*[0-9] \).*$/\1/p' | cat -n > $tmp
-			./CF4-1_LH_file.sh $fn $tmp >> $output_table_file 
-			rm -f $tmp
-		fi
-		
+while IFS= read -r -u 4 file_name ; do
+	fn=${file_name:$wf_size}
+	if [[ ! "$fn" == *"$unitest_skip"* ]]; then
+		## Add a row to the csv file
+		tmp=__tmp_x.txt
+		test=__test_x.txt
+		cat $file_name | sed 's:^        :      0 :1' | sed -n 's/\(^......[0-9]*[0-9] \).*$/\1/p' | cat -n > $tmp
+		cat -n $file_name > $test
+		./coverage-sub-scripts/CF3-1_LH_file.sh $fn $tmp $output_func_hit >> $output_table_file 
+		rm -f $tmp $test
+	fi
 done 4<list_gcov.txt
 echo " >> End extracting data for $linecount files."
 
