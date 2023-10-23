@@ -14,10 +14,7 @@ else
         git clone --depth 1 -b release/$llvm_ver.x https://github.com/llvm/llvm-project.git
 fi
 
-## fix paths
-mv $TMP_SOURCE_FOLDER/llvm-project/llvm $TMP_SOURCE_FOLDER/llvm-source
-mv $TMP_SOURCE_FOLDER/llvm-project/clang $TMP_SOURCE_FOLDER/llvm-source/tools/clang
-rm -rf $TMP_SOURCE_FOLDER/llvm-project
+echo ">> Downloading LLVM source ($TMP_SOURCE_FOLDER)"
 
 ## CSMITH:
 cd $TMP_SOURCE_FOLDER

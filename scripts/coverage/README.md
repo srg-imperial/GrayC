@@ -8,7 +8,7 @@ To use these scripts to measure coverage for GrayC follow the steps below.
 
 Note 1: CMake 3.13.4 or higher is required.
 
-Note 2: GCC-10 or higher is required. We have tested our artefact with GCC-10 and GCC-11.
+Note 2: GCC-11 is required.
 
 Note 3: gfauto: https://github.com/google/graphicsfuzz.git
 	
@@ -27,3 +27,26 @@ rm Pipfile.lock (if Python3.8 or above)
 ## Download GCC and LLVM source code
 
 Follow the instructions [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/general).
+
+## LLVM Code Coverage 
+
+To build a copy of LLVM with coverage use this script:
+```
+./0-install-llvm-cov.sh <base-folder> <path-to-llvm-project-source-code-folder> <version>
+```
+We recommend setting a large swap file (between 4 - 12 GB) for standard laptop configuration (servers do not have to follow this).  
+
+```
+cd ~
+sudo fallocate -l 8G swapfile
+sudo chmod 600 swapfile 
+sudo mkswap swapfile 
+sudo swapon swapfile
+sudo swapon --show
+```
+
+After building LLVM with coverage successfully, run this script per set to measure its coverage; no need to rebuild LLVM between runs of this script.
+```
+./1-wrapper-get-coverage.sh <base-folder> <set-of-progs-path> 15 0 <csmith-folder> <gfauto-folder> <func-cov-out.csv> <line-cov-out.csv> <coverage_summary.log> llvm 0
+```
+Base-folder=where the installation of LLVM 15 with coverage is, that is, \<base-folder\>/llvm-csmith-15/
