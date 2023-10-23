@@ -32,10 +32,9 @@ Follow the instructions [here](https://github.com/srg-imperial/GrayC/blob/main/s
 
 To build a copy of LLVM with coverage use this script:
 ```
-./0-install-llvm-cov.sh <base-folder> <temp-folder-with-llvm-source-code> <version>
+./0-install-llvm-cov.sh <base-folder> <path-to-llvm-project-source-code-folder> <version>
 ```
-We recommend setting a large swap file (between 4 - 12 GB) for standard laptop configuration (servers do not have to follow this). 
-Note: the output of the first script includes the name of a temporary folder where the LLVM source is; please use it as <temp-folder-with-llvm-13> as a parameter for the next script. 
+We recommend setting a large swap file (between 4 - 12 GB) for standard laptop configuration (servers do not have to follow this).  
 
 ```
 cd ~
@@ -46,10 +45,8 @@ sudo swapon swapfile
 sudo swapon --show
 ```
 
-Last, run this script per set to measure its coverage; no need to rebuild LLVM-15 between runs of this script.
+After building LLVM with coverage successfully, run this script per set to measure its coverage; no need to rebuild LLVM between runs of this script.
 ```
 ./1-wrapper-get-coverage.sh <base-folder> <set-of-progs-path> 15 0 <csmith-folder> <gfauto-folder> <func-cov-out.csv> <line-cov-out.csv> <coverage_summary.log> llvm 0
 ```
 Base-folder=where the installation of LLVM 15 with coverage is, that is, \<base-folder\>/llvm-csmith-15/
- 
-We used script 1-wrapper-get-coverage.sh to measure the coverage of the corpus (after 24 hours of fuzzing). We furthermore presented a comparison with the LLVM test suite (whole and single source) in the paper. For that, we prepared additional scripts.
