@@ -8,7 +8,7 @@ To use these scripts to measure coverage for GrayC follow the steps below.
 
 Note 1: CMake 3.13.4 or higher is required.
 
-Note 2: GCC-10 or higher is required. We have tested our artefact with GCC-10 and GCC-11.
+Note 2: GCC-11 is required.
 
 Note 3: gfauto: https://github.com/google/graphicsfuzz.git
 	
