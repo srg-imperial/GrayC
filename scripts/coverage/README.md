@@ -55,11 +55,14 @@ Base-folder=where the installation of LLVM 15 with coverage is, that is, \<base-
 
 To compare the addition of a set of files to the coverage of LLVM on top of the LLVM test suite, you will need to do the following.
 
-First, get the source code of LLVM:
-```
-```
+First, get the source code of LLVM; see [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/general) how.
 
 Second, build with compiler-rt and coverage:
 ```
 ./0-install-llvm-cov-rt.sh <base-folder> <path-to-llvm-project-source-code-folder> <version>
+```
+Third, see here how to measure coverage for the whole LLVM test suite.
+
+Last, you will need to create a folder with all the files you have fuzzed, and run this script:
+```
 ```
