@@ -21,7 +21,7 @@ First, download the lovm test suite:
 ```
 git clone https://github.com/llvm/llvm-test-suite.git
 ```
-into you <base-folder>.
+into your base-folder.
 
 For the LLVM test suite: use this script to measure coverage for the whole llvm test suite:
 ```
