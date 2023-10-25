@@ -16,4 +16,4 @@ For the LLVM test suite: use this script to measure coverage for the whole llvm 
 ```
 with LLVM 15. If you wish to use it with a different version, then replace the 15 with it.
 
-Before using these scripts you will need to build LLVM with rt. You can find instructions [here]().
+Before using these scripts you will need to build LLVM with rt. You can find instructions [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/coverage).
