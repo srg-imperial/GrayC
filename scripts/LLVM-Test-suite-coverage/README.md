@@ -20,13 +20,12 @@ You can then measure coverage for this folder as with any other folder of tests 
 First, download the lovm test suite:
 ```
 git clone https://github.com/llvm/llvm-test-suite.git
-cp -r llvm-test-suite test-suite
 ```
 into your base-folder.
 
 For the LLVM test suite: use this script to measure coverage for the whole llvm test suite:
 ```
-./2-llvm-testsuite-reg-cov.sh <base-folder> <gfauto-folder> 15
+./2-llvm-testsuite-reg-cov.sh <base-folder> <gfauto-folder> <path-to-llvm-test-suite> 15
 ```
 with LLVM 15. If you wish to use it with a different version, then replace the 15 with it.
 
