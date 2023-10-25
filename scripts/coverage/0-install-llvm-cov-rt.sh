@@ -65,7 +65,7 @@ mv llvm-project llvm-source
 	# Cmake and build of LLVM
 	timeS=$(date +"%T")
 	echo "Configuration: cmake -G Ninja -Wall ../llvm-source/llvm/ -DLLVM_ENABLE_PROJECTS=clang -DCMAKE_C_COMPILER=gcc-11 -DCMAKE_CXX_COMPILER=g++-11 -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_INCLUDE_TESTS=OFF -DLLVM_INCLUDE_DOCS=OFF -DLLVM_INCLUDE_BENCHMARKS=OFF -DLLVM_BUILD_EXAMPLES=OFF -DLLVM_BUILD_TESTS=OFF -DLLVM_BUILD_DOCS=OFF -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DCMAKE_EXE_LINKER_FLAGS=--coverage -Wno-dev <$timeS>" >> $working_folder/llvm-csmith-$i/compilation_info/llvm-version.txt
-	cmake -G Ninja -Wall ../llvm-source/llvm/ -DLLVM_ENABLE_PROJECTS='clang;;compiler-rt' -DCMAKE_C_COMPILER=gcc-11 -DCMAKE_CXX_COMPILER=g++-11 -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_INCLUDE_TESTS="OFF" -DLLVM_INCLUDE_DOCS="OFF" -DLLVM_INCLUDE_BENCHMARKS="OFF" -DLLVM_BUILD_EXAMPLES="OFF" -DLLVM_BUILD_TESTS="OFF" -DLLVM_BUILD_DOCS="OFF" -DCMAKE_C_FLAGS="--coverage" -DCMAKE_CXX_FLAGS="--coverage" -DCMAKE_EXE_LINKER_FLAGS="--coverage" -Wno-dev > $working_folder/llvm-csmith-$i/compilation_info/config_output.txt 2>&1
+	cmake -G Ninja -Wall ../llvm-source/llvm/ -DLLVM_ENABLE_PROJECTS='clang;compiler-rt' -DCMAKE_C_COMPILER=gcc-11 -DCMAKE_CXX_COMPILER=g++-11 -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_INCLUDE_TESTS="OFF" -DLLVM_INCLUDE_DOCS="OFF" -DLLVM_INCLUDE_BENCHMARKS="OFF" -DLLVM_BUILD_EXAMPLES="OFF" -DLLVM_BUILD_TESTS="OFF" -DLLVM_BUILD_DOCS="OFF" -DCMAKE_C_FLAGS="--coverage" -DCMAKE_CXX_FLAGS="--coverage" -DCMAKE_EXE_LINKER_FLAGS="--coverage" -Wno-dev > $working_folder/llvm-csmith-$i/compilation_info/config_output.txt 2>&1
 
 	timeB=$(date +"%T")
 	echo ">> Build LLVM with ninja to ./llvm-build <$timeB>"
