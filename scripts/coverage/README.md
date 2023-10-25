@@ -61,8 +61,9 @@ Second, build with compiler-rt and coverage:
 ```
 ./0-install-llvm-cov-rt.sh <base-folder> <path-to-llvm-project-source-code-folder> <version>
 ```
-Third, see here how to measure coverage for the whole LLVM test suite.
+Third, see [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/LLVM-Test-suite-coverage#the-whole-llvm-test-suite) how to measure coverage for the whole LLVM test suite.
 
 Last, you will need to create a folder with all the files you have fuzzed, and run this script:
 ```
 ```
+**NOTE**: you cannot change versions of LLVM builds in between the scripts, it must always be the same build.
