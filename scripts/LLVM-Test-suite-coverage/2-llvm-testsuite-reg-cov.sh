@@ -52,8 +52,8 @@ CXXcompiler="$llvm_folder/llvm-install/usr/local/bin/clang++"
 		set CC=$Ccompiler
 		time1=$(date +"%T")
 		echo " --> Configure LLVM test-suite with cmake to $tests_build...  ("$time1")"
-		echo "Configuration: cmake -DCMAKE_C_COMPILER=$llvm_folder/llvm-build/bin/clang -C $testsuite/cmake/caches/$j ../test-suite" > $comp_info/llvm-test-suite-version-$i-$k.txt
-		cmake -DLLVM_TARGETS_TO_BUILD="X86" -DCMAKE_C_COMPILER="$Ccompiler" -DCMAKE_CXX_COMPILER="$CXXcompiler" -C../test-suite/cmake/caches/"$j" ../test-suite > $comp_info/config_test-suite_output-$i-$k.txt 2>&1
+		echo "Configuration: cmake -DCMAKE_C_COMPILER=$llvm_folder/llvm-build/bin/clang -C $testsuite/cmake/caches/$j $testsuite" > $comp_info/llvm-test-suite-version-$i-$k.txt
+		cmake -DLLVM_TARGETS_TO_BUILD="X86" -DCMAKE_C_COMPILER="$Ccompiler" -DCMAKE_CXX_COMPILER="$CXXcompiler" -C "$testsuite/cmake/caches/$j" $testsuite > $comp_info/config_test-suite_output-$i-$k.txt 2>&1
 		
 		# Run compiler and save coverage data
 		time2=$(date +"%T")
@@ -98,4 +98,3 @@ CXXcompiler="$llvm_folder/llvm-install/usr/local/bin/clang++"
 ls -l $cov_processed/x-line-$i-*
 ls -l $cov_processed/x-func-$i-*
 echo " ## DONE. ##"
-
