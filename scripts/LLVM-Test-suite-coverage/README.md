@@ -20,6 +20,7 @@ You can then measure coverage for this folder as with any other folder of tests 
 First, download the lovm test suite:
 ```
 git clone https://github.com/llvm/llvm-test-suite.git
+cp -r llvm-test-suite test-suite
 ```
 into your base-folder.
 
