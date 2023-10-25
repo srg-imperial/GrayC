@@ -10,3 +10,10 @@ To get LLVM's single source tests, download these tests using this script:
 sudo apt install fdupes ## if not yet installed
 ./coverage/llvm-test-suite/1-get-llvm-testsuite-single-source.sh <output-dir> 
 ```
+For the LLVM test suite: use this script to measure coverage for the whole llvm test suite:
+```
+./coverage/llvm-test-suite/3-llvm-testsuite-reg-cov.sh <base-folder> <gfauto-folder> 15
+```
+with LLVM 15. If you wish to use it with a different version, then replace the 15 with it.
+
+Before using these scripts you will need to build LLVM with rt. You can find instructions [here]().
