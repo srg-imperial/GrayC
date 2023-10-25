@@ -15,7 +15,14 @@ sudo apt install fdupes ## if not yet installed
 ```
 You can then measure coverage for this folder as with any other folder of tests as explained [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/coverage).
 
-## The Whole LLVM Test suite.
+## The Whole LLVM Test suite
+
+First, download the lovm test suite:
+```
+git clone https://github.com/llvm/llvm-test-suite.git
+```
+into you <base-folder>.
+
 For the LLVM test suite: use this script to measure coverage for the whole llvm test suite:
 ```
 ./2-llvm-testsuite-reg-cov.sh <base-folder> <gfauto-folder> 15
