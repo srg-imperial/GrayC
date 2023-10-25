@@ -2,7 +2,8 @@
 shopt -s extglob # Activate extended pattern matching in bash
 working_folder=$1 		## base folder
 gfauto=$2			## gfauto path
-i=$3 				## which copy
+testsuite=$3			## Path to LLVM test suite folder
+i=$4 				## which copy
 
 ## Before running it, run: (1) ./0-download-git-llvm-wt-rt.sh /home/user42 11 and (2) ./1-install-csmith-llvm-ninja-cov.sh /home/user42 /home/user42/.sources.mhAmsGY.tmp 11
 ## put in comment: add_subdirectory(sqlite3) and add_subdirectory(XRay)
@@ -25,23 +26,23 @@ cd $comp_info
 echo " - date: $(date '+%Y-%m-%d at %H:%M.%S')" > $comp_info/llvm-test-suite-version.txt
 echo " - host name $(hostname -f)" >> $comp_info/llvm-test-suite-version.txt
 echo " - current path: $(pwd)" >> $comp_info/llvm-test-suite-version.txt
-gcc-10 --version >> $comp_info/llvm-test-suite-version.txt; g++-10 --version >> $comp_info/llvm-test-suite-version.txt; gcov-10 --version >> $comp_info/llvm-test-suite-version.txt; cpp-10 --version >> $comp_info/llvm-test-suite-version.txt; /usr/bin/cc --version >> $comp_info/llvm-test-suite-version.txt; /usr/bin/c++ --version >> $comp_info/llvm-test-suite-version.txt 
+gcc-11 --version >> $comp_info/llvm-test-suite-version.txt; g++-11 --version >> $comp_info/llvm-test-suite-version.txt; gcov-11 --version >> $comp_info/llvm-test-suite-version.txt; cpp-11 --version >> $comp_info/llvm-test-suite-version.txt; /usr/bin/cc --version >> $comp_info/llvm-test-suite-version.txt; /usr/bin/c++ --version >> $comp_info/llvm-test-suite-version.txt 
 	
 Ccompiler="$llvm_folder/llvm-install/usr/local/bin/clang"
 CXXcompiler="$llvm_folder/llvm-install/usr/local/bin/clang++"
 
 ## Set env. and compile to get coverage
 (
-	mkdir -p $gcda/application_run # Created once, to aggregate coverage form all configurations
+	mkdir -p $gcda/application_run # Created once, to aggregate coverage from all configurations
 	echo " - Creating temp output folder: <$gcda/application_run>"
 
-	# LOOP over all configureation and collect coverage
+	# LOOP over all configurations and collect coverage
 	declare -a arr=("O3.cmake" "O0.cmake" "Os.cmake" "Oz.cmake" "ReleaseNoLTO.cmake" "Debug.cmake" )
 	
 	k=0
 	for j in "${arr[@]}" ; do
 		k=$((k+1))
-		# Cmake and build of LLVM Test-suite
+		# Cmake and build of the LLVM Test-suite
 		cd $llvm_folder
 		rm -rf $tests_build/ 
 		mkdir $tests_build
@@ -51,7 +52,7 @@ CXXcompiler="$llvm_folder/llvm-install/usr/local/bin/clang++"
 		set CC=$Ccompiler
 		time1=$(date +"%T")
 		echo " --> Configure LLVM test-suite with cmake to $tests_build...  ("$time1")"
-		echo "Configuration: cmake -DCMAKE_C_COMPILER=$llvm_folder/llvm-build/bin/clang -C../test-suite/cmake/caches/$j ../test-suite" > $comp_info/llvm-test-suite-version-$i-$k.txt
+		echo "Configuration: cmake -DCMAKE_C_COMPILER=$llvm_folder/llvm-build/bin/clang -C $testsuite/cmake/caches/$j ../test-suite" > $comp_info/llvm-test-suite-version-$i-$k.txt
 		cmake -DLLVM_TARGETS_TO_BUILD="X86" -DCMAKE_C_COMPILER="$Ccompiler" -DCMAKE_CXX_COMPILER="$CXXcompiler" -C../test-suite/cmake/caches/"$j" ../test-suite > $comp_info/config_test-suite_output-$i-$k.txt 2>&1
 		
 		# Run compiler and save coverage data
