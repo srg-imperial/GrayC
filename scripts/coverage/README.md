@@ -50,3 +50,16 @@ After building LLVM with coverage successfully, run this script per set to measu
 ./1-wrapper-get-coverage.sh <base-folder> <set-of-progs-path> 15 0 <csmith-folder> <gfauto-folder> <func-cov-out.csv> <line-cov-out.csv> <coverage_summary.log> llvm 0
 ```
 Base-folder=where the installation of LLVM 15 with coverage is, that is, \<base-folder\>/llvm-csmith-15/
+
+## LLVM Code Coverage with Compiler-rt parts
+
+To compare the addition of a set of files to the coverage of LLVM on top of the LLVM test suite, you will need to do the following.
+
+First, get the source code of LLVM:
+```
+```
+
+Second, build with compiler-rt and coverage:
+```
+./0-install-llvm-cov-rt.sh <base-folder> <path-to-llvm-project-source-code-folder> <version>
+```
