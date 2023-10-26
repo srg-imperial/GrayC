@@ -87,6 +87,7 @@ time3=$(date +"%T")
 echo "--> MEASURING COVERAGE... ("$time3")"
 mkdir -p $working_folder/coverage_processed/x-func-$process_number-$itr
 mkdir -p $working_folder/coverage_processed/x-line-$process_number-$itr
+(
 	source $gfauto/.venv/bin/activate
 	
 	## Function coverage
