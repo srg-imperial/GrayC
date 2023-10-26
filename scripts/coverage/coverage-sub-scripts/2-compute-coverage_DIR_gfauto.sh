@@ -85,13 +85,12 @@ unset GCOV_PREFIX
 ## Measure Coverage
 time3=$(date +"%T")
 echo "--> MEASURING COVERAGE... ("$time3")"
-mkdir -p $working_folder/coverage_processed/x-$itr
-mkdir -p $working_folder/coverage_processed/x-line-$itr
-(
+mkdir -p $working_folder/coverage_processed/x-func-$process_number-$itr
+mkdir -p $working_folder/coverage_processed/x-line-$process_number-$itr
 	source $gfauto/.venv/bin/activate
 	
 	## Function coverage
-	cd $working_folder/coverage_processed/x-$itr
+	cd $working_folder/coverage_processed/x-func-$process_number-$itr
 	if [ "$old_version" == "1" ]; then
 		gfauto_cov_from_gcov --out run_gcov2cov.cov $working_folder/$compiler-build/ $working_folder/coverage_gcda_files/application_run/ --num_threads 32 --gcov_uses_json --gcov_functions >> gfauto.log 2>&1
 	else
@@ -101,7 +100,7 @@ mkdir -p $working_folder/coverage_processed/x-line-$itr
         gfauto_cov_to_source --coverage_out cov.out --cov run_gcov2cov.cov $working_folder/$compiler-build/ >> gfauto.log 2>&1
         
         ## Line coverage
-        cd $working_folder/coverage_processed/x-line-$itr
+        cd $working_folder/coverage_processed/x-line-$process_number-$itr
         if [ "$old_version" == "1" ]; then
         	gfauto_cov_from_gcov --out run_gcov2cov.cov $working_folder/$compiler-build/ $working_folder/coverage_gcda_files/application_run/ --num_threads 32 --gcov_uses_json >> gfauto.log 2>&1
         else
@@ -114,6 +113,6 @@ mkdir -p $working_folder/coverage_processed/x-line-$itr
 cd $current_folder
 
 time2=$(date +"%T")
-echo "DONE. RESULTS (FUNCTION) AVAILABLE IN $working_folder/coverage_processed/x-$itr for testcase <$testcaseFile> ($time2)"
-echo "DONE. RESULTS (LINE) AVAILABLE IN $working_folder/coverage_processed/x-line-$itr for testcase <$testcaseFile> ($time2)"
-#rm a.out "basic_output.txt" ## clean at the end
+echo "DONE. RESULTS (FUNCTION) AVAILABLE IN $working_folder/coverage_processed/x-func-$process_number-$itr for test case folder <$testcaseFile> ($time2)"
+echo "DONE. RESULTS (LINE) AVAILABLE IN $working_folder/coverage_processed/x-line-$process_number-$itr for test case folder <$testcaseFile> ($time2)"
+rm a.out "basic_output.txt" ## clean at the end
