@@ -1,10 +1,9 @@
 #!/bin/bash 
 base=$1				        # /home/user42
-testcaseDir=$2			  # where is basic.c
+
 process_number=$3		  # 5
 itr=$4				        # 0
-csmith_location=$5		# Where are the runtime folder of csmith
-gfauto=$6			        # gfauto location, e.g., /home/user42/git/graphicsfuzz/gfauto
+
 output_table_file_func=$7	# Where to dump the results (table of the results per file int the working_folder
 output_table_file_line=$8	# Where to dump the results (table of the results per file int the working_folder
 output_report=$9		   # Where to print the summary report to
