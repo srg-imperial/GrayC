@@ -65,5 +65,10 @@ Third, see [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/LLVM-T
 
 Last, you will need to create a folder with all the files you have fuzzed, and run this script:
 ```
+./1-wrapper-get-coverage.sh <base-folder> <set-of-progs-path> 15 7 <csmith-folder> <gfauto-folder> <func-cov-out.csv> <line-cov-out.csv> <coverage_summary.log> llvm 0
+```
+For example:
+```
+nohup ./1-wrapper-get-coverage.sh /home/ubuntu/grayc/ /home/ubuntu/grayc/test-single/corpus/ 15x 7 /home/ubuntu/grayc/llvm-csmith-15x/csmith/ /home/ubuntu/graphicsfuzz/gfauto/ func_cov_v1.csv line_cov_v1.csv coverage_summary_v1.log llvm 0 > cov_delta.log 2>&1 &
 ```
 **NOTE**: you cannot change versions of LLVM builds in between the scripts, it must always be the same build.
