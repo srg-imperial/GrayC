@@ -17,7 +17,7 @@ You can then measure coverage for this folder as with any other folder of tests 
 
 ## The Whole LLVM Test suite
 
-First, download the lovm test suite:
+First, download the LLVM test suite:
 ```
 git clone https://github.com/llvm/llvm-test-suite.git
 ```
@@ -30,3 +30,7 @@ For the LLVM test suite: use this script to measure coverage for the whole llvm 
 with LLVM 15. If you wish to use it with a different version, then replace the 15 with it.
 
 Before using these scripts you will need to build LLVM with rt. You can find instructions [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/coverage).
+
+## Coverage statistics of the Back-, Middle- and Front-end of the LLVM code base
+
+These scripts are pretty ad-hoc for LLVM 13. You can find these [here](https://github.com/srg-imperial/GrayC/blob/main/scripts/LLVM-Test-suite-coverage/llvm-cov-sub-folders).
