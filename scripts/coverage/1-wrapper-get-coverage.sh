@@ -49,16 +49,16 @@ if [[ "$compiler" == "gcc" ]]; then
 	(./coverage-sub-scripts/2-post-gcc-cov-run.sh)
 fi
 
-## Add total of files in cov reports
+## Add the total of files in COV reports
 files_no=`ls -l $testcaseDir | wc -l` 
 echo ">> Total of files in coverage report: $files_no" >> $output_report
 
 ## Report for function coverage
 echo "Get statistics for functions"
-cov_func=$working_folder/coverage_processed/x-$itr/cov.out/
+cov_func=$working_folder/coverage_processed/x-func-$process_number-$itr/cov.out/
 (./coverage-sub-scripts/3-gen-statistic-gcov-diff-tab_gfauto.sh "$cov_func" $output_table_file_func >> $output_report)
 
 ## Report for line coverage
 echo "Get statistics for lines"
-cov_line=$working_folder/coverage_processed/x-line-$itr/cov.out/
+cov_line=$working_folder/coverage_processed/x-line-$process_number-$itr/cov.out/
 (./coverage-sub-scripts/3-gen-statistic-gcov-diff-tab_gfauto.sh "$cov_line" $output_table_file_line >> $output_report)
