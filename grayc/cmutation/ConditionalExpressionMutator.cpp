@@ -27,6 +27,7 @@ namespace clang
 
       void ConditionalExpressionMutator::check(const MatchFinder::MatchResult &Result)
       {
+        srand(Seed.getValue());
         const SourceManager &SM = *Result.SourceManager;
         const ASTContext *Context = Result.Context;
         llvm::WithColor::remark()<<"Using SEED: "<<Seed<<"\n";
@@ -43,6 +44,7 @@ namespace clang
           const MatchFinder::MatchResult &Result, const BinaryOperator *C,
           SourceLocation InitialLoc, SourceLocation EndLocHint)
       {
+        srand(Seed.getValue());
         if (!InitialLoc.isValid())
           return false;
         const SourceManager &SM = *Result.SourceManager;

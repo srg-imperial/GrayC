@@ -225,6 +225,7 @@ static std::unique_ptr<GrayCOptionsProvider> createOptionsProvider(
   DefaultOptions.HeaderFilterRegex = HeaderFilter;
   DefaultOptions.SystemHeaders = SystemHeaders;
   DefaultOptions.FormatStyle = FormatStyle;
+  DefaultOptions.Seed = Seed;
   DefaultOptions.User = llvm::sys::Process::GetEnv("USER");
   // USERNAME is used on Windows.
   if (!DefaultOptions.User)

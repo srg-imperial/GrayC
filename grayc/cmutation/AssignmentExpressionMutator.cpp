@@ -29,6 +29,7 @@ namespace clang
 
       void AssignmentExpressionMutator::check(const MatchFinder::MatchResult &Result)
       {
+        srand(Seed.getValue());
         const SourceManager &SM = *Result.SourceManager;
         const ASTContext *Context = Result.Context;
         if (auto B = Result.Nodes.getNodeAs<BinaryOperator>("assignment"))
@@ -45,6 +46,7 @@ namespace clang
           const MatchFinder::MatchResult &Result, const BinaryOperator *B,
           SourceLocation InitialLoc, SourceLocation EndLocHint)
       {
+        srand(Seed.getValue());
         if (!InitialLoc.isValid())
           return false;
         const SourceManager &SM = *Result.SourceManager;

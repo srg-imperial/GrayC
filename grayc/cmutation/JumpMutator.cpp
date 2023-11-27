@@ -30,6 +30,7 @@ namespace clang
 
       void JumpMutator::check(const MatchFinder::MatchResult &Result)
       {
+        srand(Seed.getValue());
         if (auto F = Result.Nodes.getNodeAs<ForStmt>("no-nest-for"))
         {
           mutateLoop(Result, For, F, F->getBeginLoc(), F->getEndLoc());
@@ -71,7 +72,7 @@ namespace clang
           return false;
         assert(EndLocHint.isValid());
         const Stmt *Body;
-        std::string JumpConstruct((121276325 % 2) == 1 ? "{break;}" : "{continue;}");
+        std::string JumpConstruct((Seed.getValue() % 2) == 1 ? "{break;}" : "{continue;}");
 
         switch (L)
         {

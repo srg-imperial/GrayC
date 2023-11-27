@@ -156,6 +156,7 @@ GrayCOptions GrayCOptions::mergeWith(const GrayCOptions &Other,
   overrideValue(Result.SystemHeaders, Other.SystemHeaders);
   overrideValue(Result.FormatStyle, Other.FormatStyle);
   overrideValue(Result.User, Other.User);
+  overrideValue(Result.Seed, Other.Seed);
   overrideValue(Result.UseColor, Other.UseColor);
   mergeVectors(Result.ExtraArgs, Other.ExtraArgs);
   mergeVectors(Result.ExtraArgsBefore, Other.ExtraArgsBefore);

@@ -134,6 +134,7 @@ void UnaryOperatorCheck::check(
 bool UnaryOperatorCheck::mutateUnaryOperator(
     const MatchFinder::MatchResult &Result, const UnaryOperator *S,
     SourceLocation InitialLoc, SourceLocation EndLocHint) {
+        srand(Seed.getValue());
         if (!S->isIncrementOp() && !S->isDecrementOp()){
           return false;
         }
@@ -160,8 +161,15 @@ bool UnaryOperatorCheck::mutateUnaryOperator(
         // Decide opcode and hence the mutated opcode
         std::string MutatedOperator;
         MutatedOperator = S->getOpcode() == UO_PreInc ? "--" : "++";
-        
-        Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedOperator);
+        double to_mutate = rand()%2;
+        llvm::WithColor::remark()<<"Selected seed-dictated value of "<< to_mutate << "\n";
+
+        if (to_mutate<1){
+          Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedOperator);
+        }
+        else {
+          llvm::WithColor::remark()<<"Skipping mutation due to selected seed-dictated value of "<< to_mutate << " being less than 1\n";
+        }
         return true;
 }
 

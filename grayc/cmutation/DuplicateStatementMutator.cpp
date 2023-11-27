@@ -32,6 +32,7 @@ namespace clang
 
       void DuplicateStatementMutator::check(const MatchFinder::MatchResult &Result)
       {
+        srand(Seed.getValue());
         const SourceManager &SM = *Result.SourceManager;
         const ASTContext *Context = Result.Context;
 
@@ -56,12 +57,20 @@ namespace clang
             SourceLocation StartLoc = BinaryOp->getBeginLoc();
             SourceLocation EndLoc = BinaryOp->getEndLoc();
             SourceRange AssignmentOperatorRange(StartLoc, EndLoc);
-            llvm::Twine ExtractedString = Lexer::getSourceText(CharSourceRange::getTokenRange(AssignmentOperatorRange), SM, Context->getLangOpts());
-            llvm::Twine DuplicatedStringToInsert(ExtractedString + ";");
+            std::string ExtractedString = std::string(Lexer::getSourceText(CharSourceRange::getTokenRange(AssignmentOperatorRange), SM, Context->getLangOpts()));
+            std::string DuplicatedStringToInsert = ExtractedString + ";";
             auto Diag = diag(StartLoc, "found statement to duplicate");
+            double to_mutate = rand()%2;
+            llvm::WithColor::remark()<<"Selected seed-dictated value of "<< to_mutate << "\n";
+            if (to_mutate<1){
             llvm::WithColor::remark() << "Adding duplicated statement after "
                                       << RHS->getEndLoc().getLocWithOffset(2).printToString(SM) << "\n";
-            Diag << FixItHint::CreateInsertion(RHS->getEndLoc().getLocWithOffset(2), DuplicatedStringToInsert.str());
+            Diag << FixItHint::CreateInsertion(RHS->getEndLoc().getLocWithOffset(2), DuplicatedStringToInsert);
+            }
+            else {
+                llvm::WithColor::remark()<<"Skipping mutation due to selected seed-dictated value of %l"<< to_mutate << " being less than 1\n";
+
+            }
           }
         }
       }
