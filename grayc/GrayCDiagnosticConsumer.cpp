@@ -703,7 +703,7 @@ void GrayCDiagnosticConsumer::removeIncompatibleErrors() {
     if (!Apply[I]) {
       ErrorFixes[I].second->clear();
       ErrorFixes[I].first->Notes.emplace_back(
-          "this fix will not be applied because it overlaps with another fix");
+          "this transformation will not be applied because it overlaps with another fix");
     }
   }
 }
