@@ -161,14 +161,14 @@ bool UnaryOperatorCheck::mutateUnaryOperator(
         // Decide opcode and hence the mutated opcode
         std::string MutatedOperator;
         MutatedOperator = S->getOpcode() == UO_PreInc ? "--" : "++";
-        double to_mutate = rand()%2;
+        double to_mutate = rand()%5;
         llvm::WithColor::remark()<<"Selected seed-dictated value of "<< to_mutate << "\n";
 
-        if (to_mutate<1){
+        if (to_mutate>=3){
           Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedOperator);
         }
         else {
-          llvm::WithColor::remark()<<"Skipping mutation due to selected seed-dictated value of "<< to_mutate << " being less than 1\n";
+          Diag <<"Skipping mutation due to selected seed-dictated value being greater than 3\n";
         }
         return true;
 }

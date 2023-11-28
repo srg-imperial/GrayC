@@ -60,15 +60,15 @@ namespace clang
             std::string ExtractedString = std::string(Lexer::getSourceText(CharSourceRange::getTokenRange(AssignmentOperatorRange), SM, Context->getLangOpts()));
             std::string DuplicatedStringToInsert = ExtractedString + ";";
             auto Diag = diag(StartLoc, "found statement to duplicate");
-            double to_mutate = rand()%2;
+            double to_mutate = rand()%5;
             llvm::WithColor::remark()<<"Selected seed-dictated value of "<< to_mutate << "\n";
-            if (to_mutate<1){
+            if (to_mutate<=3){
             llvm::WithColor::remark() << "Adding duplicated statement after "
                                       << RHS->getEndLoc().getLocWithOffset(2).printToString(SM) << "\n";
             Diag << FixItHint::CreateInsertion(RHS->getEndLoc().getLocWithOffset(2), DuplicatedStringToInsert);
             }
             else {
-                llvm::WithColor::remark()<<"Skipping mutation due to selected seed-dictated value of %l"<< to_mutate << " being less than 1\n";
+                Diag <<"Skipping mutation due to selected seed-dictated value being greater than 3\n";
 
             }
           }
