@@ -10,6 +10,8 @@
 #include "clang/AST/ASTContext.h"
 #include "clang/ASTMatchers/ASTMatchFinder.h"
 #include "clang/Lex/Lexer.h"
+#include "../utils/GrayCRandomManager.h"
+
 
 using namespace clang::ast_matchers;
 
@@ -30,7 +32,7 @@ namespace clang
 
       void JumpMutator::check(const MatchFinder::MatchResult &Result)
       {
-        srand(Seed.getValue());
+        
         if (auto F = Result.Nodes.getNodeAs<ForStmt>("no-nest-for"))
         {
           mutateLoop(Result, For, F, F->getBeginLoc(), F->getEndLoc());
@@ -52,6 +54,13 @@ namespace clang
           const MatchFinder::MatchResult &Result, LoopKind L, const Stmt *S,
           SourceLocation InitialLoc, SourceLocation EndLocHint)
       {
+        GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+        if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.4)){
+          llvm::WithColor::note()
+            << "Ignoring potential jump statement mutation due to the given seed\n";
+          GrayCRandomManager::DeleteInstance(Seed.getValue());
+          return true;
+        }
         if (!InitialLoc.isValid())
           return false;
         const SourceManager &SM = *Result.SourceManager;
@@ -72,7 +81,7 @@ namespace clang
           return false;
         assert(EndLocHint.isValid());
         const Stmt *Body;
-        std::string JumpConstruct((Seed.getValue() % 2) == 1 ? "{break;}" : "{continue;}");
+        std::string JumpConstruct((GrayCRandomManager::GetInstance()->rnd_yes_no(0.5)) == 1 ? "{break;}" : "{continue;}");
 
         switch (L)
         {

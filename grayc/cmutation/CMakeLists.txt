@@ -16,4 +16,5 @@ target_link_libraries(GrayCCMutator
   clangLex
   clangTooling
   GrayC
+  GrayCUtils
   )

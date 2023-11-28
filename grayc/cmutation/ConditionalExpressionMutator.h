@@ -45,8 +45,6 @@ namespace clang
 
         enum ConditionOperatorKind
         {
-          PtrMemD,
-          PtrMemI,
           Mul,
           Div,
           Rem,
@@ -66,10 +64,9 @@ namespace clang
           Or,
           LAnd,
           LOr,
-          Comma,
           Last
         };
-        llvm::StringRef ConditionOperatorStrings[19] = {".*", "->*", "*", "/", "%", "+", "-", "<<", ">>", "<=>", "<", ">", "<=", ">=", "&", "^", "|", "&&", "||"};
+        llvm::StringRef ConditionOperatorStrings[19] = {"*", "/", "%", "+", "-", "<<", ">>", "<", ">", "<=", ">=", "&", "^", "|", "&&", "||"};
 
       private:
         bool mutateConditional(const ast_matchers::MatchFinder::MatchResult &Result,

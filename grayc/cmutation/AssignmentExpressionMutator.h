@@ -59,8 +59,6 @@ namespace clang
 
         enum BinaryOperatorKind
         {
-          PtrMemD,
-          PtrMemI,
           Mul,
           Div,
           Rem,
@@ -68,7 +66,6 @@ namespace clang
           Sub,
           Shl,
           Shr,
-          Cmp,
           LT,
           GT,
           LE,
@@ -93,7 +90,7 @@ namespace clang
           Comma,
           Last
         };
-        llvm::StringRef BinaryOperatorStrings[32] = {".*", "->*", "*", "/", "%", "+", "-", "<<", ">>", "<=>", "<", ">", "<=", ">=", "&", "^", "|", "&&", "||", "=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|="};
+        llvm::StringRef BinaryOperatorStrings[32] = {"*", "/", "%", "+", "-", "<<", ">>", "<", ">", "<=", ">=", "&", "^", "|", "&&", "||", "=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|="};
 
       private:
         bool mutateAssignment(const ast_matchers::MatchFinder::MatchResult &Result,

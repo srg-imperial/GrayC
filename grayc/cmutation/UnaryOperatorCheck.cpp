@@ -1,12 +1,13 @@
 //===--- UnaryOperatorCheck.cpp - GrayC ---------------------===//
 //
-// Taken from the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
+// Taken from the LLVM Project, under the Apache License v2.0 with LLVM
+// Exceptions. See https://llvm.org/LICENSE.txt for license information.
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 //
 //===----------------------------------------------------------------------===//
 
 #include "UnaryOperatorCheck.h"
+#include "../utils/GrayCRandomManager.h"
 #include "clang/AST/ASTContext.h"
 #include "clang/ASTMatchers/ASTMatchers.h"
 #include "clang/Lex/Lexer.h"
@@ -111,69 +112,65 @@ SourceLocation findEndLocation(SourceLocation LastTokenLoc,
 
 } // namespace
 
-
-
 void UnaryOperatorCheck::registerMatchers(MatchFinder *Finder) {
   Finder->addMatcher(unaryOperator().bind("unary-operator"), this);
 }
 
-void UnaryOperatorCheck::check(
-    const MatchFinder::MatchResult &Result) {
+void UnaryOperatorCheck::check(const MatchFinder::MatchResult &Result) {
   const SourceManager &SM = *Result.SourceManager;
   const ASTContext *Context = Result.Context;
-  llvm::WithColor::remark()<<"Using SEED: "<<Seed<<"\n";
+  llvm::WithColor::remark() << "Using SEED: " << Seed << "\n";
   if (auto S = Result.Nodes.getNodeAs<UnaryOperator>("unary-operator")) {
-      mutateUnaryOperator(Result,S, S->getOperatorLoc(),S->getExprLoc());
-  }
-  else {
+    mutateUnaryOperator(Result, S, S->getOperatorLoc(), S->getExprLoc());
+  } else {
     llvm_unreachable("Invalid match");
   }
 }
 
-
 bool UnaryOperatorCheck::mutateUnaryOperator(
     const MatchFinder::MatchResult &Result, const UnaryOperator *S,
     SourceLocation InitialLoc, SourceLocation EndLocHint) {
-        srand(Seed.getValue());
-        if (!S->isIncrementOp() && !S->isDecrementOp()){
-          return false;
-        }
-        if (!InitialLoc.isValid())
-          return false;
-        const SourceManager &SM = *Result.SourceManager;
-        const ASTContext *Context = Result.Context;
+  GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+  if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.6)) {
+    llvm::WithColor::note()
+        << "Ignoring potential unary operator mutation due to the given seed\n";
+    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    return true;
+  }
+  if (!S->isIncrementOp() && !S->isDecrementOp()) {
+    return false;
+  }
+  if (!InitialLoc.isValid())
+    return false;
+  const SourceManager &SM = *Result.SourceManager;
+  const ASTContext *Context = Result.Context;
 
-        // Treat macros.
-        CharSourceRange FileRange = Lexer::makeFileCharRange(
-            CharSourceRange::getTokenRange(S->getSourceRange()), SM,
-            Context->getLangOpts());
-        if (FileRange.isInvalid())
-          return false;
-          InitialLoc = Lexer::makeFileCharRange(
+  // Treat macros.
+  CharSourceRange FileRange = Lexer::makeFileCharRange(
+      CharSourceRange::getTokenRange(S->getSourceRange()), SM,
+      Context->getLangOpts());
+  if (FileRange.isInvalid())
+    return false;
+  InitialLoc = Lexer::makeFileCharRange(
                    CharSourceRange::getCharRange(InitialLoc, S->getBeginLoc()),
                    SM, Context->getLangOpts())
                    .getBegin();
-        if (InitialLoc.isInvalid())
-          return false;
-        assert(EndLocHint.isValid());
-        auto Diag = diag(InitialLoc, "found candidate unary operator to mutate");
-        
-        // Decide opcode and hence the mutated opcode
-        std::string MutatedOperator;
-        MutatedOperator = S->getOpcode() == UO_PreInc ? "--" : "++";
-        double to_mutate = rand()%5;
-        llvm::WithColor::remark()<<"Selected seed-dictated value of "<< to_mutate << "\n";
+  if (InitialLoc.isInvalid())
+    return false;
+  assert(EndLocHint.isValid());
+  auto Diag = diag(InitialLoc, "found candidate unary operator to mutate");
 
-        if (to_mutate>=3){
-          Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedOperator);
-        }
-        else {
-          Diag <<"Skipping mutation due to selected seed-dictated value being greater than 3\n";
-        }
-        return true;
+  // Decide opcode and hence the mutated opcode
+  std::string MutatedOperator;
+  MutatedOperator = S->getOpcode() == UO_PreInc ? "--" : "++";
+
+  Diag << FixItHint::CreateReplacement(
+      CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedOperator);
+
+  GrayCRandomManager::DeleteInstance(Seed.getValue());
+  return true;
 }
 
-
-} // namespace readability
+} // namespace cmutation
 } // namespace grayc
 } // namespace clang
