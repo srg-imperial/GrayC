@@ -35,6 +35,7 @@ void DuplicateStatementMutator::check(const MatchFinder::MatchResult &Result) {
   if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.7)) {
     llvm::WithColor::note()
             << "Ignoring potential duplicate statement mutation due to the given seed\n";
+            GrayCRandomManager::DeleteInstance(Seed.getValue());
     return;
   }
   const auto *BinaryOp = Result.Nodes.getNodeAs<BinaryOperator>("binaryOp");

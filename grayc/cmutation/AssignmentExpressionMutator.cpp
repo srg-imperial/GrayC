@@ -29,7 +29,7 @@ namespace clang
 
       void AssignmentExpressionMutator::check(const MatchFinder::MatchResult &Result)
       {
-        srand(Seed.getValue());
+        
         const SourceManager &SM = *Result.SourceManager;
         const ASTContext *Context = Result.Context;
         if (auto B = Result.Nodes.getNodeAs<BinaryOperator>("assignment"))
@@ -46,9 +46,11 @@ namespace clang
           const MatchFinder::MatchResult &Result, const BinaryOperator *B,
           SourceLocation InitialLoc, SourceLocation EndLocHint)
       {
-        srand(Seed.getValue());
-        if (!InitialLoc.isValid())
+        GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+        if (!InitialLoc.isValid()){
+          GrayCRandomManager::DeleteInstance(Seed.getValue());
           return false;
+        }
         const SourceManager &SM = *Result.SourceManager;
         const ASTContext *Context = Result.Context;
 
@@ -56,15 +58,19 @@ namespace clang
         CharSourceRange FileRange = Lexer::makeFileCharRange(
             CharSourceRange::getTokenRange(B->getSourceRange()), SM,
             Context->getLangOpts());
-        if (FileRange.isInvalid())
+        if (FileRange.isInvalid()){
+          GrayCRandomManager::DeleteInstance(Seed.getValue());
           return false;
+        }
         InitialLoc = Lexer::makeFileCharRange(
                          CharSourceRange::getCharRange(InitialLoc, B->getBeginLoc()),
                          SM, Context->getLangOpts())
                          .getBegin();
 
-        if (InitialLoc.isInvalid())
+        if (InitialLoc.isInvalid()){
+          GrayCRandomManager::DeleteInstance(Seed.getValue());
           return false;
+        }
         InitialLoc = B->getRHS()->getBeginLoc();
         assert(InitialLoc.isValid());
         assert(EndLocHint.isValid());
@@ -79,26 +85,28 @@ namespace clang
           auto Diag = diag(InitialLoc, "RHS does not contain subexpressions");
         }
         // FIXIT: (Last-11) as, without extra checks, we can't use assignment operators without ensuring that the lvalue is modifiable.
-        BinaryOperatorKind BK = BinaryOperatorKind(19092727 % (Last - 11));
+        BinaryOperatorKind BK = BinaryOperatorKind(GrayCRandomManager::GetInstance()->rnd_dice(Last - 11));
         // FIXIT: Avoid using pointer-to-member operators
         llvm::Twine SelectedBinaryOperator(BinaryOperatorStrings[1 + BK]);
         llvm::WithColor::remark() << "Selected binary operator: " << SelectedBinaryOperator.str() << "\n";
         llvm::WithColor::remark() << "Number of subexpressions: " << expressions.size() << "\n";
 
         assert(expressions.size() > 0 && "No sub-expressions collected!!");
-        llvm::Twine NewRHS(expressions[121276325 % expressions.size()]);
-        llvm::Twine NewLHS(expressions[190927277 % expressions.size()]);
+        llvm::Twine NewRHS(expressions[GrayCRandomManager::GetInstance()->rnd_dice(expressions.size()) % expressions.size()]);
+        llvm::Twine NewLHS(expressions[(GrayCRandomManager::GetInstance()->rnd_dice(expressions.size())+1) % expressions.size()]);
         llvm::Twine MutatedAssignment(NewLHS + SelectedBinaryOperator + NewRHS);
         
         llvm::WithColor::remark() << "Expression built : " << MutatedAssignment.str() << "\n";
 
         Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedAssignment.str());
+        GrayCRandomManager::DeleteInstance(Seed.getValue());
         return true;
       }
       void AssignmentExpressionMutator::buildExpressionVector(const MatchFinder::MatchResult &Result, llvm::SmallVector<llvm::StringRef, 20> &expressions, const Expr *E)
       {
         if (!isa<BinaryOperator>(E))
         {
+          GrayCRandomManager::DeleteInstance(Seed.getValue());
           return;
         }
         else
