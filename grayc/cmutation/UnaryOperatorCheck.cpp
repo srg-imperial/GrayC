@@ -130,11 +130,11 @@ void UnaryOperatorCheck::check(const MatchFinder::MatchResult &Result) {
 bool UnaryOperatorCheck::mutateUnaryOperator(
     const MatchFinder::MatchResult &Result, const UnaryOperator *S,
     SourceLocation InitialLoc, SourceLocation EndLocHint) {
-  GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+  GrayCRandomManager::CreateInstance(GET_VALUE(Seed), 65000);
   if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.6)) {
     llvm::WithColor::note()
         << "Ignoring potential unary operator mutation due to the given seed\n";
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return true;
   }
   if (!S->isIncrementOp() && !S->isDecrementOp()) {
@@ -167,7 +167,7 @@ bool UnaryOperatorCheck::mutateUnaryOperator(
   Diag << FixItHint::CreateReplacement(
       CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedOperator);
 
-  GrayCRandomManager::DeleteInstance(Seed.getValue());
+  GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
   return true;
 }
 

@@ -18,10 +18,8 @@ This is the revamped version of the one presented in our ISSTA '23 paper. It con
 ## Installation
 
 ```
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-sudo apt-add-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-12 main"
 sudo apt-get update
-sudo apt-get install -y llvm-12 llvm-12-dev llvm-12-tools clang-12 libclang-common-12-dev libclang-12-dev 
+sudo apt-get install -y llvm-17 llvm-17-dev llvm-17-tools clang-17 libclang-common-17-dev libclang-17-dev 
 
 This builds both LLVM and Clang on Ubuntu
 

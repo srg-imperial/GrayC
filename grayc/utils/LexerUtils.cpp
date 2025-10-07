@@ -76,10 +76,10 @@ SourceLocation findNextTerminator(SourceLocation Start, const SourceManager &SM,
   return findNextAnyTokenKind(Start, SM, LangOpts, tok::comma, tok::semi);
 }
 
-Optional<Token> findNextTokenSkippingComments(SourceLocation Start,
+OPTIONAL(Token) findNextTokenSkippingComments(SourceLocation Start,
                                               const SourceManager &SM,
                                               const LangOptions &LangOpts) {
-  Optional<Token> CurrentToken;
+  OPTIONAL(Token) CurrentToken;
   do {
     CurrentToken = Lexer::findNextToken(Start, SM, LangOpts);
   } while (CurrentToken && CurrentToken->is(tok::comment));
@@ -96,7 +96,7 @@ bool rangeContainsExpansionsOrDirectives(SourceRange Range,
     if (Loc.isMacroID())
       return true;
 
-    llvm::Optional<Token> Tok = Lexer::findNextToken(Loc, SM, LangOpts);
+    OPTIONAL(Token) Tok = Lexer::findNextToken(Loc, SM, LangOpts);
 
     if (!Tok)
       return true;
@@ -110,7 +110,7 @@ bool rangeContainsExpansionsOrDirectives(SourceRange Range,
   return false;
 }
 
-llvm::Optional<Token> getQualifyingToken(tok::TokenKind TK,
+OPTIONAL(Token) getQualifyingToken(tok::TokenKind TK,
                                          CharSourceRange Range,
                                          const ASTContext &Context,
                                          const SourceManager &SM) {
@@ -121,8 +121,8 @@ llvm::Optional<Token> getQualifyingToken(tok::TokenKind TK,
   StringRef File = SM.getBufferData(LocInfo.first);
   Lexer RawLexer(SM.getLocForStartOfFile(LocInfo.first), Context.getLangOpts(),
                  File.begin(), File.data() + LocInfo.second, File.end());
-  llvm::Optional<Token> LastMatchBeforeTemplate;
-  llvm::Optional<Token> LastMatchAfterTemplate;
+  OPTIONAL(Token) LastMatchBeforeTemplate;
+  OPTIONAL(Token) LastMatchAfterTemplate;
   bool SawTemplate = false;
   Token Tok;
   while (!RawLexer.LexFromRawLexer(Tok) &&
@@ -137,7 +137,7 @@ llvm::Optional<Token> getQualifyingToken(tok::TokenKind TK,
     if (Tok.is(tok::less))
       SawTemplate = true;
     else if (Tok.isOneOf(tok::greater, tok::greatergreater))
-      LastMatchAfterTemplate = None;
+      LastMatchAfterTemplate = OPTIONAL_NONE;
     else if (Tok.is(TK)) {
       if (SawTemplate)
         LastMatchAfterTemplate = Tok;
@@ -145,7 +145,8 @@ llvm::Optional<Token> getQualifyingToken(tok::TokenKind TK,
         LastMatchBeforeTemplate = Tok;
     }
   }
-  return LastMatchAfterTemplate != None ? LastMatchAfterTemplate
+  // ???
+  return LastMatchAfterTemplate != OPTIONAL_NONE ? LastMatchAfterTemplate
                                         : LastMatchBeforeTemplate;
 }
 } // namespace lexer

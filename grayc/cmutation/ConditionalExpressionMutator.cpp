@@ -25,7 +25,7 @@ void ConditionalExpressionMutator::registerMatchers(MatchFinder *Finder) {
 
 void ConditionalExpressionMutator::check(
     const MatchFinder::MatchResult &Result) {
-  srand(Seed.getValue());
+  srand(GET_VALUE(Seed));
   const SourceManager &SM = *Result.SourceManager;
   const ASTContext *Context = Result.Context;
   llvm::WithColor::remark() << "Using SEED: " << Seed << "\n";
@@ -38,15 +38,15 @@ void ConditionalExpressionMutator::check(
 bool ConditionalExpressionMutator::mutateConditional(
     const MatchFinder::MatchResult &Result, const BinaryOperator *C,
     SourceLocation InitialLoc, SourceLocation EndLocHint) {
-  GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+  GrayCRandomManager::CreateInstance(GET_VALUE(Seed), 65000);
   if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.6)) {
     llvm::WithColor::note()
         << "Ignoring potential expression mutation due to the given seed\n";
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return true;
   }
   if (!InitialLoc.isValid()){
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return false;
   }
   const SourceManager &SM = *Result.SourceManager;
@@ -57,7 +57,7 @@ bool ConditionalExpressionMutator::mutateConditional(
       CharSourceRange::getTokenRange(C->getSourceRange()), SM,
       Context->getLangOpts());
   if (FileRange.isInvalid()){
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return false;
   }
   InitialLoc = Lexer::makeFileCharRange(
@@ -66,7 +66,7 @@ bool ConditionalExpressionMutator::mutateConditional(
                    .getBegin();
 
   if (InitialLoc.isInvalid()){
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return false;
   }
   assert(EndLocHint.isValid());
@@ -74,7 +74,7 @@ bool ConditionalExpressionMutator::mutateConditional(
   buildExpressionVector(Result, expressions, C);
   if (expressions.size() == 0) {
     llvm::WithColor::remark() << "No subexpressions collected!!";
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return false;
   }
   ConditionOperatorKind CK = ConditionOperatorKind(GrayCRandomManager::GetInstance()->rnd_dice(Last));
@@ -94,7 +94,7 @@ bool ConditionalExpressionMutator::mutateConditional(
   Diag << FixItHint::CreateReplacement(
       CharSourceRange::getTokenRange(InitialLoc, EndLocHint),
       MutatedConditional.str());
-  GrayCRandomManager::DeleteInstance(Seed.getValue());
+  GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
   return true;
 }
 void ConditionalExpressionMutator::buildExpressionVector(

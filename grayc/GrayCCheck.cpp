@@ -183,11 +183,11 @@ GrayCCheck::OptionsView::getEnumInt(StringRef LocalName,
   unsigned EditDistance = -1;
   for (const auto &NameAndEnum : Mapping) {
     if (IgnoreCase) {
-      if (Value.equals_lower(NameAndEnum.second))
+      if (EQUALS_INSENSITIVE(Value, NameAndEnum.second))
         return NameAndEnum.first;
     } else if (Value.equals(NameAndEnum.second)) {
       return NameAndEnum.first;
-    } else if (Value.equals_lower(NameAndEnum.second)) {
+    } else if (EQUALS_INSENSITIVE(Value, NameAndEnum.second)) {
       Closest = NameAndEnum.second;
       EditDistance = 0;
       continue;

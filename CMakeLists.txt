@@ -50,14 +50,19 @@ list(APPEND CMAKE_PREFIX_PATH "${CT_Clang_INSTALL_DIR}/lib/cmake/clang/")
 
 find_package(Clang REQUIRED CONFIG)
 
-# Sanity check. As Clang does not expose e.g. `CLANG_VERSION_MAJOR` through
-# AddClang.cmake, we have to use LLVM_VERSION_MAJOR instead.
-# TODO: Revisit when next version is released.
-if(NOT "12" VERSION_EQUAL "${LLVM_VERSION_MAJOR}")
-  message(FATAL_ERROR "Found LLVM ${LLVM_VERSION_MAJOR}, but need LLVM 12")
+
+if (LLVM_VERSION_MAJOR LESS 12)
+  message(WARNING "Found LLVM ${LLVM_VERSION_MAJOR}, but LLVM 12 or newer is required.")
+  add_definitions(-DGRAYC_OLD_LLVM_API)
+
+elseif (LLVM_VERSION_MAJOR GREATER 17)
+  message(WARNING "Found LLVM ${LLVM_VERSION_MAJOR}, but this project targets LLVM 17. Proceeding may cause issues.")
+
+elseif (NOT LLVM_VERSION_MAJOR EQUAL 12 AND NOT LLVM_VERSION_MAJOR EQUAL 17)
+  message(WARNING "Found LLVM ${LLVM_VERSION_MAJOR}, but this project officially supports LLVM 12 and LLVM 17 only. Proceeding may cause issues.")
 endif()
 
-message(STATUS "Found Clang ${LLVM_PACKAGE_VERSION}")
+
 message(STATUS "Using ClangConfig.cmake in: ${CT_Clang_INSTALL_DIR}")
 
 message("CLANG STATUS:

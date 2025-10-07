@@ -10,6 +10,7 @@
 #define LLVM_CLANG_TOOLS_EXTRA_GRAYC_CMUTATION_DUPLICATESTATEMENTMUTATOR_H
 
 #include "../GrayCCheck.h"
+#include "../Compatability.h"
 
 namespace clang {
 namespace grayc {
@@ -23,7 +24,7 @@ public:
       : GrayCCheck(Name, Context) {Seed = Context->getOptions().Seed;}
   void registerMatchers(ast_matchers::MatchFinder *Finder) override;
   void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
-  llvm::Optional<long> Seed;
+  OPTIONAL(long) Seed;
 };
 
 } // namespace cmutation
