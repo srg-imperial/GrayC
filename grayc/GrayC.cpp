@@ -197,7 +197,11 @@ private:
     if (FilePath.empty())
       return SourceLocation();
 
+    #ifdef GRAYC_OLD_LLVM_API
     auto File = SourceMgr.getFileManager().getFile(FilePath);
+    #else
+    auto File = SourceMgr.getFileManager().getFileRef(FilePath);
+    #endif
     if (!File)
       return SourceLocation();
 
