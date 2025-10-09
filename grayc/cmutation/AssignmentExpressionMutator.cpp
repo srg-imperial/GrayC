@@ -46,9 +46,9 @@ namespace clang
           const MatchFinder::MatchResult &Result, const BinaryOperator *B,
           SourceLocation InitialLoc, SourceLocation EndLocHint)
       {
-        GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+        GrayCRandomManager::CreateInstance(GET_VALUE(Seed), 65000);
         if (!InitialLoc.isValid()){
-          GrayCRandomManager::DeleteInstance(Seed.getValue());
+          GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
           return false;
         }
         const SourceManager &SM = *Result.SourceManager;
@@ -59,7 +59,7 @@ namespace clang
             CharSourceRange::getTokenRange(B->getSourceRange()), SM,
             Context->getLangOpts());
         if (FileRange.isInvalid()){
-          GrayCRandomManager::DeleteInstance(Seed.getValue());
+          GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
           return false;
         }
         InitialLoc = Lexer::makeFileCharRange(
@@ -68,7 +68,7 @@ namespace clang
                          .getBegin();
 
         if (InitialLoc.isInvalid()){
-          GrayCRandomManager::DeleteInstance(Seed.getValue());
+          GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
           return false;
         }
         InitialLoc = B->getRHS()->getBeginLoc();
@@ -99,14 +99,14 @@ namespace clang
         llvm::WithColor::remark() << "Expression built : " << MutatedAssignment.str() << "\n";
 
         Diag << FixItHint::CreateReplacement(CharSourceRange::getTokenRange(InitialLoc, EndLocHint), MutatedAssignment.str());
-        GrayCRandomManager::DeleteInstance(Seed.getValue());
+        GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
         return true;
       }
       void AssignmentExpressionMutator::buildExpressionVector(const MatchFinder::MatchResult &Result, llvm::SmallVector<llvm::StringRef, 20> &expressions, const Expr *E)
       {
         if (!isa<BinaryOperator>(E))
         {
-          GrayCRandomManager::DeleteInstance(Seed.getValue());
+          GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
           return;
         }
         else

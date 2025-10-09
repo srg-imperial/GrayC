@@ -10,6 +10,7 @@
 #define LLVM_CLANG_TOOLS_EXTRA_GRAYC_CMUTATION_JUMPMUTATOR_H
 
 #include "../GrayCCheck.h"
+#include "../Compatability.h"
 
 namespace clang
 {
@@ -27,7 +28,7 @@ namespace clang
             : GrayCCheck(Name, Context) {Seed = Context->getOptions().Seed;}
         void registerMatchers(ast_matchers::MatchFinder *Finder) override;
         void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
-        llvm::Optional<long> Seed;
+        OPTIONAL(long) Seed;
       private:
         enum LoopKind {For,While,DoWhile};
         bool mutateLoop(const ast_matchers::MatchFinder::MatchResult &Result,LoopKind L, 
