@@ -9,7 +9,8 @@
 #ifndef GRAYC_GrayCProfiling_H
 #define GRAYC_GrayCProfiling_H
 
-#include "llvm/ADT/Optional.h"
+#include "Compatability.h"
+
 #include "llvm/ADT/StringMap.h"
 #include "llvm/Support/Chrono.h"
 #include "llvm/Support/Timer.h"
@@ -35,9 +36,8 @@ public:
   };
 
 private:
-  llvm::Optional<llvm::TimerGroup> TG;
-
-  llvm::Optional<StorageParams> Storage;
+  OPTIONAL(llvm::TimerGroup) TG;
+  OPTIONAL(StorageParams) Storage;
 
   void printUserFriendlyTable(llvm::raw_ostream &OS);
   void printAsJSON(llvm::raw_ostream &OS);
@@ -49,7 +49,7 @@ public:
 
   GrayCProfiling() = default;
 
-  GrayCProfiling(llvm::Optional<StorageParams> Storage);
+  GrayCProfiling(OPTIONAL(StorageParams) Storage);
 
   ~GrayCProfiling();
 };

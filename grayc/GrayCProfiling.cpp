@@ -55,7 +55,7 @@ void GrayCProfiling::printAsJSON(llvm::raw_ostream &OS) {
 }
 
 void GrayCProfiling::storeProfileData() {
-  assert(Storage.hasValue() && "We should have a filename.");
+  assert(HAS_VALUE(Storage) && "We should have a filename.");
 
   llvm::SmallString<256> OutputDirectory(Storage->StoreFilename);
   llvm::sys::path::remove_filename(OutputDirectory);
@@ -76,13 +76,13 @@ void GrayCProfiling::storeProfileData() {
   printAsJSON(OS);
 }
 
-GrayCProfiling::GrayCProfiling(llvm::Optional<StorageParams> Storage)
+GrayCProfiling::GrayCProfiling(OPTIONAL(StorageParams) Storage)
     : Storage(std::move(Storage)) {}
 
 GrayCProfiling::~GrayCProfiling() {
   TG.emplace("grayc", "GrayC checks profiling", Records);
 
-  if (!Storage.hasValue())
+  if (!HAS_VALUE(Storage))
     printUserFriendlyTable(llvm::errs());
   else
     storeProfileData();

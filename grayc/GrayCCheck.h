@@ -9,11 +9,12 @@
 #ifndef GRAYC_GrayCCheck_H
 #define GRAYC_GrayCCheck_H
 
+#include "Compatability.h"
+
 #include "GrayCDiagnosticConsumer.h"
 #include "GrayCOptions.h"
 #include "clang/ASTMatchers/ASTMatchFinder.h"
 #include "clang/Basic/Diagnostic.h"
-#include "llvm/ADT/Optional.h"
 #include "llvm/Support/Error.h"
 #include <type_traits>
 #include <utility>
@@ -71,7 +72,7 @@ public:
 private:
   const std::string LookupName;
   const std::string LookupValue;
-  const llvm::Optional<std::string> SuggestedValue;
+  const OPTIONAL(std::string) SuggestedValue;
 };
 
 class UnparseableIntegerOptionError

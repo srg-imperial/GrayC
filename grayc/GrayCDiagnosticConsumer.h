@@ -9,6 +9,7 @@
 #ifndef GRAYC_GrayCDiagnosticConsumer_H
 #define GRAYC_GrayCDiagnosticConsumer_H
 
+#include "Compatability.h"
 #include "GrayCOptions.h"
 #include "GrayCProfiling.h"
 #include "clang/Basic/Diagnostic.h"
@@ -148,7 +149,7 @@ public:
 
   /// Control storage of profile date.
   void setProfileStoragePrefix(StringRef ProfilePrefix);
-  llvm::Optional<GrayCProfiling::StorageParams>
+  OPTIONAL(GrayCProfiling::StorageParams)
   getProfileStorageParams() const;
 
   /// Should be called when starting to process new translation unit.

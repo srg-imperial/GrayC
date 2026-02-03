@@ -115,7 +115,7 @@ GrayCOptions GrayCOptions::getDefaults() {
   Options.SystemHeaders = false;
   Options.FormatStyle = "none";
   Options.Seed = 1234567;
-  Options.User = llvm::None;
+  Options.User = OPTIONAL_NONE;
   unsigned Priority = 0;
   for (const GrayCModuleRegistry::entry &Module :
        GrayCModuleRegistry::entries())
@@ -125,7 +125,7 @@ GrayCOptions GrayCOptions::getDefaults() {
 }
 
 template <typename T>
-static void mergeVectors(Optional<T> &Dest, const Optional<T> &Src) {
+static void mergeVectors(OPTIONAL(T) &Dest, const OPTIONAL(T) &Src) {
   if (Src) {
     if (Dest)
       Dest->insert(Dest->end(), Src->begin(), Src->end());
@@ -134,14 +134,14 @@ static void mergeVectors(Optional<T> &Dest, const Optional<T> &Src) {
   }
 }
 
-static void mergeCommaSeparatedLists(Optional<std::string> &Dest,
-                                     const Optional<std::string> &Src) {
+static void mergeCommaSeparatedLists(OPTIONAL(std::string) &Dest,
+                                     const OPTIONAL(std::string) &Src) {
   if (Src)
     Dest = (Dest && !Dest->empty() ? *Dest + "," : "") + *Src;
 }
 
 template <typename T>
-static void overrideValue(Optional<T> &Dest, const Optional<T> &Src) {
+static void overrideValue(OPTIONAL(T) &Dest, const OPTIONAL(T) &Src) {
   if (Src)
     Dest = Src;
 }
@@ -207,7 +207,7 @@ std::vector<OptionsSource>
 ConfigOptionsProvider::getRawOptions(llvm::StringRef FileName) {
   std::vector<OptionsSource> RawOptions =
       DefaultOptionsProvider::getRawOptions(FileName);
-  if (ConfigOptions.InheritParentConfig.getValueOr(false)) {
+  if (GET_VALUE_OR(ConfigOptions.InheritParentConfig, false)) {
     LLVM_DEBUG(llvm::dbgs()
                << "Getting options for file " << FileName << "...\n");
     assert(FS && "FS must be set.");
@@ -254,7 +254,7 @@ void FileOptionsBaseProvider::addRawFileOptions(
   StringRef Path = llvm::sys::path::parent_path(AbsolutePath);
   for (StringRef CurrentPath = Path; !CurrentPath.empty();
        CurrentPath = llvm::sys::path::parent_path(CurrentPath)) {
-    llvm::Optional<OptionsSource> Result;
+    OPTIONAL(OptionsSource) Result;
 
     auto Iter = CachedOptions.find(CurrentPath);
     if (Iter != CachedOptions.end())
@@ -275,7 +275,7 @@ void FileOptionsBaseProvider::addRawFileOptions(
       CachedOptions[Path] = *Result;
 
       CurOptions.push_back(*Result);
-      if (!Result->first.InheritParentConfig.getValueOr(false))
+      if (!GET_VALUE_OR(Result->first.InheritParentConfig, false))
         break;
     }
   }
@@ -324,14 +324,14 @@ FileOptionsProvider::getRawOptions(StringRef FileName) {
   return RawOptions;
 }
 
-llvm::Optional<OptionsSource>
+OPTIONAL(OptionsSource)
 FileOptionsBaseProvider::tryReadConfigFile(StringRef Directory) {
   assert(!Directory.empty());
 
   if (!llvm::sys::fs::is_directory(Directory)) {
     llvm::errs() << "Error reading configuration from " << Directory
                  << ": directory doesn't exist.\n";
-    return llvm::None;
+    return OPTIONAL_NONE;
   }
 
   for (const ConfigFileHandler &ConfigHandler : ConfigHandlers) {
@@ -368,7 +368,7 @@ FileOptionsBaseProvider::tryReadConfigFile(StringRef Directory) {
     }
     return OptionsSource(*ParsedOptions, ConfigFile.c_str());
   }
-  return llvm::None;
+  return OPTIONAL_NONE;
 }
 
 /// Parses -line-filter option and stores it to the \c Options.

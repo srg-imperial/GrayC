@@ -54,11 +54,11 @@ namespace clang
           const MatchFinder::MatchResult &Result, LoopKind L, const Stmt *S,
           SourceLocation InitialLoc, SourceLocation EndLocHint)
       {
-        GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+        GrayCRandomManager::CreateInstance(GET_VALUE(Seed), 65000);
         if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.4)){
           llvm::WithColor::note()
             << "Ignoring potential jump statement mutation due to the given seed\n";
-          GrayCRandomManager::DeleteInstance(Seed.getValue());
+          GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
           return true;
         }
         if (!InitialLoc.isValid())

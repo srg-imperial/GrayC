@@ -9,6 +9,7 @@
 #ifndef LLVM_CLANG_TOOLS_EXTRA_GRAYC_UTILS_LEXER_UTILS_H
 #define LLVM_CLANG_TOOLS_EXTRA_GRAYC_UTILS_LEXER_UTILS_H
 
+#include "../Compatability.h"
 #include "clang/AST/ASTContext.h"
 #include "clang/Basic/TokenKinds.h"
 #include "clang/Lex/Lexer.h"
@@ -64,7 +65,7 @@ SourceLocation findNextAnyTokenKind(SourceLocation Start,
                                     const LangOptions &LangOpts, TokenKind TK,
                                     TokenKinds... TKs) {
   while (true) {
-    Optional<Token> CurrentToken = Lexer::findNextToken(Start, SM, LangOpts);
+    OPTIONAL(Token) CurrentToken = Lexer::findNextToken(Start, SM, LangOpts);
 
     if (!CurrentToken)
       return SourceLocation();
@@ -83,7 +84,7 @@ SourceLocation findNextAnyTokenKind(SourceLocation Start,
 }
 
 // Finds next token that's not a comment.
-Optional<Token> findNextTokenSkippingComments(SourceLocation Start,
+OPTIONAL(Token) findNextTokenSkippingComments(SourceLocation Start,
                                               const SourceManager &SM,
                                               const LangOptions &LangOpts);
 
@@ -99,7 +100,7 @@ bool rangeContainsExpansionsOrDirectives(SourceRange Range,
 /// must be valid with respect to ``SM``.  Returns ``None`` if no qualifying
 /// tokens are found.
 /// \note: doesn't support member function qualifiers.
-llvm::Optional<Token> getQualifyingToken(tok::TokenKind TK,
+OPTIONAL(Token) getQualifyingToken(tok::TokenKind TK,
                                          CharSourceRange Range,
                                          const ASTContext &Context,
                                          const SourceManager &SM);

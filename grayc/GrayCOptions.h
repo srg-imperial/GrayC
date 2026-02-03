@@ -9,8 +9,8 @@
 #ifndef GRAYC_GrayCOptions_H
 #define GRAYC_GrayCOptions_H
 
+#include "Compatability.h"
 #include "llvm/ADT/IntrusiveRefCntPtr.h"
-#include "llvm/ADT/Optional.h"
 #include "llvm/ADT/StringMap.h"
 #include "llvm/ADT/StringRef.h"
 #include "llvm/Support/ErrorOr.h"
@@ -63,17 +63,17 @@ struct GrayCOptions {
                              unsigned Order) const;
 
   /// Checks filter.
-  llvm::Optional<std::string> Checks;
+  OPTIONAL(std::string) Checks;
 
   /// WarningsAsErrors filter.
-  llvm::Optional<std::string> WarningsAsErrors;
+  OPTIONAL(std::string) WarningsAsErrors;
 
   /// Output warnings from headers matching this filter. Warnings from
   /// main files will always be displayed.
-  llvm::Optional<std::string> HeaderFilterRegex;
+  OPTIONAL(std::string) HeaderFilterRegex;
 
   /// Output warnings from system headers matching \c HeaderFilterRegex.
-  llvm::Optional<bool> SystemHeaders;
+  OPTIONAL(bool) SystemHeaders;
 
   /// Format code around applied fixes with clang-format using this
   /// style.
@@ -87,16 +87,16 @@ struct GrayCOptions {
   ///   * '{inline-formatting-style-in-yaml-format}'.
   ///
   /// See clang-format documentation for more about configuring format style.
-  llvm::Optional<std::string> FormatStyle;
+  OPTIONAL(std::string) FormatStyle;
 
   /// Specifies the name or e-mail of the user running grayc.
   ///
   /// This option is used, for example, to place the correct user name in TODO()
   /// comments in the relevant check.
-  llvm::Optional<std::string> User;
+  OPTIONAL(std::string) User;
 
   // Specifies the seed to be used during mutations
-  llvm::Optional<long> Seed;
+  OPTIONAL(long) Seed;
   
   /// Helper structure for storing option value with priority of the value.
   struct GrayCValue {
@@ -119,10 +119,10 @@ struct GrayCOptions {
   typedef std::vector<std::string> ArgList;
 
   /// Add extra compilation arguments to the end of the list.
-  llvm::Optional<ArgList> ExtraArgs;
+  OPTIONAL(ArgList) ExtraArgs;
 
   /// Add extra compilation arguments to the start of the list.
-  llvm::Optional<ArgList> ExtraArgsBefore;
+  OPTIONAL(ArgList) ExtraArgsBefore;
 
   /// Only used in the FileOptionsProvider and ConfigOptionsProvider. If true
   /// and using a FileOptionsProvider, it will take a configuration file in the
@@ -131,10 +131,10 @@ struct GrayCOptions {
   /// config on top of any configuation file it finds in the directory using the
   /// same logic as FileOptionsProvider. If false or missing, only this
   /// configuration file will be used.
-  llvm::Optional<bool> InheritParentConfig;
+  OPTIONAL(bool) InheritParentConfig;
 
   /// Use colors in diagnostics. If missing, it will be auto detected.
-  llvm::Optional<bool> UseColor;
+  OPTIONAL(bool) UseColor;
 };
 
 /// Abstract interface for retrieving various GrayC options.
@@ -230,7 +230,7 @@ protected:
 
   /// Try to read configuration files from \p Directory using registered
   /// \c ConfigHandlers.
-  llvm::Optional<OptionsSource> tryReadConfigFile(llvm::StringRef Directory);
+  OPTIONAL(OptionsSource) tryReadConfigFile(llvm::StringRef Directory);
 
   llvm::StringMap<OptionsSource> CachedOptions;
   GrayCOptions OverrideOptions;

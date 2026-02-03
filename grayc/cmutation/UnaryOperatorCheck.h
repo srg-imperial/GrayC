@@ -10,6 +10,7 @@
 #define GRAYC_READABILITY_UnaryOperatorCheck_H
 
 #include "../GrayCCheck.h"
+#include "../Compatability.h"
 
 namespace clang {
 namespace grayc {
@@ -35,7 +36,7 @@ public:
   UnaryOperatorCheck(StringRef Name, GrayCContext *Context) : GrayCCheck(Name, Context) {Seed = Context->getOptions().Seed;}
   void registerMatchers(ast_matchers::MatchFinder *Finder) override;
   void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
-  llvm::Optional<long> Seed;
+  OPTIONAL(long) Seed;
 private:
   bool mutateUnaryOperator(const ast_matchers::MatchFinder::MatchResult &Result,
                  const UnaryOperator *S, SourceLocation StartLoc,

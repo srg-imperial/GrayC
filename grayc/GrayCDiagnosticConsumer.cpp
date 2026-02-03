@@ -69,9 +69,9 @@ protected:
     }
     assert(Error.Message.Message.empty() && "Overwriting a diagnostic message");
     Error.Message = TidyMessage;
-    for (const CharSourceRange &SourceRange : Ranges) {
-      Error.Ranges.emplace_back(Loc.getManager(), SourceRange);
-    }
+    // for (const CharSourceRange &SourceRange : Ranges) {
+    //   Error.Ranges.emplace_back(Loc.getManager(), SourceRange);
+    // }
   }
 
   void emitDiagnosticLoc(FullSourceLoc Loc, PresumedLoc PLoc,
@@ -214,10 +214,10 @@ void GrayCContext::setProfileStoragePrefix(StringRef Prefix) {
   ProfilePrefix = std::string(Prefix);
 }
 
-llvm::Optional<GrayCProfiling::StorageParams>
+OPTIONAL(GrayCProfiling::StorageParams)
 GrayCContext::getProfileStorageParams() const {
   if (ProfilePrefix.empty())
-    return llvm::None;
+    return OPTIONAL_NONE;
 
   return GrayCProfiling::StorageParams(ProfilePrefix, CurrentFile);
 }
@@ -302,7 +302,7 @@ static bool IsNOLINTFound(StringRef NolintDirectiveText, StringRef Line,
   return true;
 }
 
-static llvm::Optional<StringRef> getBuffer(const SourceManager &SM, FileID File,
+static OPTIONAL(StringRef) getBuffer(const SourceManager &SM, FileID File,
                                            bool AllowIO) {
   // This is similar to the implementation of SourceManager::getBufferData(),
   // but uses ContentCache::getRawBuffer() rather than getBuffer() if
@@ -320,7 +320,7 @@ static llvm::Optional<StringRef> getBuffer(const SourceManager &SM, FileID File,
   // // if (!Buffer || CharDataInvalid)
   // //   return llvm::None;
   // // return Buffer.getBuffer();
-  return llvm::None;
+  return OPTIONAL_NONE;
 }
 
 static bool LineIsMarkedWithNOLINT(const SourceManager &SM, SourceLocation Loc,
@@ -330,7 +330,7 @@ static bool LineIsMarkedWithNOLINT(const SourceManager &SM, SourceLocation Loc,
   FileID File;
   unsigned Offset;
   std::tie(File, Offset) = SM.getDecomposedSpellingLoc(Loc);
-  llvm::Optional<StringRef> Buffer = getBuffer(SM, File, AllowIO);
+  OPTIONAL(StringRef) Buffer = getBuffer(SM, File, AllowIO);
   if (!Buffer)
     return false;
 

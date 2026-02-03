@@ -30,12 +30,12 @@ void DuplicateStatementMutator::check(const MatchFinder::MatchResult &Result) {
 
   const SourceManager &SM = *Result.SourceManager;
   const ASTContext *Context = Result.Context;
-  GrayCRandomManager::CreateInstance(Seed.getValue(), 65000);
+  GrayCRandomManager::CreateInstance(GET_VALUE(Seed), 65000);
   llvm::WithColor::remark() << "Using SEED: " << Seed << "\n";
   if (GrayCRandomManager::GetInstance()->rnd_yes_no(0.7)) {
     llvm::WithColor::note()
             << "Ignoring potential duplicate statement mutation due to the given seed\n";
-            GrayCRandomManager::DeleteInstance(Seed.getValue());
+            GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return;
   }
   const auto *BinaryOp = Result.Nodes.getNodeAs<BinaryOperator>("binaryOp");
@@ -44,7 +44,7 @@ void DuplicateStatementMutator::check(const MatchFinder::MatchResult &Result) {
       CharSourceRange::getTokenRange(BinaryOp->getSourceRange()), SM,
       Context->getLangOpts());
   if (FileRange.isInvalid()) {
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
     return;
   }
   if (BinaryOp) {
@@ -68,7 +68,7 @@ void DuplicateStatementMutator::check(const MatchFinder::MatchResult &Result) {
                                            DuplicatedStringToInsert);
       
     }
-    GrayCRandomManager::DeleteInstance(Seed.getValue());
+    GrayCRandomManager::DeleteInstance(GET_VALUE(Seed));
   }
 }
 } // namespace cmutation
